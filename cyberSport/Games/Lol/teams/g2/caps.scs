@@ -1,0 +1,284 @@
+caps
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Rasmus  "Caps" Winther](* <-lang_en;; *);
+		[Расмус "Caps" Винзер](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Caps](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Denmark;
+	=>nrel_surname: Winther;
+	=>nrel_first_name: Rasmus;
+	=>nrel_nickname: Caps;
+	=>nrel_birthday: 17_11_1999
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[17.11.1999](* <-lang_en; lang_ru;; *);;
+		<-date;;
+		=>nrel_date_day: [17];;
+		=>nrel_date_month: [11];;
+		=>nrel_date_year: [1999];;
+	*);
+
+	<=nrel_with_whom: contract_caps_and_enigma_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and Enigma Esports](* <-lang_en;; *);
+			[Контракт между Caps и Enigma Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: enigma_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_01_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[.01.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [0];;
+					=> nrel_date_month: [1];;
+					=> nrel_date_year: [2015];;
+				*);;
+			->rrel_end: xx_12_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[.12.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [0];;
+					=> nrel_date_month: [12];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);
+
+	  <=nrel_with_whom: contract_caps_and_inspire_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and Inspire eSports](* <-lang_en;; *);
+			[Контракт между Caps и Inspire eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: inspire_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 22_01_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[22.01.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [22];;
+					=> nrel_date_month: [1];;
+					=> nrel_date_year: [2016];;
+				*);;
+			->rrel_end: 26_02_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[26.02.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [26];;
+					=> nrel_date_month: [2];;
+					=> nrel_date_year: [2016];;
+				*);;
+		*);;
+	*);
+
+	  <=nrel_with_whom: contract_caps_and_e_corp_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and E-corp Gaming](* <-lang_en;; *);
+			[Контракт между Caps и E-corp Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: e_corp_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_02_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[26.02.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [26];;
+					=> nrel_date_month: [2];;
+					=> nrel_date_year: [2016];;
+				*);;
+			->rrel_end: 17_03_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[17.03.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [17];;
+					=> nrel_date_month: [3];;
+					=> nrel_date_year: [2016];;
+				*);;
+		*);;
+	*);
+	  <=nrel_with_whom: contract_caps_and_mouseesports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and mouseesports](* <-lang_en;; *);
+			[Контракт между Caps и mouseesports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: mouseesports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_04_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[.04.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [0];;
+					=> nrel_date_month: [4];;
+					=> nrel_date_year: [2016];;
+				*);;
+			->rrel_end: xx_05_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[.05.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [0];;
+					=> nrel_date_month: [5];;
+					=> nrel_date_year: [2016];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_caps_and_nerv_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and Nerv](* <-lang_en;; *);
+			[Контракт между Caps и Nerv](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: nerv_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 20_06_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[20.06.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [20];;
+					=> nrel_date_month: [6];;
+					=> nrel_date_year: [2016];;
+				*);;
+			->rrel_end: 15_07_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[15.07.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [15];;
+					=> nrel_date_month: [7];;
+					=> nrel_date_year: [2016];;
+				*);;
+		*);;
+	*);
+
+	  <=nrel_with_whom: contract_caps_and_dark_passage_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and Dark Passage](* <-lang_en;; *);
+			[Контракт между Caps и Dark Passage](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: dark_passage_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_07_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[15.07.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [15];;
+					=> nrel_date_month: [7];;
+					=> nrel_date_year: [2016];;
+				*);;
+			->rrel_end: 23_10_2017
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[23.10.2017](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [23];;
+					=> nrel_date_month: [10];;
+					=> nrel_date_year: [2017];;
+				*);;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_caps_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and Fnatic](* <-lang_en;; *);
+			[Контракт между Caps и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 01_12_2017
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[01.12.2017](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [1];;
+					=> nrel_date_month: [12];;
+					=> nrel_date_year: [2017];;
+				*);;
+			->rrel_end: 25_11_2018
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[25.11.2018](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [25];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2018];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_caps_and_g2_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Caps and G2 Esports](* <-lang_en;; *);
+			[Контракт между Caps и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 29_11_2018;;
+		*);;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 29_11_2018
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[29.11.2018](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [29];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2018];;
+				*);;
+		*);;
+	*);;

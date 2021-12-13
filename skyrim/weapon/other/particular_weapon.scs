@@ -1,0 +1,29 @@
+concept_skyrim_weapon_particular
+=> nrel_main_idtf: [particular weapon (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [особое оружие (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(особое оружие (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Особое оружие —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, которое встречается у некоторых врагов, представителей определённых фракций или членов гильдий] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности особого оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Доступно только в качестве трофея и, в отдельных случаях, в продаже. Невозможно создать самому. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

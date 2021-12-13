@@ -1,0 +1,41 @@
+concept_pickaxe
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кирка] (* <- lang_ru;;*);
+	[Pickaxe] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_pickaxe;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Кирка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кирка — тип режущего оружия в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристика Кирки)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Имея отличный урон и среднюю скорость атаки. Подходит для схватки со слабыми и средними противниками, но при бое с сильным противником лучше отложить или выбросить.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://pickaxe.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

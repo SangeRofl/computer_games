@@ -1,0 +1,45 @@
+thundergods_wrath_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Thundergod's Wrath] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Thundergod's Wrath] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Thundergod's Wrath)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Поражает всех вражеских героев молнией вне зависимости от их местоположения. Способность также раскрывает невидимость вражеских существ вокруг каждого ударенного противника. Если герой врага невидим, то он не получит урона, но невидимость всё равно раскроется.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Thundergod's Wrath)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Thundergod's Wrath сначала наносит урон всем вражеским героям (если это возможно), а потом дает вокруг них обзор. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [90];
+=> nrel_default_damage : [500];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Thundergod's_Wrath_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

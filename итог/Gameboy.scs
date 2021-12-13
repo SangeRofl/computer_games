@@ -1,0 +1,55 @@
+concept_game_console -> GameBoy ;;
+
+GameBoy
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[геймбой]
+		(* 
+			<- lang_ru;; 
+		*);
+		[GameBoy]
+		(*
+		<- lang_en;; 
+		*);;
+		
+GameBoy <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/GAMEBOY.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			*);; 
+*);; 
+
+GameBoy <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Атари)](*<-lang_ru;;*); 
+				[Pic. (Atari)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/GAMEBOY.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+GameBoy => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 1977;; 
+1977 => nrel_main_idtf : [1977 год](*<-lang_ru;;*);; 
+1977 => nrel_main_idtf : [year of 1977](*<-lang_en;;*);; 
+Atari => nrel_release_date : 1977;; 
+
+value -> 2600;; 
+GameBoy <- rrel_seies: 1;; 
+
+

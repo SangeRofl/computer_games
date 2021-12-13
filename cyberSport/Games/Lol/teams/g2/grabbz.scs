@@ -1,0 +1,75 @@
+grabbz
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Fabian Lohmann](* <-lang_en;; *);
+		[Фабиан Лохманн](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[GrabbZ](* <-lang_en;; *);
+
+	<-coach;
+
+	=>nrel_citizen_of: Germany;
+	=>nrel_surname: Lohmann;
+	=>nrel_first_name: Fabian;
+	=>nrel_nickname: GrabbZ;
+	
+	<=nrel_with_whom: contract_grabbz_and_unicorns_of_love_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Grabbz and Unicorns of Love](* <-lang_en;; *);
+			[Контракт между Grabbz и Unicorns of Love](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: unicorns_of_love_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_xx_xxxx;;
+			->rrel_end: xx_xx_xxxx;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_grabbz_and_giants_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Grabbz and Giants Gaming](* <-lang_en;; *);
+			[Контракт между Grabbz и Giants Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_xx_xxxx;;
+			->rrel_end: xx_xx_xxxx;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_grabbz_and_team_rossat_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Grabbz and Team ROCCAT](* <-lang_en;; *);
+			[Контракт между Grabbz и Team ROCCAT](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 24_02_2016;;
+			->rrel_end: 02_12_2017;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_grabbz_and_g2_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between GrabbZ and G2 Esports](* <-lang_en;; *);
+			[Контракт между GrabbZ и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_12_2017;;
+		*);;
+	*);;

@@ -1,0 +1,39 @@
+concept_null_talisman
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [null talisman] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [null talisman] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(null talisman)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Небольшой драгоценный камень, связанный звеньями.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(null talisman)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Герои, которым нужно раннее усиление характеристики интеллект, часто извлекают пользу из Null Talisman.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/null_talisman.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

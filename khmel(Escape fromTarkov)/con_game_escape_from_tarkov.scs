@@ -1,0 +1,56 @@
+computer_game_escape_from_tarkov
+=> nrel_main_idtf: [Escape from Tarkov] (* <- lang_en;; *);
+=> nrel_main_idtf: [Побег из Таркова] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_shooter;
+=> nrel_platform: concept_microsoft_windows; 
+=> nrel_platform: mac_os_x;
+=> nrel_publisher: company_battlestate_games;
+=> nrel_developer: company_battlestate_games;
+=> nrel_publication_date: date_2017;
+<- concept_setting_wars;
+=> nrel_eft_game_character: concept_eft_character_wild;
+=> nrel_eft_game_character: concept_eft_character_chvk;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_plot: [отсутствует];
+<-concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_computer_game;
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_plot;
+          concept_multiplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Escape from Tarkov)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [<b><sc_element sys_idtf="computer_game_escape_from_tarkov">Escape from Tarkov</b></sc_element> - <b><sc_element sys_idtf="concept_computer_game">компьютерная игра</b></sc_element> с видом от первого лица в <b><sc_element sys_idtf="concept_game_genre">жанре</b></sc_element> FPS, выпущена <b><sc_element sys_idtf="concept_game_company">компанией</b></sc_element> Battlestate Games в 2017 году на <b><sc_element sys_idtf="nrel_platform">платформах</b></sc_element> Windows, macOS. <b><sc_element sys_idtf="concept_multiplayer_game">Мультиплеерная игра</b></sc_element> без <b><sc_element sys_idtf="nrel_plot">сюжета</b></sc_element>. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (как играть в Escape from Tarkov)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Escape from Tarkov НЕ дружелюбная игра. Не доверяйте никому. Тут нет друзей. За лишнюю пачку патронов каждый готов выстрелить в спину. Всегда будьте готовы!] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://imageEft/Tarkov.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

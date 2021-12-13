@@ -1,0 +1,5 @@
+MP5_SD
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[MP5-SD](*<-lang_ru;;*);
+		[MP5-SD](*<-lang_en;;*);;

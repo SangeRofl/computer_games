@@ -1,0 +1,18 @@
+concept_card_rare
+=> nrel_main_idtf: [редкая карта] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rare card] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр.редкая карта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+    	-> [Редкая карта - это карта, средней редкости.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...(*
+		-> concept_computer_game_hearthstone;;
+        -> concept_card;;
+	*);;
+*);
+
+<- sc_node_not_relation;;

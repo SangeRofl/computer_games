@@ -1,0 +1,27 @@
+concept_skyrim_simple_disease
+=> nrel_main_idtf: [Simple disease] (* <- lang_en;; *);
+=> nrel_main_idtf: [Простая болезнь] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Простая болезнь] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Симптомы <b><sc_element sys_idtf="concept_skyrim_disease">болезни</b></sc_element> проявляются до момента её излечения зельями или благословениями.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Лечение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Все обычные болезни можно вылечить в храмах или у статуй, получив благословение того или иного божества, либо с помощью лечебного снадобья. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

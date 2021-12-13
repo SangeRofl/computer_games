@@ -1,0 +1,25 @@
+concept_eft_item
+=> nrel_main_idtf: [item (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [предмет (Escape from Tarkov)] (* <- lang_ru;; *);
+<-computer_game_escape_from_tarkov;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (предмет(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [предметом является любой объект, который можно поднять в бою в игре 'Escape from Tarkov'] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_throwingweapon;;
+    -> concept_eft_ammo;;
+	-> concept_eft_barter_items;;
+    -> concept_eft_equipment;;
+	=> nrel_main_idtf:[Разбиение по классам предметов] (* <- lang_ru;; *);;
+*);
+
+<- sc_node_not_relation;;

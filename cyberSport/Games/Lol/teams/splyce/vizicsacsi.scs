@@ -1,0 +1,64 @@
+vizicsacsi
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Kiss "Vizicsacsi" Tamas](* <-lang_en;; *);
+		[Эрленд "Vizicsacsi" Ватевик Хольм](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Vizicsacsi](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Hungary;
+	=>nrel_surname: Tamas;
+	=>nrel_first_name: Kiss;
+	=>nrel_nickname: Vizicsacsi;
+	=>nrel_birthday: [05.10.1994];
+	=>nrel_gamerole: top_laner_lol;
+
+	<=nrel_with_whom: contract_vizicsacsi_and_unicorns_of_love_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Vizicsacsi and Unicorns Of Love](* <-lang_en;; *);
+			[Контракт между Vizicsacsi и Unicorns Of Love](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: unicorns_of_love_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_01_2014;;
+			->rrel_end: 21_11_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_vizicsacsi_and_fc_schalke_04_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Vizicsacsi and FC Schalke 04 Esports](* <-lang_en;; *);
+			[Контракт между Vizicsacsi и FC Schalke 04 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fc_schalke_04_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 21_11_2017;;
+			->rrel_end: 23_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_vizicsacsi_and_splyce_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Vizicsacsi and Splyce](* <-lang_en;; *);
+			[Контракт между Vizicsacsi и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 30_12_2018;;
+			->rrel_end: 18_11_2019;;
+		*);;
+	*);;
+

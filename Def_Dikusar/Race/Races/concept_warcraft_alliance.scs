@@ -1,0 +1,50 @@
+concept_warcraft_alliance
+
+=> nrel_main_idtf:
+      [альянс]
+      (*<-lang_ru;;*);
+       [alliance]
+       (*<-lang_en;;*);
+=>nrel_idtf: [Великий Альянс] (* <- lang_ru;; *); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Утв.(об альянсе)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_azeroth
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Альянс (также называемый Великий Альянс является одной из двух сильных фракций смертных рас Азерота в противовес Орде. Альянс состоит из сильных культурных групп, связанных своими глубокими обязательства перед такими абстрактными понятиями, как благородство и честь.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(об альянсе)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_race_orc
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Люди, ночные эльфы, дворфы, гномы, дренеи, воргены, и пандарены (Тушуй) составляют знаменитый Альянс.
+Гордые и благородные, мужественные и мудрые, эти расы работают вместе для сохранения порядка в Азероте](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+=>nrel_main_leader:game_character_anduin;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://anduin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

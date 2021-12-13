@@ -1,0 +1,53 @@
+concept_apex_grenade_arc_star
+=> nrel_main_idtf: [Arc star (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дуговая звезда (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры гранаты
+=> nrel_apex_grenade_hit_damage: 70;
+=> nrel_apex_grenade_explosion_damage: 70;
+=> nrel_apex_full_grenade_damage: 140;
+=> nrel_apex_grenade_explosion_delay: 2.8;
+=> nrel_apex_grenade_slow_time: 5;
+=> nrel_apex_grenade_damage_over_time: [отсутствует];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Дуговая звезда (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Дуговая звезда (Apex Legends) - граната, которая может прикрепляться на любые поверхности в игре, вплоть до самих персонажей, и взрывается через определенный момент времени после прикрепления.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_explosion
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (воздействие на персонажа)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта граната сильно замедляет вражеского персонажа и при попадании, и при её взрыве.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дуговая звезда)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/grenades/apex_arc_star.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_grenade;
+<- sc_node_not_relation;;

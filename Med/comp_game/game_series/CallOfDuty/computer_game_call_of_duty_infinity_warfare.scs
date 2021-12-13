@@ -1,0 +1,66 @@
+computer_game_call_of_duty_infinity_warfare
+=> nrel_main_idtf: [Call of Duty: Infinity Warfare] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty: Infinity Warfare] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_science_fiction;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_infinity_ward; company_high_moon_studios;
+=> nrel_publisher: company_activision;
+=> nrel_localizer: company_1c;
+
+=> nrel_platform: concept_windows; xbox_one; playstation_4;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode; cooperative_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: iw_engine_7.0;
+
+//=> nrel_plot: [отсутствует];
+
+=> nrel_announcement_date: date_02_05_2016;
+
+=> nrel_publication_date: date_04_11_2016;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Call of Duty: Infinity Warfare)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенный научно-фантастический трехмерный шутера от первого лица, разработанная американской компанией Infinity Ward и изданный компанией Activision, тринадцатая игра в серии игр Call of Duty] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_setting_science_fiction;;
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_infinity_ward;;
+		-> company_activision;;
+		-> concept_game_series_call_of_duty;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

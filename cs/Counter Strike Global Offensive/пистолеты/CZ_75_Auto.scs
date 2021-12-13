@@ -1,0 +1,5 @@
+CZ_75_Auto
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[CZ75-Auto](*<-lang_ru;;*);
+		[CZ75-Auto](*<-lang_en;;*);;

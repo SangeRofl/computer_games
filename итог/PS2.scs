@@ -1,0 +1,56 @@
+concept_game_console -> PlayStation_2 ;;
+
+PlayStation_2
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Плэйстэшн 2]
+		(* 
+			<- lang_ru;; 
+		*);
+		[PlayStation 2]
+		(*
+		<- lang_en;; 
+		*);;
+		
+PlayStation_2 <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/PS2.html"(*<-lang_ru;;=>nrel_format:format_html;;*);; 
+			//TODO: ADD English
+			*);; 
+*);; 
+
+PlayStation_2 <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Плэйстэшн 2)](*<-lang_ru;;*); 
+				[Pic. (PlayStation 2)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/PS2.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+PlayStation_2 => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 2000;; 
+2000 => nrel_main_idtf : [2000 год](*<-lang_ru;;*);; 
+2000 => nrel_main_idtf : [year of 2000](*<-lang_en;;*);; 
+PlayStation_2 => nrel_production_year : 2000;; 
+
+value -> 2;; 
+PlayStation_2 <- rrel_seies: 2;; 
+
+

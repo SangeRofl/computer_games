@@ -1,0 +1,37 @@
+warpath_dota_2
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [Warpath] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Warpath] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Warpath)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой нагоняет на себя ярость каждый раз, когда использует способность, повышая свои скорость передвижения и урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Warpath)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Использование предметов не будет активировать Warpath.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Warpath_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,47 @@
+concept_shotgun
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Дробовик] (* <- lang_ru;;*);
+	[Shotgun] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_shotgun;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Дробовик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Дробовик — гладкоствольное огнестрельное оружие, использующее энергию фиксированного снаряда для стрельбы некоторым количеством небольших круглых шариков либо пулями.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенность дробовика)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [ Встречаются различные механизмы дробовиков, в том числе одноствольные, с двумя и более стволами.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://shotgun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_double_barrel_shotgun;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

@@ -1,0 +1,50 @@
+sc_agent_for_finding_abilities_by_mana_cost
+=> nrel_main_idtf:
+	[sc-агент поиска способностей по затрату маны] 
+	(* <- lang_ru;; *);
+	[sc-agent of finding abilities by mana cost] 
+	(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_finding_abilities_by_mana_cost_condition => ..sc_agent_for_finding_abilities_by_mana_cost_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_for_finding_abilities_by_mana_cost
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_finding_abilities_by_mana_cost
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_finding_abilities_by_mana_cost
+		};;
+	-> sc_agent_for_finding_abilities_by_mana_cost_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_finding_abilities_by_mana_cost_condition
+= [*
+	question_for_finding_abilities_by_mana_cost _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_for_finding_abilities_by_mana_cost_result
+= [*
+	question_for_finding_abilities_by_mana_cost _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

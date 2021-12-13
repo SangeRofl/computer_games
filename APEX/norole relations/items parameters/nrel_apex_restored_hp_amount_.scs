@@ -1,0 +1,53 @@
+nrel_apex_restored_hp_amount
+=> nrel_main_idtf: [restored health points amount* (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [количество восстановленного здоровья* (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(количество восстановленного здоровья* (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это количество здоровья, которое восстанавливается у легенды в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_hp;
+		nrel_restore;
+		concept_apex_consumable;
+		concept_apex_gear_powerup_guardian_angel
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_apex_restored_hp_amount;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_apex_restored_hp_amount;;
+antitransitive_relation -> nrel_apex_restored_hp_amount;;
+asymmetric_relation -> nrel_apex_restored_hp_amount;;
+
+
+nrel_apex_restored_hp_amount => nrel_first_domain: concept_apex_item;;
+nrel_apex_restored_hp_amount => nrel_second_domain: number;;
+nrel_apex_restored_hp_amount => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_apex_item;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_apex_restored_hp_amount;;
+number->2;;

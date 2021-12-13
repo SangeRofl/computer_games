@@ -1,0 +1,28 @@
+concept_ammunition
+=> nrel_main_idtf: [ammunition] (* <- lang_en;; *);
+=> nrel_main_idtf: [боеприпас] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_explosive_ammo;;
+	-> concept_ammo;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (боеприпас)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [боеприпас - предмет, который используется для ведения боя и нанесения любого вида урона.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_item;
+		concept_battle;
+		concept_damage
+	};;
+*);
+
+
+<- sc_node_not_relation;;

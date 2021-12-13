@@ -1,0 +1,51 @@
+concept_class_hero
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Класс героя] (* <- lang_ru;; *);
+	[Hero class] (* <- lang_en;;*);
+
+//Разбиение
+<= nrel_subdividing: ...		(*
+    -> concept_class_druid;;
+	-> concept_class_rogue;;
+	-> concept_class_priest;;
+	-> concept_class_warlock;;
+	-> concept_class_paladin;;
+    -> concept_class_shaman;;
+    -> concept_class_mage;;
+    -> concept_class_hunter;;
+	=> nrel_main_idtf: [разбиение по классам] (* <- lang_ru;; *);;
+*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Класс героя)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_card;;
+        -> concept_ability;;
+        -> concept_hero_char;;
+    *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Класс является основным фактором, определяющим способности и способности героя, и самым сильным фактором при выборе колоды.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Класс героя)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+        -> concept_player;;
+        -> concept_hero_char;;
+        -> concept_ability;;
+        -> concept_card;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+          -> [В то время как каждый герой представляет собой уникального персонажа со своей индивидуальностью, 
+          портретом и звуками, его класс определяет их Силу Героя и какие карты конкретного класса они могут играть.] (*<-lang_ru;;*);;
+      *);;
+  *);;

@@ -1,0 +1,39 @@
+concept_staff_of_wizardry
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [staff of wizardry] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [staff of wizardry] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(staff of wizardry)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Легкие тапочки, сделанные из кожи паука, обостряют ваше чутье.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(staff of wizardry)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Тапочки ловкости отлично подойдут героям в ранней стадии игры, у которых основная характеристика ловкость.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/staff_of_wizardry.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

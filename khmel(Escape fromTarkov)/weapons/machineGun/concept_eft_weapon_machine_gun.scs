@@ -1,0 +1,56 @@
+concept_eft_weapon_rpk16
+=> nrel_main_idtf: [RPK-16(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [РПК-16(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_machine_gun;
+
+<- concept_eft_fire_mode_auto;
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_5.45x39;
+=> nrel_eft_weapon_sighting_distance: 800;
+=> nrel_eft_weapon_rate_of_fire: 650;
+=> nrel_eft_weapon_accuracy: 0.06;
+=> nrel_eft_weapon_effective_distance: 650;
+=> nrel_eft_weapon_starting_speed: 839;
+=> nrel_eft_weapon_weight: 1.5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (РПК-16(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Российский единый ручной пулемет - РПК-16 под калибр 5.45x39, который разрабатывался на замену устаревшему РПК-74.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_5.45x39;
+		concept_eft_weapon_machine_gun
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (режимы стрельбы РПК-16(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [РПК-16 обладает сразу двумя режимами стрельбы: автоматическим и одиночным.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (РПК-16(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/RPK-16.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

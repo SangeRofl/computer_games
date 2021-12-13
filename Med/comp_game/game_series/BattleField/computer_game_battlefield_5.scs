@@ -1,0 +1,64 @@
+computer_game_battlefield_5							//developer + battleroyal??
+=> nrel_main_idtf: [Battlefield 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 5] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_dice; company_criterion_games;
+=> nrel_publisher: company_electronic_arts;
+=> nrel_localizer: company_electronic_arts_russia;
+
+=> nrel_announcement_date: date_16_05_2018;
+
+=> nrel_publication_date: date_20_11_2018;
+
+=> nrel_platform: concept_windows; playstation_4; xbox_one;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 5)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенная компьютерная игра в жанре шутера от первого лица, разработанная Digital Illusions CE и изданная Electornic Arts, пятнадцатая в серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_computer_game;;
+		-> concept_shooter;;
+		-> concept_first_person_view;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

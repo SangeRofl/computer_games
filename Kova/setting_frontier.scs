@@ -1,0 +1,30 @@
+concept_setting_frontier
+=> nrel_main_idtf: [новые земли] (* <- lang_ru;; *);
+=> nrel_idtf: [frontier] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(новые земли)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в эпоху, когда были открыты множество новых земель.] (* <- lang_ru;;*);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(новые земли)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычно в этих играх присутсвует Америка] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

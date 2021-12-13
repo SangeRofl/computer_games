@@ -1,0 +1,30 @@
+concept_setting_invasion_of_zombie
+=> nrel_main_idtf: [нашествие зомби] (* <- lang_ru;; *);
+=> nrel_idtf: [invsion of zombie] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нашествие зомби)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором в компьютерной игре случается нашествие зомби] (* <- lang_ru;; *);;	 
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(нашествие зомби)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Зомби - трупы восставшие из мёртвых] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

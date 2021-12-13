@@ -1,0 +1,39 @@
+concept_iron_branch
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [iron branch] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [ветка] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(iron branch)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Ветка дарует владельцу полезные качества благодаря свойствам железного дерева, от которого она отрублена.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(iron branch)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ветка полезна в начале игры, первые 5-10 минут.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/iron_branch.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

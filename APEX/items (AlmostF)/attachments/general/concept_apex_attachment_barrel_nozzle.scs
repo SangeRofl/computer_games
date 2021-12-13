@@ -1,0 +1,40 @@
+concept_apex_attachment_barrel_nozzle
+=> nrel_main_idtf: [barrel nozzle (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ствольная насадка (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_attachment_barrel_stabilizer;;
+    -> concept_apex_attachment_shotgun_bolt;;
+	=> nrel_main_idtf:[Разбиение по видам оружия] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ствольная насадка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ствольная насадка (Apex Legends) - модификация оружия, которая насаживается на ствол, уменьшает отдачу и хаотичность разлета патронов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_recoil_reduction_percentage;
+        concept_apex_randomness_decrease_percentage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы ствольных насадок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ствольные насадки бывают двух типов: ствольный стабилизатор и затвор для дробовика.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_barrel_nozzle;
+    	concept_apex_attachment_shotgun_bolt
+	};;
+*);
+
+<- sc_node_not_relation;;

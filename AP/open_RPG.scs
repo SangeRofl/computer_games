@@ -1,0 +1,73 @@
+concept_open_RPG
+=> nrel_main_idtf: [открытая ролевая игра] (* <- lang_ru;; *);
+=> nrel_idtf: [open RPG] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_education;;
+        -> concept_riddles;;
+        -> concept_communication;;
+        -> cconcept_role;;
+        -> concept_studying;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(открытая ролевая игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество игр, где главное действие — общение в широком смысле слова (разговор, сражение, союз, торговля).] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+                              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(квест, враг*, союзник*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Присутствует множество независимых «квестов», свобода выбора своих врагов и союзников.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+*/
+
+
+<- sc_node_not_relation;;
+
+

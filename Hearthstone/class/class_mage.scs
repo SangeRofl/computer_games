@@ -1,0 +1,54 @@
+concept_class_mage
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Маг] (* <- lang_ru;; *);
+	[Mage] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Маг)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> nrel_effect;;
+		-> concept_card;;
+        -> concept_card_class_mage;;
+        -> concept_card_class_neutral;;
+        -> concept_ability;;
+        -> concept_card_spell;;
+    *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Маги - это класс, который обладает сильной синергией заклинаний, способной превращать незначительные заклинания в разрушительные огненные шары, и могут использовать целый ряд магических секретов, 
+                чтобы перенаправить эффекты врага, защитить себя от урона или остановить самого смертоносного противника или заклинание в его ход.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Приемущества Мага)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+        -> nrel_effect;;
+        -> concept_hearthstone_mana;;
+        -> concept_ability;;
+        -> concept_card_class_mage;;
+        -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Обладая широким набором опций для борьбы с угрозами, Маги являются мастерами контроля, очищая или отключая вражеских миньонов, размещая своих собственных.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/mage.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

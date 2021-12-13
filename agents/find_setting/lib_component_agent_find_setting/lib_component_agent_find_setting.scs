@@ -1,0 +1,22 @@
+lib_component_agent_find_setting
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска сеттинга заданной игры]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search setting of given game]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_elem_valencies;;
+
+sc_node_not_relation -> action_find_setting;;
+
+action_find_setting => nrel_main_idtf:
+	[действие. Поиск сеттинга заданной игры]
+		(*<- lang_ru;;*);;
+action_find_setting => nrel_main_idtf:
+	[action. Search setting of given game]
+		(* <- lang_en;; *);;

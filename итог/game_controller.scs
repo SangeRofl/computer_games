@@ -1,0 +1,54 @@
+concept_game_controller  //это системный идентификатор
+=> nrel_main_idtf:
+	[Игровой контроллер] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество контроллеров] (* <- lang_ru;; *);    // обычные идентификаторы
+	[game_controller] (* <- lang_en;; *);
+
+
+<= nrel_inclusion:
+	controller (* => nrel_main_idtf: [контроллер] (* <- lang_ru;; *);; *);    //включение
+
+
+->rrel_example: xbox_controller 
+(* => nrel_main_idtf: [xbox контроллер] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_game_controller             //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(игровой контроллер)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Игровой контро́ллер — это устройство ввода информации, которое используется в консольных и компьютерных играх] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_controller (*
+=> nrel_main_idtf: [устройство] (* <- lang_ru;; *);; *);;
+				-> information (*
+=> nrel_main_idtf: [информация] (* <- lang_ru;; *);; *);;
+				-> concept_computer_game;;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_game_controller                //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(компьютерная игра)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Игровой контроллер используется для игры в компьютерную игру] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла

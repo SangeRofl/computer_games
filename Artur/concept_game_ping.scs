@@ -1,0 +1,34 @@
+concept_game_fps
+=> nrel_main_idtf: [ping] (* <- lang_ru;; *);
+=> nrel_main_idtf: [пинг] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пинг)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Пинг - это время ответа вашего компьютера на запрос.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game;;
+		-> concept_game_perfomance;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(пинг)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Пингом называют проверку
+		качества интернет-канала на предмет насколько
+		быстро проходят по нему сигналы. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

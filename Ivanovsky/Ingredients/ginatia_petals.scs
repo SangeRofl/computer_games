@@ -1,0 +1,43 @@
+concept_ginatia_petals
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Лепестки гинации] (* <- lang_ru;;*);
+	[Ginatia petals] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Лепестки гинации)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_dimeritium_bomb;;
+	-> concept_enhanced_devils_puffball;;
+	-> concept_superior_devils_puffball;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Улучшенная двимеритовая бомба, Улучшенный чертов гриб, Отличная чертов гриб. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://ginatia_petals.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

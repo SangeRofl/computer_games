@@ -1,0 +1,113 @@
+concept_apex_weapon_devotion
+=> nrel_main_idtf: [Devotion LMG] (* <- lang_en;; *);
+=> nrel_main_idtf: [РП "Преданность"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_machine_gun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_experimental_ammo;
+
+=> nrel_weapon_rate_of_fire: 900;
+=> nrel_weapon_damage_per_second: 255;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 34;
+=> nrel_apex_default_legend_common_helmet_damage: 31;
+=> nrel_apex_default_legend_rare_helmet_damage: 27;
+=> nrel_apex_default_legend_epic_helmet_damage: 26;
+=> nrel_apex_default_legend_legendary_helmet_damage: 26;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 36;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 33;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 28;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 27;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 27;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 29;
+=> nrel_apex_fortified_legend_common_helmet_damage: 26;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 23;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 22;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 22;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 17;
+=> nrel_apex_low_profile_legend_body_damage: 18;
+=> nrel_apex_fortified_legend_body_damage: 14;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 13;
+=> nrel_apex_low_profile_legend_leg_damage: 14;
+=> nrel_apex_fortified_legend_leg_damage: 11;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_plus_curve_left_and_right;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 36;
+=> nrel_apex_common_magazine_capacity: 40;
+=> nrel_apex_rare_magazine_capacity: 44;
+=> nrel_apex_epic_magazine_capacity: 48;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (РП "Преданность")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [РП "Преданность" - пулемет, который использует энергетические патроны, имеет только автоматический тип стрельбы, уникальную механику "раскрутки" и его можно получить только из эирдропа] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_experimental_ammo;
+		concept_apex_weapon_machine_gun;
+        concept_apex_fire_mode_auto
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на РП "Преданность")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 47 скинов на РП "Преданность": 8 легендарных, 5 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (РП "Преданность")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_devotion.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,36 @@
+concept_simulator_of_tanks
+<-sc_node_not_relation;
+<-concept_game_genre;
+<=nrel_include:concept_simulator;
+=> nrel_main_idtf:
+      [танковый симулятор]
+      (*<-lang_ru;;*);
+       [simulator of tanks]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (танковый симулятор)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+concept_simulator;
+concept_armored_fighting_vehicle
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Танковый симулятор - жанр компьютерных игр, разновидность симуляторов, посвященная управлению танком.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (танковый симулятор)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_tank_machine;
+concept_arena;
+concept_team
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ В играх танкового симулятора две и более команды игроков сражаются друг с другом на карте особого вида(арена). Каждый игрок управляет одним танком из определенного списка доступных танков, отличающихся характеристиками.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

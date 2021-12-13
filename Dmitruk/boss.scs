@@ -1,0 +1,60 @@
+nrel_boss
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- assymmetric_relation;
+</- transitive_relation;
+ => nrel_second_domain: concept_character;
+  => nrel_first_domain: concept_computer_game;
+
+=> nrel_main_idtf:
+      [босс*]      (*<-lang_ru;;*);
+      [boss*]      (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (босс*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_character;
+       concept_computer_game;
+       concept_enemy_character
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Босс* -  персонаж-противник в компьютерных играх, который намного сильнее, чем обычные враги.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{
+concept_character;
+concept_computer_game
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(о способности*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+    concept_level;
+	concept_culmination_of_gameplay
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ В компьютерных играх боссов помещают в конце уровней, где они формируют кульминацию игрового процесса. Босс, как правило, отличается большими размерами или внезапными появлениями и значительным количеством очков здоровья..](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+sc_node_not_relation ->...nodes;;
+number->2;;
+arity->...nodes;;
+...nodes->nrel_boss;;
+2<=nrel_measurement: ...nodes;;
+
+concept_character -> Imlerih;;
+concept_computer_game -> concept_computer_game_Witcher_3;;
+concept_computer_game_Witcher_3 =>nrel_boss: Imlerih;;
+
+sc_node_not_relation->concept_enemy_character;;
+sc_node_not_relation->concept_level;;
+sc_node_not_relation->concept_culmination_of_gameplay;;

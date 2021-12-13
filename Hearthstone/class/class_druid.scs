@@ -1,0 +1,69 @@
+concept_class_druid
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Друид] (* <- lang_ru;; *);
+	[Druid] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Друид)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+    -> concept_hero_char;;
+		-> concept_card;;
+    -> concept_card_class_druid;;
+    -> concept_card_class_neutral;;
+    -> concept_ability;;
+    -> concept_card_minion;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Друиды - это универсальный класс, способный использовать силы природы и первобытного гнева, чтобы сокрушить своих врагов или расширить возможности своих союзников.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Универсальность Друида)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+      -> concept_ability;;
+      -> concept_card_class_druid;;
+      -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Друид обретает большую универсальность благодаря уникальной способности «Выбрать один», позволяющей им выбирать один из двух вариантов при игре на определенных картах.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Способности и карты Друида)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+      -> nrel_effect;;
+      -> concept_hearthstone_mana;;
+      -> concept_ability;;
+      -> concept_card_class_druid;;
+      -> concept_card;;
+      -> concept_card_minion;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Друиды могут также использовать карты, такие как Innervate и Wild Growth, чтобы манипулировать и ускорять получение маны для получения большого эффекта. 
+              Друиды также имеют связь с животными, с большим количеством уникальных животных, а также способностей, которые им полезны.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/druid.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

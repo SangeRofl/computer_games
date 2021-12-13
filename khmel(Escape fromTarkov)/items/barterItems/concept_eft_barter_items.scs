@@ -1,0 +1,58 @@
+concept_eft_barter_items
+=> nrel_main_idtf: [barter items(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [предмет для бартера(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_barter_items_comlubmaterial;;
+	-> concept_eft_barter_items_tool;;
+	-> concept_eft_barter_items_info_item;;
+	-> concept_eft_barter_items_medicalmat;;
+	-> concept_eft_barter_items_buildmat;;
+	-> concept_eft_barter_items_housegood;;
+	-> concept_eft_barter_items_value;;
+	-> concept_eft_barter_items_electronics;;
+	-> concept_eft_barter_items_battery;;
+	-> concept_eft_barter_items_map;;
+	=> nrel_main_idtf:[Разбиение по классам предмета для бартера] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (предмет для бартера(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это те предметы, которые можно продавать/покупать в игре 'Escape from Tarkov'] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_item
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (специфика предмета для бартера в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предметы для бартера можно получить/продать за игровую валюту в местах купли-продажи.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (предмет для бартера(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/market.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

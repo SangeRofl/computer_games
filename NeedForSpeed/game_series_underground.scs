@@ -1,0 +1,28 @@
+concept_game_series_underground
+
+=> nrel_main_idtf:[серия игр Underground] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Undergroud] (* <- lang_en;; *);
+
+
+-> rrel_first_game: computer_game_need_for_speed_underground;
+-> rrel_last_game: computer_game_need_for_speed_underground_2;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_game_series;;
+                -> concept_racing;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+                => nrel_main_idtf: [Опр.(серия игр Underground)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation: ...
+        (*
+                -> [Underground - серия аркадных гоночных компьютерных игр, является подсерией игр Need for Speed. В нее входят одни из самых успешных игр Need for Speed.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- sc_node_not_relation;;

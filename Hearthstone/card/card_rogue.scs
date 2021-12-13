@@ -1,0 +1,20 @@
+concept__card_class_rogue
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карты Разбойницы] (* <- lang_ru;; *);
+	[Rogue's cards] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Класс Войн)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> nrel_effect;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Карты Разбойницы - это карты, которые может использовать только класс Разбойница] (* <- lang_ru;; *);;
+	*);;
+*);;

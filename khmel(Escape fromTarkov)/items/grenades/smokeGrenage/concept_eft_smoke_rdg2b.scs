@@ -1,0 +1,48 @@
+concept_eft_smoke_rdg2b
+=> nrel_main_idtf: [RDG-2B(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [РДГ-2Б(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_throwingweapon_smoke;
+
+=> nrel_eft_weapon_weight: 0.6;
+=> nrel_eft_weapon_explosion_delay: 3.5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (РДГ-2Б(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [РДГ-2Б — Ручная дымовая граната советского производства.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon_smoke
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение РДГ-2Б(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предназначена для создания зон задымления с целью маскировки или целеуказания.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (РДГ-2Б(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Smoke_grenade.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

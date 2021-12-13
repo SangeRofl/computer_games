@@ -1,0 +1,31 @@
+concept_settings_quality_landscape
+=> nrel_main_idtf: [качество ландшафта] (* <- lang_ru;; *);
+=> nrel_main_idtf: [quality landscape] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Качество ландшафта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Характеристика изменение которой приводит
+				к изменению качества ландшафта в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(качество ландшафта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки качества ландшафта средне влияет на производительность игры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

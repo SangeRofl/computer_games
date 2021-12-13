@@ -1,0 +1,66 @@
+concept_skyrim_skill_destruction
+=> nrel_main_idtf: [school of  destruction ] (* <- lang_en;; *);
+=> nrel_main_idtf: [школа разрушения ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.( школа разрушения )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [школа разрушения —  <b><sc_element sys_idtf="concept_skyrim_skill">навык</b></sc_element> из игры  <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>, относящийся к магической специализации. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Количество заклинаний школы разрушения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> существует  26 заклинаний школы разрушения.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Заклинания школы разрушения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Заклинания школы разрушения управляют огнем, холодом и электричеством. Каждая стихия имеет свое действие, помимо урона: 
+Огонь: заклинания огня поджигают противников, и они получают небольшой урон еще некоторое время. Если поджечь врага до того, как он закончил гореть, то новый эффект горения заменит предыдущий.
+Холод: заклинания холода замедляют и лишают запаса сил. Эффективны против вионов.
+Электричество: заклинания электричества лишают противника магической энергии (обычно отнимает вдвое меньше магии, чем здоровья). Эффективно против магов.
+] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Изучение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Мастерство в школе разрушения постигается успешным применением заклинаний на цель.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/destructoin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Созвездие школы разрушения)]   (*<-lang_ru;;*);;
+		*);;
+	*);
+
+
+<- sc_node_not_relation;;

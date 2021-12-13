@@ -1,0 +1,53 @@
+concept_apex_gear_backpack_rare
+=> nrel_main_idtf: [rare backpack (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [редкий рюкзак (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры рюкзака
+=> nrel_apex_additional_backpack_slots: 4;
+=> nrel_apex_overall_backpack_slots: 14;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (редкий рюкзак (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [редкий рюкзак (Apex Legends) - рюкзак, который увеличивает доступное количество слотов в рюкзаке легенды на 4 (всего 14) в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность редких рюкзаков на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Редкий рюкзак - второй по распространенности вид рюкзаков на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (редкий рюкзак)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/backpack/backpack_lvl2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

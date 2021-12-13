@@ -1,0 +1,42 @@
+gods_strength_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [God's Strength] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [God's Strength] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(God's Strength)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Sven концентрирует свою неконтролируемую силу, получая бонус к урону на 40 секунд.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(God's Strength)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Увеличивает только базовый урон и урон, даваемый основным атрибутом Sven. Бонусный урон не увеличивается.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [110];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/God's_Strength_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

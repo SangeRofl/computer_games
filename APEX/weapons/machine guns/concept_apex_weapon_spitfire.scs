@@ -1,0 +1,119 @@
+concept_apex_weapon_spitfire
+=> nrel_main_idtf: [M600 Spitfire] (* <- lang_en;; *);
+=> nrel_main_idtf: [M600 "Спитфайр"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_machine_gun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 512;
+=> nrel_weapon_damage_per_second: 170;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 36;
+=> nrel_apex_default_legend_common_helmet_damage: 32;
+=> nrel_apex_default_legend_rare_helmet_damage: 29;
+=> nrel_apex_default_legend_epic_helmet_damage: 27;
+=> nrel_apex_default_legend_legendary_helmet_damage: 27;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 38;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 33;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 30;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 28;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 28;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 31;
+=> nrel_apex_fortified_legend_common_helmet_damage: 27;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 25;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 23;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 23;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 18;
+=> nrel_apex_low_profile_legend_body_damage: 19;
+=> nrel_apex_fortified_legend_body_damage: 15;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 14;
+=> nrel_apex_low_profile_legend_leg_damage: 15;
+=> nrel_apex_fortified_legend_leg_damage: 12;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_zigzag;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 35;
+=> nrel_apex_common_magazine_capacity: 40;
+=> nrel_apex_rare_magazine_capacity: 45;
+=> nrel_apex_epic_magazine_capacity: 55;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_heavy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (M600 "Спитфайр")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [M600 "Спитфайр" - пулемет, который использует тяжелые патроны и имеет только автоматический тип стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_heavy_round;
+		concept_apex_weapon_machine_gun;
+        concept_apex_fire_mode_auto
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на M600 "Спитфайр")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 49 скинов на M600 "Спитфайр": 9 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (M600 "Спитфайр")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_spitfire.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,73 @@
+computer_game_need_for_speed_shift							//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed: Shift] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Shift] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_arcade;
+<- concept_simulator;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_slightly_mad_studios;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_3; xbox_360; ios;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: madness_engine;
+
+=> nrel_publication_date: date_15_9_2009;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Shift)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре автогонок, разработанная студией Slightly Mad Studios и изданная Electronic arts в 2009 году. Игра отличается уклоном в реализм, гонки проходят на официальных трассах. Это тринадцатая часть в игровой серии Need for Speed.
+                В Need for Speed: Shift всего 16 типов гонок, включая дрифтинг, который является одним из ключевых компонентов в режиме карьеры.
+                Ключевой особенностью является вид из кабины, свойственный таким симуляторам, как GTR 2.
+                В оригинальной серии Need for Speed вид из кабины гонщика последний раз был реализован в пятой части игры, Need for Speed: Porsche. При виде из кабины игрок может наклонять голову,
+                выглядывать из окна и всматриваться в зеркала бокового и заднего вида. ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_simulator;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_slightly_mad_studios;;
+                -> computer_game_need_for_speed_shift;;
+                -> concept_game_series_need_for_speed;;
+                -> concept_game_series_shift;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

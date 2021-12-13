@@ -1,0 +1,70 @@
+nrel_prequel
+=> nrel_main_idtf:
+	      [приквел*] (* <- lang_ru;; *);
+=> nrel_idtf: [являться приквелом*] (* <- lang_ru;; *);
+              [ally*] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_nrel_ally
+	(* 
+		=> nrel_main_idtf:
+			[опр. (приквел*)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> nrel_example: [игра, действия которой происходят до событий ранее созданной игры.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_using_constants: ... (* -> concept_computer_game;; -> nrel_interest;;  *);;
+	*);
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_prequel_concept
+	(* 
+		=> nrel_main_idtf:
+			[утв. (приквел, сиквел, часть*)]
+			(*
+			<- lang_ru;;
+             *);;
+
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [если игра пройдена, то можно пройти приквел.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+
+<- binary_relation (* <- arity (* <- concept_parameter;; *);;
+                              => nrel_measurement: 2;;
+                           *);
+=> nrel_first_domain: 
+	concept_computer_game;
+
+=> nrel_second_domain: 
+	concept_computer_game;
+
+=> nrel_definitional_domain: ... 
+                           (* <= nrel_combination: ...
+                                                 (* 
+                                                    <- concept_computer_game;;
+                                                    <- concept_computer_game;;
+                                                 *);;
+                           *);
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_role_relation;;
+
+nrel_interest
+=> nrel_main_idtf: [игра*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

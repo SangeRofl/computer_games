@@ -1,0 +1,45 @@
+nrel_baseline_protection
+=> nrel_main_idtf: [Baseline protection* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Базовый показатель защиты* ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Базовый показатель защиты*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Базовый показатель защиты* --- количество защиты, которую дает броня, без всяких улучшений, положительных или негативных эффектов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+	    concept_skyrim_armor;
+	    number
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_default_damage;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;
+
+antireflexive_relation -> nrel_baseline_protection;;
+antitransitive_relation -> nrel_baseline_protection;;
+antisymmetric_relation -> nrel_baseline_protection;;
+
+
+nrel_baseline_protection=> nrel_first_domain: concept_skyrim_armor;;
+nrel_baseline_protection => nrel_second_domain: number;;
+
+nrel_baseline_protection => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_skyrim_armor;
+	    number
+	};;
+*);;
+

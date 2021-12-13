@@ -1,0 +1,56 @@
+concept_game_series_battlefield								//-> concept_tactical_shooter;;??		
+
+=> nrel_main_idtf:[серия игр Battlefield] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Battlefield] (* <- lang_en;; *);
+
+//=> nrel_inclusion: 
+
+-> rrel_first_game: computer_game_battlefield_1942;
+-> computer_game_battlefield_vietnam;
+-> computer_game_battlefield_2;
+-> computer_game_battlefield_2_modern_combat;
+-> computer_game_battlefield_2142;
+-> computer_game_bad_company;
+-> computer_game_heroes;
+-> computer_game_1943;
+-> computer_game_bad_company_2;
+-> computer_game_play_4_free;
+-> computer_game_battlefield_3;
+-> computer_game_battlefield_4;
+-> computer_game_battlefield_hardline;
+-> computer_game_battlefield_1;
+-> rrel_last_game: computer_game_battlefield_5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_game_series;;
+//		-> concept_tactical_shooter;;
+		-> concept_first_person_view;;
+		-> company_dice;;
+		-> company_electronic_arts;;		
+	*);;
+		=> nrel_main_idtf: [Опр.(серия игр Battlefield)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Battlefield - серия компьютерных игр в жанре тактико-стратегического шутера от первого лица, разработанная шведской компанией EA Digital Illusions CE и издаваемая компанией Electronic Arts] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Battlefield)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из пятнадцати основных игр](* <- lang_ru;; *);;	//основная игра'???
+	*);;	
+*);
+
+
+<- sc_node_not_relation;;
+

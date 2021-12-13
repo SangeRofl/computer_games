@@ -1,0 +1,54 @@
+concept_battlefield_3_weapon_equipment_flame_arrester
+=> nrel_main_idtf: [flash suppressor (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пламегаситель (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_equipment;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (пламегаситель (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_flame_arrester">Пламегаситель</b></sc_element> - это 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment">модуль оружия Battlefield 3</b></sc_element>, 
+		снижающий <b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_up">вертикальную отдачу</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_weapon_equipment_flame_arrester;
+        concept_battlefield_3_weapon_equipment;
+        nrel_battlefield_3_weapon_recoil_up
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Характеристики пламегасителя Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_flame_arrester">Пламегаситель</b></sc_element> обладает следующими характеристиками:<br>
+			+ на 20% снижает <b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_up">вертикальную отдачу</b></sc_element>,<br>
+			+ убирает вспышку выстрела скрывая <b><sc_element sys_idtf="concept_battlefield_3_character">персонажа</b></sc_element>,<br>
+			- на 20% снижается <b><sc_element sys_idtf="nrel_battlefield_3_weapon_accuracy_1">точность при стрельбе от бедра</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_equipment_flame_arrester;
+        nrel_battlefield_3_weapon_recoil_up;
+        concept_battlefield_3_character;
+        nrel_battlefield_3_weapon_accuracy_1
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/flash.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

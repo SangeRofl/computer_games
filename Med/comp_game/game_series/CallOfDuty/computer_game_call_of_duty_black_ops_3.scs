@@ -1,0 +1,68 @@
+computer_game_call_of_duty_black_ops_3								//developers?
+=> nrel_main_idtf: [Call of Duty: Black Ops 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty: Black Ops 3] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_science_fiction;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_treyarch; company_raven_software; company_aspyr_media; company_beenox;
+=> nrel_publisher: company_activision; company_aspyr_media; company_softclub;
+=> nrel_localizer: company_activision;
+
+=> nrel_platform: concept_windows; concept_mac_os; xbox_360; xbox_one; playstation_3; playstation_4; nintendo_wii_u;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode; cooperative_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: iw_engine_3.0;
+
+//=> nrel_plot: [отсутствует];
+
+=> nrel_announcement_date: date_09_04_2015;
+
+=> nrel_publication_date: date_06_11_2015;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Call of Duty: Black Ops 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенная компьютерная игра в жанре научно-фантастического трехмерного шутера от первого лица, разработанная американской компанией Treyarch и изданная Activision, двенадцатая игра в серии игр Call of Duty и третья в сюжетной подсерии Black Ops] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_setting_science_fiction;;
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_treyarch;;
+		-> company_activision;;
+		-> computer_game_call_of_duty_black_ops;;
+		-> concept_game_series_call_of_duty;;
+		-> concept_game_series_call_of_duty;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,41 @@
+concept_game_settings
+=> nrel_main_idtf: [настройки игры] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game settings] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_settings_graphics;;
+	-> concept_settings_volume;;
+	-> concept_settings_control;;
+	=> nrel_main_idtf: [разбиение по типу характеристик] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Настройки игры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Совокупность характеристик изменение которых
+				приводит к изменению качества внешнего вида,
+				звука, и изменение управления в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Настройки игры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [С помощью настроек можно влиять на производительность] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

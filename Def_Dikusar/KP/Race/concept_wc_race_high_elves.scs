@@ -1,0 +1,70 @@
+concept_wc_race_high_elves
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_horde;
+
+=> nrel_main_idtf:
+      [Высшие эльфы]
+      (*<-lang_ru;;*);
+       [High Elves]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Высокие эльфы] (* <- lang_ru;; *);
+=> nrel_idtf: [высшие эльфы] (* <- lang_ru;; *);
+=> nrel_idtf: [Эльфы крови] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Высшие эльфы)] (* <- lang_ru;; *);;
+      => nrel_using_constants: {
+      warcraft_night_elves;
+      concept_warcraft_kalimdor;
+      concept_warcraft_eastern_kingdoms
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Высшие эльфы, или кель'дораи (дарнасск. - 
+дети благородного происхождения ; талассийск. - 
+высокие или высшие эльфы) - раса, что произошла 
+от Высокорожденных <b><sc_element sys_idtf="warcraft_night_elves">ночных эльфов</sc_element></b>, 
+которые оставив <b><sc_element sys_idtf="concept_warcraft_kalimdor">Калимдор</sc_element></b>, поселились на континенте 
+<b><sc_element sys_idtf="concept_warcraft_eastern_kingdoms">Восточные Королевства</sc_element></b> и основали королевство Кель'Талас.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Высшие эльфы)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      game_character_sargeras;
+      concept_the_burning_legion
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Высокие эльфы когда-то были значительной силой на континенте, 
+но в последнее время их численность резко сократилась - 
+90% их расы были убиты в третьей войне, после этого еще 90% 
+выживших сменили свое название на 
+"эльфы крови" в память о погибших 
+братьях и перестали считать себя Высшими эльфами](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://BloodElvesSots.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+
+

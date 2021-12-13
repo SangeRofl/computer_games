@@ -1,0 +1,43 @@
+concept_dead_by_daylight_shroud_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Платок)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Платок)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Платок)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Платок) - подношения, влияющие на места появления выживших при загрузке на локацию.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Платок)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения-платки не раскрываются при сгорании, т.к. они являются секретными.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Платок)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Эффекты подношений-платков не складываются.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

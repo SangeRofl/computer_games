@@ -1,0 +1,30 @@
+concept_settings_brightness
+=> nrel_main_idtf: [яркость] (* <- lang_ru;; *);
+=> nrel_main_idtf: [brightness] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(яркость)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Характеристика изменение которой приводит
+				к изменению яркости в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(яркость)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки размытия слабо влияет на производительность игры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

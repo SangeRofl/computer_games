@@ -1,0 +1,48 @@
+concept_eft_shrapnel_f1
+=> nrel_main_idtf: [F-1(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ф-1(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_throwingweapon_shrapnel;
+
+=> nrel_eft_weapon_weight: 0.6;
+=> nrel_eft_weapon_explosion_delay: 3.5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ф-1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Ф-1 — ручная противопехотная оборонительная граната.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon_shrapnel
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение Ф-1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предназначена для поражения живой силы в оборонительном бою.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Ф-1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/F1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

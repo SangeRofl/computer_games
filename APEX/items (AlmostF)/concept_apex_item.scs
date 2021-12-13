@@ -1,0 +1,44 @@
+concept_apex_item
+=> nrel_main_idtf: [item (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [предмет (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_grenade;;
+    -> concept_apex_ammo;;
+    -> concept_apex_attachment;;
+    -> concept_apex_consumable;;
+    -> concept_apex_gear;;
+	=> nrel_main_idtf:[Разбиение по классам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (предмет (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [предмет (Apex Legends) - вещь, которую можно найти на игровой карте во время матча и использовать по назначению в зависимости от типа предмета в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_map;
+        concept_match
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность предметов на игровой карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В начале матча все предметы появляются на карте, после чего не восстанавливаются при их подборе каким-либо игроком.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+        concept_apex_map;
+		concept_apex_legend
+	};;
+*);
+
+<- concept_item;
+<- sc_node_not_relation;;

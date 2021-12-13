@@ -1,0 +1,54 @@
+concept_dead_by_daylight_entity <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Сущность(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Entity(Dead by Daylight)]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Сущность(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Нестандартное воплощение <b><sc_element sys_idtf = "concept_dead_by_daylight_killer">Убийцы</b></sc_element> , которое присутствует в различных аспектах игры Dead by Daylight.]
+            (*<-lang_ru;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Сущность(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Сущность не доступна для выбора при игре за одну из сторон, не обладает именем и не может быть уничтожена или остановлена кем-либо из <b><sc_element sys_idtf = "concept_character">персонажей</b></sc_element> игры.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Сущность(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Сущность может вмешиваться в игровой процесс: блокировать <b><sc_element sys_idtf = "concept_dead_by_daylight_generator">генераторы</b></sc_element>, блокировать выходы, влиять на количество <b><sc_element sys_idtf = "concept_dead_by_daylight_hook">крюков</b></sc_element>, сундуков и генераторов в игре при наличии соответствующих <b><sc_element sys_idtf = "concept_ability">способностей</b></sc_element> или <b><sc_element sys_idtf = "concept_dead_by_daylight_offering">подношений</b></sc_element> у <b><sc_element sys_idtf = "concept_character">персонажей</b></sc_element> игры.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://../pikchi/dbd_entity.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+<= nrel_character: computer_game_dead_by_daylight;;
+

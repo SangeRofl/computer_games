@@ -1,0 +1,30 @@
+concept_setting_victorian_gothic
+=> nrel_main_idtf: [викторианская готическая эпоха] (* <- lang_ru;; *);
+=> nrel_idtf: [victorian gothic] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(викторианская готическая эпоха)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [вид сеттинга, при котором действие в компьютерной игре происходит в Европе, здания построены в готическом стиле, окружающий мир выполнен в тёмных тонах.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(викторианская готическая эпоха)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Персонажами часто являются вампиры, оборотни и т.д.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

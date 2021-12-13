@@ -1,0 +1,30 @@
+concept_setting_arabic_colture
+=> nrel_main_idtf: [арабская культура] (* <- lang_ru;; *);
+=> nrel_idtf: [arabic colture] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(арабская культура)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действия компьютерной игры отражают культуру арабских стран] (* <- lang_ru;; *);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(арабская культура)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх присутствуют мусульмане] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,42 @@
+computer_game_cs_go
+=> nrel_main_idtf: [CS:GO] (* <- lang_en;; *);
+=> nrel_main_idtf: [CS:GO] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_shooter;
+=>nrel_maximum_number_of_players: number5;
+=>nrel_minimum_number_of_players: number1;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_valve;
+=> nrel_developer: company_valve;
+=> nrel_publication_date: date_2011;
+<- concept_setting_real_world;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine: sourse;
+=> nrel_plot: [отсутствует];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(CS:GO)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от первого лица в жанре шутер, выпущена на компанией Valve в 2011 году на платформе Windows. Реализована на движке sourse. Многопользовательская с отсутствием сюжета. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/cs_go.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

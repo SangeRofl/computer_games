@@ -1,0 +1,82 @@
+concept_battlefield_3_weapon_aek971
+=> nrel_main_idtf: [AEK-971 (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [AEK-971 (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_assault_rifle;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (AEK-971 (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Штурмовая винтовка AEK-971 была разработана в качестве возможного последователя АК-74 в серии автоматов и отличается уникальной системой смягчения отдачи. 
+		Высокая скорострельность АЕК-971 делает его превосходным в ближнем бою, но сложным в обращении.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (AEK-971 Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Открывается за 60000 очков <b><sc_element sys_idtf="concept_battlefield_3_class_assault">штурмовика</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_aek971;
+        concept_battlefield_3_class_assault
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (AEK-971 Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [При стрельбе из <b><sc_element sys_idtf="concept_battlefield_3_weapon_aek971">AEK-971</b></sc_element> на большой дистанции стрелкам следует переключаться в 
+		<b><sc_element sys_idtf="concept_weapon_single_fire_mode">полуавтоматический режим</b></sc_element> или в 
+		<b><sc_element sys_idtf="concept_weapon_burst_fire_mode">режим стрельбы очередями с отсечкой</b></sc_element> по 3 патрона.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_aek971
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_thickened_trunk; 
+											 concept_battlefield_3_weapon_equipment_front_handle; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+											 concept_battlefield_3_weapon_equipment_flame_arrester;
+
+=> nrel_battlefield_3_weapon_max_damage: 25.0;
+=> nrel_battlefield_3_weapon_max_damage: 18.4;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 2.65;
+=> nrel_battlefield_3_weapon_full_reload_time: 3.72;
+=> nrel_battlefield_3_weapon_magazine_capacity: 30;
+=> nrel_battlefield_3_weapon_max_damage_distance: 8;
+=> nrel_battlefield_3_weapon_min_damage_distance: 50;
+=> nrel_battlefield_3_weapon_rate_of_fire: 900;
+=> nrel_battlefield_3_weapon_recoil_up: 0.2k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.5k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.5k;
+=> nrel_weapon_fire_mode: concept_weapon_auto_fire_mode; concept_weapon_single_fire_mode; concept_weapon_burst_fire_mode; 
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/aek971.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

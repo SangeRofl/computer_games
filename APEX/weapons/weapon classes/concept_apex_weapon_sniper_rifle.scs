@@ -1,0 +1,27 @@
+concept_apex_weapon_sniper_rifle
+=> nrel_main_idtf: [sniper rifle (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [снайперская винтовка (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(снайперская винтовка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [снайперская винтовка (Apex Legends) — боевая винтовка, конструкция которой обеспечивает повышенную точность стрельбы, имеющая низкую скорострельность, высокий урон и предназначенная для поражения персонажей противника в дальнем бою в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры снайперских винтовок в игре 'Apex Legends')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Apex Legends' существует 5 экземпляров снайперских винтовок.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

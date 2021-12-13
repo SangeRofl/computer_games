@@ -1,0 +1,65 @@
+concept_computer_game_resident_evil_2_2019
+
+=> nrel_main_idtf:     
+	 [Resident Evil 2 (2019)]   (*<-lang_ru;;*);
+      [Resident Evil 2 (2019)]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_puzzle;
+<-concept_setting_invasion_of_zombie;
+
+<=nrel_remake: concept_computer_game_resident_evil_2;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_announcement_date: date_12_08_2015;
+=>nrel_publication_date: date_25.01.2019;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: re_engine;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom_rd_division;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_one;
+concept_nintendo_switch;
+concept_playstation_4
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 2 (2019))] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 2 (2019) — компьютерная игра в жанре survival horror, часть серии игр Resident Evil, разработанная и выпущенная компанией Capcom в 2019 году для PlayStation 4, Xbox One и Microsoft Windows. Ремейк одноимённой игры 1998 года .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_2_2019.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 2 (2019))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ В отличие от оригинальной игры 1998 года, игровой мир которой представлен нарисованными задниками, по которым «перемещались» трёхмерные модели героев и врагов, игровой мир ремейка представлен полноценными трёхмерными уровнями.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

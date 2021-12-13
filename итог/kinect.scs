@@ -1,0 +1,52 @@
+concept_kinect  //это системный идентификатор
+=> nrel_main_idtf:
+	[кинект] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество кинектов] (* <- lang_ru;; *);    // обычные идентификаторы
+	[kinect] (* <- lang_en;; *);
+
+
+<= nrel_inclusion:
+	game_controller (* => nrel_main_idtf: [игровой контроллер] (* <- lang_ru;; *);; *);    //включение
+
+
+->rrel_example: xbox_kinect 
+(* => nrel_main_idtf: [xbox кинект ] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_kinect        //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(кинект)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Kinect  — бесконтактный сенсорный игровой контроллер] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_game_controller (*
+=> nrel_main_idtf: [игровой контроллер] (* <- lang_ru;; *);; *);;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_kinect            //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(консоль, пкы)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Для каждого кинекта нужна консоль или пк] (* <- lang_ru;; *);;
+
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла

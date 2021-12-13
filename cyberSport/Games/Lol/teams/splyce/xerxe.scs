@@ -1,0 +1,49 @@
+xerxe
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Andrei "Xerxe" Dragomir](* <-lang_en;; *);
+		[Андрей "Xerxe" Драгомир](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Xerxe](* <-lang_en;; *);
+
+	<-player_lol;
+	
+	=>nrel_citizen_of: Romania;
+	=>nrel_surname: Dragomir;
+	=>nrel_first_name: Andrei;
+	=>nrel_nickname: Xerxe;
+	=>nrel_birthday: [05.11.1999];
+	=>nrel_gamerole: jungler_lol;
+	
+	<=nrel_with_whom: contract_xerxe_and_unicorns_of_love_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Xerxe and Unicorns Of Love](* <-lang_en;; *);
+			[Контракт между Xerxe и Unicorns Of Love](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: unicorns_of_love_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_12_2016;;
+			->rrel_end: 24_11_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_xerxe_and_splyce_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Xerxe and Splyce](* <-lang_en;; *);
+			[Контракт между Xerxe и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 28_11_2017;;
+			->rrel_end: 18_11_2019;;
+		*);;
+	*);;
+

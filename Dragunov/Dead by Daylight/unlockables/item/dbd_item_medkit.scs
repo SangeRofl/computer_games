@@ -1,0 +1,43 @@
+concept_dead_by_daylight_item_medkit <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [аптечка(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [medkit(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Аптечка(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Аптечка - тип предмета в Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аптечка(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Аптечка используется выжившими для лечения себя и других выживших.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аптечка(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Аддоны могут увеличить скорость лечения и количество зарядов аптечки.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

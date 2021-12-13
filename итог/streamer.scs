@@ -1,0 +1,43 @@
+concept_game_streamer //это системный идентификатор
+=> nrel_main_idtf:
+	[стример игр] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество стримеров игр] (* <- lang_ru;; *);    // обычные идентификаторы
+	[game streamer] (* <- lang_en;; *);
+
+
+
+->rrel_example: game_streamer_Den 
+(* => nrel_main_idtf: [стример игр Ден] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_game_streamer          //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(стример игр)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Это человек, который показывает в режиме онлайн то, что во что он играет] (* <- lang_ru;; *);;
+			*);;
+		
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_game_streamer                //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(стрим, видеоигра)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Каждый стример игр снимает стримы видеоигр] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла

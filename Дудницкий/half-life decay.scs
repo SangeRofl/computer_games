@@ -1,0 +1,54 @@
+concept_computer_game_half_life_decay
+
+=> nrel_main_idtf:
+		[Half-Life: Decay] (* <-lang_ru;;*);
+		[Half-Life: Decay] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_multiplayer_game;
+=> nrel_publication_date: date_14.11.2001;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	GoldSource;
+=> nrel_publisher: Sierra_Enterteiment;
+=> nrel_developer: Gearbox_Software;
+=> nrel_platform: {
+concept_playstation_2
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life: Decay ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life: Decay — третье дополнение для шутера от первого лица Half-Life, разработанное компанией Gearbox Software
+ специально для игровой приставки PlayStation 2. Дополнение было выпущено компанией Sierra Entertainment вместе с портированной версией Half-Life 14 ноября 2001 года.]  (*<- lang_ru ;; => nrel_format: format_html;;*);;
+*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_d.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life: Decay) ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[ В отличие от других игр серии, Half-Life: Decay рассчитана на двух игроков и их совместное прохождение игры в режиме раздвоенного экрана.
+Игрок снова оказывается свидетелем инцидента в Исследовательском центре «Чёрная Меза», но в этот раз уже в роли коллег Гордона Фримена — Джины Кросс и Колетт Грин. ] (* <-lang_ru ;;  => nrel_format: format_html;;*);;
+*);;
+*);;

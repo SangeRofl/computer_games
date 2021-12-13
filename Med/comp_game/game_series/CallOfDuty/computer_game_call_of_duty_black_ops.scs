@@ -1,0 +1,65 @@
+computer_game_call_of_duty_black_ops								//gameMode?
+=> nrel_main_idtf: [Call of Duty: Black Ops] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty: Black Ops] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_real_world;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_treyarch;
+=> nrel_publisher: company_activision; company_square_enix;
+=> nrel_localizer: company_1c;
+
+=> nrel_platform: concept_windows; xbox_360; playstation_3; nintendo_wii; nintendo_ds; mac_os_x; steam;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode; cooperative_game_mode; 	//splitScreen??
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: iw_engine_3.0;
+
+//=> nrel_plot: [отсутствует];
+
+=> nrel_announcement_date: date_30_04_2010;
+
+=> nrel_publication_date: date_09_11_2010;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Call of Duty: Black Ops)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра в жанре трехмерного шутера от первого лица, разработанная американской компанией Treyarch и изданная Activision, седьмая игра в серии игр Call of Duty, косвенно является сиквелом Call of Duty: World at War] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_treyarch;;
+		-> company_activision;;
+		-> concept_game_series_call_of_duty;;
+		-> computer_game_call_of_duty_world_at_war;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,7 @@
+
+nrel_be_better
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[быть лучше*](*<-lang_ru;;*);
+		[be beter*](*<-lang_en;;*);;

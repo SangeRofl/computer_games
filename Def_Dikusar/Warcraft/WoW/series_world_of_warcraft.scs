@@ -1,0 +1,40 @@
+concept_game_series_world_of_warcraft			
+
+=> nrel_main_idtf:[серия игр World of Warcraft] (* <- lang_ru;; *);
+=> nrel_idtf:[серия игр  «Мир Военного ремесла»] (* <- lang_ru;; *);
+=> nrel_idtf:[серия игр  «WoW»] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series  World of Warcraft] (* <- lang_en;; *);
+->rrel_first_game: computer_game_world_of_warcraft;
+-> computer_game_world_of_warcraft_the_burning_crusade;
+-> computer_game_world_of_warcraft_wrath_of_the_lich_king;
+-> computer_game_world_of_warcraft_cataclysm;
+-> computer_game_world_of_warcraft_mists_of_pandaria;
+-> computer_game_world_of_warcraft_warlords_of_draenor;
+->computer_game_world_of_warcraft_legion;
+->computer_game_world_of_warcraft_battle_for_azeroth;
+->computer_game_world_of_warcraft_classic;
+->rrel_last_game: computer_game_world_of_warcraft_shadowlands;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_game_series
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр World of warcraft)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [World of warcraft - серия компьютерных игр в жанре concept_MMORPG, разработываемых компанией Blizzard.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр World of warcraft)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из 10 игр.](* <- lang_ru;; *);;	
+	*);;	
+*);
+<- sc_node_not_relation;;

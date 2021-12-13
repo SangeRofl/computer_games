@@ -1,0 +1,51 @@
+concept_computer_game_wot_blitz
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_simulator_of_tanks;
+<-concept_massively_multiplayer_online_game;
+<-concept_free_to_play_computer_game;
+<-concept_MMORPG;
+<-concept_setting_world_war_the_second;
+
+=> nrel_main_idtf:
+      [World of Tanks Blitz]
+      (*<-lang_ru;;*);
+       [World of Tanks Blitz]
+       (*<-lang_en;;*);  
+
+=>nrel_tank_machine: concept_tank_machine;
+=>nrel_publication_date: date_04.12.2014;
+=>nrel_announcement_date: date_05.05.2013;
+=>nrel_plot:       [Отсутсвует] (* <- lang_ru;; *);
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: BigWorld;
+=>nrel_game_engine: DAVA_Fromework;
+=>nrel_publisher: company_Wargaming.net;
+=>nrel_developer: company_Wargaming.net;
+=>nrel_platform: {
+concept_windows;
+concept_mac_os;
+android;
+ios
+};
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/blitz.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (танк)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[World of Tanks Blitz — массовая многопользовательская онлайн-игра для смартфонов, планшетов на базе платформ iOS и Android, а также для компьютеров на платформе Windows 10 и Mac OS, в том числе игра доступна для скачивания в игровом магазине Steam.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

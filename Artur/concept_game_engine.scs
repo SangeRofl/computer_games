@@ -1,0 +1,60 @@
+concept_game_engine
+=> nrel_main_idtf: [игровой движок] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game engine] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_game_engine_haiku;;
+	-> concept_game_engine_windows;;
+	-> concept_game_engine_mac_os;;
+	-> concept_game_engine_linux;;
+	=> nrel_main_idtf: [разбиение по операционным системам] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_game_engine_free;;
+	-> concept_game_engine_commercial;;
+	-> concept_game_engine_internal;;
+	-> concept_game_proprietary;;
+	=> nrel_main_idtf: [разбиение по типу лицензии] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_game_engine_bioware;;
+	-> concept_game_engine_croteam;;
+	-> concept_game_engine_crytek;;
+	-> concept_game_engine_id_software;;
+	-> concept_game_engine_ubisoft;;
+	=> nrel_main_idtf: [разбиение по разработчикам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок - базовое программное обеспечение компьютерной игры] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_software;;
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Разделение игры и игрового движка
+		часто расплывчато, и не всегда студии
+		проводят чёткую границу между ними.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

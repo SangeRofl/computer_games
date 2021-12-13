@@ -1,0 +1,6 @@
+concept_apex_attachment_1x_2x_holo
+=> nrel_main_idtf: ["1x-2x Variable Holo" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["1x-2x Регулируемый Голографический" прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

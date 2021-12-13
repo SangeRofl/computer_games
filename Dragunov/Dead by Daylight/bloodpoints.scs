@@ -1,0 +1,57 @@
+concept_dead_by_daylight_bloodpoints <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Bloodpoints]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Очки крови]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Очки крови(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Очки крови - игровая валюта, которая необходима для приобретения дополнительных возможностей, расположенных в <b><sc_element sys_idtf = "concept_dead_by_daylight_bloodweb">паутине крови</b></sc_element>. Является общей для всех <b><sc_element sys_idtf = concept_character>персонажей</b></sc_element> в рамках одного профиля (выигрывая одним, можно тратить на других).]
+            (*<-lang_ru;;=> nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Очки крови(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Очки крови можно получить любым из следующих способов: 
+                Выполняя <b><sc_element sys_idtf = "concept_daily_quest">ежедневные ритуалы</b></sc_element>;
+                Совершая игровые активности в различных категориях;
+                Покупая уже открытые <b><sc_element sys_idtf = "concept_dead_by_daylight_perk_teachable">обучающие навыки</b></sc_element> в Храме Тайн;
+                Используя специальные <b><sc_element sys_idtf = "concept_dead_by_daylight_offering">подношения</b></sc_element> и/или навыки для получения доп. очков.]
+            (*<- lang_ru;;=> nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Очки крови(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Максимальное количество очков крови, котоое может находиться на счету профиля - 1,000,000.]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/bloodpoints.png"(*
+            => nrel_format: format_png;;
+        *);;
+    *);;
+*);
+
+<= nrel_in_game_currency: computer_game_dead_by_daylight;;

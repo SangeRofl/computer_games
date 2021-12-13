@@ -1,0 +1,6 @@
+concept_apex_recoil_vertical_zigzag
+=> nrel_main_idtf: [vertical zigzag recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [вертикальная зигзагообразная отдача] (* <- lang_ru;; *);
+
+<- concept_apex_recoil;
+<- sc_node_not_relation;;

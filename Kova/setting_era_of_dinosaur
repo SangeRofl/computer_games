@@ -1,0 +1,30 @@
+concept_setting_era_of_dinosaur
+=> nrel_main_idtf: [эра динозавров] (* <- lang_ru;; *);
+=> nrel_idtf: [era of dinosaur] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(эра динозавров)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+                -> [Вид сеттинга, при котором действие в компьютерной игре происходит во времена жизни динозавров] (* <- lang_ru;; *);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(эра динозавров)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Чаще всего персонажами являются динозавры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

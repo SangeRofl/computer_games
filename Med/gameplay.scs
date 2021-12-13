@@ -1,0 +1,47 @@
+concept_gameplay
+
+=> nrel_main_idtf:[геймплей] (* <- lang_ru;; *);
+=> nrel_main_idtf:[gameplay] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_player;; 			//igrok
+	*);;
+		=> nrel_main_idtf: [Опр.(геймплей)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Геймплей - компонент игры, отвечающий за интерактивное взаимодействие игры и игрока] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+=> nrel_inclusion: concept_game_mechanics;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(геймплей, компьютерная игра, игрок*, игровой мир)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Геймплей описывает, как игрок взаимодействует с игровым миром, как игровой мир реагирует на действия игрока и как определяется набор действий, который предлагает игроку игра](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(геймплей, графика, звуковое сопровождение)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Геймплей не относится к таким компонентам игры, как графика и звуковое сопровождение](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

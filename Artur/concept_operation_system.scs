@@ -1,0 +1,45 @@
+concept_operation_system
+=> nrel_main_idtf: [операционная система] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Operation system] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_microsoft_windows;;
+	-> concept_linux;;
+	-> consept_mac_os;;
+	=> nrel_main_idtf: [разбиение по производителю] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Операционная система)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Операционная система — комплекс программ,
+				обеспечивающий управление аппаратными средствами
+				компьютера, организующий работу с файлами и
+				выполнение прикладных программ, осуществляющий ввод и вывод данных] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer;;
+		-> concept_data;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Операционная система)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Операционная система -  комплекс взаимосвязанных
+		программ, предназначенных для управления ресурсами
+		компьютера и организации взаимодействия с пользователем.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,36 @@
+concept_weapon_single_fire_mode
+=> nrel_main_idtf: [Single shooting mode] (* <- lang_en;; *);
+=> nrel_main_idtf: [Одиночный режим стрельбы] (* <- lang_ru;; *);
+
+<- concept_weapon_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Одиночный режим стрельбы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Одиночный режим стрельбы — 
+			<b><sc_element sys_idtf="concept_weapon_fire_mode">тип стрельбы</b></sc_element> из 
+			<b><sc_element sys_idtf="concept_weapon">оружия</b></sc_element>, при котором за одно нажатие на курок выпускается 1 патрон.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Одиночный режим стрельбы в Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_weapon_single_fire_mode">Одиночный режим стрельбы</b></sc_element> присуствует у каждого 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapons">экземпляра оружия в Battlefield 3</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        concept_weapon_single_fire_mode
+
+	};;
+*);;

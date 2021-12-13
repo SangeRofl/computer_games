@@ -1,0 +1,6 @@
+nrel_consists_of
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[состоит из*](*<-lang_ru;;*);
+		[consists_of*](*<-lang_en;;*);;

@@ -1,0 +1,48 @@
+computer_game_world_of_warcraft_shadowlands
+=> nrel_idtf: [World of warcraft shadowlands] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Shadowlands] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Shadowlands] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2020;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Сильвана Ветрокрылая, бывший вождь Орды, пронзила покров, отделяющий Азерот от царства мёртвых, тем самым запустив цепочку событий, которая может нарушить равновесие между силами жизни и смерти. Герои Азерота столкнутся с чудесами и ужасами загробного мира, пытаясь предотвратить последствия действий Сильваны. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<- concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft shadowlands)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft shadowlands - компьютерная игра в жанре MMORPG, будет выпущена компанией Blizzard в 2020 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft shadowlands)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Для Shadowlands предусмотрено «сплющивание уровней» — переход на новую шкалу уровней развития персонажа как для вновь созданных, так и для уже существующих игровых персонажей.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wow_shad.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,30 @@
+concept_setting_crusade
+=> nrel_main_idtf: [рыцарские походы] (* <- lang_ru;; *);
+=> nrel_idtf: [crusade] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(рыцарские походы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит во времена рыцарских походов] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(рыцарские походы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх большую роль играет религия] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

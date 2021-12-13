@@ -1,0 +1,39 @@
+concept_game_company
+
+=> nrel_main_idtf:[игровая компания] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game company] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(компьютерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Игровая компания - это компания, занимающаяся разработкой, продвижение и продажей компьютерных игр] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_company;;
+	*);;
+*);
+
+
+<= nrel_inclusion: concept_company;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, игровая компания, разработчик*, издатель*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Игровая компания может быть как разработчиком компьютерных игр, так и издателем компьютерных игр](* <- lang_ru;; *);;
+	*);;	
+*);
+
+
+
+<- sc_node_not_relation;;
+

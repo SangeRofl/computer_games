@@ -1,0 +1,42 @@
+walrus_punch_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Walrus Punch] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Walrus Punch] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Walrus Punch)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой совершает свой коронный удар — настолько мощный, что подбрасывает жертву в воздух, нанося ей критический урон. После приземления жертва будет замедлена.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Walrus Punch)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Дальность применения Walrus PUNCH! всегда равна дальности атаки заклинателя.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [12];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Walrus_Punch_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

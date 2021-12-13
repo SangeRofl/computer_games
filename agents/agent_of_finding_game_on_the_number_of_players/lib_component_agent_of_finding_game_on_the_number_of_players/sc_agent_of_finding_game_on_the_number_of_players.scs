@@ -1,0 +1,51 @@
+sc_agent_of_finding_game_on_the_number_of_players
+=> nrel_main_idtf:
+	[sc-агент поиска игры от количества игроков] (* <- lang_ru;; *);
+	[sc-agent of finding game on the number of players] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_finding_game_on_the_number_of_players_condition => ..sc_agent_of_finding_game_on_the_number_of_players_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_finding_game_on_the_number_of_players
+	};
+
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_game_on_the_number_of_players
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_game_on_the_number_of_players
+		};;
+		
+	-> sc_agent_of_finding_game_on_the_number_of_players_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_game_on_the_number_of_players_condition
+= [*
+	question_finding_game_on_the_number_of_players_-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;
+
+..sc_agent_of_finding_game_on_the_number_of_players_result
+= [*
+	question_finding_game_on_the_number_of_players _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;

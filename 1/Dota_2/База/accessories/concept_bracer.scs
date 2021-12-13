@@ -1,0 +1,39 @@
+concept_bracer
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [bracer] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Наручи] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(bracer)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Наручи — типичный выбор для укрепления защиты и продления жизни в бою.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(bracer)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Герои покупают Bracer для большей выживаемости.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/bracer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

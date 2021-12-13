@@ -1,0 +1,76 @@
+company_behaviour_interactive <- concept_game_company;
+=> nrel_main_idtf:
+    [Behaviour Interactive]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Behaviour Interactive]
+    (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Behaviour Interactive]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Behaviour Interactive — независимая канадская компания, специализирующаяся на разработке <b><sc_element sys_idtf="concept_computer_game">компьютерных игр</b></sc_element>. Основана в 1992 году. Штаб-квартира расположена в Канаде, в городе Монреаль.]
+            (*<-lang_ru;;=> nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Behaviour Interactive]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Два дополнительных офиса компании находятся в городах: Квебек (Канада) и Сантьяго (Чили).]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Behaviour Interactive]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [С момента создания студия выпустила 120 игр на различных платформах. Компания работает с ведущими издателями игровой индустрии: Activision, Bethesda, Electronic Arts, Konami и другие.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Behaviour Interactive]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [До 2010 года студия называлась Artificial Mind and Movement]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Behaviour Interactive]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Веб-сайт компании - bhvr.com]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/behaviour_interacive.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

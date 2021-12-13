@@ -1,0 +1,49 @@
+concept_settings_graphics
+=> nrel_main_idtf: [настройки графики] (* <- lang_ru;; *);
+=> nrel_main_idtf: [graphics settings] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_settings_main_quality;;
+	-> concept_settings_smoothing;;
+	-> concept_settings_shadows;;
+	-> concept_settings_textures;;
+	-> concept_settings_effects;;
+	-> concept_settings_foliage;;
+	-> concept_settings_visibility_range;;
+	-> concept_settings_vertical_sync;;
+	-> concept_settings_motion_blur;;
+	-> concept_settings_brightness;;
+	-> concept_settings_quality_landscape;;
+
+	=> nrel_main_idtf: [разбиение по типу характеристик] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(настройки графики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Совокупность характеристик изменение которых
+				приводит к изменению качества внешнего вида в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Настройки графики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки графики сильнее всего влияют на производительность игры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

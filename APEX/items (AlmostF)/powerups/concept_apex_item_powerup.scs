@@ -1,0 +1,41 @@
+concept_apex_item_powerup
+=> nrel_main_idtf: [item powerup (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [улучшение предмета (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_gear_powerup;;
+	-> concept_apex_attachment_hopup_powerup;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (улучшение предмета (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Улучшение предмета (Apex Legends) - способность предмета, которая улучшает показатели легенды в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы предметов с улучшениями)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На момент создания статьи в игре существует только два типа предметов с улучшениями: экипировка легендарного уровня и усиляющие модификации.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_attachment_hopup
+	};;
+*);
+
+<- concept_apex_ability;
+<- sc_node_not_relation;;

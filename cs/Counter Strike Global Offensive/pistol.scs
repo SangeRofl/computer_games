@@ -1,0 +1,83 @@
+pistol
+    <-sc_node_not_relation;
+	<= nrel_inclusion: concept_shop ;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [пистолет](* <-lang_ru;; *);
+        [pistol](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Glock-18](*<- lang_ru;;*);
+            [Glock-18](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (пистолет)] (* <- lang_ru;; *);
+            [Def. (pistol)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Пистолет — ручное короткоствольное стрелковое оружие, предназначенное для поражения целей на дальности до 25–50 метров.](*<- lang_ru;;*);
+                [Pistol - handheld short-range small arms designed to hit targets at ranges up to 25-50 meters.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_weapons;;
+            ->nrel_target;;
+            ->nrel_range;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        pistol;
+		century
+    };;
+    => nrel_main_idtf: 
+        [Утв.(пистолет, век)] (* <- lang_ru;; *);
+        [Expl.(pistol, century)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Первые пистолеты появились в 15 веке.](*<- lang_ru;;*);
+            [The first pistols appeared in the 15th century.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+	self_loading_pistol;
+	automatic_pistol
+};
+
+=> nrel_inclusion:  	Glock_18 ;
+			USP_S ;
+			P250 ;
+			Five_Seven ;
+			Elite ;
+			Desert_Eagle ;
+			P2000 ;
+			CZ_75_Auto ;
+			Tec_9 ;
+			Revolver_R8 ;;
+
+Glock_18 => nrel_price : [200];;
+USP_S => nrel_price : [200];;
+P250 => nrel_price : [300];;
+Five_Seven => nrel_price : [500];;
+Elite => nrel_price : [400];;
+Desert_Eagle => nrel_price : [700];;
+P2000 => nrel_price : [200];;
+CZ_75_Auto => nrel_price : [500];;
+Tec_9 => nrel_price : [500];;
+Revolver_R8 => nrel_price : [600];;
+

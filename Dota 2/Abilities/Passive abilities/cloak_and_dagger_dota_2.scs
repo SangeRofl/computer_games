@@ -1,0 +1,45 @@
+cloak_and_dagger_dota_2
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [Cloak and Dagger] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Cloak and Dagger] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Cloak and Dagger)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой уходит в тень, становясь невидимым. Каждая его атака со спины наносит дополнительный урон, который зависит от ловкости. Если атаковать врага, невидимость пропадёт. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Cloak and Dagger)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [В невидимости Riki не атакует автоматически врагов. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [0];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Cloak_and_Dagger_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

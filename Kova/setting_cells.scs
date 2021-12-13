@@ -1,0 +1,31 @@
+concept_setting_cells
+=> nrel_main_idtf: [игры на клеточном уровне] (* <- lang_ru;; *);
+=> nrel_idtf: [simple organisms] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игры на клеточном уровне)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        	-> [Вид сеттинга, при котором действие в компьютерной игре происходит во времена зарождения жизни, а персонажи отождествляются с клетками, бактериями, вирусами и т.д.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+		-> concept_character;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игры на клеточном уровне)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Играя в такие игры можно изучать биологию] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

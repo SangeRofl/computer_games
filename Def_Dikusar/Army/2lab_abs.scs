@@ -1,0 +1,36 @@
+concept_army
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [армия]
+      (*<-lang_ru;;*);
+       [army]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [войско]
+      (*<-lang_ru;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (постройка)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+concept_unit;
+concept_player
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_army">Войско - совокупность всех юнитов игрока] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+/*<= nrel_first_domain:
+     nrel_cost;
+     nrel_wood;*/
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (о войске)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Существуют различные виды построений войска.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

@@ -1,0 +1,68 @@
+computer_game_call_of_duty_black_ops_4								//developers and gameMode?
+=> nrel_main_idtf: [Call of Duty: Black Ops 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty: Black Ops 4] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_real_world;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_treyarch; company_raven_software; company_beenox;
+=> nrel_publisher: company_activision; company_softclub;
+//=> nrel_localizer: company_activision;
+
+=> nrel_platform: concept_windows; xbox_one; playstation_4;
+
+=> nrel_game_mode: multiplayer_game_mode; cooperative_game_mode;				 //battle_royale??
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: iw_engine_3.0;
+
+//=> nrel_plot: [отсутствует];
+
+=> nrel_announcement_date: date_08_03_2018;
+
+=> nrel_publication_date: date_12_10_2018;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Call of Duty: Black Ops 4)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенная компьютерная игра в жанре трехмерного шутера от первого лица, разработанная американской компанией Treyarch и изданная Activision, пятнадцатая игра в серии игр Call of Duty и четвертая игра в сюжетной подсерии Black Ops] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_treyarch;;
+		-> company_activision;;
+		-> computer_game_call_of_duty_black_ops;;
+		-> concept_game_series_call_of_duty;;
+		-> concept_game_series_black_ops;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,30 @@
+concept_skyrim_heavy_armor
+
+=> nrel_main_idtf: [Heavy armor (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Тяжелая броня (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(тяжелая броня (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Тяжелая броня —  <b><sc_element sys_idtf="concept_skyrim_armor">броня</b></sc_element>, которая имеет высокий показатель защиты.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности тяжелой брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Тяжелая броня имеет высокий вес и сильно замедляет передвижение персонажа.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

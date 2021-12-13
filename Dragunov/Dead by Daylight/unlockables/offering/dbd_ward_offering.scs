@@ -1,0 +1,31 @@
+concept_dead_by_daylight_ward_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Страж)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Ward)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Страж)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Страж) - подношения, защищающие игрока от потери предметов и/или улучшений в случае смерти.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Страж)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения-стражи могут приноситься только выжившими.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

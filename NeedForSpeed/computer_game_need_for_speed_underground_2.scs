@@ -1,0 +1,66 @@
+computer_game_need_for_speed_underground_2
+=> nrel_main_idtf: [Need for Speed: Underground 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Underground 2] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_black_box;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_2; xbox;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: ea_graphics_library;
+
+=> nrel_publication_date: date_9_11_2004;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Underground 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, разработанная студией Black Box и изданная Electronic arts в 2004 году, восьмая часть в игровой серии Need for Speed. Является сиквелом Need for Speed Underground.
+                Игровой процесс в Need for Speed: Underground 2 придерживается основных аспектов предшественника: игроку предстоит участвовать в уличных гонках, зарабатывая деньги и получая уважение среди других гонщиков.
+                В продолжении значительно улучшены возможности тюнинга автомобилей, который играет важную роль в прохождении. Помимо этого, в игре появились такие нововведения, как режим свободной езды и джипы.
+                В режиме карьеры присутствует сюжет, в котором главный герой участвует в гонках на улицах города Бэйвью и старается победить серьёзного противника — Калеба.  ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_black_box;;
+                -> computer_game_need_for_speed_underground_2;;
+                -> concept_game_series_need_for_speed;;
+                -> concept_game_series_underground;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

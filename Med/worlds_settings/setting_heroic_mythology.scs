@@ -1,0 +1,26 @@
+concept_setting_heroic_mythology
+
+=> nrel_main_idtf:[геройская мифология] (* <- lang_ru;; *);
+=> nrel_main_idtf:[heroic mythology] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+		=> nrel_main_idtf: [Опр.(геройская мифология)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Геройская мифология - игровой мир компьютерной игры с наличием сверхсуществ: супергероев, мутантов, полубогов и т.д.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+
+
+

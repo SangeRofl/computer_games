@@ -1,0 +1,55 @@
+concept_dead_by_daylight_item_map <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [карта(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [map(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Карта(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Карта - тип предмета в Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Карта(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Карта используется для отслеживания и маркировки реквизита в Мире.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Карта(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Стандартная карта может отслеживать только генераторы, но также может отслеживать различные реквизиты с помощью дополнений.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Карта(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Отслежываемый с помощью Карты реквизит можно сделать видимым для других, а так же поставить метку в виде верикального столба света.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

@@ -1,0 +1,45 @@
+concept_apex_gear_helmet
+=> nrel_main_idtf: [helmet (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [шлем (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_gear_helmet_common;;
+    -> concept_apex_gear_helmet_rare;;
+    -> concept_apex_gear_helmet_epic;;
+    -> concept_apex_gear_helmet_legendary;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (шлем (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [шлем (Apex Legends) - экипировка, который надевается на легенду для уменьшения урона в голову в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Виды шлемов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 4 разновидности шлема: обычный, редкий, эпический и легендарный.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet_common;
+        concept_apex_gear_helmet_rare;
+        concept_apex_gear_helmet_epic;
+        concept_apex_gear_helmet_legendary
+	};;
+*);
+
+
+<- sc_node_not_relation;;

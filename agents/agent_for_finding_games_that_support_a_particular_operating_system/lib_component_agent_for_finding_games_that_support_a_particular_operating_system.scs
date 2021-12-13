@@ -1,0 +1,18 @@
+lib_component_agent_for_finding_games_that_support_a_particular_operating_system
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска игр, поддерживающих определённую операционную систему]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent for finding games that support a particular operating system]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_finding_games_that_support_a_particular_operating_system; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_for_finding_games_that_support_a_particular_operating_system;;
+
+

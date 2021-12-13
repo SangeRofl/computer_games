@@ -1,0 +1,53 @@
+concept_apex_ammo_light_round
+=> nrel_main_idtf: [light round] (* <- lang_en;; *);
+=> nrel_main_idtf: [легкий патрон] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (легкий патрон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [легкий патрон - тип боеприпасов, которые используют оружия ПП R-99, P2020, RE-45 Авто, Разведчик G7, Карабин R-301 и ПП Сменщик.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_r_99;
+		concept_apex_weapon_p2020;
+		concept_apex_weapon_re_45;
+		concept_apex_weapon_g7;
+		concept_apex_weapon_r_301;
+		concept_apex_weapon_alternator
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета легких патронов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов обладает дуговой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (легкий патрон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_light_rounds.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

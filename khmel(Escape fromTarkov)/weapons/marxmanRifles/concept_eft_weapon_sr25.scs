@@ -1,0 +1,54 @@
+concept_eft_weapon_sr25
+=> nrel_main_idtf: [SR-25(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [SR-25(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_marxman_rifle;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_7.62x51;
+=> nrel_eft_weapon_sighting_distance: 500;
+=> nrel_eft_weapon_rate_of_fire: 700;
+=> nrel_eft_weapon_accuracy: 0.05;
+=> nrel_eft_weapon_effective_distance: 900;
+=> nrel_eft_weapon_starting_speed: 799;
+=> nrel_eft_weapon_weight: 0.51;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (SR-25(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [SR-25 - самозарядная марксманкая винтовка, разработанная Юджином Стоунером в 1990-е годы на основе конструкции винтовки AR-15.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_marxman_rifle
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (испольщование SR-25 левшами(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Новейшая модификация имеет двусторонние органы управления, что позволяет левшам так же эффективно оперировать данный винтовкой.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (SR-25(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/SR-25.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

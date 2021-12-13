@@ -1,0 +1,30 @@
+concept_skyrim_armor_shield
+
+=> nrel_main_idtf: [Shield (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Щит (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(щит (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Элемент брони, позволяющий блокировать удары противника и ошеломлять его.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (улучшение щит)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Щит могдет быть улучшен на <b><sc_element sys_idtf="concept_skyrim_crafting_table">верстаке</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

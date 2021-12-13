@@ -1,0 +1,486 @@
+agent_comparison_of_two_cybersport_players
+=>nrel_main_idtf:
+[агентная scp-программа сравнения двух киберспортсменов] (* <- lang_ru;; *);
+[agent scp-program of comparison of two cybersport players] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+
+scp_program -> agent_comparison_of_two_cybersport_players
+(*
+	-> rrel_params : ..agent_comparison_of_two_cybersport_players_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+	-> rrel_operators : ..agent_comparison_of_two_cybersport_players_operators
+	(*
+		-> rrel_init : ..agent_comparison_of_two_cybersport_players_quest_1
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+		
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_quest_2 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_quest_2
+		(*
+			<- searchElStr3;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_comparison_of_two_cybersport_players ;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=>nrel_then: ..agent_comparison_of_two_cybersport_players_quest_3 ;;
+			=>nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_quest_3
+		(*
+			<- searchElStr5;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=>nrel_then: ..agent_comparison_of_two_cybersport_players_quest_4;;
+			=>nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return;;
+		*);;
+		
+		-> ..agent_comparison_of_two_cybersport_players_quest_4
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=>nrel_then: ..agent_comparison_of_two_cybersport_players_quest_5 ;;
+			=>nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_quest_5
+		(*
+			<- genEl ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_1 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_1
+		(*
+			<- searchElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_cybersportsman ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_2 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return ;;
+		*);; 
+		-> ..agent_comparison_of_two_cybersport_players_operator_2
+		(*
+			<- searchElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_cybersportsman ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_3 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_3
+		(*
+			<- searchSetStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _some_param ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation ;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: rrel_node: _set_of_relations ;;
+	
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_3A ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_return ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_3A
+		(*
+			<- contAssign ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _rating1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_3B ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_3B
+		(*
+			<- contAssign ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _rating2 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_4
+		(*
+			<- searchElStr3 ;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_relations ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _some_relation ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_5 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_14 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_5
+		(*
+			<- eraseEl ;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+			
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_6 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_6
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _some_relation ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_7 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_7
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _some_relation ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_8 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_8
+		(*
+			<- ifEq ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _value2 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_9 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_11 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_9
+		(*
+			<- contAdd ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_10 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_10
+		(*
+			<- contAdd ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating2 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating2 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_11
+		(*
+			<- ifGr ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _value2 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_12 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_13 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_12
+		(*
+			<- contAdd ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_13
+		(*
+			<- contAdd ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating2 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating2 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_4 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_14
+		(*
+			<- ifEq ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating2 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_15 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_22 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_15
+		(*
+			<- genElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com1 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc1 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_to_be_equal ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_16 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_16
+		(*
+			<- genElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com2 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc2 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_to_be_equal ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_17 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_17
+		(*
+			<- searchElStr5 ;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com1 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc1 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_to_be_equal ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_17A ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_17A
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com1 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_17B ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_17B
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc1 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_18 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_18
+		(*
+			<- searchElStr5 ;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com2 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc2 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_to_be_equal ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_18A ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_18A
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com2 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_18B ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_18B
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc2 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_19 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_19
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_20 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_20
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_21 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_21
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_to_be_equal ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_34 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_22
+		(*
+			<- ifGr ;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rating1 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _rating2 ;;
+
+			=> nrel_then: ..agent_comparison_of_two_cybersport_players_operator_23 ;;
+			=> nrel_else: ..agent_comparison_of_two_cybersport_players_operator_28 ;;		
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_23
+		(*
+			<- genElStr5 ;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com1 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm : rrel_const: _arc1 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_be_better ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_24 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_24
+		(*
+			<- searchElStr5 ;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_be_better ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_30 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_28
+		(*
+			<- genElStr5 ;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com2 ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm : rrel_const: _arc2 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_be_better ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_29 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_29
+		(*
+			<- searchElStr5 ;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_be_better ;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_30 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_30
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_31 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_31
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2 ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_32A ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_32A
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_32B ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_32B
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_33 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_33
+		(*
+			<-genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_be_better ;;
+	
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_34 ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_34
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _com6;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_comparison_of_two_cybersport_players_operator_return ;;
+		*);;
+		-> ..agent_comparison_of_two_cybersport_players_operator_return
+		(*
+			<- return ;;
+		*);;
+	*);;
+*);;

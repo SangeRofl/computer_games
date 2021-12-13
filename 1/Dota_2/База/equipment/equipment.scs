@@ -1,0 +1,41 @@
+concept_equipment
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [equipment] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [снаряжение] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(снаряжение)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Снаряжение - это косметические предметы которые изменяют одежду, внешний вид героя или призванных существ.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(снаряжение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Снаряжение есет только визуальный характер и не влияет на механику или игровой процесс.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: concept_blades_of_attack;
+                   concept_broadsword;
+                   concept_claymore;
+                   concept_gloves_of_hastle;
+                   concept_mithril_hammer;
+                   concept_ring_of_protection;;
+                   
+concept_blades_of_attack => nrel_price : [450];;
+concept_broadsword => nrel_price : [1000];;
+concept_claymore => nrel_price : [1400];;
+concept_gloves_of_hastle => nrel_price : [450];;
+concept_mithril_hammer => nrel_price : [1600];;
+concept_ring_of_protection => nrel_price : [175];;

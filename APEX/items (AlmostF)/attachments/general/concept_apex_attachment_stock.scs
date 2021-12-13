@@ -1,0 +1,39 @@
+concept_apex_attachment_stock
+=> nrel_main_idtf: [stock (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [приклад (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_attachment_standard_stock;;
+    -> concept_apex_attachment_sniper_stock;;
+	=> nrel_main_idtf:[Разбиение по видам оружия] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (приклад (Apex Legends)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Приклад (Apex Legends) - модификация оружия, которая ускоряет скорость смены оружия и прицеливания.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы прикладов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Приклады бывают двух типов: стандартный приклад и приклад для снайперской винтовки.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_standard_stock;
+        concept_apex_attachment_sniper_stock
+	};;
+*);
+
+<- sc_node_not_relation;;

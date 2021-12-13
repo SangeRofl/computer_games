@@ -1,0 +1,19 @@
+concept_diffusable_effect <- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [Рассеиваемый эффект]
+    (*<-lang_ru;;*);
+=> nrel_main_idtf:
+    [Diffusable effect]
+    (*<-lang_en;;*);
+
+<- rrel_key_sc_element:... (*
+    => nrel_main_idtf:
+    [Опр. Рассеиваемый эффект]
+    (*<-lang_ru;;*);;
+    <- definition;;
+    <= nrel_sc_text_translation:... (*
+        -> rrel_example:
+            [Рассеиваемый эффект - <b><sc_element sys_idtf="concept_effect">эффект</b></sc_element>, который можно снять(развеять/рассеять) с помощью предмета или <b><sc_element sys_idtf="concept_ability">способности</b></sc_element>.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

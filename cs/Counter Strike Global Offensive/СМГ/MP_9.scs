@@ -1,0 +1,5 @@
+MP_9
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[MP9](*<-lang_ru;;*);
+		[MP9](*<-lang_en;;*);;

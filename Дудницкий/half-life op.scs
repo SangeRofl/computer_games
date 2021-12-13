@@ -1,0 +1,58 @@
+concept_computer_game_half_life_opposing_force
+
+=> nrel_main_idtf:
+		[Half-Life opposing force] (* <-lang_ru;;*);
+		[Half-Life opposing force] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_31.10.1999;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	GoldSource;
+=> nrel_publisher: Valve_Corporation;
+Sierra_Enterteiment;
+=> nrel_developer: Valve_Corporation;
+Gearbox_Software;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os_X
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life ) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life: Opposing Force ( «Противостоящая сила») — шутер от первого лица; дополнение для игры Half-Life, разработанное компанией Gearbox Software
+ в коллаборации с Valve и выпущенное Sierra Entertainment 31 октября 1999 года. Это дополнение представляет игроку тот же сеттинг (мир и события), что и оригинал, с той лишь разницей, что игрок берёт под своё управление капрала Адриана Шепарда, солдатаспецподразделения HECU.]  (*<- lang_ru ;; => nrel_format: format_html;;*);;
+*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_op.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life) ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[В Half-Life: Opposing Force игрок берёт на себя роль солдата HECU, в связи с чем получает экипировку в виде бронежилета P.C.V.] (* <-lang_ru ;;  => nrel_format: format_html;;*);;
+*);;
+*);;

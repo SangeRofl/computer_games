@@ -1,0 +1,45 @@
+remote_mines_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Remote Mines] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Remote Mines] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Remote Mines)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Устанавливает невидимую мину, которая взрывается только при активации вручную после небольшой задержки. Не наносит урон постройкам.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Remote Mines)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мины наносят урон врагам только при активации только при срабатывании, а не разрушения из-за атаки или истечения длительности. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [8];
+=> nrel_default_damage : [600];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Remote_Mines_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

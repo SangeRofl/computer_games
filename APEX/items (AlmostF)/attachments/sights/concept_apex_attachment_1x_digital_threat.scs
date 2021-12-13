@@ -1,0 +1,6 @@
+concept_apex_attachment_1x_digital_threat
+=> nrel_main_idtf: ["1x Digital Threat" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["1x Цифровой Поиск Угроз" прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

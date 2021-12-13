@@ -1,0 +1,70 @@
+sc_node_role_relation -> rrel_example;;
+
+concept_card
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[карта] (* <- lang_ru;; *);
+	[card] (* <- lang_en;;*);
+
+//Разбиение
+<= nrel_subdividing: ...(*
+    -> concept_card_legendary;;
+	-> concept_card_epic;;
+	-> concept_card_rare;;
+	-> concept_card_common;;
+	-> concept_card_basic;;
+	=> nrel_main_idtf: [разбиение по качеству] (* <- lang_ru;; *);;
+*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(карта)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+    	-> concept_card_legendary;;
+		-> concept_card_epic;;
+		-> concept_card_rare;;
+		-> concept_card_common;;
+		-> concept_card_basic;;
+		-> computer_game_hearthstone;;
+		-> player;;
+	*);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Карта - это основной объект игры, который подразделяется по качеству: легендарная, эпическая, редкая, обычная, базовая.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение 1						
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв[1].(Типы карт)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_card_minion;;
+		-> concept_card_spell;;
+		-> concept_card_weapon;;
+		-> concept_card_hero;;
+	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [У каждой карты есть свой тип: заклинание,оружие и существо.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение 2
+<- rrel_key_sc_element: ...(*
+    <- explanation;;
+	=> nrel_main_idtf: [Утв.(Возможности карт)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_action;;
+		-> player;;
+	*);;
+	<= nrel_sc_text_translation: ...(*
+		-> [У каждой карты есть своё действие, которое игрок может осуществить, разыграв карту.] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+//Пример
+concept_card_legendary	<=nrel_inclusion	:concept_card;;
+concept_card 			<=nrel_inclusion	:game_object;;

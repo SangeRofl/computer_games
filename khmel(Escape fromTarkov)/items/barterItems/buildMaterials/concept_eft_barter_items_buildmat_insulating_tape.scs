@@ -1,0 +1,48 @@
+concept_eft_barter_items_buildmat_insulating_tape
+=> nrel_main_idtf: [Insulating tape(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Изолента(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_buildmat;
+
+=> nrel_eft_weapon_weight: 0.05;
+=> nrel_eft_barter_items_cost: 2019;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Изолента(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Изолента - бартерный предмет из группы стройматериалы, расходный материал, предназначенный для обмотки проводов и кабелей с целью их электроизоляции.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_buildmat
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение изоленты(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Хоть изолента и предназначена, в теории, для изоляции проводов, на практике её применение ограничено лишь фантазией владельца. Среди наиболее типичных примеров - мелкий ремонт, перематывание трещин, склеивание разных вещей и обмотка ручек, чтоб не скользили.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Изолента(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Insulating_tape.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

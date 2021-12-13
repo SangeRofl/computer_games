@@ -1,0 +1,41 @@
+concept_apex_attachment_standard_stock
+=> nrel_main_idtf: [standard stock (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [стандартный приклад (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_attachment_standard_stock_common;;
+    -> concept_apex_attachment_standard_stock_rare;;
+    -> concept_apex_attachment_standard_stock_epic;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (приклад для снайперской винтовки (Apex Legends)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [приклад для снайперской винтовки (Apex Legends) - модификация оружия, которая ускоряет скорость смены оружия и прицеливания снайперских винтовок.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы прикладов для снайперской винтовки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Приклады для снайперской винтовки бывают трех типов: обычный, редкий и эпический.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_sniper_stock_common;
+        concept_apex_attachment_sniper_stock_rare;
+        concept_apex_attachment_sniper_stock_epic
+	};;
+*);
+
+<- sc_node_not_relation;;

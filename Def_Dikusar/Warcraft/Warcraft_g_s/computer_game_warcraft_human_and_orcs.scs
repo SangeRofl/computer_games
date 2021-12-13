@@ -1,0 +1,62 @@
+computer_game_warcraft_human_and_orcs
+=> nrel_main_idtf: [Warcraft: Orcs & Humans] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft: Orcs & Humanss] (* <- lang_ru;; *);
+=> nrel_idtf: [«Военное ремесло: орки и люди»] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_RTS;
+=> nrel_platform: consept_mac_os;
+=> nrel_platform: concept_ms_dos;
+=> nrel_platform: PlayStation;
+=> nrel_publisher: company_interplay_entertainment;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_1994;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [Сюжет включает начало истории Вселенной Warcraft, в которой открывается портал между мирами людей и орков и начинается война между расами.] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Warcraft: Orcs & Humans)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Warcraft: Orcs & Humans — компьютерная игра в жанре стратегия в реальном времени, разработанная компанией Blizzard Entertainment. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Warcraft: Orcs & Humans)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игровой процесс построен на событиях, которые происходят в реальном времени, а задачами являются управление экономикой и ведение боевых действий.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Warcraft.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://war1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

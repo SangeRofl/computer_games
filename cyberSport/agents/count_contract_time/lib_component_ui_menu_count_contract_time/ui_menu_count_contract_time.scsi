@@ -1,0 +1,15 @@
+ui_menu_count_contract_time <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти время действия контракта] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find contract active time] (* <- lang_en;;*);;
+ui_menu_count_contract_time => ui_nrel_command_template:
+	[*
+		action_count_contract_time _-> ._action_count_contract_time_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_count_contract_time_instance _<- question;;
+	*];;
+
+ui_menu_count_contract_time => ui_nrel_command_lang_template: [Время действия контракта: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_count_contract_time => ui_nrel_command_lang_template: [Contract active time: $ui_arg_1] (* <- lang_en;;*);;

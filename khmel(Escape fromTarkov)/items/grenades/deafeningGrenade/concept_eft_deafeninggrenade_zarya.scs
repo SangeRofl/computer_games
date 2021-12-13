@@ -1,0 +1,48 @@
+concept_eft_deafeninggrenade_zarya
+=> nrel_main_idtf: [Zarya(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Заря(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_throwingweapon_deafeninggrenade;
+
+=> nrel_eft_weapon_weight: 0.6;
+=> nrel_eft_weapon_explosion_delay: 3.5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Заря(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Заря — ручная светозвуковая граната.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon_deafeninggrenade
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение Заря(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предназначена для обеспечения временного подавления психоволевой устойчивости вооруженного преступника акустическим и световым воздействием, что снижает его боевую способность и дает возможность выполнения специальных операций с минимальным риском для личного состава и окружающих.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Заря(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Zarya.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

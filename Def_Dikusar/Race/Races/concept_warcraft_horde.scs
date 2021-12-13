@@ -1,0 +1,50 @@
+concept_warcraft_horde
+
+=> nrel_main_idtf:
+      [орда]
+      (*<-lang_ru;;*);
+       [horde]
+       (*<-lang_en;;*);
+=> nrel_idtf: [новая орда] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Утв.(о орде)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_azeroth
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Орда является одной из двух основных фракций смертных рас в Азероте](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(об орде)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_race_orc
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Орда состоит из коалиции разрозненных рас и культур, свободно объединившихся в союзе против враждебного мира, который мог бы уничтожить их.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+=>nrel_main_leader:game_character_sylvanas;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Sylvanas.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

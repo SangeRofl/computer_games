@@ -1,0 +1,31 @@
+concept_apex_attachment_extended_light_mag_common
+=> nrel_main_idtf: [common extended light mag (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный увеличенный легкий магазин (Apex Legends)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный увеличенный легкий магазин (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный увеличенный легкий магазин (Apex Legends) - увеличенный легкий магазин, который незначительно увеличивает количество патронов в магазине для оружий, которые используют легкие боеприпасы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_apex_ammo_light_round
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный увеличенный легкий магазин (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/magazines/lights/light_lvl1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

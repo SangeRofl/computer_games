@@ -1,0 +1,39 @@
+concept_wind_lace
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [wind lace] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [wind lace] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(wind lace)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Да преисполнится скоростью тот, чьи подошвы ощутили касание ветра.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(wind lace)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Скорость передвижения от нескольких Wind Lace не складывается. Складывается с другими бонусами скорости передвижения.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wind_lace.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

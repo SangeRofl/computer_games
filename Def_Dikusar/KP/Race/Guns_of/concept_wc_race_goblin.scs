@@ -1,0 +1,28 @@
+concept_wc_race_goblins
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_horde;
+
+=> nrel_main_idtf:
+      [Гоблины]
+      (*<-lang_ru;;*);
+       [Goblins]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Goblins.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+
+
+

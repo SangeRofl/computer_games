@@ -1,0 +1,42 @@
+computer_game_dead_by_daylight <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Dead by Daylight]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Dead by Daylight]
+    (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_survival;
+<- concept_horror;
+<- concept_multiplayer;
+<-concept_setting_fantasy;
+=> nrel_platform:
+    concept_microsoft_windows; concept_PS4; concept_ios; concept_nintendo_switch; concept_xbox_one;
+=> nrel_developer: company_behaviour_interactive;
+=> nrel_publisher: company_behaviour_interactive; company_starbreeze_publishing; company_505_games; company_koch_media;
+=> nrel_publication_date: date_14_06_2016;
+=> nrel_game_camera: 
+    concept_third_person_view; concept_first_person_view;
+=> nrel_plot: 
+    [Отсутствует.];
+=> nrel_game_engine: unreal_engine_4;
+<- rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. (Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [<b><sc_element sys_idtf="concept_computer_game">Компьютерная игра</b></sc_element> жанра Survival Horror, выпущенная в 2016 году компанией
+            <b><sc_element sys_idtf="company_behaviour_interactive">Behaviour Interactive</b></sc_element>. Реализована на движке <b><sc_element sys_idtf="unreal_engine_4">Unreal Engine 4</b></sc_element>. <b><sc_element sys_idtf="concept_multiplayer">Многопользовательская</b></sc_element>.]
+            (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/DBD.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

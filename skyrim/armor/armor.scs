@@ -1,0 +1,93 @@
+concept_skyrim_armor
+=> nrel_main_idtf: [Armor (Skirym)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Броня (Skyrim)] (* <- lang_ru;; *);
+
+<- computer_game_the_elder_scrolls_5_skyrim;
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_light_armor;;
+	-> concept_skyrim_heavy_armor;;
+	=> nrel_main_idtf:[Разбиение по классу брони] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_armor_helmet;;
+	-> concept_skyrim_armor_boots;;
+	-> concept_skyrim_armor_bracers;;
+	-> concept_skyrim_armor_shield;;
+	-> concept_skyrim_armor_cuirass;;
+	=> nrel_main_idtf:[Разбиение по типу брони] (* <- lang_ru;;
+ *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_armor_crafted;;
+	-> concept_skyrim_armor_particular;;
+	-> concept_skyrim_armor_unique;;
+	-> concept_skyrim_armor_quest;;
+	-> concept_skyrim_artifact;;
+	=> nrel_main_idtf:[Разбиение по способу получения брони] (* <- lang_ru;;
+ *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Броня (Skyrim))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Броня - один из видов одежды, которую можно носить для того чтобы повысить уровень защиты.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Классы брони Скайрима)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 2 основных класса брони в  <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_skyrim_light_armor">легкая броня</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_heavy_armor">тяжелая броня</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Типы брони Скайрима)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 5 основных типов брони в  <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_skyrim_armor_helmet">шлем</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_boots">сапоги</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_bracers">наручи</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_cuirass">кираса</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_shield">щит</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Способы получения брони Скайрима)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Есть 5 способов получения брони в <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">Скайриме</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_skyrim_armor_crafted">создаваемая броня</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_unique">уникальная броня</b></sc_element>, 
+ <b><sc_element sys_idtf="concept_skyrim_armor_particular">особае броня</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_armor_quest">квестовая броня</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_artifact">артифакты</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+

@@ -1,0 +1,6 @@
+concept_apex_recoil_strong_curve_left
+=> nrel_main_idtf: [strong curve left recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [отдача с сильной кривой влево] (* <- lang_ru;; *);
+
+<- concept_apex_recoil;
+<- sc_node_not_relation;;

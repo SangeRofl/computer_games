@@ -1,0 +1,29 @@
+concept_skyrim_weapon_crafted
+=> nrel_main_idtf: [crafted weapon (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [создаваемое оружие (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(создаваемое оружие (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [создаваемое оружие —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, которое можно создать своими руками в <b><sc_element sys_idtf="concept_skyrim_forge">кузнецах</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Условие создания оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Оружие можно создать в  <b><sc_element sys_idtf="concept_skyrim_forge">кузнецах</b></sc_element> при соблюдении всех условий, включающих в себя наличие нужного материала и конкретных способностей кузнеца.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

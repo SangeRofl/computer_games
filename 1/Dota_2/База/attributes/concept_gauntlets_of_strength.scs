@@ -1,0 +1,39 @@
+concept_gauntlets_of_strength
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [gauntlets of strength] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [рукавицы силы] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(gauntlets of strength)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Шипованные кожаные перчатки, которые дают грубую силу.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(gauntlets of strength)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Руковицы силы отлично подойдут героям в ранней стадии игры, у которых основная характеристика сила.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/gauntlets_of_strength.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

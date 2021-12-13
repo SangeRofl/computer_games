@@ -1,0 +1,51 @@
+concept_enhanced_moon_dust
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенная лунная пыль] (* <- lang_ru;;*);
+	[Enhanced moon dust] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенная лунная пыль)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют против чудовищ,умеющих перевоплощаться или использовать невидимость.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Содержит серебряные опилки, из-за которых чудовища некоторое время не могут обращаться.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_moon_dust;;
+	-> concept_hop_umbels;;
+	-> concept_sulfur;;
+	-> concept_stammelfords_dust;;
+	-> concept_honeysuckle;;
+	-> concept_blowball;;
+	-> concept_quicksilver_solution;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенная лунная пыль состоит из: Чёрный порошок,Лунная пыль,Раствор ртути,Сера,Шишки хмеля,Одуванчик,Каприфоль.](*<-lang_ru;;*);;
+      *);;
+  *);;

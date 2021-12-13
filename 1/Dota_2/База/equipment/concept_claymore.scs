@@ -1,0 +1,39 @@
+concept_claymore
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [claymore] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [claymore] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(claymore)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Меч, способный пробить броню — это обычный выбор начинающих меченосцев.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(claymore)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет керри героям, которым нужем дополнительный урон.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/claymore.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

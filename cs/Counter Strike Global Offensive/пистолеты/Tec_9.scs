@@ -1,0 +1,5 @@
+Tec_9
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Tec-9](*<-lang_ru;;*);
+		[Tec-9](*<-lang_en;;*);;

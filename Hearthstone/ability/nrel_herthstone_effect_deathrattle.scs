@@ -1,0 +1,176 @@
+nrel_herthstone_effect_deathrattle
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект предсмертный хрип* ]
+	(* <- lang_ru;;	*);
+	[Deathrattle effect* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Loot_Hoarder.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта предсмертный хрип](*<-lang_ru;;*);
+		[Description of deathrattle effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_effect_triggered;
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Предсмертный хрип является способностью, где происходит заявленный эффект, когда миньон или оружие будет уничтожено.
+            Карты с Предсмертным хрипом появляются в игре с черепом и скрещенными костями.] (* <- lang_ru;; *);
+
+            [Deathrattle is an ability where the stated effect occurs when the minion or weapon is destroyed.
+            Cards with Deathrattle appear with a skull and crossbones when in play.] (* <- lang_en;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        nrel_hearthstone_effect_silence;
+        concept_hearthstone_effect_triggered;
+		concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon
+
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Миньоны могут выиграть от нескольких Deathttles одновременно. Как и со всеми способностями,
+            Deathrattle может быть удален из миньонов с помощью Silences .] (* <- lang_ru;; *);
+
+            [Minions may benefit from multiple Deathrattles at the same time.
+            As with all abilities, Deathrattle can be removed from minions with Silences.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Эффекты Смертельного удара происходят после того, как боевой урон был рассчитан
+            и миньоны уничтожены Дополнительные эффекты, вызванные разрушающими заклинаниями,
+            такими как Bane of Doom , также будут иметь место перед любыми Deathttles.] (* <- lang_ru;; *);
+
+            [Deathrattle effects occur after battle damage has been calculated and minions destroyed.
+            Additional effects caused by damaging spells such as Bane of Doom will also take place before any Deathrattles.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Как и срабатывающие эффекты , игроки не могут выбирать цели Смертельных титров.
+            В то время как политика разработчиков заключается в том, чтобы явно указывать,
+            когда видимая цель Deathrattle является случайной , в некоторых случаях
+            ее можно оставить неустановленной, чтобы упростить текст карты.] (* <- lang_ru;; *);
+
+            [Like triggered effects, players cannot choose the targets of Deathrattles.
+            While the developers' policy is to explicitly state when a visible target of a Deathrattle is random,
+            this may in some cases be left unstated, in order to simplify the card text.] (* <- lang_en;; *);;
+	*);; 
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Как и со всеми связанными со смертью эффектами, Deathttles активируются только тогда,
+            когда миньон умирает, находясь на поле битвы . Сброс миньона из руки
+            или удаление его из колоды не активирует его Deathrattle.] (* <- lang_ru;; *);
+
+            [As with all death-related effects, Deathrattles only activate when the minion dies while in the battlefield.
+            Discarding a minion from the hand or removing it from the deck will not activate its Deathrattle.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        nrel_hearthstone_effect_silence;
+        concept_hearthstone_effect_aura;
+        concept_hearthstone_effect_triggered;
+		concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon
+
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Смертельные удары и связанные со смертью эффекты имеют место после того, как урон был обменен, а миньоны / оружие были уничтожены и удалены с доски .
+            Это не позволяет Deathrattles действовать на других миньонов, которые были уничтожены в том же бою. Это также препятствует тому,
+            чтобы несколько одновременных событий воздействовали на последствия Deathrattles или других вызванных событий.
+            То же самое верно для секретов и триггерных эффектов, которые активируются после смерти, которые обрабатываются точно так же, как Deathrattles.] (* <- lang_ru;; *);
+
+            [Deathrattles and death-related effects take place after damage has been exchanged and minions/weapons have been destroyed and removed from the board.
+            This prevents Deathrattles from acting upon other minions which were destroyed in the same combat.
+            It also prevents several simultaneous events from acting upon consequences of Deathrattles or other triggered events.
+            The same is true for secrets and triggered effects which are activated from death,
+            such as Duplicate and Cult Master, which are treated exactly the same as Deathrattles.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Обратите внимание, что все эффекты, вызванные смертью миньона, будут воспроизводиться в том порядке, в котором они были введены в игру,
+            независимо от типа эффекта. Например, если маг играет Дубликат с последующим Мерзость и Мерзость затем уничтожили на противника свою очередь,
+            дубликат будет включен до собственного Deathrattle мерзости в; в то время как если сначала была сыграна Мерзость,
+            то сначала активируется ее Смертельный грохот, а затем секрет. Deathttles не получают особого приоритета.] (* <- lang_ru;; *);
+
+            [Note that all effects triggered from the death of a minion will play out in the order 
+            in which they were put into play, regardless of type of effect.
+            For example, if a mage plays Duplicate followed by Abomination, and the Abomination is then destroyed on the opponent's turn,
+            the Duplicate will activate before the Abomination's own Deathrattle; while if the Abomination was played first,
+            its Deathrattle will activate first, followed by the secret. Deathrattles do not gain any special priority.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Также обратите внимание, что когда несколько миньонов убиваются одновременно,
+            их смерти будут разрешаться по одному, в том порядке, в котором они вступили в игру.] (* <- lang_ru;; *);
+
+            [Note also that when multiple minions are killed simultaneously,
+            their deaths will be resolved one at a time, in the order in which they entered play.] (* <- lang_en;; *);;
+	*);; 
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Как только все уничтоженные миньоны будут удалены с игрового поля, каждая смерть будет решена,
+            включая активацию любых связанных со смертью эффектов - это включает в себя собственный Deathrattle миньона, срабатывающие эффекты,
+            такие как Cult Master, и секреты, такие как Duplicate. Разрешение происходит по одному миньону за раз, в том порядке,
+            в котором миньоны вошли в игру. Когда каждая смерть разрешается, все подходящие сработавшие события будут разыгрываться в том порядке,
+            в котором вступил в игру эффект, включая собственную смертельную грохот миньона, секреты и другие эффекты.
+            Каждый эффект будет проигрываться индивидуально и разрешаться до того, как активируется следующий. Как только все связанные эффекты для миньона разыграны,
+            смерть следующего одновременного миньона начнет разрешаться.] (* <- lang_ru;; *);
+
+            [Once all destroyed minions have been removed from the board, each death will be resolved, including the activation
+            of any death-related effects - this includes the minion's own Deathrattle, triggered effects such as Cult Master,
+            and Secrets such as Duplicate. Resolution takes place one minion at a time, in order in which the minions entered play.
+            As each death is resolved, all eligible triggered events will play out in the order in which the effect entered play,
+            including the minion's own Deathrattle, Secrets and other effects. Each effect will play out individually and resolve, before the next activates.
+            Once all related effects have played out for the minion, the next simultaneous minion's death will begin to resolve.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Например, если Сильванский Ветрокрылый атакует другого Сильванского Ветрокрылого, уничтожая обоих миньонов,
+            сначала будет вызван Смертельный Сильванский призыватель, который был вызван первым, а затем Смертельный Сильванский призыватель,
+            который был вызван вторым. Порядок призыва миньонов может быть чрезвычайно значительным.] (* <- lang_ru;; *);
+
+            [For example, if a Sylvanas Windrunner attacks another Sylvanas Windrunner, destroying both minions,
+            the Deathrattle of the Sylvanas which was summoned first will take place first,
+            followed by the Deathrattle of the Sylvanas which was summoned second.
+            Order of minion summoning can therefore be extremely significant.] (* <- lang_en;; *);;
+	*);;
+*);;

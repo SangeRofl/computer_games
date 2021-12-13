@@ -1,0 +1,35 @@
+concept_expendable
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [expendable] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [расходуемые] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(расходуемые)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Расходуемые - предметы с ограниченным количеством использований.]  (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(расходуемые)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Расходуемые имеют до 3 возможностей использований. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: concept_sentry_ward;
+                   concept_observer_ward;
+                   concept_town_portal_scroll;;
+
+concept_sentry_ward => nrel_price : [75];;
+concept_observer_ward => nrel_price : [0];;
+concept_town_portal_scroll => nrel_price : [90];;

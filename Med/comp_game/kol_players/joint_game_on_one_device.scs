@@ -1,0 +1,27 @@
+concept_joint_game_on_one_device
+=> nrel_main_idtf: [совместная игра на одном устройстве] (* <- lang_ru;; *);
+=> nrel_main_idtf: [joint game on one device] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_in_turn_joint_game;;
+	-> concept_joint_simultaneous_game;;
+	=> nrel_main_idtf: [разбиение по механике] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(совместная игра на одном устройстве)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игра, в которой могут участвовать сразу несколько игроков на одном устройстве] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_player;; 		//igrok
+	*);;
+*);
+								
+<- sc_node_not_relation;;

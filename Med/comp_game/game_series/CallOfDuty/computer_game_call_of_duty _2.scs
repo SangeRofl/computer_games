@@ -1,0 +1,121 @@
+computer_game_call_of_duty_2
+=> nrel_main_idtf: [Call of Duty 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty 2] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_infinity_ward;
+=> nrel_publisher: company_activision; aspyr; company_1c; konami; valve;
+=> nrel_localizer: company_1c;
+
+//=> nrel_platform: concept_windows; mac_os_x; windows_mobile; concept_mobile; xbox_360;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: iw_engine_2.0;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: windows_mobile;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_30_01_2007;;
+	=> nrel_main_idtf: [Дата выхода в США для Windows Mobile] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: steam;;
+	=> nrel_publication_date: date_14_10_2006;;
+	=> nrel_main_idtf: [Дата выхода в Steam] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: mac_os_x;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_13_06_2006;;
+	=> nrel_main_idtf: [Дата выхода в США для Mac OS X] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows;;
+	=> nrel_producing_country: country_russia;;
+	=> nrel_publication_date: date_22_12_2005;;
+	=> nrel_main_idtf: [Дата выхода в России для Windows] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360;;
+	=> nrel_producing_country: country_russia;;
+	=> nrel_publication_date: date_29_10_2005;;
+	=> nrel_main_idtf: [Дата выхода в России для Xbox 360] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows;;
+	=> nrel_publication_date: date_15_06_2005;;
+	=> nrel_main_idtf: [Дата выхода в мире для Windows] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_22_11_2005;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для Xbox 360] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_25_11_2005;;
+	=> nrel_main_idtf: [Дата выхода в США для Xbox 360] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Call of Duty 2)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Компьютерная игра в жанре шутер от первого лица на тему Второй мировой войны, вторая в серии игр Call of Duty] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_shooter;;
+			-> concept_setting_world_war_the_second;;
+			-> concept_first_person_view;;
+			-> concept_computer_game;;
+			-> concept_game_series_call_of_duty;;
+		*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty_2.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

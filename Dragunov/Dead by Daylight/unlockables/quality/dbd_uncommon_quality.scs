@@ -1,0 +1,20 @@
+concept_dead_by_daylight_unlockable_rarity_uncommon <- sc_node_not_relation;
+
+=> nrel_main_idtf:
+    [необычный(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [uncommon(Dead by Daylight)]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Необычный(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Необычный - значение параметра "редкость разблокируемого предмета" - множество разблокируемых предметов, обладающих необычным уровнем редкости.]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);;

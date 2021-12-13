@@ -1,0 +1,6 @@
+sc_text_of_agent_for_finding_games_that_support_a_particular_operating_system
+-> rrel_key_sc_element:
+	agent_for_finding_games_that_support_a_particular_operating_system;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_finding_games_that_support_a_particular_operating_system = [*^"file://agent_for_finding_games_that_support_a_particular_operating_system.scsi"*];;

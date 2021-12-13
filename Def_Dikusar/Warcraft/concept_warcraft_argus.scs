@@ -1,0 +1,38 @@
+concept_warcraft_argus			
+
+=> nrel_main_idtf:[Аргус] (* <- lang_ru;; *);
+=> nrel_idtf:[мир Аргуса] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Argus] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Аргус)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Аргус — родина эредаров (и соответственно дренеев). Аргусом правил триумвират могущественнейших магов-эредаров. Это были Кил'джеден, Архимонд и Велен. Достоверно известно, что на планете были холодные горы Кааринос и множество городов с одаренными магами, а самым священным из них была столица Мак'Ари.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Азерот)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Согласно легендам, это был город, устланный драгоценностями и испещренный реками-каналами, сверкающими даже ночью.] (* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Argus.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

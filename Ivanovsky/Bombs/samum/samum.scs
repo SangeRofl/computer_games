@@ -1,0 +1,49 @@
+concept_samum
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Самум] (* <- lang_ru;;*);
+	[Samum] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Самум)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая ослепляет и оглушает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Полезность бомбы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полезна против: монстров с ментальными атаками, как, например, бесы и гаркаины, а также против шарлеев с их чутким слухом.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://samum.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_ordinary_samum;;
+    -> concept_enhanced_samum;;
+    -> concept_superior_samum;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

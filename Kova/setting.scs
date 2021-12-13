@@ -1,0 +1,49 @@
+concept_setting
+=> nrel_main_idtf: [сеттинг] (* <- lang_ru;; *);
+=> nrel_idtf: [setting] (* <- lang_en;; *);
+
+-> concept_setting_birth_of_life;
+concept_setting_ancient_time;
+concept_setting_birth_of_civilization;
+concept_setting_middle_ages;
+concept_setting_era_of_colonizacion;
+concept_setting_era_of_industrialization;
+concept_setting_wars;
+concept_setting_victorian_gothic;
+concept_setting_nowadays;
+concept_setting_era_of_information;
+concept_setting_space_exploration;
+concept_setting_evolution;
+concept_setting_culture;
+concept_setting_cataclizm;
+concept_setting_night_time;
+concept_setting_pirates;
+concept_setting_real_world;
+concept_setting_fantasy;
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(сеттинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Сеттинг - это классификация компьютерных игр, основанная на различиях игрового мира, места и времени, в которой происходит действие компьютерной игры.] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_game_world;;
+			-> concept_computer_game;;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(место, время, событие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сеттинги классифицируются по месту, времени и событиям.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

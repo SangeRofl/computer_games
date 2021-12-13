@@ -1,0 +1,50 @@
+concept_enhanced_samum
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенный самум] (* <- lang_ru;;*);
+	[Enhanced samum] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенный самум)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая ослепляет и оглушает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ослепляет противников в радиусе взрыва. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_samum;;
+	-> concept_celandine;;
+	-> concept_foglet_teeth;;
+	-> concept_stammelfords_dust;;
+	-> concept_phosphorus;;
+	-> concept_blowball;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенный самум состоит из: Чёрный порошок,Обычный самум,Фосфор,Ласточкина трава,Одуванчик,Зуб туманника.](*<-lang_ru;;*);;
+      *);;
+  *);;

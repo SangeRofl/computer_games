@@ -1,0 +1,43 @@
+concept_dead_by_daylight_dark_mist_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Темный туман)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Dark mist)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Темный туман)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Темный туман) - подношения, влияющие на степень густоты Темного тумана.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Темный туман)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношение на Темный туман может влиять на степень густоты тумана положительно или отрицательно.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Темный туман)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения на Темный туман, не противоречащие друг другу по механизму влияния на степень густоты тумана, сжигаются и их эффекты складываются.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

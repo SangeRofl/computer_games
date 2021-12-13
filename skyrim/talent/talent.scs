@@ -1,0 +1,39 @@
+concept_skyrim_talent
+
+=> nrel_main_idtf:     
+	 [Талант (Скайрим)]   (*<-lang_ru;;*);
+     	 [Talent (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+<-computer_game_the_elder_scrolls_5_skyrim;
+
+=>nrel_inclusion: 
+concept_skyrim_small_talent;
+concept_skyrim_permanent_talent;
+concept_skyrim_special_talent;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Талант (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Таланты — это различные способности, присущие герою. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Описание)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Обычно таланты подразделяются на 
+ <b><sc_element sys_idtf="concept_skyrim_special_talent">особые</b></sc_element>,
+ <b><sc_element sys_idtf="concept_skyrim_small_talent">малые</b></sc_element> и 
+ <b><sc_element sys_idtf="concept_skyrim_permanent_talent">постоянные</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

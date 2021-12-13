@@ -1,0 +1,20 @@
+concept_dead_by_daylight_unlockable_rarity_ultra_rare <- sc_node_not_relation;
+
+=> nrel_main_idtf:
+    [ультра редкий(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [ultra rare(Dead by Daylight)]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Ультра редкий(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Ультра редкий - значение параметра "редкость разблокируемого предмета" - множество разблокируемых предметов, обладающих необычайно высоким уровнем редкости.]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);;

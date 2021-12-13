@@ -1,0 +1,39 @@
+concept_mantle_of_intelligence
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [mantle of intelligence] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [мантия разума] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(mantle of intelligence)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Прекрасная сапфировая мантия, которую королевы носили из поколения в поколение.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(mantle of intelligence)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мантия разума отлично подойдет героям в ранней стадии игры, у которых основная характеристика интеллект.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mantle_of_intelligence.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

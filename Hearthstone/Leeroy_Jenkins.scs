@@ -1,0 +1,35 @@
+concept_card_minion_LJ
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Лирой Дженкенс] (* <- lang_ru;; *);
+	[Leeroy Jenkins] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Лирой Дженкенс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Лирой Дженкенс -  легендарная карта существа из классического набора. Его Боевой клич призывает 1/1 Дракончика на сторону противника.] (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants: ...(*
+		-> concept_card;;
+        -> concept_ability;;
+        -> nrel_battlecry;;
+        -> concept_card_minion;;
+    	-> concept_card_ability_summon;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/LJ.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

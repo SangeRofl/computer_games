@@ -1,0 +1,65 @@
+computer_game_battlefield_play_4_free					//tactical_shooter??				
+=> nrel_main_idtf: [Battlefield: Play4Free] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield: Play4Free] (* <- lang_en;; *);
+
+
+//<- concept_shooter;
+//<- concept_tactical_shooter;
+//<- concept_setting;
+
+<- concept_multiplayer_game;
+//<- concept_three_dimensional_game;
+<- concept_singleplatform_game;
+
+=> nrel_developer: company_dice;
+=> nrel_publisher: company_electronic_arts;
+//=> nrel_localizer: company_softclub;
+
+=> nrel_announcement_date: date_05_11_2010;
+
+=> nrel_publication_date: date_04_04_2011;
+
+=> nrel_platform: concept_windows;
+
+=> nrel_game_engine: refractor_engine_2;
+
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield: Play4Free)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Многопользовательская компьютерная игра в жанре тактического шутера, разработанная Digital Illusions CE и изданная Electornic Arts, принадлежит серии игр Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+	//	-> concept_tactical_shooter;;
+		-> concept_computer_game;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

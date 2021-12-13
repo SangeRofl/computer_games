@@ -1,0 +1,48 @@
+concept_eft_ammo_9x19
+=> nrel_main_idtf: [9x19(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [9x19(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_pistol_ammo;
+
+=> nrel_eft_weapon_weight: 0.0074;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (9x19(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [9x19 мм — пистолетный патрон с бесфланцевой гильзой цилиндрической формы с небольшой конусностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_pistol_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (когда и кем разработан патрон 9x19(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [разработан в 1902 году австрийским оружейником Георгом Люгером.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (9x19(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/9x19.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;
+

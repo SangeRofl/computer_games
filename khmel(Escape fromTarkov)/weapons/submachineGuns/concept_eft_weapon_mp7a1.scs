@@ -1,0 +1,56 @@
+concept_eft_weapon_mp7a1
+=> nrel_main_idtf: [MP7A1(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [MP7A1(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_submachine_gun;
+
+<- concept_eft_fire_mode_auto;
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_4.6x30;
+=> nrel_eft_weapon_sighting_distance: 300;
+=> nrel_eft_weapon_rate_of_fire: 950;
+=> nrel_eft_weapon_accuracy: 0.243;
+=> nrel_eft_weapon_effective_distance: 200;
+=> nrel_eft_weapon_starting_speed: 703;
+=> nrel_eft_weapon_weight: 1.62;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (MP7A1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [MP7A1 — пистолет-пулемет под специально разработанный для него патрон 4,6×30 мм. Автоматика MP7A1 построена по схеме с газовым двигателем с коротким ходом газового поршня, запирание осуществляется поворотом затвора.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_9x19;
+		concept_eft_weapon_submachine_gun
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (режимы стрельбы MP7A1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [MP7A1 обладает сразу двумя режимами стрельбы: автоматическим и одиночным.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (MP7A1(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/MP7A1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

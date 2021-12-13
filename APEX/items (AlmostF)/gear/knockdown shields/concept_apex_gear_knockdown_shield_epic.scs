@@ -1,0 +1,51 @@
+concept_apex_gear_knockdown_shield_epic
+=> nrel_main_idtf: [epic knockdown shield (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [эпический щит от нокаута (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры щита от нокаута
+=> nrel_apex_knockdown_shield_units: 750;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (эпический щит от нокаута (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [эпический щит от нокаута (Apex Legends) - щит от нокаута, который добавляет 750 единиц защиты, которую можно активировать при нокауте в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_knockdown_shield
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность эпических щитов от нокаута на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [эпический щит от нокаута - третий по распространенности вид щитов от нокаута на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_knockdown_shield;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (эпический щит от нокаута)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/knockdown/knock_shield_lvl3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

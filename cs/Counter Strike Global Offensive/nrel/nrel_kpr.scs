@@ -1,0 +1,6 @@
+nrel_kpr
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[KPR*](*<-lang_ru;;*);
+		[KPR*](*<-lang_en;;*);;

@@ -1,0 +1,51 @@
+concept_class_warrior
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Класс Войн] (* <- lang_ru;; *);
+	[Warrior] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Класс Войн)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+    -> nrel_effect;;
+	  -> concept_card;;
+    -> concept_card_class_warrior;;
+    -> concept_card_class_neutral;;
+  *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Воины - это класс противоположностей, с картами, которые фокусируются на интуитивном входе в драку для нанесения прямого урона, и картами, которые защищают Воина от вреда.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Приемущества Война)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> nrel_hp;;
+    -> concept_ability;;
+    -> concept_card_class_rogue;;
+    -> concept_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+    -> [Воин может оборудовать диапазон оружия , чтобы атаковать своих врагов непосредственно. Броня также может быть легко получена от их Силы Героев, чтобы оставаться на устойчивом здоровье.](*<-lang_ru;;*);;
+  *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/warrior.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

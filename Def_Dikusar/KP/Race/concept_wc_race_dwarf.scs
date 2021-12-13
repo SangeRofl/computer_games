@@ -1,0 +1,44 @@
+concept_wc_race_dwarfs
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [Дворфы]
+      (*<-lang_ru;;*);
+       [Dwarfs]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Дворф] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Дворфы)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_eastern_kingdoms
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Дворфы – сильная и могучая раса. Эти гордые существа обитают на землях, 
+в которых многие другие не могут или не желают даже находиться. 
+Их столица является одним из немногих городов дворфов в <b><sc_element sys_idtf="concept_warcraft_eastern_kingdoms">Восточных Королевcтвах</sc_element></b>. 
+По природе дворфы имеют сильные физические данные, 
+отличаясь толстой кожей и отменным здоровьем, 
+из-за чего на них совершенно не действуют некоторые яды и болезни.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Dwarf.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

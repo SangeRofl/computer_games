@@ -1,0 +1,41 @@
+concept_apex_attachment_extended_light_mag
+=> nrel_main_idtf: [extended light mag (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [увеличенный легкий магазин (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_attachment_extended_light_mag_common;;
+    -> concept_apex_attachment_extended_light_mag_rare;;
+    -> concept_apex_attachment_extended_light_mag_epic;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (увеличенный легкий магазин (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [увеличенный легкий магазин (Apex Legends) - модификация магазина оружия, которая увеличивает количество патронов в магазине для оружий, которые используют легкие боеприпасы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_light_round
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы увеличенных легких магазинов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Увеличенные легкие магазины бывают трех типов: обычного, редкого и эпического.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_barrel_stabilizer_common;
+        concept_apex_attachment_barrel_stabilizer_rare;
+        concept_apex_attachment_barrel_stabilizer_epic
+	};;
+*);
+
+<- sc_node_not_relation;;

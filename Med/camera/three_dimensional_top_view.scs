@@ -1,0 +1,33 @@
+concept_three_dimensional_top_view
+=> nrel_main_idtf: [трехмерный вид сверху] (* <- lang_ru;; *);
+=> nrel_main_idtf: [three dimensional top view] (* <- lang_en;;*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(трехмерный вид сверху)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вид игровой камеры, которая используется в трехмерных играх и отображает игровой мир изометрически] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_camera;;
+		-> concept_three_dimensional_game;;
+		-> concept_game_world;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(трехмерный вид сверху, компьютерная игра, MOBA, RTS)] (* <- lang_ru;; *);;			//lang_en!
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Трехмерный вид сбоку используется почти во всех играх жанра MOBA и стратегий в реальном времени] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

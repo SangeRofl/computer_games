@@ -1,0 +1,40 @@
+concept_apex_weapon
+=> nrel_main_idtf: [weapon (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [оружие (Apex Legends)] (* <- lang_ru;; *);
+
+<- computer_game_apex_legends;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_weapon_assault_rifle;;
+	-> concept_apex_weapon_machine_gun;;
+	-> concept_apex_weapon_pistol;;
+	-> concept_apex_weapon_shotgun;;
+	-> concept_apex_weapon_smg;;
+    -> concept_apex_weapon_sniper_rifle;;
+	=> nrel_main_idtf:[Разбиение по классам оружия] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Оружие (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Оружие — устройства, конструктивно предназначенные для вывода из строя вражеских легенд (персонажей) и выведения из строя различных способностей, установленных на карте в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Классы оружия из игры 'Apex Legends')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 6 основных классов оружия из игры 'Apex Legends': штурмовые винтовки, пулеметы, пистолеты, дробовики, пистолеты-пулеметы и снайперские винтовки.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

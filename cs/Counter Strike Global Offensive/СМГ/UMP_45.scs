@@ -1,0 +1,5 @@
+UMP_45
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[UMP-45](*<-lang_ru;;*);
+		[UMP-45](*<-lang_en;;*);;

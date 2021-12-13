@@ -1,0 +1,6 @@
+concept_apex_attachment_extended_heavy_mag
+=> nrel_main_idtf: [extended heavy mag] (* <- lang_en;; *);
+=> nrel_main_idtf: [увеличенный тяжелый магазин] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

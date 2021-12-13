@@ -1,0 +1,5 @@
+P2000
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[P2000](*<-lang_ru;;*);
+		[P2000](*<-lang_en;;*);;

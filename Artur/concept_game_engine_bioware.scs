@@ -1,0 +1,34 @@
+concept_game_engine_bioware
+=> nrel_main_idtf: [игровой движок разработки bioware] (* <- lang_ru;; *);
+=> nrel_main_idtf: [bioware game development engines] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игровой движок разработки bioware)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок разработки bioware - игровой движок разрабатываемый и выпускаемый компанией bioware] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровые движки разработки bioware)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Bioware является автором Infinity Engine,
+		который использовался при разработке 2D
+		компьютерных ролевых игр] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+
+<- sc_node_not_relation;;

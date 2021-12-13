@@ -1,0 +1,43 @@
+concept_apex_attachment_shotgun_bolt
+=> nrel_main_idtf: [shotgun bolt (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [затвор для дробовика (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_attachment_shotgun_bolt_common;;
+    -> concept_apex_attachment_shotgun_bolt_rare;;
+    -> concept_apex_attachment_shotgun_bolt_epic;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (затвор для дробовика (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [затвор для дробовика (Apex Legends) - модификация ствола оружия, которая увеличивает скорострельность дробовиков.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_weapon_shotgun;
+		concept_apex_fire_rate_upgrade_level
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы затворов для дробовика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Затворы для дробовика бывают трех типов: обычного, редкого и эпического.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_barrel_stabilizer_common;
+        concept_apex_attachment_barrel_stabilizer_rare;
+        concept_apex_attachment_barrel_stabilizer_epic;
+        concept_apex_attachment_barrel_stabilizer_legendary
+	};;
+*);
+
+<- sc_node_not_relation;;

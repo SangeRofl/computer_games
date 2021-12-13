@@ -1,0 +1,50 @@
+concept_wc_specialization
+
+<-concept_character_class;
+
+=> nrel_main_idtf:
+      [специализация]
+      (*<-lang_ru;;*);
+       [specisalization]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Специализация] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Специализация)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_character_class
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Каждый <b><sc_element sys_idtf="concept_character_class">класс</sc_element></b> имеет дерево талантов, 
+состоящее из трёх веток — специализаций. Специализация определяла выполняемую персонажем роль в игровом мире.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Специализация)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_wc_talant
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Для каждой специализации предусмотрен свой набор <b><sc_element sys_idtf="concept_wc_talant">талантов.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://spec.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

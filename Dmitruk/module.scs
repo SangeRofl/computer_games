@@ -1,0 +1,31 @@
+concept_module
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [модуль]
+      (*<-lang_ru;;*);
+       [module]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (модуль)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+concept_MMORPG;
+concept_game_object_item
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Модуль - компонент какого-либо изобретения/предмета, который можно развивать для уличшения их характеристик или вовсе создания нового предмета.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (модуль)] (* <- lang_ru;; *);;
+
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Количество модулей может быть любое и также могут и не быть в игре.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

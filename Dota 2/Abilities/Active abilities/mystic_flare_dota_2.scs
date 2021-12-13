@@ -1,0 +1,45 @@
+mystic_flare_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Mystic Flare] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Mystic Flare](* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Mystic Flare)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой создаёт направленное поле сверхъестественной силы, сокрушая врагов. Поле наносит огромный урон, который равномерно распределяется между героями в области действия в течение 2.4 сек. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Mystic Flare)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Наносит урон с интервалом в 0,1 секунды спустя 0,1 секунды после применения, срабатывая 24 раз. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [20];
+=> nrel_default_damage : [1600];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Mystic_Flare_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

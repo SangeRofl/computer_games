@@ -1,0 +1,76 @@
+concept_active_card <- sc_node_not_relation;;
+concept_ability <- sc_node_not_relation;;
+concept_effect <- sc_node_not_relation;;
+
+nrel_battlecry
+<-sc_node_norole_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[боевой клич* ] (* <- lang_ru;; *);
+	[battlecry* ] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+  => nrel_main_idtf: [Опр. (Боевой клич* )] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+	  -> concept_card;;
+	  -> concept_ability;;
+  *);;
+  <= nrel_sc_text_translation: ... (*
+    -> [Боевой клич - способность карты, которая срабатывает, когда игрок её разыгрывает.] (* <- lang_ru;;*);;
+  *);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Боевой клич* )] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> concept_effect;;
+	  -> concept_ability;;
+    -> concept_map;;
+    -> concept_card;;
+    -> concept_active_card;;
+  *);; 
+  <= nrel_sc_text_translation: ...(*
+      -> [Эффект способности "боевой клич" вступает в силу, когда карта разыгрывается непосредственно из руки.](*<-lang_ru;;*);;
+  *);;
+*);
+
+//Домены
+	=> nrel_first_domain  :	concept_card;
+	=> nrel_second_domain :	concept_ability;;
+
+nrel_battlecry=>nrel_definitional_domain: ...(*
+	<=nrel_combination  :
+	{
+		concept_ability;
+		concept_card
+	};;
+*);;
+
+//Свойства
+oriented_relation -> nrel_battlecry;;
+binary_relation -> nrel_battlecry;;
+antisymmetric_relation -> nrel_battlecry;;
+transitive_relation -|> nrel_battlecry;;
+antireflexive_relation -> nrel_battlecry;;
+
+//Арность
+2 <- number;;
+arity -> ...
+(*
+<-sc_node_not_relation;;
+<=nrel_measurement : 2;;
+->nrel_battlecry;;
+*);;
+
+//Пример
+concept_card_minion_LJ <- concept_card;;
+concept_card_ability_summon <-  concept_ability;;
+concept_card_ability_summon <=  nrel_battlecry : concept_card_minion_LJ;;
+
+

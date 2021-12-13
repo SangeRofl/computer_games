@@ -1,0 +1,46 @@
+concept_weapon <- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [оружие]
+    (*<-lang_ru;;*);
+=> nrel_main_idtf: 
+    [weapon]
+    (*<-lang_en;;*);
+<- rrel_key_sc_element:... (*
+    => nrel_main_idtf: 
+        [Опр. Оружие]
+        (*<-lang_ru;;*);;
+    <- definition;;
+    <= nrel_sc_text_translation:... (*
+        -> rrel_example: 
+            [Оружие - <b><sc_element sys_idtf="class">класс</b></sc_element> устройств в <b><sc_element sys_idtf="concept_computer_game">компъютерной игре</b></sc_element>, предназначенных для нанесения ущерба(урона), в том числе фатального, определенным объектам компъютерной игры, таким как: <b><sc_element sys_idtf="concept_character">персонажи</b></sc_element>, <b><sc_element sys_idtf="concept_building">постройки(здания)</b></sc_element>, техника, <b><sc_element sys_idtf="concept_npc">NPC</b></sc_element>.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_weapon;;
+	=> nrel_main_idtf:[Разбиение по играм] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_firearm;;
+    -> concept_cold_weapon;;
+    -> concept_magic_weapon;;
+    -> concept_melee_weapon;;
+    -> concept_ranged_weapon;;
+    -> concept_throwing_weapon;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);
+
+=> nrel_inclusion: concept_game_object_item;
+
+<- rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/weapons.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

@@ -1,0 +1,52 @@
+concept_warcraft_kalimdor		
+
+=> nrel_main_idtf:[Калимдор] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Kalimdor] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Калимдор)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_warcraft_azeroth;
+      concept_warcraft_northrend;
+	  concept_warcraft_eastern_kingdoms;
+      warcraft_night_elves;
+	  concept_race_orc;
+	  concept_wc_race_tauren;
+	  concept_wc_race_trolls;
+	  concept_wc_race_draenei;
+	  concept_wc_race_ogres;
+	  concept_wc_race_centaurs;
+	  concept_wc_race_nagas;
+	  concept_warcraft_demons  
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Калимдор — один из континентов мира <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b>. 
+		 Он расположен к западу от <b><sc_element sys_idtf="concept_warcraft_eastern_kingdoms">Восточных Королевств</sc_element></b> 
+		 и к юго-востоку от <b><sc_element sys_idtf="concept_warcraft_northrend">Нордскола</sc_element></b>. Между континентами 
+		 раскинуло свои воды Великое море. Калимдор — дом <b><sc_element sys_idtf="warcraft_night_elves">ночных эльфов</sc_element></b>, 
+		 <b><sc_element sys_idtf="concept_race_orc">орков</sc_element></b>, <b><sc_element sys_idtf="concept_wc_race_tauren">тауренов</sc_element></b>, 
+		 <b><sc_element sys_idtf="concept_wc_race_trolls">троллей</sc_element></b> и 
+		 <b><sc_element sys_idtf="concept_wc_race_draenei">дренеев</sc_element></b>. 
+		 Также там проживают <b><sc_element sys_idtf="concept_wc_race_ogres">огры</sc_element></b>, 
+		 <b><sc_element sys_idtf="concept_wc_race_centaurs">кентавры</sc_element></b>, 
+		 <b><sc_element sys_idtf="concept_wc_race_nagas">наги</sc_element></b>, <b><sc_element sys_idtf="concept_warcraft_demons">демоны</sc_element></b> 
+		 и множество других рас помельче.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Kalimdor.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- concept_location;;

@@ -1,0 +1,69 @@
+concept_class_rogue
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Разбойница] (* <- lang_ru;; *);
+	[Rogue] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Разбойница)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+    -> nrel_effect;;
+		-> concept_card;;
+    -> concept_card_class_rogue;;
+    -> concept_card_class_neutral;;
+    -> concept_ability;;
+    -> concept_card_minion;;
+  *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Разбойники - это класс, предпочитающий атаковать своих противников быстрыми всплесками активности, активируя Комбо, чтобы получить мощные дополнительные эффекты.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Приемущества Разбойницы)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> concept_hearthstone_mana;;
+    -> concept_ability;;
+    -> concept_card_class_rogue;;
+    -> concept_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+    -> [Разбойники имеют доступ ко многим дешевым картам, включая несколько карт с нулевым запасом маны.](*<-lang_ru;;*);;
+  *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Возможности Разбойника)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> concept_card_weapon;;
+    -> concept_card_class_rogue;;
+    -> concept_card_class_neutral;;
+    -> concept_active_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+    -> [Разбойники могут экипировать оружие, чтобы наносить прямой урон своему герою, часто желая пожертвовать здоровьем, чтобы получить хороший импульс.](*<-lang_ru;;*);;
+  *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/rogue.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

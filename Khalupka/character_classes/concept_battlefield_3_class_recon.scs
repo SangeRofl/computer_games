@@ -1,0 +1,43 @@
+concept_battlefield_3_class_recon
+=> nrel_main_idtf: [Recon class Battlefield 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс разведчик Battlefield 3] (* <- lang_ru;; *);
+
+
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_sniper_rifle;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_dmr_rifle;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_pdw;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_shotgun;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_pistol;
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_battlefield_3_class_recon_usa;;
+	-> concept_battlefield_3_class_recon_russia;;
+	=> nrel_main_idtf:[Разбиение класса по странам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс разведчик Battlefield_3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс разведчик (Battlefield 3) — осбый вид 
+		<b><sc_element sys_idtf="concept_character">персонажа</b></sc_element>, который оснащен 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_sniper_rifle">снайперской винтовкой</b></sc_element> или 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_dmr_rifle">винтовкой DMR</b></sc_element> и различными гаджетами, 
+		предназначенными для обнаружения противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Разведчик 'Battlefield 3')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель<b><sc_element sys_idtf="concept_battlefield_3_class_recon">класса разведчик</b></sc_element> - обнаружение и уничтожение противника на дальней дистанции.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

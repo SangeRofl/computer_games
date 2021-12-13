@@ -1,0 +1,73 @@
+concept_communication
+=> nrel_main_idtf: [общение] (* <- lang_ru;; *);
+=> nrel_main_idtf: [communication] (* <- lang_en;;*);
+
+/*
+<= nrel_subdividing: ...		
+(*
+        -> concept_evasion;;
+        -> concept_collecting;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+*/
+
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(общение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это элементарный жанр, который являет собой взаимодействие нескольких субъектов между собой с наличием обратной связи(диалог).] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_elemental_genre;;
+		-> nrel_dialog;;
+                              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Жанром «общение» можно назвать только те разговоры, которые напрямую влияют на ход игры: сюжетные развилки, выбор правильных вариантов, общение между онлайн-игроками внутри команды для координации совместных действий.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [игрок не пытается решить свою глобальную проблему с помощью выбранного существа] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+
+*/
+<- sc_node_not_relation;;
+
+

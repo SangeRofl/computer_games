@@ -1,0 +1,28 @@
+rrel_first_game
+
+=> nrel_main_idtf: [first game'] (* <- lang_en;; *);
+=> nrel_main_idtf: [первая игра'] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(первая игра')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Первая игра' - отношение, показывающее первую вышедшую игру в серии игр] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_series;;		
+	*);;
+*);;
+
+
+//<- role_relation;
+
+
+//<- sc_node_norole_relation;;
+

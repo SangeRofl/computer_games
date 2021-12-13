@@ -1,0 +1,39 @@
+computer_game_half_life
+=> nrel_main_idtf: [Half-Life] (* <- lang_en;; *);
+=> nrel_main_idtf: [Half-Life] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_shooter;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_valve;
+=> nrel_developer: company_valve;
+=> nrel_publication_date: date_1998;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_game_engine: gold_src;
+=> nrel_plot: [отсутствует];
+<- concept_singleplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Дота 2)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре MOBA, выпущена на компанией Valve в 2011 году на платформе Windows. Реализована на движке sourse 2. Многопользовательская с отсутствием сюжета. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/half_life.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

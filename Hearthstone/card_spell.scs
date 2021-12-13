@@ -1,0 +1,40 @@
+concept_card_spell
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карта заклинания] (* <- lang_ru;; *);
+	[Spell card] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Карта заклинания)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+	  -> concept_card;;
+    -> concept_card_rare;;
+    -> concept_card_legendary;;
+    -> concept_card_epic;;
+    -> concept_card_common;;
+*);;
+	<= nrel_sc_text_translation: ...(*
+        -> [Карты заклинания - это карты, которые можно разыграть, чтобы вызвать одноразовый эффект или способность, описанные в тексте карты.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Карта заклинания)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+    -> concept_card_legendary;;
+    -> concept_card_epic;;
+    -> concept_card_rare;;
+    -> concept_card_common;;
+    -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+        -> [Карты заклинания не имеют атрибутов атаки или здоровья и являются вторым наиболее распространенным типом карт.](*<-lang_ru;;*);;
+    *);;
+  *);;

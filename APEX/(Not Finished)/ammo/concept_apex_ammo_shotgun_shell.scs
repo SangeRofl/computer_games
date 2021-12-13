@@ -1,0 +1,6 @@
+concept_apex_ammo_shotgun_shell
+=> nrel_main_idtf: [shotgun shell] (* <- lang_en;; *);
+=> nrel_main_idtf: [снаряд для дробовика] (* <- lang_ru;; *);
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

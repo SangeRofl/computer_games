@@ -1,0 +1,27 @@
+concept_apex_weapon_assault_rifle
+=> nrel_main_idtf: [assault rifle (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [штурмовая винтовка (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(штурмовая винтовка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [штурмовая винтовка (Apex Legends) — огнестрельное оружие, имеющее высокую скорострельность, средний урон и предназначенное для поражения персонажей противника в ближнем и среднем бою в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры штурмовых винтовок в(Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Apex Legends' существует 4 экземпляра штурмовых винтовок.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

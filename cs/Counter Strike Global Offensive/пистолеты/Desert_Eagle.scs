@@ -1,0 +1,5 @@
+Desert_Eagle
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Desert Eagle](*<-lang_ru;;*);
+		[Desert Eagle](*<-lang_en;;*);;

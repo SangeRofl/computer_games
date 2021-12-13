@@ -1,0 +1,41 @@
+concept_settings_control
+=> nrel_main_idtf: [настройки управления] (* <- lang_ru;; *);
+=> nrel_main_idtf: [control settings] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_settings_keyboard;;
+	-> concept_settings_mouse;;
+	-> consept_settings_controller;;
+
+	=> nrel_main_idtf: [разбиение по типу контроллеров] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(настройки управления)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Совокупность характеристик изменение которых
+				приводит к изменению управления в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Настройки управления)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки управления не влияют на производительность в игре] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

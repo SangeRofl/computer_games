@@ -1,0 +1,33 @@
+passive_ability_dota_2
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [Passive ability] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Пассивная способность] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Пассивная способность)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Пассивная способность используется постоянно либо активируется сама при выполнении определенных условий.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Пассивная способность)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Пассивная способность не тратит запас маны.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: warpath_dota_2;
+                   marksmanship_dota_2;
+                   cloak_and_dagger_dota_2;;
+
+warpath_dota_2 => nrel_mana_cost : [0];;
+marksmanship_dota_2 => nrel_mana_cost : [0];;
+cloak_and_dagger_dota_2 => nrel_mana_cost : [0];;

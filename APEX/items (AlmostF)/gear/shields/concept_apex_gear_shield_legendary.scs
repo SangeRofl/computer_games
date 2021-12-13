@@ -1,0 +1,52 @@
+concept_apex_gear_shield_legendary
+=> nrel_main_idtf: [legendary shield (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [легендарный нательный щит (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры нательного щита
+=> nrel_apex_additional_shield_units: 100;
+=> nrel_apex_gear_powerup: concept_apex_gear_powerup_fastheal;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (легендарный нательный щит (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [легендарный нательный щит (Apex Legends) - нательный щит, который добавляет 100 единиц брони и способность 'Быстрое Лечение' легенде в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_shield;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность легендарных щитов на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [легендарный нательный щит - самый редкий вид нательных щитов на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_shield;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (легендарный нательный щит)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/shield/shield_lvl4.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

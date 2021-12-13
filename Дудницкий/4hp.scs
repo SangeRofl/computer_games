@@ -1,0 +1,62 @@
+nrel_hp
+<-sc_node_norole_relation;
+<-oriented_relation;
+<-assymmetric_relation;
+<-antireflexive_relation;
+<|-transitive_relation;
+ => nrel_second_domain: value;
+  => nrel_first_domain: concept_character;
+=> nrel_main_idtf:
+	[очки здоровья*]
+	(*<-lang_ru;;*);
+	 [hit points*]
+	 (*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр. (очки здоровья*)] (* <- lang_ru;; *);;
+	=> nrel_using_constants: {
+	concept_computer_game;
+	value;
+	concept_object;
+	concept_maximum_damage
+	};;
+<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[<b><sc_element sys_idtf="nrel_hp">очки здоровья* - величина в компьютерных играх, определяющая максимальное количество урона, которое может получить объект.] (* <-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+	<=nrel_combination:
+{
+concept_character;
+value
+};;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	  [Утв.(*Очки здоровья)] (* <- lang_ru;; *);;
+=>nrel_using_constants: {
+concept_character;
+concept_death;
+concept_faint
+};;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[Если текущее количество очков здоровья достигфет нуля, то персонаж погибает, либо теряет сознание.](*<-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+    *);;
+concept_character -> Pudge;;
+Pudge => nrel_hp: ..concept_q;;
+concept_value -> ..concept_q;;
+..concept_q => nrel_hp: 3345;;
+concept_number -> 3345;;
+sc_node_not_relation -> concept_computer_game;;
+	sc_node_not_relation -> value;;
+	sc_node_not_relation -> concept_object;;
+	sc_node_not_relation -> concept_maximum_damage;;
+sc_node_not_relation -> concept_character;;
+sc_node_not_relation -> concept_death;;
+sc_node_not_relation -> concept_faint;;

@@ -1,0 +1,41 @@
+concept_night_hunter
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Ночной охотник] (* <- lang_ru;;*);
+	[Night hunter] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_night_hunter;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Ночной охотник)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Ночной охотник - бесстрашный охотник, охраняющий гнёзда-инкубаторы «Неуловимых».] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Ночного охотника)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Как и любой другой мутант, охотник обладает нечеловеческими умениями, дающие ему возможность давать отпор выжившим и истреблять их.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://nighthunter.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

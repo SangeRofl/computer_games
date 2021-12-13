@@ -1,0 +1,72 @@
+concept_MMOFPS
+=> nrel_main_idtf: [сетевой экшн] (* <- lang_ru;; *);
+=> nrel_idtf: [MMOFPS] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_microcontrol;;
+        -> concept_tactic;;
+        -> concept_planning;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(глобальная военная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество онлайн игр в реальном времени, происходящие внутри крупной игровой области, с большим количеством одновременно участвующих игроков в виде шутера от первого лица.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_sector;;
+		-> concept_setka;;
+                -> nrel_build;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(пошаговый режим)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется пошаговый режим] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+ 

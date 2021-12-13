@@ -1,0 +1,70 @@
+concept_character_build <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Build]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Билд]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Билд]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Билд - стратегия/шаблон выбора <b><sc_element sys_idtf="concept_ability">способностей</b></sc_element> и/или предметов для <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компъютерной игре</b></sc_element> игроком.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Билд]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Билдов на <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> может быть несколько.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Билд]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Билд на <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> возникает в процессе отбора наиболее полезных для <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> предметов и наиболее эффективного на этом <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> порядка прокачки <b><sc_element sys_idtf="concept_ability">способностей</b></sc_element> игровым сообществом либо отдельным игроком.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Билд]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Выбор билда, если их существует несколько, как правило, зависит от игровой ситуаци.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Билд]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Опытные игроки, как правило, вносят наиболее значительный вклад в формирование билда(ов).]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/build.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

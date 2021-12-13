@@ -1,0 +1,118 @@
+concept_apex_weapon_alternator
+=> nrel_main_idtf: [Alternator SMG] (* <- lang_en;; *);
+=> nrel_main_idtf: [ПП Сменщик] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_smg;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_light_round;
+
+=> nrel_weapon_rate_of_fire: 640;
+=> nrel_weapon_damage_per_second: 138;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 23;
+=> nrel_apex_default_legend_common_helmet_damage: 21;
+=> nrel_apex_default_legend_rare_helmet_damage: 18;
+=> nrel_apex_default_legend_epic_helmet_damage: 17;
+=> nrel_apex_default_legend_legendary_helmet_damage: 17;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 24;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 22;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 19;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 18;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 18;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 20;
+=> nrel_apex_fortified_legend_common_helmet_damage: 18;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 15;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 14;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 14;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 15;
+=> nrel_apex_low_profile_legend_body_damage: 16;
+=> nrel_apex_fortified_legend_body_damage: 13;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 12;
+=> nrel_apex_low_profile_legend_leg_damage: 13;
+=> nrel_apex_fortified_legend_leg_damage: 10;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.5;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 16;
+=> nrel_apex_common_magazine_capacity: 20;
+=> nrel_apex_rare_magazine_capacity: 23;
+=> nrel_apex_epic_magazine_capacity: 26;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_light_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ПП Сменщик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ПП Сменщик - пистолет-пулемет, который использует легкие патроны и имеет только автоматический тип стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_light_round;
+		concept_apex_weapon_smg;
+        concept_apex_fire_mode_auto
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на ПП Сменщик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 48 скинов на ПП Сменщик: 8 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ПП Сменщик)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_alternator.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

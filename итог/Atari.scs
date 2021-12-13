@@ -1,0 +1,55 @@
+concept_game_console -> Atari ;;
+
+Atari
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Атари]
+		(* 
+			<- lang_ru;; 
+		*);
+		[Atari]
+		(*
+		<- lang_en;; 
+		*);;
+		
+Atari <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/Atari.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			*);; 
+*);; 
+
+Black_Mirror <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Атари)](*<-lang_ru;;*); 
+				[Pic. (Atari)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/Atari.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+Atari => nrel_producing_country : France;; 
+
+concept_calendar_date -> 1977;; 
+1977 => nrel_main_idtf : [1977 год](*<-lang_ru;;*);; 
+1977 => nrel_main_idtf : [year of 1977](*<-lang_en;;*);; 
+Atari => nrel_release_date : 1977;; 
+
+value -> 2600;; 
+Atari <- rrel_seies: 4;; 
+
+

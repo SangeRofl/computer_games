@@ -1,0 +1,70 @@
+computer_game_the_need_for_speed							//developers and gameMode?
+=> nrel_main_idtf: [The Need for Speed] (* <- lang_ru;; *);
+=> nrel_main_idtf: [The Need for Speed] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_arcade;
+<- concept_simulator;
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electronic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_game_camera: concept_first_person_view;
+
+
+
+=> nrel_publication_date: date_10_09_1994;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(The Need For Speed)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре автогонок, первая часть в игровой серии Need for Speed.
+                    В игре присутствует несколько разнообразных трасс и режимов, каждый из которых имеет свои особенности прохождения.
+                    В The Need for Speed представлены восемь лицензированных автомобилей, о каждом из которых игрок может просмотреть
+                    презентационные слайды и подробную информацию, включая исторические сведения известных моделей и внутриигровое видео
+                    с участием каждого из автомобилей. В автосимуляторе также присутствуют полицейские погони с возможностью задержания
+                    и ареста игрока, если тот нарушает правила дорожного движения.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_first_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_the_need_for_speed;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;
+

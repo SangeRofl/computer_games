@@ -1,0 +1,30 @@
+concept_setting_cave_people
+=> nrel_main_idtf: [пещерные люди] (* <- lang_ru;; *);
+=> nrel_idtf: [cave people] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пещерные люди)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+                -> [Вид сеттинга, при котором действие в компьютерной игре происходит во времена жизни пещерных людей] (* <- lang_ru;; *);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(пещерные люди)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Чаще всего персонажами являются пещерные люди] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

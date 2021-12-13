@@ -1,0 +1,30 @@
+concept_settings_main_quality
+=> nrel_main_idtf: [общее качество] (* <- lang_ru;; *);
+=> nrel_main_idtf: [main quality] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(общее качество)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Характеристика изменение которой приводит к изменению общего качества в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(общее качество)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [настройки общего качества максимально влияют на производительность в игре] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

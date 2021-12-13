@@ -1,0 +1,26 @@
+concept_eft_weapon_shotgun
+=> nrel_main_idtf: [shotgun (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [дробовик (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(дробовик (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [дробовик (Escape from Tarkov) — огнестрельное оружие, использующее энергию фиксированного снаряда для стрельбы некоторым количеством небольших пуль либо шариков, имеющее низкую скорострельность, средне-высокий урон и предназначенное для поражения персонажей противника в ближнем бою в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры дробовиков в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра дробовиков.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

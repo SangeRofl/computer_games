@@ -1,0 +1,59 @@
+concept_warcraft_demons
+
+<-concept_race;
+=>nrel_fraction:concept_the_burning_legion;
+
+=> nrel_main_idtf:
+      [Демоны]
+      (*<-lang_ru;;*);
+       [Demons]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Демоны)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Демоны – злобные бессмертные существа, которые питаются магией и жизнью. 
+Их служба – их же страсть: причинение страданий, распространение скверны и, 
+конечно, разрушение всего, что их окружает.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Демоны)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      game_character_sargeras;
+      concept_the_burning_legion
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Обсуждение демонов не может быть полным, 
+если не упомянуть о <b><sc_element sys_idtf="game_character_sargeras">Саргерасе</sc_element></b>, Тёмном Титане. 
+В течение тысячелетий он превращал многие расы в демонов, 
+чтобы они присоединялись к его <b><sc_element sys_idtf="concept_the_burning_legion">Пылающему Легиону</sc_element></b>, 
+и всё ради одной цели: ввергнуть 
+в пучину первозданного хаоса вселенную.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Demons.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+
+

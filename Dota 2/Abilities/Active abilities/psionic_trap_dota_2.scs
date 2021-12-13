@@ -1,0 +1,45 @@
+psionic_trap_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Psionic Trap] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Psionic Trap] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Psionic Trap)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой ставит невидимую ловушку, которая отслеживает передвижение врагов и постепенно накапливает энергию. По команде ловушка срабатывает, замедляя противников в зоне действия как минимум на 30%. Через 4 сек. ловушка наберёт максимальную мощь, и её активация замедлит жертв на 60% и нанесёт им урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Psionic Trap)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ловушки замедляют врагов только при активации, а не из-за разрушения с помощью атак или превышения максимального числа ловушек.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [0.5];
+=> nrel_default_damage : [70];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Psionic_Trap_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

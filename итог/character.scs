@@ -1,0 +1,56 @@
+lab2.2.1=[*
+nrel_character=>nrel_idtf:[character*] (* <- lang_en;; *);;
+nrel_character=>nrel_idtf:[hero*] (* <- lang_en;; *);;
+nrel_character=>nrel_idtf:[to be a character*] (* <- lang_en;; *);;
+*];;
+lab2.2.2=[*nrel_character<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(Персонаж*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->rrel_example:[Действующее лицо видеоигры](* <- lang_ru;; *);;
+*);;
+<=nrel_using_constants:...
+(*
+->video_game;;->actor;;
+*);;
+*);;	*];;
+lab2_2_3=[*nrel_character=>nrel_first_domain:concept_videogame;;
+nrel_character=>nrel_second_domain:concept_person;;
+concept_videogame<-...
+(*
+->concept_person;;
+=>nrel_combination:...
+(*
+<=nrel_definitional_domain:nrel_character;;
+*);;
+*);;*];;
+lab2.2.4=[*
+nrel_character<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;*];;
+lab2_2_5=[*nrel_character<-oriented_relation;;
+antisymmetric_relation->nrel_character;;
+antitransitive_relation->nrel_character;;
+antireflexive_relation->nrel_character;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;*];;
+lab2_2_6=[*nrel_character<-rrel_key_sc_element:...
+(*
+->rrel_key_sc_element:concept_men;concept_animal;concept_entity;concept_essence;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(персонаж*, человек, животные, сущность, существо)] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[Персонажами могут быть люди, животные, сверхъестественные, мифические, божественные существа или персонифицированные абстрактные сущности] (* <-lang_ru;; *);;
+	*);;
+*);;*];;
+lab2_2_7=[*concept_character->Fortnite;;
+Fortnite=>nrel_character:Headhunter;;
+Headhunter<-concept_person;;*];;
+lab2.3=[*concept_gamer->rrel_example:Pew_Die_Pie;;*];;
+

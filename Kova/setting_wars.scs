@@ -1,0 +1,32 @@
+concept_setting_wars
+=> nrel_main_idtf: [войны] (* <- lang_ru;; *);
+=> nrel_idtf: [wars] (* <- lang_en;; *);
+ 		
+=> nrel_inclusion: concept_setting_world_war_the_first; concept_setting_world_war_the_second;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(войны)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит во время войны.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(войны)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх рейтиг обычно больше 16 лет] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

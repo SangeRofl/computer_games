@@ -1,0 +1,45 @@
+computer_game_bloodborne
+=> nrel_main_idtf: [Bloodborne] (* <- lang_en;; *);
+=> nrel_main_idtf: [Порождение крови] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action_RPG;
+=> nrel_platform: concept_PS4;
+=> nrel_publisher: company_SONY;
+=> nrel_developer: company_From_Software;
+=> nrel_publication_date: data_2015;
+<- concept_setting_victorian_gothic;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_game_engine: phyreengine;
+=> nrel_plot: [отсутствует];
+<- concept_paid_computer_game;
+<- concept_multiplayer; concept_singleplayer;
+
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Bloodborne)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре action RPG, выпущена компанией Sony в 2014 году на платформе PS4. Многопользовательская с сюжетом. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/bloodborne.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+

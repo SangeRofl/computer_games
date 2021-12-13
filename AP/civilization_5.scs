@@ -1,0 +1,39 @@
+computer_game_civilization_5
+=> nrel_main_idtf: [Civilization 5] (* <- lang_en;; *);
+=> nrel_idtf: [Civilization 5] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_global_strategy;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_2k_games;
+=> nrel_developer: company_firaxis_games;
+=> nrel_publication_date: date_2010;
+<- concept_setting_evolution;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [отсутствует];
+<- concept_paid_computer_game;
+<- concept_multiplayer; concept_singleplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Civilization 5)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре глобальная стратегия, выпущена на компанией 2K Games в 2010 году на платформе Windows. Однопользовательская и многопользовательская с отсутствием сюжета. Распространяется платно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/civilization_5.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,70 @@
+concept_double_barrel_shotgun
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Двуствольный дробовик] (* <- lang_ru;;*);
+	[Double-Barrel shotgun] (* <-lang_en;;*);
+
+=>nrel_damage: 495_2550
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[495-2550](* <-lang_en; lang_ru;; *);;
+		<-damage;;
+		=>nrel_min_damage: [495];;
+		=>nrel_max_damage: [2550];;
+	*);
+
+=>nrel_accuracy_gun: 25
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[25](* <-lang_en; lang_ru;; *);;
+		<-accuracy;;
+		=>nrel_accuracy: [25];;
+	*);
+
+=>nrel_rate_of_fire: 30
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[30](* <-lang_en; lang_ru;; *);;
+		<-rate_of_fire;;
+		=>nrel_rate_of_fire: [30];;
+	*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_double_barrel_shotgun;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Двуствольный дробовик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Двуствольный дробовик — самое мощное огнестрельное оружие в игре Dying Light. ] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики Двуствольного дробовика)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Двуствольный дробовик имеет следующие характеристики: урон - 495-2550; точность - 25; скорострельность - 30. Оснащен магазином на 12 патронов. К данному дробовику игрок может нести боезапас в количестве 56 патронов. Наносит большой урон, но только на близкие расстояния.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://double_shotgun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

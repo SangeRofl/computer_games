@@ -1,0 +1,48 @@
+concept_superhero  //это системный идентификатор
+=> nrel_main_idtf:
+	[супергерой] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество супергероев] (* <- lang_ru;; *);    // обычные идентификаторы
+	[superhero] (* <- lang_en;; *);
+
+
+
+->rrel_example: superman 
+(* => nrel_main_idtf: [Супермен] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_superhero             //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(супергерой)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Супергерой — вымышленный персонаж, наделённый неординарными физическими способностями] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_character (*
+=> nrel_main_idtf: [персонаж] (* <- lang_ru;; *);; *);;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_superhero                  //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(герой, суперсила)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Герой, обладающий суперсилой является супергероем] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла

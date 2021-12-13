@@ -1,0 +1,63 @@
+jactroll
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Jakub "Jactroll" Skurzynski](* <-lang_en;; *);
+		[Якуб "Jactroll" Скуржински](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Jactroll](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Poland;
+	=>nrel_surname: Skurzynski;
+	=>nrel_first_name: Jakub;
+	=>nrel_nickname: Jactroll;
+	=>nrel_birthday: [05.08.1998];
+	=>nrel_gamerole: support_lol;
+
+	<=nrel_with_whom: contract_jactroll_and_ago_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jactroll and AGO Gaming](* <-lang_en;; *);
+			[Контракт между Jactroll и AGO Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: ago_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_11_2016;;
+			->rrel_end: xx_06_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_jactroll_and_giants_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jactroll and Giants Gaming](* <-lang_en;; *);
+			[Контракт между Jactroll и Giants Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: giants_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_06_2017;;
+			->rrel_end: xx_12_2017;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_jactroll_and_team_vitality_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jactroll and Team Vitality](* <-lang_en;; *);
+			[Контракт между Jactroll и Team Vitality](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_vitality_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_12_2017;;
+		*);;
+	*);;
+

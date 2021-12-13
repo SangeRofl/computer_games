@@ -1,0 +1,41 @@
+concept_sledgehammer
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кувалда] (* <- lang_ru;;*);
+	[Sledgehammer] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_sledgehammer;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Кувалда)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кувалда — тип тупого оружия ближнего боя в игре Dying Light. ] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристика Кувалды)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Обладающее гигантским уроном, это оружие может эффективно применяться против больших групп врагов и вне зависимости от их силы.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://sledgehammer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

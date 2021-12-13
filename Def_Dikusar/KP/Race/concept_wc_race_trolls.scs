@@ -1,0 +1,125 @@
+concept_wc_race_trolls
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_horde;
+
+=> nrel_main_idtf:
+      [Тролли]
+      (*<-lang_ru;;*);
+       [Trolls]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [тролль]
+      (*<-lang_ru;;*);
+       [troll]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(тролли)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_wc_elves;
+      concept_race_orc
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Тролли – высокие, долговязые и мускулистые. 
+Внешне схожи с <b><sc_element sys_idtf="concept_wc_elves">эльфами</sc_element></b> (из-за длинных ушей) и 
+с <b><sc_element sys_idtf="concept_race_orc">орками</sc_element></b> (из-за внушительных клыков). 
+Длинные руки, сильные ноги и быстрые рефлексы, 
+присущие расе троллей, делают их идеальными охотниками](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+=>nrel_inclusion:
+{
+      concept_wc_dark_troll;
+      concept_wc_forest_troll;
+      concept_wc_ice_troll;
+      concept_wc_jungle_troll;
+      concept_wc_sand_troll;
+      concept_wc_zandalari_troll
+};
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://troll.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+concept_wc_dark_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Тёмные тролли]
+      (*<-lang_ru;;*);
+       [Dark Trolls]
+       (*<-lang_en;;*);;
+
+concept_wc_forest_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Лесные тролли]
+      (*<-lang_ru;;*);
+       [Forest Trolls]
+       (*<-lang_en;;*);;
+
+concept_wc_ice_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Ледяные тролли]
+      (*<-lang_ru;;*);
+       [Ice Trolls]
+       (*<-lang_en;;*);;
+
+concept_wc_jungle_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Тролли джунглей]
+      (*<-lang_ru;;*);
+       [Jungle Trolls]
+       (*<-lang_en;;*);;
+
+
+
+concept_wc_sand_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Песчаные  тролли]
+      (*<-lang_ru;;*);
+       [Sand Trolls]
+       (*<-lang_en;;*);;
+
+
+
+concept_wc_zandalari_troll
+
+<-concept_race;
+
+=> nrel_main_idtf:
+      [Тролли  Зандалари]
+      (*<-lang_ru;;*);
+       [Zandalari]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Островные тролли] (* <- lang_ru;; *);;
+
+
+

@@ -1,0 +1,32 @@
+concept_game_engine_id_software
+=> nrel_main_idtf: [игровой движок разработки id_software] (* <- lang_ru;; *);
+=> nrel_main_idtf: [id_software game development engines] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игровой движок разработки id Software)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок разработки id Software - игровой движок разрабатываемый и выпускаемый компанией id Software] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровые движки разработки id Software)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Doom engine также известный как id Tech 1 —
+		псевдотрёхмерный игровой движок, разработанный
+		американской компанией id Software ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

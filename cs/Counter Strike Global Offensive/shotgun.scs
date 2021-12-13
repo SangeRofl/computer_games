@@ -1,0 +1,5 @@
+shotgun
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Дробовик](*<-lang_ru;;*);
+		[shotgun](*<-lang_en;;*);;

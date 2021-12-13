@@ -1,0 +1,66 @@
+computer_game_need_for_speed_world
+=> nrel_main_idtf: [Need for Speed: World] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: World] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_multiplayer_game;
+<- concept_arcade;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_black_box;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform:  windows;
+
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_27_07_2010;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: World)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией EA Black Box и изданная компанией Electronic Arts в 2009 году. Является ответвлением от основной серии.
+                Игра вышла в бизнес-модели Free-to-play. В качестве платного контента игрок мог приобретать игровую валюту SpeedBoost,
+                за которую можно было купить новые автомобили и улучшения. В сетевых сражениях и полицейских погонях игроки могли соревноваться со своими друзьями или другими гонщиками.
+                Специальная «валюта» SpeedBoost, приобрести которую можно во внутриигровом магазине, позволяла использовать дополнительные игровые объекты, такие как Booster Packs, Power-ups и XP Accelerators,
+                а также экзотические гоночные машины. Для оплаты покупки могли быть использованы различные платёжные системы, включая кредитные карты, интернет кошельки и SMS.  ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_black_box;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_world;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

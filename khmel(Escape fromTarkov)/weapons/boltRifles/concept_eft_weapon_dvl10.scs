@@ -1,0 +1,54 @@
+concept_eft_weapon_dvl10
+=> nrel_main_idtf: [DVL-10(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ДВЛ-10(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_bolt_rifle;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_7.62x51;
+=> nrel_eft_weapon_sighting_distance: 100;
+=> nrel_eft_weapon_rate_of_fire: 30;
+=> nrel_eft_weapon_accuracy: 0.013;
+=> nrel_eft_weapon_effective_distance: 1000;
+=> nrel_eft_weapon_starting_speed: 839;
+=> nrel_eft_weapon_weight: 1.12;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ДВЛ-10(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ДВЛ-10 - легкая, компактная и бесшумная болтовая винтовка под новые и существующие дозвуковые боеприпасы была разработана для специальных служебно-боевых задач, при решении которых требуется особая точность и дальность.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_bolt_rifle
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (комплектующие ДВЛ-10(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ДВЛ-10 снабжена, унифицированным с другими моделями СВЛ, складным прикладом. Комплектуется матчевым стволом LOBAEV Hummer Barrels из нержавеющей стали.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ДВЛ-10(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Dvl10.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

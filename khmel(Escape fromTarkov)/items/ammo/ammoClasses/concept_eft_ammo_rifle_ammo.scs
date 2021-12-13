@@ -1,0 +1,54 @@
+concept_eft_ammo_rifle_ammo
+=> nrel_main_idtf: [rifle ammo(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [винтовочный патрон(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (винтовочный патрон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [В настоящее время, винтовочные патроны в основном используются для стрельбы из пулемётов, штурмовых/болтовых/марксманских винтовок и штурмовых карабинов.] (* <- lang_ru;; *);;
+	*);;
+
+	<= nrel_using_constants: {
+		concept_eft_ammo;
+		concept_eft_weapon_assault_rifle;
+		concept_eft_weapon_assault_carbine;
+		concept_eft_weapon_machine_gun;
+		concept_eft_weapon_bolt_rifle;
+		concept_eft_weapon_marxman_rifle
+
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (отличие винтовочного патрона от остальных патронов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [От остальных патронов винтовочные отличаются большей энергией: они способны сохранять убойное действие на всей дальности полёта.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (винтовочный патрон(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/rifleAmmo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

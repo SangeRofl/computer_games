@@ -1,0 +1,41 @@
+dismember_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Dismember] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Dismember] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Dismember)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой заживо пожирает врага, оглушая его и нанося периодический урон, который зависит от силы владельца способности и излечивает его. На крипов действует дольше.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Dismember)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Обезвреживает цель на всю длительность произнесения.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  => nrel_cooldown : [20];
+=> nrel_default_damage : [120];
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Dismember_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

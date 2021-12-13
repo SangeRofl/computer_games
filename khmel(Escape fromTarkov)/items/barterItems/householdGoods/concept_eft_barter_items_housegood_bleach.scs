@@ -1,0 +1,48 @@
+concept_eft_barter_items_housegood_bleach
+=> nrel_main_idtf: [Bleach(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Отбеливатель(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_housegood;
+
+=> nrel_eft_weapon_weight: 0.5;
+=> nrel_eft_barter_items_cost: 5988;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Отбеливатель(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Отбеливатель - бартерный предмет из группы хозтовары, cпециализированный пятновыводитель и отбеливатель.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_housegood
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (спецификация отбеливателя(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Отбеливающий агент разрушает химические связи, что активно используется в химическом производстве.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Отбеливатель(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/bleach.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

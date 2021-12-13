@@ -1,0 +1,106 @@
+concept_apex_weapon_mastiff
+=> nrel_main_idtf: [Mastiff Shotgun] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дробовик "Мастифф"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_shotgun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 8;
+=> nrel_apex_projectiles_shape: concept_horizontal_line;
+=> nrel_weapon_ammo_type: concept_apex_ammo_special_shotgun_shell;
+
+=> nrel_weapon_rate_of_fire: 96;
+=> nrel_weapon_damage_per_second: 230;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 288;
+=> nrel_apex_default_legend_common_helmet_damage: 259;
+=> nrel_apex_default_legend_rare_helmet_damage: 230;
+=> nrel_apex_default_legend_epic_helmet_damage: 216;
+=> nrel_apex_default_legend_legendary_helmet_damage: 216;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 302;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 272;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 242;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 227;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 227;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 245;
+=> nrel_apex_fortified_legend_common_helmet_damage: 220;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 196;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 184;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 184;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 144;
+=> nrel_apex_low_profile_legend_body_damage: 151;
+=> nrel_apex_fortified_legend_body_damage: 122;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 144;
+=> nrel_apex_low_profile_legend_leg_damage: 151;
+=> nrel_apex_fortified_legend_leg_damage: 122;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_negligible;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 4;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Дробовик "Мастифф")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Дробовик "Мастифф" - дробовик, который использует ружейные патроны, имеет одиночный тип стрельбы, выстреливая по 8 снарядов за выстрел, и его можно получить только из эирдропа] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_special_shotgun_shell;
+		concept_apex_weapon_shotgun;
+        concept_apex_fire_mode_single;
+		nrel_apex_projectiles_per_shot
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Дробовик "Мастифф")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 43 скинов на Дробовик "Мастифф": 4 легендарных, 5 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дробовик "Мастифф")](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_mastiff.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

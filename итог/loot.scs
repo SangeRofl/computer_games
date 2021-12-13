@@ -1,0 +1,48 @@
+concept_loot  //это системный идентификатор
+=> nrel_main_idtf:
+	[лут] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество лутов] (* <- lang_ru;; *);    // обычные идентификаторы
+	[loot] (* <- lang_en;; *);
+
+
+
+->rrel_example: sword 
+(* => nrel_main_idtf: [меч] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_loot             //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(лут)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Лут - вещи, подбираемые для дальнейшего использования, часто выпавшие с противника] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_oponent (*
+=> nrel_main_idtf: [противник] (* <- lang_ru;; *);; *);;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_loot                  //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(шансы, победа)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Любой лут повышает шансы на победу] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла

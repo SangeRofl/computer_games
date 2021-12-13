@@ -1,0 +1,68 @@
+concept_battlefield_3_weapon_m4a1
+=> nrel_main_idtf: [M4A1 (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [M4A1 (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_carbine;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (M4A1 (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_m4a1">M4A1</b></sc_element> стартовый 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_carbine">карабин в игре Battlefield 3</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_carbine
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (M4A1 Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_m4a1">M4A1</b></sc_element> может вести полностью 
+		    <b><sc_element sys_idtf="concept_weapon_auto_fire_mode">автоматический огонь</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_m4a1;
+        concept_weapon_auto_fire_mode
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_thickened_trunk; 
+											 concept_battlefield_3_weapon_equipment_front_handle; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+											 concept_battlefield_3_weapon_equipment_flame_arrester;
+
+=> nrel_battlefield_3_weapon_max_damage: 25.0;
+=> nrel_battlefield_3_weapon_max_damage: 14.3;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 1.90;
+=> nrel_battlefield_3_weapon_full_reload_time: 2.60;
+=> nrel_battlefield_3_weapon_magazine_capacity: 30;
+=> nrel_battlefield_3_weapon_max_damage_distance: 8;
+=> nrel_battlefield_3_weapon_min_damage_distance: 50;
+=> nrel_battlefield_3_weapon_rate_of_fire: 800;
+=> nrel_battlefield_3_weapon_recoil_up: 0.25k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.1k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.3k;
+=> nrel_weapon_fire_mode: concept_weapon_auto_fire_mode; concept_weapon_single_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/m4a1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

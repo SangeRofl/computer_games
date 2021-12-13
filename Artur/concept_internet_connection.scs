@@ -1,0 +1,33 @@
+concept_internet_connection
+=> nrel_main_idtf: [интернет соединение] (* <- lang_ru;; *);
+=> nrel_main_idtf: [internet connection] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(интернет соединение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Интернет соединение - методы и средства,
+				посредством которых пользователи соединяются с Интернетом.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_cpu;;
+		-> concept_tact;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(интернет соединение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Интернет соединение бывает проводным и беспроводным] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

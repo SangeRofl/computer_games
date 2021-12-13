@@ -1,0 +1,5 @@
+Mac_10
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Mac-10](*<-lang_ru;;*);
+		[Mac-10](*<-lang_en;;*);;

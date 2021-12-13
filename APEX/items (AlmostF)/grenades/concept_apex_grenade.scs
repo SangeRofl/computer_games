@@ -1,0 +1,34 @@
+concept_apex_grenade
+=> nrel_main_idtf: [grenade (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [граната (Apex Legends)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (граната (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [граната (Apex Legends) - предмет, который использует игрок для нанесения урона врагам в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_damage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность гранат в рюкзаке игрока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игрок может носить определенное количество гранат, которое ограничено размером его рюкзака.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player;
+		concept_explosive_ammo;
+		concept_apex_gear_backpack
+	};;
+*);
+
+<- sc_node_not_relation;;

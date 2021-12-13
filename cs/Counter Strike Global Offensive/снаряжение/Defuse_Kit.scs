@@ -1,0 +1,5 @@
+Defuse_Kit
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Набор спасателя](*<-lang_ru;;*);
+		[Defuse Kit](*<-lang_en;;*);;

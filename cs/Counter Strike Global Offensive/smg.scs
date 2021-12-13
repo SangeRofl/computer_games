@@ -1,0 +1,69 @@
+smg
+    <-sc_node_not_relation;
+	<= nrel_inclusion: concept_shop ;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [пистолет-пулемет](* <-lang_ru;; *);
+        [smg](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Mac-10](*<- lang_ru;;*);
+            [Mac-10](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (пистолет-пулемет)] (* <- lang_ru;; *);
+            [Def. (smg)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Пистолет-пулемет — индивидуальное ручное автоматическое стрелковое оружие непрерывного огня, использующее для стрельбы пистолетный патрон.](*<- lang_ru;;*);
+                [Smg - individual hand-held automatic continuous fire weapon using a pistol cartridge for firing.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_weapon;;
+            ->nrel_fire;;
+            ->nrel_shooting;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+       operation
+    };;
+    => nrel_main_idtf: 
+        [Утв.(операция)] (* <- lang_ru;; *);
+        [Expl.(operation)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Пистолеты-пулеметы совершенно не подходили для активных наступательных действий.](*<- lang_ru;;*);
+            [Smg completely unsuitable for active offensive operations.](*<- lang_en;;*);;
+    *);;
+*);
+
+=> nrel_inclusion:  	Mac_10 ;
+			UMP_45 ;
+			MP_7 ;
+			P_90 ;
+			PP_Bizon ;
+			MP_9 ;
+			MP5_SD ;;
+										
+Mac_10 => nrel_price : [1050];;
+UMP_45 => nrel_price : [1200];;
+MP_7 => nrel_price : [1700];;
+P_90 => nrel_price : [2350];;
+PP_Bizon => nrel_price : [1400];;
+MP_9 => nrel_price : [1250];;
+MP5_SD => nrel_price : [1700];;

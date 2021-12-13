@@ -1,0 +1,8 @@
+rrel_botlaner_lol
+
+	<-sc_node_role_relation;
+	<-oriented_relation;
+	
+	=> nrel_main_idtf:
+		[botlaner'](* <-lang_en;; *);
+		[ботлэйнер'](* <-lang_ru;; *);;

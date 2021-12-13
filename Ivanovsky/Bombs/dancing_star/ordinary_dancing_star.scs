@@ -1,0 +1,49 @@
+concept_ordinary_dancing_star
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Обычная танцующая звезда] (* <- lang_ru;;*);
+	[Ordinary dancing star] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Обычная танцующая звезда)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая взрывается.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Огненный взрыв, который может поджечь ближайших врагов. Уничтожает гнёзда чудовищ. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_saltpeter;;
+	-> concept_sulfur;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Обычная танцующая звезда состоит из: Селитра и Сера.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

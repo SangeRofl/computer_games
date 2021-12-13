@@ -1,0 +1,39 @@
+concept_mithril_hammer
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [mithril hammer] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [mithril hammer] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(mithril hammer)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Молот, скованный из чистейшего мифрила.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(mithril hammer)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет керри героям, которым нужем дополнительный урон.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mithril_hammer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

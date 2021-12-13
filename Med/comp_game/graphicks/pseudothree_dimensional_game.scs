@@ -1,0 +1,30 @@
+concept_pseudothree_dimensional_game
+=> nrel_main_idtf: [псевдотрехмерная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf: [pseudothree-dimensional game] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(псевдотрехмерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игра, графика в которой пытается имитировать трехмерное игровое пространство, однако при этом не является трехмерной] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_graphick;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(псевдотрехмерная игра, персонаж)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Зачастую игровой персонаж в таких играх может передвигаться лишь вдоль двух осей, при этом меняя свое положение относительно пола(взлетая или подпрыгивая)] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

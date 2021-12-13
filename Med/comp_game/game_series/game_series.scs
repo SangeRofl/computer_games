@@ -1,0 +1,42 @@
+concept_game_series
+
+=> nrel_main_idtf:[серия игр] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series] (* <- lang_en;; *);
+
+
+=> nrel_inclusion: concept_game_series_call_of_duty; 
+=> nrel_inclusion: concept_game_series_battlefield;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_game_genre;;
+		-> concept_setting;;
+		-> concept_gameplay;;
+		-> concept_character;;
+	*);;
+		=> nrel_main_idtf: [Опр.(серия игр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Серия игр - это сборка компьютерных игр, имеющих общий жанр, сеттинг, геймплей, персонажей, историю или название] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Игры из серии могут почти не отличаться друг от друга, а могут иметь кардинальные различия](* <- lang_ru;; *);;
+	*);;	
+*);
+
+
+<- sc_node_not_relation;;
+

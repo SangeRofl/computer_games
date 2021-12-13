@@ -1,0 +1,48 @@
+tierwulf
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Sebastian "Tierwulf" Andres](* <-lang_en;; *);
+		[Себастьян "Tierwulf" Андрес](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Tierwulf](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Chile;
+	=>nrel_surname: Andres;
+	=>nrel_first_name: Sebastian;
+	=>nrel_nickname: Tierwulf;
+	=>nrel_birthday: [05.11.1996];
+	=>nrel_gamerole: jungler_lol;
+
+	<=nrel_with_whom: contract_tierwulf_and_kaos_latin_gamers_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Tierwulf and Kaos Latin Gamers](* <-lang_en;; *);
+			[Контракт между Tierwulf и Kaos Latin Gamers](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: kaos_latin_gamers_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 06_06_2014;;
+			->rrel_end: 19_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_tierwulf_and_splyce_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Tierwulf and Splyce](* <-lang_en;; *);
+			[Контракт между Tierwulf и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 06_12_2018;;
+		*);;
+	*);;
+

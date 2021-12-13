@@ -1,0 +1,19 @@
+concept_card_common
+=> nrel_main_idtf: [обычная карта] (* <- lang_ru;; *);
+=> nrel_main_idtf: [common card] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр.(обычная карта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        -> [Обычная карта - это обычной редкости карта, из игры Hearthstone.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...(*
+		-> computer_game_hearthstone;;
+        -> concept_card;;
+	*);;
+*);
+
+<- sc_node_not_relation;;

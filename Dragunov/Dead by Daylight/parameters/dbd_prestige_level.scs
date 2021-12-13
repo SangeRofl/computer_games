@@ -1,0 +1,57 @@
+concept_dead_by_daylight_prestige_level <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [уровень престижа(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [prestige level(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- parameter;
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. уровень престижа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Уровень престижа - это параметр, элементами которого являются целые числа. Значением данного параметра является числовое значение уровня престижа персонажа игры Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. уровень престижа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Уровень престижа может быть увеличен каждый раз, когда персонаж достигает 50 уровня прокачки.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. уровень престижа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Максимальный уровень престижа персонажа - 3.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. уровень престижа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [При повышении уровня престижа персонажа весь его игровой инвентарь(кроме инвентаря косметических предметов) очищается и персонаж получает элемент престижной одежды.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

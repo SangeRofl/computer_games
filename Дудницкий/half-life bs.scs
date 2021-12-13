@@ -1,0 +1,60 @@
+concept_computer_game_half_life_blue_shift
+
+=> nrel_main_idtf:
+		[Half-Life: Blue Shift] (* <-lang_ru;;*);
+		[Half-Life: Blue Shift] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_12_06_2001;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	GoldSource;
+=> nrel_publisher: Valve_Corporation;
+Sierra_Enterteiment;
+=> nrel_developer: Valve_Corporation;
+Gearbox_Software;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os_X;
+concept_dreamcast
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life: Blue Shift ) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life: Blue Shift (дословно с англ. — «Синяя смена») — шутер от первого лица; второе самостоятельное дополнение для Half-Life,
+ разработанное компанией Gearbox Software в коллаборации с Valve и выпущенное 12 июня 2001 года.]  (*<- lang_ru ;; => nrel_format: format_html;;*);;
+*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_bs.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life) ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Как и другие дополнения Gearbox, Half-Life: Opposing Force и Half-Life: Decay, Blue Shift изображает события, произошедшие в Half-Life, 
+но c точки зрения другого персонажа: охранника «Чёрной Мезы» — Барни Калхауна. В роли Барни, игрок должен попытаться сбежать из секретной лаборатории, захваченной пришельцами из другого мира и отрядами HECU. ] (* <-lang_ru ;;  => nrel_format: format_html;;*);;
+*);;
+*);;

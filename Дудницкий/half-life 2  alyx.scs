@@ -1,0 +1,53 @@
+concept_computer_game_half_life_alyx
+
+=> nrel_main_idtf:
+		[Half-Life Alyx] (* <-lang_ru;;*);
+		[Half-Life Alyx] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_march_2020;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source2;
+=> nrel_publisher: Valve_Corporation;
+=> nrel_developer: Valve_Corporation;
+=> nrel_platform: {
+concept_window
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life Alyx) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_game_with_virtual_reality
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life: Alyx — предстоящая компьютерная игра в жанре шутера от первого лица для виртуальной реальности, разрабатывающаяся и издаваемая американской компанией Valve. Игра построена на игровом движке Source 2, а её выход запланирован на март 2020 года, исключительно на ПК под управлением операционной системы Windows для шлемов виртуальной реальности платформы SteamVR. Это первая игра в серии Half-Life, после более чем 12-летнего перерыва с момента выхода Half-Life 2: Episode Two в 2007 году.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_alyx.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life Alyx)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Действие Half-Life: Alyx происходят в вымышленном антиутопичном восточноевропейском городе Сити 17, в котором происходили события прошлых игр серии. История разворачивается за некоторое время до событий, показанных в Half-Life 2. Главным героем игры выступает девушка Аликс Вэнс, один из главных персонажей и напарница Гордона Фримена в Half-Life 2 и её эпизодах — Episode One и Episode Two. Сюжет повествует о приключениях Аликс, которая вместе со своим отцом Илаем Вэнсом основала сопротивление в Сити 17. Вместе они ищут уязвимости врага и помогают тем, кто осмелился бросить вызов могущественной инопланетной цивилизации «Альянс», которая вторглась на Землю и поработила всё человечество.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

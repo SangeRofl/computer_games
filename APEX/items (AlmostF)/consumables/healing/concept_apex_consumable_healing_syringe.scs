@@ -1,0 +1,56 @@
+concept_apex_consumable_healing_syringe
+=> nrel_main_idtf: [syringe (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [шприц (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 5;
+=> nrel_apex_consumable_use_time_with_combat_medic: 3.75;
+=> nrel_apex_consumable_use_time_with_fast_heal: 2.5;
+=> nrel_apex_restored_hp_amount: 25;
+=> nrel_apex_max_elements_per_slot: 6;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (шприц (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [шприц (Apex Legends) - лечебный расходный материал, восстанавливает 25 единиц здоровья легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_healing;
+		nrel_apex_restored_hp_amount
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем шприца в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Шесть единиц шприцов занимают один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (шприц)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/healing/apex_syringe.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_consumable_healing;
+<- sc_node_not_relation;;

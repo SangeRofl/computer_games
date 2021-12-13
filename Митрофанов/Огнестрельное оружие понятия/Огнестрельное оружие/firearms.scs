@@ -1,0 +1,49 @@
+concept_firearms
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Огнестрельное оружие] (* <- lang_ru;;*);
+	[Firearms] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_firearms;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Огнестрельное оружие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Огнестрельное оружие - это оружие, которое производит выстрел, предназначено или может быть легко приспособлено для производства выстрела или ускорения пули или снаряда за счет энергии взрывчатого вещества.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Об огнестрельном оружии в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [В Dying Light огнестрельное оружие имеет следующии свойства: урон, точность, скорострельность. Все эти параметры можно улучшить у техников.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://firearms.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_handgun;;
+	-> concept_rifle;;
+	-> concept_shotgun;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

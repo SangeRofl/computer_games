@@ -1,0 +1,48 @@
+concept_eft_barter_items_comlubmaterial_matches
+=> nrel_main_idtf: [Matches(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Спички(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_comlubmaterial;
+
+=> nrel_eft_weapon_weight: 0.005;
+=> nrel_eft_barter_items_cost: 258;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Спички(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Спички - бартерный предмет из группы горюче-смазочные материалы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_comlubmaterial
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (употребление спичек(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Коробок спичек. Зажигалки, конечно, проще в обращении и надёжнее, но как раз поэтому все избегают делиться ими с ближними.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Спички(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Matches.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

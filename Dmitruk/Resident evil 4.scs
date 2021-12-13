@@ -1,0 +1,70 @@
+concept_computer_game_resident_evil_4
+
+=> nrel_main_idtf:     
+	 [Resident Evil 4]   (*<-lang_ru;;*);
+      [Resident Evil 4]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_puzzle;
+<-concept_shooter;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_publication_date: date_11.01.2005;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: mt_framework;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom_rd_division_4;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_one;
+concept_nintendo_switch;
+concept_playstation_4;
+concept_playstation_2;
+concept_playstation_3
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 4)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 4  — мультиплатформенная компьютерная игра в жанрах Survival horror и 3D-шутер от третьего лица, шестая игра основной серии Resident Evil,разработанная и выпущенная компанией Capcom в 2005 году.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_4.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 2)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_computer_game_resident_evil_1;
+concept_computer_game_resident_evil_2;
+concept_computer_game_resident_evil_3_nemesis
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[История четвёртой части разворачивается в 2004 году, спустя шесть лет после событий второй части. Леон Скотт Кеннеди, правительственный агент, отправлен с миссией в Европу. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

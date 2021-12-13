@@ -1,0 +1,50 @@
+concept_apex_ammo_sniper_ammo
+=> nrel_main_idtf: [sniper ammo] (* <- lang_en;; *);
+=> nrel_main_idtf: [снайперский боеприпас] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (снайперский боеприпас)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [снайперский боеприпас - тип боеприпасов, которые используют оружия Энерговинтовка, МВ "Длинный лук", Страж и Тройной эффект.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_charge_rifle;
+		concept_apex_weapon_longbow;
+		concept_apex_weapon_sentinel;
+		concept_apex_weapon_triple_take
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета снайперских боеприпасов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов в зависимости от оружия обладает прямой или дуговой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (снайперский боеприпас)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_sniper_ammo.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

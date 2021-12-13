@@ -1,0 +1,50 @@
+concept_eft_equipment
+=> nrel_main_idtf: [equipment(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [снаряжение(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (снаряжение(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Снаряжение — комплект предметов, состоящий на снабжении военнослужащих и предназначенных для ношения ими личного оружия и различного имущества на обмундировании.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_item
+	};;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_equipment_body_armor;;
+    -> concept_eft_equipment_glasses;;
+	-> concept_eft_equipment_helmet;;
+	=> nrel_main_idtf:[Разбиение по классам снаряжения] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (специфика  снаряжения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [снаряжение меняется в зависимости от развития вооружения, тактики и оснащения вооружённых сил государства.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (снаряжение(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/equipment.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

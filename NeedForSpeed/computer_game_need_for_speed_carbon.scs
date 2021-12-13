@@ -1,0 +1,69 @@
+computer_game_need_for_speed_carbon
+=> nrel_main_idtf: [Need for Speed: Carbon] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Carbon] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+<- concept_arcade;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_black_box_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform:  concept_windows; play_station_3; playstation_2; xbox_360; playstation_portable; game_cube; xbox; game_boy_advance; DS;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: EAGL4;
+
+=> nrel_publication_date: date_31_10_2006;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Carbon)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией Black Box и изданная компанией Electronic Arts в 2006 году.
+                Действия игры происходят в городе Палмонт, по которому игроку, как и в Most Wanted, предоставлена свобода передвижения.
+                По сюжету главный герой должен побеждать в гонках городских районов и собрать команду, чтобы разобраться в истории с украденной сумкой денег.
+                Действие вновь переносится в ночное время суток. Основными нововведениями в Need for Speed: Carbon являются возможность собрать команду гонщиков и захват районов. Т
+                акже в Carbon впервые появляется система тюнинга Autosculpt. В отличие от предыдущей части игры, полиция в Carbon менее активна и основной акцент делается на гоночные состязания и тюнинг автомобилей. ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_black_box;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_carbon;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

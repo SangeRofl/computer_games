@@ -1,0 +1,53 @@
+dota_2
+=> nrel_main_idtf: [Dota 2] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дота 2] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_valve;
+=> nrel_developer: company_valve;
+=> nrel_publication_date: date_2013;
+<- concept_cardgame;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_game_engine: sourse_2;
+=> nrel_plot: [Ещё с начала времён между двумя абсолютными сущностями — Светом и Тьмой, называемыми Древними (Ancients) — шла бесконечная битва. Их полная непримиримость приводила к ужасным разрушениям и катаклизмам. Предтечи — создатели Вселенной, — уставшие от этой нескончаемой войны, заперли Свет и Тьму в каменной тюрьме, названной Безумной Луной.
+Тысячи и тысячи лет блуждал этот "камень" по бескрайнему космосу, пока, наконец, не притянулся к планете, на которой и происходят действия игры Dota 2, став её спутником. Спустя ещё долгие годы, от непрекращемых попыток Древних выбраться из своего заточения, Безумная Луна разрушилась, а её осколки, вместе со Светом и Тьмой, упали на планету.
+Осколки Луны и сами Древние дали населявшим планету созданиям могущественные силы, энергию, питали жизнью различные народы. Тем не менее, вскоре Древние снова развязали войну друг меж другом, но теперь сражаясь через своих героев.
+Так каждый раз и начинается великая битва между десятью героями, решающая судьбу мира...];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Dota 2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Dota 2 — многопользовательская компьютерная онлайн игра в жанре MOBA, созданная Valve Corporation на игровом движке Source 2. Dota 2 от Valve — продолжение DotA (Defence of the Ancients), пользовательской модификации игрока-разработчика IceFrog к игре Warcraft III: The Frozen Throne.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Dota 2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дота 2 — одна из самых популярных бесплатных игр в магазине Steam.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/dota_2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

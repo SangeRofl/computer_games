@@ -1,0 +1,43 @@
+concept_dead_by_daylight_chest_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Сундуки)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Chests)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Сундуки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Сундуки) - подношения, влияющие на количество сундуков, появляющихся на карте.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Сундуки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношение на сундуки может влиять отрицательно на количество сундуков, снижая их количество на 2, если подношение приносится убийцей, или положительно, увеличивая их число на 2, если подношение приносится выжившим]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Сундуки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Эффекты подношений на сундуки не складываются.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

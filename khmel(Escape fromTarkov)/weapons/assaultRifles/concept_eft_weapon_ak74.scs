@@ -1,0 +1,56 @@
+concept_eft_weapon_ak74
+=> nrel_main_idtf: [AK-74(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [AK-74(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_assault_rifle;
+
+<- concept_eft_fire_mode_auto;
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_5.45x39;
+=> nrel_eft_weapon_sighting_distance: 500;
+=> nrel_eft_weapon_rate_of_fire: 650;
+=> nrel_eft_weapon_accuracy: 0.06;
+=> nrel_eft_weapon_effective_distance: 650;
+=> nrel_eft_weapon_starting_speed: 910;
+=> nrel_eft_weapon_weight: 1.992;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (AK-74(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Автомат Калашникова калибра 5,45 мм, разработанный в 1970 году конструктором М. Т. Калашниковым как дальнейшее развитие АКМ в связи с переходом Вооруженных Сил на новый боеприпас 5.45x39.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_5.45x39;
+		concept_eft_weapon_assault_rifle
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (режимы стрельбы АК-74(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [АК-74 обладает сразу двумя режимами стрельбы: автоматическим и одиночным.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (AK-74(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/AK-74.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

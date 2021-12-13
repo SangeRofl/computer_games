@@ -1,0 +1,45 @@
+concept_apex_gear_shield
+=> nrel_main_idtf: [shield (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [нательный щит (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_gear_shield_common;;
+    -> concept_apex_gear_shield_rare;;
+    -> concept_apex_gear_shield_epic;;
+    -> concept_apex_gear_shield_legendary;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (нательный щит (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [нательный щит (Apex Legends) - экипировка, который надевается на легенду для повышения уровня брони в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Виды нательных щитов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 4 разновидности нательного щита: обычный, редкий, эпический и легендарный.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_shield_common;
+        concept_apex_gear_shield_rare;
+        concept_apex_gear_shield_epic;
+        concept_apex_gear_shield_legendary
+	};;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,27 @@
+concept_apex_weapon_smg
+=> nrel_main_idtf: [sub-machine gun (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пистолет-пулемет (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пистолет-пулемет (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [пистолет-пулемет (Apex Legends) — стрелковое оружие, использующее для стрельбы пистолетный патрон, имеющее высокую скорострельность, низкий урон и предназначенное для поражения персонажей противника в ближнем бою в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры пистолетов-пулеметов в игре 'Apex Legends')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Apex Legends' существует 3 экземпляра пистолетов-пулеметов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

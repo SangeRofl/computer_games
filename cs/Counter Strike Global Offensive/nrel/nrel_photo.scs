@@ -1,0 +1,6 @@
+nrel_photo
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[Фото*](*<-lang_ru;;*);
+		[Photo*](*<-lang_en;;*);;

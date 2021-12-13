@@ -1,0 +1,48 @@
+concept_eft_barter_items_value_wooden_clock
+=> nrel_main_idtf: [Wooden clock(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Деревянные часы(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_value;
+
+=> nrel_eft_weapon_weight: 3;
+=> nrel_eft_barter_items_cost: 63316;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Деревянные часы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Деревянные часы - бартерный предмет из группы ценности, чрезвычайно искусно сделанные деревянные часы в виде фигуры двуглавого орла.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_value
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (специфика деревянных часов(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Деревянные часы - редкая и дорогая вещь.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Деревянные часы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Wooden_clock.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,6 @@
+concept_apex_attachment_3x_hcog
+=> nrel_main_idtf: ["3x HCOG "Ranger"" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["3x ГБОП "Рейнджер"" прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

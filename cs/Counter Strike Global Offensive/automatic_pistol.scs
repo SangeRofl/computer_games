@@ -1,0 +1,5 @@
+automatic_pistol
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Автоматические пистолеты](*<-lang_ru;;*);
+		[automatic pistol](*<-lang_en;;*);;

@@ -1,0 +1,114 @@
+//event
+dbd_item_lunchbox
+<- concept_dead_by_daylight_item_medkit;
+<- concept_dead_by_daylight_unlockable_rarity_event;
+=> nrel_main_idtf:
+    [Lunchbox]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ланчбокс всех святых]
+    (* <- lang_ru;; *);;
+dbd_item_chinese_firecracker
+<-concept_dead_by_daylight_item_firecracker;
+<- concept_dead_by_daylight_unlockable_rarity_event;
+=> nrel_main_idtf:
+    [Chinese firecracker]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Китайские хлопушки]
+    (* <- lang_ru;; *);;
+//ultra rare
+dbd_item_skeleton_key
+<- concept_dead_by_daylight_item_key;
+<- concept_dead_by_daylight_unlockable_rarity_ultra_rare;
+=> nrel_main_idtf:
+    [Skeleton key]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ключ скелета]
+    (* <- lang_ru;; *);;
+dbd_item_rainbow_map
+<- concept_dead_by_daylight_item_map;
+<- concept_dead_by_daylight_unlockable_rarity_ultra_rare;
+=> nrel_main_idtf:
+    [Rainbow map]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Радужная карта]
+    (* <- lang_ru;; *);;
+//very rare
+dbd_item_utility_flashlight
+<- concept_dead_by_daylight_item_flashlight;
+<- concept_dead_by_daylight_unlockable_rarity_very_rare;
+=> nrel_main_idtf:
+    [Utility Flashlight]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Походный фонарик]
+    (* <- lang_ru;; *);;
+dbd_item_ranger_med_kit
+<- concept_dead_by_daylight_item_medkit;
+<- concept_dead_by_daylight_unlockable_rarity_very_rare;
+=> nrel_main_idtf:
+    [Ranger med kit]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Аптечка спасателя]
+    (* <- lang_ru;; *);;
+//rare
+dbd_item_commodious_toolbox
+<- concept_dead_by_daylight_item_toolbox;
+<- concept_dead_by_daylight_unlockable_rarity_rare;
+=> nrel_main_idtf:
+    [Commodious toolbox]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Вместительный ящик с инструментами]
+    (* <- lang_ru;; *);;
+dbd_item_emergency_med_kit
+<- concept_dead_by_daylight_item_medkit;
+<- concept_dead_by_daylight_unlockable_rarity_rare;
+=> nrel_main_idtf:
+    [Emergency med kit]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Аптечка первой помощи]
+    (* <- lang_ru;; *);;
+//uncommon
+dbd_item_toolbox
+<- concept_dead_by_daylight_item_toolbox;
+<- concept_dead_by_daylight_unlockable_rarity_uncommon;
+=> nrel_main_idtf:
+    [Toolbox]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ящик с инструментами]
+    (* <- lang_ru;; *);;
+dbd_item_flashlight
+<-concept_dead_by_daylight_item_flashlight;
+<-concept_dead_by_daylight_unlockable_rarity_uncommon;
+=> nrel_main_idtf:
+    [Lunchbox]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ланчбокс всех святых]
+    (* <- lang_ru;; *);;
+//common
+dbd_item_camping_aid_kit
+<- concept_dead_by_daylight_item_medkit;
+<- concept_dead_by_daylight_unlockable_rarity_common;
+=> nrel_main_idtf:
+    [Camping aid kit]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Походная аптечка]
+    (* <- lang_ru;; *);;
+dbd_item_worn_out_tools
+<- concept_dead_by_daylight_item_toolbox;
+<- concept_dead_by_daylight_unlockable_rarity_common;
+=> nrel_main_idtf:
+    [Worn out tools]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Поношенные инструменты]
+    (* <- lang_ru;; *);;

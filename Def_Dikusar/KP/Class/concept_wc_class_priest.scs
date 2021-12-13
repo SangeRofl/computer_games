@@ -1,0 +1,14 @@
+concept_wc_class_priest
+
+<-concept_character_class;
+
+=> nrel_main_idtf:
+      [жрец]
+      (*<-lang_ru;;*);
+       [priest]
+       (*<-lang_en;;*);
+
+
+
+<- sc_node_not_relation;;
+

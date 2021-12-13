@@ -1,0 +1,19 @@
+concept_permanent_effect <- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [Постоянный эффект]
+    (*<-lang_ru;;*);
+=> nrel_main_idtf:
+    [Permanent effect]
+    (*<-lang_en;;*);
+
+<- rrel_key_sc_element:... (*
+    => nrel_main_idtf:
+    [Опр. Постоянный эффект]
+    (*<-lang_ru;;*);;
+    <- definition;;
+    <= nrel_sc_text_translation:... (*
+        -> rrel_example:
+            [Постоянный эффект - <b><sc_element sys_idtf="concept_effect">эффект</b></sc_element>, действующий на объект неограниченное количество <b><sc_element sys_idtf="time">времени</b></sc_element>, т. е. постоянно.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

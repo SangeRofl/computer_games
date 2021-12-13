@@ -1,0 +1,45 @@
+concept_apex_ammo_energy_ammo
+=> nrel_main_idtf: [energy ammo] (* <- lang_en;; *);
+=> nrel_main_idtf: [энергетический боеприпас] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (энергетический боеприпас)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [энергетический боеприпас - тип боеприпасов, которые используют оружия ХАОС и L-STAR.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_havoc;
+		concept_apex_weapon_l_star
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета энергетических боеприпасов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов обладает прямой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (энергетический боеприпас)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_energy_ammo.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

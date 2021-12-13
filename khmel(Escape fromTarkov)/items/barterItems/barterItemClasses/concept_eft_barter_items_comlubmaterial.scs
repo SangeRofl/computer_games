@@ -1,0 +1,47 @@
+concept_eft_barter_items_comlubmaterial
+=> nrel_main_idtf: [combustive-lubricating materials(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [горюче-смазочные материалы(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (горюче-смазочные материалы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Горюче-смазочные материалы — различные виды горючего, в основном в применении к автотранспорту: топливо, специальные жидкости.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (наибольший спрос среди горюче-смазочных материалов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [наибольшим спросом среди горюче-смазочных материалов пользуется жидкое топливо, источником которого служит нефть, добываемая из скважин.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (горюче-смазочные материалы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/comlubmat.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

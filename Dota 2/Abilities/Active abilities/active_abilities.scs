@@ -1,0 +1,86 @@
+active_ability_dota_2
+<-sc_node_not_relation;
+
+
+
+=> nrel_main_idtf:
+        [Active ability] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Активная способность] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Активная способность)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Активная способность используется по желанию игрока.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Активная способность)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Активная способность тратит запас маны.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: black_hole_dota_2;
+                   culling_blade_dota_2;
+                   dismember_dota_2;
+                   echo_slam_dota_2;
+                   gods_strength_dota_2;
+                   reverse_polarity_dota_2;
+                   mana_void_dota_2;
+                   track_dota_2;
+                   static_storm_dota_2;
+                   laguna_blade_dota_2;
+                   remote_mines_dota_2;
+                   psionic_trap_dota_2;
+                   sunder_dota_2;
+                   overgrowth_dota_2;
+                   walrus_punch_dota_2;
+                   dark_rift_dota_2;
+                   flesh_golem_dota_2;
+                   focus_fire_dota_2;
+                   thundergods_wrath_dota_2;
+                   wukongs_command_dota_2;
+                   wrath_of_nature_dota_2;
+                   dream_coil_dota_2;
+                   sonic_wave_dota_2;
+                   requiem_of_souls_dota_2;
+                   mystic_flare_dota_2;
+                   corrosive_haze_dota_2;
+                   haunt_dota_2;;
+                   
+
+black_hole_dota_2 => nrel_mana_cost : [500];;
+culling_blade_dota_2 => nrel_mana_cost : [150];;
+dismember_dota_2 => nrel_mana_cost : [170];;
+echo_clam_dota_2 => nrel_mana_cost : [265];;
+gods_strength_dota_2 => nrel_mana_cost : [200];;
+reverse_polarity_dota_2 => nrel_mana_cost : [300];;
+mana_void_dota_2 => nrel_mana_cost : [275];;
+track_dota_2 => nrel_mana_cost : [60];;
+static_storm_dota_2 => nrel_mana_cost : [225];;
+laguna_blade_dota_2 => nrel_mana_cost : [680];;
+remote_mines_dota_2 => nrel_mana_cost : [680];;
+psionic_trap_dota_2 => nrel_mana_cost : [15];;
+sunder_dota_2 => nrel_mana_cost : [50];;
+overgrowth_dota_2 => nrel_mana_cost : [300];;
+walrus_punch_dota_2 => nrel_mana_cost : [100];;
+dark_rift_dota_2 => nrel_mana_cost : [300];;
+flesh_golem_dota_2 => nrel_mana_cost : [150];;
+focus_fire_dota_2 => nrel_mana_cost : [125];;
+thundergods_wrath_dota_2 => nrel_mana_cost : [450];;
+wukongs_command_dota_2 => nrel_mana_cost : [100];;
+wrath_of_nature_dota_2 => nrel_mana_cost : [275];;
+dream_coil_dota_2 => nrel_mana_cost : [200];;
+sonic_wave_dota_2 => nrel_mana_cost : [550];;
+requiem_of_souls_dota_2 => nrel_mana_cost : [200];;
+mystic_flare_dota_2 => nrel_mana_cost : [800];;
+corrosive_haze_dota_2 => nrel_mana_cost : [25];;
+haunt_dota_2 => nrel_mana_cost : [250];;

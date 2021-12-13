@@ -1,0 +1,122 @@
+concept_apex_weapon_hemlok
+=> nrel_main_idtf: [Hemlok Burst AR] (* <- lang_en;; *);
+=> nrel_main_idtf: [ШВ "Хемлок"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_assault_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_burst;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: 3;
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 490;
+=> nrel_weapon_damage_per_second: 180;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 44;
+=> nrel_apex_default_legend_common_helmet_damage: 40;
+=> nrel_apex_default_legend_rare_helmet_damage: 35;
+=> nrel_apex_default_legend_epic_helmet_damage: 33;
+=> nrel_apex_default_legend_legendary_helmet_damage: 33;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 46;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 42;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 36;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 34;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 34;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 37;
+=> nrel_apex_fortified_legend_common_helmet_damage: 34;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 30;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 28;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 28;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 22;
+=> nrel_apex_low_profile_legend_body_damage: 23;
+=> nrel_apex_fortified_legend_body_damage: 19;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 18;
+=> nrel_apex_low_profile_legend_leg_damage: 19;
+=> nrel_apex_fortified_legend_leg_damage: 15;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_plus_curve_left;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 18;
+=> nrel_apex_common_magazine_capacity: 24;
+=> nrel_apex_rare_magazine_capacity: 27;
+=> nrel_apex_epic_magazine_capacity: 30;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_heavy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ШВ "Хемлок")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ШВ "Хемлок" - штурмовая винтовка, которая использует тяжелые патроны и имеет переключаемые серийный и одиночный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_heavy_round;
+		concept_apex_weapon_assault_rifle;
+        concept_apex_fire_mode_burst;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на ШВ "Хемлок")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 46 скинов на ШВ "Хемлок": 7 легендарных, 6 эпических, 17 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ШВ "Хемлок")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_hemlok.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,55 @@
+concept_eft_weapon_adar215
+=> nrel_main_idtf: [ADAR 2-15(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ADAR 2-15(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_assault_carbine;
+
+<- concept_eft_fire_mode_single;
+<- concept_eft_ammo_5.56x45;
+=> nrel_eft_weapon_sighting_distance: 700;
+=> nrel_eft_weapon_rate_of_fire: 800;
+=> nrel_eft_weapon_accuracy: 0.09;
+=> nrel_eft_weapon_effective_distance: 500;
+=> nrel_eft_weapon_starting_speed: 979;
+=> nrel_eft_weapon_weight: 0.4;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ADAR 2-15(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Российский гражданский карабин ADAR 2-15 под патрон 5,56×45 мм, основанный на конструкции AR-15.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_5concept_eft_ammo_5.56x45;
+		concept_eft_weapon_assault_carbine
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (производитель ADAR 2-15(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Карабин производится в Санкт-Петербурге из израильских комплектующих с хромированными стволами от ООО «Молот оружие».] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ADAR 2-15(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/ADAR2-15.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,37 @@
+concept_eft_barter_items_value_bitcoin_coin
+=> nrel_main_idtf: [Bitcoin Coin(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Монета биткоина(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_value;
+
+=> nrel_eft_weapon_weight: 0.05;
+=> nrel_eft_barter_items_cost: 123577;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Монета биткоина(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Монета биткоина - бартерный предмет из группы ценности, Физический эквивалент криптовалюты bitcoin номиналом 0.2BTC] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_value
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Монета биткоина(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Bitcoin.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

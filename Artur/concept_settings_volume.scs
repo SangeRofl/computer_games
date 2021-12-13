@@ -1,0 +1,42 @@
+concept_settings_volume
+=> nrel_main_idtf: [настройки громкости] (* <- lang_ru;; *);
+=> nrel_main_idtf: [volume settings] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_settings_speech_volume;;
+	-> concept_settings_main_volume;;
+	-> consept_settings_volume_explosions;;
+	-> consept_settings_volume_music;;
+
+
+	=> nrel_main_idtf: [разбиение по типу характеристик] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(настройки громкости)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Совокупность характеристик изменение которых
+				приводит к изменению качества музыки в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Настройки громкости)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки музыки практически не влияют на производительность в игре] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

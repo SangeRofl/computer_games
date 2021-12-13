@@ -1,0 +1,54 @@
+company_respawn_entertainment
+=> nrel_main_idtf: [Respawn Entertainment] (* <- lang_en;; *);
+=> nrel_main_idtf: [Respawn Entertainment] (* <- lang_ru;; *);
+
+<- concept_company;
+
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Respawn Entertainment)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Respawn Entertainment — американская компания, специализирующаяся на разработке компьютерных игр, основанная двумя бывшими разработчиками Infinity Ward, президентом Джейсоном Уэстом (англ. Jason West) и генеральным менеджером Винсом Зэмпелла (англ. Vince Zampella).] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1(Время основания Respawn Entertainment)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компания была основана спустя месяц после мартовского конфликта 2010 года между Activision и Infinity Ward.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2(Количество сотрудников Respawn Entertainment)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На 2019 год компания насчитывает 212 сотрудников.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+    => nrel_main_idtf:[Логотип Respawn Entertainment] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../image/respawn_entertainment.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

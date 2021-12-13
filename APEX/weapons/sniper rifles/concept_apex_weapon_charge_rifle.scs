@@ -1,0 +1,120 @@
+concept_apex_weapon_charge_rifle
+=> nrel_main_idtf: [Charge Rifle] (* <- lang_en;; *);
+=> nrel_main_idtf: [Энерговинтовка] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_sniper_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_sniper_ammo;
+
+=> nrel_weapon_rate_of_fire: 30;
+=> nrel_weapon_damage_per_second: [информация отсутствует];
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 56;
+=> nrel_apex_default_legend_common_helmet_damage: 50;
+=> nrel_apex_default_legend_rare_helmet_damage: 45;
+=> nrel_apex_default_legend_epic_helmet_damage: 42;
+=> nrel_apex_default_legend_legendary_helmet_damage: 42;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 59;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 53;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 47;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 44;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 44;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 48;
+=> nrel_apex_fortified_legend_common_helmet_damage: 43;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 38;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 36;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 36;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 45;
+=> nrel_apex_low_profile_legend_body_damage: 47;
+=> nrel_apex_fortified_legend_body_damage: 38;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 45;
+=> nrel_apex_low_profile_legend_leg_damage: 47;
+=> nrel_apex_fortified_legend_leg_damage: 38;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.25;
+=> nrel_weapon_recoil_type: concept_apex_recoil_minor_recoil;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 4;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_sniper_stock;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_6x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_8x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_10x_sniper_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Энерговинтовка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Энерговинтовка - снайперская винтовка, которая использует энергетические патроны, имеет только одиночный тип стрельбы и уникальную механику "зарядки" выстрела] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_sniper_ammo;
+		concept_apex_weapon_sniper_rifle;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Энерговинтовку)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 41 скинов на Энерговинтовку: 4 легендарных, 5 эпических, 16 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Энерговинтовка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_charge_rifle.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

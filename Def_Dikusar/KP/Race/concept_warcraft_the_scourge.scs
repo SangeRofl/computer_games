@@ -1,0 +1,74 @@
+concept_warcraft_the_scourge
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_undead;
+
+=> nrel_main_idtf:
+      [Плеть]
+      (*<-lang_ru;;*);
+       [The Scourge]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Армия Плети] (* <- lang_ru;; *);
+=> nrel_idtf: [плеть] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Плеть)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_universe;
+      concept_the_burning_legion;
+      concept_warcraft_azeroth;
+      concept_the_burning_legion;
+      concept_warcraft_northrend
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Плеть является одной из основных фракций нежити, существующих в мире <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b>,
+ и основной силой, желающей захватить контроль над миром. Она имеет огромную "империю". 
+ Созданная изначально как предвестник вторжения <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element></b> 
+ после предыдущих неудач, 
+ Плеть освободилась от ее демонических хозяев и под железной волей ужасающего 
+ Короля-лича создала свою базу на арктическом континенте <b><sc_element sys_idtf="concept_warcraft_northrend">Нордскол</sc_element></b>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Плеть)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      game_character_lich_king;
+      concept_the_burning_legion;
+      concept_warcraft_azeroth;
+      concept_the_burning_legion;
+      concept_race_orc;
+      concept_warcraft_northrend
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Плеть была (и остается) огромной армией нежити, созданной <b><sc_element sys_idtf="game_character_lich_king">Королем-личом</sc_element></b>, 
+который был ранее известен как Нер'зул, шаман <b><sc_element sys_idtf="concept_race_orc">орков</sc_element></b>. Под контролем <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element></b>
+ миссия Плети была в том, 
+чтобы посеять страх и разрушения по всему миру в ожидании неизбежного вторжения Легиона.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+=>nrel_main_leader:game_character_lich_king;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://the_scourge.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+

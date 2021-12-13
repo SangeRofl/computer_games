@@ -1,0 +1,39 @@
+computer_game_hearthstone
+=> nrel_main_idtf: [Hearthstone] (* <- lang_en;; *);
+=> nrel_main_idtf: [Hearthstone] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2013;
+<- concept_cardgame;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_game_engine: unity;
+=> nrel_plot: [отсутствует];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Hearthstone)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре карточная игра, выпущена компанией Blizzard в 2013 году на платформе Windows. Реализована на движке Unity 3D. Многопользовательская с отсутствием сюжета. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Hearthstone.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

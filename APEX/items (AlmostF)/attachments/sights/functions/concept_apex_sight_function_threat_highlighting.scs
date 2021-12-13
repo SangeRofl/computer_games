@@ -1,0 +1,21 @@
+concept_apex_sight_function_threat_highlighting
+=> nrel_main_idtf: [threat highlighting (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [выделение угроз (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(выделение угроз (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это функция, с помощью которой прицел подсвечивает вражеских легенд в области видимости прицела в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_attachment_sight
+	};;
+*);
+ 
+ 
+<- concept_apex_sight_function;
+<- sc_node_not_relation;;

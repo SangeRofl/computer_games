@@ -1,0 +1,47 @@
+concept_alchemists_powder
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Алхимический порох] (* <- lang_ru;;*);
+	[Alchemists' powder] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Алхимический порох)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_superior_dimeritium_bomb;;
+	-> concept_superior_grapeshot;;
+	-> concept_superior_moon_dust;;
+	-> concept_superior_samum;;
+	-> concept_superior_dragons_dream;;
+	-> concept_superior_dancing_star;;
+	-> concept_superior_devils_puffball;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб:Отличная двимеритовая бомба, Отличная Танцующая звезда, Отличный Чертов гриб, Отличный Сон дракона, Отличная Картечь, Отличная Лунная пыль, Отличный Самум. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://alchemists_powder.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

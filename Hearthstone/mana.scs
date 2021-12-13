@@ -1,0 +1,38 @@
+concept_hearthstone_mana
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Мана] (* <- lang_ru;; *);
+	[Mana] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Мана)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> concept_ability;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Мана - это ресурс, используемый в Hearthstone для игры в карты и использования Сил Героев , каждая из которых имеет мановую стоимость, которую необходимо заплатить за ее использование.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение 						
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(Мана)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_card_minion;;
+		-> concept_card_spell;;
+		-> concept_card_weapon;;
+		-> concept_card_hero;;
+	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Запас маны представлен Кристаллами маны , отображаемыми в правом нижнем углу экрана. Этот запас автоматически увеличивается и пополняется каждый ход,
+            хотя некоторые карты также могут влиять на него. Мана - единственный ресурс, используемый в Hearthstone , и является основным ограничивающим фактором при игре в карты.] (* <- lang_ru;; *);;
+	*);;
+
+*);;

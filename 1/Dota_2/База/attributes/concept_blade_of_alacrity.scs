@@ -1,0 +1,39 @@
+concept_blade_of_alacrity
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [blade of alacrity] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [blade of alacrity] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(blade of alacrity)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Длинный клинок, наделенный магией времени.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(blade of alacrity)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых основная характеристика ловкость, в средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/blade_of_alacrity.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

@@ -1,0 +1,75 @@
+nrel_character_class
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- assymmetric_relation;
+<- antitransitive_relation;
+ => nrel_first_domain: hero;
+  => nrel_second_domain: class;
+=> nrel_main_idtf:
+      [класс*]
+      (*<-lang_ru;;*);
+       [class*]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [класс персонажа*]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (класс*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_character;
+ concept_RPG;
+ nrel_ability;
+concept_archetype;
+concept_development
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="nrel_class">Класс персонажа</sc_element></b> — архетип персонажа ролевых игр, определяющий его умения и направление развития.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{
+concept_character;
+concept_character_class
+};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Class.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(о способности*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_player;
+	concept_character};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Как правило, <b><sc_element sys_idtf="concept_player">игроки</sc_element> выбирают класс при создании <b><sc_element sys_idtf="concept_character">персонажа</sc_element> и не могут полностью от него отойти в течение всей жизни этого персонажа.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+class -> Death_Knight;;
+character -> Artas;;
+nrel_class -> (Artas => Death_Knight);;
+
+concept_character_class
+
+=> nrel_main_idtf:[Класс персонажа] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Character Class] (* <- lang_en;; *);
+
+<- sc_node_not_relation;;

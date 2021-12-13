@@ -1,0 +1,52 @@
+concept_ordinary_northern_wind
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Обычный северный ветер] (* <- lang_ru;;*);
+	[Ordinary northern wind] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Обычный северный ветер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая замедляет и примораживает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Замораживает противников. Удары, нанесённые замороженным противникам, наносят больше урона.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_saltpeter;;
+	-> concept_powdered_pearl;;
+   	-> concept_ducal_water;;
+   	-> concept_allspice_root;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Обычный северный ветер состоит из: Селитра и Толченый жемчуг, Княжья вода,Корень душистого перца.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

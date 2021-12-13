@@ -1,0 +1,44 @@
+concept_skyrim_elf_race
+
+=> nrel_main_idtf:     
+	 [Эльфийская раса (Скайрим)]   (*<-lang_ru;;*);
+      [Elf race (Skyrim)]  (*<-lang_en;;*);  
+=>nrel_idtf:
+	[Меры] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_skyrim_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Эльфийская раса (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эльфы  — общее название различных эльфийских  <b><sc_element sys_idtf="concept_skyrim_race">рас</b></sc_element>  <b><sc_element sys_idtf="concept_skyrim_tamriel"> Тамриэля</b></sc_element> ..](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (О происхождении эльфийской расы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эльфы мира  <b><sc_element sys_idtf="concept_game_series_the_elder_scrolls"> The Elder Scrolls</b></sc_element> происходят от единых с <b><sc_element sys_idtf="concept_skyrim_human_race"> людьми</b></sc_element> предков, эльнофеев. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (О физиологичесих особенностях)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Их физиологические отличия от <b><sc_element sys_idtf="concept_skyrim_human_race"> людей</b></sc_element> немногочисленны. 
+Самые заметные отличия большинства эльфов от других разумных <b><sc_element sys_idtf="concept_skyrim_race">рас</b></sc_element> — большие остроконечные уши, узкий разрез глаз и весьма продолжительный срок жизни: 
+эльфы живут вдвое-втрое дольше <b><sc_element sys_idtf="concept_skyrim_human_race"> людей</b></sc_element> и <b><sc_element sys_idtf="concept_skyrim_beastfolk_race"> зверолюдей</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

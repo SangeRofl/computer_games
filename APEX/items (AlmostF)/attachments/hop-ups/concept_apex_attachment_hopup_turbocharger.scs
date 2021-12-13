@@ -1,0 +1,6 @@
+concept_apex_attachment_hopup_turbocharger
+=> nrel_main_idtf: ["turbocharger" (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["турбозарядник" (Apex Legends)] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_hopup;
+<- sc_node_not_relation;;

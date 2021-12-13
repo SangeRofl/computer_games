@@ -1,0 +1,56 @@
+concept_game_console -> Xbox_1X ;;
+
+Xbox_1X
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[икс бокс 1 x]
+		(* 
+			<- lang_ru;; 
+		*);
+		[xbox 1 x]
+		(*
+		<- lang_en;; 
+		*);;
+		
+Xbox_1X <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+
+				->rrel_example: "file://HTML/Xbox1.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			*);; 
+*);; 
+
+Xbox_1X <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Xbox_1X)](*<-lang_ru;;*); 
+				[Pic. (Xbox_1X)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/Xbox1.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+Xbox_1X => nrel_producing_country : USA;; 
+
+concept_calendar_date -> 1983;; 
+1983 => nrel_main_idtf : [1983 год](*<-lang_ru;;*);; 
+1983 => nrel_main_idtf : [year of 1983](*<-lang_en;;*);; 
+Xbox_360 => nrel_release_date : 1983;; 
+
+Xbox_1X <- rrel_seies: 1X;; 
+
+
+

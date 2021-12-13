@@ -1,0 +1,38 @@
+concept_apex_attachment_shotgun_bolt_rare
+=> nrel_main_idtf: [rare shotgun bolt (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [редкий затвор для дробовика (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры затвора для дробовика
+=> nrel_apex_mozambique_fire_rate_increase_percent: 20;
+=> nrel_apex_eva_fire_rate_increase_percent: 20;
+=> nrel_apex_peacekeeper_fire_rate_increase_percent: 13;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (редкий затвор для дробовика (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [редкий затвор для дробовика (Apex Legends) - затвор для дробовика, который средне увеличивает скорострельность дробовика.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_fire_rate_upgrade_level
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (редкий затвор для дробовика (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/barrels/bolts/bolt_lvl2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

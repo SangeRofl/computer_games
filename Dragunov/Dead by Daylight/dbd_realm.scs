@@ -1,0 +1,70 @@
+concept_dead_by_daylight_realm <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [локация(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [царство(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [realm(Dead by Daylight)]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. локация(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Локации или Царства - это полупроцедурные места в Мире Сущности в Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. локация(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [В прошлом каждое Царство было местом насильственной трагедии, и теперь они служат аренами для испытаний Сущности.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. локация(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Локация для проведения мачта выбирается Сущностью. Игроки могут влиять на выбор Сущности, сжигая Подношения на локацию.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. локация(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Локации имеют определенные фиксированные ориентиры, но такие элементы, как стартовые местоположения игроков, Генераторы, Сундуки, Шкафчики, Тотемы и Выходы  размещаются согласно пожеланиям Сущности.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. локация(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Ландшафт Царства меняется от матча к матчу.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

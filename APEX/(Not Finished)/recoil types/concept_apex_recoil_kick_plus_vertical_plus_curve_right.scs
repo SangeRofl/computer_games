@@ -1,0 +1,6 @@
+concept_apex_recoil_kick_plus_vertical_plus_curve_right
+=> nrel_main_idtf: [kick + vertical curve right recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [скачок + вертикальная отдача с кривой вправо] (* <- lang_ru;; *);
+
+<- concept_apex_recoil;
+<- sc_node_not_relation;;

@@ -1,0 +1,31 @@
+concept_apex_attachment_extended_sniper_mag_common
+=> nrel_main_idtf: [common extended sniper mag (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный увеличенный магазин для снайперских винтовок (Apex Legends)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный увеличенный магазин для снайперских винтовок (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный увеличенный магазин для снайперских винтовок (Apex Legends) - увеличенный магазин для снайперских винтовок, который незначительно увеличивает количество патронов в магазине для оружий, которые используют снайперские боеприпасы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_apex_ammo_sniper_ammo
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный увеличенный магазин для снайперских винтовок (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/magazines/snipers/sniper_lvl1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

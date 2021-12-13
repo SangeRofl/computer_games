@@ -1,0 +1,23 @@
+nrel_accuracy_gun
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=> nrel_main_idtf:
+[Точность оружия*] (*<-lang_ru;;*);
+[Accuracy gun*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Точность оружия*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+reinforcement
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Точность оружия - процент попаданий из данного оружия по врагу.](*<-lang_ru;; *);;
+*);;
+*);;

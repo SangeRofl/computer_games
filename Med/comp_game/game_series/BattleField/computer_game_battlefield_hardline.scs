@@ -1,0 +1,93 @@
+computer_game_battlefield_hardline
+=> nrel_main_idtf: [Battlefield Hardline] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield Hardline] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_real_world;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_dice; company_vesceral_games;
+=> nrel_publisher: company_electronic_arts;
+//=> nrel_localizer: company_electronic_arts;
+
+=> nrel_announcement_date: date_28_05_2014;
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_17_03_2015;;
+	=> nrel_main_idtf: [Дата выхода в США] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_russia;;
+	=> nrel_publication_date: date_17_03_2015;;
+	=> nrel_main_idtf: [Дата выхода в России] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_19_03_2015;;
+	=> nrel_main_idtf: [Дата выхода в ЕС] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_great_britain;;
+	=> nrel_publication_date: date_20_03_2015;;
+	=> nrel_main_idtf: [Дата выхода в Великобритании] (* <- lang_ru;; *);;
+*);
+
+
+//=> nrel_platform: concept_windows; playstation_3; playstation_4; xbox_360; xbox_one;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield Hardline)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенная компьютерная игра в жанре шутера от первого лица, разработанная компанией Visceral Games при поддержке Digital Illusions CE и изданная Electornic Arts, тринадцатая в серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_computer_game;;
+		-> concept_shooter;;
+		-> concept_first_person_view;;
+		-> company_visceral_games;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

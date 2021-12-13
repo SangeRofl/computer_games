@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_absorption
+
+=> nrel_main_idtf:     
+		 [поглощение (тип заклинания)]   (*<-lang_ru;;*);
+     	 [absorption (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (поглощение (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Поглощение — временно или постепенно понижает уровень здоровья, запаса сил, магии, свойства или навыка на протяжении времени и передаёт их заклинателю. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

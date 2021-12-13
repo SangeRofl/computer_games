@@ -1,0 +1,106 @@
+concept_apex_weapon_kraber
+=> nrel_main_idtf: [Kraber .50-cal Sniper] (* <- lang_en;; *);
+=> nrel_main_idtf: [Крабер .50] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_sniper_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_special_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 36;
+=> nrel_weapon_damage_per_second: 87;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 297;
+=> nrel_apex_default_legend_common_helmet_damage: 267;
+=> nrel_apex_default_legend_rare_helmet_damage: 237;
+=> nrel_apex_default_legend_epic_helmet_damage: 223;
+=> nrel_apex_default_legend_legendary_helmet_damage: 223;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 312;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 280;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 249;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 234;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 234;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 252;
+=> nrel_apex_fortified_legend_common_helmet_damage: 227;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 201;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 190;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 190;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 145;
+=> nrel_apex_low_profile_legend_body_damage: 152;
+=> nrel_apex_fortified_legend_body_damage: 123;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 116;
+=> nrel_apex_low_profile_legend_leg_damage: 122;
+=> nrel_apex_fortified_legend_leg_damage: 99;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2.05;
+=> nrel_weapon_recoil_type: concept_apex_recoil_minor_recoil;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 4;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Крабер .50)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Крабер .50 - снайперская винтовка, которая использует специальные тяжелые патроны, имеет только одиночный тип стрельбы и его можно получить только из эирдропа] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_special_heavy_round;
+		concept_apex_weapon_sniper_rifle;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Крабер .50)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 45 скинов на Крабер .50: 6 легендарных, 5 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Крабер .50)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_kraber.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,5 @@
+concept_apex_fire_mode_burst
+=> nrel_main_idtf: [burst fire] (* <- lang_en;; *);
+=> nrel_main_idtf: [серийная стрельба] (* <- lang_ru;; *);
+
+<- sc_node_not_relation;;

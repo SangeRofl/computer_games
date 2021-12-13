@@ -1,0 +1,24 @@
+ui_menu_file_for_finding_game_on_the_number_of_players <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
+
+ui_menu_file_for_finding_game_on_the_number_of_players => nrel_main_idtf: [Найти игру от количества игроков] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_game_on_the_number_of_players => nrel_main_idtf: [Find game on the number of players] (* <- lang_en;; *);;
+	
+ui_menu_file_for_finding_game_on_the_number_of_players => ui_nrel_command_template:
+	[*
+		question_finding_game_on_the_number_of_players _-> ._question_finding_game_on_the_number_of_players_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;	
+			*);;
+		._question_finding_game_on_the_number_of_players_instance _<- question;;
+	*];;
+ui_menu_file_for_finding_game_on_the_number_of_players  => ui_nrel_command_lang_template:
+		[В какие игры типа $ui_arg_1 смогут играть $ui_arg_2 игроков] 
+		(* <- lang_ru;; *);
+		[What games of $ui_arg_1 can played $ui_arg_2 players]
+                (* <- lang_en;; *);;
+
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+	-> ui_menu_file_for_finding_game_on_the_number_of_players;;
+*);;*/

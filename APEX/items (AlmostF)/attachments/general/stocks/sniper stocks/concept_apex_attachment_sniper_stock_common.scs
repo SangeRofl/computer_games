@@ -1,0 +1,38 @@
+concept_apex_attachment_sniper_stock_common
+=> nrel_main_idtf: [common sniper stock (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный приклад для снайперской винтовки (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры приклада для снайперской винтовки
+=> nrel_apex_weapon_switch_speed_increase_percent: 15;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный приклад для снайперской винтовки (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный приклад для снайперской винтовки (Apex Legends) - приклад для снайперской винтовки, который незначительно увеличивает скорость переключения снайперской винтовки и уменьшает качание прицела.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_apex_weapon_sniper_rifle
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный приклад для снайперской винтовки (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/stocks/sniper/sniper_lvl1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

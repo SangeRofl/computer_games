@@ -1,0 +1,70 @@
+concept_sport
+=> nrel_main_idtf: [спорт] (* <- lang_ru;; *);
+=> nrel_idtf: [sport] (* <- lang_en;;*);
+/*
+<= nrel_subdividing: ...		
+(*
+        -> concept_concept_competition;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+*/
+=> nrel_inclusion: concept_competition;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(спорт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество игр, где главное действие — соперничество, происходящее на ограниченной рамками территории] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> nrel_competition;;
+                              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(соперничество*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Всё соперничество происходит в рамках честных правил.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

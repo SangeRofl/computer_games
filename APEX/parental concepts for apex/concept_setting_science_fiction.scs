@@ -1,0 +1,29 @@
+concept_setting_science_fiction
+=> nrel_main_idtf: [science fiction] (* <- lang_en;; *);
+=> nrel_main_idtf: [научная фантастика] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(научная фантастика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре описывает вымышленные технологии и научные открытия, контакты с нечеловеческим разумом, возможное будущее или альтернативный ход истории, а также влияние этих допущений на человеческое общество и личность] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_computer_game;
+		concept_setting
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(научная фантастика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Действие научной фантастики часто происходит в будущем.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

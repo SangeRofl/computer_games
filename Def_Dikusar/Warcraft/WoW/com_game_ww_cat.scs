@@ -1,0 +1,49 @@
+computer_game_world_of_warcraft_cataclysm
+=> nrel_main_idtf: [World of Warcraft: Cataclysm] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Cataclysm] (* <- lang_ru;; *);
+=> nrel_idtf: [World of warcraft cataclysm] (* <- lang_ru;; *);
+=> nrel_idtf: [World of warcraft cataclysm] (* <- lang_en;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2010;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Главным событием дополнения является возвращение Смертокрыла, некогда поверженного древнего драконьего Аспекта, исчезнувшего много лет назад. Смертокрыл желает выбраться из пространства элементалей и проникнуть в Азерот. Если это произойдёт, барьер между двумя мирами исчезнет, и по Азероту прокатится волна разрушений. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft cataclysm)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft cataclysm - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2010 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft cataclysm)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Измененились внешние виды множества локаций в игре в связи с возвращением Смертокрыла.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wow_cat.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

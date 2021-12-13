@@ -1,0 +1,41 @@
+concept_rahim_aldemir
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Рахим Альдемир] (* <- lang_ru;;*);
+	[Rahim Aldemir] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_rahim_aldemir;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Рахим Альдемир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Рахим Альдемир - инструктор по паркуру в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Рахима Альдемира в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Тренирует новичков на специальной паркуп-площадке.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Рахим Альдемир.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

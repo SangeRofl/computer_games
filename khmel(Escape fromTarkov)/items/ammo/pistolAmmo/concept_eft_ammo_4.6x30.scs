@@ -1,0 +1,47 @@
+concept_eft_ammo_4.6x30
+=> nrel_main_idtf: [4.6x30(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [4.6x30(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_pistol_ammo;
+
+=> nrel_eft_weapon_weight: 0.0074;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (4.6x30(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [4.6x30 мм — пистолетный патрон, созданный в 2001 году в рамках программы «Персональное оружие самообороны».] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_pistol_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (место патрона 4.6x30 относительно других патронов(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [патрон 4.6x30 занимает нишу между пистолетными и автоматными патронами.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (4.6x30(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/4.6x30.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

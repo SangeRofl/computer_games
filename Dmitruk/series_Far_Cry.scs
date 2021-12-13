@@ -1,0 +1,38 @@
+concept_game_series_far_cry
+<-sc_node_not_relation;
+
+-> concept_computer_game_far_cry_primal;
+-> concept_computer_game_far_cry_new_dawn;
+-> concept_computer_game_far_cry_5;
+-> concept_computer_game_far_cry_4;
+-> concept_computer_game_far_cry_3;
+-> concept_computer_game_far_cry_2;
+-> concept_computer_game_far_cry;
+
+=> nrel_main_idtf:
+      [серия игр Far Cry]
+      (*<-lang_ru;;*);
+       [game series Far Cry]
+       (*<-lang_en;;*);  
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Far Cry)] (* <- lang_ru;; *);;
+
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Far Cry — серия компьютерных игр в жанре шутера от первого лица, разработанная компанией Crytek и Ubisoft.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Far Cry)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Серия состоит из 13 игр и 4 переиздания. Почти во всех играх серии протагонист попадает в незнакомую дикую местность, захваченную антагонистом, где игрок должен противостоять его организации. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<=nrel_include: concept_game_series;;

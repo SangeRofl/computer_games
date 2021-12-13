@@ -1,0 +1,32 @@
+concept_free_place
+=> nrel_main_idtf: [свободное место на диске] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Free HDD place] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Свободное место на диске)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Свободное место на диске - место на диске не заполненное
+				программных обеспечением или данными] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_software;;
+		-> concept_data;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Свободное место на диске)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [На свободное место можно загрузить новое программное обеспечение] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

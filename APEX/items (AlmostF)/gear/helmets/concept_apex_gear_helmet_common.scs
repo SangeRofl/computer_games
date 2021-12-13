@@ -1,0 +1,51 @@
+concept_apex_gear_helmet_common
+=> nrel_main_idtf: [common helmet (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный шлем (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры шлема
+=> nrel_apex_headshot_damage_decrease_percent: 10;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный шлем (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный шлем (Apex Legends) - шлем, который уменьшает входящий урон в голову легенды на 10% в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность обычных шлемов на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычный шлем - самый распространенный вид шлемов на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный шлем)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/helmet/helmet_lvl1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

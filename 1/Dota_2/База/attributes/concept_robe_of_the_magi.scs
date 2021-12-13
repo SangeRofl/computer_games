@@ -1,0 +1,39 @@
+concept_robe_of_the_magi
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [robe of the magi] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [robe of the magi] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(robe of the magi)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Это одеяние разлагает душу владельца, но в обмен дарует мудрость.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(robe of the magi)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых основная характеристика интеллект, в ранней и средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/robe_of_the_magi.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

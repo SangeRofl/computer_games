@@ -1,0 +1,72 @@
+concept_computer_game_resident_evil_5
+
+=> nrel_main_idtf:     
+	 [Resident Evil 5]   (*<-lang_ru;;*);
+      [Resident Evil 5]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_puzzle;
+<-concept_shooter;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_game_mode: cooperative_game_mode;
+=>nrel_publication_date: date_05.03.2009;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: mt_framework;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom;
+=>nrel_platform: {
+concept_windows;
+concept_nintendo_switch;
+concept_xbox_360;
+concept_playstation_3;
+concept_android
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 5)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 5  — компьютерная игра в жанре survival horror,  является седьмой по счёту игрой в основной серии Resident Evil, вышедшей в Японии компанией Capcom на Xbox 360 и PlayStation 3 5 марта 2009 год.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_5.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 5)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_computer_game_resident_evil_1;
+concept_computer_game_resident_evil_2;
+concept_computer_game_resident_evil_3_nemesis;
+concept_computer_game_resident_evil_4
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Как и предыдущая часть, игра разбита на небольшие главы, условно объединённые в 6 более крупных глав. Перед началом каждой главы, а также после рестарта с контрольной точки, игрок попадает в меню снаряжения, где может купить, продать или улучшить своё оружие, продать сокровища, и выбрать снаряжение, с которым начнёт игру в текущей главе. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

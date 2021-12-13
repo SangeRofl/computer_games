@@ -1,0 +1,48 @@
+concept_eft_barter_items_map_customs_map
+=> nrel_main_idtf: [Customs map(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Карта таможни(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_map;
+
+=> nrel_eft_weapon_weight: 0.1;
+=> nrel_eft_barter_items_cost: 13428;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Карта таможни(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Карта таможни - бартерный предмет из группы карты, карта обширной территории, занимаемой таможней.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_map
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (о наличии карты таможни(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Возможно, карта не самая свежий, но лучше, чем отсутствие карты вообще.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Карта таможни(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Map_Item_cus.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

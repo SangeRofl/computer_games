@@ -1,0 +1,45 @@
+sunder_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Sunder] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Sunder](* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Sunder)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Меняет местами жизненные силы героя и его цели. Некоторая часть здоровья остаётся на месте.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Sunder)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Sunder можно применить как к вражеским, так и к союзным героям, включая иллюзии.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [40];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Sunder_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

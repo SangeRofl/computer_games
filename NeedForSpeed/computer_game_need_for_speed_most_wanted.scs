@@ -1,0 +1,68 @@
+computer_game_need_for_speed_most_wanted
+=> nrel_main_idtf: [Need for Speed: Most Wanted] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Most Wanted] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+<- concept_arcade;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_criterion_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_2; xbox_360; playstation_portable; game_cube; xbox; game_boy_advance; DS;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: EAGL4;
+
+=> nrel_publication_date: date_15_11_2005;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Most Wanted)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, разработанная студией EA Canada и изданная Electronic arts в 2005 году.
+                Действия игры происходят в вымышленном городе Рокпорт, в котором игроку предоставлена свобода передвижения.
+                По сюжету главный герой выигрывает гонки и продвигается вверх по «Чёрному списку» гонщиков, чтобы вернуть свой автомобиль BMW M3 GTR,
+                отвоёванный Рэйзором обманным путём. Need for Speed: Most Wanted сочетает в себе уличные гонки, а также тюнинг автомобилей с оптимизацией настроек и полномасштабные полицейские преследования.
+                Для продвижения по сюжету игрок должен выигрывать гонки «Чёрного списка» и уходить от полицейских преследований, за что зарабатывает очки, тем самым набирая рейтинг среди других гонщиков «Чёрного списка». ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> concept_arcade;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_most_wanted;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

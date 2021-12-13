@@ -1,0 +1,45 @@
+dark_rift_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Dark Rift] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Dark Rift] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Dark Rift)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Открывает тёмную брешь возле выбранного союзного существа или постройки. После небольшой задержки владелец способности и все союзные герои вокруг него телепортируются к этой бреши. Способность начнёт перезаряжаться, даже если отменить её или если цель телепортации умрёт.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Dark Rift)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Двойное нажатие на способность автоматически применит ее на союзный фонтан.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [100];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Dark_Rift_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

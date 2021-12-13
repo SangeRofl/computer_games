@@ -1,0 +1,51 @@
+concept_category_action_games
+=> nrel_main_idtf:
+	[игры действия] (* <- lang_ru;; *);
+=> nrel_idtf:
+	[action_games] (* <- lang_en;; *);
+=> nrel_inclusion: concept_MMOFPS; 
+concept_survival; 
+concept_open_action; 
+concept_action;
+concept_slasher; 
+concept_battle_racing; 
+concept_platformer; 
+concept_stealth_action; 
+concept_fighting;
+concept_racing; 
+concept_arcade; 
+concept_horror; 
+concept_shooter; 
+concept_sport; 
+concept_simulator;
+<- rrel_key_sc_element:
+	Definition_action_games
+	(*
+		=> nrel_main_idtf:
+			[Опр.(игры действия] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Категория жанров компьютерных игр, в которых главное действие — движения, которые необходимо совершать управляя каким либо телом (человеческим или гуманоидным), либо техническим средством.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(*
+				-> concept_computer_game;;
+                   -> concept_game_genre;;
+                   *);;
+	*);
+<- rrel_key_sc_element:
+	Statment_action_games
+	(*
+		=> nrel_main_idtf:
+			[Утв.(жанр)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Именно жанры этой категории принято хвалить за то, что они развивают скорость реакции.] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;

@@ -1,0 +1,52 @@
+concept_apex_gear_backpack_epic
+=> nrel_main_idtf: [epic backpack (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [эпический рюкзак (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры рюкзака
+=> nrel_apex_additional_backpack_slots: 6;
+=> nrel_apex_overall_backpack_slots: 16;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (эпический рюкзак (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [эпический рюкзак (Apex Legends) - рюкзак, который увеличивает доступное количество слотов в рюкзаке легенды на 6 (всего 16) в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность эпических рюкзаков на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [эпический рюкзак - третий по распространенности вид рюкзаков на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (эпический рюкзак)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/backpack/backpack_lvl3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

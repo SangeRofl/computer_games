@@ -1,0 +1,41 @@
+concept_hammer
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Молоток] (* <- lang_ru;;*);
+	[Hammer] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_hammer;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Молоток)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Молоток — тип тупого оружия ближнего боя, представленный в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики молотка)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Будучи относительно лёгким оружием, молотки являются очень распространёнными, и порой их можно найти даже на улице. Рекомендуется использовать данный вид оружия на неповоротливых противниках, при встрече с серьёзным противником — отложить в сторону, а на средних уровнях — вовсе выкинуть. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://hammer.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

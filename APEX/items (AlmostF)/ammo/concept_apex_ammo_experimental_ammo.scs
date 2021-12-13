@@ -1,0 +1,48 @@
+concept_apex_ammo_experimental_ammo
+=> nrel_main_idtf: [experimental ammo] (* <- lang_en;; *);
+=> nrel_main_idtf: [экспериментальный боеприпас] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (экспериментальный боеприпас)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [экспериментальный боеприпас - тип боеприпасов, которые использует только РП "Преданность" и их нельзя найти на карте.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_devotion
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета экспериментальных боеприпасов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов обладает прямой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (экспериментальный боеприпас)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_experimental_ammo.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

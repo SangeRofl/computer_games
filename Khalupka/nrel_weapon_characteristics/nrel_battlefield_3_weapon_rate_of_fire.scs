@@ -1,0 +1,65 @@
+nrel_battlefield_3_weapon_rate_of_fire
+=> nrel_main_idtf: [rate of fire* (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [скорострельность* (Battlefield 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(скорострельность* )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Представляет собой способность 
+       		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element> производить определённое количество выстрелов в единицу времени.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_batllefield_3_weapons
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(скорострельность как тактико-техническая характеристика оружия(Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это одна из основных тактико-технических характеристик различного 
+		<b><sc_element sys_idtf="concept_batllefield_3_weapons">оружия</b></sc_element>, определяющая эффективность огня в игре 
+		<b><sc_element sys_idtf="conputer_game_battlefield_3">Battlefield 3</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+    <= nrel_using_constants: {
+        concept_batllefield_3_weapons
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
+antitransitive_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
+asymmetric_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
+
+
+nrel_battlefield_3_weapon_rate_of_fire => nrel_first_domain: concept_battlefield_3_weapons;;
+nrel_battlefield_3_weapon_rate_of_fire => nrel_second_domain: number;;
+nrel_battlefield_3_weapon_rate_of_fire => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_battlefield_3_weapons;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_battlefield_3_weapon_rate_of_fire;;
+number->2;;

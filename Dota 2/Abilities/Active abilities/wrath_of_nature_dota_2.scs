@@ -1,0 +1,45 @@
+wrath_of_nature_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Wrath of Nature] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Wrath of Nature] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Wrath of Nature)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Вызывает сгусток энергии, отскакивающий от врагов в зоне видимости по всей карте и наносящий им урон. С каждой новой целью урон от сгустка увеличивается. За каждое убитое существо герой получает доп. урон от атак на 50 сек.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Wrath of Nature)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Способность может быть применена на землю; она автоматически отскочит на ближайшего видимого врага. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [85];
+=> nrel_default_damage : [170];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Wrath_of_Nature_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

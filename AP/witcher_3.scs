@@ -1,0 +1,39 @@
+computer_game_witcher_3
+=> nrel_main_idtf: [Witcher 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Witcher 3] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_action_RPG;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_CD_Project_Red;
+=> nrel_developer: company_CD_Project_Red;
+=> nrel_publication_date: date_2015;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+//=> nrel_plot: [отсутствует];
+<- concept_paid_computer_game;
+<- concept_singleplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Witcher 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре action RPG, выпущена на компанией CD Project Red в 2015 году на платформе Windows. Однопользовательская c сюжетом. Распространяется платно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/witcher_3.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

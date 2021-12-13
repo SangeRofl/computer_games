@@ -1,0 +1,49 @@
+concept_melee_weapon <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Оружие ближнего боя]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Melee weapon]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Оружие ближнего боя]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Оружие ближнего боя - оружие, используемое в ближнем бою.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Оружие ближнего боя]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Оружие ближнего боя предназначено для поражения целей в контактном бою]
+            (*<-lang_ru;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/melee_weapons.png"(*
+            => nrel_format: format_png;;
+        *);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_mace;;
+    -> concept_dagger;;
+    -> concept_flail;;
+    -> concept_sword;;
+    -> concept_spear;;
+    -> concept_axe;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

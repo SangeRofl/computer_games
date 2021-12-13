@@ -1,0 +1,35 @@
+concept_video_memory
+=> nrel_main_idtf: [видеопамять] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Video memory] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Видеопамять)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Видеопамять — это внутренняя оперативная память,
+				отведённая для хранения данных,
+				которые используются для формирования
+				изображения на экране монитора.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_ram;;
+		-> concept_data;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Видеопамять)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [В видеопамяти может содержаться
+		как непосредственно растровый образ изображения,
+		так и отдельные фрагменты как в растровой, так и в векторной формах.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

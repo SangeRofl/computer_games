@@ -1,0 +1,57 @@
+concept_eft_weapon_mp5
+=> nrel_main_idtf: [MP5(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [MP5(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_submachine_gun;
+
+<- concept_eft_fire_mode_auto;
+<- concept_eft_fire_mode_single;
+<- concept_eft_fire_mode_turn;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_9x19;
+=> nrel_eft_weapon_sighting_distance: 250;
+=> nrel_eft_weapon_rate_of_fire: 800;
+=> nrel_eft_weapon_accuracy: 0.22;
+=> nrel_eft_weapon_effective_distance: 200;
+=> nrel_eft_weapon_starting_speed: 400;
+=> nrel_eft_weapon_weight: 0.74;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (MP5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолет-пулемет MP5 в версии УСМ Navy 3 Round Burst с отсечкой по 3 патрона. Широко известный образец пистолета пулемета, в первую очередь известен как оружие GSG9 и подобных силовых структур мира, а также как частый гость в кинематографе и видеоиграх.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_9x19;
+		concept_eft_weapon_submachine_gun
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (режимы стрельбы MP5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [MP5 обладает сразу тремя режимами стрельбы: автоматическим, очередью и одиночным.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (MP5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Mp5.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

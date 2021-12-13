@@ -1,0 +1,58 @@
+concept_computer_game_personage_dl
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Персонаж компьютерной игры Dying Light] (* <- lang_ru;;*);
+	[Computer game personage for Dying Light] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_computer_game_personage_dl;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Персонаж компьютерной игры Dying Light)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Персонаж компьютерной игры Dying Light - это все персонажи, которые связаны с сюжетом игры.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Персонаж компьютерной игры Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [У персонажей Dying Light можно брaть различные задания и выполнять их. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://all.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_amir;;
+	-> concept_jade_aldemir;;
+	-> concept_zere;;
+	-> concept_kadir_suleiman;;
+	-> concept_kyle_crane;;
+	-> concept_karim;;
+	-> concept_lena;;
+	-> concept_rahim_aldemir;;
+	-> concept_spike;;
+	-> concept_tahir;;
+	-> concept_troy;;
+	-> concept_harris_brecken;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

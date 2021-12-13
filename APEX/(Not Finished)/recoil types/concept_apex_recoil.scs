@@ -1,0 +1,5 @@
+concept_apex_recoil
+=> nrel_main_idtf: ['Apex Legends' recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [отдача в игре 'Apex Legends'] (* <- lang_ru;; *);
+
+<- sc_node_not_relation;;

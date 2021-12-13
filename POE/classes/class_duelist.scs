@@ -1,0 +1,57 @@
+concept_class_duelist  
+=> nrel_main_idtf: [Class Duelist  ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Дуэлянт] (* <- lang_ru;; *);
+
+
+=>nrel_based_characteristic: concept_power_23;
+=>nrel_based_characteristic: concept_dexterity_23;
+=>nrel_based_characteristic: concept_intelligence_14;
+=>nrel_based_characteristic: concept_health_62;
+=>nrel_based_characteristic: concept_mana_47;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Дуэлянт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Дуэлянт —   это класс персонажа  основанный на комбинации параметров: силы и ловкости, что делает его непревзойденным в нанесении урона и уклонении от атак. Он может с одинаковой эффективностью использовать щит или наносить удары мощным двуручным или парным оружием. Его сильные руки способны натягивать тетиву самых мощных и смертоносных луков.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Дуэлянт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса дуэлянт наносить большой урон и уклоняться от атак противника.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Дуэлянт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для дуэлянта: Шлемы, Чешуйчатые доспехи/Бригандины/Дублеты/Пластинчатые доспехи, Чешуйчатые перчатки, Чешуйчатые башмаки, Круглые щиты. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дуэлянт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Path_of_Exile_class_duelist.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

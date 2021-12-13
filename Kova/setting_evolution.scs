@@ -1,0 +1,30 @@
+concept_setting_evolution
+=> nrel_main_idtf: [эволюция] (* <- lang_ru;; *);
+=> nrel_idtf: [evolution] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(эволюция)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре, отображает развитие живых существ на протяжении большого периода времени.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(эволюция)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх сотни миллионов лет проходят за несколько минут] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,57 @@
+concept_class_bandit 
+=> nrel_main_idtf: [Class Bandit  ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Бандит ] (* <- lang_ru;; *);
+
+
+=>nrel_based_characteristic: concept_power_14;
+=>nrel_based_characteristic: concept_dexterity_23;
+=>nrel_based_characteristic: concept_intelligence_23;
+=>nrel_based_characteristic: concept_health_57;
+=>nrel_based_characteristic: concept_mana_52;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Бандит )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Бандит  — это класс персонажа  основанный на комбинации Ловкости и Интеллекта. Для него предпочтительно быстрое оружие (например, кинжалы или когти) для скоростного перемещения по полю боя во время укладывания ловушек и мин и контроля хода битвы. Он всегда хитрее противника и проводит удары с медицинской точностью, уклоняясь от атак.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Бандит)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса бандита отвлекать противника, наносить частый урон и не попадаться под атаки врага.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Бандит )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для бандита: Маски, Куртки/Жакеты/Камзолы/Облачения, Перчатки, Ботинки и Колючие щиты.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Бандит )](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Path_of_Exile_class_bandit.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

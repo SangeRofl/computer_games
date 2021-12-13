@@ -1,0 +1,32 @@
+neon
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Matus "Neon" Jakubcik](* <-lang_en;; *);
+		[Матуш "Neon" Якубчик](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Neon](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	<=nrel_with_whom: contract_neon_and_misfits_gaming
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Neon and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Neon и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_01_2019;;
+		*);;
+	*);
+
+	=>nrel_citizen_of: Slovakia;
+	=>nrel_surname: Jakubcik;
+	=>nrel_first_name: Matus;
+	=>nrel_nickname: Neon;
+	=>nrel_birthday: [24.04.1999];
+	=>nrel_gamerole: bot_laner_lol;;

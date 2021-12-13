@@ -1,0 +1,37 @@
+concept_eft_barter_items_battery_powerbank
+=> nrel_main_idtf: [Powerbank(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Повербанк(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_battery;
+
+=> nrel_eft_weapon_weight: 0.3;
+=> nrel_eft_barter_items_cost: 20391;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Повербанк(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Повербанк - бартерный предмет из группы элементы питания, перезаряжаемая батарея повышенной емкости.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_battery
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Повербанк(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Powerbank.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,27 @@
+concept_eft_grenade_launcher
+=> nrel_main_idtf: [grenade launcher (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [гранатомет (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(гранатомет (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [гранатомет (Escape from Tarkov) — огнестрельное оружие, предназначенное для поражения вооружения и военной техники, сооружений или живой силы противника с помощью выстрела боевым припасом, значительно превосходящим по калибру патрон стрелкового оружия в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры гранатометов в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра гранатометов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

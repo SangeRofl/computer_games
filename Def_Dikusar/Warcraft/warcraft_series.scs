@@ -1,0 +1,36 @@
+concept_game_series_warcraft			
+<-concept_game_series;
+=> nrel_main_idtf:[серия игр Warcraft] (* <- lang_ru;; *);
+=> nrel_idtf:[серия игр  «Военное ремесло»] (* <- lang_ru;; *);
+=> nrel_idtf:[серия игр Варкрафт] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Warcraft] (* <- lang_en;; *);
+->rrel_first_game: computer_game_warcraft_human_and_orcs;
+-> computer_game_warcraft_2_tides_of_darkness;
+ ->computer_game_warcraft_2_beyond_the_dark_portal;
+-> computer_game_warcraft_3_reign_of_chaos;
+-> computer_game_warcraft_3_the_frozen_throne;
+->rrel_last_game: computer_game_warcraft_3_reforged;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+		concept_game_series
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Warcraft)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Warcraft - серия компьютерных игр в жанре RTS, разработываемых компанией Blizzard.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Warcraft)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из 6 игр.](* <- lang_ru;; *);;	
+	*);;	
+*);
+<- sc_node_not_relation;
+<-concept_warcraft_universe;;

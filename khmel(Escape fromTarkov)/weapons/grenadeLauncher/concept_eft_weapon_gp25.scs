@@ -1,0 +1,55 @@
+concept_eft_weapon_gp25
+=> nrel_main_idtf: [GP-25(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ГП-25(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_grenade_launcher;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_40x53;
+=> nrel_eft_weapon_sighting_distance: 300;
+=> nrel_eft_weapon_rate_of_fire: 12;
+=> nrel_eft_weapon_accuracy: 0.41;
+=> nrel_eft_weapon_effective_distance: 200;
+=> nrel_eft_weapon_starting_speed: 76;
+=> nrel_eft_weapon_weight: 3.26;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ГП-25(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ГП-25 — однозарядный 40-мм подствольный гранатомёт.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_40x53;
+		concept_eft_grenade_launcher
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение ГП-25(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предназначен для уничтожения открытой живой силы, а также живой силы, находящейся в открытых окопах, траншеях и на обратных скатах местности.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ГП-25(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Gp25.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

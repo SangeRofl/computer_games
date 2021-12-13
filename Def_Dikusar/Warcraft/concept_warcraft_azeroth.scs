@@ -1,0 +1,42 @@
+concept_warcraft_azeroth			
+
+=> nrel_main_idtf:[Азерот] (* <- lang_ru;; *);
+=> nrel_idtf:[мир Азерот] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Azeroth] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Азерот)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Азерот - название мира в котором происходила почти вся известная на данный момент 
+		 история <b><sc_element sys_idtf="concept_warcraft_universe">Warcraft'а</sc_element></b>. 
+		 Азерот стала местом рождения разных рас, многие из которых - эльфы (ночные эльфы, высшие 
+		 эльфы, и эльфы крови),также помимо эльфов существуют: люди, дворфы, таурены, гоблины, 
+		 тролли, гномы, Пандарены, драконы и т.д.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Азерот)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Однажды, армии <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element></b> вторглись в этот мир.Этот период хаоса стал известен как Война Древних.] (* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Azeroth.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

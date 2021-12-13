@@ -1,0 +1,50 @@
+concept_TBS		
+
+=> nrel_main_idtf:[Пошаговая стратегия] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Turn-Based Strategy] (* <- lang_en;; *);
+=> nrel_idtf: [пошаговая стратегия] (* <- lang_ru;; *);
+=> nrel_idtf: [ТБС] (* <- lang_ru;; *);
+=> nrel_idtf: [TBS] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...		
+(*
+        -> concept_tactic;;
+        -> concept_planning;;
+        -> concept_development;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(ТБС)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_strategy
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Пошаговая стратегия - поджанр компьютерных <b><sc_element sys_idtf="concept_game_object_building">стратегических игр</sc_element></b>, 
+     в которых игровой процесс состоит из 
+     последовательности фиксированных моментов времени, 
+     именуемых ходами (или шагами), 
+     во время которых игроки совершают свои действия.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://tbs.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;
+

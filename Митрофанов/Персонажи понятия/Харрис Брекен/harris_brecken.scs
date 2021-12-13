@@ -1,0 +1,41 @@
+concept_harris_brecken
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Харрис Брекен] (* <- lang_ru;;*);
+	[Harris Brecken] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_harris_brecken;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Харрис Брекен)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Харрис Брекен - лидер выживших в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Харриса Брекена в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полностью организует быт выживших в убежище.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Харрис Брекен.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

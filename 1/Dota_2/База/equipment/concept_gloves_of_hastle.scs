@@ -1,0 +1,39 @@
+concept_gloves_of_hastle
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [gloves of hastle] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [перчатки ускорения] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(gloves of hastle)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Пара магических перчаток, которые, похоже, снижают вес оружия.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(gloves of hastle)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых низкая скорость атаки в начале игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/gloves_of_hastle.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

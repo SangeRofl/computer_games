@@ -1,0 +1,54 @@
+concept_game_console -> Nintendo_switch ;;
+
+Nintendo_switch
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Нинтендо свитч]
+		(* 
+			<- lang_ru;; 
+		*);
+		[Nintendo switch]
+		(*
+		<- lang_en;; 
+		*);;
+		
+Nintendo_switch <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+
+				->rrel_example: "file://HTML/NINTENDOSWITCH.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			*);; 
+*);; 
+
+Nintendo_switch <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Нинтендо)](*<-lang_ru;;*); 
+				[Pic. (Nintendo)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/NINTENDOSWITCH.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+Nintendo_switch => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 1983;; 
+1983 => nrel_main_idtf : [1983 год](*<-lang_ru;;*);; 
+1983 => nrel_main_idtf : [year of 1983](*<-lang_en;;*);; 
+Nintendo_switch => nrel_release_date : 1983;; 
+
+value -> Famicom;; 
+

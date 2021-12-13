@@ -1,0 +1,56 @@
+concept_game_series_need_for_speed
+
+=> nrel_main_idtf:[серия игр Need for Speed] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Need for Speed] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_game_series_hot_pursuit; concept_game_series_underground; concept_game_series_shift;
+
+-> rrel_first_game: computer_game_need_for_speed;
+-> computer_game_need_for_speed_II;
+-> computer_game_need_for_speed_III_hot_pursuit;
+-> computer_game_need_for_speed_high_stakes;
+-> computer_game_need_for_speed_porsche_unleashed;
+-> computer_game_need_for_speed_most_wanted;
+-> computer_game_need_for_speed_carbon;
+-> computer_game_need_for_speed_prostreet;
+-> computer_game_need_for_speed_undercover;
+-> computer_game_need_for_speed_nitro;
+-> computer_game_need_for_speed_world;
+-> computer_game_need_for_speed_the_run;
+-> computer_game_need_for_speed_Rivals;
+-> computer_game_need_for_speed_no_limits;
+-> computer_game_need_for_speed_2015;
+-> computer_game_need_for_speed_payback;
+-> computer_game_need_for_speed_edge;
+-> computer_game_need_for_speed_heat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_game_series;;
+//		-> concept_racing;;		//perechislit' settingi i janri??
+        *);;
+                => nrel_main_idtf: [Опр.(серия игр Need for Speed)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation: ...
+        (*
+                -> [Need for Speed - серия гоночных компьютерных игр] (* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(серия игр Call of Duty)](* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                ->[Серия состоит из двадцати игр](* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,47 @@
+concept_eft_ammo_5.56x45
+=> nrel_main_idtf: [5.56x45(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [5.56x45(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_rifle_ammo;
+
+=> nrel_eft_weapon_weight: 0.004;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (5.56x45(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [5.56×45 мм — малоимпульсный патрон с бесфланцевой гильзой бутылочной формы, принятый на вооружение странами НАТО в 1980-х годах.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_rifle_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (аналог 5.56x45(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Аналогом данного патрона является: Советский/Российский патрон 5.45×39 мм.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (5.56x45(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/5.56x45.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

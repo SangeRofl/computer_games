@@ -1,0 +1,55 @@
+concept_apex_gear_backpack_legendary
+=> nrel_main_idtf: [legendary backpack (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [легендарный рюкзак (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры рюкзака
+=> nrel_apex_additional_backpack_slots: 6;
+=> nrel_apex_overall_backpack_slots: 16;
+=> nrel_apex_gear_powerup: concept_apex_gear_powerup_guardian_angel;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (легендарный рюкзак (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [легендарный рюкзак (Apex Legends) - рюкзак, который увеличивает доступное количество слотов в рюкзаке легенды на 6 (всего 16) в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность легендарных рюкзаков на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [легендарный рюкзак - самый редкий вид рюкзаков на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (легендарный рюкзак)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/backpack/backpack_lvl4.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

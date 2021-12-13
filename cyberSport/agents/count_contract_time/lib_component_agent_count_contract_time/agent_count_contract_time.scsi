@@ -1,0 +1,386 @@
+agent_count_contract_time
+=> nrel_main_idtf:
+	[агентная scp-программа подсчёта времени действия контракта] (* <- lang_ru;; *);
+	[agent scp-program count contract active time] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_count_contract_time (*
+	-> rrel_params: .agent_count_contract_time_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_count_contract_time_operator_set
+		(*
+		-> rrel_init: .agent_count_contract_time_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_count_contract_time_operator1B;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_count_contract_time;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_count_contract_time_operator1C;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator1C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _pattern;;
+
+			=> nrel_then: .agent_count_contract_time_operator_gen_answer;;
+			=> nrel_else: .agent_count_contract_time_operator_message;;
+			*);;
+
+
+
+		-> .agent_count_contract_time_operator_gen_answer//начало
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_goto: .agent_count_contract_time_operator1D1;;
+			*);;
+
+		-> .agent_count_contract_time_operator1D1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+			=> nrel_goto: .agent_count_contract_time_operator1D1_2;;
+			*);;
+
+
+		-> .agent_count_contract_time_operator1D1_2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_period;;
+
+			=> nrel_goto: .agent_count_contract_time_operator1D2;;
+			*);;
+
+		-> .agent_count_contract_time_operator1D2
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_period;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_then: .agent_count_contract_time_operator_x3;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_x3
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_start;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_start;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_then: .agent_count_contract_time_operator_x4;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_x4
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_end;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_end;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_then: .agent_count_contract_time_operator_y1;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_y1
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_end;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_end_year;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_year;;
+
+			=> nrel_then: .agent_count_contract_time_operator_y2;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_y2
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_start;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_start_year;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_year;;
+
+			=> nrel_then: .agent_count_contract_time_operator_y3;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_y3
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _contract_d_year;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_period_end_year;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_period_start_year;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_m0;;
+			*);;
+
+		-> .agent_count_contract_time_operator_m0
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _contract_month_end;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_d_year;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [12];;
+
+			=> nrel_goto: .agent_count_contract_time_operator_m1;;
+			*);;
+
+		-> .agent_count_contract_time_operator_m1
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_end;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_end_month;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_month;;
+
+			=> nrel_then: .agent_count_contract_time_operator_m2;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_m2
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_start;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_start_month;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_month;;
+
+			=> nrel_then: .agent_count_contract_time_operator_m3;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_m3
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_end_month;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_period_end_month;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_month_end;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_m4;;
+			*);;
+
+		-> .agent_count_contract_time_operator_m4
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _contract_d_month;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_period_end_month;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_period_start_month;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_d0;;
+			*);;
+
+		-> .agent_count_contract_time_operator_d0
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _contract_day_end;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_d_month;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [30];;
+
+			=> nrel_goto: .agent_count_contract_time_operator_d1;;
+			*);;
+
+		-> .agent_count_contract_time_operator_d1
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_end;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_end_day;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_day;;
+
+			=> nrel_then: .agent_count_contract_time_operator_d2;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_d2
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_start;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contract_period_start_day;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date_day;;
+
+			=> nrel_then: .agent_count_contract_time_operator_d3;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_d3
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contract_period_end_day;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_period_end_day;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_day_end;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_d4;;
+			*);;
+
+		-> .agent_count_contract_time_operator_d4
+			(*
+			<- contSub;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _contract_d_days;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _contract_period_end_day;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_period_start_day;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_gz;;
+			*);;
+
+		-> .agent_count_contract_time_operator_gz
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _common_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _contract_d_days;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_number_of_days;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_y5;;
+			*);;
+
+		-> .agent_count_contract_time_operator_y5
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _contract_d_days;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_number_of_days;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_then: .agent_count_contract_time_operator_y6;;
+			=> nrel_else: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_y6
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_number_of_days;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_answer;;
+			*);;
+
+		-> .agent_count_contract_time_operator_answer
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_success;;
+			*);;
+
+		-> .agent_count_contract_time_operator_success
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_message
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_count_contract_time_operator_message_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be a structure(rrel_struct).];;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_message_wait;;
+			*);;
+
+		-> .agent_count_contract_time_operator_message_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: .agent_count_contract_time_operator_return;;
+			*);;
+
+		-> .agent_count_contract_time_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

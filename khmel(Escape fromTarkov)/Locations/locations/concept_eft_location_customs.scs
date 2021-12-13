@@ -1,0 +1,41 @@
+concept_eft_location_customs
+=> nrel_main_idtf: [Customs(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Таможня(Escape from Tarkov)] (* <- lang_ru;; *);
+<- concept_eft_location;
+=> nrel_eft_location_raid_duration: 35;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Таможня(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Таможня - локация в Escape from Tarkov. Была второй локацией, добавленной в игру. Большой участок околозаводской территории.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_location
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Структура таможни в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Таможня включает в себя таможенный терминал, общежитие, мазутное хозяйство и прочие объекты инфраструктуры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Таможня(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Customs.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

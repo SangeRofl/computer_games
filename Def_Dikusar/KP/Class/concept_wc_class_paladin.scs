@@ -1,0 +1,14 @@
+concept_wc_class_paladin
+
+<-concept_character_class;
+
+=> nrel_main_idtf:
+      [паладин]
+      (*<-lang_ru;;*);
+       [paladin]
+       (*<-lang_en;;*);
+
+
+
+<- sc_node_not_relation;;
+

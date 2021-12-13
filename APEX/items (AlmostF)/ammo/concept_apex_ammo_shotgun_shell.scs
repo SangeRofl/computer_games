@@ -1,0 +1,50 @@
+concept_apex_ammo_shotgun_shell
+=> nrel_main_idtf: [shotgun shell] (* <- lang_en;; *);
+=> nrel_main_idtf: [снаряд для дробовика] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (снаряд для дробовика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [снаряд для дробовика - тип боеприпасов, которые используют оружия EVA-8 Авто, Дробовик "Мозамбик" и Миротворец.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_eva_8;
+		concept_apex_weapon_mozambique;
+		concept_apex_weapon_peacekeeper
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета снарядов для дробовика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов обладает прямой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (снаряд для дробовика)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_shotgun_shells.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

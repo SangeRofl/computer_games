@@ -1,0 +1,27 @@
+concept_skyrim_particular_disease
+=> nrel_main_idtf: [Particular disease] (* <- lang_en;; *);
+=> nrel_main_idtf: [Особая болезнь] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Особая болезнь] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Особая болезнь - это болезнь которую нельзя вылечить. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Виды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">Скайрим</b></sc_element> существует 3 особые болезни: ликантропия, вампиризм, каннибализм. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

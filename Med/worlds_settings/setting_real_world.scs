@@ -1,0 +1,26 @@
+concept_setting_real_world
+
+=> nrel_main_idtf:[реальный мир] (* <- lang_ru;; *);
+=> nrel_main_idtf:[real world] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+		=> nrel_main_idtf: [Опр.(реальный мир)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Реальный мир - игровой мир компьютерной игры, который мало чем отличается от реального] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+
+
+

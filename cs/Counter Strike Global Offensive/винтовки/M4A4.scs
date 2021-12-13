@@ -1,0 +1,5 @@
+M4A4
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[M4A4](*<-lang_ru;;*);
+		[M4A4](*<-lang_en;;*);;

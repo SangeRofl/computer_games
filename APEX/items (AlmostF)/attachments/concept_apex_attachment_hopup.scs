@@ -1,0 +1,5 @@
+concept_apex_attachment_hopup
+=> nrel_main_idtf: [hop-up attachment (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [усиляющая модификация (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- sc_node_not_relation;;

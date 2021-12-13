@@ -1,0 +1,5 @@
+nrel_apex_projectiles_shape
+=> nrel_main_idtf: [projectiles shape* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [форма снарядов при выстреле* ] (* <- lang_ru;; *);
+
+<- sc_node_norole_relation;;

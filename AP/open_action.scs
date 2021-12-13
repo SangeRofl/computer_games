@@ -1,0 +1,74 @@
+concept_open_action
+=> nrel_main_idtf: [открытый боевик] (* <- lang_ru;; *);
+=> nrel_idtf: [open_action] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_destruction;;
+        -> concept_competition;;
+        -> concept_technique;;
+        -> concept_evasion;;
+        -> concept_collecting;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(открытый боевик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество игр, где главное действие — «уничтожение» врагов на огромной открытой территории.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> nrel_enemy;;
+                              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(карта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Обычно в таких играх есть глобальная карта, и можно спокойно попасть в любую точку этой карты.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

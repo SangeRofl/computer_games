@@ -1,0 +1,64 @@
+concept_computer_game_far_cry_5
+
+=> nrel_main_idtf:     
+	 [Far Cry 5]   (*<-lang_ru;;*);
+      [Far Cry 5]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_action_RPG;
+<-concept_open_word;
+<-concept_adventure;
+<-concept_setting_nowadays;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_announcement_date: date_05.05.2017;
+=>nrel_publication_date: date_27.03.2018;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: dunia_engine_2;
+=>nrel_publisher: company_ubisoft;
+=>nrel_developer: company_ubisoft;
+=>nrel_localizer: company_logrus;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_one;
+concept_playstation_4
+};
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Far Cry 5)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_far_cry;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Far Cry 5 -   кроссплатформенная компьютерная игра в жанре шутер от первого лица в открытом мире, разработанная и изданная компанией Ubisoft 27 марта 2018 года. Пятая игра одноимённой серии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/fr_5.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Far Cry 5)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Подобно своим предшественникам, игра представляет собой шутер от первого лица в жанре action-adventure и имеет открытый мир, по которому игроки могут свободно путешествовать. Отличительной чертой является редактор персонажей, при помощи чего можно настроить внешний вид протагониста, пол и цвет кожи](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

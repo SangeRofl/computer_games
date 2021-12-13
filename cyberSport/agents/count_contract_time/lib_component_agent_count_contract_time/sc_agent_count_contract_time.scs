@@ -1,0 +1,50 @@
+sc_agent_count_contract_time
+=> nrel_main_idtf:	
+	[sc-агент подсчёта времени действия контракта] (* <- lang_ru;; *);
+	[sc-agent count contract active time] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_count_contract_time_condition => ..sc_agent_count_contract_time_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_count_contract_time
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_count_contract_time
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_count_contract_time
+		};;
+		
+	-> sc_agent_count_contract_time_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_count_contract_time_condition
+= [*
+	action_count_contract_time _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_count_contract_time_result
+= [*
+	action_count_contract_time _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer_for_checking_domains_of_relation;;
+	.._question _-> .._parameter1;;
+	
+*];;

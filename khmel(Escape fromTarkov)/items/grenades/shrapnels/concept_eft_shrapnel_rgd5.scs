@@ -1,0 +1,48 @@
+concept_eft_shrapnel_rgd5
+=> nrel_main_idtf: [RGD-5(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [РГД-5(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_throwingweapon_shrapnel;
+
+=> nrel_eft_weapon_weight: 0.31;
+=> nrel_eft_weapon_explosion_delay: 3.5;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (РГД-5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [РГД-5 относится к противопехотным осколочным ручным гранатам дистанционного действия наступательного типа.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon_shrapnel
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (осколки РГД-5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Так как граната наступательного типа, осколки имеют небольшую массу и, соответственно, летят на меньшую дальность.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (РГД-5(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Rgd5.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,64 @@
+nrel_eft_weapon_weight
+=> nrel_main_idtf: [weight(Escape from Tarkov)* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [вес(Escape from Tarkov)* ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(вес(Escape from Tarkov)* )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Сила, с которой предмет действует на опору (или подвес, или другой вид крепления), препятствующую падению, возникающая в поле сил тяжести.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon;
+		concept_ammo
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(самый большой вес(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Самый большой вес в игре 'Escape from Tarkov' имеет марксманская винтовка RSASS.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+       // computer_game_escape_from_tarkov;
+        concept_eft_weapon_rsass
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_eft_weapon_weight;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_eft_weapon_weight;;
+antitransitive_relation -> nrel_eft_weapon_weight;;
+asymmetric_relation -> nrel_eft_weapon_weight;;
+
+
+nrel_eft_weapon_weight => nrel_first_domain: concept_weapon;;
+nrel_eft_weapon_weight => nrel_second_domain: number;;
+nrel_eft_weapon_weight => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_weapon;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_eft_weapon_weight;;
+number->2;;

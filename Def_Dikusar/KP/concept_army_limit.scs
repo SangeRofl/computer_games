@@ -1,0 +1,64 @@
+concept_army_limit		
+
+=> nrel_main_idtf:[лимит юнитов] (* <- lang_ru;; *);
+=> nrel_main_idtf:[limit] (* <- lang_en;; *);
+=> nrel_idtf: [предел] (* <- lang_ru;; *);
+=> nrel_idtf: [лимит] (* <- lang_ru;; *);
+=> nrel_idtf: [максимум юнитов] (* <- lang_ru;; *);
+
+<=nrel_inclusion:concept_game_mechanics;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(еда)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_army;
+      concept_strategy
+	 
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Лимит - одна из распространённых механик в <b><sc_element sys_idtf="concept_strategy">стратегиях</sc_element></b>, 
+		 благодарая которой обеспечивается баланс сил <b><sc_element sys_idtf="concept_army">войск игроков</sc_element></b>]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(золото)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_army
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Иногда в лимите исчисляют мощность <b><sc_element sys_idtf="concept_army">армии</sc_element></b>:" У красного игрока всего остлось 30 лимита против 50 лимата у зеленого игрока."]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(золото)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_resource_food
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Во многих играх лимит зависит от количества <b><sc_element sys_idtf="concept_resource_food">еды</sc_element></b>
+		  или построенных ферм.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://limit.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,54 @@
+concept_superior_devils_puffball
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличный чертов гриб] (* <- lang_ru;;*);
+	[Superior devil's puffball] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличный чертов гриб)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая выпускает облако яда.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При взрыве испускает ядовитое облако. Действует сильнее и дольше.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_calcium_equum;;
+	-> concept_ginatia_petals;;
+   	-> concept_szytnacce;;
+   	-> concept_endrega_heart;;
+	-> concept_enhanced_dancing_star;;
+   	-> concept_alchemists_powder;;
+   	-> concept_rebis;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличный чертов гриб состоит из: Алхимический порошок,Улучшенный чертов гриб, Calcium equum, Сердце эндриаги, Грибы-шибальцы, Лепестки гинации, Ребис.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

@@ -1,0 +1,30 @@
+concept_setting_invasion_of_alien
+=> nrel_main_idtf: [нашествие пришельцев] (* <- lang_ru;; *);
+=> nrel_idtf: [invsion of alien] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нашествие пришельцев)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором в компьютерной игре случается нашествие пришельцев] (* <- lang_ru;; *);;	 
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(нашествие пришельцев)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В таких играх обычно пришельцы прилетают с неба на летющей тарелке] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,5 @@
+Sawed_Off
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Sawed-off](*<-lang_ru;;*);
+		[Sawed-off](*<-lang_en;;*);;

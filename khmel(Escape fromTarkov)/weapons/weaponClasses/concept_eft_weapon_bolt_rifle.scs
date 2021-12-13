@@ -1,0 +1,27 @@
+concept_eft_weapon_bolt_rifle
+=> nrel_main_idtf: [bolt rifle (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [болтовая винтовка (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(болтовая винтовка (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [болтовая винтовка (Escape from Tarkov) — нарезное стрелковое оружие, конструктивно предназначенное для удержания и управления при стрельбе двумя руками с упором приклада в плечо в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры болтовых винтовок в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра болтовых винтовок.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,47 @@
+concept_weapon_fire_mode
+=> nrel_main_idtf: [Fire mode] (* <- lang_en;; *);
+=> nrel_main_idtf: [Тип стрельбы] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_weapon_single_fire_mode;;
+	-> concept_weapon_auto_fire_mode;;
+	-> concept_weapon_burst_fire_mode;;
+	=> nrel_main_idtf:[Разбиение по типам стрельбы] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Тип стрельбы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Тип стрельбы — стрельба из 
+			<b><sc_element sys_idtf="concept_weapon">оружия</b></sc_element>, при которой за одно нажатие на курок выпускается определённое количество патронов.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Различные типы стрельбы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 3 основных <b><sc_element sys_idtf="concept_weapon_fire_mode">типа стрельбы</b></sc_element>:
+			<b><sc_element sys_idtf="concept_weapon_single_fire_mode">одиночный</b></sc_element>, 
+			<b><sc_element sys_idtf="concept_weapon_burst_fire_mode">очередями</b></sc_element>, 
+			<b><sc_element sys_idtf="concept_weapon_auto_fire_mode">автоматический</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon_fire_mode;
+        concept_weapon_single_fire_mode;
+        concept_weapon_auto_fire_mode;
+        concept_weapon_burst_fire_mode
+
+	};;
+*);
+<- sc_node_not_relation;;

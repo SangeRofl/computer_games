@@ -1,0 +1,36 @@
+concept_directx
+=> nrel_main_idtf: [DirectX] (* <- lang_ru;; *);
+=> nrel_main_idtf: [DirectX] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(DirectX)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [DirectX - это набор API,
+				разработанных для решения задач,
+				связанных с программированием
+				под Microsoft Windows.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_microsoft_windows;;
+		-> concept_api;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(DirectX)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [DirectX наиболее широко используется
+		при написании компьютерных игр.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,89 @@
+concept_dead_by_daylight_terror
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+    [террор(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [terror(Dead by Daylight)]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [the heartbeat(Dead by Daylight)]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [звук биения сердца(Dead by Daylight)]
+    (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. террор(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Террор - звуковой эффект геймплея игры Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- concept_sound_effect;
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;
+
+<- rrel_key_sc_element:...(*
+    <- description_of_a_typical_instance;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/terror_example.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. террор(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Террор является атрибутом убийцы и слышен только выжившим.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. террор(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Террор является сигналом для выживших, что убийца находится неподалеку. Чем интенсивнее звук сердцебиения, тем ближе убийца.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. террор(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Террор имеет радиус, которым убийца может манипулировать при помощи навыков, своей уникальной способности и аддонов силы убийцы.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. террор(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Террор имеет разный радиус по-умолчанию для каждого убийцы.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

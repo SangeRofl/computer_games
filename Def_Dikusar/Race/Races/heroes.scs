@@ -1,0 +1,117 @@
+game_character_thrall
+
+=>nrel_fraction:concept_warcraft_horde;
+<-concept_race_orc;
+=> nrel_main_idtf:
+      [Тралл]
+      (*<-lang_ru;;*);
+       [Thrall]
+       (*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Thrall_cropped.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+game_character_tyrande
+
+=>nrel_fraction:concept_warcraft_alliance;
+<-concept_warcraft_night_elves;
+=> nrel_main_idtf:
+     [Тиранда]
+      (*<-lang_ru;;*);
+       [Tyrande Whisperwind]
+       (*<-lang_en;;*);
+=>nrel_idtf: [Тиранда Шелест Ветра](*<-lang_ru;;*);
+=>nrel_idtf: [Тиренд](*<-lang_ru;;*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://tirend.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+game_character_sylvanas
+
+=>nrel_fraction:concept_warcraft_horde;
+<-concept_warcraft_undead;
+=> nrel_main_idtf:
+      [Сильвана]
+      (*<-lang_ru;;*);
+       [Sylvanas]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Сильвана Ветрокрылая] (*<-lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Sylvanas.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+game_character_sargeras
+
+=>nrel_fraction:concept_the_burning_legion;
+=> nrel_main_idtf:
+      [Саргерас]
+      (*<-lang_ru;;*);
+       [Sargeras]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Падший титан Cаргерас] (*<-lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Sargeras.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+game_character_illidan
+
+=>nrel_fraction:warcraft_night_elves;
+=> nrel_main_idtf:
+      [Иллидан ]
+      (*<-lang_ru;;*);
+       [Illidan ]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Illidan Stormrage] (*<-lang_en;;*);
+=> nrel_idtf: [Иллидан Ярость Бури] (*<-lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Illidan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- sc_node_not_relation;;

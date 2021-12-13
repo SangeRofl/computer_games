@@ -1,0 +1,59 @@
+concept_hearthstone_effect_aura
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[Эффект ауры в Hearthstone]
+	(* <- lang_ru;;	*);
+	[Hearthstone aura effect]
+	(* <- lang_en;;	*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта ауры](*<-lang_ru;;*);
+		[Description of aura effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_effect_triggered;
+        concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Текущие эффекты, которые дают временные чары или положительные эффекты другим миньонам, называются аурами.
+            Некоторые известные примеры карт , которые обеспечивают постоянные Ауры Чемпионы Штормград и Murloc Военачальник.
+            Ауры могут воздействовать на всех дружественных миньонов или на всех миньонов определенного типа.
+            Ауры обычно действуют на всю сторону игрового поля, но некоторые ауры воздействуют только на соседних миньонов,
+            таких как Альфа ужасного волка и Тотем языка пламени .] (* <- lang_ru;; *);
+
+            [Ongoing effects which grant temporary enchantments or buffs to other minions are referred to as auras.
+            Some notable examples of cards which provide persistent auras are Stormwind Champion and Murloc Warleader.
+            Auras may affect all friendly minions, or all minions of a specific type.
+            Auras usually take effect on the player's entire side of the board,
+            but some auras only affect adjacent minions, such as Dire Wolf Alpha and Flametongue Totem.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Ключевое различие между баффами ауры и баффами, характерными для миньонов, заключается в том, что ауры предоставляют свои эффекты
+            только до тех пор, пока генерирующая ауру карта остается в игре. Например,Защитник Аргуса и
+            Священник Расколотого Солнца - примеры миньонов, которые дают баффы для миньонов, но не ауры.
+            В Hearthstone ауры можно определить как непрерывно действующие эффекты, которые обеспечиваются только присутствием в игре другой карты.] (* <- lang_ru;; *);
+
+            [The key distinction between aura buffs and minion-specific buffs is that auras grant their
+            effects only for as long as the aura-generating card remains in play.For example, Defender of Argus and
+            Shattered Sun Cleric are examples of minions that give minion-specific buffs, but not auras.
+            In Hearthstone, auras can be defined as continuously ongoing effects that are provided only by the presence of another card in play.] (* <- lang_en;; *);;
+        
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Ауры, в отличие от постоянных чар, не могут быть удалены, заставляя миньона воздействовать на ауру,
+            но только путем нейтрализации миньона, генерирующего ауру. Приглушение или удаление миньона,
+            генерирующего ауру, удалит его генерацию ауры и снимет эффект ауры со всех затронутых миньонов.
+            Однако, заставляя замолчать того же миньона, он не будет защищен от аур других миньонов.] (* <- lang_ru;; *);
+
+            [Auras, unlike permanent enchantments, cannot be removed by silencing the minion being affected by the aura,
+            but only by neutralizing the minion generating the aura. Silencing or removing an aura-generating
+            minion will remove its aura generation, and remove its aura effect from all affected minions.
+            However, silencing the same minion will not prevent it from being affected by the auras of other minions.] (* <- lang_en;; *);;
+	*);;
+*);;

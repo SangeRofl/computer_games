@@ -1,0 +1,54 @@
+company_electronic_arts
+=> nrel_main_idtf: [Electronic Arts] (* <- lang_en;; *);
+=> nrel_main_idtf: [Electronic Arts] (* <- lang_ru;; *);
+
+<- concept_company;
+
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Electronic Arts)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Electronic Arts — американская корпорация, которая занимается распространением видеоигр, основана Трипом Хокинсом.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 ((Штаб-квартира Electronic Arts)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Штаб-квартира компании расположена в городе Редвуд-Сити, Калифорния.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Торговая марка EA)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [EA — основная торговая марка компании Electronic Arts, под которой выходит большое количество разнообразных игр, интересных для широкой аудитории.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+    => nrel_main_idtf:[Логотип Electronic Arts] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../image/electronic_arts.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

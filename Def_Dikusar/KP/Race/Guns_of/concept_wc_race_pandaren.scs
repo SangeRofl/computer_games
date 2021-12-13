@@ -1,0 +1,28 @@
+concept_wc_race_pandaren
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [Пандарены]
+      (*<-lang_ru;;*);
+       [Pandaren]
+       (*<-lang_en;;*);
+=> nrel_idtf: [пандарен] (* <- lang_ru;; *);
+=> nrel_idtf: [пандарены] (* <- lang_ru;; *);
+=> nrel_idtf: [pandaren] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://pandaren.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

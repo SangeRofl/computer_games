@@ -1,0 +1,6 @@
+concept_apex_attachment_2x_4x_aog
+=> nrel_main_idtf: ["2x-4x Variable AOG" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["2x-4x Регулируемый УОП" прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

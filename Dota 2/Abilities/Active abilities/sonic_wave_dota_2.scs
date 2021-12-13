@@ -1,0 +1,45 @@
+sonic_wave_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Sonic Wave] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Sonic Wave] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Sonic Wave)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Создаёт перед героем гигантскую звуковую волну, отталкивающую врагов и наносящую им огромный урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Sonic Wave)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Sonic Wave распространяется со скоростью 900; требуется 1 сек., чтобы преодолеть всё расстояние. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [125];
+=> nrel_default_damage : [520];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Sonic_Wave_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

@@ -1,0 +1,48 @@
+concept_eft_ammo_grenadelauncher_ammo
+=> nrel_main_idtf: [grenade launcher ammo(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [патрон для гранатомета(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (патрон для гранатомета)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [снаряд, снаряженный взрывчатым веществом или иным наполнителем, например зажигательной или дымовой смесью, газом раздражающего действия и т.п..] (* <- lang_ru;; *);;
+	*);;
+
+	<= nrel_using_constants: {
+		concept_eft_ammo;
+		concept_eft_grenade_launcher
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (комплектующие патрона для гранатомета)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Кроме корпуса и боевого снаряжения (взрывчатого вещества) патрон для гранатомета как правило комплектуется взрывателем и теми или иными предохранительными устройствами.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (патрон для гранатомета(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/grenadelauncherAmmo.jpg"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

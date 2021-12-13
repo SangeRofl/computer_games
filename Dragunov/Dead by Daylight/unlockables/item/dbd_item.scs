@@ -1,0 +1,42 @@
+concept_dead_by_daylight_item <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Предмет(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Item(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Предмет(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Предметы - категория инвентаря Выживших, обозначающая полезные вещи, которые Выживший может принести в матч чтобы облегчить себе побег.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;   
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Предмет(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Предметы можно получить из Кровавой паутины или из сундуков во время матча]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_subdividing: {
+	concept_dead_by_daylight_item_firecracker;
+    concept_dead_by_daylight_item_flashlight;
+    concept_dead_by_daylight_item_key;
+    concept_dead_by_daylight_item_map;
+    concept_dead_by_daylight_item_medkit;
+    concept_dead_by_daylight_item_toolbox
+};;

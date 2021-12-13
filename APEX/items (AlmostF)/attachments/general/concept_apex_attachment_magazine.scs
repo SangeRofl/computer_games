@@ -1,0 +1,41 @@
+concept_apex_attachment_magazine
+=> nrel_main_idtf: [magazine (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [магазин (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_attachment_extended_light_mag;;
+    -> concept_apex_attachment_extended_heavy_mag;;
+    -> concept_apex_attachment_extended_sniper_mag;;
+	=> nrel_main_idtf:[Разбиение по видам патронов] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (магазин (Apex Legends)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [магазин (Apex Legends) - модификация оружия, которая увеличивает количество патронов в магазине.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (типы увеличенных магазинов для снайперских винтовок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Увеличенные магазины бывают трех типов: увеличенный легкий магазин, увеличенный тяжелый магазин и увеличенный магазин для снайперских винтовок.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+		concept_apex_attachment_extended_sniper_mag_common;
+        concept_apex_attachment_extended_sniper_mag_rare;
+        concept_apex_attachment_extended_sniper_mag_epic
+	};;
+*);
+
+<- sc_node_not_relation;;

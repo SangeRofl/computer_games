@@ -1,0 +1,39 @@
+concept_belt_of_strength
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [belt of strength] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [пояс силы] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(belt of strength)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Ценный аксессуар для улучшения выживаемости.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(belt of strength)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых основная характеристика сила, в ранней и средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/belt_of_strength.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

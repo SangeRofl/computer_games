@@ -1,0 +1,58 @@
+concept_lamer  //это системный идентификатор
+=> nrel_main_idtf:
+	[ламер] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество ламеров] (* <- lang_ru;; *);    // обычные идентификаторы
+	[lamer] (* <- lang_en;; *);
+
+
+<= nrel_inclusion:
+	player (* => nrel_main_idtf: [игрок] (* <- lang_ru;; *);; *);    //включение
+
+
+->rrel_example: lamer_Den 
+(* => nrel_main_idtf: [ламер Ден] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_lamer          //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(ламер)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Ламер - новый пользователь, приступающий к освоению тонкостей какой-либо технологии, в компьютерных играх, имеющий потенциал стать про-игроком] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_user (*
+=> nrel_main_idtf: [пользователь] (* <- lang_ru;; *);; *);;
+				-> technology (*
+=> nrel_main_idtf: [технология] (* <- lang_ru;; *);; *);;
+				-> concept_computer_game;;
+				-> nrel_potential (*
+=> nrel_main_idtf: [потенциал] (* <- lang_ru;; *);; *);;
+				-> pro_gamer;;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_lamer                //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(потенциал, профессиональный игрок)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [У каждого ламера большой потенциал в становлении профессиональным игроком] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла
+

@@ -1,0 +1,31 @@
+nrel_character_build <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [build*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [билд*]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. билд*]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Билд* - отношение, связывающее <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компъютерной игры</b></sc_element> с <b><sc_element sys_idtf="concept_character_build">билдом</b></sc_element>, на него выбранным.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: {concept_character; concept_character_build};;
+*);
+=> nrel_first_domain: concept_character;
+=> nrel_second_domain: concept_character_build;;
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_character_build;;
+*);;

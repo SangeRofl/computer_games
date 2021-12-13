@@ -1,0 +1,30 @@
+concept_setting_pirates
+=> nrel_main_idtf: [пираты] (* <- lang_ru;; *);
+=> nrel_idtf: [pirates] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пираты)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действия в компьютерной игре происходит с участиями пиратов] (* <- lang_ru;; *);;	 
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(пираты)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх ты можешь играть как за пиратов, так и против них] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

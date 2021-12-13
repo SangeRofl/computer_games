@@ -1,0 +1,39 @@
+concept_perseverance
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [perseverance] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [perseverance] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(perseverance)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Камень, способный заменить сердце владельцу.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(perseverance)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет любому герою в средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/perseverance.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

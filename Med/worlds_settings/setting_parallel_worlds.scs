@@ -1,0 +1,26 @@
+concept_setting_parallel_worlds
+
+=> nrel_main_idtf:[параллельные миры] (* <- lang_ru;; *);
+=> nrel_main_idtf:[parallel worlds] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+		=> nrel_main_idtf: [Опр.(параллельные миры)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Параллельные миры - игровой мир компьютерной игры, похожий на реальный мир с переходами в искаженные миры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+
+
+

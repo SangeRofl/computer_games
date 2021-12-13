@@ -1,0 +1,43 @@
+concept_skyrim_weapon_two_handed_hammer
+=> nrel_main_idtf: [hammer  (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [молот (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(молот (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [молот —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, имеющее различные сочетания молотка, клюва и топорика, расположенные вдоль длинной рукоятки.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Количество разнообразных молотов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> существует 21 видов молотов.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Особенности молотов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Молоты характеризуются низкой скоростью маха, но большим коэффициентом оглушения.
+По сравнению с <b><sc_element sys_idtf="concept_skyrim_weapon_one_handed_mace">булавой</b></sc_element>, 
+секиры имеют чуть меньше скорость атаки, но больше дальность поражения и коэффициентом оглушения.
+Развитие соответствующих навыков персонажа позволяет носителю оружия игнорировать часть защитной брони противника.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

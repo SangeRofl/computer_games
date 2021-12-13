@@ -1,0 +1,33 @@
+thebausffs
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Simon "Thebausffs" Hofverberg](* <-lang_en;; *);
+		[Саймон "Thebausffs" Холфенберг](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Thebausffs](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+
+	=>nrel_citizen_of: Sweden;
+	=>nrel_surname: Hofverberg;
+	=>nrel_first_name: Simon;
+	=>nrel_nickname: Thebausffs;
+	=>nrel_birthday: [03.10.1999];
+	=>nrel_gamerole: top_laner_lol;
+
+	<=nrel_with_whom: contract_thebausffs_and_g2_esports
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Thebausffs and G2 Esports](* <-lang_en;; *);
+			[Контракт между Thebausffs и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 09_01_2019;;
+		*);;
+	*);;

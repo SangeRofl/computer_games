@@ -1,0 +1,40 @@
+concept_game_world
+
+=> nrel_main_idtf:[игровой мир] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game world] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_gameplay;;
+		-> nrel_plot;;
+	*);;
+		=> nrel_main_idtf: [Опр.(игровой мир)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Игровой мир - виртуальный мир, который воплощается в игре, благодаря сюжетной реализации и игровому процессу] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+=> nrel_inclusion: concept_game_level; concept_open_world; 		//vkl open world???
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровой мир, многопользовательская игра, однопользовательская игра, нпс)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Большинство игровых миров являются многопользовательскими, однако существуют однопользовательские игры, которые содержат игровые миры и населены неигровыми персонажами](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+
+
+

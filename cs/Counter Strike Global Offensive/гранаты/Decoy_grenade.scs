@@ -1,0 +1,5 @@
+Decoy_grenade
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Ложная граната](*<-lang_ru;;*);
+		[Decoy grenade](*<-lang_en;;*);;

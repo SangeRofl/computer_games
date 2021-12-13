@@ -1,0 +1,45 @@
+marksmanship_dota_2
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [Marksmanship] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Marksmanship] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Marksmanship)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Опыт в бою позволяет герою стрелять метче и эффективнее. С каждой атакой есть вероятность выпустить стрелу, игнорирующую базовую броню врага. Также даёт герою и союзникам дальнего боя неподалёку дополнительную ловкость, зависящую от ловкости владельца. Способность не действует, если в радиусе 400 от её владельца есть вражеские герои.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Marksmanship)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Аура периодически проверяет ловкость Drow Ranger и мгновенно подстраивает бонус к ловкости.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [0];
+=> nrel_default_damage : [90];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Marksmanship_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

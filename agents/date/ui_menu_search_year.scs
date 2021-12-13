@@ -1,0 +1,22 @@
+ui_menu_search_year 
+
+<- ui_user_command_class_atom; 
+ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: 
+	[Поиск игры новее опреденного года] (* <- lang_ru;; *);
+	[Request search] (* <- lang_en;; *);
+
+=> ui_nrel_command_template:
+[* question_search_year _-> ._question_search_year_instance (* _-> ui_arg_1;; *);;
+._question_search_year_instance _<- question;;
+*];
+
+=> ui_nrel_command_lang_template: 
+	[Запрос поиска: $ui_arg_1] (* <- lang_ru;; *);
+	[Request of search: $ui_arg_1] (* <- lang_en;; *);;
+
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+	-> ui_menu_search_year;;
+*);;*/

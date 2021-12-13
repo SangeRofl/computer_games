@@ -1,0 +1,5 @@
+concept_game_currency
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Концепция игровой валюты](*<-lang_ru;;*);
+		[concept game currency](*<-lang_en;;*);;

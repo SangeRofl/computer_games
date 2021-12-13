@@ -1,0 +1,31 @@
+concept_game_series_the_elder_scrolls
+<=nrel_inclusion: concept_game_series;
+=> nrel_main_idtf: [серия игр Древние свитки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game series The Elder Scrolls] (* <- lang_en;; *);
+-> computer_game_the_elder_scrolls_5_skyrim;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+=> nrel_using_constants:{
+                
+    
+		concept_game_series
+	};;
+=> nrel_main_idtf: [Опр.(серия игр The Elder Scrolls )] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...	
+	(* -> rrel_example:
+[ <b><sc_element sys_idtf="concept_game_series_the_elder_scrolls">The Elder Scrolls </b></sc_element> — <b><sc_element sys_idtf="concept_game_series">серия компьютерных  </b></sc_element> <b><sc_element sys_idtf="concept_open_RPG">ролевых  игр</b></sc_element>, разрабатываемых студией Bethesda Game Studios и выпускаемых компанией Bethesda Softworks.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр The Elder Scrolls)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[ Игры серии объединены общей, детально проработанной вселенной и предоставляют игроку большую свободу, позволяя по собственному усмотрению посещать различные области и города вымышленного фэнтезийного мира и самостоятельно искать интересные места и задания. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;	
+*);
+<- sc_node_not_relation;;

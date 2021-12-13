@@ -1,0 +1,23 @@
+concept_damage_multiplier
+=> nrel_main_idtf: [Damage multiplier] (* <- lang_en;; *);
+=> nrel_main_idtf: [Множитель урона] (* <- lang_ru;; *);
+
+<-number;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          number;
+          nrel_multiplication_of_numbers;
+          concept_weapon
+	};;
+	=> nrel_main_idtf:[Опр.(Множитель урона)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это <b><sc_element sys_idtf="number">число</b></sc_element> на которое <b><sc_element sys_idtf="nrel_multiplication_of_numbers">умножается</b></sc_element> урон конкретного 
+       		<b><sc_element sys_idtf="concept_weapon">оружия</b></sc_element> при попадании определенную часть тела.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

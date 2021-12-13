@@ -1,0 +1,6 @@
+sc_text_of_agent_comparison_of_two_cybersport_players
+-> rrel_key_sc_element:
+	agent_comparison_of_two_cybersport_players;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_comparison_of_two_cybersport_players = [*^"file://agent_comparison_of_two_cybersport_players.scsi"*];;

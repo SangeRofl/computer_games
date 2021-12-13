@@ -1,0 +1,57 @@
+concept_class_warlock
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Жрец] (* <- lang_ru;; *);
+	[Priest] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Чернокнижник)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+	  -> concept_card;;
+    -> concept_card_class_warlock;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+    -> concept_hearthstone_mana;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        -> [Чернокнижники известны своей способностью вызывать демонов.Эти недооцененные миньоны, как правило, поставляются с боевым кличем, который негативен для Чернокнижника 
+           (например, сбрасывание карт или нанесение урона герою), уравновешивая их необычно низкую стоимость. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Способность Чернокнижника)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> concept_ability;;
+    -> concept_card_class_warlock;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+    -> concept_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+   -> [Одной из самых знаковых способностей Чернокнижника является их Энергетический Жук Героя, который позволяет им жертвовать своим здоровьем, чтобы взять дополнительную карту из своей колоды.](*<-lang_ru;;*);;
+  *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/warlock.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

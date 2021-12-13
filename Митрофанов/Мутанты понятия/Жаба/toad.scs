@@ -1,0 +1,41 @@
+concept_toad
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Жаба] (* <- lang_ru;;*);
+	[Toad] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_toad;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Жаба)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Жаба — необычный представитель зомби, способный стрелять зелёной едкой слизью.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Жабы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Жаба наносит периодический урон игроку при попадании слизи на него или в небольшом радиусе в месте приземления.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://toad.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

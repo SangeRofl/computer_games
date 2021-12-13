@@ -1,0 +1,5 @@
+concept_apex_attachment_sight
+=> nrel_main_idtf: [sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- sc_node_not_relation;;

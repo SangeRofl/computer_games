@@ -1,0 +1,31 @@
+concept_dead_by_daylight_perk_common <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [общий навык(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [common perk(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. общий навык(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Общий навык - тип навыка в Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. общий навык(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Общий навык - навык, доступный для покупки всеми персонажами данного класса без необходимости покупки его в качестве обучаемого у конкретного персонажа или в храме тайн.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

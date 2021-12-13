@@ -1,0 +1,43 @@
+concept_skyrim_weapon_two_handed_poleaxe
+=> nrel_main_idtf: [poleaxe  (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [секира (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(двуручный меч (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [секира —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, имеющее рабочее лезвие, расположенное вдоль длинной рукоятки.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Количество разнообразных секир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> существует 20 видов секир.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Особенности секир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Секиры характеризуются средней скоростью маха и средним коэффициентом оглушения.
+По сравнению с <b><sc_element sys_idtf="concept_skyrim_weapon_one_handed_axe">одноручными топором</b></sc_element>, 
+секиры имеют чуть меньше скорость атаки, но больше дальность поражения и коэффициентом оглушения.
+Развитие соответствующих навыков персонажа позволяет наносить с помощью топоров сильные кровотечения, наносящие противнику серьезный урон с течением времени.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

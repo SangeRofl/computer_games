@@ -1,0 +1,42 @@
+overgrowth_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Overgrowth] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Overgrowth] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Overgrowth)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Вокруг героя разрастаются опутывающие врагов корни и лозы. Жертвы получают периодический урон и не могут перемещаться, телепортироваться, уходить в невидимость или атаковать.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Overgrowth)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Применяет к целям оцепенение и обезоруживание, предотвращая их передвижение, атаки и использование определенных заклинаний для передвижения.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [100];
+=> nrel_default_damage : [75];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Overgrowth_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

@@ -1,0 +1,63 @@
+computer_game_need_for_speed_high_stakes
+=> nrel_main_idtf: [Need for Speed: High Stakes] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: High Stakes] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+<- concept_arcade;
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electronic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_11_12_1998;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: High Stakes)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, пятая часть в игровой серии Need for Speed.
+                    Игра основана на предыдущей части — Need for Speed III: Hot Pursuit, сосредотачиваясь на гоночных заездах на дорогих суперкарах и полицейских преследованиях.
+                    Помимо этого, в High Stakes впервые в серии появился режим «Карьера», при прохождении которого игрок зарабатывает деньги, которые тратит на покупку автомобилей, их ремонт и тюнинг.
+                    В игре заметно усовершенствовались режимы гонок и присутствуют различные нововведения, а также многопользовательский режим по сети на девять игроков] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_high_stakes;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

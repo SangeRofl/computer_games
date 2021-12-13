@@ -1,0 +1,32 @@
+concept_setting_middle_ages
+=> nrel_main_idtf: [средние века] (* <- lang_ru;; *);
+=> nrel_idtf: [middle ages] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_crusade; concept_setting_civil_strife; concept_setting_inquisition;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(средние века)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в Средние Века, где происходят мождоусобицы, крестовые походы и инквизиция.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(средние века)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В этих играх большую роль играет религия] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

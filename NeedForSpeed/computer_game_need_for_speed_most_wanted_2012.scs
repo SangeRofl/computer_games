@@ -1,0 +1,67 @@
+computer_game_need_for_speed_most_wanted_2012						//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed: Most Wanted 2012] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Most Wanted 2012] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_criterion_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_3; xbox_360; wii; 3ds; playstation_vita; wii; android; ios;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: chameleon;
+
+=> nrel_publication_date: date_30_10_2012;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Most Wanted)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная британской студией Criterion Games и изданная компанией Electronic Arts для игровых консолей, персональных компьютеров и мобильных устройств в 2012 году.
+                Need for Speed: Most Wanted сочетает уличные гонки и полицейские преследования. Действие происходит в городе Fairhaven. Главная особенность игры — возможность находить автомобили в городе,
+                подъезжая к их точкам смены. Игрок может проходить гоночные соревнования и играть по сети с помощью функции Autolog. В Need for Speed: Most Wanted реализованы широкие возможности сетевой игры, магазин,
+                чат и возможность соревноваться с другими игроками за звание лидера в списке Most Wanted. Явлектся перезапуском Need for Speed Most Wanted 2005 года] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_criterion_games;;
+                -> computer_game_need_for_speed_most_wanted_2012;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

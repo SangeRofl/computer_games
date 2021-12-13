@@ -1,0 +1,26 @@
+concept_eft_weapon_assault_carbine
+=> nrel_main_idtf: [assault carbine (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [штурмовой карабин (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(штурмовой карабин (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+(*   -> rrel_example:
+		 [штурмовой карабин (Escape from Tarkov) — облегчённая <b><sc_element sys_idtf="concept_eft_weapon_assault_rifle">штурмовая винтовка</b></sc_element> с укороченным стволом в игре 'Escape from Tarkov'.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры штурмовых карабинов в(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра штурмовых карабинов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,63 @@
+nrel_ulta
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- assymmetric_relation;
+<- antitransitive_relation;
+ => nrel_first_domain: concept_hero_char;
+=> nrel_main_idtf:
+      [ультимейт*]
+      (*<-lang_ru;;*);
+       [ulta*]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Уникальная способность героя]
+      (*<-lang_ru;;*);     
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ультимейт*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_hero_char
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="nrel_ulta">Ультимейт*</b></sc_element> - уникальная способность <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{concept_hero_char
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Единственность ультимейта*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У каждого <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element> строго 1 <b><sc_element sys_idtf="nrel_ulta">ультимейт*</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+nrel_ability -> concept_black_hole;;
+nrel_ability -> concept_reverse_polarity;;
+nrel_ability -> concept_culling_blade;;
+nrel_ability -> concept_concept_echo_slam;;
+nrel_ability -> concept_concept_warpath;;
+nrel_ability -> concept_concept_dismember;;
+nrel_ability -> concept_concept_gods_strength;;
+concept_hero_char -> axe_dota_2;;
+concept_hero_char -> enigma_dota_2;;
+concept_hero_char -> magnus_dota_2;;
+concept_hero_char -> earthshaker_dota_2;;
+concept_hero_char -> pudge_dota_2;;
+concept_hero_char -> bristleback_dota_2;;
+concept_hero_char -> sven_dota_2;;
+nrel_ulta -> (enigma_dota_2 => concept_black_hole);;
+nrel_ulta -> (magnus_dota_2 => concept_reverse_polarity);;
+nrel_ulta -> (axe_dota_2 => concept_culling_blade);;
+nrel_ulta -> (earthshaker_dota_2 => concept_echo_slam);;
+nrel_ulta -> (pudge_dota_2 => concept_dismember);;
+nrel_ulta -> (bristleback_dota_2 => concept_warpath);;
+nrel_ulta -> (sven_dota_2 => concept_gods_strength);;

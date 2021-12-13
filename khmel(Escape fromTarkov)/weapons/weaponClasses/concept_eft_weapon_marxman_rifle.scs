@@ -1,0 +1,27 @@
+concept_eft_weapon_marxman_rifle
+=> nrel_main_idtf: [marxman rifle (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [марксманская винтовка (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(марксманская винтовка (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [марксманская винтовка (Escape from Tarkov) — стрелковое оружие с повышенной точностью, способное поражать противников на большой дистанции в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры марксманских винтовок в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра марксманских винтовок.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

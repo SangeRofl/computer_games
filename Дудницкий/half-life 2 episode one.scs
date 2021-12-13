@@ -1,0 +1,59 @@
+concept_computer_game_half_life_2_episode_one
+
+=> nrel_main_idtf:
+		[Half-Life 2 Episode One] (* <-lang_ru;;*);
+		[Half-Life 2 Episode One] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_01.06.2006;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source;
+=> nrel_publisher: Valve_Corporation;
+Electronic_Arts;
+=> nrel_developer: Valve;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os;
+concept_xbox360;
+concept_playstation3;
+concept_android
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life 2 Episode One) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life 2: Episode One (ранее известный как Half-Life 2: Aftermath) — продолжение сюжетной линии компьютерной игры Half-Life 2 в жанре шутера от первого лица, разработанное компанией Valve Corporation. Игра является первой частью в трилогии эпизодов — продолжений Half-Life 2. В Episode One используется следующая версия движка Source с поддержкой технологии HDR.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life 2 episode one.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life Episode One)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Значительную часть Episode One игрок проходит, взаимодействуя с компьютерным персонажем — Аликс Вэнс, что является нестандартным приёмом для серии Half-Life. Эпизод состоит из 5 глав (уровней), рассчитанных на 4-6 часов игры, и рекламного ролика второго эпизода. Сюжет игры продолжает историю Half-Life и Half-Life 2, и начинается с момента, на котором завершилась предыдущая игра: игрок в роли Гордона Фримена вместе с Аликс Вэнс должен успеть сбежать из охваченного хаосом Сити 17, пока Цитадель Альянса, которой Фримен нанёс непоправимый ущерб, не уничтожила вместе с собой весь город.   ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,39 @@
+concept_ring_of_protection
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [ring of protection] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [ring of protection] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(ring of protection)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Мерцающее кольцо, защищающее своего носителя.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(ring of protection)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет героем с основным атрибутом сила, в ранней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ring_of_protection.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

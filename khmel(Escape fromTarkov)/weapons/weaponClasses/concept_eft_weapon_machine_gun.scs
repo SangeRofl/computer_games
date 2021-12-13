@@ -1,0 +1,27 @@
+concept_eft_weapon_machine_gun
+=> nrel_main_idtf: [machine gun (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пулемет (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пулемет (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [пулемет (Escape from Tarkov) — стрелковое оружие, которое обычно имеет большой запас патронов в магазине, высокую отдачу, высокую скорострельность, средний урон и предназначенное для поражения персонажей противника в ближнем бою в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры пулеметов (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 1 экземпляр пулемета.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

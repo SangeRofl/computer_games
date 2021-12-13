@@ -1,0 +1,47 @@
+concept_clicker 
+
+=> nrel_main_idtf:[кликер] (* <- lang_ru;; *);
+=> nrel_idtf:[clicker] (* <- lang_en;; *);
+=> nrel_idtf:[множество кликабельных игр] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game;; 
+		-> concept_computer_game;;
+	*);;
+		=> nrel_main_idtf: [Опр.(кликер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Кликер - жанр флэш-игр с простым и незамысловатым сюжетом, рассчитанный на скорость реакции. В такой игре вас нужно вовремя успеть нажать кнопкой мыши на нужную деталь или кнопку.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<= nrel_inclusion: concept_genre;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(кликер, жанр, игра*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[В кликере игрок нажимает на кнопку и получает определённое количество валюты.](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(кликер, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Часто в кликерах есть источники дохода, которые зарабатывают некоторое количество монет за определённое время.](* <- lang_ru;; *);;
+	*);;	
+*);;

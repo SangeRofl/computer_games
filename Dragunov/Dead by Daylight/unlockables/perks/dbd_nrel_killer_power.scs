@@ -1,0 +1,42 @@
+nrel_dead_by_daylight_killer_power <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [сила убийцы*(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [killer power*(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. сила убийцы*(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [сила убийцы* - отношение, связывающее персонажа Dead by Daylight - убийцу с силой убийцы.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: {
+            concept_dead_by_daylight_killer;
+            concept_dead_by_daylight_killer_power   
+        };;
+*);
+
+=> nrel_first_domain: ... (*
+    <= nrel_union: {
+        concept_dead_by_daylight_killer
+    };;
+*);
+
+=> nrel_second_domain: concept_dead_by_daylight_killer_power;;
+
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_dead_by_daylight_killer_power;;
+*);;

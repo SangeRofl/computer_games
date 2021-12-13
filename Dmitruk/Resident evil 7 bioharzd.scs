@@ -1,0 +1,65 @@
+concept_computer_game_resident_evil_7_biohazard
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_shooter;
+<-concept_puzzle;
+<-concept_setting_invasion_of_zombie;
+
+=> nrel_main_idtf:
+      [Resident Evil 7: Biohazard]
+      (*<-lang_ru;;*);
+       [Resident Evil 7: Biohazard]
+       (*<-lang_en;;*);  
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_announcement_date: date_13_06_2016;
+=>nrel_publication_date: date_24.01.2017;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: re_engine;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom_rd_division;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_one;
+concept_nintendo_switch;
+concept_playstation_4
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 7: Biohazard)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 7: Biohazard — компьютерная игра в жанре survival horror, часть серии игр Resident Evil, разработанная и выпущенная компанией Capcom в 2017 году для PlayStation 4, Xbox One и Microsoft Windows. Версия игры для PlayStation 4 также поддерживает режим виртуальной реальности через шлем PlayStation VR. Выпущена в честь 20-летия серии игр Resident Evil. .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_7_bio.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 7: Biohazard)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ В отличие от нескольких предыдущих игр серии, представлявших собой все более масштабные action-игры, Resident Evil 7 описывалась разработчиками и обозревателями как возвращение к истокам серии; она намеренно воспроизводит темы и образы из первой игры серии и таких фильмов ужасов.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

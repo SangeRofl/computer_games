@@ -1,0 +1,41 @@
+concept_bolter
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Бегун] (* <- lang_ru;;*);
+	[Bolter] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bolter;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Бегун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бегун — уникальный вид зомби, появляющийся только ночью и представляющий ценность для науки.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения бегуна)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мутант Бегун появляется только в ночное время суток. Очень осторожен. Для взятия биоматериала для научного исследования следует вести себя очень тихо и не использовать никакого оружия](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://bolter.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

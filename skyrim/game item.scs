@@ -1,0 +1,21 @@
+concept_game_item
+=> nrel_main_idtf: [game item] (* <- lang_en;; *);
+=> nrel_main_idtf: [игровой предмет] (* <- lang_ru;; *);
+=> nrel_idtf: [вещь] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(игровой предмет)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [игровой предмет — это элемент игры, меняющий игровой процесс.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+

@@ -1,0 +1,39 @@
+mana_void_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Mana Void] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Mana Void] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Mana Void)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[За каждую отсутствующую у цели единицу маны ей и окружающим противникам наносится урон. Основная цель кратковременно оглушается. ](* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Mana Void] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Урон основывается на количестве маны у основной цели, но урон наносится всем противникам в радиусе действия способности. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Mana_Void_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

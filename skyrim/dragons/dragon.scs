@@ -1,0 +1,57 @@
+concept_skyrim_dragon
+=> nrel_main_idtf: [Dragon] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дракон] (* <- lang_ru;; *);
+
+<-computer_game_the_elder_scrolls_5_skyrim;
+
+=> nrel_inclusion:
+concept_skyrim_brown_dragon;
+concept_skyrim_elder_dragon;
+concept_skyrim_blood_dragon;
+concept_skyrim_ice_dragon;
+concept_skyrim_ancient_dragon;
+concept_skyrim_revered_dragon;
+concept_skyrim_legendary_dragon;
+concept_skyrim_bone_dragon;
+
+-> concept_skyrim_dragon_alduin;
+-> concept_skyrim_dragon_paarthurnax;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Дракон] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Драконы — разумные ящеры, дети Акатоша, которые обитают в Нирне. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Происхождение драконов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Когда они появились в Нирне — неизвестно, но, возможно, они были первым разумным видом на планете. 
+Родиной драконов считается континент Акавир, откуда они впоследствии мигрировали и распространились по всему <b><sc_element sys_idtf="concept_skyrim_tamriel">Тамриэлю</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Появление драконов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Долгое время эти существа считались или вымершими, или просто улетевшими непонятно куда, вплоть до событий <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>.
+По сюжету этой игры становится известно, что большинство драконов были убиты, но так как окончательно уничтожить дракона способен только <b><sc_element sys_idtf="concept_skyrim_dovakin">Драконорождённый</b></sc_element>, возвратившийся «из-за пределов мира» <b><sc_element sys_idtf="concept_skyrim_dragon_alduin">Алдуин</b></sc_element>, первенец Акатоша, постепенно начинает возвращать их к жизни. 
+В ходе игры можно наблюдать, как <b><sc_element sys_idtf="concept_skyrim_dragon_alduin">Алдуин</b></sc_element> лично воскрешает своего сородича (Салокнира) в драконьем кургане.   ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

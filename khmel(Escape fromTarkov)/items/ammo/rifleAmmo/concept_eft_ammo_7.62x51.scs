@@ -1,0 +1,47 @@
+concept_eft_ammo_7.62x51
+=> nrel_main_idtf: [7.62x51(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [7.62x51(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_rifle_ammo;
+
+=> nrel_eft_weapon_weight: 0.0095;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (7.62x51(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Патрон 7.62х51 — это винтовочный патрон, который является стандартом для государств-членов альянса НАТО.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_rifle_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (специфика патрона 7.62х51(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Патрон 7.62х51 оснащается как обычными, так и бронебойными, трассирующими пулями. Гильза патрона в основном изготавливается из латуни, реже — со стали.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (7.62x51(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/7.62x51.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

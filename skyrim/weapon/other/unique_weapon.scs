@@ -1,0 +1,29 @@
+concept_skyrim_weapon_unique
+=> nrel_main_idtf: [unique weapon (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [уникальное оружие (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(уникальное оружие (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Уникальное оружие —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, которое может быть найдено при определённых условиях.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности уникального оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Встречается в единственном экземпляре, хотя в некоторых случаях может обновиться вместе со всем содержимым локации. Невозможно создать самому.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,32 @@
+concept_setting_era_of_colonizacion
+=> nrel_main_idtf: [эра колонизации] (* <- lang_ru;; *);
+=> nrel_idtf: [era of colonizacion] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_sea_vojage; concept_setting_frontier;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(эра колонизации)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в эпоху колонизации, когда были распространены морские путешествия и были открыты множество новых земель.] (* <- lang_ru;;*);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(эра колонизации)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычно в таких играх присутсвуют английские колонии] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,39 @@
+concept_resource_lumber	
+
+=> nrel_main_idtf:[дерево] (* <- lang_ru;; *);
+=> nrel_main_idtf:[wood] (* <- lang_en;; *);
+=> nrel_idtf: [древесина] (* <- lang_ru;; *);
+=> nrel_idtf: [lumber] (* <- lang_en;; *);
+
+<=nrel_inclusion:concept_game_resource;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(дерево)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_game_resource;
+      concept_RPG;
+      concept_strategy;
+      concept_game_item 
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Дерево - один из основных <b><sc_element sys_idtf="concept_game_resource">игровых ресурсов</sc_element></b>,
+       использумые в играх жанра <b><sc_element sys_idtf="concept_RPG">"RPG"</sc_element></b> и <b><sc_element sys_idtf="concept_strategy">стратегиях</sc_element></b>, 
+       как правило использумый для строительства, 
+       улучшения и изготовления <b><sc_element sys_idtf="concept_game_item">предметов</sc_element>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wood.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

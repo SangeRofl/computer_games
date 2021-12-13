@@ -1,0 +1,39 @@
+concept_town_portal_scroll
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [town portal scroll] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [свиток телепортации] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(town portal scroll)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Телепортирует вас к выбранной союзной постройке. Двойное нажатие телепортирует вас к фонтану вашей команды. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(town portal scroll)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Свиток телепортации отлично подойдет всем героям, на всех стадиях игры. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/town_portal_scroll.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

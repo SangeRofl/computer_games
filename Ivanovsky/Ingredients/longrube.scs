@@ -1,0 +1,42 @@
+concept_longrube
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Безмер] (* <-lang_ru;;*);
+	[Longrube] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Безмер)] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_superior_grapeshot;;
+	-> concept_enhanced_grapeshot;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Улучшенная картечь, Местерская картечь.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://longrube.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

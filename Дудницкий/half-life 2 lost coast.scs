@@ -1,0 +1,57 @@
+concept_computer_game_half_life_2_lost_coast
+
+=> nrel_main_idtf:
+		[Half-Life 2 Lost Coast] (* <-lang_ru;;*);
+		[Half-Life 2 Lost Coast] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_27.10.2005;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source;
+=> nrel_publisher: Valve_Corporation;
+=> nrel_developer: Valve_Corporation;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life 2 Lost Coast) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life 2: Lost Coast (рус. «Затерянное побережье») — распространяемый в составе комплектов Half-Life Complete и Valve Complete Pack уровень к игре Half-Life 2, выпущенный Valve Corporation через Steam в виде отдельной игры 27 октября 2005. 
+Игра была выпущена для демонстрации новых технических возможностей (преимущественно High Dynamic Range) обновленного графического движка Source, которых не было в Half-Life 2. Уровень игры был создан с уклоном на окружение, способное наиболее качественно продемонстрировать возможности данной технологии.    ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_lostcoast.PNG"
+						(*
+								=> nrel_format: format_PNG;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life 2 Lost Coast)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Гордон Фримен приходит в сознание на берегу моря, неподалёку от прибрежного посёлка Святой Ольги. Его встречает старый рыбак, объясняющий, что Альянс захватил церковь на скале, 
+возвышающейся над морем, и установил там пусковую установку для ракет с хедкрабами, из которых начал обстреливать посёлок. Игроку в роли Гордона предстоит подняться вверх и добраться до церкви, по пути сражаясь с солдатами и вертолётом Альянса, и уничтожить установку.   ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

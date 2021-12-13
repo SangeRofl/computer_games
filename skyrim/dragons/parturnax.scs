@@ -1,0 +1,52 @@
+concept_skyrim_dragon_paarthurnax
+=> nrel_main_idtf: [Paarthurnax] (* <- lang_en;; *);
+=> nrel_main_idtf: [Партурнакс] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Партурнакс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Партурнакс  — дракон, персонаж в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Биография)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Партурнакс — один из древнейших драконов, ранее — правое крыло <b><sc_element sys_idtf="concept_skyrim_dragon_alduin">Алдуина</b></sc_element>, а также его младший брат и сын самого Акатоша.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Место обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Он обитает на самой высокой горе <b><sc_element sys_idtf="concept_skyrim_skyrim">Скайрима</b></sc_element>, Глотке Мира, являясь тайным лидером и учителем таинственных Седобородых. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/parturnax.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Партурнакс)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

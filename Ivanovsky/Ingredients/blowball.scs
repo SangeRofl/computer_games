@@ -1,0 +1,45 @@
+concept_blowball
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Одуванчик] (* <- lang_ru;;*);
+	[Blowball] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Одуванчик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_dimeritium_bomb;;
+	-> concept_superior_moon_dust;;
+	-> concept_enhanced_samum;;
+	-> concept_enhanced_moon_dust;;
+	-> concept_enhanced_grapeshot;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Улучшенная двимеритовая бомба, Улучшенный самум, Улучшенная лунная пыль, Улучшенная Картечь, Отличная Лунная пыль . ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://blowball.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,50 @@
+concept_superior_samum
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличный самум] (* <- lang_ru;;*);
+	[Superior samum] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличный самум)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая ослепляет и оглушает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ослепляет противников в радиусе взрыва. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_samum;;
+   	-> concept_alchemists_powder;;
+	-> concept_celandine;;
+	-> concept_foglet_teeth;;
+	-> concept_phosphorus;;
+	-> concept_hellebore_petals;;
+	-> concept_aether;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличный самум состоит из: Алхимический порошок, Улучшенная лунная пыль, Ласточкина трава,Зуб туманника,Фосфор,Эфир,Лепестки чемерицы.](*<-lang_ru;;*);;
+      *);;
+  *);;

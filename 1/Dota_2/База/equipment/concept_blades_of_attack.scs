@@ -1,0 +1,39 @@
+concept_blades_of_attack
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [blades of attack] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [blades of attack] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(blades of attack)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Не стоит недооценивать опасность этих маленьких незаметных клинков.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(blades of attack)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет керри героям, которым нужем дополнительный урон.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/blades_of_attack.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

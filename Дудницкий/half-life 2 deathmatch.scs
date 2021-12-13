@@ -1,0 +1,55 @@
+concept_computer_game_half_life_2_deathmatch
+
+=> nrel_main_idtf:
+		[Half-Life 2 Deathmatch] (* <-lang_ru;;*);
+		[Half-Life 2 Deathmatch] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_multiplayer_game;
+=> nrel_publication_date: date_10.11.2004;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source24;
+=> nrel_publisher: Valve_Corporation;
+=> nrel_developer: Valve;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life 2 Deathmatch) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life 2: Deathmatch — компьютерная игра, шутер от первого лица, разработанный компанией Valve и выпущенный 30 ноября 2004 года. Является многопользовательской версией Half-Life 2.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life 2 deathmatch.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life 2 Deathmatch)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Режим Deathmatch (с англ. — «смертный бой») включает в себя многие особенности, которые есть в других играх, в которых имеется этот режим, таких как Quake, Doom или Unreal Tournament. Среди этих особенностей примечательными являются: мгновенный respawn (возрождение убитых игроков), наличие у оружия конкретных точек появления, быстрые перемещения в пространстве и особые способности (быстрый бег, фонарик, и т. д.).   ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

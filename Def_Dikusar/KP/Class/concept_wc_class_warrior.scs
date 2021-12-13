@@ -1,0 +1,60 @@
+concept_wc_class_warrior
+
+<-concept_character_class;
+
+=>nrel_inclusion:
+{
+      concept_wc_warrioir_arms;
+      concept_wc_warrioir_fury;
+      concept_wc_warrioir_protection
+};
+
+=> nrel_main_idtf:
+      [воин]
+      (*<-lang_ru;;*);
+       [warrior]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Воин] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(воин)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Воин (разг. «вар») — закованный в латы боец ближнего боя, специализирующийся на владении оружием. 
+Один из самых сложных классов, так как имеет огромное количество способностей и требует постоянного контроля ресурса «Ярость», 
+за счёт хаотического накопления которой не может существовать строгой ротации способностей.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://war.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+concept_wc_warrioir_arms
+<- concept_wc_specialization;
+=> nrel_main_idtf:[оружие] (* <- lang_ru;; *);
+=> nrel_main_idtf:[arcane] (* <- lang_en;; *);;
+
+concept_wc_warrioir_fury
+<- concept_wc_specialization;
+=> nrel_main_idtf:[неистовство] (* <- lang_ru;; *);
+=> nrel_main_idtf:[fury] (* <- lang_en;; *);;
+
+concept_wc_warrioir_protection
+<- concept_wc_specialization;
+=> nrel_main_idtf:[броня] (* <- lang_ru;; *);
+=> nrel_main_idtf:[protection] (* <- lang_en;; *);;

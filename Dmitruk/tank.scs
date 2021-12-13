@@ -1,0 +1,53 @@
+concept_tank_machine
+<-sc_node_not_relation;
+<-concept_armored_fighting_vehicle;
+
+=> nrel_main_idtf:
+      [танк]
+      (*<-lang_ru;;*);
+       [tank]
+       (*<-lang_en;;*);  
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (танковый симулятор)] (* <- lang_ru;; *);;
+
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Танк - бронированная боевая машина, чаще всего на гусенечном ходу.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+     <-rrel_example;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/T-34-85.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (танк)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_tracks;
+concept_main_gun;
+concept_engine;
+concept_smoke_dishargers;
+concept_AA_machine_gun;
+concept_commander_tower;
+concept_coaxial_machine_gun;
+concept_tower_of_tank;
+concept_hull_of_tank
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Как правило танк оснащен пушечным и пулеметным вооружением, обычно во вращающейся полноповоротной башне, предназначенной в основном для стрельбы прямой наводкой.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

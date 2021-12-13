@@ -1,0 +1,49 @@
+concept_daily_quest <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Daily quest]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Дейлик]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Дейлик]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Дейлик - ежедневный <b><sc_element sys_idtf="concept_quest">квест(испытание)</b></sc_element> в <b><sc_element sys_idtf="concept_computer_game">компъютерной игре</b></sc_element>.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. О дейлике]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Дейликов может быть несколько.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. О дейлике]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Незавершенные дейлики могут оставаться на последующие дни, а могут на следующий день исчезнуть.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/daily_quest.png"(*
+            => nrel_format: format_png;;
+        *);;
+    *);;
+*);
+=> nrel_inclusion: concept_quest;;

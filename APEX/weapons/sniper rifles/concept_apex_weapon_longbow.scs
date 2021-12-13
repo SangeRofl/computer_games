@@ -1,0 +1,122 @@
+concept_apex_weapon_longbow
+=> nrel_main_idtf: [Longbow DMR] (* <- lang_en;; *);
+=> nrel_main_idtf: [МВ "Длинный лук"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_sniper_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_sniper_ammo;
+
+=> nrel_weapon_rate_of_fire: 86;
+=> nrel_weapon_damage_per_second: 78;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 118;
+=> nrel_apex_default_legend_common_helmet_damage: 106;
+=> nrel_apex_default_legend_rare_helmet_damage: 95;
+=> nrel_apex_default_legend_epic_helmet_damage: 89;
+=> nrel_apex_default_legend_legendary_helmet_damage: 89;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 124;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 111;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 100;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 93;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 93;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 100;
+=> nrel_apex_fortified_legend_common_helmet_damage: 90;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 81;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 76;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 76;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 55;
+=> nrel_apex_low_profile_legend_body_damage: 58;
+=> nrel_apex_fortified_legend_body_damage: 47;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 44;
+=> nrel_apex_low_profile_legend_leg_damage: 46;
+=> nrel_apex_fortified_legend_leg_damage: 37;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2.15;
+=> nrel_weapon_recoil_type: concept_apex_recoil_strong_curve_left;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 6;
+=> nrel_apex_common_magazine_capacity: 8;
+=> nrel_apex_rare_magazine_capacity: 10;
+=> nrel_apex_epic_magazine_capacity: 12;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_heavy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_sniper_stock;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_6x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_8x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_10x_sniper_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (МВ "Длинный лук")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [МВ "Длинный лук" - снайперская винтовка, которая использует тяжелые патроны и имеет только одиночный тип стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_sniper_ammo;
+		concept_apex_weapon_sniper_rifle;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на МВ "Длинный лук")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 50 скинов на МВ "Длинный лук": 8 легендарных, 7 эпических, 19 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (МВ "Длинный лук")](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_longbow.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

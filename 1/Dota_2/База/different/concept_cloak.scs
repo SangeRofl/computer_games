@@ -1,0 +1,39 @@
+concept_cloak
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [cloak] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [плащ] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(cloak)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Мантия, созданная из магического материала, который развеивает любое заклинание.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(cloak)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет против героев, у которых есть магические способности.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/cloak.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

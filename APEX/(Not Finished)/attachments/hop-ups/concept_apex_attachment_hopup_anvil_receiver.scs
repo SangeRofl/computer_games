@@ -1,0 +1,6 @@
+concept_apex_attachment_hopup_anvil_receiver
+=> nrel_main_idtf: [anvil receiver] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ствольная Коробка "Наковальня"] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_hopup;
+<- sc_node_not_relation;;

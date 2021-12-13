@@ -1,0 +1,122 @@
+concept_apex_weapon_havoc
+=> nrel_main_idtf: [Havoc Rifle] (* <- lang_en;; *);
+=> nrel_main_idtf: [ХАОС] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_assault_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_energy_ammo;
+
+=> nrel_weapon_rate_of_fire: 556;
+=> nrel_weapon_damage_per_second: 167;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 36;
+=> nrel_apex_default_legend_common_helmet_damage: 32;
+=> nrel_apex_default_legend_rare_helmet_damage: 29;
+=> nrel_apex_default_legend_epic_helmet_damage: 27;
+=> nrel_apex_default_legend_legendary_helmet_damage: 27;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 38;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 34;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 30;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 28;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 28;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 31;
+=> nrel_apex_fortified_legend_common_helmet_damage: 27;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 25;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 23;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 23;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 18;
+=> nrel_apex_low_profile_legend_body_damage: 19;
+=> nrel_apex_fortified_legend_body_damage: 15;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 14;
+=> nrel_apex_low_profile_legend_leg_damage: 15;
+=> nrel_apex_fortified_legend_leg_damage: 12;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 24;
+=> nrel_apex_common_magazine_capacity: 28;
+=> nrel_apex_rare_magazine_capacity: 32;
+=> nrel_apex_epic_magazine_capacity: 36;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_energy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_turbocharger;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_selectfire_receiver;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ХАОС)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ХАОС - штурмовая винтовка, которая использует энергетические патроны и имеет переключаемые автоматический и одиночный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_energy_ammo;
+		concept_apex_weapon_assault_rifle;
+        concept_apex_fire_mode_auto;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на ХАОС)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 46 скинов на ХАОС: 7 легендарных, 6 эпических, 17 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ХАОС)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_havoc.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

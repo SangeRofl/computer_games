@@ -1,0 +1,55 @@
+concept_dead_by_daylight_interactable <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [объект взаимодействия(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_idtf:
+    [интерактивный объект(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [interactable(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Объект взаимодействия(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Объекты взаимодействия - это реквизиты, которые можно найти в локациях Dead by Daylight, с которыми можно взаимодействовать.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Объект взаимодействия(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Действия над интерактивными объектами бывают доступны только убийцам, только выжившим, или и убийцам, и выжившим.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;
+
+<= nrel_subdividing: {
+    concept_dead_by_daylight_chest;
+    concept_dead_by_daylight_hook;
+    concept_dead_by_daylight_generator;
+    concept_dead_by_daylight_alarm_clocks;
+    concept_dead_by_daylight_bear_traps;
+    concept_dead_by_daylight_crows;
+    concept_dead_by_daylight_dark_mist;
+    concept_dead_by_daylight_exit_gate;
+    concept_dead_by_daylight_hatch;
+    concept_dead_by_daylight_jigsaw_box;
+    concept_dead_by_daylight_locker;
+    concept_dead_by_daylight_moonlight;
+    concept_dead_by_daylight_pallette;
+    concept_dead_by_daylight_pool_of_devotion;
+    concept_dead_by_daylight_totem;
+    concept_dead_by_daylight_window
+};;

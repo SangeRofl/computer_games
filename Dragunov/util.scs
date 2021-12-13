@@ -1,0 +1,19 @@
+date_14_06_2016 => nrel_main_idtf:
+    [16 июня 2016 года]
+    (* <- lang_ru;; *);;
+
+nrel_gameplay_element <-sc_node_norole_relation;
+=> nrel_main_idtf:
+    [gameplay element*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [элемент геймплея*]
+    (* <- lang_ru;; *);;
+
+nrel_in_game_shop <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [внутриигровой магазин*]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [in-game shop*]
+    (* <- lang_en;; *);;

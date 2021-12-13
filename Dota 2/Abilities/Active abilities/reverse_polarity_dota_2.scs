@@ -1,0 +1,37 @@
+reverse_polarity_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Reverse Polarity] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Reverse Polarity] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Reverse Polarity)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой изменяет свойства материи, стягивая всех врагов вокруг в точку перед собой, оглушая их мощным хлопком и нанося им урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Reverse Polarity)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мгновенно притягивает всех существ на расстояние 150 от Magnus](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Reverse_Polarity_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

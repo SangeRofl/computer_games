@@ -1,0 +1,41 @@
+concept_cleaver
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Секач] (* <- lang_ru;;*);
+	[Cleaver] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_cleaver;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Секач)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Секач — тип режущего оружия в игре Dying Light. ] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристика секача)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [На ранних этапах игры секачи обладают приличным уроном и быстрой скоростью, которые можно применить против слабых врагов.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://cleaver.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

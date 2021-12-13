@@ -1,0 +1,60 @@
+concept_computer_game_half_life_2
+
+=> nrel_main_idtf:
+		[Half-Life 2 ] (* <-lang_ru;;*);
+		[Half-Life 2 ] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+concept_multiplayer_game;
+=> nrel_publication_date: date_16.11.2004;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source;
+=> nrel_publisher: Valve_Corporation;
+=> nrel_developer: Valve_Corporation;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os;
+concept_xbox;
+concept_xbox_360;
+concept_playstation_3;
+concept_amdroid
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life 2) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life 2 (стилизованное написание — HλLF-LIFE 2, сокращенно HL2) — компьютерная игра, научно-фантастический шутер от первого лица, сиквел Half-Life, разработанный компанией Valve, издаваемый ими же и Sierra Entertainment. ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_2.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life 2)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Half-Life 2 продолжает историю примерно через двадцать лет после инцидента в «Чёрной Мезе» уже в Сити 17 — одном из крупнейших оставшихся городов на Земле, расположенном где-то в Восточной Европе.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

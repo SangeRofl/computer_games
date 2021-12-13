@@ -1,0 +1,122 @@
+concept_apex_weapon_r_301
+=> nrel_main_idtf: [R-301 Carbine] (* <- lang_en;; *);
+=> nrel_main_idtf: [Карабин R-301] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_assault_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_light_round;
+
+=> nrel_weapon_rate_of_fire: 720;
+=> nrel_weapon_damage_per_second: 168;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 28;
+=> nrel_apex_default_legend_common_helmet_damage: 25;
+=> nrel_apex_default_legend_rare_helmet_damage: 22;
+=> nrel_apex_default_legend_epic_helmet_damage: 21;
+=> nrel_apex_default_legend_legendary_helmet_damage: 21;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 30;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 26;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 23;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 22;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 22;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 25;
+=> nrel_apex_fortified_legend_common_helmet_damage: 21;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 19;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 18;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 18;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 14;
+=> nrel_apex_low_profile_legend_body_damage: 15;
+=> nrel_apex_fortified_legend_body_damage: 12;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 11;
+=> nrel_apex_low_profile_legend_leg_damage: 15;
+=> nrel_apex_fortified_legend_leg_damage: 12;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_plus_curve_right;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 18;
+=> nrel_apex_common_magazine_capacity: 20;
+=> nrel_apex_rare_magazine_capacity: 25;
+=> nrel_apex_epic_magazine_capacity: 28;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_light_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_anvil_receiver;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Карабин R-301)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Карабин R-301 - штурмовая винтовка, которая использует легкие патроны и имеет переключаемые автоматический и одиночный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_light_round;
+		concept_apex_weapon_assault_rifle;
+        concept_apex_fire_mode_auto;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Карабин R-301)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 50 скинов на Карабин R-301: 9 легендарных, 5 эпических, 19 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Карабин R-301)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_r-301.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

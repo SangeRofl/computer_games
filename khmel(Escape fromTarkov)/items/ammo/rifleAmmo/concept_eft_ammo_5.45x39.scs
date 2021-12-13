@@ -1,0 +1,47 @@
+concept_eft_ammo_5.45x39
+=> nrel_main_idtf: [5.45x39(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [5.45x39(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_rifle_ammo;
+
+=> nrel_eft_weapon_weight: 0.0035;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (5.45x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [5.45×39 мм — малоимпульсный советский патрон центрального воспламенения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_rifle_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (кем и когда разработан 5.45x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Разработан в начале 1970-х годов группой конструкторов и технологов под руководством В. М. Сабельникова.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (5.45x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/5.45x39.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

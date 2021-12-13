@@ -1,0 +1,27 @@
+concept_ammo
+=> nrel_main_idtf: [ammo] (* <- lang_en;; *);
+=> nrel_main_idtf: [патрон] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_ammo;;
+	=> nrel_main_idtf:[Разбиение по играм] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (патрон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [патрон - предмет, который используют оружия для нанесения урона врагам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_item;
+		concept_weapon;
+		concept_damage
+	};;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,13 @@
+concept_apex_attachment_general
+=> nrel_main_idtf: [general attachment (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [основная модификация (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_attachment_barrel_nozzle;;
+    -> concept_apex_attachment_magazine;;
+    -> concept_apex_attachment_stock;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);
+ 
+<- sc_node_not_relation;;

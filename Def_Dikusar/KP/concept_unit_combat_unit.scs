@@ -1,0 +1,39 @@
+concept_unit_combat_unit		
+
+=> nrel_main_idtf:[солдат] (* <- lang_ru;; *);
+=> nrel_main_idtf:[combat unit] (* <- lang_en;; *);
+=> nrel_idtf: [боевой юнит] (* <- lang_ru;; *);
+=> nrel_idtf: [воин] (* <- lang_ru;; *);
+
+<-concept_game_object;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(рабочий)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_unit;
+      concept_strategy
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Воин — <b><sc_element sys_idtf="concept_unit">юнит</sc_element></b> юнит, 
+             который выполняет функции захвата, сражения и обороны базы в комьюетрных играх 
+             жанра <b><sc_element sys_idtf="concept_strategy">"Стратегии"</sc_element></b>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://combat.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

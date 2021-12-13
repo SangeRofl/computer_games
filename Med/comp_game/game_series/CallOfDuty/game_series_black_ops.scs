@@ -1,0 +1,32 @@
+concept_game_series_black_ops
+
+=> nrel_main_idtf:[серия игр Black Ops] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Black Ops] (* <- lang_en;; *);
+
+
+-> rrel_first_game: computer_game_call_of_duty_world_at_war;
+-> computer_game_call_of_duty_black_ops;
+-> computer_game_call_of_duty_black_ops_2;
+-> computer_game_call_of_duty_black_ops_3;
+-> rrel_last_game: computer_game_call_of_duty_black_ops_4;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_game_series;;
+//		-> concept_shooter;;		//perechislit' settingi i janri??
+		-> concept_game_series_call_of_duty;;
+	*);;
+		=> nrel_main_idtf: [Опр.(серия игр Black Ops)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Black Ops - серия компьютерных игр в жанре шутера от первого лица, является подсерией игр Call of Duty] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+

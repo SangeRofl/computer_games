@@ -1,0 +1,41 @@
+concept_amir
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Амир] (* <- lang_ru;;*);
+	[Amir] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_amir;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Амир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Амир - один из паркуристов в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Амира в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [В самом начале игры проводит обучение, после чего погибает. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Амир.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

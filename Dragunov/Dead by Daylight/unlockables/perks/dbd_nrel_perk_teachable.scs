@@ -1,0 +1,50 @@
+nrel_teachable_perk <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [обучаемый навык*(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [teachable perk*(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. обучаемый навык*(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [обучаемый навык* - отношение, связывающее персонажа <b><sc_element sys_idtf="computer_game_dead_by_daylight">Dead by Daylight</b></sc_element> - <b><sc_element sys_idtf="concept_dead_by_daylight_survivor">выжившего</b></sc_element> или <b><sc_element sys_idtf="concept_dead_by_daylight_killer">убийцу</b></sc_element> с <b><sc_element sys_idtf="concept_dead_by_daylight_perk_teachable">обучаемым навыком</b></sc_element>.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+    => nrel_using_constants: {
+        computer_game_dead_by_daylight;
+        concept_dead_by_daylight_killer;
+        concept_dead_by_daylight_survivor;
+        concept_dead_by_daylight_perk_teachable
+    };;
+*);
+
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: {
+            concept_dead_by_daylight_killer;
+            concept_dead_by_daylight_survivor;
+            concept_dead_by_daylight_perk_teachable   
+        };;
+*);
+
+=> nrel_first_domain: ... (*
+    <= nrel_union: {
+        concept_dead_by_daylight_killer;
+            concept_dead_by_daylight_survivor
+    };;
+*);
+
+=> nrel_second_domain: concept_dead_by_daylight_perk_teachable;;
+
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_teachable_perk;;
+*);;

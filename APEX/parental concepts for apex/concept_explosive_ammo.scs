@@ -1,0 +1,27 @@
+concept_explosive_ammo
+=> nrel_main_idtf: [explosive ammo] (* <- lang_en;; *);
+=> nrel_main_idtf: [взрывчатый боеприпас] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_grenade;;
+	=> nrel_main_idtf:[Разбиение по играм] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (взрывчатый боеприпас)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [взрывчатый боеприпас - предмет, который используется для нанесения урона чему-либо с помощью взрыва.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_item;
+		concept_explosion;
+		concept_damage
+	};;
+*);
+
+
+<- sc_node_not_relation;;

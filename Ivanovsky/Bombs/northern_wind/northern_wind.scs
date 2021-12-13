@@ -1,0 +1,49 @@
+concept_northern_wind
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Северный ветер] (* <- lang_ru;;*);
+	[Northern wind] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Северный ветер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая замедляет и примораживает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Полезность бомбы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полезна против: зверей, обычно нападающих стаями - одичавших собак, волков и диких кабанов, против элементалей огня, которых можно "потушить", а также против врагов, способных закапываться в землю - накеров и водных баб.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://northern_wind.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_ordinary_northern_wind;;
+    -> concept_enhanced_northern_wind;;
+    -> concept_superior_northern_wind;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

@@ -1,0 +1,47 @@
+concept_interface_device
+=> nrel_main_idtf: [интерфейс пользователя] (* <- lang_ru;; *);
+=> nrel_main_idtf: [user interface] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_keyboard;;
+	-> concept_computer_mouse;;
+	-> consept_monitor;;
+	-> consept_headphone;;
+	=> nrel_main_idtf: [разбиение по типу получения информации] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Интерфейс пользователя)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [По́льзовательский интерфейс — интерфейс,
+				обеспечивающий передачу информации
+				между пользователем-человеком
+				и программно-аппаратными компонентами
+				компьютерной системы ] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer;;
+		-> concept_data;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Интерфейс пользователя)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Через интерфейс пользователя
+		осуществляется процесс вывода
+		информации из устройства к пользователю] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

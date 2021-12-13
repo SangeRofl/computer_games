@@ -1,0 +1,45 @@
+concept_optima_mater
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Optima mater] (* <-lang_ru;;*);
+	[Optima mater] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Optima mater)] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Катализатор, который высоко ценят алхимики.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_superior_dimeritium_bomb;;
+	-> concept_enhanced_dimeritium_bomb;;
+	-> concept_ordinary_dimeritium_bomb;;
+	-> concept_superior_dragon_dream;;
+	-> concept_enhanced_dragon_dream;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб:  Обычная двимеритовая бомба, Улучшенная двимеритовая бомба, Отличная двимеритовая бомба, Улучшенный сон дракона, Отличный сон дракона ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://optima mater.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

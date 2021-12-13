@@ -1,0 +1,39 @@
+concept_accessories
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [accesories] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [аксессуары] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(аксессуары)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Аксессуары - предметы, которые добавляют некоторые способности персонажу.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(аксессуары)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично помогают занять удобную позицию в самом начале игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: concept_bracer;
+                   concept_magic_wand;
+                   concept_null_talisman;
+                   concept_perseverance;
+                   concept_wraith_band;;
+                   
+concept_bracer => nrel_price : [510];;
+concept_magic_wand => nrel_price : [450];;
+concept_null_talisman => nrel_price : [510];;
+concept_perseverance => nrel_price : [1650];;
+concept_wraith_band => nrel_price : [510];;

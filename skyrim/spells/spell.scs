@@ -1,0 +1,88 @@
+concept_skyrim_spell
+=> nrel_main_idtf: [spell (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [заклинание (Скайрим)] (* <- lang_ru;; *);
+
+<-computer_game_the_elder_scrolls_5_skyrim;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_spell_type_damage;;
+	-> concept_skyrim_spell_type_absorption;;
+	-> concept_skyrim_spell_type_resistance;;
+	-> concept_skyrim_spell_type_recovery;;
+	-> concept_skyrim_spell_type_buff;;
+	-> concept_skyrim_spell_type_debuff;;
+	-> concept_skyrim_spell_type_reflection;;
+	-> concept_skyrim_spell_type_illusion;;
+	-> concept_skyrim_spell_type_manipulation;;	
+
+	=> nrel_main_idtf:[по типу действия заклинания] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_skill_illusion;;
+	-> concept_skyrim_skill_restoration;;
+	-> concept_skyrim_skill_alteration;;
+	-> concept_skyrim_skill_witchcraft;;
+	-> concept_skyrim_skill_destruction;;
+	=> nrel_main_idtf:[по школам магии] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(заклинание (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Заклинание — определённый магический ритуал, направленный на достижение эффекта] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Усиление заклинаний)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Усиление силы заклинания происходит в том случае, если персонаж применяет заклинание с двух рук, а не с одной. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Механика заклинаний)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Применение заклинаний расходует магию. Со временем её уровень восстанавливается.
+ Доступный запас магии можно повысить с ростом уровня, а также с помощью зелий, зачарованной экипировки и еды.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Основные типы действия заклинаний)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> 
+все заклинания имеют один или несколько типов действия заклинания: урон, поглощение, сопротивление, восстановление, усиление, ослабление, отражение, иллюзия, манипуляция] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Деление на магичексие школы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> 
+заклинания поделены на несколько магических школ. Рост мастерства в каждой школе зависит от определённых условий.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

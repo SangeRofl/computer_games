@@ -1,0 +1,43 @@
+concept_dead_by_daylight_unlockable_rarity <- sc_node_not_relation;
+<- parameter;
+
+=> nrel_main_idtf:
+    [редкость(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_idtf:
+    [редкость(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [unlockable rarity(Dead by Daylight)]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Редкость разблокируемого предмета(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Редкость разблокируемого предмета - множество элементов, которые отображают параметр редкости предметов в игре <b><sc_element sys_idtf="computer_game_dead_by_daylight">Dead by Daylight</b></sc_element>.]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+    => nrel_using_constants: {
+        computer_game_dead_by_daylight
+    };;
+*);
+
+<- concept_dead_by_daylight_unlockable_rarity_common;
+<- concept_dead_by_daylight_unlockable_rarity_uncommon;
+<- concept_dead_by_daylight_unlockable_rarity_event;
+<- concept_dead_by_daylight_unlockable_rarity_rare;
+<- concept_dead_by_daylight_unlockable_rarity_ultra_rare;
+<- concept_dead_by_daylight_unlockable_rarity_very_rare;
+
+<-rrel_key_sc_element:...(*
+    <- description_of_a_typical_instance;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/rarity_example.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

@@ -1,0 +1,9 @@
+nrel_ranking_place
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[место команды в рейтинге*](*<-lang_ru;;*);
+		[team ranking place*](*<-lang_en;;*);;
+		
+nrel_ranking_place => nrel_first_domain: team;;
+nrel_ranking_place => nrel_second_domain: racking;;

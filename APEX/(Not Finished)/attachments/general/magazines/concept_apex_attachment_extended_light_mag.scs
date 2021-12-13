@@ -1,0 +1,6 @@
+concept_apex_attachment_extended_light_mag
+=> nrel_main_idtf: [extended light mag] (* <- lang_en;; *);
+=> nrel_main_idtf: [увеличенный легкий магазин] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

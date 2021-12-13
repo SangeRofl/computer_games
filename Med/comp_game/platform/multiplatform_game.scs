@@ -1,0 +1,43 @@
+concept_multiplatform_game
+
+=> nrel_main_idtf:[мультиплатформенная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf:[multiplatform game] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_programm;;
+	*);;
+		=> nrel_main_idtf: [Опр.(компьютерная игра)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра, которая способна работать на нескольких аппаратных платформах] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(мультиплатформенная игра, платформа)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Для каждой отдельной платформы мультиплатформенная игра имеет отдельную версию, которая предназначена для запуска именно на этой платформе](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(мультиплатформенная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[В зависимости от особенностей игры и целевых платформ версии одной игры для разных платформ могут отличаться одна от другой в разных степенях](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

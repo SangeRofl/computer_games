@@ -1,0 +1,48 @@
+concept_eft_barter_items_tool_pliers
+=> nrel_main_idtf: [Pliers(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Плоскогубцы(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_tool;
+
+=> nrel_eft_weapon_weight: 0.5;
+=> nrel_eft_barter_items_cost: 2141;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Плоскогубцы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Плоскогубцы - бартерный предмет из группы инструменты, шарнирно-губцевый инструмент.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_tool
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение плоскогубцев(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Плоскогубцы предназначены для захвата, манипулирования и перекусывания проволоки.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Плоскогубцы(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Plier.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

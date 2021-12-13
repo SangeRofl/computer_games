@@ -1,0 +1,52 @@
+concept_dead_by_daylight_map_modifications_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Модификации карты)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Map modifications)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Модификации карты)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Модификации карты) - подношения, влияющие на количество и расположение некоторых объектов на карте, а так же на другие параметры матча.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Модификации карты)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения на Модификации карты могут быть принесены как Выжившими, так и Убийцей.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Модификации карты)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения на Модификации карты влияют на такие параметры матча, как количество сундуков на карте, количество крюков на карте и их расположение, степень густоты Темного тумана.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_dead_by_daylight_chest_offering;;
+    -> concept_dead_by_daylight_dark_mist_offering;;
+    -> concept_dead_by_daylight_hooks_offering;;
+    -> concept_dead_by_daylight_moonlight_offering;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);;

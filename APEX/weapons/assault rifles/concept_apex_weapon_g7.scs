@@ -1,0 +1,125 @@
+concept_apex_weapon_g7
+=> nrel_main_idtf: [G7 Scout] (* <- lang_en;; *);
+=> nrel_main_idtf: [Разведчик G7] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_assault_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_burst;
+=> nrel_weapon_bullets_per_burst: 2;
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_light_round;
+
+=> nrel_weapon_rate_of_fire: 273;
+=> nrel_weapon_damage_per_second: 155;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 68;
+=> nrel_apex_default_legend_common_helmet_damage: 61;
+=> nrel_apex_default_legend_rare_helmet_damage: 54;
+=> nrel_apex_default_legend_epic_helmet_damage: 51;
+=> nrel_apex_default_legend_legendary_helmet_damage: 51;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 71;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 64;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 57;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 54;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 54;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 58;
+=> nrel_apex_fortified_legend_common_helmet_damage: 52;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 46;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 43;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 43;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 34;
+=> nrel_apex_low_profile_legend_body_damage: 36;
+=> nrel_apex_fortified_legend_body_damage: 30;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 31;
+=> nrel_apex_low_profile_legend_leg_damage: 33;
+=> nrel_apex_fortified_legend_leg_damage: 26;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_high_vertical_recoil;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 10;
+=> nrel_apex_common_magazine_capacity: 15;
+=> nrel_apex_rare_magazine_capacity: 18;
+=> nrel_apex_epic_magazine_capacity: 20;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_light_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_sniper_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_double_tap_trigger;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_6x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_8x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_10x_sniper_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Разведчик G7)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Разведчик G7 - снайперская винтовка, которая использует легкие патроны и имеет переключаемые одиночный и серийный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_light_round;
+		concept_apex_weapon_sniper_rifle;
+        concept_apex_fire_mode_single;
+		concept_apex_fire_mode_burst
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Разведчик G7)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 50 скинов на Разведчик G7: 8 легендарных, 7 эпических, 19 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Разведчик G7)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_g7.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

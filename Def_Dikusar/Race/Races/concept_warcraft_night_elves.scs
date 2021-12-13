@@ -1,0 +1,54 @@
+warcraft_night_elves
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_night_elves;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [ночные эльфы]
+      (*<-lang_ru;;*);
+       [night elf]
+       (*<-lang_en;;*);
+=> nrel_idtf: [калдорай] (* <- lang_ru;; *);
+=> nrel_idtf: [дети звёзд] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(о расе ночных эльфов)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_the_burning_legion
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Более десяти тысяч лет назад героизм эльфийских воинов позволил остановить первое вторжение <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(об ночных эльфах)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+     concept_warcraft_alliance
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После Третьей войны они закончили свой долгий период изоляции и присоединились к <b><sc_element sys_idtf="concept_warcraft_alliance">Альянсу.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+=>nrel_main_leader:game_character_tyrande;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://night_elf.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,49 @@
+concept_ordinary_grapeshot
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Обычная картечь] (* <- lang_ru;;*);
+	[Ordinary grapeshot] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Обычная картечь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют для уничтожения гнезд чудовищ и против летающих врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ранит осколками всех противников в зоне поражения. Наносит урон огнём. Урон наносится вне зависимости от доспеха. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_saltpeter;;
+	-> concept_calcium_equum;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Обычная картечь состоит из: Селитра и Calcium equum.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

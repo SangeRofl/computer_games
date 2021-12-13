@@ -1,0 +1,48 @@
+concept_eft_barter_items_housegood_pack_of_soda
+=> nrel_main_idtf: [Pack of soda(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пачка соды(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_housegood;
+
+=> nrel_eft_weapon_weight: 0.5;
+=> nrel_eft_barter_items_cost: 1352;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пачка соды(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пачка соды - бартерный предмет из группы хозтовары, кислая соль угольной кислоты и натрия. Обыкновенно представляет собой мелкокристаллический порошок белого цвета.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_housegood
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (спецификация пачки соды(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Используется в пищевой промышленности, в кулинарии, в медицине как нейтрализатор ожогов кожи и слизистых оболочек человека кислотами и снижения кислотности желудочного сока.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Пачка соды(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Bicarbonate.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

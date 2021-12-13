@@ -1,0 +1,56 @@
+concept_class_savage
+=> nrel_main_idtf: [Class Savage] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Дикарь] (* <- lang_ru;; *);
+
+
+=>nrel_based_characteristic: concept_power_32;
+=>nrel_based_characteristic: concept_dexterity_14;
+=>nrel_based_characteristic: concept_intelligence_14;
+=>nrel_based_characteristic: concept_health_66;
+=>nrel_based_characteristic: concept_mana_47;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Дикарь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Дикарь —  класс персонажа , основанный на силе, что означает хорошую устойчивость к ударам. Его умения в ближнем бою охватывают широкий спектр нападения: от большого урона по одиночной цели до разрушительного эффекта по области.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Дикарь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса дикарь криками , кличами, умениями,  сплачивать союзников и вселять ужас в сердца противников.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Дикарь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для Дикаря: Шлемы, Латы, Рукавицы, Поножи и Ростовые щиты. .] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дикарь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Path_of_Exile_class_savage.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

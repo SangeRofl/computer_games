@@ -1,0 +1,23 @@
+number1 => nrel_main_idtf:[1] (* <- lang_ru;; *);;
+number2 => nrel_main_idtf:[2] (* <- lang_ru;; *);;
+number3 => nrel_main_idtf:[3] (* <- lang_ru;; *);;
+number4 => nrel_main_idtf:[4] (* <- lang_ru;; *);;
+number5 => nrel_main_idtf:[5] (* <- lang_ru;; *);;
+number6 => nrel_main_idtf:[6] (* <- lang_ru;; *);;
+number7 => nrel_main_idtf:[7] (* <- lang_ru;; *);;
+number8 => nrel_main_idtf:[8] (* <- lang_ru;; *);;
+number9 => nrel_main_idtf:[9] (* <- lang_ru;; *);;
+number10 => nrel_main_idtf:[10] (* <- lang_ru;; *);;
+number
+-> number1;
+-> number2;
+-> number3;
+-> number4;
+-> number5;
+-> number6;
+-> number7;
+-> number8;
+-> number9;
+-> number10;;
+
+

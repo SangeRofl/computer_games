@@ -1,0 +1,6 @@
+concept_apex_attachment_1x_hcog
+=> nrel_main_idtf: ["1x HCOG "Classic"" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["1x ГБОП "Классика"" прицел (Apex Legends)] (* <- lang_ru;; *);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

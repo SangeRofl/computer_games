@@ -1,0 +1,48 @@
+concept_eft_barter_items_buildmat_pack_of_nails
+=> nrel_main_idtf: [Pack of nails(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пачка гвоздей(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_buildmat;
+
+=> nrel_eft_weapon_weight: 0.6;
+=> nrel_eft_barter_items_cost: 4105;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пачка гвоздей(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пачка гвоздей - бартерный предмет из группы стройматериалы, пачка строительных гвоздей.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_buildmat
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение пачки гвоздей(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В условиях кризиса, пачка гвоздей применяется для строительства временных убежищ, ночлежек и прочего монтажа.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Пачка гвоздей(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Nails.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,41 @@
+concept_bombers
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Бомбардир] (* <- lang_ru;;*);
+	[Bombers] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomber;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Бомбардир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомбардир — особый вид заражённого, отличительной особенностью которого является высокий рост и торчащие наружу внутренние органы, которые и являются его основным оружием.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Бомбардира)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При приближении к противнику Бомбардир издаёт крик и взрывается, уничтожая себя и нанося урон по площади.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://bombers.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

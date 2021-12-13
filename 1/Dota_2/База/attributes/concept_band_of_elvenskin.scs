@@ -1,0 +1,39 @@
+concept_band_of_elvenskin
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [band of elvenskin] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [бэнд оф элвенскин] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(band of elvenskin)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Эластичная ткань часто используется из-за малого веса и облегчения передвижения.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(band of elvenskin)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых основная характеристика ловкость, в ранней и средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/band_of_elvenskin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

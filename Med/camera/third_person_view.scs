@@ -1,0 +1,40 @@
+concept_third_person_view
+=> nrel_main_idtf: [вид от третьего лица] (* <- lang_ru;; *);
+=> nrel_main_idtf: [third person view] (* <- lang_en;;*);
+
+
+-> concept_two_dimensional_side_view;
+-> concept_two_dimensional_top_view;
+-> concept_three_dimensional_side_view;
+-> concept_three_dimensional_top_view;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(вид от третьего лица)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вид игровой камеры, при которой игрок видит игровой мир со стороны так, что персонаж оказывается перед игроком в центре экрана] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_camera;;
+		-> concept_computer_game;;
+		-> concept_player;;
+		-> concept_character;; 
+		-> concept_game_world;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игра с видом от третьего лица)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Вид от третьего лица позволяет лучше оценивать ситуацию, удобнее рассматривать окружающую обстановку] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

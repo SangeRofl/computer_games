@@ -1,0 +1,30 @@
+concept_game_series_modern_warfare
+
+=> nrel_main_idtf:[серия игр Modern Warfare] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Modern Warfare] (* <- lang_en;; *);
+
+
+-> rrel_first_game: computer_game_call_of_duty_4_modern_warfare;
+-> computer_game_call_of_duty_modern_warfare_2;
+-> rrel_last_game: computer_game_call_of_duty_modern_warfare_3; 
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_game_series;;
+//		-> concept_shooter;;		//perechislit' settingi i janri??
+		-> concept_game_series_call_of_duty;;
+	*);;
+		=> nrel_main_idtf: [Опр.(серия игр Modern Warfare)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Modern Warfare - серия компьютерных игр в жанре шутера от первого лица, является подсерией игр Call of Duty] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+

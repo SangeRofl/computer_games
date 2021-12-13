@@ -1,0 +1,50 @@
+concept_apex_gear_shield_common
+=> nrel_main_idtf: [common shield (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный нательный щит (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры нательного щита
+=> nrel_apex_additional_shield_units: 50;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный нательный щит (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный нательный щит (Apex Legends) - нательный щит, который добавляет 50 единиц брони легенде в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_shield;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность обычных щитов на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычный нательный щит - самый распространенный вид нательных щитов на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_shield;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный нательный щит)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/shield/shield_lvl1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

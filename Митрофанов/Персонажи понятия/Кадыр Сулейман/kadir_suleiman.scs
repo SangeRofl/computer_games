@@ -1,0 +1,41 @@
+concept_kadir_suleiman
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кадыр Сулейман] (* <- lang_ru;;*);
+	[Kadir Suleiman] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_kadir_suleiman;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Кадыр Сулейман)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кадыр Сулейман - главный злодей и финальный босс игры Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Кадыра Сулеймана в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Держит в страхе остальных людей и собирает с них дань.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Кадыр Сулейман.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,12 @@
+concept_abilities_dota_2
+<-sc_node_not_relation;
+
+
+=> nrel_main_idtf:
+        [Abilities] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Способности] (* <- lang_ru;;*);
+
+=> nrel_inclusion: active_ability_dota_2;
+                   passive_ability_dota_2;;

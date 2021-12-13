@@ -1,0 +1,32 @@
+obsess
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Patrick "Obsess" Engelmann](* <-lang_en;; *);
+		[Патрик "Obsess" Энгельман](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Obsess](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	<=nrel_with_whom: contract_obsess_and_misfits_gaming
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Obsess and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Obsess и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 28_05_2018;;
+		*);;
+	*);
+
+	=>nrel_citizen_of: Germany;
+	=>nrel_surname: Engelmann;
+	=>nrel_first_name: Patrick;
+	=>nrel_nickname: Obsess;
+	=>nrel_birthday: [23.08.1997];
+	=>nrel_gamerole: jungler_lol;;

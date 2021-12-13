@@ -1,0 +1,33 @@
+team
+    <-sc_node_not_relation;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [команда](* <-lang_ru;; *);
+        [team](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Astralis](*<- lang_ru;;*);
+            [Astralis](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: definition_adjective
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (команда)] (* <- lang_ru;; *);
+            [Def. (team)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Команда — группа лиц, объединённая общими мотивами, интересами.](*<- lang_ru;;*);
+                [Team - a group of people united by common motives, interests.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_group;;
+            ->nrel_people;;
+        *);;
+    *);;

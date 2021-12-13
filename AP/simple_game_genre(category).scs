@@ -1,0 +1,78 @@
+concept_simple_game_genres
+=> nrel_main_idtf: [простые жанры] (* <- lang_ru;; *);
+=> nrel_main_idtf: [simple genres] (* <- lang_en;;*);
+
+
+ => nrel_inclusion: concept_contact;
+concept_test;
+concept_hero;
+concept_toure;
+concept_arcade;
+concept_horror;
+concept_shooter;
+concept_sport;
+concept_simulator;
+concept_logic;
+concept_tactic;
+concept_microcontrol;
+concept_building;
+//concept_life_sim;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(простые жанры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это категория жанров компьютерных игр, которые состоят из одного элементарного жанра.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_genre;;
+                -> concept_elementary_game_genres;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(юнит)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Простые жанры ближе всего к элементарным, но со своими особенностями, из-за чего попадают в отдельную категорию.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+
+
+<- sc_node_not_relation;;
+
+

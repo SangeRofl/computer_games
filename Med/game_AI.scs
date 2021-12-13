@@ -1,0 +1,46 @@
+concept_game_AI
+
+=> nrel_main_idtf:[игровой искусственный интеллект] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game artificial intelligence] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_programm;; 
+		-> concept_computer_game;;
+		-> concept_character;; 					//personaj
+		-> concept_computer;;
+	*);;
+		=> nrel_main_idtf: [Опр.(игровой искусственный интеллект)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Игровой искусственный интеллект - набор программных методик, которые используются в компьютерных играх для создания иллюзии интеллекта в поведении персонажей, управляемые компьютером] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровой искусственный интеллект, геймплей, системные требования*, разработчик*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Реализация игрового ИИ сильно влияет на геймплей, системные требования и бюджет игры, и разработчики балансируют между этими требованиями](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровой искусственный интеллект)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[В игровом ИИ широко применяются разного рода упрощения, обманы и эмуляции](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

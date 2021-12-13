@@ -1,0 +1,30 @@
+concept_game_series_shift
+
+=> nrel_main_idtf:[серия игр Shift] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Shift] (* <- lang_en;; *);
+
+
+-> rrel_first_game: computer_game_need_for_speed_shift;
+-> rrel_last_game: computer_game_need_for_speed_shift_2;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_game_series;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_simulator;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+                => nrel_main_idtf: [Опр.(серия игр Shift)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation: ...
+        (*
+                -> [Shift - серия гоночных компьютерных игр, является подсерией игр Need for Speed. Эта серия отличается своим уклоном в реализм: только игры серии Shift являются гоночными симуляторами. Гонки теперь проходят на официальных трассах.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- sc_node_not_relation;;

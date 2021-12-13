@@ -1,0 +1,45 @@
+concept_powdered_pearl
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Толчёный жемчуг] (* <- lang_ru;;*);
+	[Powdered pearl] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Толчёный жемчуг)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_dimeritium_bomb;;
+	-> concept_superior_dimeritium_bomb;;
+	-> concept_ordinary_northern_wind;;
+	-> concept_enhanced_northern_wind;;
+	-> concept_superior_northern_wind;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Улучшенная двимеритовая бомба, Отличная двимеритовая бомба, Обычный северный ветер, Улучшенный северный ветер, Отличный северный ветер. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://powdered_pearl.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,124 @@
+promisq
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Hampus Mikael "Promisq" Abrahamsson ](* <-lang_en;; *);
+		[Хампус Михаил "Promisq" Абрамссон](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Promisq](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+	
+	=>nrel_citizen_of: Sweden;
+	=>nrel_surname: Abrahamsson;
+	=>nrel_first_name: Hampus_Mikael;
+	=>nrel_nickname: Promisq;
+	=>nrel_birthday: [04.03.1994];
+	=>nrel_gamerole: support_lol;
+	
+	<=nrel_with_whom: contract_promisq_and_inferno_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and inFerno eSports](* <-lang_en;; *);
+			[Контракт между Promisq и inFerno eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: inferno_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 12_03_2015;;
+			->rrel_end: 04_05_2015;;	
+		*);;
+	*);
+
+	  <=nrel_with_whom: contract_promisq_and_elements_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and Elements](* <-lang_en;; *);
+			[Контракт между Promisq и Elements](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: elements_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_01_2015;;
+			->rrel_end: 16_05_2016;;	
+		*);;
+	*);
+
+	  <=nrel_with_whom: contract_promisq_and_fc_schalke_04_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and FC Schalke 04 Esports](* <-lang_en;; *);
+			[Контракт между Promisq и FC Schalke 04 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fc_schalke_04_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 16_05_2016;;
+			->rrel_end: 14_10_2016;;
+		*);;
+	*);
+	
+	  <=nrel_with_whom: contract_promisq_and_paris_saint_germain_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and Paris Saint-Germain Esports](* <-lang_en;; *);
+			[Контракт между Promisq и Paris Saint-Germain Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: paris_saint_germain_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 14_12_2016;;
+			->rrel_end: 29_04_2017;;
+		*);;
+	*);
+	
+	  <=nrel_with_whom: contract_promisq_and_ninjas_in_pyjamas_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and Ninjas in Pyjamas](* <-lang_en;; *);
+			[Контракт между Promisq и Ninjas in Pyjamas](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: ninjas_in_pyjamas_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 24_05_2017;;
+			->rrel_end: 21_11_2017;;
+		*);;
+	*);
+	
+	  <=nrel_with_whom: contract_promisq_and_h2k_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and H2K](* <-lang_en;; *);
+			[Контракт между Promisq и H2K](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: h2k_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 13_11_2017;;
+			->rrel_end: 03_09_2018;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_promisq_and_g2_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Promisq and G2 Esports](* <-lang_en;; *);
+			[Контракт между Promisq и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 11_03_2019;;
+		*);;
+	*);;
+
+

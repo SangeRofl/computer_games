@@ -1,0 +1,49 @@
+concept_handgun
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Пистолет] (* <- lang_ru;;*);
+	[Handgun] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_handgun;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Пистолет)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Пистолет - короткое ручное огнестрельное оружие для стрельбы на коротких расстояниях.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Удобстро пистолета)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Пистолет отлично подходит для скрытого ношения.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://handgun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_american_pistol_9_mm;;
+	-> concept_german_pistol_9_mm;;
+	-> concept_rais_pistol;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

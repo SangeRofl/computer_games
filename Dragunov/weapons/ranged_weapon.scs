@@ -1,0 +1,42 @@
+concept_ranged_weapon <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Оружие дальнего боя]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Ranged weapon]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Оружие дальнего боя]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Оружие дальнего боя - <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, используемое в дальнем бою.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:  
+        [Утв. Оружие дальнего боя]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Оружие дальнего боя предназначено для поражения целей на расстоянии.]
+            (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:  
+        [Утв. Оружие дальнего боя]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Оружие дальнего боя обычно имеет запас зарядов.]
+            (*<-lang_ru;;*);;
+    *);;
+*);;

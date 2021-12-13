@@ -1,0 +1,5 @@
+PP_Bizon
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[PP-Bizon](*<-lang_ru;;*);
+		[PP-Bizon](*<-lang_en;;*);;

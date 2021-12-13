@@ -1,0 +1,116 @@
+concept_apex_weapon_wingman
+=> nrel_main_idtf: [Wingman] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ведомый] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_pistol;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 156;
+=> nrel_weapon_damage_per_second: 117;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 95;
+=> nrel_apex_default_legend_common_helmet_damage: 86;
+=> nrel_apex_default_legend_rare_helmet_damage: 76;
+=> nrel_apex_default_legend_epic_helmet_damage: 71;
+=> nrel_apex_default_legend_legendary_helmet_damage: 71;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 100;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 90;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 80;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 75;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 75;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 81;
+=> nrel_apex_fortified_legend_common_helmet_damage: 73;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 65;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 61;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 61;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 45;
+=> nrel_apex_low_profile_legend_body_damage: 47;
+=> nrel_apex_fortified_legend_body_damage: 38;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 41;
+=> nrel_apex_low_profile_legend_leg_damage: 43;
+=> nrel_apex_fortified_legend_leg_damage: 36;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2.1;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 4;
+=> nrel_apex_common_magazine_capacity: 5;
+=> nrel_apex_rare_magazine_capacity: 6;
+=> nrel_apex_epic_magazine_capacity: 7;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_heavy_mag;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ведомый)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Ведомый - пистолет, который использует тяжелые патроны и имеет одиночный тип стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_heavy_round;
+		concept_apex_weapon_pistol;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Ведомый)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 47 скинов на Ведомый: 8 легендарных, 5 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Ведомый)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_wingman.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

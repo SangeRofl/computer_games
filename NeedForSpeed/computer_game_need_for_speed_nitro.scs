@@ -1,0 +1,66 @@
+computer_game_need_for_speed_nitro
+=> nrel_main_idtf: [Need for Speed: Nitro] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Nitro] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+<- concept_arcade;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electonnic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform:  nintendo_ds; wii;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_2_12_2009;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Nitro)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией EA Montreal и изданная компанией Electronic Arts в 2009 году. Является ответвлением от основной серии.
+                Игра представляет собой аркадные гонки с несколькими режимами, полицейскими преследованиями, автомобилями от известных мировых производителей и возможностями их тюнинга и стайлинга.
+                В Need for Speed: Nitro также представлен многопользовательский вариант на 12 игроков по сети. В аркаде присутствуют различные особенности, нововведения и отличный от других игр серии визуальный стиль.  ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_singleplayer_game;;
+                -> concept_multiplayer_game;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_nitro;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

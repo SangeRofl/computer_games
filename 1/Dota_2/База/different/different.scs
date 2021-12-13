@@ -1,0 +1,41 @@
+concept_different
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [different] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [разное] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(разное)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Разное - предметы, которые увеличивают различные показатели персонажа.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(разное)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Покупается в начале игры и можно использовать до конца раунда.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: concept_boots_of_speed;
+                   concept_cloak;
+                   concept_magic_stick;
+                   concept_ring_of_regen;
+                   concept_sages_mask;
+                   concept_wind_lace;;
+                   
+concept_boots_of_speed => nrel_price : [500];;
+concept_cloak => nrel_price : [450];;
+concept_magic_stick => nrel_price : [200];;
+concept_ring_of_regen => nrel_price : [175];;
+concept_sages_mask => nrel_price : [175];;
+concept_wind_lace => nrel_price : [250];;

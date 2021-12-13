@@ -1,0 +1,51 @@
+concept_computer_game_half_life_source
+=> nrel_main_idtf:
+		[Half-Life: Source] (* <-lang_ru;;*);
+		[Half-Life: Source] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_01.06.2004;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source;
+=> nrel_publisher: Valve_Corporation;
+=> nrel_developer: Valve_Corporation;
+=> nrel_platform: {
+concept_windows
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life: Source ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life: Source — переиздание игры Half-Life 1998 года на базе более современного игрового движка Source с рядом нововведений в графическом исполнении и игровом процессе. ]  (*<- lang_ru ;; => nrel_format: format_html;;*);;
+*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life_s.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life: Source) ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[ Сюжет игры полностью соответствует сюжету оригинального Half-Life и повествует о происшествии в исследовательском центре «Чёрная Меза», расположенном в американском штате Нью-Мексико. ] (* <-lang_ru ;;  => nrel_format: format_html;;*);;
+*);;
+*);;

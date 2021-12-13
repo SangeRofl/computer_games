@@ -1,0 +1,45 @@
+haunt_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Haunt] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Haunt](* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Haunt)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Создаёт рядом с каждым вражеским героем спектральную копию, которая атакует его после небольшой задержки. Во время действия можно применить способность Reality, чтобы поменяться местами с выбранной иллюзией.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Haunt)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Иллюзии не находятся под контролем игрока, имеют базовую скорость в 400, игнорируют препятствия, получают больше урона и наносят меньше урона, чем сам герой.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [120];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Haunt_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

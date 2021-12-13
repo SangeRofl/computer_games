@@ -1,0 +1,41 @@
+concept_screamer
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Крикун] (* <- lang_ru;;*);
+	[Screamer] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_screamer;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Крикун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Крикун - среди всех видов заражённых, данный тип выделяется возрастом носителя, ведь он составляет меньше 2-х лет.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Крикуна)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Несмотря на свою хрупкость и, казалось бы, безобидность, данный вид отличается агрессией и атакует игрока мощным криком, имеющим значительное время перезарядки, но выводящим последнего из строя на пару секунд и делающим его уязвимым для зомби.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://screamer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

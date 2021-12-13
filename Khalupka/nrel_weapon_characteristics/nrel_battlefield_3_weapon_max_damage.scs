@@ -1,0 +1,85 @@
+nrel_battlefield_3_weapon_max_damage
+=> nrel_main_idtf: [Maximal damage* (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Максимальный урон* (Battlefield 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Максимальный урон* (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Параметр <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>, который обозначает 
+       		    максимальный <b><sc_element sys_idtf="concept_damage">урон</b></sc_element>, который может нанести конкретное 
+       		    <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружие</b></sc_element> при попадании в тело.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+	concept_damage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв1.(Нанесение максимального урона в Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="nrel_battlefield_3_weapon_max_damage">Максимальный урон в Battlefield 3</b></sc_element> наносится на расстоянии меньше 
+			<b><sc_element sys_idtf="nrel_battlefield_3_weapon_max_damage_distance">дистанции нанесения максимального урона</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+    <= nrel_using_constants: {
+        computer_game_battlefield_3;
+        nrel_battlefield_3_weapon_max_damage;
+        nrel_battlefield_3_weapon_max_damage_distance
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв2.(Самый большой максимальный урон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Самый высокий <b><sc_element sys_idtf="nrel_battlefield_3_weapon_max_damage">максимальный урон в игре Battlefield 3</b></sc_element> 
+			имеют <b><sc_element sys_idtf="concept_battlefield_3_weapon_class_sniper_rifle">снайперские винтовки</b></sc_element> и 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_shotgun">дробовики</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+    <= nrel_using_constants: {
+        computer_game_battlefield_3;
+        concept_battlefield_3_weapon_class_shotgun;
+        concept_battlefield_3_weapon_class_sniper_rifle
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_battlefield_3_weapon_max_damage;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_battlefield_3_weapon_max_damage;;
+antitransitive_relation -> nrel_battlefield_3_weapon_max_damage;;
+asymmetric_relation -> nrel_battlefield_3_weapon_max_damage;;
+
+
+nrel_battlefield_3_weapon_max_damage => nrel_first_domain: concept_battlefield_3_weapons;;
+nrel_battlefield_3_weapon_max_damage => nrel_second_domain: number;;
+nrel_battlefield_3_weapon_max_damage => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_battlefield_3_weapons;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_battlefield_3_weapon_max_damage;;
+number->2;;

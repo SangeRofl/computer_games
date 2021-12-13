@@ -1,0 +1,8 @@
+concept_location		
+
+=> nrel_main_idtf:[локация] (* <- lang_ru;; *);
+=> nrel_main_idtf:[location] (* <- lang_en;; *);
+=> nrel_idtf: [Локация] (* <- lang_ru;; *);
+=> nrel_idtf: [Location] (* <- lang_en;; *);
+
+sc_node_not_relation;;

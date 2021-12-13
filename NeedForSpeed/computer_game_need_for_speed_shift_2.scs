@@ -1,0 +1,70 @@
+computer_game_need_for_speed_shift_2
+=> nrel_main_idtf: [Need for Speed: Shift 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Shift 2] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_arcade;
+<- concept_simulator;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_slightly_mad_studios;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_3; xbox_360; ios;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: madness_engine;
+
+=> nrel_publication_date: date_31_3_2011;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Shift 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре автогонок, разработанная студией Slightly Mad Studios и изданная Electronic arts в 2011 году. Является сиквелом Need for Speed Shift. Это тринадцатая часть в игровой серии Need for Speed.
+                Сиквел включает в себя функцию Autolog, которая появилась в Need for Speed: Hot Pursuit 2010 года. В игре доступно 148 автомобилей от 36 производителей и 35 различных трасс,
+                на которых игроки могут соревноваться в нескольких типах гонок. В игре высокий интеллект соперников, кроме того игроки также будут иметь возможность конкурирования через Интернет.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_simulator;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_slightly_mad_studios;;
+                -> computer_game_need_for_speed_shift_2;;
+                -> concept_game_series_need_for_speed;;
+                -> concept_game_series_shift;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

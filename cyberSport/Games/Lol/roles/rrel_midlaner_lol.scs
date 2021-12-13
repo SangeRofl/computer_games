@@ -1,0 +1,8 @@
+rrel_midlaner_lol
+
+	<-sc_node_role_relation;
+	<-oriented_relation;
+	
+	=> nrel_main_idtf:
+		[midlaner'](* <-lang_en;; *);
+		[мидер'](* <-lang_ru;; *);;

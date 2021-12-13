@@ -1,0 +1,48 @@
+computer_game_world_of_warcraft_wrath_of_the_lich_king
+=> nrel_idtf: [World of warcraft wrath of the lich king] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Wrath of the Lich King] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Wrath of the Lich King] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2008;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Пять лет минуло с тех пор, как законный наследник трона Лордерона сгинул среди холодных пустошей Нордскола и от нечестивого союза Артаса с Нер’зулом произошли самые могущественные, коварные, злодейские создания, какие только видел свет. Пять лет зловещего, тяжкого безмолвия. Многие боялись, что нордскольская тьма хлынет за пределы континента и затопит все вокруг, однако этого пока не произошло. Пока. Король-лич уже воцарился на троне, и его войска вот-вот перейдут в наступление. Войны не избежать: над миром сгущаются грозовые тучи. Герои Азерота собираются под боевыми знаменами и готовятся вновь бросить вызов Плети. Очень скоро мир узнает, что значит гневить подлинного государя!..Вас не испугало пламя Чёрной горы. Вы отважно проникли вглубь кошмарных ульев кираев и вернулись с победой. Вы одолели демонов Пылающего Легиона и поставили самого Иллидана Предателя перед судом. Однако главное приключение у вас ещё впереди. В новом дополнении World of Warcraft: Wrath of the Lich King вас ждет множество новых эпических возможностей. Вы сможете развить персонажа до неслыханно высокого уровня, исследовать обширные земли нового континента, встретиться с другими могучими героями в поединках, которые решат судьбу Азерота… и многое другое. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft wrath of the lich king)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft wrath of the lich king  - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2008 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно..] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft wrath of the lich king)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дополнение Wrath of the Lich King имеет довольно обширный список нововведённых подземелий. Некоторые из них добавлены изначально, некоторые (старые подземелья) обновлены до текущих дней, а некоторые вводились в игру с последующими обновлениями.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wowlc.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

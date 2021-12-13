@@ -1,0 +1,41 @@
+concept_goons
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Громила] (* <- lang_ru;;*);
+	[Goons] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_goons;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Громила)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Представляющий из себя большого и сильного заражённого.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Громилы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [В бою Громила использует огромный кусок арматуры или не уступающий по размерам арматуре молот, которым он и пытается уничтожить своего противника. Он так же использует кулаки, которыми отбрасывает противника в сторону..](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://goons.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

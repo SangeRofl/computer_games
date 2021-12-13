@@ -1,0 +1,28 @@
+concept_wc_race_draenei
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [Дренеи]
+      (*<-lang_ru;;*);
+       [Draenei]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Дреней] (* <- lang_ru;; *);
+=> nrel_idtf: [дреней] (* <- lang_ru;; *);
+=> nrel_idtf: [draenei] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Draenei.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

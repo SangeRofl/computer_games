@@ -1,0 +1,50 @@
+concept_apex_gear_knockdown_shield_common
+=> nrel_main_idtf: [common knockdown shield (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный щит от нокаута (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры щита от нокаута
+=> nrel_apex_knockdown_shield_units: 200;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный щит от нокаута (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный щит от нокаута (Apex Legends) - щит от нокаута, который добавляет 200 единиц защиты, которую можно активировать при нокауте в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_knockdown_shield
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность обычных щитов от нокаута на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычный щит от нокаута - самый распространенный вид щитов от нокаута на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_knockdown_shield;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный щит от нокаута)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/knockdown/knock_shield_lvl1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

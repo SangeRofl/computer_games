@@ -1,0 +1,6 @@
+sc_text_of_agent_of_finding_game_on_the_number_of_players
+-> rrel_key_sc_element:
+	agent_of_finding_game_on_the_number_of_players;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_finding_game_on_the_number_of_players= [*^"file://agent_of_finding_game_on_the_number_of_players.scsi"*];;

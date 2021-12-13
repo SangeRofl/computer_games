@@ -1,0 +1,29 @@
+concept_skyrim_armor_quest
+=> nrel_main_idtf: [Quest armor (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Квестовая броня (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(квестовая броня (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Квестовое броня —  <b><sc_element sys_idtf="concept_skyrim_armor">броня</b></sc_element>, которая выдается на время <b><sc_element sys_idtf="concept_quest">квеста</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности квестовой брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эту броню можно использовать и даже улучшать, но для завершения задания придётся с ним расстаться. Встречается в единственном экземпляре. Невозможно создать самому. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

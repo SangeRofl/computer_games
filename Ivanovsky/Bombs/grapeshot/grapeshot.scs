@@ -1,0 +1,49 @@
+concept_grapeshot
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Картечь] (* <- lang_ru;;*);
+	[Grapeshot] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Картечь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют для уничтожения гнезд чудовищ и против летающих врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Полезность бомбы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полезна против: Летающих врагов,то есть гарпий, эриний, сирен, эхидн, грифонов, виверн, василисков, ослизгов и тому подобных. Так же против гнезд чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://buckshot.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_ordinary_grapeshot;;
+    -> concept_enhanced_grapeshot;;
+    -> concept_superior_grapeshot;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

@@ -1,0 +1,45 @@
+laguna_blade_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Laguna Blade] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Laguna Blade] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Laguna Blade)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Выпускает разряд молнии в одного врага, нанося сокрушительный урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Laguna Blade)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Применяет к цели дебафф, наносящий урон при его завершении. Дебафф длится 0,25 сек. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [50];
+=> nrel_default_damage : [900];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Laguna_Blade_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

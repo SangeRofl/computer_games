@@ -1,0 +1,79 @@
+concept_strategy
+=> nrel_main_idtf: [стратегия] (* <- lang_ru;; *);
+=> nrel_idtf: [strategy] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_microcontrol;;
+        -> concept_tactic;;
+        -> concept_development;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_microcontrol;;
+        -> concept_tactic;;
+        -> concept_development;;
+	=> nrel_main_idtf: [разбиение по геймплею] (* <- lang_ru;; *);;
+*);
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(глобальная военная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество игр, где главное действие — «микроконтроль» с помощью денег. Игрок выступает в роли правителя, он распределяет материальные средства между своими воинами и постройками новых зданий] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_microcontrol;;
+                -> concept_player;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(противник*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [есть базы для создания армии и есть противник] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

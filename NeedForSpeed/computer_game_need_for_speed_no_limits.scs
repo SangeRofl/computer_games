@@ -1,0 +1,63 @@
+computer_game_need_for_speed_no_limits
+=> nrel_main_idtf: [Need for Speed: No Limits] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: No Limits] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_multiplayer_game;
+<- concept_arcade;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_fire_monkeys_studios;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform:  ios; android;
+
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_01_10_2015;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: No Limits)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ мобильная видеоигра, спин-офф серии Need for Speed в жанре аркадных автогонок, разработанный Firemonkeys Studios и изданный компанией Electronic Arts для смартфонов под управлением iOS и Android в 2015 году.
+                Аркада получила неоднозначные, в целом позитивные оценки от прессы. Рецензенты хвалили игровой процесс и графику, но подвергали критике платный контент и технические недоработки.   ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_fire_monkeys_studios;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_no_limits;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

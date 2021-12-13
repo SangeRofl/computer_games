@@ -1,0 +1,48 @@
+nrel_fraction
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- assymmetric_relation;
+<- antitransitive_relation;
+ => nrel_first_domain: hero;
+  => nrel_second_domain: class;
+=> nrel_main_idtf:
+      [фракция*]
+      (*<-lang_ru;;*);
+       [fraction*]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (фракция*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	concept_group;
+     concept_character;
+ concept_MMO
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="nrel_fraction">Фракция</sc_element></b> в <b><sc_element sys_idtf="concept_MMO">массовой многопользовательской ролевой онлайн-игре</sc_element></b> — группа, к которой <sc_element sys_idtf="concept_character">персонаж</sc_element> принадлежит с момента создания.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{
+concept_group;
+concept_character
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(о способности*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_game_mechanics;
+	concept_character};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Как правило, механика игры поощряет нападение на персонажей иной фракции.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

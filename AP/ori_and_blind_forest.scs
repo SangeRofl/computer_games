@@ -1,0 +1,39 @@
+computer_game_ori_and_the_blind_forest
+=> nrel_main_idtf: [Ori and the blind forest] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ori and the blind forest] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_platformer;
+=> nrel_platform: concept_windows;
+=> nrel_publisher: company_microsoft_studios;
+=> nrel_developer: company_moon_studios;
+=> nrel_publication_date: date_2015;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_two_dimensional_side_view;
+=> nrel_plot: [отсутствует];
+<- concept_paid_computer_game;
+<- concept_singleplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Ori and the blind forest)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом с боку в жанре платформер, выпущена на компанией Microsoft Studios в 2015 году на платформе Windows. Однопользовательская с отсутствием сюжета. Распространяется платно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/ori_and_the_blind_forest.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

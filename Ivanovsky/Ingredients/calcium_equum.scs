@@ -1,0 +1,45 @@
+concept_calcium_equum
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Calcium equum] (* <-lang_ru;;*);
+	[Calcium equum] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Calcium equum)] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_superior_devils_puffball;;
+	-> concept_enhanced_devils_puffball;;
+	-> concept_ordinary_grapeshot;;
+	-> concept_superior_grapeshot;;
+	-> concept_enhanced_grapeshot;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб:  Обычная картечь, Улучшенная картечь, Местерская картечь, Улучшенный чертов гриб, Отличный чертов гриб ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://calcium_equum.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

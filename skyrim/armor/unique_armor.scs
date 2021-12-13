@@ -1,0 +1,29 @@
+concept_skyrim_armor_unique
+=> nrel_main_idtf: [Unique armor (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Уникальная броня (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(уникальная броня (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Уникальная броня —  <b><sc_element sys_idtf="concept_skyrim_armor">броня</b></sc_element>, которая может быть найдена при определённых условиях.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности уникальной брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Встречается в единственном экземпляре, хотя в некоторых случаях может обновиться вместе со всем содержимым локации. Невозможно создать самому.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

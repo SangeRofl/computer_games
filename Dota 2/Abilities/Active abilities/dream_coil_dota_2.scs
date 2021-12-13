@@ -1,0 +1,45 @@
+dream_coil_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Dream Coil] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Dream Coil] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Dream Coil)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Цепляет вражеских героев нестабильной магической спиралью, оглушая их на 0,5 сек., накладывая на них эффект привязки и нанося им урон. Если враг отойдёт слишком далеко от центра спирали, то она разорвётся, оглушив его и нанеся дополнительный урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Dream Coil)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Если связанные герои передвинутся более чем на 600 от места связки, они разорвут связку и получат оглушение и урон. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [60];
+=> nrel_default_damage : [200];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Dream_Coil_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

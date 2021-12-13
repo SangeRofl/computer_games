@@ -1,0 +1,47 @@
+concept_eft_throwingweapon_deafeninggrenade
+=> nrel_main_idtf: [deafening grenade(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [оглушающая граната(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (оглушающая граната(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [оглушающая граната — это специальное средство несмертельного действия, оказывающее на человека светозвуковое и осколочное воздействие.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназаначение оглушающей гранаты)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гранаты данного типа не обладают смертельным действием, а предназначены исключительно для выполения тактических задач: отвлекающего или ошеломляющего действия на противника для временного вывода его из строя.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (оглушающая граната(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/flash.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

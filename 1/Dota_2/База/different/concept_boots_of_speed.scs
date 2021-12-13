@@ -1,0 +1,39 @@
+concept_boots_of_speed
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [boots of speed] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [boots of speed] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(boots of speed)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Удобная обувь, ускоряющая передвижение.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(boots of speed)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Основные бонусы к скорости передвижения от нескольких пар ботинок не складываются.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/boots_of_speed.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

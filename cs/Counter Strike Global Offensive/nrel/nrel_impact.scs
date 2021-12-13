@@ -1,0 +1,6 @@
+nrel_impact
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[Импакт*](*<-lang_ru;;*);
+		[Impact*](*<-lang_en;;*);;

@@ -1,0 +1,88 @@
+computer_game_call_of_duty
+=> nrel_main_idtf: [Call of Duty] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_infinity_ward;
+=> nrel_publisher: company_activision; company_1c;
+=> nrel_localizer: company_1c;
+
+=> nrel_platform: concept_windows; concept_mac; n_gage; playstation_3; xbox_360;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: idtech_3;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_29_10_2003;;
+	=> nrel_main_idtf: [Дата выхода в США] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_07_11_2003;;
+	=> nrel_main_idtf: [Дата выхода в ЕС] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_japanese;;
+	=> nrel_publication_date: date_18_12_2003;;
+	=> nrel_main_idtf: [Дата выхода в Японии] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_russia;;
+	=> nrel_publication_date: date_12_03_2004;;
+	=> nrel_main_idtf: [Дата выхода в России] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Call of Duty)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра в жанре шутер от первого лица на тему Второй мировой войны, первая игра серии Call of Duty] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_shooter;;
+		-> concept_setting_world_war_the_second;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> concept_game_series_call_of_duty;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

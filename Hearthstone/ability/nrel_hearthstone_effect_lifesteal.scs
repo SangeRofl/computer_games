@@ -1,0 +1,86 @@
+nrel_hearthstone_effect_lifesteal
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект Вампиризм* ]
+	(* <- lang_ru;;	*);
+	[Effect Lifesteal* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Lifesteal.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта Вампиризм ](*<-lang_ru;;*);
+		[Description of Lifesteal effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{     
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_class_hero;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Божественный щит* - это способность, заставляющая миньона игнорировать следующий урон, который он получает. После получения любого урона Божественный Щит удаляется, и этот урон уменьшается до 0. Количество получаемого урона не имеет значения и может быть получено из любого источника, включая бой в качестве атакующего или защитника, заклинания , Силы героев или другие эффекты.] (* <- lang_ru;; *);
+
+            [Lifesteal is an ability which causes damage dealt by a card to also restore that much Health to the controlling player's hero. Lifesteal minions on the battlefield are marked by a broken heart at the bottom of their portraits.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Снятие Божественного Щита с помощью урона часто называют треском , из-за его сходства с пузырем.] (* <- lang_ru;; *);
+
+            [The Lifesteal mechanic was first introduced in Goblins vs Gnomes on the card Mistress of Pain (later renamed Queen of Pain). It was officially keyworded in Knights of the Frozen Throne.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        nrel_hearthstone_effect_silence;
+        nrel_hearthstone_effect_divine_shield;
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_card_minion;
+        concept_card_weapon
+
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Всякий раз, когда карта Lifesteal или Сила героя наносит урон , он также восстанавливает то же количество здоровья своему контролирующему герою.] (* <- lang_ru;; *);
+
+            [Whenever a Lifesteal card or Hero Power deals damage, it will restore the exact same amount of Health to its controlling hero too.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Если герой наносит урон Lifesteal, а также получает смертельный урон, исцеление Lifesteal спасет героя, если этого будет достаточно, чтобы восстановить ему 1 здоровье или более (или, другими словами, если получаемый урон за вычетом лечения Lifesteal меньше здоровье героя).] (* <- lang_ru;; *);
+
+            [If a hero deals Lifesteal damage while also taking lethal damage, the Lifesteal heal will save the hero if it would be enough to restore them to 1 health or more (or, put another way, if the damage taken minus the Lifesteal heal is less than the hero's health).] (* <- lang_en;; *);;
+	*);;
+        <= nrel_sc_text_translation: ...
+    (*
+		-> [Если Предательство наложено на миньона с Lifesteal, эффект Lifesteal будет активирован один раз для каждого удара миньона.] (* <- lang_ru;; *);
+
+            [If Betrayal is cast upon a minion with Lifesteal, the Lifesteal effect will activate once for each minion hit.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Если карта Lifesteal наносит урон миньону, защищенному Divine Shield , она нанесет 0 урона и, таким образом, также восстановит 0 здоровья, а также удалит Divine Shield.] (* <- lang_ru;; *);
+
+            [If a Lifesteal card deals damage to a minion protected by Divine Shield, it will deal 0 damage and thus also restore 0 Health, while also removing the Divine Shield.] (* <- lang_en;; *);;
+	*);;
+*);;

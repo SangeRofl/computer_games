@@ -1,0 +1,51 @@
+concept_apex_ammo_heavy_round
+=> nrel_main_idtf: [heavy round] (* <- lang_en;; *);
+=> nrel_main_idtf: [тяжелый патрон] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (тяжелый патрон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [тяжелый патрон - тип боеприпасов, которые используют оружия PDW "Ищейка", M600 "Спитфайр", VK-47 "Флэтлайн", Ведомый и ШВ "Хемлок".] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo;
+		concept_apex_weapon_prowler;
+		concept_apex_weapon_spitfire;
+		concept_apex_weapon_flatline;
+		concept_apex_weapon_wingman;
+		concept_apex_weapon_hemlok
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (траектория полета тяжелых патронов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Этот вид боеприпасов обладает дуговой траекторией полета.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (тяжелый патрон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/ammo/apex_heavy_rounds.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

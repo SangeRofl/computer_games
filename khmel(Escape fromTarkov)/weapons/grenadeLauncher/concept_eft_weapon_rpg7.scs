@@ -1,0 +1,54 @@
+concept_eft_weapon_rpg7
+=> nrel_main_idtf: [RPG-7(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [РПГ-7(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_grenade_launcher;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_40x53;
+=> nrel_eft_weapon_sighting_distance: 200;
+=> nrel_eft_weapon_rate_of_fire: 10;
+=> nrel_eft_weapon_accuracy: 0.62;
+=> nrel_eft_weapon_effective_distance: 100;
+=> nrel_eft_weapon_starting_speed: 135;
+=> nrel_eft_weapon_weight: 5.29;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (РПГ-7(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Гранатомёт РПГ-7 — советский ручной противотанковый гранатомёт многоразового применения. ] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_grenade_launcher
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение РПГ-7(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Предназначен для борьбы с танками, самоходными артиллерийскими установками и другой бронетехникой, может быть использован для уничтожения живой силы в укрытиях, а также для борьбы с низколетящими малоскоростными воздушными целями.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (РПГ-7(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/RPG-7.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

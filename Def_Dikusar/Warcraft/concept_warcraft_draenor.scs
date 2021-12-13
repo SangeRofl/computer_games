@@ -1,0 +1,51 @@
+concept_warcraft_draenor			
+
+=> nrel_main_idtf:[Дренор] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Draenor] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+		concept_race_orc
+	};;
+		=> nrel_main_idtf: [Опр.(Дренор)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Дренор - это родной мир расы орков и последнее прибежище дренеев до их прибытия в Азерот. Когда шаман орков  Нер'зул опрометчиво открыл пространственные порталы, чтобы найти новые миры, Дренор был разорван на части и считался полностью потерянным.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Дренор)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Когда шаман орков  Нер'зул опрометчиво открыл пространственные порталы, чтобы найти новые миры, Дренор был разорван на части и считался полностью потерянным.] (* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Draenor.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Draenor_space.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

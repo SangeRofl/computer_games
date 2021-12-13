@@ -1,0 +1,54 @@
+concept_warcraft_northrend		
+
+=> nrel_main_idtf:[Нордскол] (* <- lang_ru;; *);
+=> nrel_idtf:[Нортренд] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Northrend] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Азерот)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_game_series_world_of_warcraft;
+      concept_warcraft_azeroth;
+      concept_warcraft_the_scourge;
+      concept_warcraft_azeroth;
+	  computer_game_world_of_warcraft_wrath_of_the_lich_king;
+	  game_character_lich_king  
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Нордскол (англ. Northrend, он же Нортренд) — в MMORPG <b><sc_element sys_idtf="concept_game_series_world_of_warcraft">World of Warcraft</sc_element></b> 
+		 самый северный континент мира <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b>, 
+		 ставший доступным для игроков во втором аддоне 
+		 <b><sc_element sys_idtf="computer_game_world_of_warcraft_wrath_of_the_lich_king">Wrath of the Lich King</sc_element></b>. 
+		 Именно здесь находится Ледяной трон <b><sc_element sys_idtf="game_character_lich_king">Короля Мёртвых</sc_element></b>, 
+		 и именно отсюда пошла <b><sc_element sys_idtf="concept_warcraft_the_scourge">Плеть</sc_element></b>]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Northrend.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Northrend2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- concept_location;;

@@ -1,0 +1,63 @@
+nrel_eft_weapon_accuracy
+=> nrel_main_idtf: [accuracy(Escape from Tarkov)* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [точность(Escape from Tarkov)* ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(точность(Escape from Tarkov)* )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Параметр оружия, вероятностная оценка возможных положений точек падений (разрывов) снарядов, ракет, пуль, мин относительно цели.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(самая высокая точность(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Самый высокую точность в игре 'Escape from Tarkov' имеет болтовая винтовка ДВЛ-10.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+       // computer_game_escape_from_tarkov;
+        concept_eft_weapon_dvl10
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_eft_weapon_accuracy;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_eft_weapon_accuracy;;
+antitransitive_relation -> nrel_eft_weapon_accuracy;;
+asymmetric_relation -> nrel_eft_weapon_accuracy;;
+
+
+nrel_eft_weapon_accuracy => nrel_first_domain: concept_weapon;;
+nrel_eft_weapon_accuracy => nrel_second_domain: number;;
+nrel_eft_weapon_accuracy => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_weapon;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_eft_weapon_accuracy;;
+number->2;;

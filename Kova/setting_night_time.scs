@@ -1,0 +1,30 @@
+concept_setting_night_time
+=> nrel_main_idtf: [ночное время] (* <- lang_ru;; *);
+=> nrel_idtf: [night time] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(ночное время)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действия в компьютерной игре разворачиваются в ночное время суток] (* <- lang_ru;; *);;	 
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(ночное время)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычно в таких играх пугают игроков] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,38 @@
+computer_game_vainglory
+=> nrel_main_idtf: [Vainglory] (* <- lang_en;; *);
+=> nrel_main_idtf: [Vainglory] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_MOBA;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_super_evil_megacorp;
+=> nrel_developer: company_super_evil_megacorp;
+=> nrel_publication_date: date_2015;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [отсутствует];
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Vainglory)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная многопользовательская игра с видом от третьего лица в жанре MOBA, выпущена на компанией Super Evil Megacorp в 2015 году на платформе Windows.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/vianglory.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

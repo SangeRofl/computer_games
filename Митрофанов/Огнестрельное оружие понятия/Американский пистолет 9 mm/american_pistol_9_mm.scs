@@ -1,0 +1,69 @@
+concept_american_pistol_9_mm
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Американский пистолет 9 mm] (* <- lang_ru;;*);
+	[American pistol 9 mm] (* <-lang_en;;*);
+
+=>nrel_damage: 118_247
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[118-247](* <-lang_en; lang_ru;; *);;
+		<-damage;;
+		=>nrel_min_damage: [118];;
+		=>nrel_max_damage: [247];;
+	*);
+
+=>nrel_accuracy_gun: 85
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[85](* <-lang_en; lang_ru;; *);;
+		<-accuracy;;
+		=>nrel_accuracy: [85];;
+	*);
+
+=>nrel_rate_of_fire: 60
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[60](* <-lang_en; lang_ru;; *);;
+		<-rate_of_fire;;
+		=>nrel_rate_of_fire: [60];;
+	*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+<= nrel_using_constants: ...(*
+    -> concept_american_pistol_9_mm;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Американский пистолет 9 mm)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Американский пистолет 9 mm - лёгкое огнестрельное оружие, одно из первых огнестрельных в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики Американского пистолета 9 mm)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Американский пистолет 9 mm имеет следующие характеристики: урон - 118-247; точность - 85; скорострельность - 60.Также имеет магазин на 15 патронов. Это оружие является самым слабым по урону пистолетом в игре, но и самым распространённым. Выигрывает у 9мм Немецкого пистолета в ёмкости магазина и скорострельности. Из-за слабого урона кусаку или заражённого можно уничтожить 2 - 1 выстрелами в голову.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://ap9mm.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,56 @@
+concept_apex_consumable_support_ultimate_accelerant
+=> nrel_main_idtf: [ultimate accelerant (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [специальный ускоритель (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 7;
+=> nrel_apex_consumable_use_time_with_combat_medic: 5.25;
+=> nrel_apex_consumable_use_time_with_fast_heal: 3.5;
+=> nrel_apex_ultimate_ability_cooldown_restore_percent: 40;
+=> nrel_apex_max_elements_per_slot: 1;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (специальный ускоритель (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [специальный ускоритель (Apex Legends) - вспомогательный расходный материал, восстанавливает 40% заряда ультимативной способности легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_support;
+		nrel_apex_ultimate_ability_cooldown_restore_percent;
+		concept_apex_ability_ultimate
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем специального ускорителя в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Одна единица специального ускорителя занимает один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (специальный ускоритель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/support/apex_ulti_accelerant.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- concept_apex_consumable_support;
+<- sc_node_not_relation;;

@@ -1,0 +1,118 @@
+concept_apex_weapon_mozambique
+=> nrel_main_idtf: [Mozambique Shotgun] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дробовик "Мозамбик"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_shotgun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 3;
+=> nrel_apex_projectiles_shape: concept_triangle;
+=> nrel_weapon_ammo_type: concept_apex_ammo_shotgun_shell;
+
+=> nrel_weapon_rate_of_fire: 180;
+=> nrel_weapon_damage_per_second: 135;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 66;
+=> nrel_apex_default_legend_common_helmet_damage: 59;
+=> nrel_apex_default_legend_rare_helmet_damage: 53;
+=> nrel_apex_default_legend_epic_helmet_damage: 50;
+=> nrel_apex_default_legend_legendary_helmet_damage: 50;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 69;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 62;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 56;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 53;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 53;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 56;
+=> nrel_apex_fortified_legend_common_helmet_damage: 50;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 54;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 43;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 43;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 45;
+=> nrel_apex_low_profile_legend_body_damage: 47;
+=> nrel_apex_fortified_legend_body_damage: 38;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 42;
+=> nrel_apex_low_profile_legend_leg_damage: 44;
+=> nrel_apex_fortified_legend_leg_damage: 36;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.47;
+=> nrel_weapon_recoil_type: concept_apex_recoil_negligible;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 3;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_shotgun_bolt;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_hammerpoint_rounds;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Дробовик "Мозамбик")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Дробовик "Мозамбик" - дробовик, который использует ружейные патроны и имеет одиночный тип стрельбы, выстреливая по 3 снарядов за выстрел] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_shotgun_shell;
+		concept_apex_weapon_shotgun;
+        concept_apex_fire_mode_single;
+		nrel_apex_projectiles_per_shot
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Дробовик "Мозамбик")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 45 скинов на Дробовик "Мозамбик": 7 легендарных, 6 эпических, 16 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дробовик "Мозамбик")](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_mozambique.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

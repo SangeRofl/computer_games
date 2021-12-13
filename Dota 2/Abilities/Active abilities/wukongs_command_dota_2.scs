@@ -1,0 +1,45 @@
+wukongs_command_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Wukong's Command] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Wukong's Command] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Wukong's Command)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой создает круговую формацию солдат, которые расходятся из его местоположения. Если герой покидает область действия способности, его солдаты исчезают. Их атака идентична атаке героя, а своей целью они выбирают только других героев. На время действия способности герой получает дополнительную броню.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Wukong's Command)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Солдаты неуязвимы и считаются спрятанными (хотя их видно), давая им иммунитет практически ко всем заклинаниям. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [90];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Wukong's_Command_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

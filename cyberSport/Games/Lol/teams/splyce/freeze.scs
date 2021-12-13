@@ -1,0 +1,48 @@
+freeze
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Ales "Freeze" Knezinek](* <-lang_en;; *);
+		[Алесь "Freeze" Кнезинек](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Freeze](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Czech_Republic;
+	=>nrel_surname: Knezinek;
+	=>nrel_first_name: Ales;
+	=>nrel_nickname: Freeze;
+	=>nrel_birthday: [06.06.1994];
+	=>nrel_gamerole: bot_laner_lol;
+
+	<=nrel_with_whom: contract_freeze_and_royal_bandits_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Freeze and Royal Bandits](* <-lang_en;; *);
+			[Контракт между Freeze и Royal Bandits](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: royal_bandits_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 21_05_2018;;
+			->rrel_end: 18_09_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_freeze_and_splyce_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Freeze and Splyce](* <-lang_en;; *);
+			[Контракт между Freeze и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 14_01_2019;;
+		*);;
+	*);;
+

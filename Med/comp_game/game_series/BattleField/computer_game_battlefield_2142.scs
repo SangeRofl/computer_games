@@ -1,0 +1,86 @@
+computer_game_battlefield_2142					//tactical_shooter and ww3				
+=> nrel_main_idtf: [Battlefield 2142] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 2142] (* <- lang_en;; *);
+
+
+//<- concept_tactical_shooter;
+<- concept_setting_postapocalypse;
+//<- concept_setting_worlds_war_the_third;	??
+
+<- concept_three_dimensional_game;
+<- concept_singleplatform_game;
+
+=> nrel_developer: company_dice;
+=> nrel_publisher: company_electronic_arts;
+=> nrel_localizer: company_softclub;
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_17_10_2006;;
+	=> nrel_main_idtf: [Дата выхода в США] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_australia;;
+	=> nrel_publication_date: date_18_10_2006;;
+	=> nrel_main_idtf: [Дата выхода в Австралии] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_20_10_2006;;
+	=> nrel_main_idtf: [Дата выхода в ЕС] (* <- lang_ru;; *);;	
+*);
+
+
+=> nrel_platform: concept_windows;
+
+=> nrel_game_engine: refractor_engine_2;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 2142)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра в жанре трехмерного шутера от первого лица на тему Третьей мировой войны, разработанная Digital Illusions CE и изданная Electornic Arts, четвертая игра серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+	//	-> concept_setting_world_war_the_third;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

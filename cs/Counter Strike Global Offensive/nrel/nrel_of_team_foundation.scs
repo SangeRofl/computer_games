@@ -1,0 +1,9 @@
+nrel_of_team_foundation
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[год основания команды*](*<-lang_ru;;*);
+		[year of team foundation*](*<-lang_en;;*);;
+		
+nrel_of_team_foundation => nrel_first_domain: team;;
+nrel_of_team_foundation => nrel_second_domain: year_of_foundation;;

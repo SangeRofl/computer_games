@@ -1,0 +1,20 @@
+concept_card_class_warlock
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карты Чернокнижника] (* <- lang_ru;; *);
+	[Warlock's cards] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Карты класса Чернокнижника)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> nrel_effect;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Карты Чернокнижника - это карты, которые может использовать только класс Чернокнижник] (* <- lang_ru;; *);;
+	*);;
+*);;

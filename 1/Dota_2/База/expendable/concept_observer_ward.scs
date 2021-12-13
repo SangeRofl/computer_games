@@ -1,0 +1,39 @@
+concept_observer_ward
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [observer ward] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [опсервер вард] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(observer ward)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Предмет, который можно купить в Основной лавке, в разделе Расходуемые. Вард даёт наземный обзор. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(observer ward)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Можно передать один Observer Ward союзному герою, удерживайте клавишу Ctrl. Может быть использован не только владельцем. Уничтожение Observer Ward отображается в уведомлениях чата для союзников. Награда в виде золота за Observer Ward даётся тому, кто купил источник True Sight, которым был обнаружен вард. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/observer_ward.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

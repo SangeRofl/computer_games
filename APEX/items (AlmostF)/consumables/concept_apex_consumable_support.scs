@@ -1,0 +1,35 @@
+concept_apex_consumable_support
+=> nrel_main_idtf: [support consumable (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [вспомогательный расходный материал (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (вспомогательный расходный материал (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [вспомогательный расходный материал (Apex Legends) - расходный материал, который использует игрок для восстановления заряда ультимативной способности легенды в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable;
+		concept_player;
+		concept_apex_ability_ultimate
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность вспомогательных расходных материалов в рюкзаке игрока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игрок может носить определенное количество вспомогательных расходных материалов, которое ограничено размером его рюкзака.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player;
+		concept_apex_gear_backpack
+	};;
+*);
+
+<- sc_node_not_relation;;

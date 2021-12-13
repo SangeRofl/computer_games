@@ -1,0 +1,58 @@
+concept_apex_consumable_healing_phoenix_kit
+=> nrel_main_idtf: [phoenix kit (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [набор Феникса (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 10;
+=> nrel_apex_consumable_use_time_with_combat_medic: 7.5;
+=> nrel_apex_consumable_use_time_with_fast_heal: 5;
+=> nrel_apex_restored_hp_amount: 100;
+=> nrel_apex_restored_shields_amount: 100;
+=> nrel_apex_max_elements_per_slot: 1;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (набор Феникса (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [набор Феникса (Apex Legends) - лечебный расходный материал, восстанавливает 100 единиц щита и 100 единиц здоровья легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_healing;
+		nrel_apex_restored_shields_amount;
+        nrel_apex_restored_hp_amount
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем набора Феникса в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Одна единица набора Феникса занимает один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (набор Феникса)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/healing/apex_phoenix.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_consumable_healing;
+<- sc_node_not_relation;;

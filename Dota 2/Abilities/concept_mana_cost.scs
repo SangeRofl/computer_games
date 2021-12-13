@@ -1,0 +1,7 @@
+concept_mana_cost
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Концепция затраты маны](*<-lang_ru;;*);
+		[Concept game currency](*<-lang_en;;*);;
+
+		

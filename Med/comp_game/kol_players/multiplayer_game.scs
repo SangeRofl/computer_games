@@ -1,0 +1,32 @@
+concept_multiplayer_game
+
+=> nrel_main_idtf:[многопользовательская игра] (* <- lang_ru;; *);
+=> nrel_main_idtf:[multiplayer game] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;				
+	*);;
+		=> nrel_main_idtf: [Опр.(многопользовательская игра)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Многопользовательская игра - компьютерная игра, в которой одновременно играет более одного человека в сети] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(многопользовательская игра, Tennis for Two)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Первой многопользовательской игрой считается Tennis for Two](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;

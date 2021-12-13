@@ -1,0 +1,31 @@
+concept_dead_by_daylight_splinter_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Сплинтер)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Splinter)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Сплинтер)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Сплинтер) - подношения, позволяющие игроку становится определенным Убийцей в матче.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Сплинтер)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношение-сплинтер может быть принесено только Убийцей.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

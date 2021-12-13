@@ -1,0 +1,108 @@
+xmatty
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Matthew "xMatty" Coombs](* <-lang_en;; *);
+		[Мэтью "xMatty" Кумбс](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[xMatty](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: United_Kingdom;
+	=>nrel_surname: Coombs;
+	=>nrel_first_name: Matthew;
+	=>nrel_nickname: xMatty;
+	=>nrel_birthday: [16.07.1999];
+	=>nrel_gamerole: bot_laner_lol;
+
+	<=nrel_with_whom: contract_xmatty_and_digital_warfare_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and Digital Warfare](* <-lang_en;; *);
+			[Контракт между XMatty и Digital Warfare](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: digital_warfare_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_06_2017;;
+			->rrel_end: xx_06_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_xmatty_and_team_singularity_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and Team Singularity](* <-lang_en;; *);
+			[Контракт между XMatty и Team Singularity](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_singularity_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_07_2017;;
+			->rrel_end: xx_01_2018;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_xmatty_and_kiyf_esports_club_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and KIYF eSports Club](* <-lang_en;; *);
+			[Контракт между XMatty и KIYF eSports Club](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: kiyf_esports_club_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 11_01_2018;;
+			->rrel_end: xx_03_2018;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_xmatty_and_wind_and_rain_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and Wind and Rain](* <-lang_en;; *);
+			[Контракт между XMatty и Wind and Rain](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: wind_and_rain_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 06_02_2018;;
+			->rrel_end: 30_04_2018;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_xmatty_and_gentside_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and Gentside](* <-lang_en;; *);
+			[Контракт между XMatty и Gentside](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: gentside_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 05_05_2018;;
+			->rrel_end: 07_01_2019;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_xmatty_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between XMatty and Fnatic](* <-lang_en;; *);
+			[Контракт между XMatty и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_01_2019;;
+		*);;
+	*);;
+

@@ -1,0 +1,32 @@
+concept_battlefield_3_weapon_equipment_sight_holo
+=> nrel_main_idtf: [sight HOLO (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [прицел HOLO (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_equipment_sight; 
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (прицел HOLO (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_sight_holo">HOLO</b></sc_element> - 
+		это голографический 1-крат. <b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_sight">прицел</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_equipment_sight;
+        concept_battlefield_3_weapon_equipment_sight_holo
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/holo.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

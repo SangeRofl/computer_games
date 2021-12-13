@@ -1,0 +1,62 @@
+concept_skyrim_skill_restoration
+=> nrel_main_idtf: [school of  restoration ] (* <- lang_en;; *);
+=> nrel_main_idtf: [школа восстановления ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.( школа восстановления )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [школа восстановления —  <b><sc_element sys_idtf="concept_skyrim_skill">навык</b></sc_element> из игры  <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>, относящийся к магической специализации. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Количество заклинаний школы восстановления)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> существует  22 заклинаний школы восстановления.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Заклинания школы восстановления)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Заклинания восстановления управляют энергией жизни, позволяя излечивать раны, изгонять нежить, создавать магические обереги, поглощающие как физический, так и магический урон.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Изучение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Мастерство в этой школе достигается успешным применением заклинаний. Навык не будет прогрессировать, если, например, лечить того, кто уже в полном здравии, или изгонять нежить, которой поблизости нет.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/recovery.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Созвездие школы восстановления)]   (*<-lang_ru;;*);;
+		*);;
+	*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,44 @@
+concept_nigredo
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Нигредо] (* <- lang_ru;;*);
+	[Nigredo] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Нигредо)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимическая субстанция] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_superior_dancing_star;;
+	-> concept_superior_dimeritium_bomb;;
+	-> concept_superior_grapeshot;;
+	-> concept_superior_moon_dust;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Отличная танцующая звезда, Отличная двимеритовая бомба, Мастерская Картечь, Отличная Лунная пыль. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://nigredo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

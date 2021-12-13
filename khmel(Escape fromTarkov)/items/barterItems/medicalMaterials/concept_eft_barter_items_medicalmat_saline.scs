@@ -1,0 +1,48 @@
+concept_eft_barter_items_medicalmat_saline
+=> nrel_main_idtf: [Saline(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Физраствор(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_medicalmat;
+
+=> nrel_eft_weapon_weight: 0.4;
+=> nrel_eft_barter_items_cost: 8508;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Физраствор(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [физраствор - бартерный предмет из группы медматериалы, физиологический раствор, осмотическое давление которого равно осмотическому давлению крови.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_medicalmat
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (классификация физраствора(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует несколько типов физиологических растворов, состав которых зависит от целей, для которых они применяются.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Физраствор(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Saline.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

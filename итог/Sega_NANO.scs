@@ -1,0 +1,55 @@
+concept_game_console -> Sega_Nano ;;
+
+Sega_Nano
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Сега нано]
+		(* 
+			<- lang_ru;; 
+		*);
+		[Sega Nano]
+		(*
+		<- lang_en;; 
+		*);;
+		
+Sega_Nano <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание (Сега)](*<-lang_ru;;*); 
+			[Description (Sega)](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/SEGANANO.html"(*<-lang_ru;;=>nrel_format:format_html;;*);; 
+
+			*);; 
+*);; 
+Sega_Nano <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Сега)](*<-lang_ru;;*); 
+				[Pic. (Sega)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/SEGANANO.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+Sega_Nano => nrel_producing_country : France;; 
+
+concept_calendar_date -> 1983;; 
+1983 => nrel_main_idtf : [1983 год](*<-lang_ru;;*);; 
+1983 => nrel_main_idtf : [year of 1983](*<-lang_en;;*);; 
+Sega_Nano => nrel_production_year : 1983;; 
+
+
+
+
+

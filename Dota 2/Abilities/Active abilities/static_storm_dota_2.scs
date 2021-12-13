@@ -1,0 +1,45 @@
+static_storm_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Static Storm] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Static Storm] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Static Storm)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Создаёт статический шторм, наносящий урон и запрещающий применять способности всем вражеским существам в указанной области. Урон увеличивается со временем действия способности.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Static Storm)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Урон от каждого срабатывания определяется заданным максимальным уроном в секунду, разделенным на максимальное число срабатываний и умноженным на текущее число срабатываний.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [70];
+=> nrel_default_damage : [350];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Static_Storm_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

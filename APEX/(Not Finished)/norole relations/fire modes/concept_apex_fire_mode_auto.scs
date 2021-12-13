@@ -1,0 +1,5 @@
+concept_apex_fire_mode_auto
+=> nrel_main_idtf: [auto fire] (* <- lang_en;; *);
+=> nrel_main_idtf: [автоматическая стрельба] (* <- lang_ru;; *);
+
+<- sc_node_not_relation;;

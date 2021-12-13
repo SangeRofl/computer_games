@@ -1,0 +1,36 @@
+concept_apex_attachment_standard_stock_rare
+=> nrel_main_idtf: [rare standard stock (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [редкий стандартный приклад (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры стандартного приклада
+=> nrel_apex_weapon_switch_speed_increase_percent: 25;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (редкий стандартный приклад (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [редкий стандартный приклад (Apex Legends) - стандартный приклад, который средне увеличивает скорость переключения оружия и уменьшает качание прицела.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_apex_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (редкий стандартный приклад (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/stocks/standard/standard_lvl2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

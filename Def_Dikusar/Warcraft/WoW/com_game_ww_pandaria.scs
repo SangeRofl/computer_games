@@ -1,0 +1,48 @@
+computer_game_world_of_warcraft_mists_of_pandaria
+=> nrel_idtf: [World of warcraft mist of pandaria] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Mists of Pandaria] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Mists of Pandaria] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_Activision;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2012;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [События дополнения происходят приблизительно через год после окончания событий дополнения Cataclysm. Теперь, когда Смертокрыл повержен, Орда и Альянс опять продолжили войну. Однако они открыли новый континент Пандарию и новую расу пандаренов. Некоторые пандарены присоединились к одной из фракций. Орда и Альянс начали экспансию на новый континент, однако их появление привело к пробуждению Ша — физического воплощения отрицательных эмоций: страха, отчаяния, злости, жестокости, сомнения. Кроме того, древняя раса воинственных могу, некогда державшая все расы Пандарии в рабстве и впоследствии свергнутая в ходе восстания, выбрав подходящий момент, начала активные действия по возрождению своей империи. Собирая магические артефакты в древних руинах, они планируют воскресить своего первого императора, Лей Шеня, одно имя которого вызывает содрогание даже сейчас, через тысячи лет после его смерти.] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<- concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft mist of pandaria)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft mist of pandaria - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2012 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно..] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft mist of pandaria)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Был добавлен новый континент - Пандария.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wow_mop.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

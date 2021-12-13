@@ -1,0 +1,54 @@
+concept_superior_dancing_star
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличная танцующая звезда] (* <- lang_ru;;*);
+	[Superior dancing star] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличная танцующая звезда)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая создает облако газа,которое взрывается при поджигании.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Огненный взрыв, который может поджечь ближайших врагов. Действует сильнее и дольше. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+ 	-> concept_sulfur;;
+	-> concept_phosphorus;;
+	-> concept_enhanced_dancing_star;;
+   	-> concept_szytnacce;;
+   	-> concept_nigredo;;
+   	-> concept_nostrix;;
+   	-> concept_alchemists_powder;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличная танцующая звезда состоит из: Алхимический порошок,Улучшенная танцующая звезда. Фосфор. Сера, Грибы-шибальцы, Нострикс, Нигредо.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

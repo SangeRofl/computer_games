@@ -1,0 +1,38 @@
+concept_active_card
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Активная карта] (* <- lang_ru;; *);
+	[Active card] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Активная карта)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> concept_ability;;
+        -> player;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Активная карта - это карта, которая была разыграна игроком и находится на его стороне стола.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение 						
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(Активная карта)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_card_minion;;
+		-> concept_card_spell;;
+		-> concept_card_weapon;;
+		-> concept_card_hero;;
+        -> concept_ability;;
+	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Карта может быть разыграна или выложена на стол любым возможным способом.] (* <- lang_ru;; *);;
+	*);;
+*);;

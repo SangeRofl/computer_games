@@ -1,0 +1,27 @@
+concept_game_object_shop
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [лавка]
+      (*<-lang_ru;;*);
+       [shop]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [прилавок]
+      (*<-lang_ru;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Лавка)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+concept_game_object_building;
+concept_computer_game;
+buying;
+nrel_function
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="merchant">Лавка - нейтральная постройка, выполняющая функции купле-продажи в компьютерных играх.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<-concept_game_object_building;;
+

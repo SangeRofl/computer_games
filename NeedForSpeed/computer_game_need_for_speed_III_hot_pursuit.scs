@@ -1,0 +1,68 @@
+computer_game_need_for_speed_III_hot_pursuit							//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed III Hot Pursuit] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed III Hot Pursuit] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electronic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: need_for_speed_II;
+
+=> nrel_publication_date: date_25_03_1998;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed III: Hot Persuit)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, третья часть в игровой серии Need for Speed
+                Как и предыдущие части серии, Need for Speed III: Hot Pursuit сосредотачивается на гонках с преследованиями на дорогих автомобилях по живописным трассам.
+                В третьей части впервые появился режим «Погоня», в котором игрок может участвовать как в роли гонщика, так и полицейского.
+                Всего в игре присутствует четыре режима: «Гонка», «Погоня», «Выбывание» и «Турнир». Имеется возможность как одиночной, так и многопользовательской игры. ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_III_hot_pursuit;;
+                -> concept_game_series_need_for_speed;;
+                -> concept_game_series_hot_pursuit;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

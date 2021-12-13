@@ -1,0 +1,24 @@
+lib_component_agent_find_publisher
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска издателя данной игры]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search publisher of this game]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_publisher;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_publisher;;
+
+sc_node_not_relation -> action_find_publisher;;
+
+action_find_publisher => nrel_main_idtf:
+	[действие. Поиск издателя данной игры]
+	(* <- lang_ru;;	*);
+	[action. Search the publisher of given game]
+	(* <- lang_en;;	*);;
+

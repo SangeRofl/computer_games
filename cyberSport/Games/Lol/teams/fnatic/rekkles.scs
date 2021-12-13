@@ -1,0 +1,248 @@
+rekkles
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Martin "Rekkles" Larsson](* <-lang_en;; *);
+		[Мартин "Rekkles" Ларссон](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Rekkles](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Sweden;
+	=>nrel_surname: Larsson;
+	=>nrel_first_name: Martin;
+	=>nrel_nickname: Rekkles;
+	=>nrel_birthday: 20_09_1996
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[20.09.1996](* <-lang_en; lang_ru;; *);;
+		<-date;;
+		=>nrel_date_day: [20];;
+		=>nrel_date_month: [9];;
+		=>nrel_date_year: [1996];;
+	*);
+
+	<=nrel_with_whom: contract_rekkles_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Fnatic](* <-lang_en;; *);
+			[Контракт между Rekkles и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_11_2012
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[.11.2012](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [0];;
+				=> nrel_date_month: [11];;
+				=> nrel_date_year: [2012];;
+			*);;
+			->rrel_end: 22_04_2013
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[22.04.2013](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [22];;
+					=> nrel_date_month: [4];;
+					=> nrel_date_year: [2013];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_rekkles_and_pridefc_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and PrideFC](* <-lang_en;; *);
+			[Контракт между Rekkles и PrideFC](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: pridefc_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_05_2013
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[26.05.2013](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [26];;
+				=> nrel_date_month: [5];;
+				=> nrel_date_year: [2013];;
+			*);;
+			->rrel_end: 14_06_2013
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[14.06.2013](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [14];;
+					=> nrel_date_month: [6];;
+					=> nrel_date_year: [2013];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_rekkles_and_copenhagen_wolves_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Copenhagen Wolves](* <-lang_en;; *);
+			[Контракт между Rekkles и Copenhagen Wolves](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: copenhagen_wolves_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_06_2013
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[15.06.2013](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [15];;
+				=> nrel_date_month: [6];;
+				=> nrel_date_year: [2013];;
+			*);;
+			->rrel_end: 15_09_2013
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[15.09.2013](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [15];;
+					=> nrel_date_month: [9];;
+					=> nrel_date_year: [2013];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_rekkles_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Fnatic](* <-lang_en;; *);
+			[Контракт между Rekkles и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 11_11_2013
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[11.11.2013](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [11];;
+				=> nrel_date_month: [11];;
+				=> nrel_date_year: [2013];;
+			*);;
+			->rrel_end: 24_11_2014
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[24.11.2014](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [24];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2014];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_rekkles_and_alliance_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Alliance](* <-lang_en;; *);
+			[Контракт между Rekkles и Alliance](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: alliance_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 24_11_2014
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[24.11.2014](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [24];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2014];;
+				*);;
+			->rrel_end: 08_01_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[08.01.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [08];;
+					=> nrel_date_month: [1];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_rekkles_and_elements_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Elements](* <-lang_en;; *);
+			[Контракт между Rekkles и Elements](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_01_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[08.01.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [08];;
+					=> nrel_date_month: [1];;
+					=> nrel_date_year: [2015];;
+				*);;
+			->rrel_end: 13_05_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[13.05.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [13];;
+					=> nrel_date_month: [5];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_rekkles_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Rekkles and Fnatic](* <-lang_en;; *);
+			[Контракт между Rekkles и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 14_05_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[14.05.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [14];;
+					=> nrel_date_month: [5];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);;
+

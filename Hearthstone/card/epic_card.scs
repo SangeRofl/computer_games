@@ -1,0 +1,18 @@
+concept_card_epic
+=> nrel_main_idtf: [эпическая карта] (* <- lang_ru;; *);
+=> nrel_main_idtf: [epic card] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: 
+		[Опр.(эпическая карта)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+    	-> [Эпическая карта - это карта, редкости выше средней.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...(*
+		-> computer_game_hearthstone;;
+        -> concept_card;;
+	*);;
+*);
+
+<- sc_node_not_relation;;

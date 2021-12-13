@@ -1,0 +1,55 @@
+concept_dead_by_daylight_item_flashlight <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [фонарик(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [flashlight(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Фонарик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Фонарик - тип предмета в Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Фонарик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Фонарики используются Выжившими для ослепления Убийцы.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Фонарик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Если Убийца несет Выжившего на плече, ослепление Фонариком оглушит его на несколько секунд и заставит выронить жертву.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Фонарик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Фонарик эффективен против таких Убийц, как Ведьма(Ее ловушки могут быть уничтожены светом фонарика), Призрак(Если посветить ему в лицо во время выхода из невидимости, это оглушит его на несколько секунд и выведет из невидимости мгновенно) и Медсестра(Если посветить ей в лицо во время того, как она заряжает скачок, это переведет ее сразу в фазу усталости).]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

@@ -1,0 +1,51 @@
+concept_apex_gear_helmet_rare
+=> nrel_main_idtf: [rare helmet (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [редкий шлем (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры шлема
+=> nrel_apex_headshot_damage_decrease_percent: 20;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (редкий шлем (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [редкий шлем (Apex Legends) - шлем, который уменьшает входящий урон в голову легенды на 20% в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность редких шлемов на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [редкий шлем - второй по распространенности вид шлемов на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (редкий шлем)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/helmet/helmet_lvl2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

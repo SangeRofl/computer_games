@@ -1,0 +1,33 @@
+lib_component_agent_of_finding_game_on_the_number_of_players
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент поиска игры от количества игроков]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of finding game on the number of players]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_game_on_the_number_of_players;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/agent_of_finding_game_on_the_number_of_players.html"
+				(* <- lang_ru;; *);; 
+		*);;
+*);;
+
+question_finding_game_on_the_number_of_players <- sc_node_not_relation;;
+
+question_finding_game_on_the_number_of_players=> nrel_main_idtf: 
+	[действие. Найти игру от количества игроков] 
+	(* <- lang_ru;; *);
+	[action. Find game on the number of players] 
+	(* <- lang_en;; *);;

@@ -1,0 +1,32 @@
+concept_setting_era_of_information
+=> nrel_main_idtf: [информационная эпоха] (* <- lang_ru;; *);
+=> nrel_idtf: [era of information] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_cyberpunk; concept_setting_anti_utopia_of_future;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(информационная эпоха)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в будущем, где технологии человечества усовершенствовались по сравнению с нашим временем.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(информационная эпоха)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В таких играх обычно присутствуют летающие машины и искусственный интеллект] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

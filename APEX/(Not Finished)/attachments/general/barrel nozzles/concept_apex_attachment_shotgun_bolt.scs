@@ -1,0 +1,6 @@
+concept_apex_attachment_shotgun_bolt
+=> nrel_main_idtf: [shotgun bolt] (* <- lang_en;; *);
+=> nrel_main_idtf: [затвор для дробовика] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

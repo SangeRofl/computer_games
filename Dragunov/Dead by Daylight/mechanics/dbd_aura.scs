@@ -1,0 +1,122 @@
+concept_dead_by_daylight_aura <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [aура(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [аura(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- concept_game_mechanic;
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Аура(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Ауры - механика игры Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аура(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Ауры бывают разных цветов, в зависимости от того, принадлежат они Цели, Союзнику или Врагу.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аура(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Некоторые Разблокируемые предметы даруют носящим их способности чтения ауры.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аура(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [<table>
+	<tbody>
+		<tr>
+			<td>Цвет ауры</td>
+			<td>Исп. в общем</td>
+			<td>Использование Выжившим</td>
+			<td>Использование Убийцей</td>
+		</tr>
+		<tr>
+			<td><font color = "red">Красный</font></td>
+			<td>Стандартные способности чтения ауры</td>
+			<td>Ауры умирающих выживших, выживших на крюке, вещи убийцы(подсвеченные картой)</td>
+			<td>Ауры крюков, активных тотемов, выживших(подсвеченных способностями чтения ауры)</td>
+		</tr>
+		<tr>
+			<td><font color = "pink">Розовый</font></td>
+			<td>Аура врага</td>
+			<td>Ауры убийцы(подсвеченная разблокируемыми предметами), целей(подсвеченных картой или навыком Дежавю), сундуков(подсвеченных картой или навыком Мародерское чутьё)</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td><font color = "purple">Фиолетовый</font></td>
+			<td>-</td>
+			<td>-</td>
+			<td>Ауры иллюзий персонажа Доктор(в прошлом)</td>
+		</tr>
+		<tr>
+			<td><font color = "yellow">Желтый</font></td>
+			<td>Аура союзника</td>
+			<td>Ауры выживших(подсвеченные разблокируемыми предметами), окон и досок(подсвеченные навыком Уникальная возможность)</td>
+			<td>Ауры генераторов(подсвеченные навыком Раскол), крюки с выжившими на них</td>
+		</tr>
+		<tr>
+			<td><font color = "blue">Голубой</font></td>
+			<td>Особые цели</td>
+			<td>Ауры лунных генераторов, машин для коктейлей</td>
+			<td>Ауры лунных крюков, крюков барбекю</td>
+		</tr>
+		<tr>
+			<td><font color = "orange">Оранжевый</font></td>
+			<td>Особые цели(Хеллоуин)</td>
+			<td></td>
+			<td>Ауры Хеллоуинских Крюков</td>
+		</tr>
+		<tr>
+			<td>Белый</td>
+			<td>-</td>
+			<td>Ауры ящиков Свиньи, фонтанов преданности, предметов(подсвеченные навыком Мародерское чутье)</td>
+			<td>Ауры иллюзий персонажа Доктор(в настоящий момент), иллюзий досок, ящиков Свиньи, генераторов(находящихся под действием перков и улучшений убийцы), фонтанов преданности</td>
+		</tr>
+	</tbody>
+            </table>]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Аура(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Ауры можно увидеть сквозь любые препятствия и обычно на большие расстояния. Способности читать ауру отлично подходят для поиска союзников, врагов или целей.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

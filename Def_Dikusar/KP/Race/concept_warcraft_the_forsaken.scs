@@ -1,0 +1,69 @@
+concept_warcraft_the_forsaken
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_undead;
+
+=> nrel_main_idtf:
+      [Отрекшиеся ]
+      (*<-lang_ru;;*);
+       [Forskaen]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(нежить)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_universe;
+      company_blizzard;
+      concept_warcraft_undead
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Отрекшиеся — вымышленная раса из <b><sc_element sys_idtf="concept_warcraft_universe">вселенной Warcraft</sc_element></b>, 
+созданная компанией <b><sc_element sys_idtf="company_blizzard">Blizzard Entertainment</sc_element></b>.
+ Они отделились от основной расы <b><sc_element sys_idtf="concept_warcraft_undead">нежити</sc_element></b> и захватили большую
+  часть земель раннее принадлежавшей королевству Лордерон.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(нежить)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      game_character_illidan;
+      concept_warcraft_northrend;
+      concept_warcraft_the_scourge;
+      concept_warcraft_northrend;
+      game_character_lich_king
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После того как <b><sc_element sys_idtf="game_character_illidan">Иллидан</sc_element></b> попытался 
+расплавить ледяной континент <b><sc_element sys_idtf="concept_warcraft_northrend">Нордскол</sc_element></b>, 
+мощные энергии Короля Мертвых внутри его Ледяного трона начали постепенно слабеть. 
+Это привело к частичной потере контроля над дальними силами <b><sc_element sys_idtf="concept_warcraft_the_scourge">Плети</sc_element></b>. 
+В результате большая часть нежити под ментальным 
+контролем <b><sc_element sys_idtf="game_character_lich_king">Короля Мёртвых</sc_element></b> восстановила свою свободу воли. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+=>nrel_main_leader:game_character_sylvanas;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Forsaken.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+

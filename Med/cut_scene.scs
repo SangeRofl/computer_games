@@ -1,0 +1,46 @@
+concept_cut_scene
+
+=> nrel_main_idtf:[кат-сцена] (* <- lang_ru;; *);
+=> nrel_main_idtf:[cut-scene] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_gameplay;;  
+		-> concept_computer_game;;
+		-> concept_player;; 					//igrok
+	*);;
+		=> nrel_main_idtf: [Опр.(кат-сцена)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Кат-сцена - эпизод в компьютерной игре, в котором игрок слабо или вообще никак не может влиять на происходящие события, обычно с прерыванием геймплея] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(кат-сцена, сюжет, геймплей, пауза*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Кат-сцены используются для развития сюжета, визуального представления игрового процесса и заполнения пауз в геймплее](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(кат-сцена, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Кат-сцены могут быть анимированы средствами самой игры, либо использовать отснятый видеоматериал с живым действием](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

@@ -1,0 +1,36 @@
+concept_game_engine_commercial
+=> nrel_main_idtf: [коммерческий игровой движок] (* <- lang_ru;; *);
+=> nrel_main_idtf: [free game engine] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Коммерческий игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Коммерческие игровые движки — игровые движки,
+				которые распространяются как коммерческое программное
+				обеспечение и доступны для лицензирования юридическими
+				и/или физическими лицами за определённую сумму денег.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+		->concept_software;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Коммерческий игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Выпуск игр на свободном движке
+		невозможен без покупки игрового движка] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

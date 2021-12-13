@@ -1,0 +1,26 @@
+robert_yip
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Robert Yip](* <-lang_en;; *);
+		[Роберт Юип](* <-lang_ru;; *);
+	<-coach;
+	
+	<=nrel_with_whom: contract_robert_yip_and_misfits_gaming
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Robert Yip and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Robert Yip и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 05_12_2018;;
+		*);;
+	*);
+
+	=>nrel_citizen_of: Ireland;
+	=>nrel_surname: Yip;
+	=>nrel_first_name: Robert;;

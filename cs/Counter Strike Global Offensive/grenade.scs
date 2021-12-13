@@ -1,0 +1,72 @@
+grenade
+    <-sc_node_not_relation;
+	<= nrel_inclusion: concept_shop ;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [гранаты](* <-lang_ru;; *);
+        [grenades](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [светошумовая граната](*<- lang_ru;;*);
+            [flashbang](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (граната)] (* <- lang_ru;; *);
+            [Def. (grenade)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Граната — взрывчатый боеприпас, предназначенный для поражения живой силы и техники противника с помощью ручного метания.](*<- lang_ru;;*);
+                [A grenade - an explosive ordnance designed to defeat enemy personnel and equipment using manual throwing.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_grenade;;
+            ->nrel_explosive;;
+            ->nrel_enemy;;
+			->nrel_equipment;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        hand_grenade;
+		case;
+		charge;
+		explosive;
+		fuse
+    };;
+    => nrel_main_idtf: 
+        [Утв.(ручная граната, корпус, заряд, взрывчатое вещество, запал)] (* <- lang_ru;; *);
+        [Expl.(hand grenade, case, charge, explosive, fuse)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Современная ручная граната состоит из металлического корпуса, заряда взрывчатых веществ и взрывателя (запала).](*<- lang_ru;;*);
+            [Modern hand grenade consists of a metal case, a charge of explosives and a fuse (fuse).](*<- lang_en;;*);;
+    *);;
+*);
+
+=> nrel_inclusion:  	Molotov ;
+			Decoy_grenade ;
+			Flashbang ;
+			HE_Grenade ;
+			Smoke_Grenade ;
+			Incendiary_Grenade ;;
+
+Molotov => nrel_price : [400];;
+Decoy_grenade => nrel_price : [50];;
+Flashbang => nrel_price : [200];;
+HE_Grenade => nrel_price : [300];;
+Smoke_Grenade => nrel_price : [300];;
+Incendiary_Grenade => nrel_price : [600];;

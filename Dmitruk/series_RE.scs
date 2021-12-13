@@ -1,0 +1,40 @@
+concept_game_series_resident_evil
+<-sc_node_not_relation;
+
+-> concept_computer_game_resident_evil_revalations_2;
+-> concept_computer_game_resident_evil_7_biohazard;
+-> concept_computer_game_resident_evil_6;
+-> concept_computer_game_resident_evil_5;
+-> concept_computer_game_resident_evil_4;
+-> concept_computer_game_resident_evil_3_nemesis;
+-> concept_computer_game_resident_evil_2_2019;
+-> concept_computer_game_resident_evil_2;
+-> concept_computer_game_resident_evil_1;
+
+=> nrel_main_idtf:
+      [серия игр Resident Evil]
+      (*<-lang_ru;;*);
+       [game series Resident Evil]
+       (*<-lang_en;;*);  
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil)] (* <- lang_ru;; *);;
+
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Resident Evil — серия компьютерных игр жанра survival horror от третьего лица, принадлежащая компании Capcom, посвященных о ходячих мертвецов, биоружие, секретных разработках ученых.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Серия состоит из 36 игр.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<=nrel_include: concept_game_series;;

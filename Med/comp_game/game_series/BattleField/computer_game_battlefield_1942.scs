@@ -1,0 +1,85 @@
+computer_game_battlefield_1942						//publishers??
+=> nrel_main_idtf: [Battlefield 1942] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 1942] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_dice;
+=> nrel_publisher: company_electronic_arts; company_aspyr_media;
+=> nrel_localizer: company_softclub;
+
+//=> nrel_platform: concept_windows; concept_mac_os;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: refractor_engine_1;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_10_09_2002;;
+	=> nrel_main_idtf: [Дата выхода в США для Windows] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_20_09_2002;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для Windows] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_mac_os;;
+	=> nrel_publication_date: date_28_06_2004;;
+	=> nrel_main_idtf: [Дата выхода для Mac OS] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 1942)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра в жанре трехмерного шутера от первого лица на тему Второй мировой войны, разработанная Digital Illusions CE и изданная Electornic Arts, первая игра серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_setting_world_war_the_second;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

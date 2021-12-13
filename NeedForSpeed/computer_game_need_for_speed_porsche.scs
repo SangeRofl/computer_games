@@ -1,0 +1,62 @@
+computer_game_need_for_speed_porsche_unleashed
+=> nrel_main_idtf: [Need for Speed: Porsche Unleashed] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Porsche Unleashed] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_simulator;
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electronic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_23_02_2000;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Porsche Unleashed)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пятая часть серии полностью посвящена автомобилям Porsche. Несмотря на то, что игра вышла в 2000 году, фактически она является приуроченной к 50-летнему юбилею фирмы Porsche, который был в 1998 году.
+                    Помимо простых гонок (одиночная гонка, быстрое выбывание и выбывание), в игре есть два режима прохождения. В режиме «Эволюция» требуется участвовать в гонках, покупая, совершенствуя, ремонтируя и продавая машины,
+                    переходя из одной исторической эры в последующую, а каждая гонка требует свой класс автомобиля. В режиме «Гонщик-испытатель» требуется выполнять задания — проехать по отмеченному конусами маршруту, подвезти товарища,
+                    выиграть стихийную или организованную гонку. Иногда может пуститься в погоню полиция] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_porsche_unleashed;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

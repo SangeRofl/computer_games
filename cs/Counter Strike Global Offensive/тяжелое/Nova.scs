@@ -1,0 +1,5 @@
+Nova
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Nova](*<-lang_ru;;*);
+		[Nova](*<-lang_en;;*);;

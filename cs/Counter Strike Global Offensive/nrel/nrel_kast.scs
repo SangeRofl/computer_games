@@ -1,0 +1,6 @@
+nrel_kast
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[KAST*](*<-lang_ru;;*);
+		[KAST*](*<-lang_en;;*);;

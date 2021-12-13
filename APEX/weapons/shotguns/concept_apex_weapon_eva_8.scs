@@ -1,0 +1,118 @@
+concept_apex_weapon_eva_8
+=> nrel_main_idtf: [EVA-8 Auto] (* <- lang_en;; *);
+=> nrel_main_idtf: [EVA-8 Авто] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_shotgun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 9;
+=> nrel_apex_projectiles_shape: number_eight;
+=> nrel_weapon_ammo_type: concept_apex_ammo_shotgun_shell;
+
+=> nrel_weapon_rate_of_fire: 128;
+=> nrel_weapon_damage_per_second: 134;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 90;
+=> nrel_apex_default_legend_common_helmet_damage: 81;
+=> nrel_apex_default_legend_rare_helmet_damage: 72;
+=> nrel_apex_default_legend_epic_helmet_damage: 68;
+=> nrel_apex_default_legend_legendary_helmet_damage: 68;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 95;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 85;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 76;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 71;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 71;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 77;
+=> nrel_apex_fortified_legend_common_helmet_damage: 69;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 61;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 58;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 58;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 63;
+=> nrel_apex_low_profile_legend_body_damage: 66;
+=> nrel_apex_fortified_legend_body_damage: 54;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 54;
+=> nrel_apex_low_profile_legend_leg_damage: 57;
+=> nrel_apex_fortified_legend_leg_damage: 46;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.43;
+=> nrel_weapon_recoil_type: concept_apex_recoil_negligible;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 8;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_shotgun_bolt;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_double_tap_trigger;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (EVA-8 Авто)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [EVA-8 Авто - дробовик, который использует ружейные патроны и имеет автоматический тип стрельбы, выстреливая по 9 снарядов за выстрел] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_shotgun_shell;
+		concept_apex_weapon_shotgun;
+        concept_apex_fire_mode_auto;
+		nrel_apex_projectiles_per_shot
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на EVA-8 Авто)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 49 скинов на EVA-8 Авто: 9 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (EVA-8 Авто)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_eva.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

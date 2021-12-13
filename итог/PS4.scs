@@ -1,0 +1,55 @@
+concept_game_console -> PlayStation_4 ;;
+
+PlayStation_4
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Плэйстэшн 4]
+		(* 
+			<- lang_ru;; 
+		*);
+		[PlayStation 4]
+		(*
+		<- lang_en;; 
+		*);;
+		
+PlayStation_4 <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/PS4.html"(*<-lang_ru;;=>nrel_format:format_html;;*);; 
+			//TODO: ADD English
+			*);; 
+*);; 
+
+PlayStation_4 <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Плэйстэшн 4)](*<-lang_ru;;*); 
+				[Pic. (PlayStation 4)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/PS4.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+PlayStation_4 => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 2013;; 
+2013 => nrel_main_idtf : [2013 год](*<-lang_ru;;*);; 
+2013 => nrel_main_idtf : [year of 2013](*<-lang_en;;*);; 
+PlayStation_4 => nrel_production_year : 2013;; 
+value -> 4;; 
+
+PlayStation_4 <- rrel_seies: 4;; 
+

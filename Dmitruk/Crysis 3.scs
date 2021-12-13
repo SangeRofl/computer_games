@@ -1,0 +1,62 @@
+concept_computer_game_crysis_3
+
+=> nrel_main_idtf:     
+	 [Crysis 3]   (*<-lang_ru;;*);
+      [Crysis 3]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_science_fiction;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_announcement_date: date_16.04.2012;
+=>nrel_publication_date: date_19.02.2013;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: CryEngine_3;
+=>nrel_publisher: company_electronic_arts;
+=>nrel_developer: company_crytek;
+=>nrel_localizer: company_soft_club;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_360;
+concept_playstation_3
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Crysis 3)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_crysis;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Crysis 3— мультиплатформенная компьютерная игра, научно-фантастический шутер от первого лица, разработанный немецкой компанией Crytek и изданный Electronic Arts, выпущенная 19 февраля 2013 года. Третья игра одноимённой серии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/crysis_3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Crysis 3)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Crysis 3 использует игровой движок собственной разработки Crytek — CryEngine 3, и является второй вышедшей игрой на этом движке. Crysis 3 является продолжением игры Crysis 2. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

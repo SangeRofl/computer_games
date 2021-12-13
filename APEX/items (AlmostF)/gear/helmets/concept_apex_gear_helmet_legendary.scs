@@ -1,0 +1,52 @@
+concept_apex_gear_helmet_legendary
+=> nrel_main_idtf: [legendary helmet (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [легендарный шлем (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры шлема
+=> nrel_apex_headshot_damage_decrease_percent: 25;
+=> nrel_apex_gear_powerup: concept_apex_gear_powerup_fastcharge;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (легендарный шлем (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [легендарный шлем (Apex Legends) - шлем, который уменьшает входящий урон в голову легенды на 25% в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность легендарных шлемов на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [легендарный шлем - самый распространенный вид шлемов на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (легендарный шлем)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/helmet/helmet_lvl4.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

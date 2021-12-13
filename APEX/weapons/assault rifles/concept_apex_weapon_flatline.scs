@@ -1,0 +1,121 @@
+concept_apex_weapon_flatline
+=> nrel_main_idtf: [VK-47 Flatline] (* <- lang_en;; *);
+=> nrel_main_idtf: [VK-47 "Флэтлайн"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_assault_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 600;
+=> nrel_weapon_damage_per_second: 190;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 38;
+=> nrel_apex_default_legend_common_helmet_damage: 34;
+=> nrel_apex_default_legend_rare_helmet_damage: 30;
+=> nrel_apex_default_legend_epic_helmet_damage: 28;
+=> nrel_apex_default_legend_legendary_helmet_damage: 28;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 40;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 36;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 32;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 29;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 29;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 32;
+=> nrel_apex_fortified_legend_common_helmet_damage: 29;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 26;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 24;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 24;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 19;
+=> nrel_apex_low_profile_legend_body_damage: 20;
+=> nrel_apex_fortified_legend_body_damage: 16;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 14;
+=> nrel_apex_low_profile_legend_leg_damage: 15;
+=> nrel_apex_fortified_legend_leg_damage: 12;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_diagonal_upper_left;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 20;
+=> nrel_apex_common_magazine_capacity: 25;
+=> nrel_apex_rare_magazine_capacity: 28;
+=> nrel_apex_epic_magazine_capacity: 30;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_heavy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_anvil_receiver;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (VK-47 "Флэтлайн")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [VK-47 "Флэтлайн" - штурмовая винтовка, которая использует тяжелые патроны и имеет переключаемые автоматический и одиночный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_heavy_round;
+		concept_apex_weapon_assault_rifle;
+        concept_apex_fire_mode_auto;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на VK-47 "Флэтлайн")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 49 скинов на VK-47 "Флэтлайн": 8 легендарных, 7 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (VK-47 "Флэтлайн")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_flatline.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

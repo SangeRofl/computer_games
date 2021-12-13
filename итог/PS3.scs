@@ -1,0 +1,56 @@
+concept_game_console -> PlayStation_3 ;;
+
+PlayStation_3
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Плэйстэшн 3]
+		(* 
+			<- lang_ru;; 
+		*);
+		[PlayStation 3]
+		(*
+		<- lang_en;; 
+		*);;
+		
+PlayStation_3 <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/PS3.html"(*<-lang_ru;;=>nrel_format:format_html;;*);; 
+			//TODO: ADD English
+			*);; 
+*);; 
+
+PlayStation_3 <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Плэйстэшн 3)](*<-lang_ru;;*); 
+				[Pic. (PlayStation 3)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/PS3.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+PlayStation_3 => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 2006;; 
+2006 => nrel_main_idtf : [2006 год](*<-lang_ru;;*);; 
+2006 => nrel_main_idtf : [year of 2006](*<-lang_en;;*);; 
+PlayStation_3 => nrel_production_year : 2006;; 
+PlayStation_3 <- rrel_seies: 3;; 
+value -> 3;; 
+
+
+

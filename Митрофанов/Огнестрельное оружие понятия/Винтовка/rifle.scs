@@ -1,0 +1,48 @@
+concept_rifle
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Винтовка] (* <- lang_ru;;*);
+	[Rifle] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_rifle;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Винтовка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Винтовка — это ручное огнестрельное оружие, состоящее из длинного ствола, ствольной коробки и приклада для опоры плеча.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенность винтовки)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Из винтовки стреляют одиночными выстрелами.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://rifle.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_military_rifle;;
+	-> concept_police_rifle;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

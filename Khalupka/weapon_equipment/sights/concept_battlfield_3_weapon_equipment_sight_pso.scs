@@ -1,0 +1,32 @@
+concept_battlefield_3_weapon_equipment_sight_pso
+=> nrel_main_idtf: [sight PSO-1 (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [прицел ПСО-1 (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_equipment_sight; 
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (прицел ПСО-1 (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_sight_pso">ПСО-1</b></sc_element> - 
+		это оптический 4-крат. <b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_sight">прицел</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_equipment_sight;
+        concept_battlefield_3_weapon_equipment_sight_pso
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/pso.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,52 @@
+concept_the_burning_legion
+
+=> nrel_main_idtf:
+      [Пылающий Легион]
+      (*<-lang_ru;;*);
+       [The Burning Legion]
+       (*<-lang_en;;*);
+=>nrel_idtf: [Легион] (* <- lang_ru;; *); 
+=>nrel_idtf: [Great Burning Shadow] (* <- lang_en;; *); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пылающий Легион)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_azeroth
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Армия демонов, стремящаяся уничтожить все существующие миры, в том числе Азерот, ввергнув вселенную в первобытный хаос.
+
+Легион был основан падшим титаном Саргерасом, у него был лейтенант Кил'джеден Искуситель и павший при битве у Нордассила Архимонд Разрушитель, во время второго вторжения Пылающего Легиона в Азерот.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Пылающий Легион)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_race
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В Пылающий Легион входили две самые могучие демонические расы — эредары и натрезимы, они же Повелители Ужаса — наделённые умом и хитростью демоны, которых встретил и завербовал для службы себе Саргерас. Именно Саргерас в начале времён развратил королеву эльфов Азшару, из-за чего древний Азерот распался на несколько континентов.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+=>nrel_main_leader:game_character_sargeras;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Bl.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

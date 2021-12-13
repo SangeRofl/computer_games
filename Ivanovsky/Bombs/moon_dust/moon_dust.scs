@@ -1,0 +1,49 @@
+concept_moon_dust
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Лунная пыль] (* <- lang_ru;;*);
+	[Moon dust] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Лунная пыль)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют против чудовищ,умеющих перевоплощаться или использовать невидимость.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Полезность бомбы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полезна против: Монстров, которые умеют обращаться и / или становиться невидимыми, то есть против практически всех видов вампиров, против различных духов и призраков, а также против волколаков и туманников.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://moon_dust.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_ordinary_moon_dust;;
+    -> concept_enhanced_moon_dust;;
+    -> concept_superior_moon_dust;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

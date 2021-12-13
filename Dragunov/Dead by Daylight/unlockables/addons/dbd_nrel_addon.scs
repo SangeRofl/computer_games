@@ -1,0 +1,53 @@
+nrel_dead_by_daylight_add_on <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [улучшение*(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [add-on*(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Улучшение*(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Улучшение* - отношение, связывающее предмет выжившего или силу убийцы с улучшением.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    <- description_of_a_typical_instance;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/nr_addon_example.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: {
+            concept_dead_by_daylight_killer_power;
+            concept_dead_by_daylight_item;
+            concept_dead_by_daylight_addon    
+        };;
+*);
+
+=> nrel_first_domain: ... (*
+    <= nrel_union: {
+        concept_dead_by_daylight_item;
+        concept_dead_by_daylight_killer_power
+    };;
+*);
+
+=> nrel_second_domain: concept_dead_by_daylight_addon;;
+
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_dead_by_daylight_add_on;;
+*);;

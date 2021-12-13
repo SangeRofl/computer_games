@@ -1,0 +1,35 @@
+concept_game_engine_linux
+=> nrel_main_idtf: [игровой движок linux] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game engine linux] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Игровой движок linux)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок linux - игровой движок предназначенный для linux] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+		-> concept_operation_system;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровой движок linux)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Пакеты Leadwerks Engine собраны
+		под недавно вышедшую Ubuntu 14.04 LTS
+		и требуют для работы проприетарных
+		видеодрайверов AMD или Nvidia] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

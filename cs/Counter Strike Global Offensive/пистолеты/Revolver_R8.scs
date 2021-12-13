@@ -1,0 +1,5 @@
+Revolver_R8
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[R8 Revolver](*<-lang_ru;;*);
+		[R8 Revolver](*<-lang_en;;*);;

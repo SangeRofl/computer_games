@@ -1,0 +1,45 @@
+concept_dead_by_daylight_character_level <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [уровень персонажа(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [character level(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- parameter;
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. уровень персонажа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Уровень персонажа - это параметр, элементами которого являются целые числа. Его значение соответствует численному значению уровня прокачки персонажа в игре Dead by Daylight.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. уровень персонажа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Минимальный уровень персонажа в Dead by Daylight - 1, максимальный - 50.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. уровень персонажа(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [При достижении максимального уровня открывается опция повышения уровня престижа персонажа.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

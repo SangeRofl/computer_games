@@ -1,0 +1,72 @@
+concept_global_wargame
+=> nrel_main_idtf: [глобальная военная игра] (* <- lang_ru;; *);
+=> nrel_idtf: [global wargame] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...		
+(*
+	-> concept_microcontrol;;
+        -> concept_tactic;;
+        -> concept_planning;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+
+// => nrel_inclusion: *******;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(глобальная военная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это множество игр, где поле боя делится на секторы. В каждом секторе может одновременно находиться строго один отряд. Перемещения происходят так же четко – с одного элемента на другой. У каждого подчиненного отряда есть своя дальность передвижения и дальность боя, иногда есть спецприемы. На этих различиях отрядов друг от друга и строится «тактика» боя.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_sector;;
+		-> concept_setka;;
+                -> nrel_build;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(пошаговый режим)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется пошаговый режим] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_finding_available_subject_at_fix_price
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска доступных предметов по фиксированной цене.]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for finding available subject at fix price]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+
+lib_component_ui_menu_file_for_finding_available_subject_at_fix_price = [*^"file://ui_menu_file_for_finding_available_subject_at_fix_price.scsi"*];;

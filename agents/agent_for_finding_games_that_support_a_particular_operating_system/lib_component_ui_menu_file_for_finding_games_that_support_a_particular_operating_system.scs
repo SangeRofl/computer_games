@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_finding_games_that_support_a_particular_operating_system
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска игр, поддерживающих определённую операционную систему]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for finding games that support a particular operating system]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+
+lib_component_ui_menu_file_for_finding_games_that_support_a_particular_operating_system = [*^"file://ui_menu_file_for_finding_games_that_support_a_particular_operating_system.scsi"*];; 

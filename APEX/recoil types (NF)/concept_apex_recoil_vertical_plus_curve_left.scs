@@ -1,0 +1,6 @@
+concept_apex_recoil_vertical_plus_curve_left
+=> nrel_main_idtf: [vertical + curve left recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [вертикальная отдача с кривой влево] (* <- lang_ru;; *);
+
+<- concept_apex_recoil;
+<- sc_node_not_relation;;

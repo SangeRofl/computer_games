@@ -1,0 +1,44 @@
+nrel_dead_by_daylight_offering <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [подношение*(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering*(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение*(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношение* - отношение, связывающее персонажа Dead by Daylight - выжившего или убийцу с подношением.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: {
+            concept_dead_by_daylight_killer;
+            concept_dead_by_daylight_survivor;
+            concept_dead_by_daylight_offering   
+        };;
+*);
+
+=> nrel_first_domain: ... (*
+    <= nrel_union: {
+        concept_dead_by_daylight_killer;
+        concept_dead_by_daylight_survivor
+    };;
+*);
+
+=> nrel_second_domain: concept_dead_by_daylight_offering;;
+
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_dead_by_daylight_offering;;
+*);;

@@ -1,0 +1,42 @@
+computer_game_hon
+=> nrel_main_idtf: [Heroes of Newerth] (* <- lang_en;; *);
+=> nrel_main_idtf: [Heroes of Newerth] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_MOBA;
+=>nrel_maximum_number_of_players: number5;
+=>nrel_minimum_number_of_players: number1;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_s2_games;
+=> nrel_developer: company_s2_games;
+=> nrel_publication_date: date_2010;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_game_engine: k2_engine;
+=> nrel_plot: [отсутствует];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Heroes of Newerth)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре MOBA, выпущена на компанией S2 Games в 2010 году на платформе Windows. Многопользовательская с отсутствием сюжета. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/hon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

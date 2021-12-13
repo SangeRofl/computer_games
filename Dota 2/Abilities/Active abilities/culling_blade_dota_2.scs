@@ -1,0 +1,45 @@
+culling_blade_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Culling blade] (* <- lang_en;;*);
+        
+=> nrel_main_idtf:
+        [Culling blade] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Culling blade)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой кидается на ослабшего противника, мгновенно убивая цель, если у неё низкий уровень здоровья. В ином случае удар нанесёт лишь небольшой урон. Герой и его союзники поблизости получат дополнительную скорость, а способность мгновенно восстановится, если ей убить вражеского героя.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Culling blade)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Словно воплощение самой яростной битвы, Могул Хан жестоко расправляется с теми, кто осмелился дать ему бой.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+
+=> nrel_cooldown : [50];
+=> nrel_default_damage : [300];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Culling_Blade_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+

@@ -1,0 +1,105 @@
+nrel_hearthstone_effect_divine_shield
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект Божественный щит* ]
+	(* <- lang_ru;;	*);
+	[Effect Divine Shield* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Divine_shield.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта Божественный щит ](*<-lang_ru;;*);
+		[Description of Divine Shield effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{     
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_class_hero;
+        concept_class_paladin;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Божественный щит* - это способность, заставляющая миньона игнорировать следующий урон, который он получает. После получения любого урона Божественный Щит удаляется, и этот урон уменьшается до 0. Количество получаемого урона не имеет значения и может быть получено из любого источника, включая бой в качестве атакующего или защитника, заклинания , Силы героев или другие эффекты.] (* <- lang_ru;; *);
+
+            [Divine Shield is an ability which causes a minion to ignore the next damage it receives. Upon receiving any damage the Divine Shield is removed, and that damage is reduced to 0. The amount of damage taken is not relevant, and may be from any source, including combat as either attacker or defender, spells, Hero Powers or other effects.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Снятие Божественного Щита с помощью урона часто называют треском , из-за его сходства с пузырем.] (* <- lang_ru;; *);
+
+            [Removing a Divine Shield through damage is often known as popping it, due to its resemblance to a bubble. Divine Shield is available to all classes, but is most strongly associated with the paladin class.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        nrel_hearthstone_effect_silence;
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon
+
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Божественный щит* - это способность, заставляющая миньона игнорировать следующий урон, который он получает, независимо от его количества и источника.] (* <- lang_ru;; *);
+
+            [Divine Shield is an ability which causes a minion to ignore the next damage it receives, regardless of its amount and source.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [При получении любого урона этот урон уменьшается до 0, а любой эффект Божественного щита удаляется.] (* <- lang_ru;; *);
+
+            [Upon receiving any damage, that damage is reduced to 0 and any Divine Shield effect is removed.] (* <- lang_en;; *);;
+	*);;
+        <= nrel_sc_text_translation: ...
+    (*
+		-> [Помимо поглощения урона, Божественный Щит также может быть удален с помощью эффектов молчания, эффектов трансформации и Боевого клича Кровавого Рыцаря .] (* <- lang_ru;; *);
+
+            [Other than by absorbing damage, Divine Shield can also be removed through silence effects, transform effects and Blood Knight's Battlecry.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Миньон с возможностью Divine Shield получит эффект Divine Shield , когда он входит в игру с помощью любых средств (играемый непосредственно от руки, положить в поле боя по DeathLord , воскрешаетесь по Redemption , вызвал на голодный дракон и так далее). Как только эффект будет использован, текст карты все равно будет присутствовать, но ничего не сделает.] (* <- lang_ru;; *);
+
+            [A minion with the Divine Shield ability will get the Divine Shield effect whenever it enters play by any means (played directly from the hand, put into battlefield by Deathlord, ressurected by Redemption, summoned by Hungry Dragon and so on). Once the effect is consumed, the card text will still be present but does not do anything.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Стратегия использования эффекта комбо] (* <- lang_ru;; *);
+        [Strategy for using combo effect](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        concept_hearthstone_effect_triggered;
+		concept_card;
+        concept_class_druid;
+        concept_card_minion
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Поскольку Божественный Щит удален любым источником урона, независимо от количества, при стремлении быстро уничтожить экранированную цель, часто целесообразно использовать слабую способность убрать щит, прежде чем нацелить миньона с более существенной атакой (если требуется) , Хорошие источники для этого включают слабых миньонов, заклинания с низким уроном, такие как « Чародейский взрыв» , и Магия Силы Огня . Карты с низким повреждения вторичных эффектов , как в друида «s Размах и воина » s Укус Смерти являются так же полезны, в первую очередь путем ориентации другого миньона, позволяя вторичное повреждение удалить Divine Shield.] (* <- lang_ru;; *);
+
+            [Since Divine Shield is removed by any source of damage, regardless of amount, when seeking to quickly destroy a shielded target, it is often wise to use a weak ability to remove the shield before targeting the minion with a more substantial attack (if required). Good sources for this include weak minions, low damage spells like Arcane Explosion, and the mage Hero Power Fireblast. Cards with low damage secondary effects like a druid's Swipe and warrior's Death's Bite are similarly useful, by primarily targeting another minion while allowing the secondary damage to remove the Divine Shield.] (* <- lang_en;; *);;
+	*);;
+*);;

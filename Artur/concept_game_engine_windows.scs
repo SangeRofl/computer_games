@@ -1,0 +1,37 @@
+concept_game_engine_windows
+=> nrel_main_idtf: [игровой движок windows] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game engine windows] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Игровой движок windows)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок windows - игровой движок предназначенный для windows os] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+		-> concept_operation_system;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровой движок windows)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [RenderWare – игровой кроссплатформенный движок,
+		включающий все необходимые компоненты для разработки
+		видео игр и трёхмерных приложений: графический движок,
+		физический движок, звуковой движок, систему искусственного
+		интеллекта и многое другое. Разработанн в 1996 году британской
+		компанией Criterion Games. Движок RenderWare поддерживает платформы: Windows] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

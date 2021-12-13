@@ -1,0 +1,54 @@
+concept_eft_weapon_rsass
+=> nrel_main_idtf: [RSASS(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [RSASS(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_marxman_rifle;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_7.62x51;
+=> nrel_eft_weapon_sighting_distance: 500;
+=> nrel_eft_weapon_rate_of_fire: 700;
+=> nrel_eft_weapon_accuracy: 0.05;
+=> nrel_eft_weapon_effective_distance: 900;
+=> nrel_eft_weapon_starting_speed: 799;
+=> nrel_eft_weapon_weight: 5.941;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (RSASS(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [RSASS(Remington Semi Automatic Sniper System) - совместная разработка компаний "Remington Arms" и "JP Enterprises" с целью создания высокоточной марксманской винтовки.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_marxman_rifle
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (точность стрельбы RSASS(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Данное оружие показывает прекрасную точность на 800 и более метров, при этом имея все тактические преимущества полуавтоматической снайперской винтовки.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (RSASS(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Rsass.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

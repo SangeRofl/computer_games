@@ -1,0 +1,54 @@
+concept_game_console -> Nintendo ;;
+
+Nintendo
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Нинтендо]
+		(* 
+			<- lang_ru;; 
+		*);
+		[Nintendo]
+		(*
+		<- lang_en;; 
+		*);;
+		
+Nintendo <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+
+				->rrel_example: "file://HTML/Nintendo.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			*);; 
+*);; 
+
+Nintendo <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Нинтендо)](*<-lang_ru;;*); 
+				[Pic. (Nintendo)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/Nintendo.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+Nintendo => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 1983;; 
+1983 => nrel_main_idtf : [1983 год](*<-lang_ru;;*);; 
+1983 => nrel_main_idtf : [year of 1983](*<-lang_en;;*);; 
+Nintendo => nrel_release_date : 1983;; 
+
+value -> Famicom;; 
+

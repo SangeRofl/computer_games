@@ -1,0 +1,23 @@
+ui_menu_equils_game
+
+<- ui_user_command_class_atom; 
+ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: 
+	[Найти компьютерные игры похожие на данную] (* <- lang_ru;; *);
+	[Find computer games simular this] (* <- lang_en;; *);
+
+=> ui_nrel_command_template:
+[*
+	question_equils_game _-> ._question_equils_game_instance (* _-> ui_arg_1;; *);;
+	._question_equils_game_instance _<- question;;
+*];
+
+=> ui_nrel_command_lang_template: 
+	[Запрос похожих игр: $ui_arg_1] (* <- lang_ru;; *);
+	[Request of simular game: $ui_arg_1] (* <- lang_en;; *);;
+
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+    	-> ui_menu_equils_game;;
+*);;*/

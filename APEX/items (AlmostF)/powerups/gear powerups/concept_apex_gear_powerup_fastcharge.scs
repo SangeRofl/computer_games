@@ -1,0 +1,39 @@
+concept_apex_gear_powerup_fastcharge
+=> nrel_main_idtf: [Fast Charge (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Быстрая Зарядка (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры способности (улучшения)
+=> nrel_apex_tactical_ability_cooldown_decrease_percent: 25;
+=> nrel_apex_ultimate_ability_cooldown_decrease_percent: 25;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Быстрая Зарядка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Быстрая Зарядка (Apex Legends) - улучшение экипировки, которое ускоряет перезарядку тактической и ультимативной способности в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ability_tactical;
+		concept_apex_ability_ultimate
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (вид экипировки с улучшением 'Быстрая Зарядка')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На момент создания статьи в игре улучшением 'Быстрая Зарядка' обладает только легендарный шлем.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_helmet_legendary
+	};;
+*);
+
+<- concept_apex_gear_powerup;
+<- sc_node_not_relation;;

@@ -1,0 +1,57 @@
+concept_mutant
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Мутант] (* <- lang_ru;;*);
+	[Mutant] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_mutant;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Мутант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Особь животных или растений, возникшая вследствие мутации.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Возникновение мутантов в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мутанты в игровом мире Dying Light возникли в результате воздействия вируса под названием Харранский вирус.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://mutant.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_bolter;;
+    	-> concept_bombers;;
+    	-> concept_goons;;
+	-> concept_toad;;
+	-> concept_viral;;
+	-> concept_gas_tank;;
+	-> concept_screamer;;
+	-> concept_biter;;
+	-> concept_night_hunter;;
+	-> concept_volatile;;
+	-> concept_demolishers;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

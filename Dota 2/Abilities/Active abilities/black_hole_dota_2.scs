@@ -1,0 +1,45 @@
+black_hole_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Black hole] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Black hole] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Black hole)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Призывает воронку, засасывающую всех врагов, находящихся вблизи. При этом противники не могут двигаться, атаковать и применять заклинания. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Black hole)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Земля содрогается, когда предвечный создает всеразрушающую черную дыру, способную уничтожать миры. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  => nrel_cooldown : [160];
+=> nrel_default_damage : [800];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Black_Hole_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

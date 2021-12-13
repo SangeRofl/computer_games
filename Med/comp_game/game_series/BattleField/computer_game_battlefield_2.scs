@@ -1,0 +1,62 @@
+computer_game_battlefield_2					//-> concept_tactical_shooter;;???
+=> nrel_main_idtf: [Battlefield 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 2] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_real_world;
+
+<- concept_three_dimensional_game;
+<- concept_singleplatform_game;
+
+=> nrel_developer: company_dice;
+=> nrel_publisher: company_electronic_arts;
+=> nrel_localizer: company_softclub;
+
+=> nrel_publication_date: date_21_06_2005;
+
+=> nrel_platform: concept_windows;
+
+=> nrel_game_engine: refractor_engine_2;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 2)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра в жанре трехмерного тактического шутера от первого лица с элементами стратегии и ролевой игры, разработанная Digital Illusions CE и изданная Electornic Arts, третья игра серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+//		-> concept_tactical_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> concept_computer_game;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

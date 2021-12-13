@@ -1,0 +1,39 @@
+concept_ring_of_regen
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [ring of regen] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [кольцо регена] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(ring of regen)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Гномы считают, что это кольцо приносит удачу.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(ring of regen)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых низкий хп реген в начале игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ring_of_regen.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

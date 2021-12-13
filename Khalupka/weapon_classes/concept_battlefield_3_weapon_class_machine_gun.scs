@@ -1,0 +1,53 @@
+concept_battlefield_3_weapon_class_machine_gun
+=> nrel_main_idtf: [Class machine gun Battlefield 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс пулеметы Battlefield 3] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapons;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (Класс пулеметы Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_machine_gun">Класс пулеметы в Battlefield 3</b></sc_element> — 
+		особый тип 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>, предназначеный для подавления и нанесения урона 
+		<b><sc_element sys_idtf="concept_battlefield_3_character">персонажам</b></sc_element> 
+		противника на средних дистанциях. Магазины у пулеметов на 40-200 патронов. Данный класс 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element> доступен только 
+		<b><sc_element sys_idtf="concept_battlefield_3_class_support">классу поддержки.</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_machine_gun;
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_class_support
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Пулемёты в Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Всего в <b><sc_element sys_idtf="computer_game_battlefield_3">Battlefeild 3</b></sc_element> представлены 11 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_machine_gun">пулемётов</b></sc_element>. Cамыми популярными являются:<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_m27_iar">M27 IAR</b></sc_element>,<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_rpk_74m">РПК-74М</b></sc_element>,<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_pecheneg">ПКП "ПЕЧЕНЕГ"</b></sc_element>,<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_m249">M249</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_machine_gun;
+        concept_battlefield_3_weapon_m27_iar;
+        concept_battlefield_3_weapon_rpk_74m;
+        concept_battlefield_3_weapon_pecheneg;
+        concept_battlefield_3_weapon_m249;
+        computer_game_battlefield_3
+	};;
+*);
+
+<- sc_node_not_relation;;
+

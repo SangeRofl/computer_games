@@ -1,0 +1,6 @@
+sc_text_agent_find_team_roster
+-> rrel_key_sc_element:
+	agent_find_team_roster;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_team_roster = [*^"file://agent_find_team_roster.scsi"*];;

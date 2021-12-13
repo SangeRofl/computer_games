@@ -1,0 +1,5 @@
+G3SG1
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[G3SG1](*<-lang_ru;;*);
+		[G3SG1](*<-lang_en;;*);;

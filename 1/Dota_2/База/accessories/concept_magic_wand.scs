@@ -1,0 +1,39 @@
+concept_magic_wand
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [magic wand] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Волшебная палочка] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(magic wand)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Улучшеная волшебная палочка, используемая для концентрации магической энергии как начинающими волшебниками, так и великими колдунами.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(magic wand)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Не дает заряды от переключаемых способностей, активных модификаторов атаки и способностей срабатывающих от других способностей. Прерывает произносимые заклинания владельца при применении.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/magic_wand.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

@@ -1,0 +1,58 @@
+concept_computer_game_far_cry
+
+=> nrel_main_idtf:     
+	 [Far Cry]   (*<-lang_ru;;*);
+      [Far Cry]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_open_word;
+<-concept_setting_science_fiction;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_publication_date: date_23.03.2004;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: CryEngine_1;
+=>nrel_publisher: company_ubisoft;
+=>nrel_developer: company_crytek;
+=>nrel_localizer: company_buka;
+=>nrel_platform: concept_windows;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Far Cry)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_far_cry;
+concept_three_dimensional_game;
+concept_singleplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Far Cry - компьютерная игра в жанре научно-фантастического шутера от первого лица разработанная немецкой компанией Crytek и изданная Ubisoft 23 марта 2004 года для персональных компьютеров под управлением Microsoft Windows. Первая игра одноимённой серии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/fr_1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Far Cry)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[  К игре прилагается редактор уровней Sandbox 1, позволяющий создавать свои полноценные миссии для этой игры. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

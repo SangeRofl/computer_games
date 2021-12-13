@@ -1,0 +1,42 @@
+concept_card_minion
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Существо] (* <- lang_ru;; *);
+	[Minion] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Существо)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+	  -> concept_card;;
+    -> concept_ability;;
+    -> nrel_battlecry;;
+    -> concept_card_legendary;;
+    -> concept_card_common;;
+    -> concept_card_epic;;
+    -> concept_card_legendary;;
+    -> concept_card_hero;;
+    -> concept_card_rare;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Существо -  один из трёх типов карт в игре. Существуют как классовые карты, так и карты, доступные любому герою.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Существо)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+	    -> concept_ability;;
+      -> nrel_battlecry;;
+	    -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Существа помогают герою в бою. Они наносят или принимают урон от героя или других существ. Некоторые существа используют определенные способности, таких, например, как «провокация» или «боевой клич».](*<-lang_ru;;*);;
+      *);;
+  *);;

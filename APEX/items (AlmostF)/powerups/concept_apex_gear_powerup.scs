@@ -1,0 +1,38 @@
+concept_apex_gear_powerup
+=> nrel_main_idtf: [gear powerup (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [улучшение экипировки (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (улучшение экипировки (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Улучшение экипировки (Apex Legends) - способность экипировки, которая улучшает показатели легенды в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (уровень экипировки с улучшениями)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На момент создания статьи в игре улучшениями обладает только экипировка легендарного уровня.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_gear_backpack_legendary;
+		concept_apex_gear_shield_legendary;
+		concept_apex_gear_knockdown_shield_legendary;
+		concept_apex_gear_helmet_legendary
+	};;
+*);
+
+
+<- sc_node_not_relation;;

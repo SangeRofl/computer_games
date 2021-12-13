@@ -1,0 +1,64 @@
+concept_skyrim_human_race_redguard
+
+=> nrel_main_idtf:     
+	 [Редгарды (Скайрим)]   (*<-lang_ru;;*);
+      [Redguards (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_skyrim_human_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Редгарды (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Редгарды  — одна из десяти <b><sc_element sys_idtf="concept_skyrim_race"> рас </b></sc_element> в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>
+, доступная для создания <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О происхождении)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Редгарды берут свое происхождение из древнего континента Йокуда, который был затоплен морем в древние времена.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О способностях редгаров)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Редгарды славятся своим красноречием, которое дарует им возможность преуспеть как в торговле, так и на сцене. А благодаря своим ремесленническим корням, они отличные кузнецы и плотники. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об особенностях редгаров)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В среднем по уровню интеллекта редгарды примерно равны среднестатистическому  <b><sc_element sys_idtf="concept_skyrim_human_race">человеку</b></sc_element>. Они соответствуют среднему человеческому росту, более сильны и ловки, 
+а также отлично приспособлены для проживания в жарком, сухом климате пустыни Алик'р. 
+Обычно они имеют тёмный цвет кожи, от светло-коричневого до чёрного, иногда с красноватым оттенком. Физиология редгардов позволяет им становиться хорошими воинами, прежде всего мечниками. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/redguard.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,49 @@
+mowgli
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Lee "Mowgli" Jae-ha](* <-lang_en;; *);
+		[Ли "Mowgli" Джаеха](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Mowgli](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: South_Korea;
+	=>nrel_surname: Jae_ha;
+	=>nrel_first_name: Lee;
+	=>nrel_nickname: Mowgli;
+	=>nrel_birthday: [14.04.1998];
+	=>nrel_gamerole: jungler_lol;
+
+	<=nrel_with_whom: contract_mowgli_and_afreeca_freecs_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Mowgli and Afreeca Freecs](* <-lang_en;; *);
+			[Контракт между Mowgli и Afreeca Freecs](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: afreeca_freecs_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_12_2016;;
+			->rrel_end: 28_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_mowgli_and_team_vitality_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Mowgli and Team Vitality](* <-lang_en;; *);
+			[Контракт между Mowgli и Team Vitality](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_vitality_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 28_11_2018;;
+		*);;
+	*);;
+
+

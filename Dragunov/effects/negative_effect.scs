@@ -1,0 +1,19 @@
+concept_negative_effect <- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [Отрицательный эффект]
+    (*<-lang_ru;;*);
+=> nrel_main_idtf:
+    [Negative effect]
+    (*<-lang_en;;*);
+
+<- rrel_key_sc_element:... (*
+    => nrel_main_idtf:
+    [Опр. Отрицательный эффект]
+    (*<-lang_ru;;*);;
+    <- definition;;
+    <= nrel_sc_text_translation:... (*
+        -> rrel_example:
+            [Отрицательный эффект - <b><sc_element sys_idtf="concept_effect">эффект</b></sc_element>, ухудшающий общее состояние либо состояние конкретной характреистики(характеристик) объекта, на который действует.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

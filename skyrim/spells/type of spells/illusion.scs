@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_illusion
+
+=> nrel_main_idtf:     
+		 [иллюзия (тип заклинания)]   (*<-lang_ru;;*);
+     	 [illusion (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (иллюзия (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Иллюзия — манипулируя сознанием цели, заставляет её считать мага своим союзником, испытать страх или воодушевление.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

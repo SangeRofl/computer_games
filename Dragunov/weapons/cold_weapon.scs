@@ -1,0 +1,48 @@
+concept_cold_weapon <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Холодное оружие]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Cold weapon]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Холодное оружие]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+        [Холодное оружие - <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, в котором не используются силы химических реакций, сжатых газов и электричества.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Холодное оружие]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Большая часть холодного оружия - <b><sc_element sys_idtf="concept_melee_weapon">оружие ближнего боя</b></sc_element>. Так же к холодному оружию можно отнести большое количество экземпляров <b><sc_element sys_idtf="concept_throwing_weapon">метательного оружия</b></sc_element>.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Холодное оружие]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Холодное оружие особенно часто можно встретить в <b><sc_element sys_idtf="concept_computer_game">компъютерных играх</b></sc_element> со <b><sc_element sys_idtf="concept_setting_middle_ages">средневековым сеттингом</b></sc_element>.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/melee_weapons.png"(*
+            => nrel_format: format_png;;
+        *);;
+    *);;
+*);;

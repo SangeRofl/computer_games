@@ -1,0 +1,65 @@
+concept_computer_game_far_cry_3
+
+=> nrel_main_idtf:     
+	 [Far Cry 3]   (*<-lang_ru;;*);
+      [Far Cry 3]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_action_RPG;
+<-concept_open_word;
+<-concept_setting_nowadays;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_announcement_date: date_06.06.2011;
+=>nrel_publication_date: date_29.11.2012;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: dunia_engine_2;
+=>nrel_publisher: company_ubisoft;
+=>nrel_developer: company_ubisoft;
+=>nrel_localizer: company_buka;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_360;
+concept_xbox_one;
+concept_playstation_4;
+concept_playstation_3
+};
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Far Cry 3)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_far_cry;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Far Cry 3 -   кроссплатформенная компьютерная игра в жанре шутер от первого лица в открытом мире, разработанная и изданная компанией Ubisoft 29 ноября 2012 года. Третья игра одноимённой серии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/fr_3.jpeg"
+		(*
+			=> nrel_format: format_jpeg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Far Cry 3)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Игра достигла высоких показателей продаж. Спустя два года после релиза Ubisoft объявил, что было продано десять млн копий Far Cry 3. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

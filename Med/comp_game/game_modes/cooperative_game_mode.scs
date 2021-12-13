@@ -1,0 +1,46 @@
+cooperative_game_mode
+
+=> nrel_main_idtf:[кооперативный режим игры] (* <- lang_ru;; *);
+=> nrel_main_idtf:[cooperative game mode] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*  
+		-> concept_computer_game;;
+		-> concept_game_mode;;
+		-> concept_player;;					
+	*);;
+		=> nrel_main_idtf: [Опр.(кооперативный режим игры)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Кооперативный режим игры - режим компьютерной игры, в которой два игрока и более сотрудничают друг с другом, совместно решая какие-либо задачи] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(кооперативный режим игры, PvP режим, deathmatch режим)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Кооперативному режиму противопоставляется соревновательный многопользовательский режим в форме PvP или deathmatch, где игроки противостоят друг другу](* <- lang_ru;; *);;
+	*);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, кооперативный режим игры, Doom)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Первой игрой, в которой был сетевой кооперативный режим, был Doom](* <- lang_ru;; *);;
+	*);;	
+*);
+
+
+<- sc_node_not_relation;;
+

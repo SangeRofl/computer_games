@@ -1,0 +1,50 @@
+concept_superior_moon_dust
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличная лунная пыль] (* <- lang_ru;;*);
+	[Superior moon dust] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличная лунная пыль)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют против чудовищ,умеющих перевоплощаться или использовать невидимость.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Содержит серебряные опилки, из-за которых чудовища некоторое время не могут обращаться.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_moon_dust;;
+   	-> concept_alchemists_powder;;
+	-> concept_blowball;;
+	-> concept_sulfur;;
+	-> concept_quicksilver_solution;;
+	-> concept_nigredo;;
+	-> concept_hop_umbels;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличная лунная пыль состоит из: Алхимический порошок, Улучшенная лунная пыль, Одуванчик, Сера, Ртутный раствор, Шишки хмеля, Нигредо](*<-lang_ru;;*);;
+      *);;
+  *);;

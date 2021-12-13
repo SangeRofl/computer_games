@@ -1,0 +1,79 @@
+concept_category_control_games
+=> nrel_main_idtf: [игры контроля] (* <- lang_ru;; *);
+=> nrel_main_idtf: [control games] (* <- lang_en;;*);
+
+
+ => nrel_inclusion: concept_RTS;
+concept_MOBA;
+concept_RTS;
+concept_global_strategy;
+concept_strategy;
+concept_sim_strategy;
+concept_global_wargame;
+concept_economical;
+concept_tower_defence;
+concept_wargame;
+concept_cardgame;
+concept_logic;
+concept_tactic;
+concept_microcontrol;
+concept_building;
+//concept_life_sim;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игры контроля)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это категория жанров компьютерных игр, в которых главное – планирование событий и управление для достижения преимущества в дальнейшем.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setka;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(юнит)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Всегда присутствует управление множеством юнитов] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+
+
+<- sc_node_not_relation;;
+
+

@@ -1,0 +1,6 @@
+sc_text_of_agent_for_finding_available_subject_at_fix_price
+-> rrel_key_sc_element:
+	agent_for_finding_available_subject_at_fix_price;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_finding_available_subject_at_fix_price = [*^"file://agent_for_finding_available_subject_at_fix_price.scsi"*];;

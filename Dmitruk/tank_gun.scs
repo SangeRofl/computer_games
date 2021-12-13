@@ -1,0 +1,31 @@
+concept_main_tank_gun
+<-sc_node_not_relation;
+<=nrel_module_tank: concept_tank_machine;
+<-concept_firearm;
+<-concept_module;
+=> nrel_main_idtf:
+      [танковая пушка]
+      (*<-lang_ru;;*);
+       [tank gun]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (танковая пушка)] (* <- lang_ru;; *);; 
+    => nrel_using_constants: concept_tower_of_tank;;
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Основным вооружением танка является танковая пушка, устанавливаемая во вращающейся башне. Пушка танка в большинстве случаев используется для стрельбы прямой наводкой по настильной траектории.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (танковая пушка)] (* <- lang_ru;; *);;
+
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Количество танковых пушек может быть любое в танке и также могут и не быть.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

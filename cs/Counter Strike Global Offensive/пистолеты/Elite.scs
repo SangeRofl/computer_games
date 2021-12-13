@@ -1,0 +1,5 @@
+Elite
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Dual Berretas](*<-lang_ru;;*);
+		[Dual Berretas](*<-lang_en;;*);;

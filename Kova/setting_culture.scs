@@ -1,0 +1,33 @@
+concept_setting_culture
+=> nrel_main_idtf: [культура] (* <- lang_ru;; *);
+=> nrel_idtf: [culture] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_western; concept_setting_arabic_colture; concept_setting_japanese_samurai;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(культура)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действия компьютерной игры отражают культуру того или иного народа.] (* <- lang_ru;; *);;
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(культура)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее популярные игры в этом сеттинге - игры, где действия происходят на диком западе] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

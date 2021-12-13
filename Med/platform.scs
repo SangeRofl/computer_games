@@ -1,0 +1,36 @@
+concept_platform
+
+=> nrel_main_idtf:[платформа] (* <- lang_ru;; *);
+=> nrel_main_idtf:[platform] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;					
+	*);;
+		=> nrel_main_idtf: [Опр.(платформа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Платформа - совокупность аппаратного и програмного обеспечения, для которого разрабатывается компьютерная игра] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(платформа)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Наборы компонент и требования могут отличаться от платформы к платформе](* <- lang_ru;; *);;
+	*);;	
+*);
+
+
+
+<- sc_node_not_relation;;
+

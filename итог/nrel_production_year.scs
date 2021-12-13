@@ -1,0 +1,37 @@
+nrel_production_year <- sc_node_norole_relation;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [production year*](*<- lang_en;;*);
+    [год производства*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:... (*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (год производства*)](*<- lang_ru;;*);
+        [Def. (production year*)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation:...(*
+      //  -> rrel_example: "file://HTML/nrel_production_year_def_ru.html"(*<- lang_ru;;=>nrel_format:format_html;;*);;
+        -> rrel_example: "file://HTML/Atari.html"(*<- lang_en;;=>nrel_format:format_html;;*);;
+    *);;
+    <= nrel_using_constants:{
+       concept_video_sequence;
+       concept_number
+    };;
+*);
+
+=> nrel_first_domain: concept_video_sequence;
+=> nrel_second_domain: concept_number;
+=> nrel_definitional_domain:...(*
+    <= nrel_combination: ...(* 
+        -> concept_video_sequence;;
+        -> concept_number;;
+    *);;
+*);;
+
+

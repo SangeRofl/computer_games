@@ -1,0 +1,47 @@
+nrel_localizer
+
+=> nrel_main_idtf: [localizer*] (* <- lang_en;; *);
+=> nrel_main_idtf: [локализатор*] (* <- lang_ru;; *);
+
+<- binary_relation
+(*
+	<- arity (* <- concept_parameter;; *);;
+	=> nrel_measurement: 2;;
+*);
+
+=> nrel_first_domain: concept_computer_game;
+=> nrel_second_domain: concept_game_company;
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_company;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- defenition;;
+	=> nrel_main_idtf: [Опр.(локализатор*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Локализатор* - отношение, связывающее компьютерную игру и игровую компанию, занимающуюся переводом с языка оригинала на иностранный язык, записью новых аудиофайлов, изменением отдельных фрагментов игры согласно культурным особенностям определенного региона] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_company;;		
+	*);;
+*);
+
+
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_norole_relation;;
+

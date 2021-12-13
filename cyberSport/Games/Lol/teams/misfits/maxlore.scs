@@ -1,0 +1,169 @@
+maxlore
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Nubar "Maxlore" Sarafian](* <-lang_en;; *);
+		[Нубар "Maxlore" Сарафиан](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Maxlore](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: England;
+	=>nrel_surname: Sarafian;
+	=>nrel_first_name: Nubar;
+	=>nrel_nickname: Maxlore;
+	=>nrel_birthday: [01.07.1996];
+	=>nrel_gamerole: jungler_lol;
+	
+	<=nrel_with_whom: contract_maxlore_and_perilous_gaming_rift_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Perilous Gaming Rift](* <-lang_en;; *);
+			[Контракт между Maxlore и Fact Perilous Gaming Rift](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: perilous_gaming_rift_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_10_2014;;
+			->rrel_end: xx_12_2014;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_team_infused_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Team Infused](* <-lang_en;; *);
+			[Контракт между Maxlore и Team Infused](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_infused_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 04_02_2015;;
+			->rrel_end: 16_03_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_choke_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Choke Gaming](* <-lang_en;; *);
+			[Контракт между Maxlore и Choke Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: choke_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_03_2015;;
+			->rrel_end: xx_06_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_g2_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and G2 Esports](* <-lang_en;; *);
+			[Контракт между Maxlore и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_07_2015;;
+			->rrel_end: xx_10_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_to_infinity_and_betond_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and To infinity and Betond](* <-lang_en;; *);
+			[Контракт между Maxlore и To infinity and Betond](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: to_infinity_and_betond_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 22_09_2015;;
+			->rrel_end: xx_11_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_team_infused_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Team Infused](* <-lang_en;; *);
+			[Контракт между Maxlore и Team Infused](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_infused_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 22_11_2015;;
+			->rrel_end: xx_12_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_inspire_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Inspire eSports](* <-lang_en;; *);
+			[Контракт между Maxlore и Inspire eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: inspire_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 22_12_2015;;
+			->rrel_end: 10_03_2016;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_giants_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Giants Gaming](* <-lang_en;; *);
+			[Контракт между Maxlore и Giants Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: giants_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 10_05_2016;;
+			->rrel_end: 21_11_2016;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_maxlore_and_team_roccat_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Team Roccat](* <-lang_en;; *);
+			[Контракт между Maxlore и Team Roccat](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_roccat_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 05_01_2017;;
+			->rrel_end: 09_05_2017;;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_maxlore_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Maxlore and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Maxlore и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 09_05_2017;;
+		*);;
+	*);;
+
+

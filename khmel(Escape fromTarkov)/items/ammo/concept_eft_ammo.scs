@@ -1,0 +1,42 @@
+concept_eft_ammo
+=> nrel_main_idtf: [ammo (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [патрон (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_ammo_shotgun_ammo;;
+	-> concept_eft_ammo_rifle_ammo;;
+	-> concept_eft_ammo_pistol_ammo;;
+	-> concept_eft_ammo_grenadelauncher_ammo;;
+	=> nrel_main_idtf:[Разбиение по классам патронов] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (патрон (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [патрон (Escape from Tarkov) - предмет, который используют оружия для нанесения урона врагам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (метательное оружие(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/ammos.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

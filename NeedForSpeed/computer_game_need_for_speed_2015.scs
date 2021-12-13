@@ -1,0 +1,67 @@
+computer_game_need_for_speed_2015						//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed 2015] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed 2015] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_ghost_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_4; xbox_one;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_publication_date: date_03_11_2015;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed 2015)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией Ghost Games и изданная компанией Electronic Arts в ноябре 2015 года.
+               Need for Speed является перезапуском серии, и в то же время включает в себя тематику уличных гонок, впервые появившуюся в серии в игре Need for Speed: Underground.
+               В Need for Speed вновь появился тюнинг автомобилей, включающий в себя большое количество как визуальных деталей, так и тюнинг характеристик автомобиля. В игре также присутствует сюжетная линия,
+               сопровождающаяся видеороликами с реальными актёрами. Все действия игры проходят в городе под названием Вентура-Бей. В Need for Speed реализованы пять стилей игры, за которые игроку начисляются
+               внутриигровые очки: «Нарушения», «Стиль», «Тюнинг», «Скорость» и «Команда». ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_ghost_games;;
+                -> computer_game_need_for_speed_2015;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

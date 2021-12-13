@@ -1,0 +1,39 @@
+track_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Track] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Track] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Track)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Помечает вражеского героя, раскрывая его невидимость и показывая его запас золота. Владелец способности получает дополнительную скорость передвижения около цели и наносит ей критический урон. Если она умрёт, союзники неподалёку и сам владелец способности получат дополнительную награду в виде золота. Применение этой способности не снимает невидимость.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Track)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Союзники получат дополнительное золото только если они были живы и находились в 1200 единицах от отмеченного героя. Сам Bounty Hunter получает золото в любом случае независимо от расстояния до цели и собственной смерти.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Track_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

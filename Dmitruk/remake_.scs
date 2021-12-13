@@ -1,0 +1,48 @@
+nrel_remake
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+<- norole_relation;
+<- binary_relation;
+ => nrel_second_domain: concept_computer_game;
+  => nrel_first_domain: concept_computer_game;
+
+=> nrel_main_idtf:
+      [ремейк*]      (*<-lang_ru;;*);
+      [remake*]      (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ремейк*)] (* <- lang_ru;; *);;
+
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ремейк* - обновлённая переизданная версия оригинальной игры.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{
+concept_computer_game;
+concept_computer_game
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(ремейк*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Обычно ремейк* имеет то же название, сюжет, игровой процесс, что и оригинальная игра, но при этом часто улучшает некоторые аспекты игры, такие как графика, звук, интерфейс пользователя. Иногда ремейки улучшают геймплей, добавляют новые уровни, персонажей.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+sc_node_not_relation ->...nodes;;
+number->2;;
+arity->...nodes;;
+...nodes->nrel_remake;;
+2<=nrel_measurement: ...nodes;;
+
+

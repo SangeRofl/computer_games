@@ -1,0 +1,44 @@
+concept_game_level
+
+=> nrel_main_idtf:[игровой уровень] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game level] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_game_world;;
+		-> concept_location;; 				//locatiya
+	*);;
+		=> nrel_main_idtf: [Опр.(уровень)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Уровень - отдельная область игрового мира, обычно представляет собой определенную локацию] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(уровень, ролевая игра, подземелье, сеттинг, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Термин уровень пришел из ранних ролевых игр, где относился к уровням подземелья - сеттинга, в котором проходила большая часть игр](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, уровень, игрок*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Не во всех играх уровни идут в линейной последовательности; некоторые игры позволяют игроку посещать уровни повторно или выбирать последовательность, в которой их проходить](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

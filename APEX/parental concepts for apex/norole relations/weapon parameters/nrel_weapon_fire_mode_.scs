@@ -1,0 +1,66 @@
+nrel_weapon_fire_mode
+=> nrel_main_idtf: [fire mode* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [тип стрельбы* ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тип стрельбы* )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Тип стрельбы - стрельба из оружия, при которой за одно нажатие на курок выпускается определённое количество патронов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon_fire_mode;
+		concept_ammo
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(типы стрельбы (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Apex Legends' cуществует 3 типа стрельбы из оружия: одиночная, серийная, автоматическая.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+        concept_apex_fire_mode;
+        concept_apex_fire_mode_auto;
+        concept_apex_fire_mode_single;
+        concept_apex_fire_mode_burst
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_weapon_fire_mode;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_weapon_fire_mode;;
+antitransitive_relation -> nrel_weapon_fire_mode;;
+asymmetric_relation -> nrel_weapon_fire_mode;;
+
+
+nrel_weapon_fire_mode => nrel_first_domain: concept_weapon;;
+nrel_weapon_fire_mode => nrel_second_domain: concept_weapon_fire_mode;;
+nrel_weapon_fire_mode => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_weapon;
+	    concept_weapon_fire_mode
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_weapon_fire_mode;;
+number->2;;

@@ -1,0 +1,48 @@
+concept_eft_weapon_erFulcrumBayonet
+=> nrel_main_idtf: [ER Fulcrum Bayonet(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ER Fulcrum Bayonet(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_steel_arms;
+
+=> nrel_eft_weapon_effective_distance: 0.4;
+=> nrel_eft_weapon_weight: 0.6;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ER Fulcrum Bayonet(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [многофункциональный пехотный нож, который может использоваться как в бою, так и решать другие прблемы там, где не может справиться даже более специализированное снаряжение.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_steel_arms
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (создатели ER Fulcrum Bayonet(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компания Extrema Ratio разработала свой нож Fulcrum по заказу итальянского штаба альпийских стрелков.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ER Fulcrum Bayonet(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/ER_Fulcrum_Bayonet.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,32 @@
+concept_game_engine_modified_source
+=> nrel_main_idtf: [модифицированный игровой движок разработки Source] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Modified Source game development engine] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Модифицированный игровой движок разработки Source)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> [Модифицированный игровой движок разработки Source - модифицированная версия игрового движка Source, выпускаемого компанией Valve] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_game_engine;
+        concept_game_engine_source
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Модифицированный игровой движок разработки Source)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Модифицированный Source — игровой движок, основанный на игровом движке Source, созданным
+		компанией Valve в 2004 году] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

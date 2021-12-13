@@ -1,0 +1,117 @@
+computer_game_path_of_exile
+=> nrel_main_idtf:
+    [Path Of Exile]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Path Of Exile]
+    (* <- lang_ru;; *);
+
+<-concept_computer_game;
+<-concept_action_RPG;
+<-concept_free_to_play_computer_game;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: concept_playstation_4;
+=> nrel_platform: concept_xbox_one;
+=> nrel_publisher: company_grinding_gear_games;
+=> nrel_developer: company_grinding_gear_games;
+=> nrel_publication_date: date_2013;
+
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_game_engine: concept_game_engine_modified_source;
+=> nrel_plot: [Сюжет завязан на истории заключённого, которого за определённые грехи выслали на жутковатый материк Рэкласт. Уже подплывая к материку, мы терпим 
+кораблекрушение и попадаем немного не на ту часть этого зловещего места. По прибытию и 
+пробуждению на берегу героя встречают толпы живых мертвецов, через которых придётся прорываться к первому цивильному месту, 
+посёлку Дозор Львиного Глаза. И уже оттуда мы пойдём в очень далёкий путь, наполненный новыми встречами, историями о богах, 
+чернокнижниках и магических людях-плюс и, конечно же, схватками с сильнейшими существами Рэкласта, начиная от белого медведя, 
+забытого в пещере хозяевами, и заканчивая повёрнутым инквизитором, демоном, заключённым в теле Зверя, и даже создателем всего этого мира.];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Path Of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная многопользовательская игра в жанре Action/RPG, разработанная и выпущенная компанией Grinding Gear Games
+         для Windows в 2013 году; в 2017 году была выпущена версия для игровой приставки Xbox One, а в 2019 году — для PlayStation 4.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_computer_game;
+		concept_multiplayer;
+        oncept_action_RPG;
+        concept_microsoft_playstation_4;
+		concept_microsoft_xbox_one;
+		concept_microsoft_windows;
+        nrel_publisher: company_grinding_gear_games;
+        date_2019;
+        date_2017;
+		date_2013
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Выбор класса в Path Of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В начале игры игрок может выбрать для персонажа один из шести классов с различными характеристиками — 
+        Дикарь, Охотница, Ведьма, Дуэлянт, Жрец и Бандит; ещё один скрытый класс («Дворянка») становится доступным 
+        игрокам, нашедшим соответствующего неигрового персонажа в конце третьего акта игры.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_computer_game;
+        player;
+        nrel_character;
+        nrel_character_class
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Навыки персонажа в Path Of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В отличие от большинства игр этого жанра, в Path of Exile активные навыки не являются свойствами 
+        самого персонажа — они представлены в виде самоцветов, которые можно купить, получить или найти в игре.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_computer_game;
+        concept_game_genre;
+        nrel_character
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Игровой процесс в Path Of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В ходе игры игрок обследует различные уровни — как открытые пространства, так и лабиринтообразные подземелья, 
+        населенные разнообразными врагами. Уничтожение врагов и выполнение заданий неигровых персонажей приносит игроку очки 
+        опыта и различные предметы снаряжения, которые могут повысить характеристики персонажа.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_computer_game;
+        player;
+        nrel_character;
+        concept_equipment;
+        nrel_enemy
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (логотип Apex Legends)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Path_of_Exile_logo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-sc_node_not_relation;;

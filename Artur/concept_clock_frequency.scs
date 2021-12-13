@@ -1,0 +1,32 @@
+concept_clock_frequency
+=> nrel_main_idtf: [тактовая частота] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Сlock frequency] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Тактовая частота)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [количество тактов (операций) процессора в секунду.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_cpu;;
+		-> concept_tact;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Тактовая частота)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Тактовая частота определяется временем
+		между активными переходами сигнала
+		с одного значения на другое] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

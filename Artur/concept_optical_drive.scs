@@ -1,0 +1,47 @@
+concept_optical_drive
+=> nrel_main_idtf: [оптический привод] (* <- lang_ru;; *);
+=> nrel_main_idtf: [optical drive] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_cd_rom;;
+	-> concept_cd_rw;;
+	-> consept_dvd_rom;;
+	-> consept_dvd_cd_rw;;
+	-> consept_dvd_rw;;
+	-> consept_dvd_rw_dl;;
+	=> nrel_main_idtf: [разбиение по типу считывания дисков] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Оптический привод)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [При́вод оптических дисков — электромеханическое
+				устройство для считывания и записи,
+				посредством лазера, информации с оптических
+				дисков в виде пластикового диска с отверстием в центре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_data;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Оптический привод)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Функцией оптического привода является
+		именно считывание информации
+		с оптических дисков] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

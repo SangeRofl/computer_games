@@ -1,0 +1,6 @@
+concept_apex_attachment_sniper_stock
+=> nrel_main_idtf: [sniper stock] (* <- lang_en;; *);
+=> nrel_main_idtf: [приклад для снайперской винтовки] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

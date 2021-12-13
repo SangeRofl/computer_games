@@ -1,0 +1,32 @@
+concept_skyrim_human_race
+
+=> nrel_main_idtf:     
+	 [Человеческая раса (Скайрим)]   (*<-lang_ru;;*);
+      [Human race (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_skyrim_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Человеческая раса (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Люди  — общее название различных людских  <b><sc_element sys_idtf="concept_skyrim_race">рас</b></sc_element>  <b><sc_element sys_idtf="concept_skyrim_tamriel"> Тамриэля</b></sc_element> .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (О происхождении человеческой расы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Предками всех или почти всех человеческих рас были неды, множество племён, расселившихся по <b><sc_element sys_idtf="concept_skyrim_tamriel"> Тамриэлю</b></sc_element> и другим материкам.
+ Позднее они активно смешивались между собой и с <b><sc_element sys_idtf="concept_skyrim_elf_race"> эльфийскими расами</b></sc_element>, породив множество народов, схожих по физиологическому строению и культуре. 
+В отличие от <b><sc_element sys_idtf="concept_skyrim_elf_race"> эльфов</b></sc_element>, палитра вариаций цветов кожи у людей ограничена: от бледно-бежевого до тёмно-коричневого. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

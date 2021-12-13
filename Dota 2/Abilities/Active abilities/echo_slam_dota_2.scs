@@ -1,0 +1,37 @@
+echo_slam_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Echo Slam] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Echo Slam] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Echo Slam)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[ГПо земле распространяются ударные волны, наносящие урон врагам. Каждое попадание по врагу создаёт волновое эхо, которое наносит урон ближайшим врагам. Попадание по герою создаёт двойное эхо.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Echo Slam)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При использовании Echo Slam прерывает произносимые способности Earthshaker.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Echo_Slam_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

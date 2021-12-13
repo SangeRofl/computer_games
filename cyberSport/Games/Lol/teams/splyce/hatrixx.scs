@@ -1,0 +1,48 @@
+hatrixx
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Jorgen "Hatrixx" Elgaen](* <-lang_en;; *);
+		[Йорген "Hatrixx" Эльгаен](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Hatrixx](* <-lang_en;; *);
+
+	<-player_lol;
+	
+	=>nrel_citizen_of: Norway;
+	=>nrel_surname: Elgaen;
+	=>nrel_first_name: Jorgen;
+	=>nrel_nickname: Hatrixx;
+	=>nrel_birthday: [13.11.1997];
+	=>nrel_gamerole: mid_laner_lol;
+	
+	<=nrel_with_whom: contract_hatrixx_and_movistar_riders_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hatrixx and Movistar Riders](* <-lang_en;; *);
+			[Контракт между Hatrixx и Movistar Riders](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: movistar_riders_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 14_07_2017;;
+			->rrel_end: 08_01_2019;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hatrixx_and_splyce_lol
+	(*
+			=> nrel_main_idtf:
+			[Сontract between Hatrixx and Splyce](* <-lang_en;; *);
+			[Контракт между Hatrixx и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 14_01_2019;;
+		*);;
+	*);;
+

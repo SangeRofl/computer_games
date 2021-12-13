@@ -1,0 +1,39 @@
+concept_broadsword
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [broadsword] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [broadsword] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(broadsword)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Будучи классическим оружием рыцарей, этот клинок является прочным и надежным выбором для убийства врагов.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(broadsword)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отлично подойдет керри героям, которым нужем дополнительный урон.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/broadsword.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

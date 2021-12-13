@@ -1,0 +1,39 @@
+concept_sages_mask
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [sages mask] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [маска мудреца] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(sages mask)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Маска, в основном используемая для проведения разнообразных ритуалов магами и колдунами.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(sages mask)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых низкий мп реген в начале игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/sages_mask.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

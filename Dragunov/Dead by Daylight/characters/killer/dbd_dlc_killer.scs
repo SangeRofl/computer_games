@@ -1,0 +1,31 @@
+concept_dead_by_daylight_killer_dlc <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [убийца из DLC(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [DLC killer(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. убийца из DLC(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [убийца из DLC - тип убийцы, недоступный по-умолчанию.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. убийца из DLC(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Убийцы из DLC могут быть открыты в игре путем покупки DLC или путем покупки самих убийц за золотые клетки во внутриигровом магазине.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

@@ -1,0 +1,52 @@
+concept_skyrim_beastfolk_race
+
+=> nrel_main_idtf:     
+	 [Зверолюди (Скайрим)]   (*<-lang_ru;;*);
+      [Beastfolk (Skyrim)]  (*<-lang_en;;*);  
+
+=> nrel_idtf:     
+	 [Зверорасы (Скайрим)]   (*<-lang_ru;;*);
+	 [Бетмер (Скайрим)]   (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+=>nrel_inclusion: 
+concept_skyrim_beastfolk_race_khajiit;
+concept_skyrim_beastfolk_race_argonian;
+
+<=nrel_inclusion: concept_skyrim_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Зверолюди (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Зверолюди  — общее название различных разумных <b><sc_element sys_idtf="concept_skyrim_race"> рас </b></sc_element>, похожих на помесь
+ <b><sc_element sys_idtf="concept_skyrim_human_race"> людей </b></sc_element> и животных. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об особенностях зверолюдей )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Зверолюди отличаются широким многообразием окраса кожных покровов (могут быть покрыты мехом, чешуёй)
+ и имеют специфическое строение организма (в том числе и внутренних систем и органов). Большинство зверорас имеют продолжительность жизни, как у обычных
+ <b><sc_element sys_idtf="concept_skyrim_human_race"> людей </b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *); 
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об отношениях зверолюдей с другими расасами)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Зверолюдей за их сходство с животными веками считали существами второго сорта, порабощали, высмеивали, подвергали словесному и физическому насилию. 
+По причине отторжения обществом многие зверолюди вынужденно становятся контрабандистами и преступниками. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

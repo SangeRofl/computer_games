@@ -1,0 +1,48 @@
+concept_eft_barter_items_electronics_magnet
+=> nrel_main_idtf: [Magnet(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Магнит(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_electronics;
+
+=> nrel_eft_weapon_weight: 0.4;
+=> nrel_eft_barter_items_cost: 12713;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Магнит(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Магнит - бартерный предмет из группы электроника, магнит кустарного производства.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_electronics
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (распространенность магнита(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [магнит является большой редкостью в условиях тотального дефицита электроники и запчастей для электродвигателей.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Магнит(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Magnet.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

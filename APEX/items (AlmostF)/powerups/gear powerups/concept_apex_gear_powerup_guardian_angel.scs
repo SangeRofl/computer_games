@@ -1,0 +1,38 @@
+concept_apex_gear_powerup_guardian_angel
+=> nrel_main_idtf: [Guardian Angel (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ангел-хранитель (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры способности (улучшения)
+=> nrel_apex_restored_hp_amount: 70;
+=> nrel_apex_restored_shields_amount: 50;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ангел-хранитель (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Ангел-хранитель (Apex Legends) - улучшение экипировки, которое обеспечивает определенное количество восстановленного здоровья и щитов после оживления в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (вид экипировки с улучшением 'Ангел-хранитель')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На момент создания статьи в игре улучшением 'Ангел-хранитель' обладает только легендарный рюкзак.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack_legendary
+	};;
+*);
+
+<- concept_apex_gear_powerup;
+<- sc_node_not_relation;;

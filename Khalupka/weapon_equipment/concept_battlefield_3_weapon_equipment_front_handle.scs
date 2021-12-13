@@ -1,0 +1,58 @@
+concept_battlefield_3_weapon_equipment_front_handle
+=> nrel_main_idtf: [front handle (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [передняя рукоятка (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_equipment;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (передняя рукоятка (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_front_handle">Передняя рукоятка</b></sc_element> - это 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment">модуль оружия Battlefield 3</b></sc_element>, 
+		снижающий 
+		<b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_left">отдачу влево</b></sc_element> и 
+		<b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_right">отдачу вправо</b></sc_element> 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">конкретного оружия</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_weapon_equipment_front_handle;
+        concept_battlefield_3_weapon_equipment;
+        nrel_battlefield_3_weapon_recoil_right;
+        nrel_battlefield_3_weapon_recoil_left
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Характеристики передней рукоятки Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_front_handle">Передняя рукоятка</b></sc_element> обладает следующими характеристиками:<br>
+			+ на 34% снижает <b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_left">отдачу влево</b></sc_element>,<br>
+			+ на 34% снижает <b><sc_element sys_idtf="nrel_battlefield_3_weapon_recoil_right">отдачу вправо</b></sc_element>,<br>
+			- на 20% снижается <b><sc_element sys_idtf="nrel_battlefield_3_weapon_accuracy_2">точность прицельной стрельбы</b></sc_element>,<br>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_equipment_front_handle;
+        nrel_battlefield_3_weapon_recoil_left;
+        nrel_battlefield_3_weapon_recoil_right;
+        nrel_battlefield_3_weapon_accuracy_2
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/grip.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

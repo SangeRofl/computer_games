@@ -1,0 +1,5 @@
+MAG_7
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[MAG-7](*<-lang_ru;;*);
+		[MAG-7](*<-lang_en;;*);;

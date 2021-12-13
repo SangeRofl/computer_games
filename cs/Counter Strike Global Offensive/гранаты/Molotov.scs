@@ -1,0 +1,5 @@
+Molotov
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Коктейль Молотова](*<-lang_ru;;*);
+		[Molotov](*<-lang_en;;*);;

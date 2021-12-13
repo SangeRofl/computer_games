@@ -1,0 +1,45 @@
+concept_skyrim_disease
+=> nrel_main_idtf: [Diseases] (* <- lang_en;; *);
+=> nrel_main_idtf: [Болезни] (* <- lang_ru;; *);
+
+<- computer_game_the_elder_scrolls_skyrim_5_skyrim;
+
+=> nrel_inclusion:
+concept_skyrim_simple_disease;
+concept_skyrim_particular_disease;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Болезнь] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Всего в <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">Скайриме</b></sc_element> распространены семь болезней. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Пути заражения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В большинстве своём источником заражения являются различные животные, но можно заразиться и через расставленные в подземельях ловушки. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Влияние болезней)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Все болезни ослабляют персонажа, уменьшая некоторые <b><sc_element sys_idtf="concept_skyrim_skill">навыки</b></sc_element>, но к смерти главного героя не приводят.
+ Можно подхватить несколько болезней сразу, эффекты которых сложатся вместе.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

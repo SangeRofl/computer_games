@@ -1,0 +1,68 @@
+concept_battlefield_3_weapon_ak_74m
+=> nrel_main_idtf: [AK-74M (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [AK-74M (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_assault_rifle;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (AK-74M (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [АК-74М - это последняя версия AK-47. Принятая на вооружение российской армией в качестве стандартного автомата, версия M включает 
+			складывающийся набок полимерный приклад и крепление для прицела с левой стороны оружия. Недавние разработки позволяют снабжать автоматы серии AK многими принадлежностями.
+			Надежное и прочное оружие средней дальности.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (AK-74M Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Стартовая <b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">штурмовая винтовка</b></sc_element> 
+			в игре Battlefield 3. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_ak_74m
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_thickened_trunk; 
+											 concept_battlefield_3_weapon_equipment_front_handle; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+											 concept_battlefield_3_weapon_equipment_flame_arrester;
+
+=> nrel_battlefield_3_weapon_max_damage: 25.0;
+=> nrel_battlefield_3_weapon_max_damage: 18.4;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 2.20;
+=> nrel_battlefield_3_weapon_full_reload_time: 3.20;
+=> nrel_battlefield_3_weapon_magazine_capacity: 30;
+=> nrel_battlefield_3_weapon_max_damage_distance: 8;
+=> nrel_battlefield_3_weapon_min_damage_distance: 50;
+=> nrel_battlefield_3_weapon_rate_of_fire: 650;
+=> nrel_battlefield_3_weapon_recoil_up: 0.3k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.2k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.3k;
+=> nrel_weapon_fire_mode: concept_weapon_auto_fire_mode; concept_weapon_single_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ak74.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

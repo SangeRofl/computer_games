@@ -1,0 +1,43 @@
+concept_eft_location_plant
+=> nrel_main_idtf: [Plant(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Завод(Escape from Tarkov)] (* <- lang_ru;; *);
+<- concept_eft_location;
+=> nrel_eft_location_raid_duration: 20;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Завод(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Завод - локация в Escape from Tarkov. Была первой локацией, добавленной в игру. Небольшая, быстрая карта для ближнего боя внутри многоэтажного промышленного завода, имеющего туннели и мостки.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_location
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (История завода в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Территория и производственные помещения химического комбината №16 были незаконно сданы компании Terra Group. В период Контрактных Войн здесь проходили бои между подразделениями USEC и BEAR, определяющие контроль за заводским районом города Таркова.
+
+В дальнейшем с началом хаоса территория комбината стала использоваться как убежище гражданского населения, Диких и бойцов отбившихся военных и силовых структур, в том числе разрозненных сил.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Завод(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Factory.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

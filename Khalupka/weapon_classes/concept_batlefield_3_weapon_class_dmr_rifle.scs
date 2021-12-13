@@ -1,0 +1,66 @@
+concept_battlefield_3_weapon_class_dmr_rifle
+=> nrel_main_idtf: [Class DMR rifle Battlefield 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс винтовки DMR Battlefield 3] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapons;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (Класс винтовки DMR Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_dmr_rifle">Класс винтовки DMR в Battlefield 3</b></sc_element> — 
+		особый тип 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>, предназначеный для нанесения урона 
+		<b><sc_element sys_idtf="concept_battlefield_3_character">персонажам</b></sc_element> 
+		противника на дальних дистанциях. Данный класс 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element> доступен только 
+		<b><sc_element sys_idtf="concept_battlefield_3_class_support">классу разведчик.</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_machine_gun;
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_class_support
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Урон винтовок DMR Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_dmr_rifle">Винтовки DMR</b></sc_element> обладают только 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapons_single_fire_mode">одиночным режимом стрельбы</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_dmr_rifle;
+        concept_battlefield_3_weapons_single_fire_mode
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Винтовки DMR в Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Всего в <b><sc_element sys_idtf="computer_game_battlefield_3">Battlefeild 3</b></sc_element> представлены 5 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_dmr_rifle">винтовок DMR</b></sc_element>. Cамые популярные:<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_svd">СВД</b></sc_element>,<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_mk11">MK11 MOD 1</b></sc_element>,<br>
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_sks">СКС</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_dmr_rifle;
+        concept_battlefield_3_weapon_svd;
+        concept_battlefield_3_weapon_mk11;
+        concept_battlefield_3_weapon_sks
+	};;
+*);
+
+<- sc_node_not_relation;;
+

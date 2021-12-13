@@ -1,0 +1,48 @@
+concept_eft_barter_items_electronics_geiger_counter
+=> nrel_main_idtf: [Geiger counter(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Счётчик Гейгера(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_electronics;
+
+=> nrel_eft_weapon_weight: 0.4;
+=> nrel_eft_barter_items_cost: 16684;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Счётчик Гейгера(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Счётчик Гейгера - бартерный предмет из группы электроника, газоразрядный прибор.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_electronics
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (предназначение счётчика Гейгера(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Счётчик Гейгера предназначен для автоматического подсчёта числа попавших в него ионизирующих частиц.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Счётчик Гейгера(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Geiger-Muller_counter.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

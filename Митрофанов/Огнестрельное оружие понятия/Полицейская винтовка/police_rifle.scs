@@ -1,0 +1,69 @@
+concept_police_rifle
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Полицейская винтовка] (* <- lang_ru;;*);
+	[Police rifle] (* <-lang_en;;*);
+
+=>nrel_damage: 184
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[184](* <-lang_en; lang_ru;; *);;
+		<-damage;;
+		=>nrel_damage: [184];;
+	*);
+
+=>nrel_accuracy_gun: 75
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[75](* <-lang_en; lang_ru;; *);;
+		<-accuracy;;
+		=>nrel_accuracy: [75];;
+	*);
+
+=>nrel_rate_of_fire: 100
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[100](* <-lang_en; lang_ru;; *);;
+		<-rate_of_fire;;
+		=>nrel_rate_of_fire: [100];;
+	*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_police_rifle;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Полицейская винтовка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Полицейская винтовка — огнестрельное оружие в игре Dying Light. Обладает полуавтоматическим режимом ведения огня и хорошим уроном.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики полицейской винтовки)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полицейская винтовка имеет следующие характеристики: урон - 184; точность - 75; скорострельность - 100. Оснащена магазином на 20 патронов. К данной винтовке игрок может нести боезапас в количестве 100 патронов. Имеет полуавтоматический режим ведения огня.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://police_rifle.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

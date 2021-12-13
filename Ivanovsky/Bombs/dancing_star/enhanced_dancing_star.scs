@@ -1,0 +1,54 @@
+concept_enhanced_dancing_star
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенная танцующая звезда] (* <- lang_ru;;*);
+	[Enhanced dancing star] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенная танцующая звезда)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая взрывается.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Огненный взрыв, который может поджечь ближайших врагов. Действует сильнее. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_sulfur;;
+	-> concept_phosphorus;;
+	-> concept_stammelfords_dust;;
+	-> concept_ordinary_dancing_star;;
+   	-> concept_szytnacce;;
+   	-> concept_hellebore_petals;;
+   	-> concept_nostrix;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенная танцующая звезда состоит из: Чёрный порошок,Обычная танцующая звезда, Фосфор, Грибы-шибальцы, Сера, Нострикс, Лепестки чемерицы.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

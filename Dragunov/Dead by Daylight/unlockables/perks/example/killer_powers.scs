@@ -1,0 +1,32 @@
+dbd_killer_power_evil_within
+<- concept_dead_by_daylight_killer_power;
+=> nrel_main_idtf:
+    [Evil Within]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Чистое зло]
+    (* <- lang_ru;; *);;
+dbd_killer_power_jigsaws_baptism
+<- concept_dead_by_daylight_killer_power;
+=> nrel_main_idtf:
+    [Jigsaw's Baptism]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Баптизм Пилы]
+    (* <- lang_ru;; *);;
+dbd_killer_power_bear_trap
+<- concept_dead_by_daylight_killer_power;
+=> nrel_main_idtf:
+    [Bear trap]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Медвежий капкан]
+    (* <- lang_ru;; *);;
+dbd_killer_power_azarovs_skull
+<- concept_dead_by_daylight_killer_power;
+=> nrel_main_idtf:
+    [Azarov's skull]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Плачущий колокол]
+    (* <- lang_ru;; *);;

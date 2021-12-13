@@ -1,0 +1,65 @@
+computer_game_warcraft_3_reign_of_chaos
+=> nrel_idtf: [Warcraft 3: Reign of Chaos] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: Reign of Chaos] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: Reign of Chaos] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_RTS;
+=> nrel_platform: concept_windows;
+=> nrel_platform: consept_mac_os;
+=>nrel_localizer: company_softclub;
+=> nrel_publisher:company_sierra_entertainment;
+=> nrel_publisher:company_blizzard;
+=> nrel_publisher:company_soft_club;
+=> nrel_publisher:company_capcom;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2002;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [<b><sc_element sys_idtf="computer_game_warcraft_3_reign_of_chaos">Место действия игры</sc_element> — вымышленный мир <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element>. За несколько лет до событий игры демоническая  <b><sc_element sys_idtf="concept_army">армия</sc_element>, названная <b><sc_element sys_idtf="concept_the_burning_legion">Пылающим Легионом</sc_element>, подчинила себе расу <b><sc_element sys_idtf="concept_race_orc">орков</sc_element>, и отправила её через портал на покорение мира Азерот. Данные события были показаны и описаны в играх <b><sc_element sys_idtf="computer_game_warcraft_2_tides_of_darkness">Warcraft: Orcs & Humans и Warcraft II: Tides of Darkness</sc_element>. Через много лет кровопролитных битв армия  <b><sc_element sys_idtf="concept_warcraft_horde">Орков</sc_element> была побеждёна <b><sc_element sys_idtf="concept_warcraft_alliance">Альянсом</sc_element> — коалицией людей, дворфов и эльфов. Выжившие орки были согнаны в лагеря, где они, казалось, потеряли свою жажду крови. За отсутствием врагов последовал период мира, однако Альянс начал распадаться.] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Warcraft 3 FT)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Warcraft III: Reign of Chaos - компьютерная игра в жанре стратегии в реальном времени с элементами RPG. Разработана компанией Blizzard Entertainment при поддержке Vivendi Universal и выпущена в июле 2002 года.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Warcraft 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В отличие от предыдущих игр серии количество противоборствующих сторон увеличилось с двух до четырёх.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft_3_roc.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft-3_0.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

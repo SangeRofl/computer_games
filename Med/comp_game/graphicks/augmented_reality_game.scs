@@ -1,0 +1,40 @@
+concept_augmented_reality_game
+=> nrel_main_idtf: [игра с дополненной реальностью] (* <- lang_ru;; *);
+=> nrel_main_idtf: [augmented reality game] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игра с дополненной реальностью)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игры, игровой мир которых является реальным миром, но с добавлением виртуальных объектов, и отображается через экран объектива видеокамеры.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(мобильное устройство, игра с дополненной реальностью)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Подобные игры доступны лишь на мобильных устройствах с видеокамерой] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игрок)] (* <- lang_ru;; *);; 
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Игрок водит видеокамерой, ищет появляющиеся объекты или прицеливается и уничтожает их.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

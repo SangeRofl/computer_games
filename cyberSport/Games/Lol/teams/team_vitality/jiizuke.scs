@@ -1,0 +1,63 @@
+jiizuke
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Daniele "Jiizuke" di Mauro](* <-lang_en;; *);
+		[Даниэль "Jiizuke" ди Мауро](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Jiizuke](* <-lang_en;; *);
+
+	<-player_lol;
+
+		=>nrel_citizen_of: Italy;
+	=>nrel_surname: di_Mauro;
+	=>nrel_first_name: Daniele;
+	=>nrel_nickname: Jiizuke;
+	=>nrel_birthday: [14.01.1996];
+	=>nrel_gamerole: mid_laner_lol;
+
+	<=nrel_with_whom: contract_jiizuke_and_team_forge_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jiizuke and Team Forge](* <-lang_en;; *);
+			[Контракт между Jiizuke и Team Forge](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_forge_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 31_01_2016;;
+			->rrel_end: 23_02_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_jiizuke_and_giants_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jiizuke and Giants Gaming](* <-lang_en;; *);
+			[Контракт между Jiizuke и Giants Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: giants_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 06_03_2017;;
+			->rrel_end: 20_12_2017;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_jiizuke_and_team_vitality_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Jiizuke and Team Vitality](* <-lang_en;; *);
+			[Контракт между Jiizuke и Team Vitality](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_vitality_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 21_12_2017;;
+		*);;
+	*);;
+

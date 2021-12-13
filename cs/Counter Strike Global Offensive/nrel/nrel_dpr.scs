@@ -1,0 +1,6 @@
+nrel_dpr
+<-sc_node_norole_relation;
+
+	=> nrel_main_idtf:
+		[DPR*](*<-lang_ru;;*);
+		[DPR*](*<-lang_en;;*);;

@@ -1,0 +1,5 @@
+Kevlar
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Бронежилет](*<-lang_ru;;*);
+		[Kevlar](*<-lang_en;;*);;

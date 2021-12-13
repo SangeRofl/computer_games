@@ -1,0 +1,82 @@
+nrel_hearthstone_effect_windfury
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект Неистовство ветра* ]
+	(* <- lang_ru;;	*);
+	[Effect Windfury* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Windfury.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта Неистовство ветра](*<-lang_ru;;*);
+		[Description of Windfury effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [ Неистовство это способность, которая позволяет характер, чтобы атаковать дважды в свою очередь. Ярость ветра чаще всего встречается на шаманских картах.] (* <- lang_ru;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [ Неистовство ветра выражается в виде анимации серого/белого ветра вокруг пострадавшего персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {
+        nrel_hearthstone_effect_divine_shield;
+        concept_hearthstone_card_mechanics;
+        nrel_battlecry;
+		concept_card;
+        concept_card_minion;
+        concept_card_weapon
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Windfury работает, позволяя миньону атаковать, если у него есть Windfury и 0 или 1 предыдущих атак в этот ход.] (* <- lang_ru;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Оружие с Windfury дает возможность своим героям, пока они экипированы. Способность атаковать снова основана на предыдущих атаках героя, которые поворачиваются, даже те, которые были сделаны с другим оружием (или без оружия).] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Стратегия] (* <- lang_ru;; *);
+        [Strategy] (* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_card_minion;
+        concept_card_weapon
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+	    ->rrel_example: "file://HTML/Windfury.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);; 
+*);;

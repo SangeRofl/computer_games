@@ -1,0 +1,56 @@
+concept_game_console -> PlayStation ;;
+
+PlayStation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[Плэйстэшн]
+		(* 
+			<- lang_ru;; 
+		*);
+		[PlayStation]
+		(*
+		<- lang_en;; 
+		*);;
+		
+PlayStation <-rrel_key_sc_element:... 
+(* 
+		<-definition;; 
+		=>nrel_main_idtf: 
+			[Описание ()](*<-lang_ru;;*); 
+			[Description ()](*<-lang_en;;*);; 
+			
+			<=nrel_using_constants: 
+			{ 
+				concept_game_console 
+			};;
+			//TODO: CHANGE EXAMPLES
+			<=nrel_sc_text_translation:... 
+			(* 
+				->rrel_example: "file://HTML/PS.html"(*<-lang_en;;=>nrel_format:format_html;;*);; 
+			//TODO: ADD English
+			*);; 
+*);; 
+
+PlayStation <-rrel_key_sc_element:... 
+(* 
+		<-illustration;; 
+		=>nrel_main_idtf: 
+				[Рис. (Плэйстэшн)](*<-lang_ru;;*); 
+				[Pic. (PlayStation)](*<-lang_en;;*);; 
+		<=nrel_sc_text_translation:... 
+		(* 
+			->rrel_example: "file://IMG/PS.jpg"(*=>nrel_format:format_jpg;;*);; 
+		*);; 
+*);; 
+
+PlayStation => nrel_producing_country : Japan;; 
+
+concept_calendar_date -> 1994;; 
+1994 => nrel_main_idtf : [1994 год](*<-lang_ru;;*);; 
+1994 => nrel_main_idtf : [year of 1994](*<-lang_en;;*);; 
+PlayStation => nrel_release_date : 1994;; 
+
+value -> 1;; 
+PlayStation <- rrel_seies: 1;; 
+
+

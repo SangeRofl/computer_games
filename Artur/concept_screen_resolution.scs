@@ -1,0 +1,37 @@
+concept_screen_resolution
+=> nrel_main_idtf: [разрешение экрана] (* <- lang_ru;; *);
+=> nrel_main_idtf: [screen resolution] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Разрешение экрана)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Разрешение — величина, определяющая
+				количество точек (элементов растрового изображения)
+				на единицу площади (или единицу длины).] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_cpu;;
+		-> concept_tact;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Разрешение экрана)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Разрешением экрана монитора обычно
+		называют размеры получаемого на экране
+		изображения в пикселях подразумевая разрешение
+		относительно физических размеров экрана] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

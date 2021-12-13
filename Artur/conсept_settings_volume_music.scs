@@ -1,0 +1,29 @@
+concept_settings_volume_music
+=> nrel_main_idtf: [громкость музыки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [volume music] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(громкость музыки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Характеристика изменение которой приводит
+				к изменению громкости музыки в игре] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(громкость музыки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки громкости музыки не влияет на производительность игры] (* <- lang_ru;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

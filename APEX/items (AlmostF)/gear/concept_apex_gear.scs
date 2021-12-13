@@ -1,0 +1,43 @@
+concept_apex_gear
+=> nrel_main_idtf: [gear (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [экипировка (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_gear_shield;;
+    -> concept_apex_gear_helmet;;
+    -> concept_apex_gear_knockdown_shield;;
+    -> concept_apex_gear_backpack;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (экипировка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [экипировка (Apex Legends) - предмет, который игрок может надеть на персонажа в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_player;
+		nrel_restore
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (воздействие на персонажа)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Экипировка используется для увеличения показателей брони, размера рюкзака, уменьшения урона в голову и создания силового щита при нокауте персонажа.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player
+	};;
+*);
+
+
+<- sc_node_not_relation;;

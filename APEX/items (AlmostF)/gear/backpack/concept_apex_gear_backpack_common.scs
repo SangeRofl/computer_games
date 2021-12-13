@@ -1,0 +1,53 @@
+concept_apex_gear_backpack_common
+=> nrel_main_idtf: [common backpack (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычный рюкзак (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры рюкзака
+=> nrel_apex_additional_backpack_slots: 2;
+=> nrel_apex_overall_backpack_slots: 12;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (обычный рюкзак (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [обычный рюкзак (Apex Legends) - рюкзак, который увеличивает доступное количество слотов в рюкзаке легенды на 2 (всего 12) в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Распространенность обычных рюкзаков на карте)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычный рюкзак - самый распространенный вид рюкзаков на карте.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+        cocncept_apex_map
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (обычный рюкзак)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/gear/backpack/backpack_lvl1.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

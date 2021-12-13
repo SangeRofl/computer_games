@@ -1,0 +1,46 @@
+concept_apex_gear_backpack
+=> nrel_main_idtf: [backpack (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [рюкзак (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+    -> concept_apex_gear_backpack_common;;
+    -> concept_apex_gear_backpack_rare;;
+    -> concept_apex_gear_backpack_epic;;
+    -> concept_apex_gear_backpack_legendary;;
+	=> nrel_main_idtf:[Разбиение по редкости] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (рюкзак (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [рюкзак (Apex Legends) - экипировка, который надевается на легенду для увеличения количества слотов для предметов в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear;
+		concept_apex_legend
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Виды рюкзаков)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 4 разновидности рюкзака: обычный, редкий, эпический и легендарный.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack_common;
+        concept_apex_gear_backpack_rare;
+        concept_apex_gear_backpack_epic;
+        concept_apex_gear_backpack_legendary
+	};;
+*);
+
+
+<- sc_node_not_relation;;

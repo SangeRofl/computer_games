@@ -1,0 +1,74 @@
+concept_battlefield_3_weapon_m27_iar
+=> nrel_main_idtf: [M27 IAR (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [M27 IAR (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_machine_gun;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (M27 IAR (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_m27_iar">M27 IAR</b></sc_element> - это стартовый
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_machine_gun">пулемёт</b></sc_element> доступный 
+			<b><sc_element sys_idtf="concept_battlefield_3_class_support">классу поддержка</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_machine_gun;
+        concept_battlefield_3_weapon_m27_iar;
+        concept_battlefield_3_class_support
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (M27 IAR Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [По умолчанию 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_m27_iar">M27</b></sc_element> оснащена 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_bipod">сошками</b></sc_element> для стрельбы с опорой.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_m27_iar;
+        concept_battlefield_3_weapon_equipment_bipod
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_thickened_trunk; 
+											 concept_battlefield_3_weapon_equipment_front_handle; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+											 concept_battlefield_3_weapon_equipment_flame_arrester;
+											 concept_battlefield_3_weapon_equipment_bigmag;
+
+
+=> nrel_battlefield_3_weapon_max_damage: 25.0;
+=> nrel_battlefield_3_weapon_max_damage: 17.0;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 2.50;
+=> nrel_battlefield_3_weapon_full_reload_time: 2.90;
+=> nrel_battlefield_3_weapon_magazine_capacity: 45;
+=> nrel_battlefield_3_weapon_max_damage_distance: 8;
+=> nrel_battlefield_3_weapon_min_damage_distance: 50;
+=> nrel_battlefield_3_weapon_rate_of_fire: 750;
+=> nrel_battlefield_3_weapon_recoil_up: 0.35k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.1k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.3k;
+=> nrel_weapon_fire_mode: concept_weapon_auto_fire_mode; concept_weapon_single_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/m27.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,50 @@
+concept_specifications
+=> nrel_main_idtf: [технические характеристики] (* <- lang_ru;; *);
+=> nrel_main_idtf: [specifications] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+-> concept_clock_frequency;;
+-> concept_ram;;
+-> concept_free_place;;
+-> concept_video_memory;;
+-> concept_directx;;
+-> concept_operation_system;;
+-> concept_video_adapter;;
+-> concept_optical_drive;;
+-> concept_interface_device;;
+-> concept_screen_resolution;;
+-> concept_internet_connection;;
+
+	=> nrel_main_idtf: [разбиение по виду характеристик] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(технические характеристики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Технические характеристики - совокупность
+				технических параметров компьютера,
+				позволяющих отличить один компьютер от другого] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(технические характеристики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Основными техническими характеристиками
+		компьютера являются: объем жесткого диска,
+		тактовая частота процессора и объем оперативной памяти] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,77 @@
+heavy
+    <-sc_node_not_relation;
+	<= nrel_inclusion: concept_shop ;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [тяжелое оружие](* <-lang_ru;; *);
+        [heavy](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Nova](*<- lang_ru;;*);
+            [Nova](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (тяжелое оружие)] (* <- lang_ru;; *);
+            [Def. (heavy)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Тяжелое оружие —  класс индивидуального гладкоствольного стрелкового оружия для ведения огня на коротких дистанциях.](*<- lang_ru;;*);
+                [Heavy - class of individual smoothbore small arms for firing at short distances.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_class;;
+            ->nrel_arms;;
+            ->nrel_fire;;
+			->nrel_distance;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        unit
+    };;
+    => nrel_main_idtf: 
+        [Утв.(подразделение)] (* <- lang_ru;; *);
+        [Expl.(unit)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Применяется в основном полицейскими и специальными подразделениями.](*<- lang_ru;;*);
+            [It is mainly used by police and special unit.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+	shotgun;
+	machine_gun
+};
+
+=> nrel_inclusion: 	Nova ;
+			XM1014 ;
+			MAG_7 ;
+			Sawed_Off ;
+			M249 ;
+			Negev ;;
+					
+Nova => nrel_price : [2000];;
+XM1014 => nrel_price : [2100];;
+MAG_7 => nrel_price : [1700];;
+Sawed_Off => nrel_price : [1300];;
+M249 => nrel_price : [5200];;
+Negev => nrel_price : [1700];;
+					
+
+

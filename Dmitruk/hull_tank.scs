@@ -1,0 +1,26 @@
+concept_hull_of_tank
+<-sc_node_not_relation;
+<=nrel_module_tank: concept_tank_machine;
+<-concept_module;
+=> nrel_main_idtf:
+      [корпус танка] 
+      (*<-lang_ru;;*);
+       [hull of tank]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (корпус)] (* <- lang_ru;; *);; 
+  => nrel_using_constants:{
+ concept_tower_of_tank;
+concept_engine;
+concept_main_tank_gun;
+concept_tracks
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [корпус танка -  конструкция для размещения комплекса вооружения, экипажа, моторно-трансмиссионной установки, элементов броневой и специальной защиты, ходовой части, систем танка и вспомогательного оборудования.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
+
+

@@ -1,0 +1,48 @@
+concept_eft_barter_items_info_item_s1ecure_flash_drive
+=> nrel_main_idtf: [Secure flash drive(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Защищенный флеш-накопитель(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_info_item;
+
+=> nrel_eft_weapon_weight: 0.08;
+=> nrel_eft_barter_items_cost: 110152;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Защищенный флеш-накопитель(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Защищенный флеш-накопитель (Флешка) - бартерный предмет из группы инфо предметы, определенно может содержать важные данные.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_info_item
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (кто использует защищенный флеш-накопитель(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Такие флешки часто используются сотрудниками TerraGroup.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (защищенный флеш-накопитель(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Secure_Flash_drive.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

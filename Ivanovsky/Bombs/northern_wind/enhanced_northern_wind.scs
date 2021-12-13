@@ -1,0 +1,51 @@
+concept_enhanced_northern_wind
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенный северный ветер] (* <- lang_ru;;*);
+	[Enhanced northern wind] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенный северный ветер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая замедляет и примораживает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Замораживает противников. Удары, нанесённые замороженным противникам, наносят больше урона. Действует дольше. Даёт шанс убийства на месте..](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_northern_wind;;
+   	-> concept_ducal_water;;
+	-> concept_powdered_pearl;;
+	-> concept_stammelfords_dust;;
+   	-> concept_allspice_root;;
+	-> concept_fools_parsley_leaves;;
+	-> concept_verbena;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенный северный ветер состоит из: Чёрный порошок,Обычный северный ветер,Княжья вода,Корень душистого перца,Толченный жемчуг,Вербена,Листья собачьей петрушки.](*<-lang_ru;;*);;
+      *);;
+  *);;

@@ -1,0 +1,62 @@
+concept_computer_game_resident_evil_1
+
+=> nrel_main_idtf:     
+	 [Resident Evil ]   (*<-lang_ru;;*);
+      [Resident Evil ]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_puzzle;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_publication_date: date_22.03.1996;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: mt_framework;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom;
+company_nextech;
+=>nrel_platform: {
+concept_windows;
+concept_nintendo_ds;
+concept_playstation_1
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil   — компьютерная игра в жанре survival horror, первая игра серии игр Resident Evil, разработанная и выпущенная компанией Capcom в 1996 году на PlayStation.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Игра имела большой успех, что повлекло выход других частей игры, включая ремейк оригинала на GameCube и Wii, а также многочисленные спин-оффы, сиквелы, приквелы и порты на другие платформы (в том числе персональные компьютеры, портативные консоли и мобильные телефоны).](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

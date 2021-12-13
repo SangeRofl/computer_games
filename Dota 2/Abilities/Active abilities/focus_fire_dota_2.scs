@@ -1,0 +1,45 @@
+focus_fire_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Focus Fire] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Focus Fire] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Focus Fire)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой призывает вихрь, увеличивающий скорость его атаки по выбранному вражескому существу или строению на 475. Весь урон от этих атак будет уменьшен, за исключением урона от эффектов предметов.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Focus Fire)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При применении отдает команду Windranger автоматически атаковать цель.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [30];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Focus_Fire_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

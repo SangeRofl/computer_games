@@ -1,0 +1,41 @@
+concept_video_adapter
+=> nrel_main_idtf: [видеоадаптер] (* <- lang_ru;; *);
+=> nrel_main_idtf: [video adapter] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_adapter_nvidia;;
+	-> concept_adapter_amd;;
+	=> nrel_main_idtf: [разбиение по производителю] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Видеоадаптер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Видеоадаптер — устройство,
+				преобразующее графический образ,
+				хранящийся как содержимое памяти компьютера,
+				в форму, пригодную для дальнейшего вывода на экран монитора] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Видеоадаптер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Видеоадаптер обеспечивает интерфейс
+		между компьютером и монитором] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

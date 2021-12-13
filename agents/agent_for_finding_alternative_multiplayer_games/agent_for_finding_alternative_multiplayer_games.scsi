@@ -1,0 +1,271 @@
+agent_for_finding_alternative_multiplayer_games
+=> nrel_main_idtf:
+	[агентная scp-программа поиска альтернативных мультипользовательских игр] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding alternative multiplayer games] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_finding_alternative_multiplayer_games
+	(*
+		-> rrel_params: ..agent_for_finding_alternative_multiplayer_games_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_finding_alternative_multiplayer_games_set 
+			(*
+				->rrel_init: ..agent_for_finding_alternative_multiplayer_games_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator2;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_alternative_multiplayer_games ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator3;;
+						=>nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator_return;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator4;;
+						=>nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator_return;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+					 	
+					 	=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator5;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator5
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_const: concept_multiplayer_game ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator6 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator_return ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator6
+					(*
+						<- searchSetStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_multiplayer_game ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _game ;;
+
+						-> rrel_set_3 : rrel_assign: rrel_scp_var: rrel_node: _set_of_games ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator7 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator7
+					(*
+						<- searchElStr3 ;;
+			
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_games ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator8 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator8
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator9 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator9
+					(*
+						<- searchElStr3 ;;
+			
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_games ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _game ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator10 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator22 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator10
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator11 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator11
+					(*
+						<- searchSetStr3 ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_relation : _some_type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: _set_of_types ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator12 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator12
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set_of_types ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _type ;;
+	
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator13 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator15 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator13
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator14 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator14
+					(*
+						<- searchElStr3 ;;
+						
+						-> rrel_1: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _game ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator12 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator9 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator15
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _value1 ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_minimum_number_of_players ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator16 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator19 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator16
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _game ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _value1 ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_minimum_number_of_players ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator17 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator9 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator17
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _value2 ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_maximum_number_of_players ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator18 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator19 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator18
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _game ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _value2 ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_maximum_number_of_players ;;
+
+						=> nrel_then: ..agent_for_finding_alternative_multiplayer_games_operator19 ;;
+						=> nrel_else: ..agent_for_finding_alternative_multiplayer_games_operator9 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator19
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_multiplayer_game ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _game ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator20 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator20
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator21 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator21
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _game ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator9 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator22
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_multiplayer_game ;;
+
+						=> nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator23 ;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator23
+					(*
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		
+						=>nrel_goto: ..agent_for_finding_alternative_multiplayer_games_operator_return;;
+					*);;
+				-> ..agent_for_finding_alternative_multiplayer_games_operator_return 
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;

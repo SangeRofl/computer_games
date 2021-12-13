@@ -1,0 +1,33 @@
+concept_apex_consumable_healing
+=> nrel_main_idtf: [healing consumable (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [лечебный расходный материал (Apex Legends)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (лечебный расходный материал (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [лечебный расходный материал (Apex Legends) - расходный материал, который использует игрок для восстановления показателей здоровья и брони легенды в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable;
+		concept_player
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность лечебных расходных материалов в рюкзаке игрока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игрок может носить определенное количество лечебных расходных материалов, которое ограничено размером его рюкзака.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player;
+		concept_apex_gear_backpack
+	};;
+*);
+
+<- sc_node_not_relation;;

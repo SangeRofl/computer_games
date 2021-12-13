@@ -1,0 +1,62 @@
+concept_wc_class_mage
+
+<-concept_character_class;
+
+=>nrel_inclusion:
+{
+      concept_wc_mage_arcane;
+      concept_wc_mage_fire;
+      concept_wc_mage_frost
+};
+
+=> nrel_main_idtf:
+      [маг]
+      (*<-lang_ru;;*);
+       [mage]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Маг] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Маг)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Маги повелевают силами огня, льда, тайной магии и используют их, 
+чтобы уничтожить или нейтрализовать своих недругов. Они облачены в тканевые 
+одеяния и превосходно показывают себя в деле нанесения издалека 
+массированного урона — будь то атаки ледяными стрелами по одиночной цели или сеяние 
+смерти и разрушения заклинаниями с нанесением урона по области.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://mage.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+concept_wc_mage_arcane
+<- concept_wc_specialization;
+=> nrel_main_idtf:[тайная магия] (* <- lang_ru;; *);
+=> nrel_main_idtf:[arcane] (* <- lang_en;; *);;
+
+concept_wc_mage_fire
+<- concept_wc_specialization;
+=> nrel_main_idtf:[огонь] (* <- lang_ru;; *);
+=> nrel_main_idtf:[fire] (* <- lang_en;; *);;
+
+concept_wc_mage_frost
+<- concept_wc_specialization;
+=> nrel_main_idtf:[лёд] (* <- lang_ru;; *);
+=> nrel_main_idtf:[frost] (* <- lang_en;; *);;

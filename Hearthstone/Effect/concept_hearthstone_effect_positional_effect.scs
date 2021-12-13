@@ -1,0 +1,47 @@
+concept_hearthstone_effect_positional_effect
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Позиционный эффект]
+	(* <- lang_ru;;	*);
+	[Positional effect]
+	(* <- lang_en;;	*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание Позиционный эффект](*<-lang_ru;;*);
+		[Description of Positional effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_card_minion;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Позиционные эффекты - это эффекты, которые частично определяются положением миньонов на поле битвы .] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {
+        concept_hearthstone_card_mechanics;
+        concept_card_spell;
+        concept_card;
+        concept_card_minion;
+        computer_game_hearthstone
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Подавляющее большинство эффектов не зависит от положения миньонов. Они могут воздействовать только на целевого миньона (ов) или на область воздействия . Позиционные эффекты являются исключением и служат для того, чтобы сделать размещение миньонов стратегически значимым выбором.] (* <- lang_ru;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Игроки могут выбирать, где разместить миньона при вызове. Однако, после того, как миньон был вызван, он не может быть перемещен, потенциально делая это начальное размещение важным выбором. Игроки могут планировать позиционные эффекты, помещая своих миньонов в идеальное строение. Например, когда вы играете против мошенника , может быть целесообразно поместить сильного атакующего миньона в конец ряда, а не между другими миньонами, чтобы минимизировать влияние Предательства . И наоборот, колдуны могут захотеть разместить могущественных миньонов рядом друг с другом в рамках подготовки к Void Terror.] (* <- lang_ru;; *);;
+	*);;
+*);;

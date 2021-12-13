@@ -1,0 +1,47 @@
+concept_eft_ammo_40x53
+=> nrel_main_idtf: [40x53(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [40x53(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_grenadelauncher_ammo;
+
+=> nrel_eft_weapon_weight: 0.25;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (40x53(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [40x53 мм — типоразмер американских унитарных патронов к гранатомётам, в дальнейшем утверждённый как стандарт боеприпасов к автоматическим гранатомётам стран НАТО.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_grenadelauncher_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (производство патрона 40x53(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [По состоянию на начало 2015 года патроны 40x53 мм изготавливали 15 производителей в 12 странах мира.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (40x53(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/40x53.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

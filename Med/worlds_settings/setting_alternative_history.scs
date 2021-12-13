@@ -1,0 +1,26 @@
+concept_setting_alternative_history
+
+=> nrel_main_idtf:[альтернативная история] (* <- lang_ru;; *);
+=> nrel_main_idtf:[alternative history] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+		=> nrel_main_idtf: [Опр.(альтернативная история)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Альтернативная история - игровой мир компьютерной игры с другими вариантами исторических событий] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
+
+
+

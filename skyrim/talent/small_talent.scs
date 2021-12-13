@@ -1,0 +1,21 @@
+concept_skyrim_small_talent
+
+=> nrel_main_idtf:     
+	 [Малый талант (Скайрим)]   (*<-lang_ru;;*);
+     	 [Small talent (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Малый талант (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Малые таланты могут как затрачивать, так и не затрачивать энергию, но зато они могут быть использованы неограниченное число раз в сутки.  ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

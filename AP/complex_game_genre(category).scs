@@ -1,0 +1,65 @@
+concept_complex_game_genres
+=> nrel_main_idtf: [комплексные жанры] (* <- lang_ru;; *);
+=> nrel_main_idtf: [complex game genres] (* <- lang_en;;*);
+
+
+=> nrel_inclusion: concept_open_RPG; concept_open_action; concept_global_strategy; concept_RPG; concept_interactive_fiction; concept_MMORPG; concept_action; concept_slasher; concept_battle_racing; concept_strategy; concept_sim_strategy; concept_global_wargame; concept_puzzle; concept_quest; concept_browser_RPG; concept_adventure; concept_platformer; 
+concept_stealth_action; concept_fighting; concept_racing; concept_economical; concept_tower_defence; concept_wargame; concept_cardgame;
+
+// -> *******;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(комплексные жанры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Это категория жанров компьютерных игр, которые состоят из двух, трёх или пяти элементарных жанров.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setka;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(юнит)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Всегда присутствует управление множеством юнитов] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+
+
+<- sc_node_not_relation;;
+
+

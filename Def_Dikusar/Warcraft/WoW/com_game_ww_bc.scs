@@ -1,0 +1,51 @@
+computer_game_world_of_warcraft_the_burning_crusade
+=> nrel_main_idtf: [World of Warcraft: The Burning Crusade] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: The Burning Crusade] (* <- lang_ru;; *);
+=> nrel_idtf: [World of warcraft the burning crusade] (* <- lang_ru;; *);
+=> nrel_idtf: [World of warcraft the burning crusade] (* <- lang_en;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2007;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Несколько лет прошло с тех пор, как Пылающий Легион был повержен у горы Хиджал, и теперь обитатели Азерота продолжают восстанавливать свои разорённые земли. С новыми силами герои Альянса и Орды приступили к исследованию внешнего мира по ту сторону Тёмного Портала.
+
+Демоны вернулись, чтобы продолжить Пылающий поход. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft the burning crusade)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft the burning crusade  - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2007 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно..] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft the burning crusade)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Как Альянс, так и Орда получили по одной новой расе.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wowbk.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

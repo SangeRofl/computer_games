@@ -1,0 +1,15 @@
+ui_menu_find_average_age_of_team <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти средний возраст команды ] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find average age of team] (* <- lang_en;;*);;
+ui_menu_find_average_age_of_team => ui_nrel_command_template:
+	[*
+		action_find_average_age_of_team _-> ._action_find_average_age_of_team_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_average_age_of_team_instance _<- question;;
+	*];;
+
+ui_menu_find_average_age_of_team => ui_nrel_command_lang_template: [Какая команда: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_find_average_age_of_team => ui_nrel_command_lang_template: [What team: $ui_arg_1] (* <- lang_en;;*);;

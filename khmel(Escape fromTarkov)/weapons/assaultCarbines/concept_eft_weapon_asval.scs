@@ -1,0 +1,55 @@
+concept_eft_weapon_asval
+=> nrel_main_idtf: [SM VAL(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [АС ВАЛ(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_assault_carbine;
+
+<- concept_eft_fire_mode_single;
+<- concept_eft_fire_mode_auto;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_9x39;
+=> nrel_eft_weapon_sighting_distance: 420;
+=> nrel_eft_weapon_rate_of_fire: 900;
+=> nrel_eft_weapon_accuracy: 0.02;
+=> nrel_eft_weapon_effective_distance: 400;
+=> nrel_eft_weapon_starting_speed: 295;
+=> nrel_eft_weapon_weight: 0.92;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (АС ВАЛ(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [АС ВАЛ - бесшумный автомат с интегрированным глушителем, для подразделений и групп специального назначения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_assault_carbine
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (разработка АС ВАЛ(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Был разработан на базе ВСС "Винторез" в ЦНИИточмаш.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (АС ВАЛ(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Asval.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

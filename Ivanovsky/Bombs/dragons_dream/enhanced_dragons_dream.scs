@@ -1,0 +1,54 @@
+concept_enhanced_dragons_dream
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенный сон дракона] (* <- lang_ru;;*);
+	[Enhanced dragon's dream] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенный сон дракона)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая создает облако газа,которое взрывается при поджигании.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Испускает облако газа, который воспламеняется при поджигании. Действует сильнее, появляется шанс поджечь противника.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_mistletoe;;
+	-> concept_phosphorus;;
+	-> concept_stammelfords_dust;;
+	-> concept_ordinary_dragons_dream;;
+   	-> concept_optima_mater;;
+   	-> concept_allspice_root;;
+   	-> concept_bryonia;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенный сон дракона состоит из: Чёрный порошок,Обычный сон дракона. Фосфор. Optima mater, Омела, Корень душистого перца, Переступень.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

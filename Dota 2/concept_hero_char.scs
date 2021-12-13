@@ -1,0 +1,59 @@
+concept_hero_char
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [герой]
+      (*<-lang_ru;;*);
+       [hero]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Персонаж компьютерной игры Dota 2]
+      (*<-lang_ru;;*);
+      [Персонаж с набором способностей]
+      (*<-lang_ru;;*);   
+<= nrel_character: computer_game_dota_2;    
+<= nrel_inclusion: concept_character;
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (герой)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       concept_character;
+       computer_game_dota_2
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_hero_char">Герой</b></sc_element> - <b><sc_element sys_idtf="concept_character">персонаж</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компьютерной игры</b></sc_element> <b><sc_element sys_idtf="computer_game_dota_2">Dota 2</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Размер инвентаря)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У каждого героя в инветаре 6 активных слотов, 4 неактивных слота и 1 слот под телепорт .] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Максимальный уровень)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Максимальный уровень каждого героя -- 30.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<=nrel_subdividing:
+{concept_intellectual;
+ concept_trickster;
+concept_strong_man
+};
+<= nrel_subdividing: 
+{concept_core;
+concept_midlaner;
+concept_hardlaner;
+concept_soft_support;
+concept_hard_support
+};;
+concept_hero_char -> { rrel_example : Magnus; rrel_example : Lina };;

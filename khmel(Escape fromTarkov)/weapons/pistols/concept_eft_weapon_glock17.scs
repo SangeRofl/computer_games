@@ -1,0 +1,54 @@
+concept_eft_weapon_glock17
+=> nrel_main_idtf: [Glock 17(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Glock 17(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_pistol;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_9x19;
+=> nrel_eft_weapon_sighting_distance: 70;
+=> nrel_eft_weapon_rate_of_fire: 30;
+=> nrel_eft_weapon_accuracy: 0.15;
+=> nrel_eft_weapon_effective_distance: 50;
+=> nrel_eft_weapon_starting_speed: 310;
+=> nrel_eft_weapon_weight: 0.231;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Glock 17(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Glock 17 — австрийский пистолет, разработанный фирмой Glock для нужд австрийской армии.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_pistol
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (распространение Glock 17(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Благодаря своим боевым качествам и надёжности Glock 17 получил широкое распространение в качестве полицейского, спортивного, а так же гражданского оружия самообороны.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Glock 17(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Glock17.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

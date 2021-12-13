@@ -1,0 +1,43 @@
+concept_dead_by_daylight_hooks_offering <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [подношение(Крюки)(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [offering(Крюки)(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Подношение(Крюки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Подношения(Крюки) - подношения, влияющие на количество Крюков на карте и расстояние между ними.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Крюки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения на Крюки могут приноситься как Убийцей, так и Выжившими.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Подношение(Крюки)(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Подношения на Крюки могут вилиять на количество крюков положительно и делать и ближе к друг другу, если они приносятся Убийцей и отрицательно вилиять на количество крюков и делать их дальше друг от друга, если подношения приносятся выжившими.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

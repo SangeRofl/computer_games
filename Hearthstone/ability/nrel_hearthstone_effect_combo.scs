@@ -1,0 +1,105 @@
+nrel_hearthstone_effect_combo
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект комбо* ]
+	(* <- lang_ru;;	*);
+	[Effect combo* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Effect_combo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта комбо](*<-lang_ru;;*);
+		[Description of Combo effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{     
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_class_rogue;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Комбо - это способность, при которой указанный эффект возникает, если карта не первая, сыгранная из руки в течение хода. Карты с этой способностью ограничены классом мошенников .] (* <- lang_ru;; *);
+
+            [Combo is an ability where the stated effect occurs if the card is not the first one played from the hand during the turn. Cards with this ability are limited to the rogue class.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Термин «комбо» также часто используется для обозначения последовательности карт или действий, которые разворачиваются в быстрой последовательности с или без комбо-эффектов.] (* <- lang_ru;; *);
+
+            [The term "combo" is also often used to refer to a sequence of cards or actions which are unleashed in quick succession, with or without Combo effects.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        nrel_battlecry;
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon
+
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Если игрок уже разыграл карту в этот ход , любые карты в руке игрока с комбо-эффектами будут выделены оранжевым цветом, чтобы указать, что при игре на этих картах также активируются их комбо-эффекты.] (* <- lang_ru;; *);
+
+            [If the player has already played a card that turn, any cards in the player's hand with Combo effects will be highlighted orange, to indicate that playing those cards will also trigger their Combo effects.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Хотя похоже на Battlecries , комбинированные эффекты функционируют отдельно, и не зависит от сопутствующих эффектов , таких как Неруб'арский Weblord.] (* <- lang_ru;; *);
+
+            [While similar to Battlecries, Combo effects function separately, and are not affected by related effects such as Nerub'ar Weblord.] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Стратегия использования эффекта комбо] (* <- lang_ru;; *);
+        [Strategy for using combo effect](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+        concept_hearthstone_effect_triggered;
+		concept_card;
+        concept_card_minion
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Если вы используете колоду с большим количеством карт с комбо-эффектами, дешевые карты работают очень хорошо, поскольку они позволяют вам легко использовать комбо-эффект. Backstab , например, может быть использован, чтобы убить слабого миньона, при этом вы не потеряете маны при его игре, что позволяет вам использовать эффект Combo для всего вашего запаса маны. Если у вас слишком много карт Combo, вам, возможно, придется тратить эффект Combo, чтобы затем использовать другие эффекты Combo.] (* <- lang_ru;; *);
+
+            [If you use a deck with a lot of cards with Combo effects, cheap cards work really great since they can allow you to use a Combo effect easily. Backstab, for example, can be used to kill a weak minion, while you don't lose any mana playing it, which allows you to use a Combo effect for your whole mana pool. If you have too many Combo cards, you might have to waste a Combo effect to then be able to use other Combo effects.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Монета может использоваться как карта для потенциального использования карты с эффектом Комбо. Классическая тактика - использовать монету в первом раунде, а затем играть в Defias Ringleader . Это, скорее всего, даст вам сильное преимущество на доске в ваш первый ход, поскольку его комбо-эффект вызывает бандита Defias, миньона 2/1. Для того, чтобы улучшить эту игру, вы можете использовать сквозь тень на вашем Братства Справедливости главаря , и играть в нее снова, что дает вам еще Defias Bandit , поэтому дает вам два 2/1 миньонов и один 2/2 любимца на вашей первой очереди. Эта игра является одной из причин , почему играют второй как мошенникчасто считается преимуществом. Подобные игры, использующие комбо-эффекты, могут быть включены с картами, которые генерируют монеты или дешевые заклинания, такие как Xaril, токсины отравленного разума или Razorpetal Lasher 's Petals.] (* <- lang_ru;; *);
+
+            [The Coin can be used as a card to build up for a potential use of a card with a Combo effect. A classic tactic is to use The Coin on your first round, and then play Defias Ringleader.
+            This will most likely give you a strong board advantage on your first turn since its Combo effect summons a Defias Bandit, a 2/1 minion. To improve this play, you can then use Shadowstep on your Defias Ringleader,
+            and play it again, which gives you another Defias Bandit, therefore giving you two 2/1 minions and one 2/2 minion on your first turn. This play is one reason why playing second as the rogue is often considered an advantage. Similar plays utilizing combo effects can be enabled with cards that generate Coins or cheap spells, like Xaril, Poisoned Mind's Toxins or Razorpetal Lasher's Petals.] (* <- lang_en;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Юный пивовар обладает большим количеством синергии в комбо-колодах. Он может вернуть Зачинщика Defias или Агента SI: 7 до или после его атаки, что позволяет вам немедленно повторно вызвать его для другого Комбо. Даже возвращение Бандита Defias может быть полезно для запуска Комбо на следующем ходу.] (* <- lang_ru;; *);
+
+            [Youthful Brewmaster has a great amount of synergy in Combo decks. It can return a Defias Ringleader or a SI:7 Agent before or after it has attacked, allowing you to re-summon it immediately for another Combo. Even returning a Defias Bandit can be useful to start a Combo on a further turn.] (* <- lang_en;; *);;
+	*);;
+*);;

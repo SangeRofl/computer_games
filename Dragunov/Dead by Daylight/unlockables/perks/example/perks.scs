@@ -1,0 +1,243 @@
+dbd_perk_agitation
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Agitation]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Нетерпимось]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_brutal_strength
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Brutal strength]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Зверская сила]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_unnerving_presence
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Unnerving presence]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Пугающее присутствие]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_dying_light
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Dying light]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Угасающий свет]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_make_your_choice
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Make your choice]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Выбор за тобой]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_shadowborn
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Shadowborn]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Дитя тьмы]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_save_the_best_for_last
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Save the best for last]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Оставьте лучшее на последок]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_play_with_your_food
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Play with your food]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Поиграть со своей жертвой]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_hangmans_trick
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Hangman's trick]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Секрет палача]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_surveillance
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Surveillance]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Наблюдение]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_bloodhound
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Bloodhound]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ищейка]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_predator
+<- concept_dead_by_daylight_perk_killer;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Predator]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Хищник]
+    (* <- lang_ru;; *);;
+
+//------------------------------------------------
+dbd_perk_solidarity
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Solidarity]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Солидарность]
+    (* <- lang_ru;; *);;
+
+dbd_perk_poised
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Poised]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Равновесие]
+    (* <- lang_ru;; *);;
+
+dbd_perk_head_on
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Head on]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Напролом]
+    (* <- lang_ru;; *);;
+
+dbd_perk_sole_survivor
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Sole Survivor]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Единственный выживший]
+    (* <- lang_ru;; *);;
+dbd_perk_object_of_obsession
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Object of obsession]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Объект одержимости]
+    (* <- lang_ru;; *);;
+dbd_perk_desicive_strike
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Desicive strike]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Решающий удар]
+    (* <- lang_ru;; *);;
+dbd_perk_left_behind
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Left behind]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Оставленный позади]
+    (* <- lang_ru;; *);;
+dbd_perk_borrowed_time
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Borrowed time]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Одолженное время]
+    (* <- lang_ru;; *);;
+dbd_perk_unbreakable
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Unbreakable]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Несокрушимый]
+    (* <- lang_ru;; *);;
+dbd_perk_balanced_landing
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Balanced landing]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Ловкое приземление]
+    (* <- lang_ru;; *);;
+dbd_perk_urban_evasion
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Urban evasion]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Городской бег]
+    (* <- lang_ru;; *);; 
+dbd_perk_streetwise
+<- concept_dead_by_daylight_perk_survivor;
+<- concept_dead_by_daylight_perk_teachable;
+=> nrel_main_idtf:
+    [Street wise]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Уроки улиц]
+    (* <- lang_ru;; *);;

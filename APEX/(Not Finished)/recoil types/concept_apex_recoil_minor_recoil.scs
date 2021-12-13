@@ -1,0 +1,6 @@
+concept_apex_recoil_minor_recoil
+=> nrel_main_idtf: [minor recoil] (* <- lang_en;; *);
+=> nrel_main_idtf: [минорная отдача] (* <- lang_ru;; *);
+
+<- concept_apex_recoil;
+<- sc_node_not_relation;;

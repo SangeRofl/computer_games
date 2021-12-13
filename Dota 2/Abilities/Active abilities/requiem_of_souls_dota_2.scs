@@ -1,0 +1,45 @@
+requiem_of_souls_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Requiem of Souls] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Requiem of Souls] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Requiem of Souls)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой выпускает собранные души в волнах демонической энергии. Существа возле него могут получить урон от нескольких волн. Замедляет передвижение врагов и накладывает на них страх на 0,8 сек. за каждую задетую волну. Создаёт одну волну энергии за каждую 1-ну душу, захваченные с помощью Necromastery. ] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Requiem of Souls)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Если герой погибнет, то эта способность сработает автоматически вне зависимости от её готовности. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [100];
+=> nrel_default_damage : [160];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Requiem_of_Souls_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

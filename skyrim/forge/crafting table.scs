@@ -1,0 +1,30 @@
+concept_skyrim_crafting_table
+
+=> nrel_main_idtf: [Crafting table (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Верстак (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(верстак (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Верстак — это устройство, на котором <b><sc_element sys_idtf="concept_character">персонаж</b></sc_element> игрока имеет возможность улучшить защитные качества своих <b><sc_element sys_idtf="concept_skyrim_armor">доспехов</b></sc_element> за счёт использования различных материалов, таких как слитки, полоски или куски кожи.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (местоположение верстака)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычно это устройство располагается рядом с <b><sc_element sys_idtf="concept_skyrim_forge">кузницей</b></sc_element> и является её частью. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,50 @@
+computer_game_warcraft_3_reforged
+=> nrel_idtf: [Warcraft 3: Reforged] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: Reforged] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: Reforged] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_RTS;
+=> nrel_platform: concept_windows;
+=> nrel_platform: consept_mac_os;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2019;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [Над исправленной кампанией работал сценарист Blizzard Кристи Голден. Сюжет будет частично пересмотрен для избавления от несостыковок по сравнению с более поздними продуктами франшизы. Изначально планировалось заменить некоторых актёров первоначальной озвучки теми, кто в настоящее время озвучивает их персонажей. Из-за негативной реакции фанатов это решение было отменено. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Warcraft III: Reforged)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Warcraft III: Reforged — компьютерная игра в жанре стратегии в реальном времени; обновлённая версия игры Warcraft III: Reign of Chaos и её дополнения The Frozen Throne, планирующаяся к выходу в 2019 году.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Warcraft III: Reforged)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игра была анонсирована Blizzard 2 ноября 2018 года в ходе BlizzCon с упоминанием переработанных персонажей и графики с перспективой выхода в 2019 году.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft-3-reforged.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

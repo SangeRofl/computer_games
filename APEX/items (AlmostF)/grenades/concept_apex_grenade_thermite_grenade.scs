@@ -1,0 +1,52 @@
+concept_apex_grenade_thermite_grenade
+=> nrel_main_idtf: [Thermite grenade (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Зажигательная граната (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры гранаты
+=> nrel_apex_grenade_hit_damage: 10;
+=> nrel_apex_grenade_explosion_damage: [отсутствует];
+=> nrel_apex_full_grenade_damage: 300;
+=> nrel_apex_grenade_explosion_delay: [отсутствует];
+=> nrel_apex_grenade_slow_time: [отсутствует];
+=> nrel_apex_grenade_damage_over_time: 25;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Осколочная граната (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Осколочная граната (Apex Legends) - граната, которая взрывается при попадании на землю, которая начинает гореть после взрыва в течение нескольких секунд, поджигая персонажей.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_explosion
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (воздействие на персонажа)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта граната наносит периодический урон, в течении которого персонаж горит, даже выйдя из области действая огня.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Осколочная граната)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/grenades/apex_thermite_grenade.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_grenade;
+<- sc_node_not_relation;;

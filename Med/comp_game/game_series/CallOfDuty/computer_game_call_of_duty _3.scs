@@ -1,0 +1,157 @@
+computer_game_call_of_duty_3
+=> nrel_main_idtf: [Call of Duty 3] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty 3] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_treyarch;
+=> nrel_publisher: company_activision;
+=> nrel_localizer: company_1c;
+
+//=> nrel_platform: xbox_360; playstation_3; nintendo_wii; playstation_2; xbox;	
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: treyacrh;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform:  playstation_3;;
+	=> nrel_producing_country: country_japanese;;
+	=> nrel_publication_date: date_14_06_2007;;
+	=> nrel_main_idtf: [Дата выхода в Японии для PlayStation 3] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360;;
+	=> nrel_producing_country: country_japanese;;
+	=> nrel_publication_date: date_29_03_2007;;
+	=> nrel_main_idtf: [Дата выхода в Японии для Xbox 360] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: playstation_3;;
+	=> nrel_producing_country: country_eu; country_australia;;
+	=> nrel_publication_date: date_23_03_2007;;
+	=> nrel_main_idtf: [Дата выхода в ЕС и Австралии для PlayStation 3] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: nintendo_wii;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_08_12_2006;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для Nintendo Wii] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: nintendo_wii;;
+	=> nrel_producing_country: country_australia;;
+	=> nrel_publication_date: date_06_12_2006;;
+	=> nrel_main_idtf: [Дата выхода в Австралии для Nintendo Wii] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: playstation_2;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_24_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для PlayStation 2] (* <- lang_ru;; *);;	
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox; playstation_2;;
+	=> nrel_producing_country: country_australia;;
+	=> nrel_publication_date: date_22_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в Австралии для Xbox и PlayStation 2] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: nintendo_wii;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_19_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в США для Nintendo Wii] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: playstation_3;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_17_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в США для PlayStation 3] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360;;
+	=> nrel_producing_country: country_australia;;
+	=> nrel_publication_date: date_15_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в Австралии для Xbox 360] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360; xbox;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_10_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для Xbox 360 и Xbox] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_360; xbox; playstation_2;;
+	=> nrel_producing_country: country_usa;;
+	=> nrel_publication_date: date_07_11_2006;;
+	=> nrel_main_idtf: [Дата выхода в США для Xbox 360, Xbox и PlayStation 2] (* <- lang_ru;; *);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Call of Duty 3)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Компьютерная игра в жанре шутер от первого лица на тему Второй мировой войны, вторая в серии игр Call of Duty] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_shooter;;
+			-> concept_setting_world_war_the_second;;
+			-> concept_first_person_view;;
+			-> concept_computer_game;;
+			-> concept_game_series_call_of_duty;;
+		*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty_2.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

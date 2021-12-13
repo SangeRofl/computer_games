@@ -1,0 +1,301 @@
+agent_for_finding_available_ammunition_at_fix_price
+=> nrel_main_idtf:
+	[агентная scp-программа поиска доступной аммуниции по фиксированной цене] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding available ammunition at fix price] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_finding_available_ammunition_at_fix_price
+	(*
+		-> rrel_params: ..agent_for_finding_available_ammunition_at_fix_price_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_finding_available_ammunition_at_fix_price_set 
+			(*
+				->rrel_init: ..agent_for_finding_available_ammunition_at_fix_price_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator2;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_available_ammunition_at_fix_price ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator3;;
+						=>nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator_return;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator4;;
+						=>nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator_return;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+					 	
+					 	=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator5;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator5
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_game_currency ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator6 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator_return ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator6
+					(*
+						<- searchElStr5 ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _game_currency_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator7 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator_return ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator7
+					(*
+						<- searchSetStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_shop ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _types ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_types ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator8 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator_return ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator8
+					(*
+						<- searchElStr3 ;;
+					
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _type ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator9 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator22 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator9
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator10 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator10
+					(*
+						<- contAssign;; 
+					
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator11 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator11
+					(*
+						<- searchSetStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _guns ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_guns ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator12 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator8 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator12
+					(*
+						<- searchElStr3 ;;
+					
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_guns ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _gun ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator13 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator19 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator13
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator14 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator14
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _gun ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _price ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_price ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator15A;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator12 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator15A
+					(*
+						<- ifEq ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _game_currency_value ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _price ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator16 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator15B ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator15B
+					(*
+						<- ifGr ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _game_currency_value ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _price ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator16 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator12 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator16
+					(*
+						<- contAdd ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator17 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator17
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _gun ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator18 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator18
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _gun ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator12 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator19
+					(*
+						<- ifGr ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+						=> nrel_then: ..agent_for_finding_available_ammunition_at_fix_price_operator20 ;;
+						=> nrel_else: ..agent_for_finding_available_ammunition_at_fix_price_operator8 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator20
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_shop ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator21 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator21
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator8 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator22
+					(*
+						<- genElStr3 ;;
+				
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_shop ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator23 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator23
+					(*
+						<- genElStr3 ;;
+				
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator24 ;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator24
+					(*
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		
+						=>nrel_goto: ..agent_for_finding_available_ammunition_at_fix_price_operator_return;;
+					*);;
+				-> ..agent_for_finding_available_ammunition_at_fix_price_operator_return 
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;

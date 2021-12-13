@@ -1,0 +1,105 @@
+concept_hearthstone_effect_triggered
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[Триггерные эффекты в Hearthstone]
+	(* <- lang_ru;;	*);
+	[Hearthstone triggered effect]
+	(* <- lang_en;;	*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание триггерного эффекта](*<-lang_ru;;*);
+		[Description of triggered effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        nrel_battlecry;
+        nrel_herthstone_effect_dethrattle;
+        concept_card;
+        concept_spell;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Это эффекты, которые активируются в ответ на определенные события. Срабатывающие эффекты могут принадлежать миньонам , оружию или заклинаниям (в форме секретов )] (* <- lang_ru;; *);
+            [Triggered effects are effects that activate in response to specific events. Triggered effects may belong to minions, weapons or spells (in the form of Secrets)] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Сработавшие эффекты включают в себя именованные способности, такие как Battlecry и Deathrattle , а также безымянные эффекты. Все секреты вызваны эффектами.
+            Многие срабатывающие эффекты должны быть сначала введены в игру, чтобы стать активными - например, играя миньоном, вооружая оружие или разыгрывая 
+            Секрет - в то время как другие активируются, когда сама карта извлекается, сбрасывается или вводится в игру. 
+            Различные типы триггерного эффекта часто используют общие правила их активации.] (* <- lang_ru;; *);
+
+            [Triggered effects include named abilities such as Battlecry and Deathrattle.All Secrets are triggered effects. Many triggered effects must first be put into play in order to become active
+             - such as by playing the minion, equipping the weapon, or casting the Secret - while others activate when the card itself is drawn, discarded or put into play.
+             Different types of triggered effect often share common rules for their activation.] (* <- lang_en;; *);;
+        
+	*);;
+    <= nrel_sc_text_translation: ...(*
+        -> [Поскольку наиболее распространенные типы триггеров представлены такими ключевыми словами, как Battlecry,
+            термин триггерный эффект иногда используется более конкретно для обозначения тех, которые не указаны ключевым словом, а вместо этого явно описаны в тексте их карточки.
+            Такие эффекты обычно - но не всегда - обозначаются, когда в игре маленький значок молнии, колба с ядом ( ядовитым ) или разбитым сердцем ( Вампиризм )
+            внизу портрета или значка карты, и обычно могут быть активированы любое количество раз, но только во время игры. Любая способность,
+            которая заявляет «в конце вашего хода » или «в начале вашего хода», является триггерным эффектом, как и большинство этих состояний «когда» или «всякий раз».] (* <- lang_ru;; *);
+
+            [Since the most common types of triggers are represented by keywords such as Battlecry, the term triggered effect is sometimes used more specifically to refer to those not indicated by a keyword,
+            but instead described explicitly in their card text. Such effects are usually - but not always - denoted when in play by a small lightning bolt icon, a flask with venom (Poisonous),
+            or a broken heart (Lifesteal) at the bottom of the card's portrait or icon, and can usually be activated any number of times, but only while in play.
+            Any ability that states "at the end of your turn" or "at the start of your turn" is a triggered effect, as are most that state "when" or "whenever".] (* <- lang_en;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {   
+		nrel_battlecry;
+        nrel_herthstone_effect_deathrattle;
+		concept_card_minion
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Когда несколько сработавших эффектов активируются одновременно, например, в конце хода игрока, эффекты активируются в том порядке,
+            в котором были вызваны миньоны, при этом призываемые миньоны сначала активируют свои сработавшие эффекты первыми. Любые смерти,
+            вызванные триггерами, разрешаются сразу же, после чего следуют последствия этих смертей. Однако есть исключения из этого правила.] (* <- lang_ru;; *);
+
+            [When multiple triggered effects activate at once, such as at the end of a player's turn, the effects will activate in the order in which the minions were summoned,
+            with the minions summoned first activating their triggered effects first. Any deaths resulting from the triggers then resolve at once,
+            followed by consequences from those deaths. However, there are exceptions to this rule.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Срабатывающие эффекты, которые срабатывают от играющих карт или разыгрывающих заклинаний, могут иметь место до или после того,
+            как карта вступает в силу, в зависимости от триггера. Например, активируя вожак стаю с Violet Учителем активного
+            заставишь ее вызвать свежий Violet Ученик , который будет затем извлечь выгоду из Лидера нагишом Pack, во время игры
+            Внутренней Ярости на 3/1 Wild Pyromancer будет уничтожьте миньона, прежде чем он сможет активировать свой эффект.] (* <- lang_ru;; *);
+
+            [Triggered effects which trigger from playing cards or casting spells may take place before or after the card takes effect,
+            depending on the trigger. For example, activating Leader of the Pack with a Violet Teacher active will cause her to summon
+            a fresh Violet Apprentice, who will then benefit from the Leader of the Pack buff, while playing Inner Rage on a 3/1 Wild Pyromancer
+            will destroy the minion before it can activate its effect.] (* <- lang_en;; *);;
+	*);;
+    <= nrel_sc_text_translation: ...
+	(*
+		-> [Вызванные эффекты требуют, чтобы карта не была уничтожена. Тем не менее, игра проверяет уничтожение миньонов только с 0 или отрицательным здоровьем,
+            когда заканчивается фаза события. Это означает, что миньон может быть активирован во время той же фазы, на которой он уничтожен, независимо от порядка,
+            в котором происходят события. Например, если три огненных Овца противника убиты вашим Пламенным ударом, когда у вас есть Аколит Болина доске Аколит
+            сработает три раза (несмотря на то, что его здоровье достигло 0 после первой смертельной гремучей овцы), так как он не может полностью умереть, пока все
+            еще обрабатываются смертельные загадки овец. Как только все одновременные эффекты разрешены, игра проверит наличие миньонов со здоровьем 0 или ниже,
+            заметит Аколита и уничтожит его. И наоборот, Культовый Мастер не может сработать из-за смерти дружественного миньона, убитого в то же время,
+            что и сам Культовый Мастер, так как к тому времени, когда игра проверяет наличие триггеров из смертей, Мастер Культов также был уничтожен.] (* <- lang_ru;; *);
+
+            [Triggered effects require the card not to have been destroyed. However, the game only checks to destroy minions with 0 or negative Health
+            when an event phase ends. This means that a minion can be triggered during the same phase in which it is destroyed,
+            regardless of the order in which the events take place. For example, if three enemy Explosive Sheep are killed by your Flamestrike
+            while you have an Acolyte of Pain on the board, the Acolyte will trigger three times (despite his Health reaching 0 after the first
+            Exploding Sheep's Deathrattle) since he cannot completely die while the Sheep Deathrattles are still being handled. Once all simultaneous effects have resolved,
+            the game will then check for any minions at 0 or lower Health, notice the Acolyte and destroy it. Conversely, Cult Master cannot trigger from the death
+            of a friendly minion killed at the same time as the Cult Master itself, since by the time the game checks
+            for triggers from the deaths, the Cult Master has also been destroyed.] (* <- lang_en;; *);;
+	*);;
+*);;

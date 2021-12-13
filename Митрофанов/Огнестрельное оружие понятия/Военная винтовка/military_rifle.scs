@@ -1,0 +1,69 @@
+concept_military_rifle
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Военная винтовка] (* <- lang_ru;;*);
+	[Military rifle] (* <-lang_en;;*);
+
+=>nrel_damage: 137
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[137](* <-lang_en; lang_ru;; *);;
+		<-damage;;
+		=>nrel_damage: [137];;
+	*);
+
+=>nrel_accuracy_gun: 55
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[55](* <-lang_en; lang_ru;; *);;
+		<-accuracy;;
+		=>nrel_accuracy: [55];;
+	*);
+
+=>nrel_rate_of_fire: 100
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[100](* <-lang_en; lang_ru;; *);;
+		<-rate_of_fire;;
+		=>nrel_rate_of_fire: [100];;
+	*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_military_rifle;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Военная винтовка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Военная винтовка — более тяжелое огнестрельное оружие (по сравнению с пистолетом) в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики военной винтовки)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Военная винтовка имеет следующие характеристики: урон - 137; точность - 55; скорострельность - 100. Оснащена магазином на 30 патронов. К данной винтовке игрок может нести боезапас в количестве 90 патронов.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://military_rifle.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

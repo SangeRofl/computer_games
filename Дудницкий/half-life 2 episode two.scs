@@ -1,0 +1,57 @@
+concept_computer_game_half_life_2_episode_two
+
+=> nrel_main_idtf:
+		[Half-Life 2 Episode Two] (* <-lang_ru;;*);
+		[Half-Life 2 Episode Two] (*<-lang_en;;*);
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_scince_fiction;
+
+=> nrel_game_mode : concept_singleplayer_game;
+=> nrel_publication_date: date_10.10.2007;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine:  	Source;
+=> nrel_publisher: Valve;
+=> nrel_developer: Valve;
+=> nrel_platform: {
+concept_windows;
+concept_linux;
+concept_mac_os;
+concept_playstation3;
+concept_xbox360
+};
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (Half_Life 2 Episode Two) ] (*<-lang_ru;;*);;
+=>nrel_using_constants: {
+concept_game_series_half_life;
+concept_three_dimensional_game;
+concept_mutiplatform_game
+};;
+	<= nrel_sc_text_translation: ... (*
+ 	->rrel_example:
+[Half-Life 2: Episode Two — компьютерная игра в жанре шутера от первого лица, разработанная и изданная компанией Valve в 2007 году; локализацией и изданием игры на территории России занималась компания Бука. Вторая часть в трилогии эпизодов, продолжающих сюжет компьютерной игры Half-Life 2. ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/half-life 2 episode two.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half_Life 2 Episode Two)  ] (* <-lang_ru;; *);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[Следуя идее Valve, что каждый эпизод должен основываться на определённой тематике, Episode Two фокусируется на открытых пространствах, дальних путешествиях и менее линейном геймплее, чем в прошлых играх серии Half-Life. Второй эпизод вышел несколько длиннее первого: в нём 7 глав (уровней), рассчитанных приблизительно на 8 часов игры. Действие игры развивается сразу после событий Episode One в лесной местности близ уничтоженного Сити 17. По сюжету, Гордон Фримен и Аликс Вэнс должны добраться до Белой Рощи — базы Сопротивления и передать повстанцам захваченные в первом эпизоде секретные данные Альянса.  ] (* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

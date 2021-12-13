@@ -1,0 +1,49 @@
+concept_enhanced_grapeshot
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенная картечь] (* <- lang_ru;;*);
+	[Enhanced grapeshot] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенная картечь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют для уничтожения гнезд чудовищ и против летающих врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ранит осколками всех противников в зоне поражения. Наносит урон огнём. Урон наносится вне зависимости от доспеха. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_grapeshot;;
+	-> concept_calcium_equum;;
+	-> concept_stammelfords_dust;;
+	-> concept_blowball;;
+	-> concept_crows_eye;;
+	-> concept_longrube;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенная картечь состоит из: Чёрный порошок, Optima mater, Обычная двимеритовая бомба, Толчёный жемчуг, Одуванчик, Лепестки гинации, Кровостой.](*<-lang_ru;;*);;
+      *);;
+  *);;

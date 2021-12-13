@@ -1,0 +1,41 @@
+concept_gas_tank
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Зомби с баллоном] (* <- lang_ru;;*);
+	[Gas Tank] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_gas_tank;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Зомби с баллоном)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Зомби с баллоном - обычный вид кусаки, разгуливающий по Харрану в костюме химической/биологической защиты.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Зомби с баллоном)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При повреждении баллона холодным или огнестрельным оружием зомби взрывается.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://gastank.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

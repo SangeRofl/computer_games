@@ -1,0 +1,61 @@
+computer_game_warcraft_2_beyond_the_dark_portal
+=> nrel_idtf: [Warcraft 2: Beyond the Dark Portal] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft II: Beyond the Dark Portal] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft II: Beyond the Dark Portal] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_RTS;
+=> nrel_platform: consept_mac_os;
+=> nrel_platform: concept_ms_dos;
+=> nrel_platform: concept_windows;
+=> nrel_platform: playstation;
+=> nrel_publisher: company_ubisoft;
+=> nrel_publisher:company_blizzard;
+=> nrel_developer: company_cyberlore_studios;
+=> nrel_publication_date: date_1996;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+<=nrel_addition:computer_game_warcraft_2_tides_of_darkness;
+=> nrel_plot: [Альянс, почти потерпевший поражение во время Второй войны, воспользовался для контрнаступления внутренними трениями Орды, вызванными поиском оркским чернокнижником Гул’даном (англ. Gul’dan) гробницы Саргераса (англ. Tomb of Sargeras). Когда Орда сражалась с отступническими кланами Пожирателей Бури (англ. Stormreaver Clan) и Сумеречного Молота (англ. Twilight Hammer Clan), силы Альянса атаковали, оттеснив орков через королевство дворфов Каз Модан к Тёмному Порталу, через который орки некогда проникли в мир Азерот. Силы Альянса захватили в плен или уничтожили почти всех орков, но некоторые кланы избежали пленения и под руководством Килрогга «Мёртвого Глаза» отступили в свой родной мир Дренор. Несмотря на то, что Тёмный Портал был сильно повреждён одним из самых сильных магов Азерота, Кадгаром, расщелина между мирами, открытая в своё время совместными усилиями Гул’дана и Медива сохранилась, хотя больше и не являлась надёжным средством перехода между мирами.
+
+Захвативший к тому времени практически полную власть над Дренором вождь клана Призрачной Луны (англ. Shadowmoon Clan) шаман Нер’зул организовал несколько вылазок на Азерот, имеющих целью захват нескольких ценных артефактов. Используя эти артефакты, Нер’зул намеревался открыть порталы из Дренора в новые миры. Для этой операции он заручился поддержкой великих оркских воинов — Грома Адского Крика (англ. Grommash «Grom» Hellscream) и Каргата Острорука, Терона Кровожада (англ. Teron Gorefiend).
+
+Однако сквозь вновь открытый Нер’зулом портал в Дренор проникла экспедиция Альянса под руководством Кадгара, эльфийского следопыта Аллерии Ветрокрылой (англ. Alleria Windrunner), паладина Туралиона (англ. Turalyon), дворфийского тана Курдрана Громового Молота (Kurdran Wildhammer) и командира ополчения Даната Троллебоя (англ. Danath Trollbane). В результате возникшего конфликта уже на территории Дренора, Нер’зул решил попытаться открыть новые порталы незамедлительно и бежать через них с ближайшими сторонниками.
+
+Тёмный портал был вновь сильно повреждён Кадгаром, закрыв остаткам экспедиции и оркам путь в Азерот, но открытые Нер’зулом расщелины в другие миры пошатнули структуру мира Дренор, вызвав катаклизмы и разорвав мир на несколько обломков. Большая часть обитателей Дренора погибла или пропала без вести. Так, по сей день ничего неизвестно о судьбе Аллерии и Туралиона.
+
+Нер’зул же, покинувший Дренор сквозь один из новых порталов, был схвачен демонами Пылающего Легиона, подвергнут пыткам, заключению в Ледяной трон (англ. Frozen Throne) и сослан на северный континент Азерота, Нордскол.] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Warcraft 2: Beyond the Dark Portal)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Warcraft II: Beyond the Dark Portal (warcraft с англ. — «военное ремесло», beyond the dark portal с англ. — «за тёмным порталом») — дополнение к компьютерной игре в жанре стратегии в реальном времени «Warcraft II: Tides of Darkness», которое было разработано Cyberlore Studios, и выпущено 30 апреля 1996 года компанией Blizzard Entertainment.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Warcraft 2: Beyond the Dark Portal)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Важным отличием от оригинального Warcraft II является наличие большого количества героев и возможности управлять ими.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft_2_bodp.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

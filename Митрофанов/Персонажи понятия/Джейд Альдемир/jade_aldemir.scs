@@ -1,0 +1,41 @@
+concept_jade_aldemir
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Джейд Альдемир] (* <- lang_ru;;*);
+	[Jade Aldemir] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_jade_aldemir;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Джейд Альдемир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Джейд Альдемир - считается лучшим бойцом в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Джейд Альдемир в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Защищает выживщих от мутантов.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Джейд Альдемир.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

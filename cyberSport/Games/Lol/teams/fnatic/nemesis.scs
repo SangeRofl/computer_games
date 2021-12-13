@@ -1,0 +1,116 @@
+nemesis
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Tim "Nemesis" Lipovsek](* <-lang_en;; *);
+		[Тим "Nemesis" Липовсек](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Nemesis](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Slovenia;
+	=>nrel_surname: Lipovsek;
+	=>nrel_first_name: Tim;
+	=>nrel_nickname: Nemesis;
+	=>nrel_birthday: 26_07_1999
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[26.07.1999](* <-lang_en; lang_ru;; *);;
+		<-date;;
+		=>nrel_date_day: [26];;
+		=>nrel_date_month: [7];;
+		=>nrel_date_year: [1999];;
+	*);
+
+	<=nrel_with_whom: contract_nemesis_and_vape_nays_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Nemesis and VAPE NAYS](* <-lang_en;; *);
+			[Контракт между Nemesis и VAPE NAYS](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: vape_nays_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_05_2016
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[.05.2016](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [0];;
+				=> nrel_date_month: [5];;
+				=> nrel_date_year: [2016];;
+			*);;
+			->rrel_end: xx_06_2016
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[.06.2016](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [0];;
+					=> nrel_date_month: [06];;
+					=> nrel_date_year: [2016];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_nemesis_and_mad_lions_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Nemesis and MAD Lions](* <-lang_en;; *);
+			[Контракт между Nemesis и MAD Lions](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: mad_lions_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 23_10_2017
+			(*
+				<-sc_node_not_relation;;
+				=> nrel_main_idtf:
+					[23.10.2017](* <-lang_en; lang_ru;; *);;
+				<- date;;
+				=> nrel_date_day: [0];;
+				=> nrel_date_month: [5];;
+				=> nrel_date_year: [2017];;
+			*);;
+			->rrel_end: 28_11_2018
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[28.11.2018](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [28];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2018];;
+				*);;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_nemesis_and_fnatic_lol
+	(*
+			=> nrel_main_idtf:
+			[Сontract between Nemesis and Fnatic](* <-lang_en;; *);
+			[Контракт между Nemesis и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 29_11_2018
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[29.11.2018](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [29];;
+					=> nrel_date_month: [11];;
+					=> nrel_date_year: [2018];;
+				*);;
+		*);;
+	*);;
+

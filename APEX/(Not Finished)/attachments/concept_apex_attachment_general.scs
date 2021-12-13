@@ -1,0 +1,5 @@
+concept_apex_attachment_general
+=> nrel_main_idtf: ['Apex Legends' general attachment] (* <- lang_en;; *);
+=> nrel_main_idtf: [обычная модификация в игре 'Apex Legends'] (* <- lang_ru;; *);
+ 
+<- sc_node_not_relation;;

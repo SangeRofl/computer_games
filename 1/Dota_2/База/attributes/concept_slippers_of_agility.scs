@@ -1,0 +1,39 @@
+concept_slippers_of_agility
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [slippers of agility] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [тапочки ловкости] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(slippers of agility)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Легкие тапочки, сделанные из кожи паука, обостряют ваше чутье.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(slippers of agility)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Тапочки ловкости отлично подойдут героям в ранней стадии игры, у которых основная характеристика ловкость.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/slippers_of_agility.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

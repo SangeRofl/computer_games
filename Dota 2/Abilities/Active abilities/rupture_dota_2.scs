@@ -1,0 +1,44 @@
+rupture_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Rupture] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Rupture] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Rupture)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Разрывает кожу врага. Если он будет передвигаться, то за каждые 100 единиц будет получать урон, зависящий от его максимального запаса здоровья. Урон проходит сквозь невосприимчивость к магии.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Rupture)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Несколько применений способности на одну и ту же цель не складываются, но обновляют длительность.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [70];
+=> nrel_default_damage : [0];
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Rupture_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

@@ -1,0 +1,49 @@
+concept_devils_puffball
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Чертов гриб] (* <- lang_ru;;*);
+	[Devil's puffball] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Чертов гриб)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая выпускает облако яда.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Полезность бомбы)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Полезна против: сильных монстров, способных совершать быстрые прыжки, набеги или рывки, например, против экимм, катаканов, бесов, чертей и волколаков](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://devils_puffball.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_ordinary_devils_puffball;;
+    -> concept_enhanced_devils_puffball;;
+    -> concept_superior_devils_puffball;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

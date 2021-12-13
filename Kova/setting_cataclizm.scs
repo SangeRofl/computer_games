@@ -1,0 +1,32 @@
+concept_setting_cataclizm
+=> nrel_main_idtf: [катаклизм] (* <- lang_ru;; *);
+=> nrel_idtf: [cataclizm] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_invasion_of_alien; concept_setting_invasion_of_zombie;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(катаклизм)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором в компьютерной игре случается катаклизм.] (* <- lang_ru;; *);;	 
+	*);;							
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(катаклизм)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В таких играх очень реально показан катаклизм] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

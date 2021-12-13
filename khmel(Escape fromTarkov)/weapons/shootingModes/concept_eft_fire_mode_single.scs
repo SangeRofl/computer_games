@@ -1,0 +1,17 @@
+concept_eft_fire_mode_single
+=> nrel_main_idtf: [single fire(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [одиночная стрельба(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<-parameter;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(одиночная стрельба (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [одиночная стрельба это вид стрельбы при котором огонь производится по одному патрону.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

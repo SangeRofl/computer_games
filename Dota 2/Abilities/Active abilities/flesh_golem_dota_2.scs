@@ -1,0 +1,45 @@
+flesh_golem_dota_2
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+        [Flesh Golem] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [Flesh Golem] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Flesh Golem)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Герой превращается в ужасающего голема из плоти. Голем имеет увеличенную силу, а его атаки замедляют жертв и увеличивают получаемый ими урон.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Flesh Golem)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [При использовании Flesh Golem прерывает произносимые заклинания Undying.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_cooldown : [125];
+=> nrel_default_damage : [0];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Flesh_Golem_icon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+
+

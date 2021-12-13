@@ -1,0 +1,5 @@
+Glock_18
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Glock-18](*<-lang_ru;;*);
+		[Glock-18](*<-lang_en;;*);;

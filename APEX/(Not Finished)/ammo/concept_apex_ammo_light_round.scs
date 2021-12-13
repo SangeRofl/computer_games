@@ -1,0 +1,6 @@
+concept_apex_ammo_light_round
+=> nrel_main_idtf: [light round] (* <- lang_en;; *);
+=> nrel_main_idtf: [легкий патрон] (* <- lang_ru;; *);
+
+<- concept_apex_ammo;
+<- sc_node_not_relation;;

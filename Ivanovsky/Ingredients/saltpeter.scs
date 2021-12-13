@@ -1,0 +1,49 @@
+concept_saltpeter
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Селитра] (* <- lang_ru;;*);
+	[Saltpeter] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Селитра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алхимический ингредиент] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_ordinary_dancing_star;;
+	-> concept_ordinary_devil_mushroom;;
+	-> concept_ordinary_dimeritium_bomb;;
+	-> concept_ordinary_buckshot;;
+	-> concept_ordinary_dragon_dream;;
+	-> concept_ordinary_moon_dust;;
+	-> concept_ordinary_north_wind;;
+	-> concept_great_north_wind;;
+	-> concept_simoom;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Обычная танцующая звезда, Обычный чёртов гриб, Обычная двимеритовая бомба, Обычный сон дракона, Обычная Картечь, Обычная Лунная пыль, Обычный северный ветер, Отличный Северный ветер,Обычный самум ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://saltpeter.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

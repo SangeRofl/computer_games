@@ -1,0 +1,131 @@
+concept_game_genre
+
+=> nrel_main_idtf:[игровой жанр] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game genre] (* <- lang_en;; *);
+
+-> concept_test;
+concept_hero;
+concept_toure;
+concept_arcade;
+concept_horror;
+concept_shooter;
+concept_sport;
+concept_simulator;
+concept_logic;
+concept_tactic;
+concept_microcontrol;
+concept_building;
+//concept_life_sim;
+concept_care;
+concept_create;
+concept_control;
+concept_tactic;
+concept_planning;
+concept_collecting;
+concept_evasion;
+concept_destruction;
+concept_competition;
+concept_technique;
+concept_education;
+concept_riddles;
+concept_communication;
+concept_role;
+concept_studying; 
+concept_open_RPG;
+concept_open_action;
+concept_global_strategy;
+concept_RPG; 
+concept_interactive_fiction; 
+concept_MMORPG; 
+concept_action; 
+concept_slasher;
+concept_battle_racing; 
+concept_strategy; 
+concept_sim_strategy; 
+concept_global_wargame; 
+concept_puzzle; 
+concept_quest; 
+concept_browser_RPG; 
+concept_adventure; 
+concept_platformer; 
+concept_stealth_action;
+concept_fighting;
+concept_racing; 
+concept_economical; 
+concept_tower_defence; 
+concept_wargame; 
+concept_cardgame;
+concept_action_RPG;
+concept_MMOFPS;
+concept_survival;
+concept_RTS;
+concept_MOBA;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_gameplay;; 
+		-> concept_computer_game;;
+	*);;
+		=> nrel_main_idtf: [Опр.(игровой жанр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Игровой жанр - это классификация компьютерных игр, основанная на различиях в интерактивности и игровом процессе, нежели визуальных или сюжетных особенностях] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_category_control_games;;
+	-> concept_category_action_games;;
+	-> concept_category_information_games;;
+	=> nrel_main_idtf:[Разбиение по категориям] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_elementary_game_genres;;
+	-> concept_simple_game_genres;;
+	-> concept_complex_game_genres;;
+	-> concept_hybrid_game_genres;;
+	=> nrel_main_idtf:[Разбиение по сложности] (* <- lang_ru;; *);;	//po slojnosti?
+*);
+
+
+<= nrel_inclusion: concept_genre;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровой жанр)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Игровой жанр представляет собой множество критериев и свойств, характеризующийся теми или иными сюжетными и стилистическими признаками](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровой жанр, компьютерная игра, основной игровой жанр*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Зачастую в игре встречаются несколько игровых жанров, в этом случае указывается либо один из основных игровых жанров, либо те, которые больше всего выделяются в игре](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(разработчик*, игровой жанр, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Существует консенсус, к которому пришли разработчики игр, и принадлежность игры к одному из основных жанров почти всегда можно определить однозначно](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

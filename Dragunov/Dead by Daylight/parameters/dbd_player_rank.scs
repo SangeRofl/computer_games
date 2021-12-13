@@ -1,0 +1,91 @@
+concept_dead_by_daylight_player_rank <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [ранг игрока(Dead by Daylight)]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [player rank(Dead by Daylight)]
+    (* <- lang_en;; *);
+    
+<- parameter;
+
+=> nrel_subdividing: ... (*
+    -> concept_dead_by_daylight_player_rank_killer;;
+    -> concept_dead_by_daylight_player_rank_survivor;;
+    => nrel_main_idtf:[Разбиение относительно типа персонажа] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example:
+            [Ранг игрока - это параметр, элементами которого являются целые числа. 
+            Значением данного параметра является числовой показатель уровня угрока в рейтинговых игрвах]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Ранг игрока - элемент рейтинговых матчей Dead by Daylight.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Ранг игрока зависит от того, сколько «очков» он накопил, играя в рейтинговые игры (любой режим игры, кроме пользовательских лобби).]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Число ранга персонажа указывает общий уровень мастерства игрока в игре. 
+            Самый высокий уровень - 1-й ранг, самый низкий - 20-й ранг. 
+            «Поднять ранг» означает набрать достаточно "очков", чтобы увеличить свой ранг на единицу. 
+            Точно так же «опустить ранг» означает, игрок лишился достаточного количества "очков".]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Повышая рейтинг, игроки будут размещены в матчах против других игроков с аналогичными рангами.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. ранг игрока(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [В зависимости от величины ранга меняется оформление его отображения.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

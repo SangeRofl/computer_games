@@ -1,0 +1,36 @@
+lib_component_agent_count_contract_time
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент подсчёта времени действия контракта]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent count contract active time]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_count_contract_time;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_count_contract_time; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_count_contract_time;;
+
+action_count_contract_time => nrel_main_idtf:
+	[действие. Подсчёт времени действия контракта]
+	(* <- lang_ru;;	*);
+	[action. Count contract active time]
+	(* <- lang_en;;	*);;

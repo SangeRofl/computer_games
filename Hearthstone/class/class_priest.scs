@@ -1,0 +1,56 @@
+concept_class_priest
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Жрец] (* <- lang_ru;; *);
+	[Priest] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Жрец)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+	  -> concept_card;;
+    -> concept_card_class_priest;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Жрец - мастер исцеления и может исцелять себя и своих миньонов(существ) с помощью Силы Героев и целого ряда целительных заклинаний, 
+                а также улучшать здоровье миньонов с помощью таких способностей, как Божественный Дух.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Возможности Жреца)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> concept_ability;;
+    -> concept_card_class_priest;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+    -> concept_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+   -> [Тем не менее, у этих мастеров света также есть своя теневая сторона, и жрецы обладают рядом более темных способностей, таких как Shadow Word: Pain .](*<-lang_ru;;*);;
+  *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/priest.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

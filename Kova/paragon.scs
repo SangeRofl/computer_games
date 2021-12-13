@@ -1,0 +1,40 @@
+computer_game_paragon
+=> nrel_main_idtf: [Paragon] (* <- lang_en;; *);
+=> nrel_main_idtf: [Paragon] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_MOBA;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_publisher: company_epic_games;
+=> nrel_developer: company_epic_games;
+=> nrel_publication_date: date_2018;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_game_engine: unreal_engine_4;
+=> nrel_plot: [отсутствует];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Paragon)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра с видом от третьего лица в жанре MOBA, выпущена на компанией Epic Games в 2018 году на платформе Windows. Реализована на движке Unreal Engine 4. Многопользовательская с отсутствием сюжета. Распространяется бесплатно.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/paragon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

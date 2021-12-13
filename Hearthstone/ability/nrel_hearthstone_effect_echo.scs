@@ -1,0 +1,63 @@
+nrel_hearthstone_effect_echo
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект Эхо* ]
+	(* <- lang_ru;;	*);
+	[Effect Echo* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Echo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта Эхо](*<-lang_ru;;*);
+		[Description of Echo effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_card_minion;
+        concept_card_spell;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Эхо - это способность, при которой карта может быть сыграна несколько раз за один ход. Это достигается путем копирования карты в руку пользователя до конца его хода. Он был неофициально представлен в Kobolds & Catacombs как Unstable Evolution и официально дебютировал в The Witchwood.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_card_spell;
+        concept_card_minion
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Эхо работает, помещая новую копию карты в вашу руку, которая удаляется в конце вашего хода.] (* <- lang_ru;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Этот эффект также вызывается отраженными копиями, что означает, что вы можете продолжать развертывание, пока не закончится мана.] (* <- lang_ru;; *);;
+	*);;
+        <= nrel_sc_text_translation: ...
+    (*
+		-> [Если заклинание с Эхо разыгрывается другой картой, такой как Йогг-Сарон или Свиток Чудес , вы не получите другую копию в свою руку, потому что карты Эхо должны быть разыграны, чтобы получить копию.] (* <- lang_ru;; *);;
+	*);;
+*);;

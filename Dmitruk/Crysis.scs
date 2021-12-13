@@ -1,0 +1,63 @@
+concept_computer_game_crysis
+
+=> nrel_main_idtf:     
+	 [Crysis]   (*<-lang_ru;;*);
+      [Crysis]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-concept_setting_science_fiction;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_announcement_date: date_23.01.2006;
+=>nrel_publication_date: date_13.11.2007;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: CryEngine_2;
+=>nrel_game_engine: CryEngine_3;
+=>nrel_publisher: company_electronic_arts;
+=>nrel_developer: company_crytek;
+=>nrel_localizer: company_soft_club;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_360;
+concept_playstation_3
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Crysis)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_crysis;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Crysis — мультиплатформенная компьютерная игра, научно-фантастический шутер от первого лица, разработанный немецкой компанией Crytek и изданный Electronic Arts. Первая игра одноимённой серии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/crysis.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Crysis)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Crysis развивает основные идеи геймплея прошлой игры Crytek — Far Cry. Действие всё так же происходит в джунглях, и игрок может решить каждую поставленную задачу разными способами. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

@@ -1,0 +1,59 @@
+concept_dead_by_daylight_unlockable <- sc_node_not_relation;
+
+=> nrel_main_idtf:
+    [unlockable(Dead by Daylight)]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [разблокируемый предмет(Dead by Daylight)]
+    (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Разблокируемый предмет(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Разблокируемый предмет в игре <b><sc_element sys_idtf="computer_game_dead_by_daylight">Dead by Daylight</b></sc_element> — предмет, который можно разблокировать в <b><sc_element sys_idtf = "concept_dead_by_daylight_bloodweb">Кровавой паутине</b></sc_element> за <b><sc_element sys_idtf = "concept_dead_by_daylight_bloodpoints">Очки крови</b></sc_element>]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+    => nrel_using_constants: {
+        concept_dead_by_daylight_bloodweb;
+        concept_dead_by_daylight_bloodpoints;
+        computer_game_dead_by_daylight
+    };;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Разблокируемый предмет(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Разблокируемый предмет перемещается в соответствующий раздел инвентаря после покупки.]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Разблокируемый предмет(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Разблокируемые предметы покупаются отдельно на каждого персонажа.]
+            (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;
+
+<= nrel_subdividing: {
+    concept_dead_by_daylight_perk;
+    concept_dead_by_daylight_addon;
+    concept_dead_by_daylight_offering;
+    concept_dead_by_daylight_mystery_box;
+    concept_dead_by_daylight_item
+};;

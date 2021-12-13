@@ -1,0 +1,43 @@
+concept_quicksilver_solution
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Ртутный раствор] (* <-lang_ru;;*);
+	[Quicksilver solution] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Ртутный раствор)] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Минерал.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_moon_dust;;
+	-> concept_enhanced_moon_dust;;
+	-> concept_superior_moon_dust;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Предназначение)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Нужен в создании бомб: Обычная лунная пыль, Улучшенная лунная пыль, Отличная лунная пыль.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://quicksilver_solution.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

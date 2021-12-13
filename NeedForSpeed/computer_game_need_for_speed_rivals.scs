@@ -1,0 +1,66 @@
+computer_game_need_for_speed_rivals						//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed: Rivals] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Rivals] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_ghost_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_3; playstation_4; xbox_360; xbox_one;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_publication_date: date_15_11_2013;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Rivals)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией Ghost Games и изданная компанией Electronic Arts для игровых приставок и персональных компьютеров в 2013 году.
+                Проект представляет собой гоночную аркаду, сочетающую элементы предыдущих частей серии — скоростные заезды по автострадам, погони и возможность сыграть как за гонщика, так и за полицейского.
+                Все соревнования в игре проходят в районе вымышленного округа Рэдвью. Одной из ключевых особенностей проекта является технология сетевых гонок AllDrive, объединяющая одиночные, совместные и групповые заезды,
+                а также, по словам разработчиков, «стирает грань между одиночной и сетевой игрой». ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_ghost_games;;
+                -> computer_game_need_for_speed_rivals;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

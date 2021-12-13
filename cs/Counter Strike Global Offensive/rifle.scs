@@ -1,0 +1,92 @@
+rifle 
+	<= nrel_inclusion: concept_shop ;
+    <-sc_node_not_relation;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [винтовка](* <-lang_ru;; *);
+        [rifle](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [АК-47](*<- lang_ru;;*);
+            [AK-47](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (винтовка)] (* <- lang_ru;; *);
+            [Def. (rifle)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Винтовка —  нарезное стрелковое оружие, конструктивно предназначенное для удержания и управления при стрельбе двумя руками с упором приклада в плечо.](*<- lang_ru;;*);
+                [Rifle - rifled small weapons, structurally designed to hold and control when shooting with two hands with the emphasis of the butt in the shoulder.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_weapons;;
+            ->nrel_shooting;;
+            ->nrel_butt;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        reason;
+		rifle;
+		need;
+		accuracy;
+		battle;
+		gun
+    };;
+    => nrel_main_idtf: 
+        [Утв.(причина, винтовка, необходимость, кучность, бой, ружье)] (* <- lang_ru;; *);
+        [Expl.(reason, rifle, need, accuracy, battle, gun)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Основной причиной появления винтовок послужила необходимость увеличения кучности боя гладкоствольных ружей.](*<- lang_ru;;*);
+            [The main reason for the appearance of rifles was the need to increase the accuracy of the battle of smoothbore guns.](*<- lang_en;;*);;
+    *);;
+*);
+
+
+<=nrel_subdividing:
+{
+	sniper_rifle;
+	rapid_fire_rifle
+};
+
+=> nrel_inclusion:  	AK_47  ;
+			M4A4  ;
+			M4A1_s  ;
+			Famas  ;
+			SSG_08  ;
+			AUG  ;
+			SG_553 ;
+			Scar_20 ;
+			AWP ;
+			Galil_AR ;
+			G3SG1 ;;
+					
+AK_47 => nrel_price : [2700] ;;
+M4A4 => nrel_price : [3100] ;;
+M4A1_s => nrel_price : [3150] ;;
+Famas => nrel_price : [1950] ;;
+SSG_08 => nrel_price : [1700] ;;
+AUG => nrel_price : [3300] ;;
+SG_553 => nrel_price : [3000];;
+Scar_20 => nrel_price : [5200];;
+AWP => nrel_price : [4750];;
+Galil_AR => nrel_price : [2000];;
+G3SG1 => nrel_price : [5200];;
+			
+
+

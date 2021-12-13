@@ -1,0 +1,41 @@
+concept_fictional_universe
+=> nrel_main_idtf: [вымышленная вселенная] (* <- lang_ru;; *);
+=> nrel_main_idtf: [fictional universe] (* <- lang_en;;*);
+=> nrel_idtf: [вымышленный мир](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Вымышленная вселенная)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вымышленная вселенная - структурный элемент художественного произведения, определяющий его онтологию.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> ontology;;
+	*);;
+*);
+
+<=nrel_subdividing:
+{concept_real_universe;
+ concept_unreal_universe;
+concept_real_universe_unreal_elements
+};
+
+->rrel_example:concept_warcraft_universe;
+							
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Вымышленная вселенная)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Основным свойством вымышленного мира является его внутренняя непротиворечивость: установленные правила этого мира не должны меняться, а происходящие события обязаны подчиняться единым принципам причинно-следственных связей.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+<- sc_node_not_relation;;
+
+

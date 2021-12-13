@@ -1,0 +1,64 @@
+computer_game_battlefield_1943					//разобраться со стимом, ориджином и тд				
+=> nrel_main_idtf: [Battlefield 1943] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 1943] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_worlds_war_the_second;
+
+<- concept_multiplayer_game;	
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_dice;
+=> nrel_publisher: company_electronic_arts;
+=> nrel_localizer: company_softclub;
+
+=> nrel_publication_date: date_08_07_2009;
+
+=> nrel_platform: playstation_3; xbox;
+
+=> nrel_game_engine: concept_frostbite_engine;
+
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 1943)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Многопользовательский онлайн шутер от первого лица, разработанная Digital Illusions CE и изданная Electornic Arts, девятая игра серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplayer_game;;
+		-> concept_shooter;;
+		-> concept_three_dimensional_game;;
+		-> concept_first_person_view;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

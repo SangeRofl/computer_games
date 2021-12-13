@@ -1,0 +1,63 @@
+concept_computer_game_resident_evil_3_nemesis
+
+=> nrel_main_idtf:     
+	 [Resident Evil 3: Nemesis]   (*<-lang_ru;;*);
+      [Resident Evil 3: Nemesis]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_puzzle;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_publication_date: date_22.09.1999;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom;
+=>nrel_platform: {
+concept_windows;
+concept_playstation_1
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 3: Nemesis)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 3: Nemesis  — компьютерная игра в жанре survival horror, часть серии игр Resident Evil, разработанная и выпущенная компанией Capcom в 1999 году на PlayStation, являющаяся продолжением Resident Evil 2.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_3_n.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 3: Nemesis)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_computer_game_resident_evil_1;
+concept_computer_game_resident_evil_2
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Первая половина игры воспроизводит события, произошедшие за сутки до событий Resident Evil 2, вторая же половина повествует о событиях, произошедших через два дня. Игра раскрывает подробности заражения T-вирусом жителей города Раккун-сити, рассказывает о судьбах некоторых выживших и заканчивается в тот момент, когда город перестаёт существовать. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

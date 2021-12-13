@@ -1,0 +1,28 @@
+concept_tracks
+<-sc_node_not_relation;
+<=nrel_module_tank: concept_tank_machine;
+<-concept_module;
+=> nrel_main_idtf:
+      [гусеница]
+      (*<-lang_ru;;*);
+       [tracks]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (гусеница)] (* <- lang_ru;; *);; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [гусеница — замкнутая сплошная лента или цепь из шарнирно-соединённых звеньев (траков), применяемая в гусеничном движителе.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (гусеница)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[На внутренней поверхности гусеницы имеются впадины или выступы, с которыми взаимодействуют ведущие колёса, опорные и поддерживающие катки машины.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

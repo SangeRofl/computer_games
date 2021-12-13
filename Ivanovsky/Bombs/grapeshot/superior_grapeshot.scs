@@ -1,0 +1,50 @@
+concept_superior_grapeshot
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Мастерская картечь] (* <- lang_ru;;*);
+	[Superior grapeshot] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Мастерская картечь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которую используют для уничтожения гнезд чудовищ и против летающих врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ранит осколками всех противников в зоне поражения. Наносит урон огнём. Урон наносится вне зависимости от доспеха. Уничтожает гнёзда чудовищ.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_grapeshot;;
+   	-> concept_alchemists_powder;;
+	-> concept_calcium_equum;;
+	-> concept_sulfur;;
+	-> concept_longrube;;
+	-> concept_nigredo;;
+	-> concept_hop_umbels;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Мастерская картечь состоит из: Алхимический порошок, Улучшенная Картечь, Calcium equum, Сера, Безмер, Шишки хмеля, Нигредо](*<-lang_ru;;*);;
+      *);;
+  *);;

@@ -1,0 +1,30 @@
+concept_skyrim_armor_bracers
+
+=> nrel_main_idtf: [Bracers (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Наручи (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(наручи (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Элемент брони, защищающий руки персонажа.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (улучшение наруч)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наручи могут быть улучшены на <b><sc_element sys_idtf="concept_skyrim_crafting_table">верстаке</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

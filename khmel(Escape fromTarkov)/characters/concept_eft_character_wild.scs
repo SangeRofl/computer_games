@@ -1,0 +1,43 @@
+concept_eft_character_wild
+=> nrel_main_idtf: [wild(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [дикий(Escape from Tarkov)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(дикий (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дикие – члены банд, орудующих в городе Тарков. Этот персонаж может быть как под управлением искусственного интеллекта, так и под управлением игрока.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_character
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (специфика дикого в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Заходя в рейд в качестве «дикого», игрок получает временного персонажа со случайными оружием.
+При удачном завершения рейда за дикого (удалось покинуть локацию), все собранные предметы можно перенести в схрон основного персонажа. Все, что вы оставите на Диком - пропадет.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (дикий(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../imageEft/wild.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,93 @@
+	shikari
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Jordan "Shikari" Pointon](* <-lang_en;; *);
+		[Джордан "Shikari" Поинтон](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Shikari](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: United_Kingdom;
+	=>nrel_surname: Pointon;
+	=>nrel_first_name: Jordan;
+	=>nrel_nickname: Shikari;
+	=>nrel_birthday: [16.05.1999];
+	=>nrel_gamerole: top_laner_lol;
+
+	<=nrel_with_whom: contract_shikari_and_uk_legends_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Shikari and UK Legends](* <-lang_en;; *);
+			[Контракт между Shikari и UK Legends](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: uk_legends_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_09_2016;;
+			->rrel_end: 09_12_2016;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_shikari_and_team_xenex_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Shikari and Team XENEX](* <-lang_en;; *);
+			[Контракт между Shikari и Team XENEX](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_xenex_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 18_01_2017;;
+			->rrel_end: 19_03_2017;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_shikari_and_excel_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Shikari and Excel Esports](* <-lang_en;; *);
+			[Контракт между Shikari и Excel Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: excel_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 19_06_2017;;
+			->rrel_end: 30_11_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_shikari_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Shikari and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Shikari и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_02_2018;;
+			->rrel_end: 19_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_shikari_and_fnatic_lol
+	(*
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			=> nrel_main_idtf:
+			[Сontract between Shikari and Fnatic](* <-lang_en;; *);
+			[Контракт между Shikari и Fnatic](* <-lang_ru;; *);;
+			<-period_of_time;;
+			->rrel_start: 07_01_2019;;
+		*);;
+	*);;
+

@@ -1,0 +1,54 @@
+concept_apex_grenade_frag_grenade
+=> nrel_main_idtf: [Frag grenade (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Осколочная граната (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры гранаты
+=> nrel_apex_grenade_hit_damage: 10;
+=> nrel_apex_grenade_explosion_damage: 100;
+=> nrel_apex_full_grenade_damage: 110;
+=> nrel_apex_grenade_explosion_delay: 4;
+=> nrel_apex_grenade_slow_time: [отсутствует];
+=> nrel_apex_grenade_damage_over_time: [отсутствует];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Осколочная граната (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Осколочная граната (Apex Legends) - граната, которая взрывается через определенный момент времени после ее броска и наносит урон по области.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_explosion
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (воздействие на персонажа)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта граната наносит средний урон, не воздействуя отрицательными эффектами на персонажа.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Осколочная граната)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/items/grenades/apex_frag_grenade.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+
+<- concept_apex_grenade;
+<- sc_node_not_relation;;

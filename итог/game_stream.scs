@@ -1,0 +1,70 @@
+nrel_game_stream
+=> nrel_main_idtf:
+	      [стрим игры*] (* <- lang_ru;; *);
+=> nrel_idtf: [вести стрим*] (* <- lang_ru;; *);
+              [game stream*] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_nrel_game_stream
+	(* 
+		=> nrel_main_idtf:
+			[опр. (стрим игры')]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> nrel_example: [трансляция действий, происходящих на компьютере или игровой консоли в режиме реального времени.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_using_constants: ... (* -> concept_game_streamer;; *);;
+	*);
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_game_stream_concept
+	(* 
+		=> nrel_main_idtf:
+			[утв. (трансляция, игра*)]
+			(*
+			<- lang_ru;;
+             *);;
+
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [если запустить стрим игры,то любой человек может его посмотреть] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+
+<- binary_relation (* <- arity (* <- concept_parameter;; *);;
+                              => nrel_measurement: 2;;
+                           *);
+=> nrel_first_domain: 
+	concept_game_streamer;
+
+=> nrel_second_domain: 
+	concept_game_streamer;
+
+=> nrel_definitional_domain: ... 
+                           (* <= nrel_combination: ...
+                                                 (* 
+                                                    <- oncept_game_streamer;;
+                                                    <- oncept_game_streamer;;
+                                                 *);;
+                           *);
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_role_relation;;
+
+concept_game_streamer
+=> nrel_main_idtf: [стример] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

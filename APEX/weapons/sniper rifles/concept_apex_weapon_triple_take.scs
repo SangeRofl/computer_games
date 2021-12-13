@@ -1,0 +1,123 @@
+concept_apex_weapon_triple_take
+=> nrel_main_idtf: [Triple Take] (* <- lang_en;; *);
+=> nrel_main_idtf: [Тройной эффект] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_sniper_rifle;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 3;
+=> nrel_apex_projectiles_shape: concept_horizontal_line;
+=> nrel_weapon_ammo_type: concept_apex_ammo_sniper_ammo;
+
+=> nrel_weapon_rate_of_fire: 88;
+=> nrel_weapon_damage_per_second: 101;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 138;
+=> nrel_apex_default_legend_common_helmet_damage: 124;
+=> nrel_apex_default_legend_rare_helmet_damage: 110;
+=> nrel_apex_default_legend_epic_helmet_damage: 104;
+=> nrel_apex_default_legend_legendary_helmet_damage: 104;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 145;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 130;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 116;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 109;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 109;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 117;
+=> nrel_apex_fortified_legend_common_helmet_damage: 102;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 94;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 88;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 88;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 69;
+=> nrel_apex_low_profile_legend_body_damage: 72;
+=> nrel_apex_fortified_legend_body_damage: 59;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 51;
+=> nrel_apex_low_profile_legend_leg_damage: 54;
+=> nrel_apex_fortified_legend_leg_damage: 43;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_plus_minor_curve_left;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 5;
+=> nrel_apex_common_magazine_capacity: 6;
+=> nrel_apex_rare_magazine_capacity: 7;
+=> nrel_apex_epic_magazine_capacity: 8;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_sniper_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_sniper_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_precision_choke;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_6x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_8x_sniper;
+=> nrel_weapon_attachment: concept_apex_attachment_4x_10x_sniper_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тройной эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Тройной эффект - снайперская винтовка, которая использует энергетические патроны, имеет только одиночный тип стрельбы и стреляет 3 снаряда за один выстрел] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_sniper_ammo;
+		concept_apex_weapon_sniper_rifle;
+        concept_apex_fire_mode_single;
+		nrel_apex_projectiles_per_shot
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Тройной эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 49 скинов на Тройной эффект: 9 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Тройной эффект)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_triple_take.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

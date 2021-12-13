@@ -1,0 +1,20 @@
+concept__card_class_druid
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карты Друида] (* <- lang_ru;; *);
+	[Druid's cards] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Карты класса Друида)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> nrel_effect;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Карты Друида - это карты, которые может использовать только класс Друид] (* <- lang_ru;; *);;
+	*);;
+*);;

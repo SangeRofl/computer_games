@@ -1,0 +1,47 @@
+concept_eft_ammo_12x70
+=> nrel_main_idtf: [12x70(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [12x70(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_shotgun_ammo;
+
+=> nrel_eft_weapon_weight: 0.045;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (12x70(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Патрон для дробовика 12-го калибра, снаряжённый 6-мм дробью. На близких дистанциях обладает огромным убойным действием.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_shotgun_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (эффективная дистанция патрона 12x70(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее эффективен на дальностях до 30 метров.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (12x70(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/12x70.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

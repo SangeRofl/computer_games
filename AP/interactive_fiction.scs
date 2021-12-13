@@ -1,0 +1,44 @@
+concept_interactive_fiction
+=> nrel_main_idtf:
+	[текстовая онлайновая игра] (* <- lang_ru;; *);
+=> nrel_idtf:
+	[interactive fiction] (* <- lang_en;; *);
+<= nrel_subdividing: ...		
+(*
+	-> concept_collection;;
+	-> concept_riddles;;
+	-> concept_education;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
+<- rrel_key_sc_element:
+	Definition_interactive_fiction
+	(*
+		=> nrel_main_idtf:
+			[Опр.(текстовая онлайновая игра)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Жанр компьютерных игр, в которых взаимодействие с игроком осуществляется посредством текстовой информации.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(*
+				-> concept_computer_game;;
+                   -> concept_game_genre;;
+                   -> concept_gamer;;
+*);;
+	*);
+<- rrel_key_sc_element:
+	Statment_interactive_fiction
+	(*
+		=> nrel_main_idtf:
+			[Утв.(итерфейс, меню)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Существуют два вида интерфейса: ввод текста с клавиатуры и меню с выбором действий.] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;

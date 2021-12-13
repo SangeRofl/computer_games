@@ -1,0 +1,118 @@
+concept_apex_weapon_peacekeeper
+=> nrel_main_idtf: [Peacekeeper] (* <- lang_en;; *);
+=> nrel_main_idtf: [Миротворец] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_shotgun;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 11;
+=> nrel_apex_projectiles_shape: concept_star;
+=> nrel_weapon_ammo_type: concept_apex_ammo_shotgun_shell;
+
+=> nrel_weapon_rate_of_fire: 58;
+=> nrel_weapon_damage_per_second: 106;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 143;
+=> nrel_apex_default_legend_common_helmet_damage: 129;
+=> nrel_apex_default_legend_rare_helmet_damage: 114;
+=> nrel_apex_default_legend_epic_helmet_damage: 107;
+=> nrel_apex_default_legend_legendary_helmet_damage: 107;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 150;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 135;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 120;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 112;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 112;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 122;
+=> nrel_apex_fortified_legend_common_helmet_damage: 110;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 98;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 91;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 91;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 110;
+=> nrel_apex_low_profile_legend_body_damage: 115;
+=> nrel_apex_fortified_legend_body_damage: 94;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 88;
+=> nrel_apex_low_profile_legend_leg_damage: 92;
+=> nrel_apex_fortified_legend_leg_damage: 75;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.25;
+=> nrel_weapon_recoil_type: concept_apex_recoil_negligible;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 3;
+=> nrel_apex_common_magazine_capacity: [отсутствует];
+=> nrel_apex_rare_magazine_capacity: [отсутствует];
+=> nrel_apex_epic_magazine_capacity: [отсутствует];
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_shotgun_bolt;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_precision_choke;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Миротворец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Миротворец - дробовик, который использует ружейные патроны и имеет одиночный тип стрельбы, выстреливая по 11 снарядов за выстрел] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_shotgun_shell;
+		concept_apex_weapon_shotgun;
+        concept_apex_fire_mode_single;
+		nrel_apex_projectiles_per_shot
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на Миротворец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 49 скинов на Миротворец: 9 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Миротворец)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_peacekeeper.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

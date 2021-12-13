@@ -1,0 +1,125 @@
+patrik
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Patrik "Patrik" Jiru](* <-lang_en;; *);
+		[Патрик "Patrik" Жиру](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Patrik](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Czech_Republic;
+	=>nrel_surname: Jiru;
+	=>nrel_first_name: Patrik;
+	=>nrel_nickname: Patrik;
+	=>nrel_birthday: [07.04.2000];
+	=>nrel_gamerole: bot_laner_lol;
+
+	<=nrel_with_whom: contract_patrik_and_esuba_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and eSuba](* <-lang_en;; *);
+			[Контракт между Patrik и eSuba](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: esuba_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 19_10_2016;;
+			->rrel_end: xx_01_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_patrik_and_origen_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and Origen](* <-lang_en;; *);
+			[Контракт между Patrik и Origen](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: origen_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 18_01_2017;;
+			->rrel_end: 14_03_2017;;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_patrik_and_reign_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and Reign](* <-lang_en;; *);
+			[Контракт между Patrik и Reign](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: reign_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 06_05_2017;;
+			->rrel_end: 07_05_2017;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_patrik_and_besiktas_e_sports_club_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and Besiktas e-Sports Club](* <-lang_en;; *);
+			[Контракт между Patrik и Besiktas e-Sports Club](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: besiktas_e_sports_club_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 03_07_2017;;
+			->rrel_end: 31_08_2017;;
+		*);;
+	*);
+
+	
+	<=nrel_with_whom: contract_patrik_and_esuba_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and eSuba](* <-lang_en;; *);
+			[Контракт между Patrik и eSuba](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: esuba_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 03_09_2017;;
+			->rrel_end: 13_12_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_patrik_and_h2k_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and H2K](* <-lang_en;; *);
+			[Контракт между Patrik и H2K](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: h2k_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 13_12_2017;;
+			->rrel_end: 18_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_patrik_and_origen_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Patrik and Origen](* <-lang_en;; *);
+			[Контракт между Patrik и Origen](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: origen_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 20_11_2018;;
+			->rrel_end: 18_11_2019;;
+		*);;
+	*);;
+

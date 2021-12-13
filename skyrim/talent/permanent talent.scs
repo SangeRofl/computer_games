@@ -1,0 +1,20 @@
+concept_skyrim_permanent_talent
+
+=> nrel_main_idtf:     
+	 [Постоянный талант (Скайрим)]   (*<-lang_ru;;*);
+     	 [Permanent talent (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Постоянный талант (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Постоянные таланты — это различные перманентные эффекты, не требующие затрат энергии. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

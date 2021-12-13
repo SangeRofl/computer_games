@@ -1,0 +1,39 @@
+concept_circlet
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [circlet] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [браслет] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(circlet)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Элегантный браслет, предназначенный для человеческих принцесс.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(circlet)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Браслет отлично подойдет всем героям в ранней стадии игры, не зависимо от их основной характеристики.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/circlet.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

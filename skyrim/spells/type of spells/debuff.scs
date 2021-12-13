@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_debuff
+
+=> nrel_main_idtf:     
+		 [ослабление (тип заклинания)]   (*<-lang_ru;;*);
+     	 [debuff (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ослабление (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Ослабление — повышает получаемый урон от электричества, холода, огня, магии, обычного оружия или повышает шансы поражения ядом, параличом или болезнью. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

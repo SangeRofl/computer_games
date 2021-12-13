@@ -1,0 +1,52 @@
+concept_steel_arms
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Холодное оружие] (* <- lang_ru;;*);
+	[Steel arms] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_steel_arms;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Холодное оружие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Холодное оружие - военное, охотничье или спортивное оружие, в котором не используется сила горюче-взрывчатых веществ, сжатого газа, электричества.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(О холодном оружии в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [В Dying Light холодное оружие имеет режущее или ударное действие. Применимо только на близких дистанциях.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://steel.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_hammer;;
+	-> concept_hatchet;;
+	-> concept_cleaver;;
+	-> concept_pickaxe;;
+	-> concept_sledgehammer;;
+	-> concept_expcalibur;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

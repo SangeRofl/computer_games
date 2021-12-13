@@ -1,0 +1,43 @@
+concept_skyrim_anvil
+
+=> nrel_main_idtf: [Anvil (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Наковальня (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(наковальня (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наковальня — объект в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (описание наковальни)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наковальня используется в кузнечном деле и её можно увидеть в игре в виде постамента из короткого, устойчивого среза ствола дерева, на котором смонтирована железная часть устройства (по сути она и есть наковальня). ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/anvil.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Наковальня)]   (*<-lang_ru;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

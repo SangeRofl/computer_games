@@ -1,0 +1,7 @@
+nrel_price <- sc_node_norole_relation ;
+=> nrel_main_idtf : [стоимость*] (* <-lang_ru;; *);
+        		[price*](* <-lang_en;; *);;
+
+concept_shop <- sc_node_not_relation ;
+=> nrel_main_idtf : [магазин] (* <-lang_ru;; *);
+        		[shop](* <-lang_en;; *);;

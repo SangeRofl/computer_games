@@ -1,0 +1,52 @@
+concept_game_series_call_of_duty							//-> rrel_last_game: computer_game_call_of_duty_black_ops_4;?????
+
+=> nrel_main_idtf:[серия игр Call of Duty] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Call of Duty] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_game_series_modern_warfare; concept_game_series_black_ops;
+
+-> rrel_first_game: computer_game_call_of_duty;
+-> computer_game_call_of_duty_2;
+-> computer_game_call_of_duty_3;
+//-> computer_game_call_of_duty_4_modern_warfare;
+//-> computer_game_call_of_duty_world_at_war;
+//-> computer_game_call_of_duty_modern_warfare_2; 
+//-> computer_game_call_of_duty_black_ops;
+//-> computer_game_call_of_duty_modern_warfare_3;
+//-> computer_game_call_of_duty_black_ops_2;
+-> computer_game_call_of_duty_ghosts;
+-> computer_game_call_of_duty_advanced_warfare; 
+//-> computer_game_call_of_duty_black_ops_3;
+-> computer_game_call_of_duty_infinity_warfare;
+-> computer_game_call_of_duty_ww2;
+//-> computer_game_call_of_duty_black_ops_4;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_game_series;;
+//		-> concept_shooter;;		//perechislit' settingi i janri??
+	*);;
+		=> nrel_main_idtf: [Опр.(серия игр Call of Duty)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Call of Duty - серия компьютерных игр в жанре шутера от первого лица, посвященных Второй мировой войне, холодной войне, борьбе с терроризмом, гипотетической Третьей мировой войне, войнам будущего и космическим войнам] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Call of Duty)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из пятнадцати основных игр и десяти ответвлений](* <- lang_ru;; *);;	//основная игра' и ответвление'??
+	*);;	
+*);
+
+
+<- sc_node_not_relation;;
+

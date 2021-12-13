@@ -1,0 +1,54 @@
+concept_superior_dragons_dream
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличный сон дракона] (* <- lang_ru;;*);
+	[Superior dragon's dream] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличный сон дракона)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая создает облако газа,которое взрывается при поджигании.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Испускает облако газа, который воспламеняется при поджигании. Действует сильнее, появляется шанс поджечь противника. Убитые им враги взрываются, раня других противников поблизости.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_aether;;
+	-> concept_phosphorus;;
+   	-> concept_alchemists_powder;;
+	-> concept_ordinary_dragons_dream;;
+   	-> concept_optima_mater;;
+   	-> concept_allspice_root;;
+   	-> concept_bryonia;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличный сон дракона состоит из: Алхемический порошок,Улучшенный сон дракона. Фосфор. Optima mater, Эфир, Корень душистого перца, Переступень.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+
+

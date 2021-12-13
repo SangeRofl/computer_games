@@ -1,0 +1,55 @@
+concept_apex_consumable_healing_shield_cell
+=> nrel_main_idtf: [shield cell (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ячейка щита (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 3;
+=> nrel_apex_consumable_use_time_with_combat_medic: 2.25;
+=> nrel_apex_consumable_use_time_with_fast_heal: 1.5;
+=> nrel_apex_restored_shields_amount: 25;
+=> nrel_apex_max_elements_per_slot: 6;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (ячейка щита (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ячейка щита (Apex Legends) - лечебный расходный материал, восстанавливает 25 единиц щита легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_healing;
+		nrel_apex_restored_shields_amount
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем ячейки щита в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Шесть единиц яччек щита занимают один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ячейка щита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/healing/apex_cell.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- concept_apex_consumable_healing;
+<- sc_node_not_relation;;

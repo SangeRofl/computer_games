@@ -1,0 +1,44 @@
+concept_magic_weapon <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Магическое оружие]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Magic weapon]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. Магическое оружие]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Магическое оружие - <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, наносящее магический урон.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. О магическом оружии]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Магическое оружие обычно используется <b><sc_element sys_idtf="concept_character">персонажами</b></sc_element> в <b><sc_element sys_idtf="concept_computer_game">компьютерных играх</b></sc_element>, действия в которых происходят в фантастическом игровом мире.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. О магическом оружии]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: [Магическое оружие, как правило, подвластно только персонажам, обладающим некоторыми магическими способностями.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/magic_weapons.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

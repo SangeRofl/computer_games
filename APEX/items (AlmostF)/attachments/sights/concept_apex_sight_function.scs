@@ -1,0 +1,19 @@
+concept_apex_additional_sight_function
+=> nrel_main_idtf: [additional sight function (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [дополнительная функция прицела (Apex Legends)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(дополнительная функция прицела (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это функция, которую дополнительно может иметь прицел в зависимости от его экземпляра в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_attachment_sight
+	};;
+*);
+ 
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

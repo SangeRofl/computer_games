@@ -1,0 +1,57 @@
+nrel_plot
+
+=> nrel_main_idtf: [plot*] (* <- lang_en;; *);
+=> nrel_main_idtf: [сюжет*] (* <- lang_ru;; *);
+
+<- binary_relation
+(*
+	<- arity (* <- concept_parameter;; *);;
+	=> nrel_measurement: 2;;
+*);
+
+=> nrel_first_domain: concept_computer_game;
+=> nrel_second_domain: concept_file;
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_file;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- defenition;;
+	=> nrel_main_idtf: [Опр.(сюжет*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Сюжет* - последовательность определенных событий, происходящие в игровом мире компьютерной игры] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_world;;		
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра может не иметь сюжета] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_norole_relation;;
+

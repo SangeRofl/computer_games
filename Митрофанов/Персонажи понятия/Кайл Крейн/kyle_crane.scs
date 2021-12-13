@@ -1,0 +1,41 @@
+concept_kyle_crane
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кайл Крейн] (* <- lang_ru;;*);
+	[Kyle Crane] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_kyle_crane;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Кайл Крейн)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кайл Крейн - бывший военный, который не теряет своих навыков даже в условиях полнейшей разрухи в городе.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Кайла Крейна в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Патрулирует город со своими бойцами и зачищают его от зараженных.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Кайл Крейн.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

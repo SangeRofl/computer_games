@@ -1,0 +1,14 @@
+concept_wc_class_warlock
+
+<-concept_character_class;
+
+=> nrel_main_idtf:
+      [чернокнижник]
+      (*<-lang_ru;;*);
+       [warlock]
+       (*<-lang_en;;*);
+
+
+
+<- sc_node_not_relation;;
+

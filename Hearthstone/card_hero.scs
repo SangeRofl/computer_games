@@ -1,0 +1,37 @@
+concept_card_hero
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карта героя] (* <- lang_ru;; *);
+	[Hero card] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Существо)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+		-> concept_card;;
+    -> concept_ability;;
+    -> nrel_battlecry;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+    -> [Карты героев - это карты, которые после розыгрыша заменяют героя контролирующего игрока , давая им небольшое количество брони и заменяя их силу героя новой,
+       уникальный, но сохраняющий текущее и максимальное здоровье игрока.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Карта Героя)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+		  -> concept_ability;;
+      -> concept_card_legendary;;
+      -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Карты героя наименее распространенный тип карт. Все коллекционные карты героев имеют легендарную редкость.](*<-lang_ru;;*);;
+      *);;
+  *);;

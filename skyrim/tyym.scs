@@ -1,0 +1,44 @@
+concept_skyrim_dragon_shouts
+=> nrel_main_idtf: [Dragon Shouts] (* <- lang_en;; *);
+=> nrel_main_idtf: [Драконьи крики] (* <- lang_ru;; *);
+=>nrel_idtf:
+	[Голос] (*<-lang_ru;;*);
+	[Ту'ум] (*<-lang_ru;;*);
+
+<- concept_skyrim_dovakin;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Драконий крик] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ту'ум, просто Голос, или драконьи Крики — разновидность магии в Нирне. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Первое появление)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Впервые реализована в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> в качестве новой способности главного героя.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Количество слов в крике)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждый Крик состоит из трёх Слов Силы. 
+Чем больше слов Крика герой произнесёт, тем он эффективнее, но и тем дольше придётся восстанавливать голосовые связки, прежде чем воспользоваться даром вновь.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

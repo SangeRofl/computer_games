@@ -1,0 +1,35 @@
+concept_game_engine_internal
+=> nrel_main_idtf: [внутренний игровой движок] (* <- lang_ru;; *);
+=> nrel_main_idtf: [free game engine] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Внутренний игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Внутренние игровые движки — игровые движки,
+		разработчик которых использует их только в своих,
+		внутренних проектах и не продаёт движок сторонним
+		юридическим лицам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Внутренний игровой движок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Внутренние игровые движки относятся
+		к проприетарному программному обеспечению.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

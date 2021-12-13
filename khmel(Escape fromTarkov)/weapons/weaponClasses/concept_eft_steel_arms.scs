@@ -1,0 +1,27 @@
+concept_eft_steel_arms
+=> nrel_main_idtf: [steel arms (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [холодное оружие (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(холодное оружие (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [холодное оружие (Escape from Tarkov) — оружие, в котором не используется сила горюче-взрывчатых веществ, сжатого газа, электричества в игре 'Escape from Tarkov'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры холодного оружия в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Escape from Tarkov' существует 2 экземпляра холодного оружия.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

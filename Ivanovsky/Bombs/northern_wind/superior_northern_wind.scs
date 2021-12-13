@@ -1,0 +1,50 @@
+concept_superior_northern_wind
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличный северный ветер] (* <- lang_ru;;*);
+	[Superior northern wind] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличный северный ветер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бомба,которая замедляет и примораживает врагов.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Замораживает противников. Удары, нанесённые замороженным противникам, наносят больше урона. Действует дольше. Даёт шанс убийства на месте.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_northern_wind;;
+   	-> concept_saltpeter;;
+   	-> concept_ducal_water;;
+	-> concept_powdered_pearl;;
+	-> concept_verbena;;
+   	-> concept_allspice_root;;
+	-> concept_quebrith;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличный северный ветер состоит из: Селитра, Улучшенный северный ветер, Княжья вода,Толченный жемчуг,Вербена,Квебрит,Корень душистого перца.](*<-lang_ru;;*);;
+      *);;
+  *);;

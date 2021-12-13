@@ -1,0 +1,33 @@
+concept_apex_gear_powerup_resurrection
+=> nrel_main_idtf: [Resurrection (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Воскрешение (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Воскрешение (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Воскрешение (Apex Legends) - улучшение экипировки, которое позволяет один раз встать на ноги после нокаута самостоятельно в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_gear
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (вид экипировки с улучшением 'Воскрешение')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На момент создания статьи в игре улучшением 'Воскрешение' обладает только легендарный щит от нокаута.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_knockdown_shield_legendary
+	};;
+*);
+
+<- concept_apex_gear_powerup;
+<- sc_node_not_relation;;

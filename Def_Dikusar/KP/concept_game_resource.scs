@@ -1,0 +1,39 @@
+concept_game_resource		
+
+=> nrel_main_idtf:[Игровой ресурс] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Game Resource] (* <- lang_en;; *);
+=> nrel_idtf: [Игровой ресурс] (* <- lang_ru;; *);
+=> nrel_idtf: [Game Asset] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Игровой ресурс)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_game_object 
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Игровой ресурс — цифровой объект, преимущественно состоящий из однотипных данных, 
+		 неделимая сущность, которая представляет часть <b><sc_element sys_idtf="concept_game_object">игрового контента</sc_element></b> 
+		 и обладает некими свойствами.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Игровой ресурс)] (* <- lang_ru;; *);;
+
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[К ассетам (ресурсам) относятся все данные, используемые и 
+обрабатываемые компьютерной игрой: геометрические модели, 
+текстуры, отдельные звуки и 
+музыкальные треки, тексты диалогов, 
+анимационные данные, модели поведения 
+игрового ИИ и проч.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- sc_node_not_relation;;

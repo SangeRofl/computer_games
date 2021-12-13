@@ -1,0 +1,40 @@
+concept_battlefield_3_class_assault
+=> nrel_main_idtf: [Assault class Battlefield 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс штурмовик Battlefield 3] (* <- lang_ru;; *);
+
+
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_assault_rifle;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_pdw;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_shotgun;
+=>nrel_used_weapons: concept_battlefield_3_weapon_class_pistol;
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_battlefield_3_class_assault_usa;;
+	-> concept_battlefield_3_class_assault_russia;;
+	=> nrel_main_idtf:[Разбиение класса по странам] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс штурмовик Battlefield_3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс штурмовик (Battlefield 3) — осбый вид 
+		<b><sc_element sys_idtf="concept_character">персонажа</b></sc_element>, который оснащен 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">штурмовой винтовкой</b></sc_element> и различными гаджетами, предназначенными для лечения и возраждения других персонажей.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс штурмовик 'Battlefield 3')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель<b><sc_element sys_idtf="concept_battlefield_3_class_assault">класса штурмовик</b></sc_element> - уничтожение пехоты противника на малой и средней дистанцях, а также лечение товарищей по команде.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

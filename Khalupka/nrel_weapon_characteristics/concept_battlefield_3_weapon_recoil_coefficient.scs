@@ -1,0 +1,41 @@
+concept_battlefield_3_weapon_recoil_coefficient
+
+=> nrel_main_idtf: [Weapon recoil coefficient (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Коэффициент отдачи (Battlefield 3)] (* <- lang_ru;; *);
+
+->0.2k;
+->0.8k;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Коэфициент отдачи (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Коэфициент отдачи Battlefield 3 показывает насколько сильно сместится точка прицеливания в конкретном направлении после выстрела] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Борьба с отдачей в Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [При стрельбе на большой дистанции и средней дистанции из 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element> с
+		    <b><sc_element sys_idtf="concept_battlefield_3_weapon_recoil_coefficient">высоким коэфициентом отдачи</b></sc_element> его стоит переключить в 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapons_single_fire_mode">одиночный режим стрельбы</b></sc_element> или в
+			<b><sc_element sys_idtf="concept_weapon_burst_fire_mode">режим стрельбы очередями</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_weapon_recoil_coefficient;
+        concept_battlefield_3_weapons_single_fire_mode;
+        concept_weapon_burst_fire_mode
+
+	};;
+*);;

@@ -1,0 +1,22 @@
+concept_apex_sight_function_variable_zoom
+=> nrel_main_idtf: [variable zoom (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [регулируемая кратность прицела (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(регулируемая кратность прицела (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это функция, которая позволяет некоторым экземплярам прицелов менять свою кратность во время прицеливания в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_apex_sight_function;
+		concept_apex_attachment_sight
+	};;
+*);
+ 
+ 
+<- concept_apex_sight_function;
+<- sc_node_not_relation;;

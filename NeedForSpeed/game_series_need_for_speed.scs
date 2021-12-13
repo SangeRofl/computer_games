@@ -1,0 +1,55 @@
+concept_game_series_need_for_speed							//-> rrel_last_game: computer_game_call_of_duty_black_ops_4;?????
+
+=> nrel_main_idtf:[серия игр Need for Speed] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Need for Speed] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_game_series_hot_pursuit; concept_game_series_underground; concept_game_series_shift;
+
+-> rrel_first_game: computer_game_the_need_for_speed;
+-> computer_game_need_for_speed_II;
+-> computer_game_need_for_speed_high_stakes;
+-> computer_game_need_for_speed_porsche_unleashed;
+-> computer_game_need_for_speed_most_wanted;
+-> computer_game_need_for_speed_carbon;
+-> computer_game_need_for_speed_prostreet;
+-> computer_game_need_for_speed_undercover;
+-> computer_game_need_for_speed_nitro;
+-> computer_game_need_for_speed_world;
+-> computer_game_need_for_speed_the_run;
+-> computer_game_need_for_speed_most_wanted_2012;
+-> computer_game_need_for_speed_rivals;
+-> computer_game_need_for_speed_no_limits;
+-> computer_game_need_for_speed_2015;
+-> computer_game_need_for_speed_payback;
+-> rrel_last_game: computer_game_need_for_speed_heat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_game_series;;
+//		-> concept_racing;;
+        *);;
+                => nrel_main_idtf: [Опр.(серия игр Need for Speed)] (* <- lang_ru;; *);;
+                <= nrel_sc_text_translation: ...
+        (*
+                -> [Need for Speed — самая успешная гоночная серия компьютерных игр в мире и одна из самых успешных игровых медиафраншиз за всю историю.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(серия игр Need for Speed)](* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                ->[Серия состоит из двадцати четырех игр](* <- lang_ru;; *);;
+        *);;
+*);
+
+
+<- sc_node_not_relation;;

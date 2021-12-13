@@ -1,0 +1,5 @@
+Smoke_Grenade
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Дымовая граната](*<-lang_ru;;*);
+		[Smoke grenade](*<-lang_en;;*);;

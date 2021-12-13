@@ -1,0 +1,47 @@
+concept_biter
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кусака] (* <- lang_ru;;*);
+	[Biter] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_biter;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Кусака)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кусака - представляет собой человека, погибшего и воскресшего под действием Харранского вируса.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Кусаки)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Влияние вируса сказалось на скорости передвижения и сообразительности кусак, в результате чего они передвигаются относительно медленно и нападают на любых выживших.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://biter.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_gas_tank;;
+	=> nrel_main_idtf:[Разбиение по видам] (* <- lang_ru;; *);;
+*);;

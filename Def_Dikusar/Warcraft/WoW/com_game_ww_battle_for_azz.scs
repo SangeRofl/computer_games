@@ -1,0 +1,49 @@
+computer_game_world_of_warcraft_battle_for_azeroth
+=> nrel_main_idtf: [World of Warcraft: Battle for Azeroth] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Battle for Azeroth] (* <- lang_ru;; *);
+=> nrel_idtf: [World of warcraft battle for azeroth] (* <- lang_en;; *);
+=> nrel_idtf: [World of warcraft battle for azeroth] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2018;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Повествование нового дополнения начинается вскоре после окончания событий Legion. Ценой огромных жертв народам Азерота удалось остановить крупнейшее вторжение Пылающего Легиона и одержать победу на Аргусе. Однако Альянс и Орда оказались не готовы забыть былые обиды, вследствие чего разгорается новая война за ресурсы и влияние, охватившая весь мир. Противоборствующие стороны стремятся завладеть азеритом — ресурсом, появившимся на поверхности мира вскоре после войны с Легионом. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<- concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft battle for azeroth)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft battle for azeroth - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2018 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft battle for azeroth)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Лимит уровня персонажа поднялся до 120-го.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wow_bfa.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

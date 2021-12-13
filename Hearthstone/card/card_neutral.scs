@@ -1,0 +1,20 @@
+concept__card_class_neutral
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Общие карты] (* <- lang_ru;; *);
+	[Neutral cards] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Общие карты)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+        -> concept_card;;
+        -> computer_game_hearthstone;;
+    *);;
+<= nrel_sc_text_translation: ...(*
+ 	-> [Общие карты - это карты, которые может использовать любой класс героя игры "Hearthstone"] (* <- lang_ru;; *);;
+	*);;
+*);;

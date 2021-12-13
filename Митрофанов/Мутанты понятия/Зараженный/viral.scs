@@ -1,0 +1,41 @@
+concept_viral
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Зараженный] (* <- lang_ru;;*);
+	[Viral] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_viral;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Зараженный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Зараженный - особый вид обычных зомби, демонстрирующий неплохую ловкость.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности поведения Зараженного)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Зараженные могут произносить короткие фразы, которые, чаще всего, просят игрока остановиться и перестать их атаковать.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://viral.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

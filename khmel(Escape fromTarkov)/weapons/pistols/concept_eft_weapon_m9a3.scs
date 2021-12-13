@@ -1,0 +1,54 @@
+concept_eft_weapon_m9a3
+=> nrel_main_idtf: [M9A3(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [M9A3(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_pistol;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_9x19;
+=> nrel_eft_weapon_sighting_distance: 200;
+=> nrel_eft_weapon_rate_of_fire: 30;
+=> nrel_eft_weapon_accuracy: 0.29;
+=> nrel_eft_weapon_effective_distance: 50;
+=> nrel_eft_weapon_starting_speed: 446;
+=> nrel_eft_weapon_weight: 0.231;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (M9A3(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [M9A3 - новейшая модель пистолета, разработанная для использования полицией, вооруженными силами ,а так же для самообороны и спортивной стрельбы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_pistol
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (начальная скорость M9A3(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [M9A3 обладает самой высокой начальной скоростью среди пистолетов в игре 'Escape from Tarkov'] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (M9A3(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/M9A3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

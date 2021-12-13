@@ -1,0 +1,276 @@
+hiiva
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Aleksi "Hiiva" Kaikkonen](* <-lang_en;; *);
+		[Алексий "Hiiva" Каикконен](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Hiiva](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Finland;
+	=>nrel_surname: Kaikkonen;
+	=>nrel_first_name: Aleksi;
+	=>nrel_nickname: Hiiva;
+	=>nrel_birthday: [31.08.1994];
+	=>nrel_gamerole: support_lol;
+
+	<=nrel_with_whom: contract_hiiva_and_rctic_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and RCTIC eSports](* <-lang_en;; *);
+			[Контракт между Hiiva и RCTIC eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: rctic_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 17_06_2013;;
+			->rrel_end: 14_01_2014;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_heavy_botlane_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Heavy Botlane](* <-lang_en;; *);
+			[Контракт между Hiiva и Heavy Botlane](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: heavy_botlane_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 01_12_2013;;
+			->rrel_end: 17_05_2014;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_victory_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Victory eSports](* <-lang_en;; *);
+			[Контракт между Hiiva и Victory eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: victory_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_05_2014;;
+			->rrel_end: xx_06_2014;;
+		*);;
+	*);
+	
+		<=nrel_with_whom: contract_hiiva_and_gsi_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and GSI Gaming](* <-lang_en;; *);
+			[Контракт между Hiiva и GSI Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: gsi_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 03_06_2014;;
+			->rrel_end: xx_08_2014;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_sk_gaming_prime_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and SK Gaming Prime](* <-lang_en;; *);
+			[Контракт между Hiiva и SK Gaming Prime](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: sk_gaming_prime_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 09_11_2014;;
+			->rrel_end: 18_11_2014;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_team_nevo_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Team Nevo](* <-lang_en;; *);
+			[Контракт между Hiiva и Team Nevo](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_nevo_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 04_01_2015;;
+			->rrel_end: 17_02_2015;;
+		*);;
+	*);
+	
+		<=nrel_with_whom: contract_hiiva_and_g2_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and G2 Esports](* <-lang_en;; *);
+			[Контракт между Hiiva и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 17_02_2015;;
+			->rrel_end: 03_07_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_denial_esports_eu_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Denial Esports EU](* <-lang_en;; *);
+			[Контракт между Hiiva и Daniel Esports EU](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: daniel_esports_eu_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 16_07_2015;;
+			->rrel_end: xx_11_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_team_asterion_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Team Asterion](* <-lang_en;; *);
+			[Контракт между Hiiva и Team Asterion](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_asterion_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_12_2015;;
+			->rrel_end: xx_12_2015;;
+		*);;
+	*);
+	
+		<=nrel_with_whom: contract_hiiva_and_renegades_banditos_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Renegades: Banditos](* <-lang_en;; *);
+			[Контракт между Hiiva и Renegades: Banditos](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: renegades_banditos_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_01_2016;;
+			->rrel_end: 26_04_2016;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_team_forge_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Team Forge](* <-lang_en;; *);
+			[Контракт между Hiiva и Team Forge](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_forge_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_04_2016;;
+			->rrel_end: 12_07_2016;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Hiiva и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 17_11_2015;;
+			->rrel_end: 02_06_2016;;
+		*);;
+	*);
+	
+		<=nrel_with_whom: contract_hiiva_and_millenium_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Millenium](* <-lang_en;; *);
+			[Контракт между Hiiva и Millenium](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: millenium_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 12_09_2016;;
+			->rrel_end: 02_01_2017;;
+		*);;
+	*);
+	
+		<=nrel_with_whom: contract_hiiva_and_origen_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Origen](* <-lang_en;; *);
+			[Контракт между Hiiva и Origen](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: origen_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_01_2017;;
+			->rrel_end: xx_02_2017;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hiiva_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Hiiva и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_03_2017;;
+			->rrel_end: 05_05_2018;;
+		*);;
+	*);
+	
+
+	
+		<=nrel_with_whom: contract_hiiva_and_ninjas_in_pyjamas_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Ninjas in Pyjamas](* <-lang_en;; *);
+			[Контракт между Hiiva и Ninjas in Pyjamas](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: ninjas_in_pyjamas_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 03_07_2018;;
+			->rrel_end: 04_10_2018;;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_hiiva_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hiiva and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Hiiva и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_01_2019;;
+		*);;
+	*);;
+
+	

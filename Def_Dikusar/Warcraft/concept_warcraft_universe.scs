@@ -1,0 +1,67 @@
+concept_warcraft_universe	
+
+=> nrel_main_idtf:[вселенная Warcraft] (* <- lang_ru;; *);
+=> nrel_idtf:[вселенная  «Военное ремесло»] (* <- lang_ru;; *);
+=> nrel_idtf:[вселенная Варкрафт] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Warcraft universe] (* <- lang_en;; *);
+-> computer_game_warcraft_human_and_orcs;
+-> computer_game_warcraft_2_tides_of_darkness;
+-> computer_game_warcraft_2_beyond_the_dark_portal;
+-> computer_game_warcraft_3_reign_of_chaos;
+-> computer_game_warcraft_3_the_frozen_throne;
+-> computer_game_world_of_warcraft;
+-> computer_game_world_of_warcraft_the_burning_crusade;
+-> computer_game_world_of_warcraft_wrath_of_the_lich_king;
+-> computer_game_world_of_warcraft_cataclysm;
+-> computer_game_world_of_warcraft_mists_of_pandaria;
+->concept_computer_game_hearthstone;
+-> computer_game_world_of_warcraft_warlords_of_draenor;
+->computer_game_world_of_warcraft_legion;
+->computer_game_world_of_warcraft_battle_for_azeroth;
+->computer_game_world_of_warcraft_classic;
+->computer_game_warcraft_3_reforged;
+->computer_game_world_of_warcraft_shadowlands;
+
+=>nrel_inclusion:{
+concept_warcraft_azeroth;
+concept_warcraft_draenor;
+concept_warcraft_argus
+};
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+		    concept_game_universe;
+          concept_game_company;
+		concept_game_series_warcraft
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Warcraft)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Вселенная Warcraft - вселенная, изначально придуманная для компьютерных игр из серии  <b><sc_element sys_idtf="concept_game_series_warcraft">Warcraft</sc_element>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Warcraft)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Вселенная Warcraft получила развитие в настольных играх, коллекционной карточной игре, книгах, комиксах, фильмах, различной маркетинговой продукции, такой как фигурки, футболки, коврики для мыши и т. п] (* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

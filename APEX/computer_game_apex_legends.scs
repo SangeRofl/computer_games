@@ -1,0 +1,100 @@
+computer_game_apex_legends
+=> nrel_main_idtf: [Apex Legends] (* <- lang_en;; *);
+=> nrel_main_idtf: [Apex Legends] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_setting_science_fiction;
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
+<- concept_massively_multiplayer_online_game;
+<- concept_shooter;
+<- concept_battle_royale;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: concept_playstation_4;
+=> nrel_platform: concept_xbox_one;
+=> nrel_publisher: company_electronic_arts;
+=> nrel_developer: company_respawn_entertainment;
+=> nrel_publication_date: date_2019;
+
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_game_engine: concept_game_engine_modified_source;
+=> nrel_plot: [отсутствует];
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Apex)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра в жанре многопользовательского шутера от первого лица и королевской битвы, разработанная американской студией Respawn Entertainment и выпущенная компанией Electronic Arts для платформ Windows, PlayStation 4 и Xbox One в 2019 году.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_computer_game;
+		concept_shooter;
+		concept_multiplayer;
+		concept_massively_multiplayer_online_game;
+		company_respawn_entertainment;
+		concept_microsoft_windows;
+		concept_microsoft_playstation_4;
+		concept_microsoft_xbox_one;
+		concept_battle_royale;
+		date_2019;
+		concept_first_person_view
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1(Apex Legends во вселенной Titanfall)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Действие Apex Legends происходит в той же самой вселенной, что и действие игр Titanfall и Titanfall 2.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_game_titanfall;
+		concept_game_titanfall_2
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2(Количество игроков в одной игре Apex Legends)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Apex Legends сталкивает на одной карте до 60 игроков, действующих группами по три человека — всего до двадцати команд.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_map;
+		concept_player
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3(Система выбора героя в Apex Legends)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Apex Legends перед началом каждого матча предлагает выбрать одного из героев со своими уникальными способностями.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (логотип Apex Legends)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Apex_Legends.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

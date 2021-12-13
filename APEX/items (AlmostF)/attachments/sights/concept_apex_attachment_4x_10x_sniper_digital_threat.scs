@@ -1,0 +1,6 @@
+concept_apex_attachment_4x_10x_sniper_digital_threat
+=> nrel_main_idtf: ["4x-10x Digital Sniper Threat" sight (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["4x-10x Цифровой Снайперский Поиск Угроз" прицел (Apex Legends)] (* <- lang_ru;; *);
+  
+<- concept_apex_attachment_sight;
+<- sc_node_not_relation;;

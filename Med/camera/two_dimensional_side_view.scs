@@ -1,0 +1,33 @@
+concept_two_dimensional_side_view
+=> nrel_main_idtf: [двухмерный вид сбоку] (* <- lang_ru;; *);
+=> nrel_main_idtf: [two dimensional side view] (* <- lang_en;;*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(двухмерный вид сбоку)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вид игровой камеры, которая используется в двухмерных играх и показывает игровой мир в профиль] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_camera;;
+		-> concept_two_dimensional_game;;
+		-> concept_game_world;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(двухмерный вид сбоку)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Двухмерный вид сбоку позволяет видеть все перепады высот на уровне: ямы, пропасти, все этажи, платформы] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

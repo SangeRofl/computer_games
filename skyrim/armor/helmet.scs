@@ -1,0 +1,30 @@
+concept_skyrim_armor_helmet
+
+=> nrel_main_idtf: [Helmet (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Шлем (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(шлем (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Шлем защищает голову персонажа.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (улучшение шлема)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Шлем может быть улучшен на <b><sc_element sys_idtf="concept_skyrim_crafting_table">верстаке</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,5 @@
+Galil_AR
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Galil AR](*<-lang_ru;;*);
+		[Galil AR](*<-lang_en;;*);;

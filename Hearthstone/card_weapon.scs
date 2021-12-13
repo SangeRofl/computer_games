@@ -1,0 +1,38 @@
+concept_card_weapon
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Карта оружия] (* <- lang_ru;; *);
+	[Weapon card] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Карта оружия)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+	    -> concept_card;;
+        -> player;;
+    *);;
+	<= nrel_sc_text_translation: ...(*
+    -> [Оружие - это специальные карты, которые могут быть экипированы героями . Каждое оружие имеет значение атаки и долговечность.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Замена оружия)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+	    ->concept_ability;;
+        -> concept_card_legendary;;
+        -> concept_card_epic;;
+        -> concept_card_rare;;
+        -> concept_card_common;;
+        -> concept_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Каждый герой может экипировать только одно оружие за раз, а оснащение новым оружием уничтожит старое.](*<-lang_ru;;*);;
+      *);;
+  *);;

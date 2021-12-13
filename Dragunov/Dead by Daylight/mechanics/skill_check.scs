@@ -1,0 +1,66 @@
+concept_dead_by_daylight_skill_check <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Skill Check]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Проверка реакции]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Проверка реакции(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Проверка реакции - QTE-элемент процесса починки <b><sc_element sys_idtf = "concept_dead_by_daylight_generator">генераторов</b></sc_element>, поломки <b><sc_element sys_idtf="concept_dead_by_daylight_hook">крюков</b></sc_element>, а также лечения и самолечения в игре <b><sc_element sys_idtf="computer_game_dead_by_daylight">Dead by Daylight</b></sc_element>. Представляет собой динамичную сцену, во время которой появляется круг с "Успешной Зоной" и движущимся указателем (триггером). Появлению Проверки Реакции предшествует звуковой сигнал, который помогает игроку приготовиться.]
+            (*<- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Проверка реакции(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Зона успеха стандартной Проверки Реакции состоит из обычной и "экстра" зоны. Попадание триггером в "экстра" зону ускоряет скорость текущего процесса (обычно на 5% от общего прогресса действия).]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Проверка реакции(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Негативный исход сцены сопровождается большим шумом и приводит к потери части прогресса в рамках текущего процесса починки, поломки или лечения. При коллективных работах также временно блокируется текущий прогресс для всех участников, пока не пройдет соответствующая анимация.]
+            (*<- lang_ru;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Проверка реакции(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Положительный исход сцены сопровождается получением дополнительных <b><sc_element sys_idtf="concept_dead_by_daylight_bloodpoints">очков крови</b></sc_element> в соответствующей категории]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://../pikchi/dbd_skill_check.png"(*
+            => nrel_format: format_png;;
+        *);;
+    *);;
+*);
+
+
+<= nrel_gameplay_element: computer_game_dead_by_daylight;;

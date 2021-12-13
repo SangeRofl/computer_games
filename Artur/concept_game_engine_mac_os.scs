@@ -1,0 +1,32 @@
+concept_game_engine_mac_os
+=> nrel_main_idtf: [игровой движок mac os] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game engine mac os] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Игровой движок mac_os)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игровой движок mac_os - игровой движок предназначенный для mac os] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_engine;;
+		-> concept_operation_system;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Игровой движок mac os)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [С помощью Aether3D можно создавать
+		3D игры различных жанров для платформы Mac OS X] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

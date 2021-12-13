@@ -1,0 +1,30 @@
+concept_effect <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Эффект]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Effect]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:... (*
+    => nrel_main_idtf:
+    [Опр. Эффект]
+    (*<-lang_ru;;*);;
+    <- definition;;
+    <= nrel_sc_text_translation:... (*
+        -> rrel_example:
+            [Эффект - состояние, накладываемое <b><sc_element sys_idtf="concept_weapon">оружием</b></sc_element> или <b><sc_element sys_idtf="concept_ability">способностью</b></sc_element> на цель.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_permanent_effect;;
+    -> concept_temporary_effect;;
+    -> concept_positive_effect;;
+    -> concept_negative_effect;;
+    -> concept_diffusable_effect;;
+    -> concept_undiffusable_effect;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);;

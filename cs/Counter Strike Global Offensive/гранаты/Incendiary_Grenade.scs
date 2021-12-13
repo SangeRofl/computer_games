@@ -1,0 +1,5 @@
+Incendiary_Grenade
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Зажигательная граната](*<-lang_ru;;*);
+		[Incendiary grenade](*<-lang_en;;*);;

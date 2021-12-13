@@ -1,0 +1,54 @@
+computer_game_warcraft_3_the_frozen_throne
+=> nrel_idtf: [Warcraft 3: The Frozen Throne] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: The Frozen Throne] (* <- lang_en;; *);
+=> nrel_main_idtf: [Warcraft III: The Frozen Throne] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_RTS;
+=> nrel_platform: concept_windows;
+=> nrel_platform: consept_mac_os;
+=>nrel_localizer: company_softclub;
+=> nrel_publisher:company_sierra_entertainment;
+=> nrel_publisher:company_blizzard;
+=> nrel_publisher:company_soft_club;
+=> nrel_publisher:company_capcom;
+=> nrel_developer: company_blizzard;
+<=nrel_addition:computer_game_warcraft_3_reign_of_chaos;
+=> nrel_publication_date: date_2003;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+=> nrel_plot: [События дополнения продолжают сюжет <b><sc_element sys_idtf="computer_game_warcraft_3_reign_of_chaos">Warcraft III: Reign of Chaos</sc_element></b>. После битвы на горе Хиджал расы Азерота стали возвращаться к мирной жизни. Однако последствия Третьей Войны порождают новые конфликты. Как и в предыдущей части, сюжетная линия представлена в виде кампаний, которые образуют общий сюжет. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<-concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Warcraft 3 FT)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Warcraft III: The Frozen Throne - официальное дополнение к компьютерной игре в жанре стратегии в реальном времени 2002 года Warcraft III: Reign of Chaos.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Warcraft 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В отличие от предыдущих игр серии количество противоборствующих сторон увеличилось с двух до четырёх.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://warcraft_3_ft.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

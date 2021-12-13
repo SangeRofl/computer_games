@@ -1,0 +1,43 @@
+concept_wc_race_gnome
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [гном]
+      (*<-lang_ru;;*);
+       [gnome]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Гномы] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(гномы)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_warcraft_azeroth
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эксцентричные, гениальные гномы являются одной из самых 
+странных рас мира <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b>. 
+Они помешаны на разработке радикально-новых технологий и создании инженерных чудес. 
+Хотя настоящим чудом является то, что раса гномов 
+до сих пор не вымерла в результате этих опытов.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://gnome.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,41 @@
+concept_apex_consumable
+=> nrel_main_idtf: [consumable (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [расходный материал (Apex Legends)] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_apex_consumable_support;;
+    -> concept_apex_consumable_healing;;
+	=> nrel_main_idtf:[Разбиение по назначению] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (расходный материал (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [расходный материал (Apex Legends) - предмет, который использует игрок для восстановления определенных показателей персонажа в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_player;
+		nrel_restore
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность расходных материалов в рюкзаке игрока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игрок может носить определенное количество расходных материалов, которое ограничено размером его рюкзака.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player;
+		concept_apex_gear_backpack
+	};;
+*);
+
+<- sc_node_not_relation;;

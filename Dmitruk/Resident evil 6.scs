@@ -1,0 +1,71 @@
+concept_computer_game_resident_evil_6
+
+=> nrel_main_idtf:     
+	 [Resident Evil 6]   (*<-lang_ru;;*);
+      [Resident Evil 6]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_shooter;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_game_mode: cooperative_game_mode;
+=>nrel_publication_date: date_02.10.2012;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: mt_framework;
+=>nrel_publisher: company_capcom;
+=>nrel_developer: company_capcom;
+=>nrel_platform: {
+concept_windows;
+concept_nintendo_switch;
+concept_xbox_360;
+concept_playstation_3
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil 6)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil 6  — компьютерная игра в жанре survival horror,  является девятой по счёту игрой в основной серии Resident Evil, вышедшей в Японии компанией Capcom на Xbox 360 и PlayStation 3 октября 2012 год.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_6.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil 6)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_computer_game_resident_evil_1;
+concept_computer_game_resident_evil_2;
+concept_computer_game_resident_evil_3_nemesis;
+concept_computer_game_resident_evil_4;
+concept_computer_game_resident_evil_5
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Игроку предоставляется выбор из 4 сюжетных кампаний, события которых происходят параллельно и пересекаются в нескольких ключевых точках. После прохождения одной сюжетной линий, можно выбрать следующую, и увидеть события с другой перспективы.. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

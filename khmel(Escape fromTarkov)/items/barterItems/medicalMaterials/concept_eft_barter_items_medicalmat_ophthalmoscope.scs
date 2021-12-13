@@ -1,0 +1,48 @@
+concept_eft_barter_items_medicalmat_ophthalmoscope
+=> nrel_main_idtf: [Ophthalmoscope(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Офтальмоскоп(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_medicalmat;
+
+=> nrel_eft_weapon_weight: 0.4;
+=> nrel_eft_barter_items_cost: 104912;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Офтальмоскоп(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Офтальмоскоп - бартерный предмет из группы медматериалы, медицинский прибор.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_medicalmat
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (пердназначение офтальмоскопа(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Офтальмоскоп пердназначен для диагностического обследования глаз.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Офтальмоскоп(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Ophthalmoscope.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

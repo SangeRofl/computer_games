@@ -1,0 +1,124 @@
+kold
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Jonas "Kold" Andersen](* <-lang_en;; *);
+		[Джонас "Kold" Андерсен](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Kold](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Denmark;
+	=>nrel_surname: Andersen;
+	=>nrel_first_name: Jonas;
+	=>nrel_nickname: Kold;
+	=>nrel_birthday: [22.02.1995];
+	=>nrel_gamerole: jungler_lol;
+
+	<=nrel_with_whom: contract_kold_and_tricked_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Tricked eSports](* <-lang_en;; *);
+			[Контракт между Kold и Tricked eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: tricked_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 15_02_2013;;
+			->rrel_end: 05_01_2014;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_kold_and_reason_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Reason Gaming](* <-lang_en;; *);
+			[Контракт между Kold и Reason Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: reason_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 05_01_2014;;
+			->rrel_end: 29_04_2014;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_kold_and_cloud9_eclipse_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Cloud9 Eclipse](* <-lang_en;; *);
+			[Контракт между Kold и Cloud9 Eclipse](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: cloud9_eclipse_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 11_05_2014;;
+			->rrel_end: xx_05_2014;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_kold_and_h2k_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and H2K](* <-lang_en;; *);
+			[Контракт между Kold и H2K](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: h2k_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 01_06_2014;;
+			->rrel_end: 26_10_2016;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_kold_and_splyce_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Splyce](* <-lang_en;; *);
+			[Контракт между Kold и Splyce](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: splyce_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_10_2016;;
+			->rrel_end: 21_11_2017;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_kold_and_unicorns_of_love_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Unicorns Of Love](* <-lang_en;; *);
+			[Контракт между Kold и Unicorns Of Love](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: unicorns_of_love_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_12_2017;;
+			->rrel_end: 03_12_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_kold_and_origen_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Kold and Origen](* <-lang_en;; *);
+			[Контракт между Kold и Origen](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: origen_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 03_12_2018;;
+			->rrel_end: 16_11_2020;;
+		*);;
+	*);;
+

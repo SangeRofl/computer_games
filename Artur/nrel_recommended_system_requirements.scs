@@ -1,0 +1,59 @@
+nrel_recommended_system_requirements
+=> nrel_main_idtf: [рекомендуемые системные  требования] (* <- lang_ru;; *);
+=> nrel_idtf: [minimal system requirements] (* <- lang_en;; *);
+
+<- binary_relation
+(*
+	<- arity (* <- concept_parameter;; *);;
+	=> nrel_measurement: 2;;
+*);
+=> nrel_first_domain: concept_computer_game;
+=> nrel_second_domain: concept_specifications;
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_specifications;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- defenition;;
+	=> nrel_main_idtf: [Опр.(рекомендуемые системные требования)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: [это описание рекомендуемых характеристик,
+							которым должен соответствовать компьютер для того,
+							чтобы на нём могло использоваться какое-либо
+							определённое программное обеспечение] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_specifications;;
+		-> concept_computer;;
+		-> concept_software;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Рекомендуемые системные требования)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: [Рекомендуемые характеристики описывают требования
+							как к аппаратному обеспечению (тип и частота процессора,
+							объём оперативной памяти, объём жёсткого диска),
+							так и к программному окружению] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_norole_relation;;

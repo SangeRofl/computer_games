@@ -1,0 +1,6 @@
+concept_apex_attachment_standard_stock
+=> nrel_main_idtf: [standard stock] (* <- lang_en;; *);
+=> nrel_main_idtf: [стандартный приклад] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

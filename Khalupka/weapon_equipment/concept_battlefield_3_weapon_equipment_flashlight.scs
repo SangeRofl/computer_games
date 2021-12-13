@@ -1,0 +1,37 @@
+concept_battlefield_3_weapon_equipment_flashlight
+=> nrel_main_idtf: [tactical flashlight (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [тактический фонарь (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_equipment;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (тактический фонарь (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment_flashlight">Тактический фонарь</b></sc_element> - это 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment">модуль оружия Battlefield 3</b></sc_element>, 
+		предназначенный для ослепления 
+		<b><sc_element sys_idtf="concept_battlefield_3_character">персонажей</b></sc_element> противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_weapon_equipment_flashlight;
+        concept_battlefield_3_weapon_equipment;
+        nrel_battlefield_3_weapon_recoil_right;
+        nrel_battlefield_3_weapon_recoil_left
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/flashlight.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,21 @@
+concept_item
+=> nrel_main_idtf: [item] (* <- lang_en;; *);
+=> nrel_main_idtf: [предмет] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (предмет)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [предмет - вещь, которую персонаж в играх может использовать во время геймплея.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_player;
+        concept_gameplay
+	};;
+*);
+
+
+<- sc_node_not_relation;;

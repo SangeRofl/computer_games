@@ -1,0 +1,39 @@
+concept_wraith_band
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [wraith band] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [wraith band] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(wraith band)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Диадема, от которой доносится легкий шепот.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(wraith band)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Фармящие герои ловкости, которым нужно раннее усиление урона, зачастую покупают один или более Wraith Band, так как у него очень высокое соотношение урона к затраченному золоту.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wraith_band.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

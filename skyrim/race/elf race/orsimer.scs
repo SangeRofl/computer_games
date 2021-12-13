@@ -1,0 +1,69 @@
+concept_skyrim_elf_race_orsimer
+
+=> nrel_main_idtf:     
+	 [Орк (Скайрим)]   (*<-lang_ru;;*);
+      [Orsimer race (Skyrim)]  (*<-lang_en;;*);  
+=> nrel_idtf:
+	[Орсимер] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_skyrim_elf_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Орк (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Орки  — одна из десяти <b><sc_element sys_idtf="concept_skyrim_race"> рас </b></sc_element> в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>
+, доступная для создания <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О внешности орков)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Орки (орсимеры) — древний народ, проживающий практически на всей территории <b><sc_element sys_idtf="concept_skyrim_tamriel">Тамриэля</b></sc_element>. 
+Зеленокожие, с ярко выраженными нижними клыками и заострёнными ушами. У некоторых орков могут быть наросты на лбу.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О происхождении орков)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[По поводу происхождения орков до сих пор не утихают споры. Основное место расселения: горы Драконьего Хвоста и Ротгарианские горы.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О способностях данмеров)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Орки знамениты, прежде всего, как отличные воины и непревзойдённые мастера кузнечного дела.
+ Предпочитают <b><sc_element sys_idtf="concept_skyrim_heavy_armor">тяжёлую броню</b></sc_element>.
+ Орков чаще всего можно встретить в орочьих крепостях. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/orsimer.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Орк)]   (*<-lang_ru;;*);;
+	*);;
+*);;

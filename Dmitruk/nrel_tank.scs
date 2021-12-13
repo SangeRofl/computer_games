@@ -1,0 +1,48 @@
+nrel_tank
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+<- norole_relation;
+<- binary_relation;
+ => nrel_second_domain: concept_tank_machine;
+  => nrel_first_domain: concept_computer_game;
+
+=> nrel_main_idtf:
+      [танк*]      (*<-lang_ru;;*);
+      [tank*]      (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (танк*)] (* <- lang_ru;; *);;
+
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Отношение, связывающее компьютерную игру и танк этой компьютерной игры.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{
+concept_tank_machine;
+concept_computer_game
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(танк*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ В игре может быть любое количество танков или вообще не быть ни одного.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+sc_node_not_relation ->...nodes;;
+number->2;;
+arity->...nodes;;
+...nodes->nrel_tank;;
+2<=nrel_measurement: ...nodes;;
+
+

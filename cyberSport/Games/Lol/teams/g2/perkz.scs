@@ -1,0 +1,84 @@
+perkz
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Luka  "Perkz" Perkovic](* <-lang_en;; *);
+		[Лука "Perkz" Перкович](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Perkz](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+	
+	=>nrel_citizen_of: Croatia;
+	=>nrel_surname: Perkovic;
+	=>nrel_first_name: Luka;
+	=>nrel_nickname: Perkz;
+	=>nrel_birthday: 30_09_1998
+	(*
+		<-sc_node_not_relation;;
+		=> nrel_main_idtf:
+			[30.09.1998](* <-lang_en; lang_ru;; *);;
+		<-date;;
+		=>nrel_date_day: [30];;
+		=>nrel_date_month: [9];;
+		=>nrel_date_year: [1998];;
+	*);
+	
+	<=nrel_with_whom: contract_perkz_and_millenium_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Perkz and Millenium](* <-lang_en;; *);
+			[Контракт между Perkz и Millenium](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 17_02_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[17.02.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [17];;
+					=> nrel_date_month: [2];;
+					=> nrel_date_year: [2015];;
+				*);;
+			->rrel_end: 02_06_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[02.06.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [2];;
+					=> nrel_date_month: [6];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_perkz_and_g2_esports
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Perkz and G2 Esports](* <-lang_en;; *);
+			[Контракт между Perkz и G2 Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: g2_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_06_2015
+				(*
+					<-sc_node_not_relation;;
+					=> nrel_main_idtf:
+						[02.06.2015](* <-lang_en; lang_ru;; *);;
+					<- date;;
+					=> nrel_date_day: [2];;
+					=> nrel_date_month: [6];;
+					=> nrel_date_year: [2015];;
+				*);;
+		*);;
+	*);;
+
+	

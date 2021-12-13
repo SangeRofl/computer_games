@@ -1,0 +1,33 @@
+concept_three_dimensional_side_view
+=> nrel_main_idtf: [трехмерный вид сбоку] (* <- lang_ru;; *);
+=> nrel_main_idtf: [three dimensional side view] (* <- lang_en;;*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(трехмерный вид сбоку)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вид игровой камеры, которая используется в псевдотрехмерных играх] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_camera;;
+		-> concept_pseudothree_dimensional_game;;
+		-> concept_game_world;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(трехмерный вид сбоку)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Трехмерный вид сбоку используется для имитации трехмерного игрового мир, который не является трехмерным] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

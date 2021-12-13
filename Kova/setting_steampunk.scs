@@ -1,0 +1,30 @@
+concept_setting_steampunk
+=> nrel_main_idtf: [стимпанк] (* <- lang_ru;; *);
+=> nrel_idtf: [steampunk] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(стимпанк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в эпоху индустриализации, когда технологии, основанные на принципах механики и паровых машинах, достигших высоких степеней развития] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(стимпанк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре присутствуют заводы, фабрики и различные механизмы] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

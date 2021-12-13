@@ -1,0 +1,79 @@
+hans_sama
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Steven "Hans Sama" Liv](* <-lang_en;; *);
+		[Стивен "Hans Sama" Лив](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Hans Sama](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: France;
+	=>nrel_surname: Liv;
+	=>nrel_first_name: Steven;
+	=>nrel_nickname: Hans_Sama;
+	=>nrel_birthday: [02.09.1999];
+	=>nrel_gamerole: bot_laner_lol;
+
+	<=nrel_with_whom: contract_hans_sama_and_the_gentle_team_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hans Sama and The Gentle Team](* <-lang_en;; *);
+			[Контракт между Hans Sama и The Gentle Team](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: the_gentle_team_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_11_2014;;
+			->rrel_end: xx_02_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hans_sama_and_e_corp_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hans Sama and E-corp Gaming](* <-lang_en;; *);
+			[Контракт между Hans Sama и E-corp Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: e_corp_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_02_2015;;
+			->rrel_end: xx_10_2015;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_hans_sama_and_millenium_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hans Sama and Millenium](* <-lang_en;; *);
+			[Контракт между Hans Sama и Millenium](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: millenium_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 17_11_2015;;
+			->rrel_end: 02_06_2016;;
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_hans_sama_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Hans Sama and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между Hans Sama и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_06_2016;;
+		*);;
+	*);;
+	
+		

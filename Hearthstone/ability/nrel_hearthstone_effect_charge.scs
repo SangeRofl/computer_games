@@ -1,0 +1,63 @@
+nrel_hearthstone_effect_charge
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[Эффект Рывок* ]
+	(* <- lang_ru;;	*);
+	[Effect Charge* ]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Charge.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание эффекта Рывок](*<-lang_ru;;*);
+		[Description of Charge effect](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_hearthstone_card_mechanics;
+        concept_card;
+        concept_card_minion;
+        concept_card_weapon;
+        computer_game_hearthstone
+	};;
+    <= nrel_sc_text_translation: ...(*
+        -> [Рывок - это способность, позволяющая миньону атаковать в тот же ход, когда его вызывают или передают под контроль нового игрока.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+        [Примечания] (* <- lang_ru;; *);
+        [Notes](* <-lang_en;; *);;
+	<= nrel_using_constants:
+    {
+        concept_hearthstone_card_mechanics;
+		concept_card;
+        concept_card_spell;
+        concept_card_minion
+    };;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Миньоны с зарядом не будут испытывать исчерпанный эффект при первом включении в игру. Это также применяется , если миньон вводится в игру с помощью таких средств , как Вызывает эффект или Faceless Манипулятор «s Transform эффект.] (* <- lang_ru;; *);;
+	*);;
+    	<= nrel_sc_text_translation: ...
+	(*
+		-> [Если дружественный миньон может атаковать только потому, что у него есть временный заряд от тундрового носорога , тундровому носорогу не нужно выживать, пока не произойдет настоящий бой (например, если он погибнет от взрывной ловушки , бой не будет отменен).] (* <- lang_ru;; *);;
+	*);;
+        <= nrel_sc_text_translation: ...
+    (*
+		-> [Charge функционально перекрывает эффекты Rush . Если миньону Charge назначен Rush, он все равно сможет атаковать вражеского героя. Это потому, что Rush на самом деле не мешает миньону атаковать героя противника, он только позволяет миньону атаковать вражеских миньонов, в то время как обычно он вызывает болезнь призыва.] (* <- lang_ru;; *);;
+	*);;
+*);;

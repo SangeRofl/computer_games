@@ -1,0 +1,5 @@
+nrel_apex_recoil_type
+=> nrel_main_idtf: [recoil type* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [тип отдачи* ] (* <- lang_ru;; *);
+
+<- sc_node_norole_relation;;

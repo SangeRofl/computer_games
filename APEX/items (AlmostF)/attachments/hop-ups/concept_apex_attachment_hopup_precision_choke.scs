@@ -1,0 +1,6 @@
+concept_apex_attachment_hopup_precision_choke
+=> nrel_main_idtf: ["precision choke" (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: ["Точный чок" (Apex Legends)] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_hopup;
+<- sc_node_not_relation;;

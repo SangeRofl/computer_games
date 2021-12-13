@@ -1,0 +1,64 @@
+nrel_eft_weapon_ammo_type
+=> nrel_main_idtf: [using ammo type(Escape from Tarkov)* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [тип используемых патронов(Escape from Tarkov)* ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тип используемых патронов(Escape from Tarkov)* )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это определённая разновидность патронов, которая используется при стрельбе из оружия.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_ammo;
+        concept_weapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Вариации патронов в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Escape from Tarkov' одно оружие может использовать различные типы патронов.] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+        //computer_game_escape_from_tarkov;
+        concept_eft_ammo
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_eft_weapon_ammo_type;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_eft_weapon_ammo_type;;
+antitransitive_relation -> nrel_eft_weapon_ammo_type;;
+asymmetric_relation -> nrel_eft_weapon_ammo_type;;
+
+
+nrel_eft_weapon_ammo_type => nrel_first_domain: concept_weapon;;
+nrel_eft_weapon_ammo_type => nrel_second_domain: concept_ammo;;
+nrel_eft_weapon_ammo_type => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_weapon;
+	    concept_ammo
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_eft_weapon_ammo_type;;
+number->2;;

@@ -1,0 +1,31 @@
+concept_tower_of_tank
+<-sc_node_not_relation;
+<=nrel_module_tank: concept_tank_machine;
+<-concept_module;
+=> nrel_main_idtf:
+      [башня]
+      (*<-lang_ru;;*);
+       [tower]
+       (*<-lang_en;;*);  
+=> nrel_idtf:
+      [бронебашня]
+      (*<-lang_ru;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (башня)] (* <- lang_ru;; *);; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ башня — броневая поворотная конструкция, основное назначение которой — размещение/защита расчёта и встроенного вооружения и оборудования.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (башня)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Может быть как элементом мобильной платформы, так и частью фортификационного сооружения.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

@@ -1,0 +1,5 @@
+XM1014
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[XM1014](*<-lang_ru;;*);
+		[XM1014](*<-lang_en;;*);;

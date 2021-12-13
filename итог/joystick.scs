@@ -1,0 +1,57 @@
+concept_joystick  //это системный идентификатор
+=> nrel_main_idtf:
+	[джойстик] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
+
+
+=> nrel_idtf:
+	[множество джойстиков] (* <- lang_ru;; *);    // обычные идентификаторы
+	[joystick] (* <- lang_en;; *);
+
+
+<= nrel_inclusion:
+	game_controller (* => nrel_main_idtf: [игровой контроллер] (* <- lang_ru;; *);; *);    //включение
+
+
+->rrel_example: joystick_speedlink_dark_tornado 
+(* => nrel_main_idtf: [джойстик speedlink dark tornado ] (* <- lang_ru;; *);; *);       //пример
+<- rrel_key_sc_element:
+
+
+	Definition_joystick           //определение
+	(*
+		=> nrel_main_idtf:
+			[Опр.(джойстик)] (* <- lang_ru;; *);;
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+                -> [Джо́йстик — устройство ввода информации в  компьютер, которое представляет собой качающуюся в двух плоскостях вертикальную ручку.] (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:          //используемые константы
+			...
+			(*
+				-> nrel_device (*
+=> nrel_main_idtf: [устройство] (* <- lang_ru;; *);; *);;
+				-> nrel_information (*
+=> nrel_main_idtf: [информация] (* <- lang_ru;; *);; *);;
+				-> concept_computer;;
+				-> nrel_handle (*
+=> nrel_main_idtf: [ручка] (* <- lang_ru;; *);; *);;
+			*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	Statment_joystick                  //утверждение
+	(*
+		=> nrel_main_idtf:
+			[Утв.(игрок, компьютерная игра)] 
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> [Джойстик позволяет управлять виртуальным объектом в двух- или трёхмерном пространстве] (* <- lang_ru;; *);;
+			*);;
+	*);
+<- sc_node_not_relation;;         //тип узла
+

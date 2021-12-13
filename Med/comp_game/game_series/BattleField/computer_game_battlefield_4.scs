@@ -1,0 +1,95 @@
+computer_game_battlefield_4
+=> nrel_main_idtf: [Battlefield 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Battlefield 4] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_real_world;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_dice; company_dice_los_angeles;
+=> nrel_publisher: company_electronic_arts;
+//=> nrel_localizer: company_electronic_arts;
+
+=> nrel_announcement_date: date_17_07_2012;
+
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows; playstation_3; xbox_360;;
+	=> nrel_producing_country: country_usa; country_russia;;
+	=> nrel_publication_date: date_29_10_2013;;
+	=> nrel_main_idtf: [Дата выхода в США и России для Windows, PlayStation 3 и Xbox 360] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows; playstation_3; xbox_360;;
+	=> nrel_producing_country: country_australia;;
+	=> nrel_publication_date: date_31_10_2013;;
+	=> nrel_main_idtf: [Дата выхода в Автралии для Windows, PlayStation 3 и Xbox 360] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: concept_windows; playstation_3; xbox_360;;
+	=> nrel_producing_country: country_eu;;
+	=> nrel_publication_date: date_29_11_2013;;
+	=> nrel_main_idtf: [Дата выхода в ЕС для Windows, PlayStation 3 и Xbox 360] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_platform: xbox_one;;
+	=> nrel_publication_date: date_22_11_2013;;
+	=> nrel_main_idtf: [Дата выхода для Xbox One] (* <- lang_ru;; *);;
+*);
+
+
+//=> nrel_platform: concept_windows; playstation_3; xbox_360;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+//=> nrel_plot: [отсутствует];
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Battlefield 4)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мультиплатформенная компьютерная игра в жанре шутера от первого лица, разработанная Digital Illusions CE и изданная Electornic Arts, двенадцатая в серии Battlefield] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_multiplatform_game;;
+		-> concept_computer_game;;
+		-> concept_shooter;;
+		-> concept_first_person_view;;
+		-> company_dice;;
+		-> company_electronic_arts;;
+		-> concept_game_series_battlefield;;
+	*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

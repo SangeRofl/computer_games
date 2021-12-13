@@ -1,0 +1,53 @@
+nrel_battlefield_3_weapon_min_damage_distance
+=> nrel_main_idtf: [Minimal damage distance* (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дистанция нанесения минимального урона* (Battlefield 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Дистанция нанесения максимального урона* (Battlefield 3) )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Параметр <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>, который обозначает минимальное 
+       		    расстояние, при котором наносится <b><sc_element sys_idtf="nrel_battlefield_3_weapon_min_damage">минимальный урон</b></sc_element> для конкретного
+       		    <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapons;
+        nrel_battlefield_3_weapon_min_damage
+	};;
+*);
+
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_battlefield_3_weapon_min_damage_distance;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_battlefield_3_weapon_min_damage_distance;;
+antitransitive_relation -> nrel_battlefield_3_weapon_min_damage_distance;;
+asymmetric_relation -> nrel_battlefield_3_weapon_min_damage_distance;;
+
+
+nrel_battlefield_3_weapon_min_damage_distance => nrel_first_domain: concept_battlefield_3_weapons;;
+nrel_battlefield_3_weapon_min_damage_distance => nrel_second_domain: number;;
+nrel_battlefield_3_weapon_min_damage_distance => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_battlefield_3_weapons;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_battlefield_3_weapon_min_damage_distance;;
+number->2;;

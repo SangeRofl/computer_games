@@ -1,0 +1,64 @@
+concept_skyrim_beastfolk_race_argonian
+
+=> nrel_main_idtf:     
+	 [Аргониан (Скайрим)]   (*<-lang_ru;;*);
+      [Argonian (Skyrim)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Аргониан (Скайрим))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Аргониан  — одна из десяти <b><sc_element sys_idtf="concept_skyrim_race"> рас </b></sc_element> в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>
+, доступная для создания <b><sc_element sys_idtf="concept_character">персонажа</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О происхождении aргонианов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Уроженцы далёкого влажного и жаркого Чернотопья, казалось бы, совершенно не предназначенные для холодного климата <b><sc_element sys_idtf="concept_skyrim_skyrim"> Скайрима </b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О способностях aргонианов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="concept_skyrim_skill"> Талант </b></sc_element> "Кора хиста" позволяет им в течение некоторого времени быстро восстанавливать <b><sc_element sys_idtf="nrel_hp"> здоровье</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (Об особеностях аргонианов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Физиология аргониан позволяет им дышать под водой, что возможно за счёт наличия небольших жабр. Более того,
+ эти рептилии успешно сопротивляются множеству болезней, но, в отличие от прошлых игр, лишились сопротивления ядам. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/argonianin.png"
+		(*
+			=> nrel_format: format_jpg;;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Аргониан)]   (*<-lang_ru;;*);;
+		*);;
+	*);;
+*);;

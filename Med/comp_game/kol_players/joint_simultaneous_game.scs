@@ -1,0 +1,32 @@
+concept_joint_simultaneous_game
+=> nrel_main_idtf: [совместная одновременная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf: [splitrscreen game] (* <- lang_en;;*); //splirscreen - mehanika!
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(совместная одновременная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игра, в которой игроки играют одновременно, используя для этого различные наборы клавиш на клавиатуре или разные геймпады] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_player;; 			//igrok
+		-> concept_game_world;;
+		//-> concept_real-time_game;; 		//igra(strategiya) v realnom vremeni!
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(совместная одновременная игра, игрок, игровой мир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Экран делится на части, каждый игрок взаимодействует с игровым миром со своей части экрана, действие игры разворачивается в реальном времени] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

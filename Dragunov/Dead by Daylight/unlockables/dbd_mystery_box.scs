@@ -1,0 +1,42 @@
+concept_dead_by_daylight_mystery_box <- sc_node_not_relation;
+=> nrel_main_idtf:
+    [mystery box(Dead by Daylight)]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [загадочный ящик(Dead by Daylight)]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    <- definition;;
+    => nrel_main_idtf:
+        [Опр. Загадочный ящик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+            [Загадочный ящик - тип разблокируемого элемента в игре Dead by Daylight.]
+            (*<-lang_ru;;=> nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Загадочный ящик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [При приобретении в кровавой паутине Загадочный ящик автоматически вскрывается и лежавший там разблокируемый предмет перемещается в инвентарь игрока.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Загадочный ящик(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [При открытии Загадочного ящика оттуда можно извлечь предмет такой же лил лучшей редкости, что и сам ящик.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

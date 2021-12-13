@@ -1,0 +1,125 @@
+lider
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Adam "LIDER" Ilyasov](* <-lang_en;; *);
+		[Адам "LIDER" Ильясов](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[LIDER](* <-lang_en; lang_ru;; *);
+
+	<-player_lol;
+	
+	=>nrel_citizen_of: Norway;
+	=>nrel_surname: Ilyasov;
+	=>nrel_first_name: Adam;
+	=>nrel_nickname: LIDER;
+	=>nrel_birthday: [03.07.1999];
+	=>nrel_gamerole: mid_laner_lol;
+	
+	<=nrel_with_whom: contract_lider_and_riddle_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Riddle Esports](* <-lang_en;; *);
+			[Контракт между LIDER и Riddle Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: riddle_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 23_01_2017;;
+			->rrel_end: xx_06_2017;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_lider_and_aequilibritas_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Aequilibritas eSports](* <-lang_en;; *);
+			[Контракт между LIDER и Aequilibritas eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: aequilibritas_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 02_06_2017;;
+			->rrel_end: 04_10_2017;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_lider_and_fact_revolution_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Fact Revolution](* <-lang_en;; *);
+			[Контракт между LIDER и Fact Revolution](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fact_revolution_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 12_01_2018;;
+			->rrel_end: 08_06_2018;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_lider_and_riddle_espors_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Riddle Esports](* <-lang_en;; *);
+			[Контракт между LIDER и Riddle Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: riddle_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_06_2018;;
+			->rrel_end: 03_08_2018;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_lider_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между LIDER и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_08_2018;;
+			->rrel_end: 21_08_2018;;
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_lider_and_fact_revolution_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Fact Revolution](* <-lang_en;; *);
+			[Контракт между LIDER и Fact Revolution](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fact_revolution_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 21_08_2018;;
+			->rrel_end: 08_01_2019;;
+		*);;
+	*);
+	
+	
+	<=nrel_with_whom: contract_lider_and_misfits_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between LIDER and Misfits Gaming](* <-lang_en;; *);
+			[Контракт между LIDER и Misfits Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: misfits_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 08_01_2019;;
+		*);;
+	*);;
+
+

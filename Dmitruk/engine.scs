@@ -1,0 +1,29 @@
+concept_engine
+<-sc_node_not_relation;
+<=nrel_module_tank: concept_tank_machine;
+<-concept_module;
+=> nrel_main_idtf:
+      [двигатель]
+      (*<-lang_ru;;*);
+       [engine]
+       (*<-lang_en;;*);  
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (двигатель)] (* <- lang_ru;; *);; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [двигаетль -  устройство, преобразующее какой-либо вид энергии в механическую работу.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (двигатель)] (* <- lang_ru;; *);;
+    => nrel_using_constants: concept_hull_of_tank;;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В основном двигатель вставляют в консрукцию\корпус механизма.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

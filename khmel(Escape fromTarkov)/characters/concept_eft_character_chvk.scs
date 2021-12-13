@@ -1,0 +1,42 @@
+concept_eft_character_chvk
+=> nrel_main_idtf: [CHVK(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [ЧВК(Escape from Tarkov)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(ЧВК (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Основной персонаж который может выполнять внутриигровые задания (квесты), копить деньги, репутацию и тд.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_character
+	};;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (сохранение предметов у ЧВК в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [При смерти ваш ЧВК теряет весь лут надетый на нём и если эти вещи не вынесут с карты то этот лут вам придёт обратно через время.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (ЧВК(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../imageEft/chvk.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

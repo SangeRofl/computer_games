@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_resistance
+
+=> nrel_main_idtf:     
+		 [сопротивление (тип заклинания)]   (*<-lang_ru;;*);
+     	 [resistance (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (сопротивление (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Сопротивление — понижает получаемый урон от электричества, холода, огня, магии, обычного оружия или понижает шансы получения отрицательных эффектов.  ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

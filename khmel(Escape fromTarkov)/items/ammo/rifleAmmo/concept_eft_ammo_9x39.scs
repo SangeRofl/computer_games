@@ -1,0 +1,47 @@
+concept_eft_ammo_9x39
+=> nrel_main_idtf: [9x39(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [9x39(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_ammo_rifle_ammo;
+
+=> nrel_eft_weapon_weight: 0.016;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (9x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Новый тип специальных патронов 9x39 с дозвуковой начальной скоростью пули был создан в СССР в середине 1980-х. Эти патроны предназначались для разрабатывавшихся в то время бесшумной снайперской винтовки и бесшумного автомата.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo_rifle_ammo
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (востребованность патрона 9x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Новое оружие оказалось востребованным не только для разведывательно-диверсионных подразделений специального назначения, но и для специальных подразделений правоохранительных органов при проведении специфических боевых операций на урбанизированной местности.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (9x39(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/9x39.gif"
+		(*
+			=> nrel_format: format_gif;;
+		*);;
+	*);;
+*);;

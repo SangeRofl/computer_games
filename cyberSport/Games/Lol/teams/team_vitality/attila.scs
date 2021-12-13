@@ -1,0 +1,93 @@
+attila
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Amadeu "Attila" Carvalho](* <-lang_en;; *);
+		[Амадеу "Attila" Карвальо](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Attila](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Portugal;
+	=>nrel_surname: Carvalho;
+	=>nrel_first_name: Amadeu;
+	=>nrel_nickname: Attila;
+	=>nrel_birthday: [26.02.1996];
+	=>nrel_gamerole: bot_laner_lol;
+
+	<=nrel_with_whom: contract_attila_and_infamous_esport_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Attila and InFamous Esport](* <-lang_en;; *);
+			[Контракт между Attila и InFamous Esport](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: infamous_esport_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 26_06_2015;;
+			->rrel_end: 12_12_2015;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_attila_and_for_the_win_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Attila and For The Win eSports](* <-lang_en;; *);
+			[Контракт между Attila и For The Win eSports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: for_the_win_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_01_2016;;
+			->rrel_end: 25_08_2016;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_attila_and_k1ck_esports_club_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Attila and K1ck eSports Club](* <-lang_en;; *);
+			[Контракт между Attila и K1ck eSports Club](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: k1ck_esports_club_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 25_08_2016;;
+			->rrel_end: xx_12_2016;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_attila_and_giants_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Attila and Giants Gaming](* <-lang_en;; *);
+			[Контракт между Attila и Giants Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: giants_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 09_01_2017;;
+			->rrel_end: 20_12_2017;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_attila_and_team_vitality_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Attila and Team Vitality](* <-lang_en;; *);
+			[Контракт между Attila и Team Vitality](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: team_vitality_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 21_12_2017;;
+		*);;
+	*);;
+

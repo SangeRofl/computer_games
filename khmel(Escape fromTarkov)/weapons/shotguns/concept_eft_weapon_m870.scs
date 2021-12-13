@@ -1,0 +1,54 @@
+concept_eft_weapon_m870
+=> nrel_main_idtf: [M870(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [M870(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_weapon_shotgun;
+
+<- concept_eft_fire_mode_single;
+=> nrel_eft_weapon_ammo_type: concept_eft_ammo_12x70;
+=> nrel_eft_weapon_sighting_distance: 100;
+=> nrel_eft_weapon_rate_of_fire: 30;
+=> nrel_eft_weapon_accuracy: 0.52;
+=> nrel_eft_weapon_effective_distance: 70;
+=> nrel_eft_weapon_starting_speed: 337;
+=> nrel_eft_weapon_weight: 1.1;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (M870(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [M870 помповое ружье производимое Remington Arms Company.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_weapon_shotgun
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (распространение M870(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Распространено по всему миру как спортивное, охотничье, или оружие для самообороны. Так же широко используется полицией и некоторыми армейскими подразделениями.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (M870(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/M870.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

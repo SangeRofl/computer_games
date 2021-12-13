@@ -1,0 +1,73 @@
+concept_computer_game_resident_evil_revalations_2
+
+=> nrel_main_idtf:     
+	 [Resident Evil: Revelations 2]   (*<-lang_ru;;*);
+      [Resident Evil: Revelations 2]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_horror;
+<-concept_survival;
+<-concept_shooter;
+<-concept_setting_invasion_of_zombie;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: cooperative_game_mode;
+=>nrel_publication_date: date_24.02.2015;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: mt_framework;
+=>nrel_publisher: company_capcom;
+=>nrel_publisher: company_sony_computer_entertaiment;
+=>nrel_developer: company_capcom;
+=>nrel_platform: {
+concept_windows;
+concept_nintendo_switch;
+concept_xbox_360;
+concept_playstation_3;
+concept_playstation_4;
+concept_xbox_one
+};
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Resident Evil: Revelations 2)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_game_series_resident_evil;
+concept_three_dimensional_game;
+concept_multiplatform_game 
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Resident Evil: Revelations 2  — компьютерная игра в жанре survival horror,  является десятой по счёту игрой в основной серии Resident Evil, вышедшей в Японии компанией Capcom 24 февраля 2015 год. Выполнена в эпизодической системе.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/RE_rev_2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Resident Evil: Revelations 2)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_computer_game_resident_evil_1;
+concept_computer_game_resident_evil_2;
+concept_computer_game_resident_evil_3_nemesis;
+concept_computer_game_resident_evil_4;
+concept_computer_game_resident_evil_5
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Особенностью игры заключается в том что процесс в игре сосредоточен на активном взаимодействии между персонажами. Для того чтобы преодолеть большинство препятствий, вам придется грамотным образом использовать возможности обоих протагонистов](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

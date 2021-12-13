@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_recovery
+
+=> nrel_main_idtf:     
+		 [восстановление (тип заклинания)]   (*<-lang_ru;;*);
+     	 [recovery (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (восстановление (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Восстановление — восполняет здоровье, магию и запас сил, а также величину навыков и параметров до нормального уровня. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

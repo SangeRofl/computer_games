@@ -1,0 +1,75 @@
+concept_firearm <- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [Огнестрельное оружие]
+    (*<-lang_ru;;*);
+=> nrel_main_idtf: 
+    [Firearm]
+    (*<-lang_en;;*);
+<- rrel_key_sc_element:... (*
+        => nrel_main_idtf: 
+            [Опр. Огнестрельное оружие]
+            (*<-lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:... (*
+        -> rrel_example: 
+            [Огнестрельное оружие - <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, в котором для стрельбы используются химические реакции и физические явления.]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Огнестрельное оружие]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+        [Огнестрельное оружие в <b><sc_element sys_idtf="concept_computer_game">компъютерных играх</b></sc_element> имеет, как правило, ограниченный запас зарядов, однако в некоторых играх отдельные виды огнестрельного оружия имеют неограниченный запас зарядов.]
+        (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Огнестрельное оружие]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+        [В качестве зарядов огнестрельное оружие использует металлические патроны.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. Огнестрельное оружие]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+        [Огнестрельное оружие имеет калибр.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_handgun;;
+    -> concept_long_gun;;
+    -> concept_rifle;;
+    -> concept_shotgun;;
+    -> concept_machine_gun;;
+    -> concept_submachine_gun;;
+	=> nrel_main_idtf:[Разбиение по типам] (* <- lang_ru;; *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/firearms.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;
+

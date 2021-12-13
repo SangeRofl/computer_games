@@ -1,0 +1,6 @@
+concept_apex_attachment_barrel_stabilizer
+=> nrel_main_idtf: [barrel stabilizer] (* <- lang_en;; *);
+=> nrel_main_idtf: [ствольный стабилизатор] (* <- lang_ru;; *);
+
+<- concept_apex_attachment_general;
+<- sc_node_not_relation;;

@@ -1,0 +1,55 @@
+concept_apex_consumable_healing_shield_battery
+=> nrel_main_idtf: [shield battery (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [аккумулятор щита (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 5;
+=> nrel_apex_consumable_use_time_with_combat_medic: 3.75;
+=> nrel_apex_consumable_use_time_with_fast_heal: 2.5;
+=> nrel_apex_restored_shields_amount: 100;
+=> nrel_apex_max_elements_per_slot: 3;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (аккумулятор щита (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [аккумулятор щита (Apex Legends) - лечебный расходный материал, восстанавливает 100 единиц щита легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_healing;
+		nrel_apex_restored_shields_amount
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем аккумулятора щита в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Три единицы аккумуляторов щита занимают один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (аккумулятор щита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/healing/apex_battery.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- concept_apex_consumable_healing;
+<- sc_node_not_relation;;

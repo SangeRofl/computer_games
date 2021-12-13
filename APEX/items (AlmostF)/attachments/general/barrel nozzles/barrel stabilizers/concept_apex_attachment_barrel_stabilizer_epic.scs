@@ -1,0 +1,38 @@
+concept_apex_attachment_barrel_stabilizer_epic
+=> nrel_main_idtf: [epic barrel stabilizer (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [эпический ствольный стабилизатор (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры ствольного стабилизатора
+=> nrel_apex_recoil_reduction_decrease_percent: 20;
+=> nrel_apex_randomness_decrease_percent: 30;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (эпический ствольный стабилизатор (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [эпический ствольный стабилизатор (Apex Legends) - ствольный стабилизатор, который значительно уменьшает отдачу и хаотичность разлета патронов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_recoil_reduction_percentage;
+        concept_apex_randomness_decrease_percentage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (эпический ствольный стабилизатор (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/barrels/stabilizers/epic.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

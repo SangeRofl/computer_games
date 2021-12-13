@@ -1,0 +1,38 @@
+concept_game_character_mercenary
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [наёмник]
+      (*<-lang_ru;;*);
+       [mercenary]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [рекрут]
+      (*<-lang_ru;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (наёмник)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+concept_unit
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_game_character_mercenary">Наёмник</sc_element></b> - юнит, нанимаемый в нейтральных лагерях.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+/*<= nrel_first_domain:
+     nrel_cost;
+     nrel_wood;*/
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (о торговце)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_army
+};; 
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Благодаря наёмникам, можно компенсировать недостатки своей армии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<-concept_unit;;

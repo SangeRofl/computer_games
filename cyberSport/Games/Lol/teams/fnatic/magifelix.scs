@@ -1,0 +1,93 @@
+magifelix
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Felix "Magifelix" Bostrom](* <-lang_en;; *);
+		[Феликс "Magifelix" Бостром](* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Magifelix](* <-lang_en;; *);
+
+	<-player_lol;
+
+	=>nrel_citizen_of: Sweden;
+	=>nrel_surname: Bostrom;
+	=>nrel_first_name: Felix;
+	=>nrel_nickname: Magifelix;
+	=>nrel_birthday: [27.02.2000];
+	=>nrel_gamerole: mid_laner_lol;
+
+	<=nrel_with_whom: contract_magifelix_and_euronics_gaming_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Magifelix and EURONICS Gaming](* <-lang_en;; *);
+			[Контракт между Magifelix и EURONICS Gaming](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: euronics_gaming_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_03_2016;;
+			->rrel_end: xx_01_2017;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_magifelix_and_red_bulls_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Magifelix and Red Bulls](* <-lang_en;; *);
+			[Контракт между Magifelix и Red Bulls](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: red_bulls_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 19_05_2017;;
+			->rrel_end: xx_01_2018;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_magifelix_and_movistar_riders_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Magifelix and Movistar Riders](* <-lang_en;; *);
+			[Контракт между Magifelix и Movistar Riders](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: movistar_riders_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: xx_01_2018;;
+			->rrel_end: 30_04_2018;;	
+		*);;
+	*);
+	
+	<=nrel_with_whom: contract_magifelix_and_youthcrew_esports_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Magifelix and YouthCrew Esports](* <-lang_en;; *);
+			[Контракт между Magifelix и YouthCrew Esports](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: youthcrew_esports_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 05_06_2018;;
+			->rrel_end: 22_11_2018;;	
+		*);;
+	*);
+
+	<=nrel_with_whom: contract_magifelix_and_fnatic_lol
+	(*
+		=> nrel_main_idtf:
+			[Сontract between Magifelix and Fnatic](* <-lang_en;; *);
+			[Контракт между Magifelix и Fnatic](* <-lang_ru;; *);;
+		<-contract;;
+		=>nrel_with_what: fnatic_lol;;
+		=>nrel_period: ...
+		(*
+			<-period_of_time;;
+			->rrel_start: 07_01_2019;;
+		*);;
+	*);;
+

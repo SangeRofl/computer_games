@@ -1,0 +1,69 @@
+computer_game_need_for_speed_hot_pursuit							//developers and gameMode?
+=> nrel_main_idtf: [Need for Speed: Hot Pursuit] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Hot Pursuit] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_criterion_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_3; xbox_360; ios; windows_mobile;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: chameleon_2.0;
+
+=> nrel_publication_date: date_14_7_2010;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Hot Persuit)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, разработанная студией Criterion Games и изданная Electronic arts в 2010 году. Является перезапуском серии Hot Pursuit, четырнадцатая часть в игровой серии Need for Speed.
+                В Hot Pursuit можно играть как за полицейского, так и за гонщика и включает в себя полный режим карьеры для обеих сторон примерно одинаковой продолжительности.
+                Отношения между полицейскими и гонщиками описываются как «погоня собаки за кроликом» с более мощными полицейскими по сравнению с гонщиками.
+                Каждая сторона имеет несколько бонусов, включая вызов блокпоста и радиолокационные помехи.
+                Действие игры разворачивается в вымышленном месте, называемом округ Сикрест, по которому предоставлена свобода передвижения.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_criterion_games;;
+                -> computer_game_need_for_speed_hot_pursuit;;
+                -> concept_game_series_need_for_speed;;
+                -> concept_game_series_hot_pursuit;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

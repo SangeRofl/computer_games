@@ -1,0 +1,72 @@
+computer_game_need_for_speed_prostreet
+=> nrel_main_idtf: [Need for Speed: ProStreet] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: ProStreet] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+<- concept_arcade;
+<- concept_simulator;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_black_box;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; play_station_3; playstation_2; xbox_360; playstation_portable; game_cube; wii; DS;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: ea_graphics_library;
+
+=> nrel_publication_date: date_31_10_2007;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: ProStreet)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадного автосимулятора, разработанная студией EA Canada и изданная Electronic arts в 2010 году.
+                    В Need for Speed: ProStreet используется абсолютно новый движок. Акцент в игре смещён с аркадных гонок к реалистичным соревнованиям.
+                    Функция «Autosculpt», впервые представленная в Need for Speed: Carbon, претерпела ряд изменений.
+                    В ProStreet появилась реалистичная система повреждений, вплоть до полного уничтожения автомобиля, отсутствовавшая во многих предыдущих частях серии.
+                    Была убрана полиция и возможность свободной езды. Также в игре появилось разделение автомобилей по гоночным классам и характеристикам, вследствие чего для тех или иных гонок
+                    необходимо иметь подходящие по требованиям автомобили. ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_arcade;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> concept_simulator;;
+                -> company_black_box;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_prostreet;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

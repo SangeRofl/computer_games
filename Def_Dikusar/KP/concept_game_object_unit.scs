@@ -1,0 +1,102 @@
+concept_unit		
+
+=> nrel_main_idtf:[юнит] (* <- lang_ru;; *);
+=> nrel_main_idtf:[unit] (* <- lang_en;; *);
+=> nrel_idtf: [Юнит] (* <- lang_ru;; *);
+=> nrel_idtf: [Unit] (* <- lang_en;; *);
+
+<-concept_game_object;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(юнит)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_game_object;
+      concept_strategy;
+      concept_RPG;
+      concept_game_resource;
+      concept_game_object_building 
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Юнит — название боевой/рабочей единицы, предполагающей 
+     возможность управления в компьютерных играх жанра <b><sc_element sys_idtf="concept_strategy">«Стратегия»</sc_element></b> 
+     и <b><sc_element sys_idtf="concept_RPG">«RPG»</sc_element></b>. 
+     Часто под юнитом подразумевается любая «живая единица» — 
+     та, которая может самостоятельно перемещаться, 
+     вступать в бой, собирать <b><sc_element sys_idtf="concept_game_resource">ресурсы</sc_element></b>, 
+     строить <b><sc_element sys_idtf="concept_game_object_building">здания</sc_element></b> и т. д.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Юнит)] (* <- lang_ru;; *);;
+	=> nrel_using_constants: {
+      concept_game_object_building
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Юниты могут быть произведены («построены») в 
+специальном <b><sc_element sys_idtf="concept_game_object_building">строении</sc_element></b>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Юнит)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+      concept_game_object;
+      concept_RTS;
+      concept_TBS;
+      concept_strategy
+};;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В зависимости от жанра <b><sc_element sys_idtf="concept_strategy">стратегии</sc_element></b> 
+(<b><sc_element sys_idtf="concept_TBS">пошаговая</sc_element></b><sc_element sys_idtf="concept_RTS">реального времени</sc_element></b>) 
+функции однотипных юнитов могут варьироваться, 
+но в-основном они выполняют одни и те же функции — 
+так рабочий выполняет функцию строителя, 
+сборщика, инженера, а воины — функции захвата, сражения и 
+обороны базы.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- statement;;
+    => nrel_main_idtf:
+      [Утв.(Юнит)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Кроме казарменной постройки в игре может 
+быть реализован способ вызова уже готовых и 
+обученных солдат — обычно это представлено клавишей на 
+панели инструментов и может быть 
+недоступно до определённого 
+момента.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+=>nrel_subdividing:
+{
+      concept_unit_combat_unit;
+      concept_unit_worker
+};
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://unit.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

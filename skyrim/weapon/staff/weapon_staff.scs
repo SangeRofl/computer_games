@@ -1,0 +1,49 @@
+concept_skyrim_weapon_staff
+=> nrel_main_idtf: [Staff (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Посох (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Посох (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Посох —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, с помощью которого применяют магические способности.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Виды посохов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element> существует 5 видов посохов.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+ 
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффективность магии)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Эффективность магии зависят от прокачки определенной школы магии: чем лучше он развит, тем выше эффективность магии.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_skyrim_weapon_staff_illusion;;
+	-> concept_skyrim_weapon_staff_witchcraft;;
+	-> concept_skyrim_weapon_staff_destruction;;
+	-> concept_skyrim_weapon_staff_recovery;;
+	-> concept_skyrim_weapon_staff_change;;
+	=> nrel_main_idtf:[Разбиение по виду посохов] (* <- lang_ru;; *);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,117 @@
+concept_apex_weapon_p2020
+=> nrel_main_idtf: [P2020] (* <- lang_en;; *);
+=> nrel_main_idtf: [P2020] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_pistol;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_single;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_light_round;
+
+=> nrel_weapon_rate_of_fire: 430;
+=> nrel_weapon_damage_per_second: 93;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 20;
+=> nrel_apex_default_legend_common_helmet_damage: 18;
+=> nrel_apex_default_legend_rare_helmet_damage: 16;
+=> nrel_apex_default_legend_epic_helmet_damage: 15;
+=> nrel_apex_default_legend_legendary_helmet_damage: 15;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 21;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 19;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 17;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 16;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 16;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 17;
+=> nrel_apex_fortified_legend_common_helmet_damage: 15;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 14;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 13;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 13;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 13;
+=> nrel_apex_low_profile_legend_body_damage: 14;
+=> nrel_apex_fortified_legend_body_damage: 11;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 12;
+=> nrel_apex_low_profile_legend_leg_damage: 13;
+=> nrel_apex_fortified_legend_leg_damage: 10;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.5;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 10;
+=> nrel_apex_common_magazine_capacity: 13;
+=> nrel_apex_rare_magazine_capacity: 15;
+=> nrel_apex_epic_magazine_capacity: 18;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_light_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_hammerpoint_rounds;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (P2020)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [P2020 - пистолет, который использует легкие патроны и имеет одиночный тип стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_light_round;
+		concept_apex_weapon_pistol;
+        concept_apex_fire_mode_single
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на P2020)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 46 скинов на P2020: 6 легендарных, 6 эпических, 18 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (P2020)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_p2020.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

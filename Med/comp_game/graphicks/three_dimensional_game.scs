@@ -1,0 +1,30 @@
+concept_three_dimensional_game
+=> nrel_main_idtf: [трехмерная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf: [three-dimensional game] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(трехмерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игра, визуальное пространство которой целиком построено из трехмерных объектов] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_game_world;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(трехмерная игра, персонаж)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Персонаж находится в трехмерном пространстве и в некоторых играх имеет полную свободу передвижения] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

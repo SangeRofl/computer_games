@@ -1,0 +1,69 @@
+concept_battlefield_3_weapon_famas
+=> nrel_main_idtf: [FAMAS (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [FAMAS (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_assault_rifle;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (FAMAS (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Стандартная <b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">штурмовая винтовка</b></sc_element> французской армии] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (FAMAS Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Является самым скорострельным <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружием Battlefield 3</b></sc_element> 
+		   в <b><sc_element sys_idtf="concept_weapon_auto_fire_mode">режиме автомвтичского огня</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_famas;
+        concept_battlefield_3_class_assault
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_thickened_trunk; 
+											 concept_battlefield_3_weapon_equipment_front_handle; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+											 concept_battlefield_3_weapon_equipment_flame_arrester;
+
+=> nrel_battlefield_3_weapon_max_damage: 25.0;
+=> nrel_battlefield_3_weapon_max_damage: 18.4;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 3.20;
+=> nrel_battlefield_3_weapon_full_reload_time: 3.90;
+=> nrel_battlefield_3_weapon_magazine_capacity: 30;
+=> nrel_battlefield_3_weapon_max_damage_distance: 8;
+=> nrel_battlefield_3_weapon_min_damage_distance: 50;
+=> nrel_battlefield_3_weapon_rate_of_fire: 1000;
+=> nrel_battlefield_3_weapon_recoil_up: 0.3k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.6k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.6k;
+=> nrel_weapon_fire_mode: concept_weapon_auto_fire_mode; concept_weapon_single_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/famas.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+	

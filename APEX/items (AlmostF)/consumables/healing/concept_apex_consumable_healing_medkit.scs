@@ -1,0 +1,56 @@
+concept_apex_consumable_healing_medkit
+=> nrel_main_idtf: [medkit (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [аптечка (Apex Legends)] (* <- lang_ru;; *);
+
+//Параметры предмета
+=> nrel_apex_consumable_use_time: 8;
+=> nrel_apex_consumable_use_time_with_combat_medic: 6;
+=> nrel_apex_consumable_use_time_with_fast_heal: 4;
+=> nrel_apex_restored_hp_amount: 100;
+=> nrel_apex_max_elements_per_slot: 3;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (аптечка (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [аптечка (Apex Legends) - лечебный расходный материал, восстанавливает 100 единиц здоровья легендам.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_consumable_healing;
+		nrel_apex_restored_hp_amount
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (объем аптечек в рюкзаке легенды)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Три единицы аптечек занимают один полный слот в рюкзаке легенды.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_apex_gear_backpack;
+		nrel_apex_max_elements_per_slot
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (аптечка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../image/items/consumables/healing/apex_medkit.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- concept_apex_consumable_healing;
+<- sc_node_not_relation;;

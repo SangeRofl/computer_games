@@ -1,0 +1,42 @@
+concept_game_series_half_life
+<-sc_node_not_relation;
+
+-> concept_computer_game_half_life_2;
+-> concept_computer_game_half_life_alyx;
+-> concept_computer_game_half_life_2_deathmatch;
+-> concept_computer_game_half_life_2_episode_one;
+-> concept_computer_game_half_life_2_episode_two;
+-> concept_computer_game_half_life_2_lost_coast;
+-> concept_computer_game_half_life_blue_shift;
+-> concept_computer_game_half_life_decay;
+-> concept_computer_game_half_life_opposing_force;
+-> concept_computer_game_half_life_source;
+
+
+=> nrel_main_idtf:
+	[серия игр Half-Life]
+	(*<-lang_ru;;*);
+	[game series Half-Life]
+	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf:
+	[Опр. (Half-Life) ] (* <-lang_ru;;*);;
+
+	<=  nrel_sc_text_translation: ...  (*
+	-> rrel_example:
+	[Half-Life  — серия компьютерных игр в жанре научно-фантастического 
+шутера от первого лица, разработанных компанией Valve.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+    *);
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утв. (Half-Life ) ]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[Серия состоит из 11 игр.](* <-lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+   *);
+<= nrel_include: concept_game_series;;

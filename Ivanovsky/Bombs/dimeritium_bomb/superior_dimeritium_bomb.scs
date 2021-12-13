@@ -1,0 +1,51 @@
+concept_superior_dimeritium_bomb
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Отличная двимеритовая бомба] (* <- lang_ru;;*);
+	[Superior dimeritium bomb] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Отличная двимеритовая бомба)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Ведьмаки пользуются такими бомбами преимущественно против чудовищ.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [выпускает облако двимеритовых осколков, которые блокируют магию и магические способности чудовищ. После того, как облако рассеется, его действие сохраняется ещё ненадолго. Эффект длится 30 секунд](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_enhanced_dimeritium_bomb;;
+   	-> concept_alchemists_powder;;
+	-> concept_optima_mater;;
+	-> concept_puffball;;
+	-> concept_powdered_pearl;;
+	-> concept_nigredo;;
+	-> concept_bloodmoss;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Отличная двимеритовая бомба состоит из: Алхимический порошок, Optima mater, Улучшенная Двимеритовая бомба, Толчёный жемчуг, Гриб-дождевик, Нигредо, Кровостой.](*<-lang_ru;;*);;
+      *);;
+  *);;

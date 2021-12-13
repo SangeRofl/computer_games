@@ -1,0 +1,48 @@
+concept_eft_weapon_crashAxe
+=> nrel_main_idtf: [Crash Axe(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Топор(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_steel_arms;
+
+=> nrel_eft_weapon_effective_distance: 0.5;
+=> nrel_eft_weapon_weight: 1.4;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Топор(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Топор — рубящее орудие, чаще короткодревковое и имеющее рабочее лезвие, расположенное вдоль рукоятки.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_steel_arms
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (материалы Топор(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Материалы и конструкция предназначены для обеспечения оптимального воздействия и прочности. Голова топора изготовлена из титана 6AL4V толщиной 2,85 дюйма.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Топор(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/Crash_axe.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

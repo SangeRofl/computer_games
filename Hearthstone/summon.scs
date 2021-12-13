@@ -1,0 +1,38 @@
+concept_card_ability_summon
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Призыв существа] (* <- lang_ru;; *);
+	[Summon] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Призыв существа)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+	  -> concept_card;;
+    -> concept_ability;;
+    -> nrel_battlecry;;
+    -> concept_card_minion;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Призыв существа - эта способность обнаруживается в силах героя, заклинаниях и существах и часто вызывается боевым кличем или смертельным грохотом.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Призыв существа)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+		  -> nrel_effect;;
+      -> concept_player;;
+      -> nrel_battlecry;;
+      -> concept_active_card;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+          -> [Миньоны, вызванные эффектом вызова, не разыгрываются непосредственно игроком, и поэтому не будут вызывать боевой клич или перегрузку.](*<-lang_ru;;*);;
+      *);;
+  *);;

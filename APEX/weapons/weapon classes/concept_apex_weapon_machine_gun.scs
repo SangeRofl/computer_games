@@ -1,0 +1,27 @@
+concept_apex_weapon_machine_gun
+=> nrel_main_idtf: [machine gun (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пулемет (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пулемет (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [пулемет (Apex Legends) — стрелковое оружие, которое обычно имеет большой запас патронов в магазине, высокую отдачу, высокую скорострельность, средний урон и предназначенное для поражения персонажей противника в ближнем бою в игре 'Apex Legends'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры пулеметов (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Apex Legends' существует 3 экземпляра пулеметов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

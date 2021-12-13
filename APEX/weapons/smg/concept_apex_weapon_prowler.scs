@@ -1,0 +1,120 @@
+concept_apex_weapon_prowler
+=> nrel_main_idtf: [R-99] (* <- lang_en;; *);
+=> nrel_main_idtf: [PDW "Ищейка"] (* <- lang_ru;; *);
+
+
+<- concept_apex_weapon_smg;
+
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_burst;
+=> nrel_weapon_bullets_per_burst: 5;
+=> nrel_apex_projectiles_per_shot: 1;
+=> nrel_apex_projectiles_shape: [отсутствует];
+=> nrel_weapon_ammo_type: concept_apex_ammo_heavy_round;
+
+=> nrel_weapon_rate_of_fire: 800;
+=> nrel_weapon_damage_per_second: 186;
+
+
+//Default legend | all helmet levels DAMAGE
+=> nrel_apex_default_legend_head_damage: 21;
+=> nrel_apex_default_legend_common_helmet_damage: 19;
+=> nrel_apex_default_legend_rare_helmet_damage: 17;
+=> nrel_apex_default_legend_epic_helmet_damage: 16;
+=> nrel_apex_default_legend_legendary_helmet_damage: 16;
+
+//Low profile legend | all helmet levels DAMAGE
+=> nrel_apex_low_profile_legend_head_damage: 22;
+=> nrel_apex_low_profile_legend_common_helmet_damage: 20;
+=> nrel_apex_low_profile_legend_rare_helmet_damage: 18;
+=> nrel_apex_low_profile_legend_epic_helmet_damage: 17;
+=> nrel_apex_low_profile_legend_legendary_helmet_damage: 17;
+
+//Fortified legend | all helmet levels DAMAGE
+=> nrel_apex_fortified_legend_head_damage: 18;
+=> nrel_apex_fortified_legend_common_helmet_damage: 16;
+=> nrel_apex_fortified_legend_rare_helmet_damage: 14;
+=> nrel_apex_fortified_legend_epic_helmet_damage: 13;
+=> nrel_apex_fortified_legend_legendary_helmet_damage: 13;
+
+
+//Different types of legends | body DAMAGE
+=> nrel_apex_default_legend_body_damage: 14;
+=> nrel_apex_low_profile_legend_body_damage: 15;
+=> nrel_apex_fortified_legend_body_damage: 12;
+
+//Different types of legends | leg DAMAGE
+=> nrel_apex_default_legend_leg_damage: 11;
+=> nrel_apex_low_profile_legend_leg_damage: 12;
+=> nrel_apex_fortified_legend_leg_damage: 9;
+
+
+//Other parameters
+=> nrel_weapon_headshot_damage_increase_ratio: 1.5;
+=> nrel_weapon_recoil_type: concept_apex_recoil_kick_plus_vertical_plus_curve_right;
+
+//Different types of magazines | magazine capacity
+=> nrel_apex_default_magazine_capacity: 20;
+=> nrel_apex_common_magazine_capacity: 25;
+=> nrel_apex_rare_magazine_capacity: 30;
+=> nrel_apex_epic_magazine_capacity: 35;
+
+
+//Attachments | hopups & others
+=> nrel_weapon_attachment: concept_apex_attachment_extended_light_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_standard_stock;
+=> nrel_weapon_attachment: concept_apex_attachment_hopup_selectfire_receiver;
+
+//Attachments | Optics
+=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
+=> nrel_weapon_attachment: concept_apex_attachment_1x_digital_threat;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (PDW "Ищейка")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [PDW "Ищейка" - пистолет-пулемет, который использует тяжелые патроны и имеет переключаемые автоматический и серийный типы стрельбы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_ammo_heavy_round;
+		concept_apex_weapon_smg;
+        concept_apex_fire_mode_auto;
+		concept_apex_fire_mode_burst
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Скины на PDW "Ищейка")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 51 скинов на PDW "Ищейка": 9 легендарных, 7 эпических, 19 редких и 16 обычных.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (PDW "Ищейка")](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../image/apex_prowler.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

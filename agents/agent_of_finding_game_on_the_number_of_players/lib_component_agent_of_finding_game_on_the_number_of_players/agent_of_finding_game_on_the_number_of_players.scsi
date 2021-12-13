@@ -1,0 +1,292 @@
+agent_of_finding_game_on_the_number_of_players
+=> nrel_main_idtf:
+[агентная scp-программа поиска игры от количества игроков] (* <- lang_ru;; *);
+[agent scp-program of finding game on the number of players] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+
+scp_program -> agent_of_finding_game_on_the_number_of_players
+(*
+	-> rrel_params : ..agent_of_finding_game_on_the_number_of_players_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+	-> rrel_operators : ..agent_of_finding_game_on_the_number_of_players_operators
+	(*
+		-> rrel_init : ..agent_of_finding_game_on_the_number_of_players_quest_1
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+		
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_quest_2 ;;
+		*);;
+		
+		-> ..agent_of_finding_game_on_the_number_of_players_quest_2
+		(*
+			<- searchElStr3;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_game_on_the_number_of_players ;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=>nrel_then: ..agent_of_finding_game_on_the_number_of_players_quest_3 ;;
+			=>nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_return;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_quest_3
+		(*
+			<- searchElStr5;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=>nrel_then: ..agent_of_finding_game_on_the_number_of_players_quest_4;;
+			=>nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_return;;
+		*);;
+		
+		-> ..agent_of_finding_game_on_the_number_of_players_quest_4
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=>nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_1;;
+			=>nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_return;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_1 	//proveryaem janr
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_const : rrel_not_relation : concept_computer_game ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_common : _com1 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_not_relation : _param1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_inclusion ;;
+	
+			=> nrel_then : ..agent_of_finding_game_on_the_number_of_players_operator_2;;
+			=> nrel_else : ..agent_of_finding_game_on_the_number_of_players_operator_return;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_2 //proveryaem chislo
+		(*
+			<- searchElStr3 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_const : rrel_not_relation : number ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc2 ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _param2 ;;
+	
+			=> nrel_then : ..agent_of_finding_game_on_the_number_of_players_operator_3 ;;
+			=> nrel_else : ..agent_of_finding_game_on_the_number_of_players_operator_return ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_3	//gen answer
+		(*
+			<- genEl ;;
+
+			-> rrel_1 : rrel_assign : rrel_scp_var : rrel_node : rrel_const : _answer ;;
+	
+			=> nrel_goto : ..agent_of_finding_game_on_the_number_of_players_operator_3A ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_3A 	//znachenie chisla
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com2 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_main_idtf ;;
+
+			=> nrel_goto : ..agent_of_finding_game_on_the_number_of_players_operator_4 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_4 //nahodim vse igri janra
+		(*
+			<- searchSetStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _param1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_game ;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_games ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_return ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_5	//nahodim igru
+		(*
+			<- searchElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set_of_games ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_game ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_6 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_16 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_6	//udalyaem igru
+		(*
+			<- eraseEl ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc4 ;;
+
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_operator_6A ;;
+		*);;
+		 -> ..agent_of_finding_game_on_the_number_of_players_operator_6A 	//zapominaem arc mejdu vibrannoy igroi i janrom
+		(*
+			<- searchElStr3 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_not_relation : _param1 ;;
+			-> rrel_2 : rrel_assign : rrel_scp_var : rrel_pos_const_perm : _arc_answer ;;
+			-> rrel_3 : rrel_fixed : rrel_scp_var : rrel_node : _some_game ;;
+	
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_7 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_return ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_7	//nahodem min players
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _some_game ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com3 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_minimum_number_of_players ;;
+		
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_8 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_8	//max players
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _some_game ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com4 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc6;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_maximum_number_of_players ;;
+		
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_9 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_9	//min value
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _node1 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com5 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value1 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc7;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_main_idtf ;;
+		
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_10 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_10	//max value
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _node2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com6 ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value2 ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc8;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_main_idtf ;;
+		
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_10A ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_10A	//value > 1?
+		(*
+			<- ifGr ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _value1 ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_12 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_11 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_11	//value == 1?
+		(*
+			<- ifEq ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _value1 ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_12 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_12	// value < 4?
+		(*
+			<- ifGr ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value2 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _value ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_14 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_13 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_13	//value == 4?
+		(*
+			<- ifEq ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value2 ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _value ;;
+
+			=> nrel_then: ..agent_of_finding_game_on_the_number_of_players_operator_14 ;;
+			=> nrel_else: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		->..agent_of_finding_game_on_the_number_of_players_operator_14 //zanosim game v answer
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc9;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _some_game ;;
+
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_operator_15 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_15	//zanosim arc v answer
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed : rrel_scp_var: rrel_node: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc_answer ;;
+
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_operator_5 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_16	//zanosim janr v answer
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc11;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _param1 ;;
+
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_operator_17 ;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_17 //gen quest
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _com6;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_of_finding_game_on_the_number_of_players_operator_return;;
+		*);;
+		-> ..agent_of_finding_game_on_the_number_of_players_operator_return
+		(*
+			<- return ;;
+		*);;
+	*);;
+*);;

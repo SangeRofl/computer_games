@@ -1,0 +1,37 @@
+concept_apex_ammo
+=> nrel_main_idtf: [ammo (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [патрон (Apex Legends)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (патрон (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [патрон (Apex Legends) - предмет, который используют оружия для нанесения урона врагам в игре Apex Legends.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_item;
+		concept_apex_weapon;
+		concept_damage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (ограниченность патронов в рюкзаке игрока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Игрок может носить определенное количество патронов, которое ограничено размером его рюкзака.] (* <- lang_ru;; *);;
+    *);;
+	<= nrel_using_constants: {
+		concept_player;
+		concept_ammo;
+		concept_apex_gear_backpack
+	};;
+*);
+
+
+<- sc_node_not_relation;;

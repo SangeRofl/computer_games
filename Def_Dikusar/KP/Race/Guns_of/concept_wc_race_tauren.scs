@@ -1,0 +1,30 @@
+concept_wc_race_tauren
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_horde;
+
+=> nrel_main_idtf:
+      [Таурены]
+      (*<-lang_ru;;*);
+       [Taurens]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Minotaurs] (* <- lang_en;; *);
+=> nrel_idtf: [Минотавры] (* <- lang_ru;; *);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Tauren.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+
+
+
+

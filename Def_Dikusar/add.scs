@@ -1,0 +1,74 @@
+assymmetric_relation
+  <- sc_node_not_relation;
+  
+  => nrel_main_idtf:
+    [ассиметричное отношение*] (* <- lang_ru;; *);
+    [assymmetric relation*] (* <- lang_en;; *);;
+
+
+concept_real_universe
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [реальный мир] (* <- lang_ru;; *);
+    [real universe] (* <- lang_en;; *);;
+
+
+
+concept_unreal_universe
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [вымышленный мир] (* <- lang_ru;; *);
+    [unreal universe] (* <- lang_en;; *);;
+
+
+concept_real_universe_unreal_elements
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [вымышленный мир с элементами реальности] (* <- lang_ru;; *);
+    [fictional universe with real elements] (* <- lang_en;; *);
+=>nrel_idtf: [реалестичный мир] (* <- lang_ru;; *);;
+
+
+concept_neutral_building
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Нейтральная постройка] (* <- lang_ru;; *);
+    [neutral building] (* <- lang_en;; *);;
+
+concept_ally_building
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Союзная постройка] (* <- lang_ru;; *);
+    [Ally building] (* <- lang_en;; *);;
+
+concept_enemy_building
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Вражеская постройка] (* <- lang_ru;; *);
+    [Enemy building] (* <- lang_en;; *);;
+
+concept_player_building
+  <- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Постройка игрока] (* <- lang_ru;; *);
+    [Player building] (* <- lang_en;; *);;
+
+concept_game_object
+<- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Игровой объект] (* <- lang_ru;; *);
+    [Game object] (* <- lang_en;; *);;
+
+
+
+
+
+

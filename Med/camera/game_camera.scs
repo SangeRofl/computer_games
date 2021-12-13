@@ -1,0 +1,47 @@
+concept_game_camera
+=> nrel_main_idtf: [игровая камера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game camera] (* <- lang_en;;*);
+
+
+
+-> concept_first_person_view;
+
+=> nrel_inclusion: concept_third_person_view;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игровая камера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Точка, из которой игрок смотрит на игровой мир. Вид игровой камеры тесно связан с жанром игры] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_player;; 			//igrok
+		-> concept_game_world;;
+		-> concept_game_genre;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игровая камера, игровой жанр)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Вид игровой камеры предопределяет жанр, но не является им] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, игровая камера, геймплей)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [В некоторых играх есть возможность изменять вид игровой камеры прямо во время процесса игры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

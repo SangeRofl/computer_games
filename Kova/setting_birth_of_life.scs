@@ -1,0 +1,33 @@
+concept_setting_birth_of_life
+=> nrel_main_idtf: [зарождение жизни] (* <- lang_ru;; *);
+=> nrel_idtf: [birth of life] (* <- lang_en;; *);
+
+=> nrel_inclusion: concept_setting_simple_organisms; concept_setting_cells;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(зарождение жизни)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        	-> [Вид сеттинга, при котором действие в компьютерной игре происходит во времена зарождения жизни, а персонажи отождествляются с клетками, бактериями, вирусами и т.д.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+		-> concept_character;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(зарождение жизни)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Играя в такие игры можно изучать биологию] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

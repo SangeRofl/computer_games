@@ -1,0 +1,51 @@
+concept_enhanced_dimeritium_bomb
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Улучшенная двимеритовая бомба] (* <- lang_ru;;*);
+	[Enhanced dimeritium bomb] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_bomb;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Улучшенная двимеритовая бомба)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Ведьмаки пользуются такими бомбами преимущественно против чудовищ.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+   	-> concept_effect;;
+	-> concept_temporary_effect;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Эффект использования)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Выпускает облако двимеритовых осколков, которые блокируют магию и магические способности чудовищ. Эффект длится 30 секунд](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	<= nrel_using_constants: ...(*
+	-> concept_ordinary_dimeritium_bomb;;
+   	-> concept_ginatia_petals;;
+	-> concept_optima_mater;;
+	-> concept_stammelfords_dust;;
+	-> concept_powdered_pearl;;
+	-> concept_blowball;;
+	-> concept_bloodmoss;;
+		*);;
+    => nrel_main_idtf:
+      [Утв.(Состав)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Улучшенная двимеритовая бомба состоит из: Чёрный порошок, Optima mater, Обычная двимеритовая бомба, Толчёный жемчуг, Одуванчик, Лепестки гинации, Кровостой.](*<-lang_ru;;*);;
+      *);;
+  *);;

@@ -1,0 +1,31 @@
+concept_game_with_virtual_reality
+=> nrel_main_idtf: [игра с виртуальной реальностью] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game with virtual reality] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(игра с виртуальной реальностью)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Игра, в которой подразумевается полное погружение игрока в виртуальный мир.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_player;;
+		-> concept_game_world;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(игра с виртуальной реальностью, игрок)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Игрок ощущает, что в видеоигру помещены все его органы чувств; движения игрока полностью идентичны движениям персонажа в игре] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

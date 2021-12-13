@@ -1,0 +1,29 @@
+concept_skyrim_weapon_quest
+=> nrel_main_idtf: [quest weapon (Skyrim)] (* <- lang_en;; *);
+=> nrel_main_idtf: [квестовое оружие (Скайрим)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(квестовое оружие (Скайрим))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Квестовое оружие —  <b><sc_element sys_idtf="concept_weapon">оружие</b></sc_element>, которое выдается на время <b><sc_element sys_idtf="concept_quest">квеста</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности квестового оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это оружие можно использовать и даже улучшать, но для завершения задания придётся с ним расстаться. Встречается в единственном экземпляре. Невозможно создать самому. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

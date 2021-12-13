@@ -1,0 +1,41 @@
+concept_karim
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Карим] (* <- lang_ru;;*);
+	[Karim] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_karim;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Карим)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Карим - крупнейший торговец оружием в Харамме.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Роль Карима в Dying Light)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Продажа оружия крупными партиями (и не только) обсолютно всем и каждому.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Карим.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

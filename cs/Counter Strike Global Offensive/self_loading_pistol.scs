@@ -1,0 +1,5 @@
+self_loading_pistol
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Самозарядные пистолеты](*<-lang_ru;;*);
+		[self loading pistol](*<-lang_en;;*);;

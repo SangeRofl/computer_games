@@ -1,0 +1,17 @@
+concept_skyrim_spell_type_manipulation
+
+=> nrel_main_idtf:     
+		 [манипуляция (тип заклинания)]   (*<-lang_ru;;*);
+     	 [manipulation (type of spell)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (манипуляция (тип заклинания))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[  Манипуляция — власть над призывом из планов Обливиона, функциями организма жертвы (паралич), перемещение предметов (телекинез), созданием источников света и алхимическим превращением веществ. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

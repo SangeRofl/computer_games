@@ -1,0 +1,72 @@
+concept_battlefield_3_weapon_m98b
+=> nrel_main_idtf: [M98B (Battlefield 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [M98B (Battlefield 3)] (* <- lang_ru;; *);
+
+<- concept_battlefield_3_weapon_class_sniper_rifle;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. (M98B (Battlefield 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_m98b">M98B</b></sc_element> - это
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_sniper_rifle">снайперская винтовка</b></sc_element> открывающаяся за 146000 очков 
+			<b><sc_element sys_idtf="concept_battlefield_3_class_recon">классу разведчик</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_sniper_rifle;
+        concept_battlefield_3_weapon_m98b;
+        concept_battlefield_3_class_recon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (M98B Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_m98b">M98B</b></sc_element> имеет самый большой 
+			<b><sc_element sys_idtf="nrel_battlefield_3_weapon_min_damage">минимальный урон</b></sc_element>, а также самую большую 
+			<b><sc_element sys_idtf="nrel_battlefield_3_weapon_min_damage_distance">дистанцию нанесения минимального урона</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_m98b;
+        nrel_battlefield_3_weapon_min_damage;
+        nrel_battlefield_3_weapon_min_damage_distance
+	};;
+*);
+
+=> nrel_battlefield_3_weapon_equipment_used: concept_battlefield_3_weapon_equipment_sight; 
+											 concept_battlefield_3_weapon_equipment_sight_sniper; 	
+											 concept_battlefield_3_weapon_equipment_suppressor; 
+											 concept_battlefield_3_weapon_equipment_flashlight; 
+											 concept_battlefield_3_weapon_equipment_laser_pointer; 
+											 concept_battlefield_3_weapon_equipment_bipod; 
+
+
+=> nrel_battlefield_3_weapon_max_damage: 100.0;
+=> nrel_battlefield_3_weapon_max_damage: 59.0;
+=> nrel_battlefield_3_weapon_tactical_reload_time: 2.90;
+=> nrel_battlefield_3_weapon_full_reload_time: 4.80;
+=> nrel_battlefield_3_weapon_magazine_capacity: 5;
+=> nrel_battlefield_3_weapon_max_damage_distance: 20;
+=> nrel_battlefield_3_weapon_min_damage_distance: 75;
+=> nrel_battlefield_3_weapon_rate_of_fire: 46;
+=> nrel_battlefield_3_weapon_recoil_up: 2.0k;
+=> nrel_battlefield_3_weapon_recoil_left: 0.0k;
+=> nrel_battlefield_3_weapon_recoil_right: 0.0k;
+=> concept_weapon_single_fire_mode;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/m98b.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

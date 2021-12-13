@@ -1,0 +1,14 @@
+concept_eft_fire_mode_turn
+=> nrel_main_idtf: [turn(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [очередь(Escape from Tarkov)] (* <- lang_ru;; *);
+<-parameter;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(очередь (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [очередь это вид стрельбы при котором огонь производится определенным количеством патронов.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

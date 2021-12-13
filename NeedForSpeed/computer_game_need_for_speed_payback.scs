@@ -1,0 +1,66 @@
+computer_game_need_for_speed_payback
+=> nrel_main_idtf: [Need for Speed: Payback] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed: Payback] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_ghost_games;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation_4; xbox_one;
+
+=> nrel_game_mode: singleplayer_game_mode;
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: frostbite_engine_3;
+
+=> nrel_publication_date: date_10_11_2017;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed: Payback)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией Ghost Games. Игра выпущена 10 ноября 2017 года компанией Electronic Arts.
+               Игровой процесс Need for Speed: Payback сосредоточен на уличных гонках, криминальных заданиях и полицейских погонях. Игроку предоставлена свобода передвижения по вымышленному городу Фортуна-Вэлли.
+               Выигрывая заезды, игрок открывает новые автомобили, детали тюнинга и продвигается по карьере. Сетевая игра содержит систему Speedlist, включающую в себя различные соревнования, с помощью которых игроки повышают свой рейтинг.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> company_ghost_games;;
+                -> computer_game_need_for_speed_payback;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

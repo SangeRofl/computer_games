@@ -1,0 +1,5 @@
+Five_Seven
+<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[Five-SeveN](*<-lang_ru;;*);
+		[Five-SeveN](*<-lang_en;;*);;

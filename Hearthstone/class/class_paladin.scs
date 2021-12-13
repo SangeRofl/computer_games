@@ -1,0 +1,73 @@
+concept_class_paladin
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+	[Паладин] (* <- lang_ru;; *);
+	[Paladin] (* <- lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Паладин)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: ...(*
+    -> nrel_effect;;
+		-> concept_card;;
+    -> concept_card_class_paladin;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+  *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Паладин - это всесторонний класс, который фокусируется на сильных миньонах и ограничивает способность вашего оппонента использовать свои собственные.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+  <- explanation;;
+  => nrel_main_idtf:
+    [Утв.(Возможности Паладина)] (* <- lang_ru;; *);;
+  <= nrel_using_constants: ...(*
+    -> nrel_effect;;
+    -> concept_hearthstone_mana;;
+    -> concept_ability;;
+    -> concept_card_class_paladin;;
+    -> concept_card_class_neutral;;
+    -> concept_card_minion;;
+    -> concept_card_spell;;
+    -> concept_card;;
+  *);; 
+  <= nrel_sc_text_translation: ... (*
+   -> [Паладины могут иметь ряд заклинаний, чтобы излечить себя или поразить своих врагов, ослабить противников и секреты, чтобы защитить уязвимых целей.](*<-lang_ru;;*);;
+  *);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Особенности Паладина)] (* <- lang_ru;; *);;
+    <= nrel_using_constants: ...(*
+		  -> nrel_effect;;
+      -> concept_card_weapon;;
+      -> concept_card_class_paladin;;
+      -> concept_card_class_neutral;;
+      -> concept_card_minion;;
+    *);; 
+    <= nrel_sc_text_translation: ... (*
+      -> [Способность Божественный Щит наиболее сильно связан с картами Паладина. Паладины могут использовать оружие, чтобы атаковать напрямую, 
+         и могут использовать секреты, которые срабатывают при выполнении определенного условия.](*<-lang_ru;;*);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/paladin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

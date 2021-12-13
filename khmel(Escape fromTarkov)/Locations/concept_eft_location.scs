@@ -1,0 +1,28 @@
+concept_eft_location
+=> nrel_main_idtf: [location(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [локация(Escape from Tarkov)] (* <- lang_ru;; *);
+
+<- computer_game_escape_from_tarkov;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Локация (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Локация представляет собой строго определенную местность, выход за которую либо невозможен, либо приводит к загрузке другой локации.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры локации в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Escape from Tarkov' существует 2 экземпляра локации] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

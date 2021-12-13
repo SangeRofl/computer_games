@@ -1,0 +1,47 @@
+nrel_cooldown <- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [сooldown*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [кулдаун*]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Опр. кулдаун*]
+        (* <- lang_ru;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: 
+            [Кулдаун* - отношение, связывающее <b><sc_element sys_idtf="concept_ability">способность</b></sc_element> или предмет с <b><sc_element sys_idtf="time">временем</b></sc_element> его перезарядки(охлаждения).]
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+<- rrel_key_sc_element:...(*
+    => nrel_main_idtf:
+        [Утв. кулдаун*]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example:
+        [Кулдаун обычно измеряется в секундах.]
+        (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- antireflexive_relation; asymmetric_relation; oriented_relation;
+<|- transitive_relation;
+
+=> nrel_definitional_domain:... (*
+    <= nrel_union: { {
+            concept_game_object_item; concept_ability
+        }; time
+    };;
+*);
+=> nrel_first_domain: {
+            concept_game_object_item; concept_ability
+        };
+=> nrel_second_domain: time;;
+arity -> ...(*
+    => nrel_measurement: 2;;
+    -> nrel_cooldown;;
+*);;

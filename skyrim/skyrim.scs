@@ -1,0 +1,73 @@
+computer_game_the_elder_scrolls_5_skyrim
+
+=> nrel_main_idtf:     
+	 [Древние свитки 5: Скайрим]   (*<-lang_ru;;*);
+      [The Elder Scrolls V: Skyrim]  (*<-lang_en;;*);  
+
+=>nrel_idtf:
+	 [Скайрим]   (*<-lang_ru;;*);
+      [Skyrim]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_open_RPG;
+<-concept_setting_fantasy;
+<-concept_multiplatform_game;
+->concept_skyrim_race;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_announcement_date: date_11.11.2010;
+=>nrel_publication_date: date_11.11.2011;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: creation_engine;
+=>nrel_publisher: company_bethesda_softworks;
+=>nrel_publisher: company_softclub;
+=>nrel_developer: company_bethesda_game_studios;
+=>nrel_localizer: company_softclub;
+
+=>nrel_platform: concept_microsoft_windows;
+=>nrel_platform: xbox_360;
+=>nrel_platform: playstation_3;
+=>nrel_platform: playstation_4;
+=>nrel_platform: xbox_one;
+=>nrel_platform: concept_nintendo_switch;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Скайрим)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          concept_singleplayer_game
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ The Elder Scrolls V: Skyrim — <b><sc_element sys_idtf="concept_multiplatform_game">мультиплатформенная</b></sc_element> компьютерная <b><sc_element sys_idtf="concept_open_RPG">ролевая игра с открытым миром</b></sc_element> ,
+ разработанная студией Bethesda Game Studios и выпущенная компанией Bethesda Softworks.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/The_Elder_Scrolls_V_Skyrim.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Скайрим)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Подобно предыдущим играм <b><sc_element sys_idtf="concept_game_series_the_elder_scrolls">серии</b></sc_element>, Skyrim предоставляет игроку возможность свободно путешествовать по обширному игровому миру, исследуя его и самостоятельно находя новые места и задания. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

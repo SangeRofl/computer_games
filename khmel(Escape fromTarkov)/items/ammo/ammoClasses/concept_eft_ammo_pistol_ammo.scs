@@ -1,0 +1,49 @@
+concept_eft_ammo_pistol_ammo
+=> nrel_main_idtf: [pistol ammo(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пистолетный патрон(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (пистолетный патрон(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолетные патроны используются в пистолетах, пистолетах-пулемётах, а также в некоторых револьверах.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_ammo;
+		concept_eft_weapon_pistol;
+		concept_eft_weapon_submachine_gun
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (эффективная дальность пистолетного патрона)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эффективная дальность стрельбы — 100—300 метров (зависит от оружия и используемого патрона).] (* <- lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (пистолетный патрон(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/pistolAmmo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

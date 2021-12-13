@@ -1,0 +1,39 @@
+concept_ogre_axe
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [orge axe] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [orge axe] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(orge axe)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Вы становитесь сильнее, просто держа его в руках.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(orge axe)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Данный предмет отлично подойдет героям, у которых основная характеристика сила, в средней стадии игры.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ogre_axe.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

@@ -1,0 +1,48 @@
+computer_game_world_of_warcraft_warlords_of_draenor
+=> nrel_idtf: [World of warcraft warlords of draenor] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Warlords of Draenor] (* <- lang_en;; *);
+=> nrel_main_idtf: [World of Warcraft: Warlords of Draenor] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_MMORPG;
+<=nrel_addition: computer_game_world_of_warcraft;
+=> nrel_platform: concept_windows;
+=>nrel_localizer: company_blizzard;
+=> nrel_publisher: company_blizzard;
+=> nrel_developer: company_blizzard;
+=> nrel_publication_date: date_2014;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [В ходе развития сюжета Mists of Pandaria Гаррош Адский Крик был свергнут совместными усилиями Альянса и Орды и заключён под стражу в пандарийскую тюрьму. Таким образом он должен был ответить за все злодеяния, причинённые своему народу. Однако перед судом Гаррошу удаётся сбежать при помощи Кайроздорму, который освободил его из заточения и перенёс в Дренор прошлого из альтернативной реальности. Гаррош попадает в Дренор ещё до возникновения Старой Орды и своими действиями меняет ход истории. За 35 лет до осады Штормграда, Громмаш Адский Крик отказывается принимать кровь Маннорота, а Гаррош начинает атаку на силы Пылающего Легиона. Орки объединяются в Железную Орду, ведомую Громмашем Адским Криком, не знающим, кто Гаррош на самом деле, и, используя умения Гарроша, рассказавшего им о современных технологиях Азерота, начинают завоевание Дренора и отстраивают Тёмный Портал, для вторжения в Азерот.] (* <- lang_ru;; => nrel_format: format_html;; *); 
+<- concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(World of warcraft warlords of draenor)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [World of warcraft warlords of draenor - компьютерная игра в жанре MMORPG, выпущена компанией Blizzard в 2014 году на платформе Windows. Многопользовательская с сюжетом. Распространяется небесплатно..] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(World of warcraft warlords of draenor)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Были добавлены новые локации.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://wow_wod.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

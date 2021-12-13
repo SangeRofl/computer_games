@@ -1,0 +1,41 @@
+concept_hatchet
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Топорик] (* <- lang_ru;;*);
+	[Hatchet] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_hatchet;;
+		*);;
+	=> nrel_main_idtf: [Опр.(Топорик)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Топорик — тип режущего оружия в игре Dying Light. ] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристики топорика)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Типичное оружие для сражений в начале игры, топорик наносит неплохой урон и приятно лежит в руке, что сказывается на скорости размаха. Лучше всего их использовать против несильных врагов, причём, чтобы нанести максимальный урон, целиться следует в голову, отталкивая пытающихся контратаковать заражённых ногами. ](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://hatchet.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

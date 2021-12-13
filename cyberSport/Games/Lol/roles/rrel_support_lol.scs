@@ -1,0 +1,8 @@
+rrel_support_lol
+
+	<-sc_node_role_relation;
+	<-oriented_relation;
+	
+	=> nrel_main_idtf:
+		[support'](* <-lang_en;; *);
+		[саппорт'](* <-lang_ru;; *);;

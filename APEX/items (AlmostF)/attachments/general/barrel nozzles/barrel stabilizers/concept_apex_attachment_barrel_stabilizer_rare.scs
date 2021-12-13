@@ -1,0 +1,38 @@
+concept_apex_attachment_barrel_stabilizer_rare
+=> nrel_main_idtf: [rare barrel stabilizer (Apex Legends)] (* <- lang_en;; *);
+=> nrel_main_idtf: [редкий ствольный стабилизатор (Apex Legends)] (* <- lang_ru;; *);
+
+
+//Параметры ствольного стабилизатора
+=> nrel_apex_recoil_reduction_decrease_percent: 15;
+=> nrel_apex_randomness_decrease_percent: 20;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (редкий ствольный стабилизатор (Apex Legends))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [редкий ствольный стабилизатор (Apex Legends) - ствольный стабилизатор, который средне уменьшает отдачу и хаотичность разлета патронов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_apex_recoil_reduction_percentage;
+        concept_apex_randomness_decrease_percentage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (редкий ствольный стабилизатор (Apex Legends))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../../../image/items/attachments/general/barrels/stabilizers/rare.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

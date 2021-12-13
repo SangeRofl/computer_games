@@ -1,0 +1,30 @@
+concept_setting_anti_utopia_of_future
+=> nrel_main_idtf: [антиутопия будущего] (* <- lang_ru;; *);
+=> nrel_idtf: [anti utopia of future] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(антиутопия будущего)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Вид сеттинга, при котором действие в компьютерной игре происходит в будущем, где мир на грани вымирания после глобальной катастрофы] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+		-> concept_setting;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(антиутопия будущего)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В таких играх обычно присутствуют летающие машины и искусственный интеллект] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

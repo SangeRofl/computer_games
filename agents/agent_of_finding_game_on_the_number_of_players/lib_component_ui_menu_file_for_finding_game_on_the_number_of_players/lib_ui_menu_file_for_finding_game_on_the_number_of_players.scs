@@ -1,0 +1,24 @@
+lib_ui_menu_file_for_finding_game_on_the_number_of_players => nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска игры от количества игроков]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for finding game ont the number of players]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/ui_finding_game_on_the_number_of_players.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_ui_menu_file_for_finding_game_on_the_number_of_players = [*^"file://ui_menu_file_for_finding_game_on_the_number_of_players.scsi"*];; 

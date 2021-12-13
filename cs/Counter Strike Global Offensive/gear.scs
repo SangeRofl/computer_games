@@ -1,0 +1,65 @@
+gear
+    <-sc_node_not_relation;
+	<= nrel_inclusion: concept_shop ;
+    //<-section_subjdomain_part_of_speech;
+
+    => nrel_main_idtf:
+        [снаряжение](* <-lang_ru;; *);
+        [gear](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [шлем](*<- lang_ru;;*);
+            [helmet](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (снаряжение)] (* <- lang_ru;; *);
+            [Def. (gear)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Снаряжение —  комплект предметов, состоящий на снабжении военнослужащих.](*<- lang_ru;;*);
+                [Gear - set of items consisting of supplying military soldiers.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->nrel_set;;
+            ->nrel_item;;
+            ->nrel_soldier;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        gear;
+		chance;
+		survival
+    };;
+    => nrel_main_idtf: 
+        [Утв.(снаряжение, шанс, выживание)] (* <- lang_ru;; *);
+        [Expl.(gear, chance, survival)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Использование снаряжение заметно повышает шансы на выживание.](*<- lang_ru;;*);
+            [Using gear significantly increases your chances of survival.](*<- lang_en;;*);;
+    *);;
+*);
+
+=> nrel_inclusion:  	Helmet;
+			Kevlar;
+			Defuse_Kit;
+			Zeus_x27;;
+					
+Helmet => nrel_price : [1000];;
+Kevlar => nrel_price : [650];;
+Defuse_Kit => nrel_price : [400];;
+Zeus_x27 => nrel_price : [200];;

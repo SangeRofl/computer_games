@@ -1,0 +1,41 @@
+concept_expcalibur
+<-sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[ЭКСПАлибур] (* <- lang_ru;;*);
+	[EXPcalibur] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: ...(*
+    -> concept_expcalibur;;
+		*);;
+	=> nrel_main_idtf: [Опр.(ЭКСПАлибур)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [«ЭКСПАлибур» — уникальное оружие в игре Dying Light.] (* <- lang_ru;; *);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Характеристика ЭКСПАлибура)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Ввиду своей уникальности данное оружие обладает солидным уроном, однако имеет долгий замах. Данное оружие действительно уникальное, если Вы его сломали или выкунили, больше такой уже не найдете.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://expcalibur.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

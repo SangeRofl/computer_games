@@ -1,0 +1,51 @@
+concept_attributes
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+        [attributes] (* <- lang_en;;*);
+
+=> nrel_main_idtf:
+        [атрибуты] (* <- lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(атрибуты)] (*<- lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        ->[Атрибуты - это главная характеристика всех героев, которая определяет большинство измененяющихся параметров.] (* <-lang_ru;; *);;
+    *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(атрибуты)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+          -> [Атрибуты увеличиваются с повышением уровня героя, выбором таланта, покупкой некоторых предметов или использованием некоторых способностей.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+=> nrel_inclusion: concept_band_of_elvenskin;
+                   concept_belt_of_strength;
+                   concept_blade_of_alacrity;
+                   concept_iron_branch;
+                   concept_circlet;
+                   concept_gauntlets_of_strength;
+                   concept_mantle_of_intelligence;
+                   concept_ogre_axe;
+                   concept_robe_of_the_magi;
+                   concept_slippers_of_agility;
+                   concept_staff_of_wizardry;;
+
+concept_band_of_elvenskin => nrel_price : [450];;
+concept_belt_of_strength => nrel_price : [450];;
+concept_blade_of_alacrity => nrel_price : [1000];;
+concept_iron_branch => nrel_price : [50];;
+concept_circlet => nrel_price : [155];;
+concept_gauntlets_of_strength => nrel_price : [145];;
+concept_mantle_of_intelligence => nrel_price : [145];;
+concept_ogre_axe => nrel_price : [1000];;
+concept_robe_of_the_magi => nrel_price : [450];;
+concept_slippers_of_agility => nrel_price : [145];;
+concept_staff_of_wizardry => nrel_price : [1000];;

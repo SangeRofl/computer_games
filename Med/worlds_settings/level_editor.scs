@@ -1,0 +1,49 @@
+concept_level_editor
+
+=> nrel_main_idtf:[редактор уровней] (* <- lang_ru;; *);
+=> nrel_main_idtf:[level editor] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*  
+		-> concept_computer_programm;;
+		-> concept_game_level;;
+		-> concept_computer_game;;
+	*);;
+		=> nrel_main_idtf: [Опр.(редактор уровней)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Редактор уровней - прикладное программное обеспечение, которое используется для проектирования и создания уровней в компьютерных играх] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<= nrel_inclusion: concept_computer_programm;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(редактор уровней, разработчик*, компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Редактор уровней может быть выпущен как самим разработчиком данной игры, так и обществом фанатов данной игры](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(редактор уровней, игровой уровень, игровой движок)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Редакторы уровней в большинстве случаев используются для создания уровней лишь для определенного игрового движка](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+
+

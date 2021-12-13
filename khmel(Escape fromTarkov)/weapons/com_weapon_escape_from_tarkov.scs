@@ -1,0 +1,44 @@
+concept_eft_weapon
+=> nrel_main_idtf: [weapon (Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [оружие (Escape from Tarkov)] (* <- lang_ru;; *);
+
+<- computer_game_escape_from_tarkov;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_weapon_assault_rifle;;
+	-> concept_eft_weapon_assault_carbine;;
+	-> concept_eft_weapon_pistol;;
+	-> concept_eft_weapon_machine_gun;;
+	-> concept_eft_weapon_submachine_gun;;
+	-> concept_eft_weapon_shotgun;;
+	-> concept_eft_weapon_marxman_rifle;;
+	-> concept_eft_weapon_bolt_rifle;;
+	-> concept_eft_steel_arms;;
+	-> concept_eft_grenade_launcher;;
+	=> nrel_main_idtf:[Разбиение по классам оружия] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Оружие (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Оружие-основной инструмент выживания.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Модульность оружия в игре 'Escape from Tarkov')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [  Практически все виды оружия полностью модульные, поэтому их можно подогнать под разные ситуации.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

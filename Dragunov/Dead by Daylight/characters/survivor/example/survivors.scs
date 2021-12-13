@@ -1,0 +1,160 @@
+dbd_jane_romero <- concept_dead_by_daylight_survivor_dlc;
+=> nrel_main_idtf:
+    [Jane Romero]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Джейн Ромеро]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/jane.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_solidarity; dbd_perk_poised; dbd_perk_head_on;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Джейн Ромеро(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+//--------------------------------------------------------------------------------------------------------------------------------
+dbd_lori_strode <- concept_dead_by_daylight_survivor_dlc;
+=> nrel_main_idtf:
+    [Lori Strode]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Лори Строуд]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/lori.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_sole_survivor; dbd_perk_object_of_obsession; dbd_perk_desicive_strike;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Лори Строуд(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Лори Строуд(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Вы никогда не поймете что действительно важно в жизни пока не осознаете, что она может скоро закончиться. Лори одна из тех, кто просто хочет спокойной жизни в пригороде, гулять с друзьями, семьей и возможно пойти на свидание или два. Лори типичный подросток. Вы можете пройти мимо нее на улице и не обратить внимания. Она выполняла свою домашнюю работу и была любима друзьями, учителями и семьей. Обычная ночная работа няней превратилась в нечто такое, что навсегда изменило цель ее юной жизни. Шум ножа от взмаха в воздухе. Крики, доносящиеся издалека. Различные шумы, которые терзали ее воображение. Но нет, Лори оказалась намного крепче. Она не собиралась сдаваться.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+//--------------------------------------------------------------------------------------------------------------------------------
+
+dbd_william_overbeck <- concept_dead_by_daylight_survivor_default;
+=> nrel_main_idtf:
+    [William(Bill) Ouverbeck]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Уильям(Билл) Овербек]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/bill.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_left_behind; dbd_perk_borrowed_time; dbd_perk_unbreakable;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Ульям(Билл) Овербек(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Джейн Ромеро(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Участие в двух Вьетнамских военных компаниях, горсть медалей, колено, полное осколков, и почетное увольнение в запас, чтобы заставить Уильяма "Билла" Овербека прекратить борьбу и попытаться жить в мире и согласии. Он ненавидел это. Спустя десятилетия проведенные в бесцельном дрейфе бесполезных работ, Билл занялся рутинной операцией и решил вернуться в тот мир, который он знал когда-то. Чума превратила обычных людей в бессмысленные машины для убийства. Естественно, первое, что он сделал, - это расчистил путь домой и надел униформу. Пробираясь через сельские города-призраки и черные смоляные поля, он нашел других выживших, и вместе они бежали от зараженных полчищ. В конце концов, Билл пожертвовал собой, чтобы обеспечить их безопасность. Его тело так и не было найдено. Билла оставили умирать. Никто не знает, что он по-прежнему жаждет только одной вещи: врага, чтобы продолжать сражаться.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+dbd_nea_carlsson <- concept_dead_by_daylight_survivor_default;
+=> nrel_main_idtf:
+    [Nea Carlsson]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Нея Карлссон]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/nea.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_balanced_landing; dbd_perk_urban_evasion; dbd_perk_streetwise;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Нея Карлссон(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

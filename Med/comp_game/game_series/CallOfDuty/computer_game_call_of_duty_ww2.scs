@@ -1,0 +1,65 @@
+computer_game_call_of_duty_ww2
+=> nrel_main_idtf: [Call of Duty: WW2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Call of Duty: WW2] (* <- lang_en;; *);
+
+
+<- concept_shooter;
+<- concept_setting_world_war_the_second;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_sledgehammer_games; company_raven_software;
+=> nrel_publisher: company_activision;
+=> nrel_localizer: company_softclub;
+
+=> nrel_platform: concept_windows; xbox_one; playstation_4;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode; cooperative_game_mode;
+
+=> nrel_game_camera: concept_first_person_view;
+
+=> nrel_game_engine: concept_iw_engine;
+
+//=> nrel_plot: [отсутствует];
+
+=> nrel_announcement_date: date_21_04_2017;
+
+=> nrel_publication_date: date_03_11_2017;
+
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Call of Duty: Modern Warfare 2)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Мультиплатформенная компьютерная игра в жанре трехмерного шутера от первого лица, которая разработана студией Sledgehammers Games и издана компанией Activision, четырнадцатая игра в серии игр Call of Duty] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_three_dimensional_game;;
+			-> concept_multiplatform_game;;
+			-> concept_shooter;;
+			-> concept_first_person_view;;
+			-> concept_computer_game;;
+			-> company_sledgehammer_games;;
+			-> company_activision;;
+			-> concept_game_series_call_of_duty;;
+		*);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty_2.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

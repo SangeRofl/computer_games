@@ -1,0 +1,183 @@
+scp_program -> proc_search_year (*
+
+	-> rrel_params: .proc_search_year_params (*
+	-> rrel_1: rrel_in: _parameter;;
+	-> rrel_2: rrel_in: _answer;;
+	*);;
+
+	-> rrel_operators: .proc_search_year_operator_set (*
+
+
+	-> rrel_init: .year_operator1 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _cur_date;;
+	=> nrel_goto: .year_operator1_1;;
+	*);;
+
+	-> .year_operator1_1 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+	=>nrel_goto: .year_operator2;;
+	*);;
+
+	-> .year_operator2 (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_scp_var: _cur_date;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: _parameter;;
+	=> nrel_goto: .year_operator3_1;;
+	*);;
+	
+	-> .year_operator3_1 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_game_genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _genre;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _genres;;
+	=> nrel_goto: .year_operator3_2;;
+	*);;
+
+	-> .year_operator3_2 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _genres;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _genre;;
+	=> nrel_then: .year_operator3_3;;
+	=> nrel_else: .proc_search_year_operator_return;;
+	*);;
+
+	-> .year_operator3_3 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .year_operator3;;
+	*);;
+
+	-> .year_operator3 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _games;;
+	=> nrel_then: .year_operator4;;
+	=> nrel_else: .year_operator3_2;;
+	*);;
+
+	-> .year_operator4 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _games;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	=> nrel_then: .year_operator5;;
+	=> nrel_else: .year_operator3_2;;
+	*);;
+
+	-> .year_operator5 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .year_operator6;;
+	*);;
+
+	-> .year_operator6 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _date;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publication_date;;
+	=> nrel_then: .year_operator7;;
+	=> nrel_else: .year_operator4;;
+	*);;
+
+	-> .year_operator7 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _date;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _date_number;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date;;
+	=> nrel_then: .year_operator8;;
+	=> nrel_else: .year_operator4;;
+	*);;
+
+	-> .year_operator8 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_date;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _cur_date_number;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_date;;
+	=> nrel_then: .year_operator9;;
+	=> nrel_else: .year_operator4;;
+	*);;
+
+	-> .year_operator9 (*
+	<- ifGr;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _date_number;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _cur_date_number;;
+	=> nrel_then: .year_operator10_4;;
+	=> nrel_else: .year_operator4;;
+	*);;
+
+	-> .year_operator10_4 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _genre_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _genre;;
+	=> nrel_then: .year_operator12;;
+	=> nrel_else: .year_operator10_5;;
+	*);;
+
+	-> .year_operator10_5 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _genre_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _genre;;
+	=> nrel_goto: .year_operator10;;
+	*);;
+
+	-> .year_operator10 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _genre;;
+	=> nrel_goto: .year_operator11;;
+	*);;
+
+	-> .year_operator11 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _genre_arc;;
+	=> nrel_goto: .year_operator12;;
+	*);;
+
+	-> .year_operator12 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _game_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_goto: .year_operator13;;
+	*);;
+
+	-> .year_operator13 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_goto: .year_operator14;;
+	*);;
+	
+	-> .year_operator14 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _game_arc;;
+	=> nrel_goto: .year_operator4;;
+	*);;
+
+	-> .proc_search_year_operator_return (*
+	<- return;;
+	*);;
+*);;
+*);;

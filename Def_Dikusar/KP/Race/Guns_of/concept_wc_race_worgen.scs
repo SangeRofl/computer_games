@@ -1,0 +1,28 @@
+concept_wc_race_worgen
+
+<-concept_race;
+=>nrel_fraction:concept_warcraft_alliance;
+
+=> nrel_main_idtf:
+      [Воргены]
+      (*<-lang_ru;;*);
+       [Worgens]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Ворген] (* <- lang_ru;; *);
+=> nrel_idtf: [ворген] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Worgens.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

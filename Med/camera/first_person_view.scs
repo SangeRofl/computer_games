@@ -1,0 +1,43 @@
+concept_first_person_view
+=> nrel_main_idtf: [вид от первого лица] (* <- lang_ru;; *);
+=> nrel_main_idtf: [first person view] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(вид от первого лица)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Вид игровой камеры, при котором игрок видит игровой мир глазами персонажа] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game_camera;;
+		-> concept_computer_game;;
+		-> concept_player;;
+		-> concept_game_world;;
+		-> concept_character;;
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(вид от первого лица, персонаж)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Вид от первого лица наиболее удобен, чтобы вживаться в роль персонажа. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(вид от первого лица, шутер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Вид от первого лица хорошо подходит для прицеливания, поэтому применяется в шутерах] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

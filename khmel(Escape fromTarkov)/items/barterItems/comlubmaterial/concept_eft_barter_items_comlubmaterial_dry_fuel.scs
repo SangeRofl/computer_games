@@ -1,0 +1,49 @@
+concept_eft_barter_items_comlubmaterial_dry_fuel
+=> nrel_main_idtf: [dry fuel(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [сухое горючее(Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<- concept_eft_barter_items_comlubmaterial;
+
+=> nrel_eft_weapon_weight: 0.1;
+=> nrel_eft_barter_items_cost: 2175;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (сухое горючее(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Сухое горючее - бартерный предмет из группы горюче-смазочные материалы, топливо, также известно в быту под названием сухой спирт.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_barter_items_comlubmaterial
+	};;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (состав сухого горючего(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сухое горючее состоит из уротропина, спрессованного с небольшим количеством парафина.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (сухое горючее(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../../imageEft/Dryfuel.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+

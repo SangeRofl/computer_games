@@ -1,0 +1,41 @@
+concept_eft_throwingweapon
+=> nrel_main_idtf: [throwing weapon(Escape from Tarkov)] (* <- lang_en;; *);
+=> nrel_main_idtf: [метательное оружие (Escape from Tarkov)] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eft_throwingweapon_shrapnel;;
+	-> concept_eft_throwingweapon_smoke;;
+	->concept_eft_throwingweapon_deafeninggrenade;;
+	=> nrel_main_idtf:[Разбиение по классам метательного оружия] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (метательное оружие (Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Метательное оружие — оружие дальнего боя, основанное на использовании мускульной силы человека, силы тяжести, упругих свойств дерева (металла, пластмассы) или энергии скрученных (растянутых) волокон.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_eft_throwingweapon
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (метательное оружие(Escape from Tarkov))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../imageEft/grenades.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,5 @@
+nrel_apex_projectiles_per_shot
+=> nrel_main_idtf: [projectiles per shot* ] (* <- lang_en;; *);
+=> nrel_main_idtf: [количество снарядов за выстрел* ] (* <- lang_ru;; *);
+
+<- sc_node_norole_relation;;

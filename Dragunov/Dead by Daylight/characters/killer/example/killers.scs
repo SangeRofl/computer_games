@@ -1,0 +1,214 @@
+dbd_shape <- concept_dead_by_daylight_killer_dlc;
+=> nrel_main_idtf:
+    [Shape]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Тень]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/shape.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_save_the_best_for_last; dbd_perk_play_with_your_food; dbd_perk_dying_light;
+
+=> nrel_dead_by_daylight_killer_power: dbd_killer_power_evil_within;
+
+=> nrel_dead_by_daylight_terror: dbd_shape_terror;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Тень(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры <b><sc_element sys_idtf="computer_game_dead_by_daylight">Dead by Daylight</b></sc_element>. Настоящее имя - Майкл Маерс.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+    => nrel_using_constants: {
+        computer_game_dead_by_daylight
+    };;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Тень(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Некоторые люди подобны плохим семенам. Семенам, которые переплетены с чистой формой зла без каких-либо примесей. Майкл Майерс является одним из таких семян. У него не было проблем с причинением боли другим людям. Напротив, это было именно то, к чему он стремился. Жизнь с теми, чей разум наполнен ужасом, бывает непростой. Отличие лишь в том, какими способами можно решить эти проблемы. Для Майкла таким решением являлось убийство кого-либо с внутренним покоем. Так он отнял жизнь у своей сестры, полицейские нашли на месте преступления молчаливого мальчика, одетого в костюм клоуна. Когда кто-то по ошибке разжигает огонь, никто не заливает его бензином. Однако, чиновники, которые не понимали, как в теле мальчика мог сформироваться подобный демон, предприняли меры. Решение отправить Майкла в психиатрическую больницу было слабой попыткой спасти ребенка. Безуспешная терапия и ночные крики сделали его еще более замкнутым и отрешенным. Люди надеялись, что с Майклом Майерсом будет покончено, и скоро он будет похоронен и забыт, а все неудачи уйдут вместе с ним.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+dbd_shape_terror <- concept_dead_by_daylight_terror;
+<- 30_meters;;
+30_meters <- radius;;
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+dbd_pig <- concept_dead_by_daylight_killer_dlc;
+=> nrel_main_idtf:
+    [The Pig]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Свинья]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/pig.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_hangmans_trick; dbd_perk_surveillance; dbd_perk_make_your_choice;
+
+=> nrel_dead_by_daylight_killer_power: dbd_killer_power_jigsaws_baptism;
+
+=> nrel_dead_by_daylight_terror: dbd_pig_terror;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Свинья(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight. Настоящее имя - Аманда Янг.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Свинья(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Джон Крамер, более известный по своему прозвищу "Пила", запланировал рождение сына во время года Свиньи по китайскому зодиаку, чтобы это событие олицетворяло собой плодородие и перерождение, начало новой жизни для него и жены. План развалился на куски, когда одной ночью в клинику его жены ворвался наркоман в поисках дозы.
+
+События той ночи обернулись смертью нерожденного сына Джона. Пила похитил наркомана, сделав его своим первым испытуемым. Вместе с Крамером изменялась и Свинья. Она стала олицетворением болезни, пожирающей Джона изнутри, напоминанием, что мы всего лишь куски мяса, если не будем изо всех сил рваться из хватки смерти, позволяя нашим действиям говорить за себя.Свинья стала отражением, агентом Пилы, доставляющим жертв для испытаний. Для некоторых, прошедших испытание, Свинья могла стать билетом в новую жизнь - предлагая роль помощника Пилы, а может даже и роль преемника.
+
+Таково была судьба Аманды Янг, заблудшей души, которая почти всю свою жизнь только и делала, что вредила себе и окружающим. Все изменилось, когда она успешно завершила испытание Пилы. Решив, что ее жизнь обрела смысл, Аманда стала верной делу Пилы, готовясь перенять бразды правление на себя, в момент когда рак одолеет Джона.
+
+Но она стала слишком зависима от Крамера, не могла вынести факта его скорой гибели. К тому же она не верила, что люди перерождаются в процессе испытаний.
+
+Видя это, Пила подготовил для Аманды ещё одно испытание, как шанс спасти ее, но та поддалась злости и зависти, провалив из-за этого испытание и получив пулю в шею.
+
+Истекая кровью на кафельном полу, Аманда погрузилась во мрак. Затем к темного присоединился скрипящий звук качающихся на ветру деревьев. Она была в лесу, вновь наблюдая за миром из глаз Свиньи. Деревья начали окружать ее, цепляя отовсюду своими корнями. Волны страха накрывали ее, дыхание оглушающе звучало внутри маски.
+
+Неужели она проклята скитаться в такой форме до конца дней? или это очередное испытание? Может она и не провалила прошлый тест? Ведь Джон всегда все планировал на несколько шагов вперед, и он никак не мог ее бросить, ведь так?
+
+Хоть Пила и исчез из нашего мира, он передал Аманду другому учителю. Такому, под чьим началом Аманда снова станет Свиньей.
+
+Наконец, она осознала, что все это время принимала только верные решения. Время игр закончилось. У этих людей нет никаких шансов переродиться. Они просто куски мяса, которым суждено сдохнуть.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+
+dbd_pig_terror <- concept_dead_by_daylight_terror;
+<- 32_meters;;
+32_meters <- radius;;
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+dbd_trapper <- concept_dead_by_daylight_killer_default;
+=> nrel_main_idtf:
+    [Trapper]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Охотник]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/trapper.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_unnerving_presence; dbd_perk_brutal_strength; dbd_perk_agitation;
+
+=> nrel_dead_by_daylight_killer_power: dbd_killer_power_bear_trap;
+
+=> nrel_dead_by_daylight_terror: dbd_trapper_terror;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Охотник(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight. Настоящее имя - Эван МакМиллан.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+dbd_trapper_terror <- concept_dead_by_daylight_terror;
+<- 32_meters;;
+32_meters <- radius;;
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+dbd_wraith <- concept_dead_by_daylight_killer_default;
+=> nrel_main_idtf:
+    [Wraith]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Призрак]
+    (* <- lang_ru;; *);
+
+<= nrel_character: computer_game_dead_by_daylight;
+
+<-rrel_key_sc_element:...(*
+    <- illustration;;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://pikchi/wraith.jpg"(*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);
+
+=> nrel_teachable_perk: dbd_perk_predator; dbd_perk_shadowborn; dbd_perk_bloodhound;
+
+=> nrel_dead_by_daylight_killer_power: dbd_killer_power_azarovs_skull;
+
+=> nrel_dead_by_daylight_terror: dbd_wraith_terror;
+
+<-rrel_key_sc_element:...(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв. Призрак(Dead by Daylight)]
+        (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation:...(*
+        ->rrel_example: 
+            [Персонаж компьютерной игры Dead by Daylight. Настоящее имя - Филипп Охомо.]
+            (*<- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+dbd_wraith_terror <- concept_dead_by_daylight_terror;
+<- 32_meters;;
+32_meters <- radius;;

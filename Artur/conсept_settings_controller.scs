@@ -1,0 +1,32 @@
+concept_settings_controller
+=> nrel_main_idtf: [настройки контроллера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [settings controller] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(настройки контроллера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Назначение изменений воздействия на контроллер приводит
+				к изменению соответствия воздействия
+				какому-то действию в игре, возможна настройка чувствительности] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(настройки контроллера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Настройки контроллера не влияют на производительность в игре] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,38 @@
+concept_ram
+=> nrel_main_idtf: [оперативная память] (* <- lang_ru;; *);
+=> nrel_main_idtf: [RAM] (* <- lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Оперативная память)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Оперативная память - энергозависимая часть системы
+				компьютерной памяти, в которой во время работы
+				компьютера хранится выполняемый машинный код
+				(программы), а также входные, выходные
+				и промежуточные данные, обрабатываемые процессором.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_cpu;;
+		-> concept_computer;;
+		-> concept_computer_system;;
+		-> concept_data;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Оперативная память)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Оперативная память - память с произвольным доступом] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,65 @@
+computer_game_need_for_speed_II
+=> nrel_main_idtf: [Need for Speed II] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Need for Speed II] (* <- lang_en;; *);
+
+
+<- concept_racing;
+<- concept_setting_real_world;
+<- concept_singleplayer_game;
+<- concept_arcade;
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_electronic_arts;
+=> nrel_publisher: company_electronic_arts;
+
+=> nrel_platform: concept_windows; playstation;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_publication_date: date_31_03_1997;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Need For Speed II)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Компьютерная игра в жанре аркадных автогонок, вторая часть в игровой серии Need for Speed.
+                    Need for Speed II представляет собой аркадную гоночную игру, выполненную в трёхмерной графике.
+                    На выбор игроку доступны три режима: «Single Race» (Одиночная гонка), «Tournament» (Турнир) и «Knockout» (Выбывание).
+                    В «Single Race» игрок сам выбирает автомобиль, трассу и настраивает соперников.
+                    О каждой трассе можно просмотреть информацию и настроить условия гонки, количество кругов.
+                    Выигрывает участник, который первым пересёк финишную черту на последнем круге.
+                    В режиме «Tournament» игроку предстоит поочерёдно проходить гонки на каждой из трасс. ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform_game;;
+                -> concept_racing;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_electronic_arts;;
+                -> computer_game_need_for_speed_II;;
+                -> concept_game_series_need_for_speed;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

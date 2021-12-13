@@ -1,0 +1,40 @@
+concept_game_perfomance
+=> nrel_main_idtf: [показатели игры] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game perfomance] (* <- lang_en;;*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_fps;;
+	-> concept_ping;;
+
+	=> nrel_main_idtf: [разбиение по типу характеристики] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(показатели игры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+               	-> [Показатели игры - выходные характеристики игры отражающие её быстродействие] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_game;;
+		-> concept_game_perfomance;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(показатели игры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [показатели игры отабражают достаточно
+		ли мощности компьютера для данной игры] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;
