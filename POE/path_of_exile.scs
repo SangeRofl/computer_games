@@ -62,7 +62,7 @@ computer_game_path_of_exile
         concept_computer_game;
         player;
         nrel_character;
-        nrel_character_class
+        concept_character_class
 	};;
 *);
 
@@ -104,7 +104,7 @@ computer_game_path_of_exile
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Иллюстрация (логотип Apex Legends)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Иллюстрация (логотип Path of Exile)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://images/Path_of_Exile_logo.jpg"

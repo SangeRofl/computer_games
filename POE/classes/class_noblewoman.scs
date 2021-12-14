@@ -3,11 +3,12 @@ concept_class_noblewoman
 => nrel_main_idtf: [Класс Дворянка ] (* <- lang_ru;; *);
 
 
-<-rrel_base_attribute: 20(*<-concept_power;;*);
-<-rrel_base_attribute: 20(*<-concept_dexterity;;*);
-<-rrel_base_attribute: 20(*<-concept_intelligence;;*);
-=>rrel_based_characteristic: concept_health_60;
-=>nrel_based_characteristic: concept_mana_50;
+<-rrel_base_power: 20(*<-concept_power;;*);
+<-rrel_base_dexterity: 20(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 20(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 60(*<-concept_health_points;;*);
+<-rrel_base_mana: 50(*<-concept_mana;;*);
+
 
 =>concept_class_ascended;
 

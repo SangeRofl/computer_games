@@ -3,11 +3,11 @@ concept_class_witch
 => nrel_main_idtf: [Класс Ведьма] (* <- lang_ru;; *);
 
 
-<-rrel_base_attribute: 14(*<-concept_power;;*);
-<-rrel_base_attribute: 14(*<-concept_dexterity;;*);
-<-rrel_base_attribute: 32(*<-concept_intelligence;;*);
-=>nrel_based_characteristic: concept_health_57;
-=>nrel_based_characteristic: concept_mana_56;
+<-rrel_base_power: 14(*<-concept_power;;*);
+<-rrel_base_dexterity: 14(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 32(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 57(*<-concept_health_points;;*);
+<-rrel_base_mana: 56(*<-concept_mana;;*);
 
 
 =>concept_class_necromancer;

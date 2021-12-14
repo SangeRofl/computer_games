@@ -3,11 +3,11 @@ concept_class_duelist
 => nrel_main_idtf: [Класс Дуэлянт] (* <- lang_ru;; *);
 
 
-<-rrel_base_attribute: 23(*<-concept_power;;*);
-<-rrel_base_attribute: 23(*<-concept_dexterity;;*);
-<-rrel_base_attribute: 14(*<-concept_intelligence;;*);
-=>nrel_based_characteristic: concept_health_62;
-=>nrel_based_characteristic: concept_mana_47;
+<-rrel_base_power: 23(*<-concept_power;;*);
+<-rrel_base_dexterity: 23(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 14(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 62(*<-concept_health_points;;*);
+<-rrel_base_mana: 47(*<-concept_mana;;*);
 
 
 =>concept_class_grunt;
