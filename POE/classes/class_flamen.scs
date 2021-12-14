@@ -3,12 +3,16 @@ concept_class_flamen
 => nrel_main_idtf: [Класс Жрец] (* <- lang_ru;; *);
 
 
-=>nrel_based_characteristic: concept_power_23;
-=>nrel_based_characteristic: concept_dexterity_14;
-=>nrel_based_characteristic: concept_intelligence_23;
-=>nrel_based_characteristic: concept_health_62;
+<-rrel_base_attribute: 23(*<-concept_power;;*);
+<-rrel_base_attribute: 14(*<-concept_dexterity;;*);
+<-rrel_base_attribute: 23(*<-concept_intelligence;;*);
+=>rrel_based_characteristic: concept_health_57;
 =>nrel_based_characteristic: concept_mana_52;
 
+
+=>concept_class_inquisitor;
+=>concept_class_hierophant;
+=>concept_class_defender;
 
 
 <- rrel_key_sc_element: ...
@@ -47,7 +51,7 @@ concept_class_flamen
 	=> nrel_main_idtf: [Иллюстрация (Жрец)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://images/Path_of_Exile_class_flamen.jpg"
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_flamen.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;

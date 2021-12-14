@@ -3,11 +3,16 @@ concept_class_savage
 => nrel_main_idtf: [Класс Дикарь] (* <- lang_ru;; *);
 
 
-=>nrel_based_characteristic: concept_power_32;
-=>nrel_based_characteristic: concept_dexterity_14;
-=>nrel_based_characteristic: concept_intelligence_14;
+<-rrel_base_attribute: 32(*<-concept_power;;*);
+<-rrel_base_attribute: 14(*<-concept_dexterity;;*);
+<-rrel_base_attribute: 14(*<-concept_intelligence;;*);
 =>nrel_based_characteristic: concept_health_66;
 =>nrel_based_characteristic: concept_mana_47;
+
+
+=>concept_class_conqueror;
+=>concept_class_leader;
+=>concept_class_berserk;
 
 
 <- rrel_key_sc_element: ...
@@ -46,7 +51,7 @@ concept_class_savage
 	=> nrel_main_idtf: [Иллюстрация (Дикарь)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://images/Path_of_Exile_class_savage.jpg"
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_savage.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;

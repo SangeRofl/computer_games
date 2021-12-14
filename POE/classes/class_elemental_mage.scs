@@ -1,0 +1,39 @@
+concept_class_elemental_mage   
+=> nrel_main_idtf: [Class Elemental_Mage] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Маг_Стихий] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Маг_Стихий)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Маг Стихий —  специализируются на всём, что связано со стихийным уроном. Они используют непостоянные, но мощные усиления стихийного урона. Также они могут фокусироваться на применении эффектов стихий, умениях вестников и элементальных големах. Некоторые пассивные умения можно смешивать и сопоставлять таким образом, чтобы учесть множество типов урона, учитывая даже урон от хаоса или физический урон.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Маг_Стихий)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса маг стихий усиливать элементальный урон по противнику.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Маг_Стихий)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_elemental_mage.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

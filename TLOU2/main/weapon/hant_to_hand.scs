@@ -1,0 +1,55 @@
+sc_node_not_relation->concept_hand_to_hand;;
+
+sc_node_not_relation->knife;;
+
+knife=>nrel_main_idtf:
+		[нож]
+	   (*<-lang_ru;;*);
+	   [knife]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->fists;;
+
+fists=>nrel_main_idtf:
+		[кулаки]
+	   (*<-lang_ru;;*);
+	   [fists]
+	   (*<-lang_en;;*);;
+
+sc_node_norole_relation->nrel_use_ellie;;
+
+nrel_use_ellie=>nrel_main_idtf:
+		[использует Элли*]
+	   (*<-lang_ru;;*);
+	   [use Ellie*]
+	   (*<-lang_en;;*);;
+
+sc_node_norole_relation->nrel_use_ebbie;;
+
+nrel_use_ebbie=>nrel_main_idtf:
+		[использует Эбби*]
+	   (*<-lang_ru;;*);
+	   [use Ebbie*]
+	   (*<-lang_en;;*);;
+
+
+hand_to_hand
+
+=>nrel_use_ellie: knife;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		knife
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "knife">Нож </b></sc_element> Элли использует в качестве оружия с 14 лет. Им она устраняет зараженных и людей в ближнем бою.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+=>nrel_use_ebbie: fists;;
+

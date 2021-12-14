@@ -1,0 +1,65 @@
+sc_node_not_relation->concept_stalker;;
+
+sc_node_not_relation->second;;
+
+second=>nrel_main_idtf:
+		[вторая]
+	   (*<-lang_ru;;*);
+	   [second]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->hand_to_hand;;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_combat;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+concept_stalker
+
+=>nrel_main_idtf:
+	   [Сталкер]
+	   (*<-lang_ru;;*);
+	   [Stalker]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: second;
+
+=>nrel_than_to_eliminate: weapon_project; hand_to_hand;
+
+=>nrel_attack_type:near;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		stalker
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "stalker">Сталкеры </b></sc_element> - это люди, инфицированные от двух недель до года. По их имени, они преследуют и прячутся от добычи в темноте и нападают в подходящий момент. </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Сталкер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/stalker.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,59 @@
+sc_node_not_relation->concept_shambler;;
+
+sc_node_not_relation->fourth;;
+
+sc_node_not_relation->hand_to_hand;;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+concept_shambler
+
+=>nrel_main_idtf:
+	   [Шаркун]
+	   (*<-lang_ru;;*);
+	   [Shambler]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: fourth;
+
+=>nrel_than_to_eliminate: weapon_project;hand_to_hand;
+
+=>nrel_attack_type:near;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		shambler;
+		clicker;
+		bloater
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "shambler">Шаркуны </b></sc_element> - это люди, которые были инфицированы в течение нескольких лет и обычно населяют районы, где есть вода. Хотя шаркуны не так физически усилены, как </b></sc_element> <b><sc_element sys_idtf= "clicker"> щелкуны </b></sc_element> или </b></sc_element> <b><sc_element sys_idtf= "bloater"> топляки </b></sc_element>, они способны выплёскивать из своего тела большие облака спор, которые вызывают кислотные ожоги на коже жертвы. Когда его убивают, споры взрываются, выпуская в воздух последний выброс кордицепса.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Шаркун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/shambler.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

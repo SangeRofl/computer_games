@@ -1,0 +1,261 @@
+sc_node_not_relation->concept_double_barrel_shotgun;;
+
+sc_node_not_relation->percentage_increase_in_characteristics;;
+
+sc_node_not_relation->number;;
+
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->metal_parts;;
+
+sc_node_not_relation->weight_gainer;; 
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->fiery;;
+
+fiery=>nrel_main_idtf:
+		[зажигательные]
+	   (*<-lang_ru;;*);
+	   [fiery]
+	   (*<-lang_en;;*);; 
+
+sc_node_not_relation->ammo_for_shotgun;;
+
+ammo_for_shotgun=>nrel_main_idtf:
+		[патроны для дробовика]
+	   (*<-lang_ru;;*);
+	   [ammo for shotgun]
+	   (*<-lang_en;;*);; 
+
+sc_node_not_relation->reload;;
+
+sc_node_not_relation->bandolier;;
+
+bandolier=>nrel_main_idtf:
+		[патронташ]
+	   (*<-lang_ru;;*);
+	   [bandolier]
+	   (*<-lang_en;;*);; 
+
+sc_node_not_relation->new_barrel;;
+
+sc_node_not_relation->stability;;
+
+sc_node_not_relation->reload_speed;;
+
+sc_node_not_relation->damage;;
+
+sc_node_not_relation->recoil;;
+
+recoil=>nrel_main_idtf:
+		[отдача]
+	   (*<-lang_ru;;*);
+	   [recoil]
+	   (*<-lang_en;;*);; 
+
+
+sc_node_norole_relation->nrel_ammunition_type;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_reduce;;
+
+nrel_reduce=>nrel_main_idtf:
+	    [уменьшение*]
+	   (*<-lang_ru;;*);
+	   [reduce*]
+	   (*<-lang_en;;*);; 
+
+sc_node_norole_relation->nrel_change_in_appearance;; 
+
+sc_node_norole_relation->nrel_increase;;
+ 
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+sc_node_norole_relation->nrel_upgrade_cost;;
+
+
+
+
+
+concept_double_barrel_shotgun
+
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-ammo_for_shotgun;;
+		*);;
+ <-crafting(*
+ <=nrel_union:{ordinary;fiery};;
+		*);;
+ *);;
+*);
+
+=>nrel_main_idtf:
+	   [Двуствольный дробовик]
+	   (*<-lang_ru;;*);
+	   [Double barrel shotgun]
+	   (*<-lang_en;;*);
+	   
+	   
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		double_barrel_shotgun
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Эбби находит </b></sc_element> <b><sc_element sys_idtf= "double_barrel_shotgun">  двуствольный дробовик </b></sc_element> в Сиэтле, в китайском магазине </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+
+
+=>nrel_upgrade: stock(*
+	=>nrel_increase: stability (*
+		<- 50 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+		*);;
+	=>nrel_reduce: recoil (*
+		<- 35 (*
+		<-percentage_decrease_in_characteristics;;
+		<-number;;
+		*);;	
+	*);;
+	=>nrel_upgrade_cost: 30 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:weight_gainer(*
+	   <-what_was_added;;
+	*);; 
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена приклада] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		double_barrel_shotgun;
+		stock;
+		nrel_increase;
+		stability;
+		nrel_reduce;
+		recoil
+		
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Увеличивается вес </b></sc_element> <b><sc_element sys_idtf= "stock"> приклада <b><sc_element sys_idtf= "double_barrel_shotgun"> двуствольного дробовика</b></sc_element>, чтобы  </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element> <b><sc_element sys_idtf= "stability"> стабильность </b></sc_element> и </b></sc_element> <b><sc_element sys_idtf= "nrel_reduce"> уменьшить </b></sc_element> <b><sc_element sys_idtf= "recoil"> отдачу </b></sc_element> </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+
+=>nrel_upgrade: reload (*
+	=>nrel_increase: reload_speed (*
+		<- 30 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+		*);;
+	=>nrel_upgrade_cost: 40 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:bandolier(*
+	   <-what_was_added;;
+	*);; 
+*); 
+
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Добавление патронташа] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		double_barrel_shotgun;
+		reload;
+		nrel_increase;
+		bandolier
+		
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+      [Добавление <b><sc_element sys_idtf= "bandolier"> патронташа </b></sc_element> на </b></sc_element> <b><sc_element sys_idtf= "double_barrel_shotgun"> двуствольный дробовик </b></sc_element>, позволяет <b><sc_element sys_idtf= "nrel_increase"> быстрее </b></sc_element> его </b></sc_element> <b><sc_element sys_idtf= "reload"> перезаряжать</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: barrel(*
+	=>nrel_increase: damage (*
+		<- 30 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+		*);;
+	=>nrel_upgrade_cost: 60 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance: new_barrel(*
+	   <-what_was_added;;
+	*);; 
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена ствола] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		double_barrel_shotgun;
+		barrel;
+		nrel_increase
+};;
+<=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "barrel"> ствола </b></sc_element> позволяет производить </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> более </b></sc_element> <b><sc_element sys_idtf= "damage">  мощные </b></sc_element> выстрелы </b></sc_element> из </b></sc_element> <b><sc_element sys_idtf= "double_barrel_shotgun"> двуствольного дробовика </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация двуствольного дробовика (без улучшений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/doub_bar_shotgun_non_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация двуствольного дробовика (полностью улучшенный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/doub_bar_shotgun_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+	   
+	   

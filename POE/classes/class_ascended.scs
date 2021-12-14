@@ -1,0 +1,39 @@
+concept_class_ascended
+=> nrel_main_idtf: [Class Ascended] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Вознесшаяся] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Вознесшаяся)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Вознесшаяся -  предоставляет игроку гибкость, недостижимую другим классам, позволяя выбирать пассивные умения, которые базируются на других классах Восхождения. Эти пассивные умения дают те же эффекты, но с уменьшенной силой, и из каждого класса Восхождения вы можете выбрать лишь одно умение, но всего не более двух. .] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Вознесшаяся)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Универсальный класс.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Вознесшаяся)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_ascended.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -3,13 +3,16 @@ concept_class_bandit
 => nrel_main_idtf: [Класс Бандит ] (* <- lang_ru;; *);
 
 
+<-rrel_base_attribute: 14(*<-concept_power;;*);
+<-rrel_base_attribute: 23(*<-concept_dexterity;;*);
+<-rrel_base_attribute: 23(*<-concept_intelligence;;*);
+=>rrel_based_characteristic: concept_health_57;
+=>nrel_based_characteristic: concept_mana_52;
 
-<-rrel_base_power: 14(*<-concept_power;;*);
-<-rrel_base_dexterity: 23(*<-concept_dexterity;;*);
-<-rrel_base_intelligence: 23(*<-concept_intelligence;;*);
-<-rrel_base_health_points: 57(*<-concept_health_points;;*);
-<-rrel_base_mana: 52(*<-concept_mana;;*);
 
+=>concept_class_killer;
+=>concept_class_rogue;
+=>concept_class_saboteur;
 
 
 <- rrel_key_sc_element: ...

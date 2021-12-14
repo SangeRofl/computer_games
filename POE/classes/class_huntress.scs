@@ -3,13 +3,16 @@ concept_class_huntress
 => nrel_main_idtf: [Класс Охотница] (* <- lang_ru;; *);
 
 
-=>nrel_based_characteristic: concept_power_14;
-=>nrel_based_characteristic: concept_dexterity_32;
-=>nrel_based_characteristic: concept_intelligence_14;
-=>nrel_based_characteristic: concept_health_57;
-=>nrel_based_characteristic: concept_mana_47;
+<-rrel_base_attribute: 14(*<-concept_power;;*);
+<-rrel_base_attribute: 32(*<-concept_dexterity;;*);
+<-rrel_base_attribute: 14(*<-concept_intelligence;;*);
+=>rrel_based_characteristic: concept_health_57;
+=>nrel_based_characteristic: concept_mana_52;
 
 
+=>concept_class_sniper;
+=>concept_class_raider;
+=>concept_class_tracker;
 
 <- rrel_key_sc_element: ...
 (*
@@ -47,7 +50,7 @@ concept_class_huntress
 	=> nrel_main_idtf: [Иллюстрация (Охотница)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://images/Path_of_Exile_class_huntress.png"
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_huntress.png"
 		(*
 			=> nrel_format: format_png;;
 		*);;
