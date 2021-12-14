@@ -8,13 +8,7 @@ weapon_project=>nrel_main_idtf:
 	   [weapon project]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->hand_to_hand;;
 
-hand_to_hand=>nrel_main_idtf:
-		[врукопашную]
-	   (*<-lang_ru;;*);
-	   [hand to hand]
-	   (*<-lang_en;;*);;
 
 sc_node_not_relation->infected_project;;
 
@@ -59,10 +53,13 @@ concept_subject_domain_of_the_game_the_The_last_of_us_2
 
 <-concept_flamethrower;;
 
+<-concept_hand_to_hand;;
+
 *);
 
 
 ->infected_project(*
+
 
 <-concept_runner;;
 
@@ -75,5 +72,7 @@ concept_subject_domain_of_the_game_the_The_last_of_us_2
 <-concept_shambler;;
 
 <-concept_rat_king;;
+
+<-concept_spore;;
 
 *);;

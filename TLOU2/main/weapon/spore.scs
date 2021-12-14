@@ -1,0 +1,38 @@
+sc_node_not_relation->concept_spore;;
+
+sc_node_not_relation->death;;
+
+death=>nrel_main_idtf:
+		[смерть]
+	   (*<-lang_ru;;*);
+	   [death]
+	   (*<-lang_en;;*);;
+	   
+	   
+	   
+	   
+concept_spore
+
+=>nrel_main_idtf:
+		[Споры]
+	   (*<-lang_ru;;*);
+	   [spores]
+	   (*<-lang_en;;*);
+
+=>nrel_stage: death;
+
+
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		spore
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Даже после смерти заражённого грибок продолжает свой рост. Он способен вырасти в большое образование вокруг тела носителя. С этого момента труп жертвы становится чем-то вроде каркаса, прирастающего к любой поверхности. В конечном итоге грибок начнёт испускать ядовитые </b></sc_element> <b><sc_element sys_idtf= "spore"> споры </b></sc_element>, заражая любого, кто их вдохнёт. Единственный известный в игре способ борьбы со спорами — ношение противогаза. Для человека, имеющего иммунитет, споры не страшны.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;

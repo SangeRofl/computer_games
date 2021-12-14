@@ -1,5 +1,12 @@
 sc_node_not_relation->concept_hand_to_hand;;
 
+
+concept_hand_to_hand=>nrel_main_idtf:
+		[Врукопашную]
+	   (*<-lang_ru;;*);
+	   [hand to hand]
+	   (*<-lang_en;;*);;
+
 sc_node_not_relation->knife;;
 
 knife=>nrel_main_idtf:
@@ -33,7 +40,7 @@ nrel_use_ebbie=>nrel_main_idtf:
 	   (*<-lang_en;;*);;
 
 
-hand_to_hand
+concept_hand_to_hand
 
 =>nrel_use_ellie: knife;
 
