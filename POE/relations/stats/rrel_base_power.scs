@@ -1,19 +1,15 @@
-rrel_base_attribute
-=> nrel_main_idtf: [base attribute' (Path of Exile)] (* <- lang_en;; *);
-=> nrel_main_idtf: [базовый атрибут' (Path of Exile)] (* <- lang_ru;; *);
+rrel_base_power
+=> nrel_main_idtf: [base power' (Path of Exile)] (* <- lang_en;; *);
+=> nrel_main_idtf: [базовая сила' (Path of Exile)] (* <- lang_ru;; *);
 
-
-->rrel_base_power;
-->rrel_base_dexterity;
-->rrel_base_intelligence;
 
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(базовый атрибут' (Path of Exile))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(базовый сила' (Path of Exile))] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-       		-> [Это значение атрибута, с которым начинает класс в Path of Exile.] (* <- lang_ru;; *);;
+       		-> [Это значение атрибута силы, с которым начинает класс в Path of Exile.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: {
         concept_attribute
@@ -49,5 +45,5 @@ sc_node_not_relation -> arity;;
 sc_node_not_relation -> arity_2;;
 arity -> arity_2;;
 arity_2 => nrel_measurement:2;;
-arity_2 -> rrel_base_attribute;;
+arity_2 -> rrel_base_power;;
 number->2;;
