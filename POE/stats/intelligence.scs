@@ -1,0 +1,51 @@
+concept_intelligence
+=> nrel_main_idtf: [Intelligence] (* <- lang_en;; *);
+=> nrel_main_idtf: [Интеллект] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Интеллект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Интеллект - это атрибут, являющийся мерой остроты ума персонажа и его знаний.] (* <- lang_ru;; *);;
+	*);;
+    <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Роль атрибута интеллекта в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Интеллект необходим для использования специфической экипировки и умений, основанных на этом атрибуте.] (* <- lang_ru;; *);;
+	*);;
+     <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Бонус к мане от интеллекта в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 интеллекта даруют дополнительные 5 единиц маны] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв3.(Бонус к энергетическому щиту от интеллекта в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 интеллекта даруют увеличение на 2% энергетического щита] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

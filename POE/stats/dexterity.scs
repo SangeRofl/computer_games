@@ -1,0 +1,51 @@
+concept_dexterity
+=> nrel_main_idtf: [Dexterity] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ловкость] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Ловкость)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ловкость - это атрибут, характеризующий проворство и мастерство персонажа.] (* <- lang_ru;; *);;
+	*);;
+    <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Роль атрибута ловкость в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сила необходима для использования доспехов, оружия и умений, основанных на этом атрибуте.] (* <- lang_ru;; *);;
+	*);;
+     <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Бонус к меткости от ловкости в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 ловкости даруют дополнительные 20 единиц рейтинга меткости.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв3.(Бонус к уклонению от ловкости в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 ловкости увеличивают на 2% рейтинг уклонения.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

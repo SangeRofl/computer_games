@@ -1,0 +1,51 @@
+concept_power
+=> nrel_main_idtf: [Power] (* <- lang_en;; *);
+=> nrel_main_idtf: [Сила] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сила)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сила - это атрибут, являющийся мерой физической мощи персонажа.] (* <- lang_ru;; *);;
+	*);;
+    <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Роль атрибута силы в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сила необходима для использования доспехов, оружия и умений, основанных на этом атрибуте.] (* <- lang_ru;; *);;
+	*);;
+     <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Бонус к здоровью от силы в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 силы дают дополнительные 5 единиц здоровья.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв3.(Бонус к урону от силы в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждые 10 силы дают 2% увеличение физического урона в ближнем бою.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,42 @@
+concept_attribute
+=> nrel_main_idtf: [Attribute] (* <- lang_en;; *);
+=> nrel_main_idtf: [Атрибут] (* <- lang_ru;; *);
+
+
+->concept_power;
+->concept_intelligence;
+->concept_dexterity;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Атрибут)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Атрибут — это исчисляемый параметр, который в той или иной степени есть у всех персонажей.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Виды атрибутов в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В Path of Exile имеется три атрибута персонажа: сила, ловкость и интеллект.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Роль атрибутов в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Большая часть снаряжения, камней умений и поддержки имеют требования к атрибутам персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
