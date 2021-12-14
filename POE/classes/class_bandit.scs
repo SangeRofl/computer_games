@@ -3,21 +3,10 @@ concept_class_bandit
 => nrel_main_idtf: [Класс Бандит ] (* <- lang_ru;; *);
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 <-rrel_base_power: 14(*<-concept_power;;*);
 <-rrel_base_dexterity: 23(*<-concept_dexterity;;*);
 <-rrel_base_intelligence: 23(*<-concept_intelligence;;*);
-=======
-<-rrel_base_attribute: 14(*<-concept_power;;*);
-<-rrel_base_attribute: 23(*<-concept_dexterity;;*);
-<-rrel_base_attribute: 23(*<-concept_intelligence;;*);
->>>>>>> abb5ca43f2fdb827852ab92eb26f384f5c91194d
-=======
-<-rrel_base_attribute: 14(*<-concept_power;;*);
-<-rrel_base_attribute: 23(*<-concept_dexterity;;*);
-<-rrel_base_attribute: 23(*<-concept_intelligence;;*);
->>>>>>> abb5ca43f2fdb827852ab92eb26f384f5c91194d
 =>rrel_based_characteristic: concept_health_57;
 =>nrel_based_characteristic: concept_mana_52;
 
