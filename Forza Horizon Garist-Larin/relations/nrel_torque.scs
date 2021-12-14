@@ -1,0 +1,53 @@
+nrel_torque
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [torque*] (* <- lang_en;; *);
+=> nrel_main_idtf: [крутящий момент*] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(крутящий момент*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Сила, с которой вращается коленчатый вал двигателя] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:
+	{
+		concept_car;
+		concept_computer_game
+	};;
+*);;
+
+nrel_torque
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- asymmetric_relation;;
+
+relation
+=> nrel_inclusion: oriented_relation;
+=> nrel_inclusion: binary_relation;;
+
+binary_relation
+=> nrel_inclusion: antireflexive_relation;
+=> nrel_inclusion: antitransitive_relation;
+=> nrel_inclusion: asymmetric_relation;;
+
+nrel_torque
+=> nrel_first_domain: concept_computer_game;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_computer_game;
+	    number
+	};;
+*);;
+
+2
+<- number;
+<= nrel_measurement: ..arity;;
+
+..arity
+<- concept_arity;
+-> nrel_torque;;

@@ -1,0 +1,45 @@
+concept_bmw_m5_f90
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[BMW M5 F90](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4395; 
+=> nrel_release_date: 2016;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 625;  
+=> nrel_maximum_speed: 305; 
+=> nrel_acceleration_to_100_km_h: 3.3; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 8;  
+=> nrel_body_type: sedan; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1930;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 4;
+=> nrel_torque: 750;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(BMW M5 F90)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ...  
+	(*
+		->[F90 M5 основан на G30 5 серии и использует полноприводную трансмиссию («xDrive»), что является первым случаем, когда M5 не имеет заднего привода. Однако система полного привода смещена в сторону задних колес. Его также можно настроить для передачи мощности только на задние колеса, если электронный контроль устойчивости (ESC) отключен. Коробка передач - 8-ступенчатая ZF 8HP45 автоматическая. Внешний вид M5 был разработан Сеунгмо Лимом. Автомобиль был представлен на Gamescom в августе 2017 года, чтобы способствовать запуску Need for Speed ​​Payback . M5 также был показан на Франкфуртском автосалоне (IAA) в сентябре 2017 года. M5 производится вместе с обычными моделями 5-й серии на заводе BMW Dingolfing в Германии. F90 M5 разгоняется с места до 100 км / ч (62 миль / ч) за 3,4 секунды и до 200 км / ч (124 миль / ч) за 11,1 секунды.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+    
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/bmw-m5-f90.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

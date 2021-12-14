@@ -1,0 +1,45 @@
+concept_bmw_m3_e30
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[BMW M3 e30](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2467;
+=> nrel_release_date: 1986; 
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 238;  
+=> nrel_maximum_speed: 249;
+=> nrel_acceleration_to_100_km_h: 6.1; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1200;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 240;
+ 
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(BMW M3 e30)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ...  
+	(*
+		->[Первый BMW M3 был основан на E30 3 серии и должен быть омологацией специально для соответствия Deutsche Tourenwagen Meisterschaf и Group A Touring. Он был представлен публике на Франкфуртском автосалоне 1985 , производство началось с марта 1986 года по июнь 1991 года. E30 M3 в основном производился в кузове купе, но выпускались также ограниченные объемы кабриолетов.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+    
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/bmw-m3-e30.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

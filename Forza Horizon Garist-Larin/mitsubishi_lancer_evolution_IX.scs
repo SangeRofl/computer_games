@@ -1,0 +1,45 @@
+concept_mitsubishi_lancer_evolution_ix
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Mitsubishi Lancer Evolution IX MR](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1997; 
+=> nrel_release_date: 2006;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 371;  
+=> nrel_maximum_speed: 257; 
+=> nrel_acceleration_to_100_km_h: 4.1; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: sedan; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1410;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 4;
+=> nrel_torque: 492;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Mitsubishi Lancer Evolution IX MR)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Lancer Evolution IX, был разработан на базе прежнего модели ЕvoVIII MR. Характерные особенности внешнего вида: новая форма переднего бампера, которая по замыслу разработчиков, улучшает охлаждение мотора и снижает подъемную силу встречного потока воздуха, и спойлер с изменяемым углом атаки.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/mitsubishi-lancer-evolution.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

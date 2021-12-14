@@ -1,0 +1,45 @@
+concept_jaguar_f_pace_s
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Jaguar F Pace S](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2995; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: diesel;
+=> nrel_engine_power: 380;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 5.5; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 8;  
+=> nrel_body_type: crossover; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1861;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 5;
+=> nrel_torque: 460;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Jaguar F Pace S)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Jaguar F-Pace – первый кроссовер марки, который тут же выбился в лидеры, потеснив другие известные бренды. И в этом заслуга не столько внешнего вида, а он у всех Ягуаров всегда на высоте, сколько технических характеристик. S - топовая комплектация. На выбор доступны трехлитровый дизель с шестью V-образно расположенными цилиндрами на 300 л.с. и бензиновый движок V6P такого же объема на 380 л.с. F-Pace может похвастаться почти полностью алюминиевым кузовом. Соединение элементов заклепочное, клеевое и сварное (566 точек). Внешне кроссовер сохранил «кошачьи» повадки, хотя заметны они больше всего спереди. Посмотрев на морду, ошибиться нельзя. Кузов, несмотря на размеры, сохранил характерные черты, хотя, чтобы их заметить, нужно присмотреться.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/jaguar-f-pace-s.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 
