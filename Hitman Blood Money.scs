@@ -1,0 +1,67 @@
+computer_game_hitman_blood_money
+
+=> nrel_main_idtf: [Hitman: Кровавые деньги] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Hitman: Blood Money] (* <- lang_en;; *);
+
+
+<- concept_stealth;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_io_interactive;
+=> nrel_publisher: company_eidos_interactive;
+
+=> nrel_platform: concept_windows; concept_playstation_2; concept_playstation_3; concept_xbox; concept_xbox_360;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: glacier_engine;
+
+=> nrel_publication_date: date_26_05_2006;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Hitman: Blood Money)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра 2006 года в жанре стелс-экшена, 
+			разработанная датской студией IO Interactive и изданная Eidos Interactive. 
+			Четвёртая игра серии Hitman. Предыдущая игра серии — Hitman: Contracts. 
+			Следующая — Hitman: Absolution.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_stealth;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_io_interactive;;
+                -> company_eidos_interactive;;
+                -> computer_game_hitman_blood_money;;
+                -> concept_game_series_hitman;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;
