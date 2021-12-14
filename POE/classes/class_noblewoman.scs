@@ -10,6 +10,12 @@ concept_class_noblewoman
 =>nrel_based_characteristic: concept_mana_50;
 
 
+<-rrel_base_attribute: 20(*<-concept_power;;*);
+<-rrel_base_attribute: 20(*<-concept_dexterity;;*);
+<-rrel_base_attribute: 20(*<-concept_intelligence;;*);
+=>rrel_based_characteristic: concept_health_60;
+=>nrel_based_characteristic: concept_mana_50;
+
 
 <- rrel_key_sc_element: ...
 (*
@@ -57,7 +63,7 @@ concept_class_noblewoman
 	=> nrel_main_idtf: [Иллюстрация (Дворянка )](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://images/Path_of_Exile_class_noblewoman.jpg"
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_noblewoman.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
