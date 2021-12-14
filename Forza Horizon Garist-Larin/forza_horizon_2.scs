@@ -1,0 +1,72 @@
+concept_computer_game_forza_horizon_2
+=> nrel_main_idtf: [Forza Horizon 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Forza Horizon 2] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_racing;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_playground_games; company_sumo_digital; company_turn_10_studios;
+=> nrel_publisher: company_microsoft_studios;
+
+=> nrel_platform: xbox_360; xbox_one;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_engine: forza_tech;
+
+=> nrel_publication_date: date_30_09_2014;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Forza Horizon 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра в жанре гоночных игр с открытым миром, разработанная для игровых приставок Xbox 360 и Xbox One от Microsoft. 
+Она стала сиквелом к игре Forza Horizon, которая вышла в 2012 году, и является седьмой по счету в серии игр Forza. Версия игры для Xbox One была разработана компанией Playground Games.
+Версию для Xbox 360 разработала компания Sumo Digital. При этом поддержку разработки обеих версий осуществлял разработчик серии Forza Motorsport — компания Turn 10 Studios.
+Forza Horizon 2 — гоночная компьютерная игра, в которой представлено окружение в виде открытого мира.
+] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+                -> concept_singleplayer_game;;
+                -> concept_multiplayer_game;;
+                -> concept_three_dimensional_game;;
+                -> concept_multiplatform_game;;
+                -> company_playground_games;;
+                -> company_turn_10_studios;;
+                -> company_sumo_digital;;
+                -> company_microsoft_studios;;
+                -> concept_game_series_forza_horizon;;
+        *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+        <- concept_plot;;
+        => nrel_main_idtf: [Сюжет] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Игрок принимает участие в фестивале Horizon, вымышленном гоночном мероприятии, проходящим на юге Франции и севере Италии. Представленный в игре игровой мир по масштабу примерно в три раза превосходит мир из игры Forza Horizon, действие игры происходит в регионах Прованс, Лигурия, Лазурный берег, а также в других местностях. Игроки должны исследовать эти области, принимать участие в гонках и особых мероприятиях, чтобы продвигаться по игре. Действие может происходить днем или ночью, причем впервые в серии Forza Motorsport была реализована динамическая система погоды.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Обложка игры] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/forza-horizon2.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,45 @@
+concept_mazda_rx7
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Mazda RX7](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1308; 
+=> nrel_release_date: 1992;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 241;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 5.3; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1300;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 296;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Mazda RX7)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Mazda RX-7 — спортивный автомобиль, выпускавшийся японским автопроизводителем Mazda с 1978 по 2002 год. Оригинальная RX-7 оснащалась двухсекционным роторно-поршневым двигателем и имела переднюю среднемоторную, заднеприводную компоновку. RX-7 пришла на смену RX-3 (обе в Японии продавались под маркой Savanna), вытеснила все остальные роторные автомобили Mazda за исключением Cosmo. За всю историю Mazda RX-7 было три поколения. Первое поколение выпускалось с 1978 по 1985 год. Второе поколение — с 1985 по 1991. Третье поколение — с 1992 по 2002 год. Третье поколение (FD) было представлено в 1992 году. Единственный доступный двигатель (13B-REW) был первым серийным твин-турбо агрегатом, экспортировавшимся из Японии. Первая версия двигателя развивала 265 л. с. (для версии с АКПП — 255 л. с.). В 1996 году был проведён фейслифтинг, а мощность двигателя была доведена до 280 л. с. В 1999 году провели значительный фейслифтинг, и экспорт автомобиля был прекращён.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/mazda_rx7.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

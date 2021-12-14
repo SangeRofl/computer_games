@@ -1,0 +1,68 @@
+concept_computer_game_forza_horizon_4
+=> nrel_main_idtf: [Forza Horizon 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Forza Horizon 4] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_racing;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_playground_games; company_turn_10_studios;
+=> nrel_publisher: company_microsoft_studios;
+
+=> nrel_platform: windows; xbox_one; xbox_series_x; xbox_series_s;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode; cooperative_game_mode;
+
+=> nrel_game_engine: forza_tech;
+
+=> nrel_publication_date: date_10_06_2018;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Forza Horizon 4)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [гоночная игра в жанре аркадного автосимулятора в открытым мире, разработанная компанией Playground Games в сотрудничестве с Turn 10 Studios под издательством Microsoft Studios для игровой консоли Xbox One и ПК от Microsoft. Одной из главных особенностей Forza Horizon 4 является динамическая смена сезонов, которая также отражает изменение времени суток и погодных условий которые непосредственно будут влиять на геймплей — водить автомобиль можно будет зимой, летом, осенью и весной, причём на игровой процесс также повлияет сцепление с дорогой, видимость за рулём а также тип соревнований такие как бездорожье, кольцевые гонки и дрифт.
+] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+                -> concept_singleplayer_game;;
+                -> concept_multiplayer_game;;
+                -> concept_three_dimensional_game;;
+                -> concept_multiplatform_game;;
+                -> company_playground_games;;
+                -> company_turn_10_studios;;
+                -> company_microsoft_studios;;
+                -> concept_game_series_forza_horizon;;
+        *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+        <- concept_plot;;
+        => nrel_main_idtf: [Сюжет] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Открытый мир игры Forza Horizon 4, как и в предыдущих играх серии, основан на вымышленном фестивале под названием «Фестиваль Горизонт», проходящим на этот раз, на живописных трассах Великобритании.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Обложка игры] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/forza-horizon4.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+
+<- sc_node_not_relation;;

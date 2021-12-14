@@ -1,0 +1,46 @@
+concept_pagani_zonda_r
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Pagani Zonda R](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 5987; 
+=> nrel_release_date: 2009;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 750;  
+=> nrel_maximum_speed: 335; 
+=> nrel_acceleration_to_100_km_h: 2.8; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: sequential;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 12;
+=> nrel_country_of_production: Italy;
+=> nrel_vehicle_weight: 1070;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 710;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Pagani Zonda R)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Монокок модификации Zonda R выполнен из углеродно-титанового композита. За счет применения нового материала возросла жесткость при значительном снижении веса. Передний и задний подрамники изготовлены из хроммолибденового сплава, а внешние кузовные панели из углеволокна MD System. Для деталей подвески конструктор Горацио Пагани выбрал алюминиевый сплав AvionAl, для структурных элементов, удерживающих двигатель и коробку передач — сплав ErgAl. Благодаря этим мерам снаряжённый вес машины составляет всего 1070 кг.
+Непосредственно на шасси установлен двигатель AMG V12 объёмом 6,0 л, развивающий мощность 750 л. с. и крутящий момент 710 Н·м. КПП — секвентальная 6-ступенчатая XTRAC 672 с картером из магниевого сплава, передачи переключаются лепестками на рулевой колонке, время переключения 150 мс.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/pagani-zonda-r.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

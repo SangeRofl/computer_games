@@ -1,0 +1,45 @@
+concept_koenigsegg_regera
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Koenigsegg Regera](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 5065; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 1590;  
+=> nrel_maximum_speed: 410; 
+=> nrel_acceleration_to_100_km_h: 2.8; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Sweden;
+=> nrel_vehicle_weight: 1590;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 2150;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Koenigsegg Regera)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Koenigsegg Regera — автомобиль, выпущенный в 2017 году шведской компанией Koenigsegg под контролем Кристиана фон Кёнигсегга. Максимальная скорость — 410 км/ч, разгон до 100 км/ч длится 2,8 секунды, вес автомобиля — 1590 кг. Гиперкар оснащен 5-литровым твин-турбо «V8», который развивает 1100 лошадиных сил и 1280 Нм крутящего момента при 4100 оборотах в минуту(в диапазоне 2700-6170 оборотов момент достигает 1000 Нм). Автомобиль имеет задний привод, что немного ухудшает его управляемость по сравнению, например, с такими машинами, как Veyron или Chiron, но в то же время сильно снижает вес.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/koenigsegg-regera.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

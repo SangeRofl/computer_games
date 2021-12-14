@@ -1,0 +1,46 @@
+concept_nissan_silvia_spec_r_aero
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Nissan Silvia spec R aero](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1998; 
+=> nrel_release_date: 1999;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 250;  
+=> nrel_maximum_speed: 244; 
+=> nrel_acceleration_to_100_km_h: 5.5; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1204;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 275;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Lamborghini Huracan Performante)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Spec-R отличался от предыдущих моделей Silvia тем, что получил на выбор шестиступенчатую механическую коробку передач либо четырёхступенчатый автомат. Модель также отличалась шасси и подвеской, в которой были использованы стабилизаторы поперечной устойчивости и стойки крепления. На неё устанавливались четырёхпоршневые передние тормозные суппорта.
+Одним из самых больших изменений в модели этого поколения, оснащаемой шестиступенчатой механикой, разработаннойAisin AI, стала реализация дифференциала повышенного трения с винтовой блокировкой. Также, в качестве опции была доступна система HICAS, управляющая четырьмя колесами.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/nissan_silvia_spec_r_aero.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 
