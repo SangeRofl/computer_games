@@ -1,0 +1,59 @@
+concept_max_power 
+<-concept_game_mechanics;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Перемотка] (* <- lang_ru;;*);
+	[Rewind] (* <-lang_en;;*);
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+        computer_game_life_is_strange;
+        concept_gameplay
+    };;
+	=> nrel_main_idtf: [Опр.(Перемотка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Перемотка – один из основных элементов геймплея игры <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>. Она позволяет игроку отматывать время назад, чтобы отменять ранее совершённые действия и влиять на будущие события.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1(Перемотка)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+         -> 
+         [Перемотка выделяет общую тему причин и последствий, а также затрагивает тему Эффекта бабочки, когда незначительное влияние в системе приводит к большим и непредсказуемым последствиям в другом месте или в другое время.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.2(Шкала времени)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+         -> 
+         [Шкала времени изображается в виде вихря или циклона в верхнем левом углу экрана, когда Макс перематывает время. Точками на шкале отмечены произошедшие ключевые события, такие как разговоры или взаимодействия с объектами. Игрок может видеть, когда он принимал какое-либо решение и, перемотав на тот момент, поступить иначе. Время перемотки ограничено пределами текущей игровой сцены. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/time.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

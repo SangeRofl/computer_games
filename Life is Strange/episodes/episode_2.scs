@@ -1,0 +1,72 @@
+episode_2
+    =>nrel_main_idtf: 
+			[Эпизод 2: Вразнобой](*<-lang_ru;;*);
+			[Episode 2: Out of Time ](*<-lang_en;;*);
+	=>nrel_idtf:
+        [Эпизод 2](*<-lang_ru;;*);
+        [Episode 2](*<-lang_en;;*);
+    
+
+    <-rrel_2 : concept_episode;
+
+<- rrel_key_sc_element: ... 
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/episode_2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 	[Иллюстрация эпизода]   (*<-lang_ru;;*);;
+	*);;
+*);
+=> concept_character:
+    {
+        max_caulfield;
+        kate_marsh;
+        victoria_chase;
+        nathan_prescott;
+        chloe_price;
+        david_madsen;
+        mark_jefferson;
+        raymond_wells;
+        warren_graham;
+        michelle_grant;
+        juliet_watson;
+        dana_ward;
+        taylor_christensen;
+        logan_robertson;
+        stella_hill;
+        brooke_scott;
+        luke_parker;
+        hayden_jones;
+        justin_williams;
+        trevor_yard;
+        alyssa_anderson;
+        courtney_wagner;
+        evan_harris;
+        daniel_dacosta;
+        zachary_riggins;
+        samuel_taylor;
+        berry_anderson; 
+        rachel_amber;
+
+        nrel_mentioned: auntie_marsh; 
+        nrel_mentioned: richard_marsh;
+        nrel_mentioned: lynn_marsh; 
+        nrel_mentioned: bernadette_hoida
+    };
+=>concept_location:
+    {
+        blackwell_academy;
+        dormitories;
+        diner;
+        railroad;
+        junkyard
+
+    };
+=> concept_death: 
+        ...(* <-chloe_price;;*);
+        ...(* <-kate_marsh;; *);;

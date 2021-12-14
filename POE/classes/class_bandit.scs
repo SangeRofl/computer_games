@@ -10,6 +10,10 @@ concept_class_bandit
 =>nrel_based_characteristic: concept_mana_52;
 
 
+=>concept_class_killer;
+=>concept_class_rogue;
+=>concept_class_saboteur;
+
 
 <- rrel_key_sc_element: ...
 (*

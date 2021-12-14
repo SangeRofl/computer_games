@@ -1,0 +1,89 @@
+episode_4
+    =>nrel_main_idtf: 
+			[Эпизод 5: Раскол](*<-lang_ru;;*);
+			[Episode 5: Polarized](*<-lang_en;;*);
+	=>nrel_idtf:
+        [Эпизод 5](*<-lang_ru;;*);
+        [Episode 5](*<-lang_en;;*);
+    
+    
+    <-rrel_5 : concept_episode;
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/episode_5.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 	[Иллюстрация эпизода]   (*<-lang_ru;;*);;
+	*);;
+*);
+=> concept_character:
+    {
+        max_caulfield;      
+        kate_marsh;
+        victoria_chase;
+        nathan_prescott;
+        chloe_price;
+        david_madsen;
+        mark_jefferson;
+        raymond_wells;
+        warren_graham;
+        juliet_watson;
+        dana_ward;
+        taylor_christensen;
+        brooke_scott;
+        hayden_jones;
+        alyssa_anderson;
+        courtney_wagner;
+        evan_harris;
+        daniel_dacosta;
+        zachary_riggins; 
+        joyce_price;
+        william_price;
+        frank_bowers;
+        stella_hill;
+        raymond_wells;
+        justin_williams;
+        logan_robertson;
+        samuel_taylor;
+        trevor_yard;
+        berry_anderson;
+        
+
+        nrel_mentioned: daniel_lee
+    };
+=>concept_location:
+    {
+        parking_lot;
+        dark_room;
+        dormitories;
+        diner;
+        nightmare;
+        cliff;
+        beach;
+        plane;
+        art_gallary
+
+    };
+
+=>concept_death:
+ 
+        ...(* <=nrel_determinant: nathan_prescott;;*);
+        ...(* <=nrel_determinant: mark_jefferson;;*);
+        ...(* <=nrel_determinant: trucker;;*);
+        ...(* <=nrel_determinant: evan_harris;;*);
+        ...(* <=nrel_determinant: alyssa_anderson;;*);
+        ...(* <=nrel_determinant: rj_macready;;*);
+        ...(* <=nrel_determinant: chloe_price;;*);
+
+        ...(* <=nrel_prerewind: victoria_chase;;*);
+        ...(* <=nrel_prerewind: david_madsen;;*);
+        ...(* <=nrel_prerewind: warren_graham;;*);
+        ...(* <=nrel_prerewind: frank_bowers;;*);
+        ...(* <=nrel_prerewind: joyce_price;;*);
+
+        ...(* <-berry_anderson;;*);;

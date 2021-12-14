@@ -1,0 +1,58 @@
+frank_bowers   
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Фрэнк Бауэрс] (* <- lang_ru;;*);
+	[Frank Bowers ] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Фрэнк](* <- lang_ru;;*);
+    [Frank] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		frank_bowers;
+		arcadia_bay;
+		rachel_amber;
+		chloe_price
+		};;
+	=> nrel_main_idtf: [Опр.(Фрэнк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Фрэнк Бауэрс — известный наркодилер в <b><sc_element sys_idtf="arcadia_bay">Аркадии Бэй</b></sc_element>. Друг <b><sc_element sys_idtf="rachel_amber">Рэйчел Эмбер</b></sc_element> и <b><sc_element sys_idtf="chloe_price">Хлои Прайс</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Фрэнк)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: { 
+		frank_bowers;
+		pompidou
+		};;
+
+     <= nrel_sc_text_translation: ... (*
+         -> 
+         [Спас несколько собак, в том числе и своего нынешнего питомца — <b><sc_element sys_idtf="pompidou">Помпиду</b></sc_element>. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/frank.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

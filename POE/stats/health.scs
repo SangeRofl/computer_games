@@ -1,0 +1,61 @@
+concept_health_points
+=> nrel_main_idtf: [health points (Path of Exile)] (* <- lang_en;; *);
+=> nrel_main_idtf: [очки здоровья (Path of Exile)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(очки здоровья)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Очки здоровья - это источник здоровья персонажа или монстра.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Отображение здоровья в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Здоровье отображено в красной сфере в левом нижем углу экрана и уменьшается, когда вам наносят урон.] (* <- lang_ru;; *);;
+	*);;
+     <=nrel_using_constants: {
+        concept_attribute
+    };;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Начальное количество очков здоровья)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждый класс начинает с 50 очками здоровья и получает +12 очков за каждый уровень.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв3.(Восстановление очков здоровья в Path of Exile )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Восстанавливать здоровье можно используя флаконы, набирая регенерацию здоровья за счет пассивных умений и экипировки, или похищения жизни у врагов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (очки здоровья)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/stats/health.jpg"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

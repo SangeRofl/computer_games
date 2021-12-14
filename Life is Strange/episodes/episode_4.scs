@@ -1,0 +1,84 @@
+episode_4
+    =>nrel_main_idtf: 
+			[Эпизод 4: Проявочная](*<-lang_ru;;*);
+			[Episode 4: Dark Room](*<-lang_en;;*);
+	=>nrel_idtf:
+        [Эпизод 4](*<-lang_ru;;*);
+        [Episode 4](*<-lang_en;;*);
+    
+    
+    <-rrel_4 : concept_episode;
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/episode_4.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 	[Иллюстрация эпизода]   (*<-lang_ru;;*);;
+	*);;
+*);
+=> concept_character:
+    {
+        max_caulfield;
+        kate_marsh;
+        victoria_chase;
+        nathan_prescott;
+        chloe_price;
+        david_madsen;
+        mark_jefferson;
+        raymond_wells;
+        warren_graham;
+        juliet_watson;
+        dana_ward;
+        taylor_christensen;
+        brooke_scott;
+        hayden_jones;
+        alyssa_anderson;
+        courtney_wagner;
+        evan_harris;
+        daniel_dacosta;
+        zachary_riggins; 
+        joyce_price;
+        william_price;
+        frank_bowers;
+        raymond_wells;
+        justin_williams;
+        logan_robertson;
+        samuel_taylor;
+        michelle_grant;
+        stella_hill;
+        luke_parker;
+        trevor_yard;
+        rachel_amber;
+        sarah;
+        
+        nrel_mentioned: mrs_prescott;
+        nrel_mentioned: alice_rabbit;
+        nrel_mentioned: sean_prescott;
+        nrel_mentioned: kristine_prescott;
+        nrel_mentioned: harry_aaron_prescott; 
+        nrel_mentioned: martin_lewis_prescott ;
+        nrel_mentioned: dr._jacoby;
+        nrel_mentioned: megan_weaver;
+        nrel_mentioned: aaron_Price;
+        nrel_mentioned: dorothy;
+        nrel_mentioned: ryan_caulfield;
+        nrel_mentioned: vanessa_caulfield;
+        nrel_mentioned: dr_bill;
+        nrel_mentioned: hawt_dawg_man
+    };
+=>concept_location:
+    {
+        main_campus;
+        high_school;
+        dormitories;
+        hospital;
+        beach;
+        swimming_pool;
+        junkyard;
+        old_barn
+    };;

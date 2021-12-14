@@ -1,0 +1,33 @@
+alternative_timeline
+    <-concept_timeline;
+    =>nrel_main_idtf:
+        [Альтернативная ветвь времени](*<-lang_ru;;*);
+        [Alternative Timeline](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+    arcadia_bay;
+    computer_game_life_is_strange
+  };;
+	=> nrel_main_idtf: [Опр.(Альтернативная ветвь времени)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Это хронология всех событий в альтернативной реальности  <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*); 
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Начало хронологии)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+        max_caulfield
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта хронология берёт начало в 2008 году, когда <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element> сквозь фотографию перемещается сквозь реальности и предотвращает смерть Уильяма. ] 
+        (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);;

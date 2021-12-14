@@ -1,0 +1,39 @@
+concept_class_killer
+=> nrel_main_idtf: [Class Killer] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Убийца] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Убийца)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Убийца - ориентированн на нападение с использованием критических ударов. Класс предлагает навыки, которые увеличивают их заряд энергии и прибавляют к эффективности и полезности критического удара при определенных условиях. Класс имеет доступ к навыкам усиления яда, позволяя им использовать синергетический эффект критических ударов на более высоких уровнях, а также к бонусам, повышающим их скорость, таким как бафф Неуловимость.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Убийца)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса убийца наносить множественные критические удары противнику.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Убийца)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_killer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

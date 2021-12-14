@@ -1,0 +1,74 @@
+computer_game_life_is_strange
+	=>nrel_main_idtf: 
+			[Life is Strange](*<-lang_en;; <-lang_ru;;*);
+	=>nrel_idtf:
+			[LiS](*<-lang_en;; <-lang_ru;;*);
+
+	<- sc_node_not_relation;
+	<-concept_computer_game;
+	<-concept_multiplatform_game;
+	<-concept_full_motion_video; 
+	<-nrel_game_genre: concept_graphic_adventure_game;
+	<-concept_setting_real_world;
+
+	=>nrel_game_mode: concept_singleplayer_game;
+	=>nrel_game_camera: concept_third_person_view;
+	=>nrel_publisher: concept_square_enix;
+	=>nrel_developer: dontnod_entertainment;
+
+	=>nrel_platform: concept_microsoft_windows;
+	=>nrel_platform: concept_apple_mac;
+	=>nrel_platform: xbox_360;
+	=>nrel_platform: playstation_3;
+	=>nrel_platform: playstation_4;
+	=>nrel_platform: xbox_one;
+	=>nrel_platform: concept_android; 
+
+<- rrel_key_sc_element: ... 
+(*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (LiS)] (* <- lang_ru;; *);
+	  [Def.(LiS)](*<-lang_en;;*);;
+	<= nrel_using_constants: 
+	 	{
+		  concept_game_company;
+          concept_game_genre;
+		  concept_platform;
+          concept_singleplayer_game
+    	};;
+    <= nrel_sc_text_translation: ... (*
+	  		-> [Life Is Strange (с англ. — «Жизнь — странная штука») — эпизодическая компьютерная игра с элементами приключения в жанре <b><sc_element sys_idtf="concept_full_motion_video">интерактивного кино</b></sc_element>, разработанная французской компанией Dontnod Entertainment и изданная Square Enix ]
+	  		(*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/life_is_strange.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 	[Иллюстрация обложки]   (*<-lang_ru;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+	=> nrel_using_constants: 
+	 	{
+	 	dontnod_entertainment;
+	 	concept_game
+	 };;
+    => nrel_main_idtf:
+      [Утв. (Lis)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+		[Разработчики описывают игру как ностальгическую поэтапную историю, в которой переплетаются прошлое с настоящим, что способствует созданию ключевых моментов в каждом эпизоде.]
+		(*<-lang_ru;;*);;
+      *);;
+  *);;
+
+

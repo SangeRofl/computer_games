@@ -1,0 +1,51 @@
+nathan_prescott  
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Нейтан Джошуа Прескотт ] (* <- lang_ru;;*);
+	[Nathan Joshua Prescott] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Нейт](* <- lang_ru;;*);
+    [Nate] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		nathan_prescott;
+		blackwell_academy
+		};;
+	=> nrel_main_idtf: [Опр.(Нейтан)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Нейтан Джошуа Прескотт — студент <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. Один из главныхантагонистов в игре.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Нейтан)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+         ->rrel_example: 
+         [Нейтан психически нестабилен, он много лет находился в психиатрической больнице и принимал различные препараты. ]
+         (*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/nathan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

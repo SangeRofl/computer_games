@@ -1,0 +1,32 @@
+dormitories
+=> nrel_main_idtf: 
+    [Общежитие Прескоттов ] (* <- lang_en;; *);
+    [Dormitories] (* <- lang_ru;; *);
+    
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Общежитие Прескоттов )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [ Общежитие Прескоттов — общежитие <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. Является собственностью семьи <b><sc_element sys_idtf="nathan_prescott">Нейтана Прескотта</b></sc_element>, которая оказала серьёзную финансовую поддержку академии в 1998 году. ] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+	 blackwell_academy;
+     nathan_prescott;
+     dormitories
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/dormitories.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

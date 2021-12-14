@@ -1,0 +1,73 @@
+vortex_club
+    <-concept_club;
+    =>nrel_main_idtf:
+        [Клуб «Циклон»](*<-lang_ru;;*);
+        [Vortex Club](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: {
+     vortex_club;
+     blackwell_academy
+  };;
+	=> nrel_main_idtf: [Опр.(Клуб «Циклон»)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> ["Циклон" один из самых больших клубов в <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);  
+  
+-> rrel_members: victoria_chase;
+-> rrel_members: dana_ward;
+-> rrel_members: juliet_watson;
+-> rrel_members: zachary_riggins;
+-> rrel_members: nathan_prescott;
+-> rrel_members: courtney_wagner;
+-> rrel_members: sarah;
+-> rrel_members: logan_robertson;
+-> rrel_members: taylor_christensen;
+-> rrel_members: hayden_jone;
+-> rrel_members: zachary_riggins;
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1 (Симовл клуба «Циклон»)] (* <- lang_ru;; *);;
+        <= nrel_using_constants: {
+          max_power;
+          max_caulfield
+        };;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->rrel_example: 
+         [Символ клуба схож с индикатором перемотки времени, который расположен в левом верхнем углу, когда <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element> использует свою <b><sc_element sys_idtf="max_power">силу</b></sc_element>.]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.2 (Финансиравние клуба «Циклон»)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         -> 
+         [Финансирование "Циклона" осуществляется отцом <b><sc_element sys_idtf="nathan_prescott">Нейтана</b></sc_element>, Шоном Прескоттом. ]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/vortex.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

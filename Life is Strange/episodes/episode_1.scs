@@ -1,0 +1,75 @@
+episode_1
+    =>nrel_main_idtf: 
+		[Эпизод 1: Хризалида](*<-lang_ru;;*);
+		[Episode 1: Chrysalis](*<-lang_en;;*);
+	=>nrel_idtf:
+        [Эпизод 1](*<-lang_ru;;*);
+        [Episode 1](*<-lang_en;;*);
+    
+
+    <-rrel_1 : concept_episode;
+
+<- rrel_key_sc_element: ... 
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/episode_1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 	[Иллюстрация эпизода]   (*<-lang_ru;;*);;
+	*);;
+*);
+=> concept_character:{
+        max_caulfield;
+        kate_marsh;
+        victoria_chase;
+        nathan_prescott;
+        chloe_price;
+        david_madsen;
+        mark_jefferson;
+        raymond_wells;
+        warren_graham;
+        michelle_grant;
+        juliet_watson;
+        dana_ward;
+        taylor_christensen;
+        logan_robertson;
+        stella_hill;
+        brooke_scott;
+        luke_parker;
+        hayden_jones;
+        justin_williams;
+        trevor_yard;
+        alyssa_anderson;
+        courtney_wagner;
+        evan_harris;
+        daniel_dacosta;
+        zachary_riggins;
+        samuel_taylor;
+        
+        nrel_mentioned:rachel_amber;
+        nrel_mentioned:william_price;
+        nrel_mentioned:joyce_price;
+        nrel_mentioned:ryan_caulfield;
+        nrel_mentioned:vanessa_caulfield;
+        nrel_mentioned:kristen;
+        nrel_mentioned:fernando;
+        nrel_mentioned:bongo
+
+};
+   
+=>concept_location:
+  {
+        nightmare;
+        blackwell_academy;
+        dormitories;
+        chloe_house;
+        cliff
+  }; 
+
+=> concept_death:
+         ...(* <-chloe_price;;*);
+         ...(* <-concept_bird;;*);;

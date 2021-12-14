@@ -1,0 +1,39 @@
+concept_class_rogue
+=> nrel_main_idtf: [Class Rogue] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Плут] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Плут)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Плут — универсальный гибридный класс, который сочетает высокую скорость, маневренность и некоторую защиту. Он хорошо подходит для Бандита, который наносит постепенный урон, в том числе от яда. Класс также получает дополнительные уровни защиты от их уклонения и энергетического щита с помощью пассивного умения Мастер побега. Также они получают заряды Энергии и Ярости, благодаря пассивному умению Быстрый убийца и много бонусов маны от Плетения тайны.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Плут)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса плут наносить множественные критические удары противнику.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Плут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_rogue.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

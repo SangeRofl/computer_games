@@ -1,0 +1,46 @@
+michelle_grant
+<-concept_character;
+=> nrel_main_idtf: 
+    [Профессор Мишель Грант] (* <- lang_ru;; *);
+    [Professor Michelle Grant] (* <- lang_en;; *);
+    
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Мишель Грант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Профессор Мишель Грант - преподаватель <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element> по математическим и естественно-научным предметам. ] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+	    michelle_grant;
+        blackwell_academy
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Мишель Грант)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+	 max_caulfield
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Когда Мишель просит <b><sc_element sys_idtf="max_caulfield"> Макс</b></sc_element> подписать петицию, учитель говорит, что это нужно, чтобы не случилось как в романе 1984.] 
+        (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/grant.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

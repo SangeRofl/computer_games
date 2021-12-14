@@ -1,0 +1,44 @@
+pompidou
+=> nrel_main_idtf: 
+    [Помпиду] (* <- lang_ru;; *);
+    [Pompidou] (* <- lang_en;; *);
+    
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Помпиду)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Помпиду — пес <b><sc_element sys_idtf="frank_bowers">Фрэнка Бауэрса</b></sc_element>. Он очень привязан к своему хозяину и готов защитить его ценой собственной жизни. ] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+		pompidou;
+		frank_bowers
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- concept_easter_egg;;
+
+	=> nrel_main_idtf: [Пасхалка] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+	 max_caulfield
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На парковке Блэквелл <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element> видит спящего Помпиду и называет его Куджо. Куджо - это бешеная собака и центральный персонаж в одноименном романе Стивена Кинга.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/pompidou.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,56 @@
+joyce_price   
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Джойс Мэдсен] (* <- lang_ru;;*);
+	[Joyce Madsen ] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Джойс](* <- lang_ru;;*);
+    [Joyce] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		joyce_price;
+		chloe_price;
+		arcadia_bay
+	};;
+	=> nrel_main_idtf: [Опр.(Джойс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Джойс Мэдсен — мать <b><sc_element sys_idtf="chloe_price">Хлои Прайс</b></sc_element> и давний житель <b><sc_element sys_idtf="arcadia_bay">Аркадия Бэй</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Джойс)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+		diner
+	};;
+	
+     <= nrel_sc_text_translation: ... (*
+         ->
+         [Джойс работает в местной забегаловке под названием <b><sc_element sys_idtf="diner">«Два Кита»</b></sc_element>. Она отличный повар и любящая мать.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/joyce.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

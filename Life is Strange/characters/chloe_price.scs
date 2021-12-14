@@ -1,0 +1,53 @@
+chloe_price   
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Хлоя Элизабет Прайс] (* <- lang_ru;;*);
+	[Chloe Elizabeth Price] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Хлоя](* <- lang_ru;;*);
+    [Chloe] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		chloe_price;
+		computer_game_life_is_strange
+	};;
+	=> nrel_main_idtf: [Опр.(Хлоя)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Хлоя Элизабет Прайс  — вторая по значимости героиня игры <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Хлоя)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: { max_power };;
+
+     <= nrel_sc_text_translation: ... (*
+         -> 
+         [Смерть Хлои могла стать активатором <b><sc_element sys_idtf="max_power">сил Макс</b></sc_element>. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/chloe.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

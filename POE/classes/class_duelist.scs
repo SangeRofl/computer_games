@@ -10,6 +10,11 @@ concept_class_duelist
 =>nrel_based_characteristic: concept_mana_47;
 
 
+=>concept_class_grunt;
+=>concept_class_gladiator;
+=>concept_class_champion;
+
+
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;

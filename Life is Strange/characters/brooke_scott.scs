@@ -1,0 +1,52 @@
+brooke_scott 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Брук Скотт] (* <- lang_ru;;*);
+	[Brooke Scott] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Брук](* <- lang_ru;;*);
+    [Brooke] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		brooke_scott;
+		blackwell_academy
+	} ;;
+	=> nrel_main_idtf: [Опр.(Брук)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Брук Скотт — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Брук)] (* <- lang_ru;; *);;
+		
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [Подобно<b><sc_element sys_idtf="alyssa_anderson"> Алиссе </b></sc_element>, Брук держится замкнуто, но, похоже, ценит компанию тех, кого считает достаточно умными. Студентка естественных наук и математики.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/brooke.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

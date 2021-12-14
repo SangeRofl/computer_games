@@ -1,0 +1,57 @@
+blackwell_academy
+    <-concept_location;
+    =>nrel_main_idtf:
+        [Академия Блэквелл](*<-lang_ru;;*);
+        [Blackwell Academy](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+    arcadia_bay;
+    computer_game_life_is_strange
+  };;
+	=> nrel_main_idtf: [Опр.(Академия Блэквелл)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Академия Блэквелл – частная школа, расположенная в<b><sc_element sys_idtf="arcadia_bay"> Аркадии Бэй</b></sc_element>, штате Орегон.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);  
+  
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1(Специализация "Академия Блэквелл")] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [Школа специализируется на изучении науки и искусств.]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.2(Основание "Академия Блэквелл")] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [В 1910 году Иеремия Блэквелл основал академию, стремясь выделить лучших учащихся и обучить их по лучшим стандартам. Его статуя находится перед входом в академию; на постаменте выгравирована надпись: "Будущему требуется совершенство". ]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/blackwell_academy.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

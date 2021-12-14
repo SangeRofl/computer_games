@@ -1,0 +1,33 @@
+blackwell_totem
+    <-concept_club;
+    =>nrel_main_idtf:
+        [Тотем Блэквелла](*<-lang_ru;;*);
+        [The Blackwell Totem](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: {
+     blackwell_totem;
+     blackwell_academy
+  };;
+	=> nrel_main_idtf: [Опр.(Клуб «Тотем Блэквелла»)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Тотем Блэквелла — студентичкая газета <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);  
+  
+-> rrel_members: juliet_watson;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/newspaper.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
