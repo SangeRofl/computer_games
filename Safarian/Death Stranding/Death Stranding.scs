@@ -1,0 +1,74 @@
+computer_game_death_stranding
+
+=> nrel_main_idtf: [Выход смерти] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Death Stranding] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_apocalyptic_world;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_kojima_productions;
+=> nrel_publisher: company_sony_computer_entertainment;
+=> nrel_publisher: company_505;
+
+=> nrel_platform: concept_playstation_4; playstation_5; windows;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: decima;
+
+=> nrel_publication_date: date_08_11_2019;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Death Stranding)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра в жанре action с открытым миром, 
+			разработанная студией Kojima Productions при поддержке Guerrilla Games и 
+			изданная Sony Interactive Entertainment для PlayStation 4 в 2019 году; 
+			в 2020 году компания 505 Games выпустила версию игры для Microsoft Windows. 
+			Это первая игра Хидэо Кодзимы и Kojima Productions после разрыва с Konami в 2015 году. 
+			В работе над игрой приняли участие актёры Норман Ридус, Мадс Миккельсен, Леа Сейду, 
+			Маргарет Куэлли, Томми Дженкинс, Линдси Вагнер и Трой Бейкер; 
+			в игре также появляются персонажи, моделями для внешности которых послужили 
+			кинорежиссёры Гильермо дель Торо и Николас Виндинг Рефн.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_sony_computer_entertainment;;
+                -> company_kojima_productions;;
+                -> computer_game_death_stranding;;
+                -> concept_game_series_death_stranding;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

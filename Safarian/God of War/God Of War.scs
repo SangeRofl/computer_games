@@ -1,0 +1,71 @@
+kcomputer_game_god_of_war_2
+
+=> nrel_main_idtf: [Бог Войны 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [God of War 2] (* <- lang_en;; *);
+
+
+<- concept_hack_and_slash;
+<- concept_setting_greek_mythology;
+<- concept_singleplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_playstation_exclusive;
+
+=> nrel_developer: company_santa_monica_studio;
+=> nrel_publisher: company_sony_computer_entertainment;
+
+=> nrel_platform: concept_playstation_2; concept_playstation_3; concept_playstation_vita;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: kinetica;
+
+=> nrel_publication_date: date_13_03_2007;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(God of War 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ видеоигра в жанре hack and slash, разработанная компанией SIE Santa Monica Studio. 
+			Вторая часть в серии игр God of War и шестая часть в хронологическом порядке. 
+			Была выпущена весной 2007 года для консоли PlayStation 2 (далее PS2). 
+			Игра основана на греческой мифологии и, вследствие этого, действие игры проходит в Древней Греции. 
+			Игрок управляет главным героем Кратосом, новым богом войны, который убил первого бога, Ареса. 
+			Зевс, король богов-олимпийцев, предаёт Кратоса, лишает его божественности и убивает его. Однако из Подземного мира Кратоса спасает Гея, 
+			которая просит его найти Сестёр Судьбы, поскольку они могут позволить ему путешествовать во времени, 
+			предотвратить его убийство и отомстить Зевсу.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_playstation_exclusive;;
+                -> concept_hack_and_slash;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_sony_computer_entertainment;;
+                -> company_santa_monica_studio;;
+                -> computer_game_god_of_war_2;;
+                -> concept_game_series_god_of_war;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;
