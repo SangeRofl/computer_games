@@ -55,20 +55,20 @@ computer_game_life_is_strange
 	 	[Иллюстрация обложки]   (*<-lang_ru;;*);;
 	*);;
 *);
-<- rrel_key_sc_element: ... (*
+<- rrel_key_sc_element: ... 
+(*
     <- explanation;;
-	=> nrel_using_constants: 
-	 	{
+	=> nrel_using_constants: {
 	 	dontnod_entertainment;
 	 	concept_game
 	 };;
     => nrel_main_idtf:
       [Утв. (Lis)] (* <- lang_ru;; *);;
-    <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-		[Разработчики описывают игру как ностальгическую поэтапную историю, в которой переплетаются прошлое с настоящим, что способствует созданию ключевых моментов в каждом эпизоде.]
+    <= nrel_sc_text_translation: ... 
+	(*
+      -> [Разработчики описывают игру как ностальгическую поэтапную историю, в которой переплетаются прошлое с настоящим, что способствует созданию ключевых моментов в каждом эпизоде.]
 		(*<-lang_ru;;*);;
-      *);;
-  *);;
+    *);;
+*);;
 
 
