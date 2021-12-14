@@ -1,0 +1,52 @@
+daniel_dacosta
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Дэниел ДаКоста ] (* <- lang_ru;;*);
+	[Daniel DaCosta] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Дэниел](* <- lang_ru;;*);
+    [Daniel] (* <-lang_en;;*);
+    
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		daniel_dacosta;
+		blackwell_academy;
+		max_caulfield;
+		main_campus
+	 } ;;
+	=> nrel_main_idtf: [Опр.(Дэниел)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Дэниел ДаКоста — студент <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.Он учится в одном классе с<b><sc_element sys_idtf="max_caulfield"> Макс</b></sc_element>и любит зависать рядом с <b><sc_element sys_idtf="main_campus">кампусом академии</b></sc_element>. ] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Дэниел)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         -> 
+         [Дэниела часто можно заметить за рисованием.]
+         (*<-lang_ru;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/daniel.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

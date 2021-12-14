@@ -1,0 +1,56 @@
+zachary_riggins
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Закари Риггинс] (* <- lang_ru;;*);
+	[Zachary Riggins] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Зак](* <- lang_ru;;*);
+    [Zach] (* <-lang_en;;*);
+    [Zak] (* <-lang_en;;*);
+    
+    
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		zachary_riggins;
+		blackwell_academy;
+		bigfoot;
+		vortex_club
+		} ;;
+	=> nrel_main_idtf: [Опр.(Зак)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Закари Риггинс — студент <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. Он достаточно популярный защитник у <b><sc_element sys_idtf="bigfoot">Бигфутов</b></sc_element> и член <b><sc_element sys_idtf="vortex_club"> клуба "Циклон"</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Зак)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->rrel_example: 
+         [Его фамилия, скорее всего, является отсылкой на телевизионное шоу "Огни ночной пятницы". Шоу повествовало о школьной футбольной команде, и актёр озвучки Зака Дерек Филлипс играл в шоу второстепенную роль в качестве персонажа Билли Риггинса.]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/zachary.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

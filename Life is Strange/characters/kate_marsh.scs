@@ -1,0 +1,54 @@
+kate_marsh 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Кейт Беверли Марш] (* <- lang_ru;;*);
+	[Kate Beverly Marsh] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Кейт](* <- lang_ru;;*);
+    [Kate] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		kate_marsh;
+		blackwell_academy
+	 } ;;
+	=> nrel_main_idtf: [Опр.(Кейт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Кейт Беверли Марш — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>, набожная христианка.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Кейт)] (* <- lang_ru;; *);;
+		<= nrel_using_constants: {
+			max_caulfield
+		};;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [Она подружилась с<b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element> в первый месяц своего обучения в академии, и они регулярно встречались для чаепития. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/kate.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

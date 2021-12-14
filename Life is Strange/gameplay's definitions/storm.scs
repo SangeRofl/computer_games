@@ -1,0 +1,43 @@
+storm
+=>nrel_main_idtf: 
+    		[Шторм](*<-lang_ru;;*);
+    		[Storm](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Шторм)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Шторм — это торнадо, надвигающиеся <b><sc_element sys_idtf="arcadia_bay"> на Аркадию Бэй</b></sc_element>.] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+	 arcadia_bay
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Первое появление)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+	nightmare
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Впервые его можно увидеть в первой сцене игры в <b><sc_element sys_idtf="nightmare">видении Макс Колфилд </b></sc_element>, которое на протяжении всей игры будет не раз повторяться.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/storm.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

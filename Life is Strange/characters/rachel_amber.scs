@@ -1,0 +1,53 @@
+rachel_amber 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Рэйчел Доун Эмбер] (* <- lang_ru;;*);
+	[Rachel Dawn Amber] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Рэйч](* <- lang_ru;;*);
+    [Львица](* <- lang_ru;;*);
+    [Rach] (* <-lang_en;;*);
+    [Lioness] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		rachel_amber
+		 };;
+	=> nrel_main_idtf: [Опр.(Рэйч)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Рэйчел Доун Эмбер — одна из главных героинь в игре <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Рэйч)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... 
+       (*
+         ->rrel_example: 
+         [Рэйчел представляла <b><sc_element sys_idtf="blackwell_academy">Академию Блэквелл</b></sc_element> и была успешной и популярной среди студентов и преподавателей. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rachel.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

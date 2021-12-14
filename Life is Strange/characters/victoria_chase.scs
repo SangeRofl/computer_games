@@ -1,0 +1,56 @@
+victoria_chase 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Виктория Мэрибет Чейз] (* <- lang_ru;;*);
+	[Victoria Maribeth Chase] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Виктория](* <- lang_ru;;*);
+    [Victoria] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		victoria_chase;
+		blackwell_academy
+		 };;
+	=> nrel_main_idtf: [Опр.(Виктория)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Виктория Мэрибет Чейз — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. Второстепенный антагонист в игре.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Виктория)] (* <- lang_ru;; *);;
+		<= nrel_using_constants: { 
+			rachel_amber;
+			vortex_club
+			};;
+     <= nrel_sc_text_translation: ... 
+       (*
+         ->rrel_example: 
+         [Виктория уважала <b><sc_element sys_idtf="rachel_amber">Рэйчел Эмбер</b></sc_element>, даже если никогда этого не показывала. Рэйчел тусовалась с Викторией и другими членами<b><sc_element sys_idtf="vortex_club"> клуба "Циклон"</b></sc_element>.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/victoria.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,84 @@
+max_caulfield   
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Максин Колфилд] (* <- lang_ru;;*);
+	[Maxine Caulfield] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Макс](* <- lang_ru;;*);
+    [Max] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		max_caulfield;
+		computer_game_life_is_strange
+		};;
+	=> nrel_main_idtf: [Опр.(Макс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Максин Колфилд  — главная играбельная героиня игры <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1 (Макс)] (* <- lang_ru;; *);;
+		<= nrel_using_constants: {
+			max_caulfield;
+			blackwell_academy;
+			max_power
+		};;
+     <= nrel_sc_text_translation: ... (*
+         ->rrel_example: 
+         [Во время своего обучения в <b><sc_element sys_idtf="blackwell_academy">академии Блэквелла</b></sc_element> Макс открывает в себе<b><sc_element sys_idtf="max_power">сверх-способности</b></sc_element>.]
+		 (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.2 (Макс)] (* <- lang_ru;; *);;
+		<= nrel_using_constants: {
+			episode_2;
+			chloe_price
+		};;
+     <= nrel_sc_text_translation: ... (*
+         ->rrel_example: 
+         [Подразумевается, что Макс ирландского происхождения; отсюда и её фамилия ирландского происхождения. Имя её отца Райана очень распространено в Ирландии. <b><sc_element sys_idtf="chloe_price">Хлоя</b></sc_element> также упоминает «ирландскую удачу» во <b><sc_element sys_idtf="episode_2">втором эпизоде</b></sc_element>. И наконец веснушки и бледная кожа — неизменные ирландские атрибуты внешности.]
+		 (*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.3 (Макс)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+         ->rrel_example: 
+         [Когда Макс было тринадцать лет, она вместе со своими родителями переехала в Сиэтл, оставив её лучшую подругу и старую жизнь позади.]
+		 (*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/max.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

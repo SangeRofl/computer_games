@@ -1,0 +1,32 @@
+tobanga_totem 
+=> nrel_main_idtf: 
+    [Tobanga Totem ] (* <- lang_en;; *);
+    [Тотем Тобанга] (* <- lang_ru;; *);
+    
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тотем Тобанга)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Тотем Тобанга — таинственный тотем коренных американцев, расположенный на территории<b><sc_element sys_idtf="dormitories"> общежития Прескоттов</b></sc_element> в <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. ] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+	blackwell_academy;
+    dormitories;
+    tobanga_totem
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/tobanga.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

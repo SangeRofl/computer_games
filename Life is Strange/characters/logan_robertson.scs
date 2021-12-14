@@ -1,0 +1,57 @@
+logan_robertson
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Логан Робертсон] (* <- lang_ru;;*);
+	[Logan Robertson ] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Логан](* <- lang_ru;;*);
+    [Лабрадор](* <- lang_ru;;*);
+    [Logan] (* <-lang_en;;*);
+    [Labrador] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+    logan_robertson;
+    blackwell_academy;
+    vortex_club 
+    } ;;
+	=> nrel_main_idtf: [Опр.(Логан)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Логан Робертсон — студент <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>,член <b><sc_element sys_idtf="vortex_club">клуба «Циклон»</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Логан)] (* <- lang_ru;; *);;
+	  <= nrel_using_constants: { 
+          bigfoot
+      };;
+     <= nrel_sc_text_translation: ...
+       (*
+         -> 
+         [Состоит в футбольной команде <b><sc_element sys_idtf="bigfoot">блэквеллских Бигфутов</b></sc_element>. ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/logan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

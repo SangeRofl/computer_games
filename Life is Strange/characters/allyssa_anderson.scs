@@ -1,0 +1,57 @@
+alyssa_anderson
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Алисса Андерсон] (* <- lang_ru;;*);
+	[Alyssa Anderson] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Алисса](* <- lang_ru;;*);
+    [Alyssa] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		alyssa_anderson;
+		blackwell_academy
+
+	};;
+	=> nrel_main_idtf: [Опр.(Алисса)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Алисса Андерсон — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Алисса,Макс)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: { 
+		max_caulfield;
+		concept_episode
+	};;
+     <= nrel_sc_text_translation: ... 
+       (*
+         ->
+         [В каждом эпизоде <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element> может спасти Алиссу от несчастий, вызванных другими людьми.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/alyssa.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
