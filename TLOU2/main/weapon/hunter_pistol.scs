@@ -1,0 +1,223 @@
+sc_node_not_relation->concept_hunter_pistol;;
+
+sc_node_not_relation->percentage_increase_in_characteristics;;
+
+sc_node_not_relation->number;;
+
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->metal_parts;;
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->ammo_for_hunter_pistol;;
+
+ammo_for_hunter_pistol=>nrel_main_idtf:
+	   [патроны для охотничего пистолета]
+	   (*<-lang_ru;;*);
+	   [ammo for hunter pistol]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->reload;;
+
+sc_node_not_relation->new_barrel;;
+
+sc_node_not_relation->barrel;;
+
+sc_node_not_relation->damage;;
+
+sc_node_not_relation->grip;;
+
+sc_node_not_relation->new_grip;;
+
+new_grip=>nrel_main_idtf:
+		[новая рукоятка]
+	   (*<-lang_ru;;*);
+	   [new grip]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->sway;;
+
+sway=>nrel_main_idtf:
+		[раскачка]
+	   (*<-lang_ru;;*);
+	   [sway]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->scope;;
+
+sc_node_not_relation->4x_scope;;
+
+sc_node_norole_relation->nrel_ammunition_type;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_change_in_appearance;; 
+
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+sc_node_norole_relation->nrel_upgrade_cost;;
+
+sc_node_norole_relation->nrel_increase;;
+
+
+concept_hunter_pistol
+
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-ammo_fot_hunter_pistol;;
+		*);;
+ <-crafting(*
+ <-ordinary;;
+		*);;
+ *);;
+*);
+
+
+=>nrel_main_idtf:
+	   [Охотничий пистолет]
+	   (*<-lang_ru;;*);
+	   [Hunter pistol]
+	   (*<-lang_en;;*);
+	   
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		hunter_pistol
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Эбби находит </b></sc_element> <b><sc_element sys_idtf= "hunter_pistol"> охотничий пистолет </b></sc_element> в сейфе, который распологался в доме с трещиной </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+
+=>nrel_upgrade: barrel(*
+	=>nrel_increase: damage(*
+		<- 25(*                                  
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;
+	=>nrel_upgrade_cost: 80 (*                  
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance: new_barrel(*
+	   <-what_was_added;;
+	*);; 
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена ствола] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		hunter_pistol;
+		barrel;
+		nrel_increase;
+		damage
+};;
+<=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "barrel"> ствола </b></sc_element> позволяет производить более </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> мощные </b></sc_element> выстрелы </b></sc_element> из </b></sc_element> <b><sc_element sys_idtf= "hunter_pistol"> охотничего пистолета </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade:grip(*
+	=>nrel_reduce: sway;;
+  =>nrel_upgrade_cost: 50 (*                      
+	<-metal_parts;;
+	<-number;;
+	*);;	
+		=>change_in_appearance: new_grip(*
+	   <-what_was_added;;
+	*);;
+	*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена рукоятки] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		grip;
+		nrel_reduce;
+		sway 
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "grip"> рукоятки </b></sc_element> позвоялет </b></sc_element> <b><sc_element sys_idtf= "nrel_reduce"> уменьшить </b></sc_element>  <b><sc_element sys_idtf= "sway"> раскачку </b></sc_element> </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ 
+ =>nrel_upgrade: scope(*
+	=>nrel_add:4x_scope;;
+		=>nrel_upgrade_cost: 70 (*                     
+		<-metal_parts;;
+		<-number;;
+	*);;
+	=>change_in_appearance: 4x_scope(*
+	   <-what_was_added;;
+	*);; 
+*);
+	
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена прицела] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		hunter_pistol;
+		scope;
+		4x_scope
+};;
+
+<=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена обычного </b></sc_element> <b><sc_element sys_idtf= "scope"> прицела </b></sc_element>, на </b></sc_element> <b><sc_element sys_idtf= "4x_scope"> прицел с четырехратным зумом </b></sc_element>, позволяет точно стрелять на дальние дистанции с </b></sc_element> <b><sc_element sys_idtf= "hunter_pistol"> охотничий пистолет</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация охотничего пистолета (без улучшений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/hunter_pistol_non_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация охотничего пистолета (полностью улучшенный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/hunter_pistol_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+ 
+ 
+ 

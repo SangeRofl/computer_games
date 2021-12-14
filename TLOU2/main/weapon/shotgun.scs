@@ -1,0 +1,247 @@
+sc_node_not_relation->concept_shotgun;;
+
+sc_node_not_relation->spring;;
+
+spring=>nrel_main_idtf:
+	[пружина]
+	   (*<-lang_ru;;*);
+	   [spring]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->percentage_increase_in_characteristics;;
+
+sc_node_not_relation->number;;
+
+sc_node_not_relation->grip;;
+
+sc_node_not_relation->black_grip;;
+
+sc_node_not_relation->magazine_tube;;
+
+magazine_tube=>nrel_main_idtf:
+		[магазинная трубка]
+	   (*<-lang_ru;;*);
+	   [magazine tube]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->extented_magazine_tube;; 
+
+extented_magazine_tube=>nrel_main_idtf:
+		[увеличиная магазинная трубка]
+	   (*<-lang_ru;;*);
+	   [extented magazine tube]
+	   (*<-lang_en;;*);;
+  
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->metal_parts;; 
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->ammo_for_shotgun;;
+
+sc_node_not_relation->recoil;;
+
+sc_node_not_relation->rate_of_fire;;
+
+sc_node_not_relation->stability;;
+
+sc_node_not_relation->new_gate;;
+
+new_gate=>nrel_main_idtf:
+		[новый затвор]
+	   (*<-lang_ru;;*);
+	   [new gate]
+	   (*<-lang_en;;*);;
+
+
+
+sc_node_norole_relation->nrel_ammunition_type;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_reduce;;
+
+sc_node_norole_relation->nrel_increase;;
+
+sc_node_norole_relation->nrel_stability;;
+
+sc_node_norole_relation->nrel_change_in_appearance;; 
+
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+sc_node_norole_relation->nrel_upgrade_cost;; 
+
+
+concept_shotgun
+
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-ammo_for_shotgun;;
+		*);;
+ *);;
+*);
+
+=>nrel_main_idtf:
+	   [Дробовик]
+	   (*<-lang_ru;;*);
+	   [Shotgun]
+	   (*<-lang_en;;*);
+	   
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		shotgun
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Элли находит </b></sc_element> <b><sc_element sys_idtf= "shotgun"> дробовик </b></sc_element> в Сиэтле, в банке </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);	   
+ 
+ 
+ =>nrel_upgrade:spring(*
+	=>nrel_increase: rate_of_fire (*
+		<- 55 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;
+	=>nrel_upgrade_cost: 40 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:new_gate(*
+	   <-what_was_added;;
+	*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена пружины] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		shotgun;
+		spring;
+		nrel_increase;
+		rate_of_fire
+		
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "spring"> пружины </b></sc_element>, позволяет </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element> <b><sc_element sys_idtf= "rate_of_fire"> скорострельность </b></sc_element> <b><sc_element sys_idtf= "shotgun"> дробовика </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: grip(*
+	=>nrel_increase: stability (*
+		<- 35 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+	=>nrel_reduce: recoil(*
+		<- 40 (*
+		<-percentage_decrease_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+		=>nrel_upgrade_cost: 40 (*
+	<-metal_parts;;
+	<-number;;
+		*);;
+	=>change_in_appearance: black_grip(*
+	   <-what_was_added;;
+	*);;
+*);
+
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена рукоятки] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		shotgun;
+		grip;
+		nrel_reduce;
+		nrel_increase;
+		recoil;
+		stability
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "grip"> рукоятки </b></sc_element> <b><sc_element sys_idtf= "revolver"> дробовика </b></sc_element>, позволяет </b></sc_element> <b><sc_element sys_idtf= "nrel_reduce"> уменьшить </b></sc_element> <b><sc_element sys_idtf= "recoil"> отдачу </b></sc_element> и </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element> <b><sc_element sys_idtf= "stability"> стабильность </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade:magazine_tube(*
+	=>nrel_increase: capacity(*
+		<- 2 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+	*);;
+	*);;
+		=>nrel_upgrade_cost: 50 (*
+		<-metal_parts;;
+		<-number;;
+	*);;
+	=>change_in_appearance: extented_magazine_tube(*
+	   <-what_was_added;;
+	*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Увеличение трубки для патронов] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		shotgun;
+		magazine_tube;
+		nrel_increase;
+		capacity 
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "nrel_increase">Увеличение </b></sc_element> длины </b></sc_element> <b><sc_element sys_idtf= "magazine_tube"> патрубка магазина </b></sc_element>, чтобы </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element>  <b><sc_element sys_idtf= "capacity"> вместимость </b></sc_element> патронов для </b></sc_element> <b><sc_element sys_idtf= "shotgun"> дробовика</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация помпового дробовика (без улучшений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/pomp_shotgun_non_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация помпового дробовика (полностью улучшенный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/pomp_shotgun_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

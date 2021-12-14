@@ -1,0 +1,64 @@
+sc_node_not_relation->concept_runner;;
+
+sc_node_not_relation->first;;
+
+first=>nrel_main_idtf:
+		[первая]
+	   (*<-lang_ru;;*);
+	   [first]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->hand_to_hand;;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+concept_runner
+
+=>nrel_main_idtf:
+	   [Бегун]
+	   (*<-lang_ru;;*);
+	   [Runner]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: first;
+
+=>nrel_than_to_eliminate: weapon_project; hand_to_hand;
+
+=>nrel_attack_type:near;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		runner
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "runner">Бегуны </b></sc_element> - это люди, недавно ставшие инфицированными. Их отличает их высокая скорость, медленные атаки и склонность нападать на людей толпами.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Бегун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/runner.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+

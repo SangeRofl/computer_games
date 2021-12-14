@@ -1,0 +1,63 @@
+sc_node_not_relation->rat_king;;
+
+sc_node_not_relation->fifth;;
+
+fifth=>nrel_main_idtf:
+		[пятая]
+	   (*<-lang_ru;;*);
+	   [fifth]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->hand_to_hand;;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+concept_rat_king
+
+=>nrel_main_idtf:
+	   [Крысиный король]
+	   (*<-lang_ru;;*);
+	   [Rat king]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: fifth;
+
+=>nrel_than_to_eliminate: weapon_project;
+
+=>nrel_attack_type:near;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		rat_king
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "rat_king">Крысиный король </b></sc_element>- это уникальная стадия заражения, которая возникла в больнице Сиэтла после более чем двадцатилетнего заражения. Сформированный из нескольких зараженных, объединенных в одного, крысиный король колоссален по силе и размеру и способен принимать значительный урон от огня, бомб и оружия. Даже получив большой урон, он не умирает, а вместо этого его различные зараженные части начнут отрываться от большей массы и атаковать вместе с ней.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Крысиный король)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/rat_king.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

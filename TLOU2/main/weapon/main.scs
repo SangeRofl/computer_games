@@ -1,0 +1,79 @@
+sc_node_not_relation->concept_subject_domain_of_the_game_the_The_last_of_us_2;;
+
+sc_node_not_relation->weapon_project;;
+
+weapon_project=>nrel_main_idtf:
+		[оружейный проект]
+	   (*<-lang_ru;;*);
+	   [weapon project]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->hand_to_hand;;
+
+hand_to_hand=>nrel_main_idtf:
+		[врукопашную]
+	   (*<-lang_ru;;*);
+	   [hand to hand]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->infected_project;;
+
+infected_project=>nrel_main_idtf:
+		[проект инфицированные]
+	   (*<-lang_ru;;*);
+	   [infected project]
+	   (*<-lang_en;;*);;
+
+concept_subject_domain_of_the_game_the_The_last_of_us_2
+  
+=>nrel_main_idtf:
+	   [Предметная область игры Одни из нас часть 2]
+	   (*<-lang_ru;;*);
+	   [Subject domain of the game the The last of us 2]
+	   (*<-lang_en;;*);
+	   
+	   
+->weapon_project(*
+
+<-concept_sniper_rifle;;
+
+<-concept_9mm_pistol;;
+
+<-concept_revolver;;
+
+<-concept_bow;;
+
+<-concept_shotgun;;
+
+<-concept_mp5_silenced;;
+
+<-concept_military_pistol;;
+
+<-concept_semi_auto_rifle;;
+
+<-concept_crossbow;;
+
+<-concept_double_barrel_shotgun;;
+
+<-concept_hunter_pistol;;
+
+<-concept_flamethrower;;
+
+*);
+
+
+->infected_project(*
+
+<-concept_runner;;
+
+<-concept_stalker;;
+
+<-concept_clicker;;
+
+<-concept_bloater;;
+
+<-concept_shambler;;
+
+<-concept_rat_king;;
+
+*);;

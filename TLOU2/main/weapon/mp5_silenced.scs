@@ -1,0 +1,61 @@
+sc_node_not_relation->concept_mp5_silenced;;
+
+sc_node_not_relation->no_upgrade;;
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->ammo_for_mp5;;
+
+ammo_for_mp5=>nrel_main_idtf:
+		[патроны для мп5]
+	   (*<-lang_ru;;*);
+	   [ammo for mp5]
+	   (*<-lang_en;;*);;
+
+
+
+
+sc_node_norole_relation->nrel_ammunition_type;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_illustration_in_picture;;
+ 
+
+
+concept_mp5_silenced
+
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-ammo_for_mp5;;
+		*);;
+ *);;
+*);
+
+=>nrel_main_idtf:
+	   [МП5 с глушителем]
+	   (*<-lang_ru;;*);
+	   [MP5 silenced]
+	   (*<-lang_en;;*);
+	   
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		mp5_silenced
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Элли крадет </b></sc_element> <b><sc_element sys_idtf= "mp5_silenced"> мп5 с глушителем </b></sc_element> у Гремучников в Санта-Барборе</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: no_upgrade;;

@@ -1,0 +1,285 @@
+sc_node_not_relation->concept_bow;;
+
+sc_node_not_relation->bowstring;;
+
+bowstring=>nrel_main_idtf:
+	   [тетива]
+	   (*<-lang_ru;;*);
+	   [bowstring]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->percentage_increase_in_characteristics;;
+
+sc_node_not_relation->number;;
+
+sc_node_not_relation->grip;;
+
+grip=>nrel_main_idtf:
+		[рукоятка]
+	   (*<-lang_ru;;*);
+	   [grip]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->black_grip;;
+
+black_grip=>nrel_main_idtf:
+		[черная рукоятка]
+	   (*<-lang_ru;;*);
+	   [black grip]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->scope;;
+
+sc_node_not_relation->improved_bowstring;;
+
+improved_bowstring=>nrel_main_idtf:
+		[улучшенная тетива]
+	   (*<-lang_ru;;*);
+	   [improved bowstring]
+	   (*<-lang_en;;*);;
+  
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->metal_parts;; 
+
+sc_node_not_relation->improved_scope;;
+
+improved_scope=>nrel_main_idtf:
+		[улучшенный прицел]
+	   (*<-lang_ru;;*);
+	   [improved scope]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->crafting;;
+
+crafting=>nrel_main_idtf:
+		[крафтищиеся]
+	   (*<-lang_ru;;*);
+	   [crafting]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->exploding;;
+
+exploding=>nrel_main_idtf:
+		[взрывчатые]
+	   (*<-lang_ru;;*);
+	   [exploding]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->arrows_for_bow;;
+		
+arrows_for_bow=>nrel_main_idtf:
+		[стрелы для лука]
+	   (*<-lang_ru;;*);
+	   [arrows for bow]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->stability;;
+
+sc_node_not_relation->accuracy;;
+
+accuracy=>nrel_main_idtf:
+	    [точность]
+	   (*<-lang_ru;;*);
+	   [accuracy]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->draw_speed;;
+
+draw_speed=>nrel_main_idtf:
+	    [скорость смены]
+	   (*<-lang_ru;;*);
+	   [draw speed]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->nocking_speed;;
+
+nocking_speed=>nrel_main_idtf:
+		[скорость натяжения]
+	   (*<-lang_ru;;*);
+	   [nocking speed]
+	   (*<-lang_en;;*);;
+
+
+
+sc_node_norole_relation->nrel_ammunition_type;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_increase;;
+
+sc_node_norole_relation->nrel_change_in_appearance;; 
+
+sc_node_norole_relation->nrel_add;;
+ 
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+sc_node_norole_relation->nrel_upgrade_cost;; 
+
+
+concept_bow
+
+
+=>nrel_main_idtf:
+	   [Лук]
+	   (*<-lang_ru;;*);
+	   [Bow]
+	   (*<-lang_en;;*);
+	   
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-arrows_for_bow;;
+		*);;
+ <-crafting(*
+ <=nrel_union:{ordinary;exploding};;
+		*);;
+ *);;
+*);	   
+	   
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		bow
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Элли находит </b></sc_element> <b><sc_element sys_idtf= "bow"> лук </b></sc_element> в гараже на локации Хиллкрест </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);		
+
+
+=>nrel_upgrade: bowstring(*
+	=>nrel_increase:nocking_speed  (*
+		<- 50 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+	=>nrel_increase:draw_speed (*
+		<- 70 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;
+	=>nrel_upgrade_cost: 50 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:improved_bowstring(*
+	   <-what_was_added;;
+	*);; 
+*); 
+
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена тетивы] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		bow;
+		bowstring;
+		nrel_increase;
+		draw_speed;
+		nocking_speed
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена </b></sc_element> <b><sc_element sys_idtf= "bowstring"> тетивы </b></sc_element> <b><sc_element sys_idtf= "bow"> лука </b></sc_element>, позволяет <b><sc_element sys_idtf= "nrel_increase"> быстрее </b></sc_element> её </b></sc_element> <b><sc_element sys_idtf= "nocking_speed"> натягивать </b></sc_element>, а также повышается </b></sc_element> <b><sc_element sys_idtf= "draw_speed"> скорость смены </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: grip(*
+	=>nrel_increase:stability (*
+		<- 60 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+		=>nrel_upgrade_cost: 60 (*
+	<-metal_parts;;
+	<-number;;
+		*);;
+	=>change_in_appearance: black_grip(*
+	   <-what_was_added;;
+	*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Добавление рукоятки] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		bow;
+		grip;
+		nrel_increase;
+		stability
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Добавление </b></sc_element> <b><sc_element sys_idtf= "grip"> рукоятки </b></sc_element> для </b></sc_element> <b><sc_element sys_idtf= "bow">  лука </b></sc_element>, позволяет </b></sc_element>  <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element> <b><sc_element sys_idtf= "stability"> раскачивание </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: scope(*
+		=>nrel_upgrade_cost: 80 (*
+	<-metal_parts;;
+	<-number;;
+		*);;
+	=>change_in_appearance: improved_scope(*
+	   <-what_was_added;;
+	*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Добавление улучшенного прицела] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		scope
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Добавление </b></sc_element> <b><sc_element sys_idtf= "scope"> прицела </b></sc_element>, позволяет автоматически отмечать расстояние до врагов</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация лука (без улучшений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/bow_non_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация лука (полностью улучшенный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/bow_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

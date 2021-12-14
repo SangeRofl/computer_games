@@ -1,0 +1,101 @@
+sc_node_not_relation->concept_bloater;;
+
+sc_node_not_relation->fourth;;
+
+fourth=>nrel_main_idtf:
+		[четвертая]
+	   (*<-lang_ru;;*);
+	   [fourth]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->weapon;;
+
+weapon=>nrel_main_idtf:
+		[оружие]
+	   (*<-lang_ru;;*);
+	   [weapon]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->further;;
+
+further=>nrel_main_idtf:
+		[дальняя]
+	   (*<-lang_ru;;*);
+	   [further]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->near;;
+
+near=>nrel_main_idtf:
+		[ближняя]
+	   (*<-lang_ru;;*);
+	   [near]
+	   (*<-lang_en;;*);;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+nrel_than_to_eliminate=>nrel_main_idtf:
+		[чем устранять*]
+	   (*<-lang_ru;;*);
+	   [than to eliminate*]
+	   (*<-lang_en;;*);;
+
+sc_node_norole_relation->nrel_attack_type;;
+
+nrel_attack_type=>nrel_main_idtf:
+		[тип атак*]
+	   (*<-lang_ru;;*);
+	   [attack type*]
+	   (*<-lang_en;;*);;
+
+sc_node_norole_relation->nrel_stage;;
+
+nrel_stage=>nrel_main_idtf:
+		[стадия*]
+	   (*<-lang_ru;;*);
+	   [stage*]
+	   (*<-lang_en;;*);;
+
+
+concept_bloater
+
+=>nrel_main_idtf:
+	   [Топляк]
+	   (*<-lang_ru;;*);
+	   [Bloater]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: fourth;
+
+=>nrel_than_to_eliminate: weapon_project;
+
+=>nrel_attack_type:near;further;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		bloater
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "bloater">Топляки </b></sc_element> инфицированы несколько лет. Грибок привел к тому, что они стали медлительными и слепыми, но при этом невероятно сильными и стойкими, а рост грибов служил броней. вздутие живота также может вырывать грибок со своего тела, чтобы использовать его в качестве споровых бомб и бросать их во врагов. Однако этот дополнительный рост грибка делает их уязвимыми для огня.</b></sc_element> ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Топляк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/bloater.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+
