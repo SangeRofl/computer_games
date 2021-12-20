@@ -50,9 +50,9 @@ concept_class_huntress
 	=> nrel_main_idtf: [Иллюстрация (Охотница)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://../images/classes/Path_of_Exile_class_huntress.png"
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_huntress.jpg"
 		(*
-			=> nrel_format: format_png;;
+			=> nrel_format: format_jpg;;
 		*);;
 	*);;
 *);
