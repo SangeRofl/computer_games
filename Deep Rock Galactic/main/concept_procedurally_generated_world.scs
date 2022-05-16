@@ -1,0 +1,15 @@
+concept_procedurally_generated_world
+=> nrel_main_idtf: [Procedurally generated world] (* <- lang_en;; *);
+=> nrel_main_idtf: [Процедурно генерируемый мир] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Процедурно генерируемый мир)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Процедурно генерируемый мир — это игра, в которой карта генерируется сама, при запуске нового задания.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

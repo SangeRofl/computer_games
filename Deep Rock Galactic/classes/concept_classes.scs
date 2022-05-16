@@ -1,0 +1,36 @@
+concept_classes
+=> nrel_main_idtf: [Classes (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Классы (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_gunner;;
+	-> concept_scout;;
+	-> concept_engineer;;
+	-> concept_driller;;
+	=> nrel_main_idtf:[Разбиение по классам персонажей] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Классы (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Классы — отличающийся между собой персонажи, с разным вооружением и гаджетами.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Классы персонажей из игры 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 4 основных классов из игры 'Deep Rock Galactic': 
+		стрелок, разведчик, инженер, бурильщик.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,24 @@
+concept_stick_grenade
+=> nrel_main_idtf: [Sticky grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Граната липучка] (* <- lang_ru;; *);
+
+<- concept_grenade_explosive;
+
+=> nrel_grenade_area_damage: 130;
+=> nrel_maximum_radius_damage: 2;
+=> nrel_minimum_damage: 20;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Граната липучка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Граната липучка - это граната, которая прилипает к поверхности или пртивнику и прозводит мощный взрыв.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_explosive
+	};;
+*);
+
+<- sc_node_not_relation;;

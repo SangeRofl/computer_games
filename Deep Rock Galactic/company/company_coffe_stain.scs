@@ -1,0 +1,25 @@
+company_coffee_stain
+=> nrel_main_idtf: [Coffe Stain] (* <- lang_en;; *);
+=> nrel_main_idtf: [Coffe Stain] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Electronic Arts)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Coffee Stain —  шведская группа компаний, занимающихся разработкой и изданием компьютерных игр.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 ((Штаб-квартира Coffee Stain)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Головной офис Coffee Stain находится в Шёвде, Швеция] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

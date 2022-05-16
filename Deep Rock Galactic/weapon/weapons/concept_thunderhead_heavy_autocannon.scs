@@ -1,0 +1,30 @@
+concept_thunderhead_heavy_autocannon
+=> nrel_main_idtf: [Heavy autocannon "Thunderhead"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Тяжелая автопушка "Тандерхед"] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 14;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 110;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: 9;
+=> nrel_reload_time: 5;
+=> nrel_max_ammo: 440;
+=> nrel_rate_of_fire: 5;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Миниган с приводом "Свинцовый шторм")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Тяжелая автопушка "Тандерхед" - крупногабаритный ручной пулемет с двумя массивными стволами, выступающими наружу, которые стреляют последовательно и наносят урон по области.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,15 @@
+concept_paid_computer_game
+=> nrel_main_idtf: [Paid computer game] (* <- lang_en;; *);
+=> nrel_main_idtf: [Платная компьютерная игра] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Платная компьютерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Платная компьютерная игра — это игра которая распространяется через разные игровые площадки и чтобы в нее играть, ее надо купить за реальные деньги.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

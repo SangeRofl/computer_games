@@ -1,0 +1,30 @@
+concept_breach_cutter
+=> nrel_main_idtf: [Laser weapon "Breach cutter"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Лазерная пушка "Breach cutter"] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 575;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 3;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 4;
+=> nrel_max_ammo: 12;
+=> nrel_rate_of_fire: 2;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Лазерная пушка "Breach cutter")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Лазерная пушка "Breach cutter" - это лазерная пушка стреляющая тремя лазерными выстрелами, имеет высокий урон.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,49 @@
+nrel_minimum_damage
+=> nrel_main_idtf: [minimum damage* (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [минимальный урон* (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(минимальный урон* (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это минимальный урон, которая может нанести граната, при нахождении противника на краю радиуса поражения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_grenade
+	};;
+*);
+
+<- sc_node_norole_relation;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_minimum_damage;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_minimum_damage;;
+antitransitive_relation -> nrel_minimum_damage;;
+asymmetric_relation -> nrel_minimum_damage;;
+
+
+nrel_minimum_damage => nrel_first_domain: concept_grenade;;
+nrel_minimum_damage => nrel_second_domain: number;;
+nrel_minimum_damage => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_grenade;
+	    number
+	};;
+*);;
+
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_minimum_damage;;
+number->2;;

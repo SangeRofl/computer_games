@@ -1,0 +1,24 @@
+concept_cluster_grenade
+=> nrel_main_idtf: [Cluster grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Кластерная граната] (* <- lang_ru;; *);
+
+<- concept_grenade_explosive;
+
+=> nrel_grenade_area_damage: 40;
+=> nrel_maximum_radius_damage: 2;
+=> nrel_minimum_damage: 50;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Кластерная граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Кластерная граната - это граната, которая разделяется на множество маленьких гранат, которые в последствии взрываются.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_explosive
+	};;
+*);
+
+<- sc_node_not_relation;;

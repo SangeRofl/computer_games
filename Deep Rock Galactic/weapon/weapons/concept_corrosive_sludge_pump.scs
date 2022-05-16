@@ -1,0 +1,30 @@
+concept_corrosiove_sludge
+=> nrel_main_idtf: [Corrosiove sludge] (* <- lang_en;; *);
+=> nrel_main_idtf: [Кислотная пушка] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 25;
+=> nrel_weakpoint_damage_bonus: 10;
+=> nrel_magazine_capacity: 25;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: 50;
+=> nrel_reload_time: 3;
+=> nrel_max_ammo: 100;
+=> nrel_rate_of_fire: 2;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Кислотная пушка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Кислотная пушка - это оружие, которое стреляет кислотой.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

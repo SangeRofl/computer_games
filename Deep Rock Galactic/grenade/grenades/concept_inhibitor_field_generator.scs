@@ -1,0 +1,24 @@
+concept_inhibitor_field_generator
+=> nrel_main_idtf: [Inhibitor field grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Замедляющая граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: [отсутствует];
+=> nrel_maximum_radius_damage: 3;
+=> nrel_minimum_damage: [отсутствует];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Замедляющая граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Замедляющая граната - это граната, которая создает поле, в котором противники буду двигаться медленее.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

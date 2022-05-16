@@ -1,0 +1,31 @@
+concept_warthog_auto210_shotgun
+=> nrel_main_idtf: [Shotgun "Warthog auto 210"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дробовик "Warthog auto 210"] (* <- lang_ru;; *);
+
+<- concept_weapon_shotgun;
+
+=> nrel_damage: 7;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 6;
+=> nrel_stan_chance: 10;
+=> nrel_stan_duration: 3;
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 90;
+=> nrel_rate_of_fire: 2;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Дробовик "Warthog auto 210")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Дробовик "Warthog auto 210" - это дробовик, <br>
+       		с высоким уроном и низкой скорострельностью.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_shotgun
+	};;
+*);
+
+<- sc_node_not_relation;;

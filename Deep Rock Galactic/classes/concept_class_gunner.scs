@@ -1,0 +1,64 @@
+concept_gunner
+=> nrel_main_idtf: [Gunner] (* <- lang_en;; *);
+=> nrel_main_idtf: [Стрелок] (* <- lang_ru;; *);
+
+<-concept_classes;
+
+
+=> nrel_primary_weapon: concept_weapon_lead_storm_powered_minigun; concept_hurricane_guided_rocket_system; concept_thunderhead_heavy_autocannon;
+
+=> nrel_secondary_weapon: concept_weapon_bulldog_heavy_revolver; concept_weapon_brt7_burst_fire_gun;
+
+=> nrel_throwables: concept_incendiary_grenade; concept_stick_grenade; concept_cluster_grenade;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Стрелок))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Стрелок — один из классов в игре Deep Rock Galactic, эффективно действует против круных врагов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Основное вооружение стрелка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У стрелка на выбор есть следующее основное вооружение: миниган "Свинцовый шторм", тяжелая автопушка "Громовержец", Реактивный комплекс "Ураган".] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Второстепенное вооружение стрелка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У стрелка на выбор есть следующее второстепенное вооружение: тяжелый револьвер "Бульдог", пистолет для стрельбы очередями BRT7.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Гаджеты стрелка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У стрелка есть следующие гаджеты: пусковая установка зиплайн, генератор щита.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Гранаты стрелка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У стрелка есть следующие гранаты на выбор: липкая граната, зажигательная граната, кассетная граната.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

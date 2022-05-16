@@ -1,0 +1,15 @@
+concept_multiplayer
+=> nrel_main_idtf: [Multiplayer] (* <- lang_en;; *);
+=> nrel_main_idtf: [Multiplayer] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Multiplayer)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Multiplayer — режим компьютерной игры, во время которого играет больше одного человека..] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,30 @@
+concept_sawn_off_shotgun
+=> nrel_main_idtf: [Sawn off shotgun] (* <- lang_en;; *);
+=> nrel_main_idtf: [Обрез] (* <- lang_ru;; *);
+
+<- concept_weapon_shotgun;
+
+=> nrel_damage: 12;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 2;
+=> nrel_stan_chance: 30;
+=> nrel_stan_duration: 3;
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 24;
+=> nrel_rate_of_fire: 2;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Обрез)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Обрез - это дробовик, с высоким уроном и низкой скорострельностью, эффективен на ближних дистанциях.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_shotgun
+	};;
+*);
+
+<- sc_node_not_relation;;

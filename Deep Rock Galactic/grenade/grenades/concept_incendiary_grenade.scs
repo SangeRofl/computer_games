@@ -1,0 +1,24 @@
+concept_incendiary_grenade
+=> nrel_main_idtf: [Incendiary grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Огненная граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: 100;
+=> nrel_maximum_radius_damage: 2;
+=> nrel_minimum_damage: 50;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Огненная граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Огненная граната - это граната, которая покрывает область огнем.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

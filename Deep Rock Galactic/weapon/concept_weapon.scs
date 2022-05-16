@@ -1,0 +1,43 @@
+concept_weapon
+=> nrel_main_idtf: [Weapon (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Оружие (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+<- computer_game_deep_rock_galactic;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_weapon_heavy;;
+	-> concept_weapon_pistol;;
+	-> concept_weapon_revolver;;
+	-> concept_weapon_shotgun;;
+	-> concept_weapon_submachine_gun;;
+    -> concept_weapon_assault_rifle;;
+	-> concept_weapon_semi_automatic_rifle;;
+	=> nrel_main_idtf:[Разбиение по классам оружия] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Оружие (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Оружие — устройства, конструктивно предназначенные для <br>
+		уничтожения противиников в игре 'Deep Rock Galactic'.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Классы оружия из игры 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 7 основных классов оружия из игры 'Deep Rock Galactic': тяжелое вооружение, пистолеты, револьвер, <br>
+		дробовики, пистолеты-пулеметы, полуавтоматические винтовки, штурмовая винтовка.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

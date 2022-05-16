@@ -1,0 +1,16 @@
+concept_computer_game
+=> nrel_main_idtf: [Computer game] (* <- lang_en;; *);
+=> nrel_main_idtf: [Компьютерная игра] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Компьютерная игра)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра  —  компьютерная программа, служащая для организации игрового процесса (геймплея), <br>
+		связи с партнёрами по игре, или сама выступающая в качестве партнёра.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

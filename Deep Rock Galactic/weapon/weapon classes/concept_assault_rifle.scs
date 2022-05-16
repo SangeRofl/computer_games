@@ -1,0 +1,27 @@
+concept_weapon_assault_rifle
+=> nrel_main_idtf: [assault rifle (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [штурмовая винтовка (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(штурмовая винтовка (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Штурмовая винтовка — огнестрельное оружие, имеющее высокую скорострельность, средний урон и предназначенное для поражения противника в ближнем и среднем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры штурмовых винтовок в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 2 экземпляра штурмовых винтовок.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

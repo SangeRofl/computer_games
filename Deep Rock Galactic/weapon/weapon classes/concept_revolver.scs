@@ -1,0 +1,27 @@
+concept_weapon_revolver
+=> nrel_main_idtf: [revolver (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [револьвер (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(револьвер (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Револьвер — огнестрельное оружие, имеющее низкую скорострельность, высокий урон и предназначенное для поражения противника в среднем и дальнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры револьверов в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 1 экземпляр револьвера.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,27 @@
+concept_grenade_bait
+=> nrel_main_idtf: [baid grenade (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [граната приманка (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(граната приманка (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Граната приманка — это граната, которая не поражает врагов, но отвелкает их и делает более уязвимыми в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры гранат приманак в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 1 экземпляр гранат приманак.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

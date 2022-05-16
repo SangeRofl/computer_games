@@ -1,0 +1,30 @@
+concept_weapon_brt7_burst_fire_gun
+=> nrel_main_idtf: [Burst Fire Gun BRT7] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пистолет для стрельбы очередями BRT7] (* <- lang_ru;; *);
+
+<- concept_weapon_pistol;
+
+=> nrel_damage: 21;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 24;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 120;
+=> nrel_rate_of_fire: 3;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пистолет для стрельбы очередями BRT7)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолет для стрельбы очередями BRT7 - это пистолет, который стреляет по три пули за выстрел.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_pistol
+	};;
+*);
+
+<- sc_node_not_relation;;

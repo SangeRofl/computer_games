@@ -1,0 +1,27 @@
+concept_weapon_heavy
+=> nrel_main_idtf: [heavy weapon (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [тяжелое оружие (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(тяжелое оружие (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Тяжелое оружие — оружие, имеющее высокий урон и предназначенное для поражения противника в ближнем, среднем, дальнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры тяжелого вооружения в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 8 экземпляров тяжелого вооружения.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

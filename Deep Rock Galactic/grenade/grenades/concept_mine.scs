@@ -1,0 +1,24 @@
+concept_mine
+=> nrel_main_idtf: [Mine] (* <- lang_en;; *);
+=> nrel_main_idtf: [Мина] (* <- lang_ru;; *);
+
+<- concept_grenade_explosive;
+
+=> nrel_grenade_area_damage: 60;
+=> nrel_maximum_radius_damage: 4;
+=> nrel_minimum_damage: 10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Мина)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Мина - это граната, которая заранее устанавливается на поверхность, и взрывается при ее контакте с противником.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_explosive
+	};;
+*);
+
+<- sc_node_not_relation;;

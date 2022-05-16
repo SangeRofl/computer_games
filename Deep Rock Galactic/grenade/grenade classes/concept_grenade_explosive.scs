@@ -1,0 +1,27 @@
+concept_grenade_explosive
+=> nrel_main_idtf: [explosive grenade (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [взрывчатая граната (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(взрывчатая граната (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Взрывчатая граната — это граната, которая поражает врагов взрывчатым эффектом в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры взрывчатых гранат в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 4 экземпляра взрывчатых гранат.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

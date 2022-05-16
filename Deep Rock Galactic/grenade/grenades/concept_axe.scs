@@ -1,0 +1,24 @@
+concept_axe
+=> nrel_main_idtf: [Axe] (* <- lang_en;; *);
+=> nrel_main_idtf: [Метательный топор] (* <- lang_ru;; *);
+
+<- concept_grenade_noexp;
+
+=> nrel_grenade_area_damage: 80;
+=> nrel_maximum_radius_damage: [отсутствует];
+=> nrel_minimum_damage: 15;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Метательный топор)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Метательный топор - это топор, который наносит большой прямой урон.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_noexp
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,15 @@
+concept_shooter
+=> nrel_main_idtf: [Shooter] (* <- lang_en;; *);
+=> nrel_main_idtf: [Shooter] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Shooter)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Shooter  —  жанр компьютерных игр, в основе которой является стрельба и ликвидация противника для продвижения по локации.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,30 @@
+concept_hurricane_guided_rocket_system
+=> nrel_main_idtf: [Guided Rocket System "Hurricane"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Управляемый ракетный комплекс "Ураган"] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 16;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 36;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: 20;
+=> nrel_reload_time: 4;
+=> nrel_max_ammo: 288;
+=> nrel_rate_of_fire: 3;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Управляемый ракетный комплекс "Ураган")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Управляемый ракетный комплекс "Ураган" - это переносная ракетная установка с программным обеспечением слежения, позволяющим наводить ракеты вручную. Он состоит из 9 ракетных блоков спереди, большого барабана сбоку, который подает ракеты в оружие, и лазерного целеуказателя, прикрепленного к рукоятке.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;
