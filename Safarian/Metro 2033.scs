@@ -1,0 +1,67 @@
+computer_game_metro_2033
+=> nrel_main_idtf: [Метро 2033] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Metro 2033] (* <- lang_en;; *);
+
+
+<- concept_surviva_horror;
+<- concept_setting_post_apocalyptic_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_4a_games;
+=> nrel_publisher: company_thq;
+
+=> nrel_platform: concept_playstation_4; concept_xbox_one; concept_xbox_360; concept_linux; concept_windows; concept_nintendo_switch; 
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: 4a_engine;
+
+=> nrel_publication_date: date_16_03_2010;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Metro 2033)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ компьютерная игра в жанре постапокалиптического шутера от первого лица с элементами survival horror и стелса, 
+				разработанная украинской студией 4A Games и изданная американской компанией THQ в марте 2010 года. 
+				Игра является интерпретацией одноимённого романа российского писателя Дмитрия Глуховского. По сюжету игры, 
+				произошла ядерная война, и оставшиеся в живых люди поселились в туннелях и станциях московского метрополитена. 
+				Главным героем является молодой выживший Артём, вынужденный спасать свою родную станцию от различных опасностей, 
+				таящихся в метро.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_surviva_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_company_4a_games;;
+                -> company_thq;;
+                -> computer_game_metro_2033;;
+                -> concept_game_series_metro;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

@@ -1,0 +1,96 @@
+concept_game_series_tomb_raider
+=> nrel_main_idtf: [Тень расхитительницы Серия Игр] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Tomb Raider Game Series] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_crystal_dynamics;
+=> nrel_developer: company_core_design;
+=> nrel_developer: company_nixxes_software;
+=> nrel_developer: company_eidos_montreal;
+=> nrel_developer: company_square_enix_montreal;
+=> nrel_developer: company_ubisoft_milan;
+
+=> nrel_publisher: company_square_enix;
+=> nrel_publisher: company_eidos_interactive;
+=> nrel_publisher: company_embracer_group;
+=> nrel_publisher: company_microsoft_studios;
+
+=> nrel_platform: concept_android; concept_arcade; concept_dreamcast; concept_game_boy_color; concept_game_boy_advance; concept_gamecube; concept_ios; concept_linux; concept_mac_os; concept_microsoft_windows; concept_j2me; concept_ms_dos; concept_n_gage; concept_n_gage_2; concept_nintendo_ds; concept_nintendo_switch; concept_playstation_one; concept_playstation_2; concept_playstation_3; concept_playstation_4; concept_playstation_5; concept_playstation_portable; concept_sega_saturn; concept_stadia; concept_wii; concept_windows_mobile; concept_xbox; concept_xbox_360; concept_xbox_one;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_firs_release_date: date_25_10_1996;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Tomb Raider Game Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ медиафраншиза, созданная британской студией Core Design. Начало серии Tomb Raider было положено в 1996 году, 
+				когда вышла первая мультиплатформенная компьютерная игра Tomb Raider, повествующая о девушке археологе — Ларе Крофт. 
+				Игра представляла собой приключенческий боевик (с англ. — «Action-adventure») с элементами шутера от третьего лица. 
+				В дальнейшем были выпущены сиквелы Tomb Raider II (1997), Tomb Raider III (1998), Tomb Raider: The Last Revelation (1999), 
+				Tomb Raider: Chronicles (2000) и Tomb Raider: The Angel of Darkness (2003).
+				Tomb Raider: The Angel of Darkness стала последней игрой, разработанной студией Core Design, после которой права на франшизу перешли к 
+				студии Crystal Dynamics. После провала Tomb Raider: The Angel of Darkness Crystal Dynamics приняла решение перезагрузить серию игр о Ларе Крофт, 
+				выпустив в 2006 году Tomb Raider: Legend, которая хронологически и сюжетно не связана с предыдущими играми серии. Игра стала коммерчески успешной, 
+				что повлекло появление сиквелов в лице Tomb Raider: Anniversary (2007) и Tomb Raider: Underworld (2008). «Anniversary» (рус. Юбилейное Издание) 
+				является ремейком Tomb Raider 1996 года, но при этом она сюжетно связана с «Legend» и «Underworld».
+				За 20 лет существования серии было продано свыше 58 млн экземпляров игр по всему миру[1].
+				В 2013 году франшиза претерпела второй перезапуск. 
+				5 марта 2013 года вышла первая часть обновленной истории о приключениях Лары Крофт Tomb Raider. 
+				Издателем игры вместо британской студии Eidos Interactive выступил японский разработчик Square Enix. 
+				Второй перезапуск Лары Крофт стал самым амбициозным. Была кардинально переписана биография главной героини.	
+				Большой упор был сделан не на поиске артефактов и гробниц, как было в предыдущих играх серии, 
+				а на выживании и решении головоломок и побочных заданий. Игра обзавелась открытым игровым миром, обновленной графикой, 
+				немного изменённым дизайном Лары и новой боевой системой. Позднее были выпущены продолжения 
+				Rise of the Tomb Raider (2015) и Shadow of the Tomb Raider (2018).
+				Помимо основных игр серии, были выпущены несколько игр-спиноффоф, комиксов, книг, 
+				а также снято три художественных фильма: Лара Крофт: Расхитительница гробниц (2001) и Лара Крофт: Расхитительница гробниц 2 — Колыбель жизни (2003) 
+				(в главной роли — Анджелина Джоли); Tomb Raider: Лара Крофт (2018) (в главной роли — Алисия Викандер).
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+		    -> company_crystal_dynamics;;
+		    -> company_core_design;;
+		    -> company_nixxes_software;;
+		    -> company_eidos_montreal;;
+		    -> company_square_enix_montreal;;
+		    -> company_ubisoft_milan;;
+		    -> company_eidos_interactive;;
+		    -> company_embracer_group;;
+		    -> company_microsoft_studios;;
+		    -> company_square_enix;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

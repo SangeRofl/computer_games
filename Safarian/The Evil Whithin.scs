@@ -1,0 +1,67 @@
+computer_game_the_evil_whithin
+=> nrel_main_idtf: [Зло внутри] (* <- lang_ru;; *);
+=> nrel_main_idtf: [The Evil Within] (* <- lang_en;; *);
+
+
+<- concept_surviva_horror;
+<- concept_setting_apocalyptic_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_tango_gameworks;
+=> nrel_publisher: company_bethesda_softworks;
+
+=> nrel_platform: concept_playstation_3; concept_playstation_4; concept_playstation_5; xbox_one; xbox_360; concept_windows;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: id_tech_5;
+
+=> nrel_publication_date: date_14_09_2014;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(The Evil Within)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра в жанрах survival horror и шутера от третьего лица, 
+				разработанная компанией Tango Gameworks и выпущенная компанией Bethesda Softworks 
+				для платформ Windows, PlayStation 3, Xbox 360, PlayStation 4 и Xbox One в 2014 году. 
+				Игра была разработана под руководством Синдзи Миками, создателя серии Resident Evil. 
+				Она не имеет сюжетной связи с Resident Evil, но включает в себя ряд схожих тем, 
+				образов и элементов геймплея.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_surviva_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_company_tango_gameworks;;
+                -> company_bethesda_softworks;;
+                -> computer_game_the_evil_within;;
+                -> concept_game_series_the_evil_within;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

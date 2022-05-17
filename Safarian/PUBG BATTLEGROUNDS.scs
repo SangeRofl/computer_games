@@ -1,0 +1,78 @@
+computer_game_pubg_battlegrounds
+
+=> nrel_main_idtf: [ИНПБ: Поле битвы] (* <- lang_ru;; *);
+=> nrel_main_idtf: [PUBG: BATTLEGROUNDS] (* <- lang_en;; *);
+
+
+<- concept_battle_royale;
+<- concept_setting_real_world;
+<- concept_multiplayer_game;
+ 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_pubg_corporation_bluehole;
+=> nrel_publisher: company_pubg_corporation_bluehole;
+=> nrel_publisher: company_microsoft_studios_for_xbox;
+
+=> nrel_platform: concept_windows; concept_playstation_4; concept_android; concept_ios; concept_xbox;
+
+=> nrel_game_mode: multiplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view; concept_first_person_view;
+
+=> nrel_game_engine: unreal_engine_4;
+
+=> nrel_publication_date: date_27_06_2016;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(PUBG: BATTLEGROUNDS)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [многопользовательская онлайн-игра в жанре королевской битвы, 
+			разрабатываемая и издаваемая студией PUBG Corporation, 
+			дочерней компанией корейского издателя Bluehole. 
+			Официальной дистрибуцией игры на территории России занимается Mail.Ru Group. 
+			Игра основана на предыдущих модификациях для других игр, созданных Бренданом Грином англ. Brendan Greene 
+			под псевдонимом «PlayerUnknown», концепция которых была вдохновлена японским фильмом «Королевская битва» 2000 года. 
+			В итоге это привело к созданию самостоятельной игры, где Грин выступил в качестве ведущего геймдизайнера. 
+			В игре до 100 игроков, которые десантируются на остров, после чего ищут снаряжение и оружие, 
+			чтобы убить других участников и при этом самим остаться в живых. Доступная безопасная зона на внутриигровой карте 
+			со временем начинает уменьшаться, делая доступное пространство более тесным, чтобы сталкивать игроков между собой. 
+			Последний выживший игрок или команда побеждает в раунде.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_multiplatform;;
+                -> concept_battle_royale;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+		-> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_pubg_corporation_bluehole;;
+		-> company_microsoft_studios;;
+                -> company_pubg_corporation_bluehole;;
+                -> computer_game_pubg_battlegrounds;;
+                -> concept_game_series_pubg_battlegrounds;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

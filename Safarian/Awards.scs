@@ -1,0 +1,15 @@
+nrel_awards
+
+=> nrel_first_domain: computer_game;
+	=> nrel_second_domain: awards; 
+	
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf: [Награды] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Awards] (* <-lang_en;; *);
+
+<- sc_node_not_relation;;

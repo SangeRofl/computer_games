@@ -1,0 +1,66 @@
+computer_game_rise_of_the_tomb_raider
+=> nrel_main_idtf: [Восхождение расхитительницы гробниц] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Rise of the Tomb Raider] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_crystal_dynamics;
+=> nrel_publisher: company_square_enix;
+
+=> nrel_platform: concept_microsoft_windows; concept_xbox_360; concept_mac_os_x; concept_xbox_one; concept_playstation_4; concept_linux;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: foundation_engine;
+
+=> nrel_publication_date: date_10_11_2015;
+
+=>nrel_music_composer: bobby_tahouri;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Rise of the Tomb Raider)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра из серии Tomb Raider в жанре action-adventure с видом от третьего лица, 
+				разработанная Crystal Dynamics и изданная Square Enix. Проект был анонсирован 9 июня 2014 года на выставке 
+				E3 2014 в Лос-Анджелесе. Была выпущена в ноябре 2015 года на Xbox 360 и Xbox One. В январе 2016 года состоялся релиз игры на ПК, 
+				а в октябре на PlayStation 4. Согласно основной сюжетной линии, Лара Крофт отправляется в Россию на поиски секрета бессмертия.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_crystal_dynamics;;
+                -> company_square_enix;;
+                -> computer_game_rise_of_the_tomb_raider;;
+                -> concept_game_series_tomb_raider;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

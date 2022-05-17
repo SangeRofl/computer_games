@@ -1,0 +1,59 @@
+concept_game_series_outlast
+=> nrel_main_idtf: [Пережить Серия Игр] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Outlast Game Series] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_red_barrels;
+
+=> nrel_publisher: company_red_barrels;
+
+=> nrel_platform:  concept_microsoft_windows; concept_mac_os_x; concept_xbox_one; concept_playstation_4; concept_linux; concept_nintendo_switch;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_firs_release_date: date_13_09_2013;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Outlast Game Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ TBA
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+		    -> company_red_barrels;;
+		    -> company_red_barrels;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

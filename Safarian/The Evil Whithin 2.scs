@@ -1,0 +1,68 @@
+computer_game_the_evil_within_2
+=> nrel_main_idtf: [Зло внутри 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [The Evil Within 2] (* <- lang_en;; *);
+
+
+<- concept_surviva_horror;
+<- concept_setting_apocalyptic_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_tango_gameworks;
+=> nrel_publisher: company_bethesda_softworks;
+
+=> nrel_platform: concept_playstation_4; xbox_one; 
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: stem_engine;
+
+=> nrel_publication_date: date_13_09_2014;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(The Evil Within 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра в жанре survival horror, разработанная компанией 
+				Tango Gameworks и выпущенная компанией Bethesda Softworks для платформ Microsoft Windows, 
+				PlayStation 4 и Xbox One 13 октября 2017 года[1]. Продолжает историю игры The Evil Within. 
+				Пост руководителя The Evil Within 2 занимает Джон Йоханас (John Johanas), 
+				который работал над визуальными эффектами оригинальной игры, а также был постановщиком дополнений 
+				The Assignment и The Consequence. Синдзи Миками занимает пост продюсера проекта.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_surviva_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_company_tango_gameworks;;
+                -> company_bethesda_softworks;;
+                -> computer_game_the_evil_within_2;;
+                -> concept_game_series_the_evil_within;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

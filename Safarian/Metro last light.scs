@@ -1,0 +1,70 @@
+computer_game_metro_last_light
+
+=> nrel_main_idtf: [Метро Луч Надежды] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Metro Last Light] (* <- lang_en;; *);
+
+
+<- concept_surviva_horror;
+<- concept_setting_post_apocalyptic_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_4a_games;
+=> nrel_publisher: company_deep_silver;
+
+=> nrel_platform: concept_playstation_4; concept_xbox_one; concept_xbox_360; concept_linux; concept_windows; concept_nintendo_switch; 
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: 4a_engine;
+
+=> nrel_publication_date: date_17_05_2013;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Metro Last Light)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ компьютерная игра в жанре постапокалиптического шутера от первого лица с элементами survival horror и стелса, 
+				разработанная украинской компанией 4A Games и изданная британской компанией Deep Silver на Windows, 
+				PlayStation 3 и Xbox 360 в мае 2013 года. Игра является прямым продолжением первой части игровой франшизы Вселенной Метро 2033, 
+				вышедшей в 2010 году. Как и в предыдущей игре, главным героем является молодой солдат Артём, живущий в московском метро после разрушительной 
+				ядерной войны. Поставив перед собой задачу найти таинственного Чёрного, выжившего после событий Metro 2033, 
+				Артём должен отправиться в различные части метро, а также на поверхность, отравленную радиацией, 
+				и сразиться с различными мутировавшими монстрами и враждебными солдатами других фракций. 
+				Игра совершенствует различные игровые механики Metro 2033 и вводит новые, вроде кастомизации оружия.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_surviva_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_company_4a_games;;
+                -> company_deep_silver;;
+                -> computer_game_metro_last_light;;
+                -> concept_game_series_metro;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

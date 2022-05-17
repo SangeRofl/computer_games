@@ -1,0 +1,66 @@
+computer_game_tomb_raider_anniversary
+
+=> nrel_main_idtf: [Расхитительница гробниц: Юбилейное Издание] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Tomb Raider: Anniversary] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_crystal_dynamics;
+=> nrel_publisher: company_eidos_interactive;
+
+=> nrel_platform: concept_windows; concept_playstation_2; concept_playstation_portable; concept_xbox_360; concept_xbox; concept_playstation_3; concept_psp; concept_wii;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: crystal_engine;
+
+=> nrel_publication_date: date_04_06_2007;
+
+=>nrel_music_composer: troels_brun_folmann;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Tomb Raider: Anniversary)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [компьютерная игра в жанре action-adventure, ремейк первой части игры серии Tomb Raider. Разработана компанией Crystal Dynamics, 
+				издана компанией Eidos Interactive. Игра основана на сюжете первой части игры: Лара Крофт, нанятая Жаклин Натлой 
+				(в прошлом одна из трёх правителей Атлантиды) для поисков мифического предмета под названием Сцион (в русском переводе — «Наследие»).
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_crystal_dynamics;;
+                -> company_eidos_interactive;;
+                -> computer_game_tomb_raider_anniversary;;
+                -> concept_game_series_tomb_raider;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

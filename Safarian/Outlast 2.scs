@@ -1,0 +1,69 @@
+computer_game_outlast_2
+=> nrel_main_idtf: [Пережить 2] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Outlast 2] (* <- lang_en;; *);
+
+
+<- concept_survival_horror;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_red_barrels;
+=> nrel_publisher: company_red_barrels;
+
+=> nrel_platform: concept_microsoft_windows; concept_xbox_one; concept_playstation_4; concept_nintendo_switch;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: unreal_engine_3_5;
+
+=> nrel_publication_date: date_27_04_2017;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Outlast 2)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [мультиплатформенная компьютерная игра в жанре survival horror от первого лица, разработанная и изданная компанией Red Barrels. 
+				Игра вышла 25 апреля 2017 года на платформах Windows, PlayStation 4 и Xbox One одновременно[2].
+				В октябре 2014 года в интервью сайту Bloody Disgusting сооснователь студии Филипп Морин объявил, что студия Red Barrels 
+				работает над сиквелом Outlast — Outlast 2. Он отметил, что игра-продолжение также будет относиться к жанру 
+				survival horror и что в ней будут новые главные герои и сюжет, но действие будет происходить в той же вселенной. 
+				Морин описал разрабатываемую игру как «эмоциональный аттракцион» и подчеркнул, что все дизайнерские решения в ней исходят из того, 
+				как они влияют на переживания игроков и служат ли этим переживаниям[3]. 
+				Анонс игры состоялся 29 октября 2015 года, когда был выпущен мини-тизер к игре[4].
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_survival_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_red_barrels;;
+                -> company_red_barrels;;
+                -> computer_game_outlast_2;;
+                -> concept_game_series_outlast;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

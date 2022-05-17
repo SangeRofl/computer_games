@@ -1,0 +1,76 @@
+computer_game_tomb_raider_the_angel_of_darkness
+=> nrel_main_idtf: [Расхитительница гробниц: Ангел Тьмы] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Tomb Raider: The Angel of Darkness] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_core_design;
+=> nrel_publisher: company_eidos_interactive;
+
+=> nrel_platform: concept_playstation_1; concept_microsoft_windows; concept_dreamcast;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: unknown;
+
+=> nrel_publication_date: date_20_06_2003;
+
+=>nrel_music_composer: 	peter_connelly; martin_iveson;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Tomb Raider: The Angel of Darkness)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [шестая игра из серии Tomb Raider[19], разработанная британской студией Core Design и изданная Eidos Interactive в 2003 
+				году для консоли PlayStation 2 и PC. Позже была портирована на Mac. В России русскоязычную версию игры распространяла компания «Новый Диск». 
+				Проект выполнен в жанре приключенческого боевика с ролевыми и стелс-элементами. Игровой процесс отметился такими нововведениями, как появление режима маскировки, 
+				системы улучшения навыков главной героини, а также возможности выбора реплик в диалогах с неигровыми персонажами.
+				Согласно основной сюжетной линии, Лару обвиняют в убийстве её прежнего наставника Вернера фон Кроя. Пытаясь разобраться в обстоятельствах его смерти, 
+				главная героиня отправляется в Европу, где ищет древние картины Обскура. Лара Крофт становится непосредственной участницей противостояния тайных сообществ, 
+				в центре которого — алхимик, желающий воскресить нефилима. Разработка игры сопровождалась многочисленными проблемами. На конечном продукте сказался переход 
+				на новую аппаратную систему PlayStation 2, а также желание руководителей проекта добавить в Tomb Raider свежие идеи, несвойственные серии. 
+				Пытаясь приурочить выход The Angel of Darkness к премьере второго фильма о расхитительнице гробниц, издатель существенно сократил сроки разработки и 
+				фактически выпустил незаконченную игру на рынок.
+				Игра подверглась широкой критике из-за большего количества ошибок, крайне неудобного управления, а также неработающих геймдизайнерских решений. 
+				Некоторые рецензенты посчитали The Angel of Darkness худшей в серии. Журналисты похвалили нуарный сюжет, графическое исполнение, правдоподобную физику и 
+				атмосферное музыкальное сопровождение. «Ангел Тьмы» разошёлся тиражом около 3 миллионов экземпляров, однако вялые продажи и разгромные 
+				рецензии способствовали тому, что права на франшизу перешли к Crystal Dynamics, ответственной за последующие части сериала.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_core_design;;
+                -> company_eidos_interactive;;
+                -> computer_game_tomb_raider_the_angel_of_darkness;;
+                -> concept_game_series_tomb_raider;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

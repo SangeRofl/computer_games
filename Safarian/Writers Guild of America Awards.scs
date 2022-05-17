@@ -1,0 +1,6 @@
+concept_writers_guild_of_america_awards
+
+=> nrel_main_idtf: [Writers Guild of America Awards] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Writers Guild of America Awards] (* <-lang_en;; *);
+
+<- sc_node_not_relation;;

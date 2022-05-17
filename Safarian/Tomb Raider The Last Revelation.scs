@@ -1,0 +1,65 @@
+computer_game_tomb_raider_the_last_revelation
+=> nrel_main_idtf: [Расхитительница гробниц: Последнее откровение] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Tomb Raider: The Last Revelation] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_core_design;
+=> nrel_publisher: company_eidos_interactive;
+
+=> nrel_platform: concept_playstation; concept_mac_os; concept_microsoft_windows; concept_dreamcast;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: unknown;
+
+=> nrel_publication_date: date_19_11_1999;
+
+=>nrel_music_composer: 	peter_connelly;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Tomb Raider: The Last Revelation)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ четвёртая игра в серии о приключениях Лары Крофт. Игра была разработана Core Design и 
+				издана Eidos Interactive на PC, PlayStation и Sega Dreamcast. В России игра была официально 
+				выпущена компанией «Новый Диск» под названием «Tomb Raider: Последнее откровение».
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_core_design;;
+                -> company_eidos_interactive;;
+                -> computer_game_tomb_raider_the_last_revelation;;
+                -> concept_game_series_tomb_raider;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

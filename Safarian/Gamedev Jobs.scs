@@ -1,0 +1,24 @@
+concept_gamedev_jobs
+
+=> nrel_main_idtf:[Профессии гейминдустрии] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Gamedev Jobs] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Профессии гейминдустрии)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Професии связанные с гейминдустрией ](*<- lang_ru;;*);;
+	        *);;
+        *);
+
+=>rrel_example: 
+        gustavo_santaolalla;;
+

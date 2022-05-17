@@ -1,0 +1,66 @@
+computer_game_tomb_raider_2_the_dagger_of_xian
+=> nrel_main_idtf: [Расхитительница гробниц 2: Кинжал Сианя] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Tomb Raider II: The Dagger of Xian] (* <- lang_en;; *);
+
+
+<- concept_action_adventure;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_core_design;
+=> nrel_publisher: company_eidos_interactive;
+
+=> nrel_platform: concept_ms_dos; concept_playstation; concept_dos; concept_mac_os; concept_microsoft_windows; 
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: unknown;
+
+=> nrel_publication_date: date_31_10_1997;
+
+=>nrel_music_composer: nathan_mccree;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Tomb Raider II: The Dagger of Xian)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [вторая игра в серии Tomb Raider, разработанная британской студией Core Design и 
+				выпущенная в 1997 году Eidos Interactive для платформ Windows и PlayStation. В 1998 году игра была портирована на Mac OS, 
+				в 1999 году для Windows вышло переиздание Tomb Raider II: Golden Mask, содержащее улучшения и дополнительные уровни. 
+				К 2009 году было продано свыше 6,8 млн копий игры по всему миру[3], в Великобритании Tomb Raider II стал второй самой продаваемой игрой для PlayStation[4].
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_action_adventure;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_core_design;;
+                -> company_eidos_interactive;;
+                -> computer_game_tomb_raider_2_the_dagger_of_xian;;
+                -> concept_game_series_tomb_raider;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;

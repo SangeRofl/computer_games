@@ -1,0 +1,15 @@
+nrel_born
+
+=> nrel_first_domain: computer_game;
+	=> nrel_second_domain: born; 
+	
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf: [Год рождения] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Birth date] (* <-lang_en;; *);
+
+<- sc_node_not_relation;;

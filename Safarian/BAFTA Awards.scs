@@ -1,0 +1,6 @@
+concept_bafta
+
+=> nrel_main_idtf: [BAFTA Awards] (* <-lang_ru;; *);
+=> nrel_main_idtf:[BAFTA Awards] (* <-lang_en;; *);
+
+<- sc_node_not_relation;;

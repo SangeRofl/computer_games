@@ -1,0 +1,65 @@
+computer_game_the_outlast_trials
+=> nrel_main_idtf: [Пережить Испытания] (* <- lang_ru;; *);
+=> nrel_main_idtf: [The Outlast Trials] (* <- lang_en;; *);
+
+
+<- concept_survival_horror;
+<- concept_setting_real_world;
+<- concept_singleplayer_game; 
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform;
+
+=> nrel_developer: company_red_barrels;
+=> nrel_publisher: company_red_barrels;
+
+=> nrel_platform: concept_TBA;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: unreal_engine_4;
+
+=> nrel_publication_date: date_TBA;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(The Outlast Trials)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [ это психологическая компьютерная игра в жанре survival horror от первого лица, 
+				разрабатываемая канадской компанией Red Barrels. Это третья часть серии Outlast, 
+				служащая приквелом к первым двум играм и включающая испытуемых в таинственном эксперименте во времена холодной войны. 
+				Релиз игры запланирован на 2022 год.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_multiplatform;;
+                -> concept_survival_horror;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_red_barrels;;
+                -> company_red_barrels;;
+                -> computer_game_the_outlast_trials;;
+                -> concept_game_series_outlast;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+<- sc_node_not_relation;;
