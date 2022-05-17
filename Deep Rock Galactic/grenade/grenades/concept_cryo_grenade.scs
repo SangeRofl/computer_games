@@ -1,0 +1,24 @@
+concept_cryo_greande
+=> nrel_main_idtf: [Cryo grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Замораживающая граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: 5;
+=> nrel_maximum_radius_damage: 3;
+=> nrel_minimum_damage: 50;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Замораживающая граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Замораживающая граната - это граната, которая мгновенно замораживает противников и делает их более уязвимыми.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,39 @@
+concept_class_conqueror
+=> nrel_main_idtf: [Class Сonqueror] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Покоритель] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Покоритель)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Покоритель —  основан на защите, обеспечении снижения получаемого физического урона через броню и заряды выносливости, регенерации здоровья, защите от замедлений и оглушений. Дерево также предлагает некоторые бонусы для атак, такие как меткость и бонусы оглушения.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Покоритель)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса покоритель принимать на себя урон противника и защищать команду] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Покоритель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_conqueror.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

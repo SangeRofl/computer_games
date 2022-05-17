@@ -1,0 +1,61 @@
+concept_class_witch 
+=> nrel_main_idtf: [Class Witch ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Ведьма] (* <- lang_ru;; *);
+
+
+<-rrel_base_power: 14(*<-concept_power;;*);
+<-rrel_base_dexterity: 14(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 32(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 57(*<-concept_health_points;;*);
+<-rrel_base_mana: 56(*<-concept_mana;;*);
+
+
+=>concept_class_necromancer;
+=>concept_class_elemental_mage;
+=>concept_class_occultist ;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Ведьма)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Ведьма —   это класс персонажа  основанный на чистом интеллекте, что делает её бесспорным мастером Чар и Стихий. Она пользуется силами чистой энергии, чтобы уничтожать своих недругов на расстоянии. Её ужасающая воля окружает её мерцающим барьером от физических и магических атак, барьером, который должен быть пробит, прежде чем сама ведьма станет уязвимой.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Ведьма)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса ведьма наносить большой урон заклинаниями и критическими атаками,наносить вред своим врагам с помощью проклятий, и призывать себе на помощь нежить, подчиненную её воле.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Ведьма)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для ведьмы:Венцы, Робы, Тканевые перчатки, Тапочки/Сапожки и Щит духа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Ведьма)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_witch.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

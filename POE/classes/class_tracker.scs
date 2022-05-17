@@ -1,0 +1,39 @@
+concept_class_tracker 
+=> nrel_main_idtf: [Class Tracker] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Следопыт] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Следопыт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Следопыт — основной акцент сделан на флаконы, при использовании которых можно получить дополнительные атакующие или оборонительные бонусы. Следопыт является гибким классом; его дерево умений позволяет использовать с одинаковой эффективностью, как обычные атаки, так и атаки чарами, при любом виде урона (стихийном, физическом или хаосом). ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Следопыт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса следопыт убийство противников для получения усиления во время боя.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Следопыт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_tracker.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

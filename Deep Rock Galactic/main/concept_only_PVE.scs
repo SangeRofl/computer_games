@@ -1,0 +1,15 @@
+concept_only_PVE
+=> nrel_main_idtf: [Only PVE] (* <- lang_en;; *);
+=> nrel_main_idtf: [Только PVE] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Только PVE)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Только PVE  —  режим игры где подразумевается ликвидация противников под командованием искусственного интеллекта.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,39 @@
+concept_character_class
+=> nrel_main_idtf: [Character Class] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Персонажа] (* <- lang_ru;; *);
+
+
+->concept_class_savage;
+->concept_class_huntress;
+->concept_class_witch;
+->concept_class_duelist;
+->concept_class_flamen;
+->concept_class_bandit;
+->concept_class_noblewoman;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Персонажа)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Персонажа -   архетип персонажа ролевых игр, определяющий его умения и направление развития. Как правило, игроки выбирают класс при создании персонажа и не могут полностью от него отойти в течение всей жизни этого персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Кол. классов в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Всего в Path of Exile существует 7 классов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		computer_game_path_of_exile
+	};;
+*);
+
+
+<- sc_node_not_relation;;

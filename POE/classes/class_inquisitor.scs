@@ -1,0 +1,39 @@
+concept_class_inquisitor
+=> nrel_main_idtf: [Class Inquisitor] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Инквизитор] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Инквизитор)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Инквизитор — специализируется на уроне от стихий. Помимо всего прочего, этот класс использует критические удары, игнорирование сопротивления стихиям или положительные эффекты от создания освященной земли. Большинство умений Инквизитора совместимы и с атаками и с чарами.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Инквизитор)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса инквизитор танковать и провоцировать врага.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Инквизитор)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_inquisitor.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

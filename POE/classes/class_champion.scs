@@ -1,0 +1,39 @@
+concept_class_champion
+=> nrel_main_idtf: [Class Сhampion ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Чемпион] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Чемпион)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Чемпион — является оборонительным и наиболее подходит для "танкующих" персонажей за счёт провоцирования врагов и их ослабления, при этом усиливая урон себе и своим союзникам аурой. Так же он может устрашать врагов, чтобы уменьшить их защиту. .] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Чемпион)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса чемпион танковать и провоцировать врага.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Чемпион)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_champion.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

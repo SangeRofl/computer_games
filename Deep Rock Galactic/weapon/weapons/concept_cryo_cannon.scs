@@ -1,0 +1,30 @@
+concept_cryo_cannon
+=> nrel_main_idtf: [Cryo cannon] (* <- lang_en;; *);
+=> nrel_main_idtf: [Замораживающая пушка] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 6;
+=> nrel_weakpoint_damage_bonus: 10;
+=> nrel_magazine_capacity: 50;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: [отсутствует];
+=> nrel_max_ammo: 500;
+=> nrel_rate_of_fire: 8;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Замораживающая пушка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Замораживающая пушка - это оружие, которое замораживает врагов и делает их более уязвимыми.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

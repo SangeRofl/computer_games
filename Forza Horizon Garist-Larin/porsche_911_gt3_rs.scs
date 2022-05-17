@@ -1,0 +1,45 @@
+concept_porsche_911_gt3_rs
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Porsche 911 GT3 RS](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3996; 
+=> nrel_release_date: 2018;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 520;  
+=> nrel_maximum_speed: 312; 
+=> nrel_acceleration_to_100_km_h: 3.2; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1430;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 470;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Porsche 911 GT3 RS)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Porsche 911 GT3 RS - это двухместное спортивное купе премиум класса. Porsche 911 GT3 RS оснащается оппозитной атмосферной бензиновой шестеркой на 3996 кубических сантиметров. От своего предшественника он отличается модернизированным впускным коллектором, доработанной программой управляющей электроники и более производительной выхлопной системой. В итоге, инженерам удалось выжать 520 лошадиных сил при 8250 об/мин и 470 Нм крутящего момента при 6000 оборотах коленчатого вала в минуту. Всю мощность переваривает семиступенчатая преселективная роботизированная коробка передач с двумя сцеплениями.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/porsche-911-gt3-rs.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

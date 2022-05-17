@@ -1,0 +1,51 @@
+bigfoot
+    <-concept_club;
+    =>nrel_main_idtf:
+        [Бигфуты Блэквелла](*<-lang_ru;;*);
+        [Blackwell Bigfoots](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: {
+     bigfoot;
+     blackwell_academy
+  };;
+	=> nrel_main_idtf: [Опр.(Бигфуты Блэквелла )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Бигфуты Блэквелла — футбольная команда <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);  
+  
+
+-> rrel_members:zachary_riggins;
+-> rrel_members:logan_robertson;
+
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1 (Название клуба "Бигфуты Блэквелла")] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [Название команды было дано в честь обитающего по слухам в лесах <b><sc_element sys_idtf="arcadia_bay"> Аркадии Бэй</b></sc_element> бигфута.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+    => nrel_main_idtf:
+        [Постер клуба "Бигфуты Блэквелла" ] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/bigfoot.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

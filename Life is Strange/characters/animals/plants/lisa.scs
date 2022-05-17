@@ -1,0 +1,57 @@
+lisa_plant
+=> nrel_main_idtf: 
+    [Plant Lisa] (* <- lang_en;; *);
+    [Растение Лиза] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Растение Лиза)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Растение Лиза — растение, принадлежащее <b><sc_element sys_idtf="max_caulfield">Макс </b></sc_element> и находящееся у неё в комнате в <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+	 max_caulfield;
+     lisa_plant;
+     blackwell_academy
+	};;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Полив)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+	 episode_1;
+     episode_2;
+     max_caulfield
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="max_caulfield">Макс </b></sc_element> имеет возможность полить Лизу в <b><sc_element sys_idtf="episode_1">«Хризалиде»</b></sc_element> и во <b><sc_element sys_idtf="episode_2">«Вразнобой»</b></sc_element>.] 
+        (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*   
+	<- concept_consequense;;
+	=> nrel_main_idtf: [Последствия взаимодействий] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В <b><sc_element sys_idtf="episode_3">«Теории Хаоса» </b></sc_element>растение будет либо в хорошем состоянии (полито один раз), либо засохнет (не полито ни разу), либо будет залито (полито два раза), что зависит от выбора игрока. ]
+         (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/lisa.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

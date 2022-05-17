@@ -1,0 +1,29 @@
+concept_weapon_shotgun
+=> nrel_main_idtf: [shotgun (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [дробовик (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(дробовик (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дробовик — огнестрельное оружие, использующее энергию фиксированного снаряда для стрельбы <br>
+		некоторым количеством небольших пуль либо шариков, имеющее низкую скорострельность, средне-высокий урон и <br> 
+		предназначенное для поражения противника в ближнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры дробовиков в игре 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Deep Rock Galactic' существует 2 экземпляра дробовиков.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

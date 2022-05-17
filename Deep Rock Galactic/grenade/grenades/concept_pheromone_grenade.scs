@@ -1,0 +1,24 @@
+concept_pheromone_greande
+=> nrel_main_idtf: [Pheromone grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Феромоновая граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: [отсутствует];
+=> nrel_maximum_radius_damage: 4;
+=> nrel_minimum_damage: [отсутствует];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Феромоновая граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Феромоновая граната - это граната, которая переманивает врагов на свою сторону на котороткок время.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

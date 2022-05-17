@@ -1,0 +1,65 @@
+concept_scout
+=> nrel_main_idtf: [Scout] (* <- lang_en;; *);
+=> nrel_main_idtf: [Разведчик] (* <- lang_ru;; *);
+
+<-concept_classes;
+
+
+=> nrel_primary_weapon: concept_deepcore_gk2_assault_rifle; concept_m1000_classic_semi_rifle; concept_drak25_plasma_carbine;
+
+=> nrel_secondary_weapon: concept_sawn_off_shotgun; concept_smg_zhukov_nuk17;
+
+=> nrel_throwables: concept_inhibitor_field_generator; concept_cryo_greande; concept_pheromone_greande;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Разведчик))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Разведчик — один из классов в игре Deep Rock Galactic, эффективно перемащается по карте и имеет не самое сильное вооружение.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Основное вооружение разведчика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У разведчика на выбор есть следующее основное вооружение: атомат "Deepcore GK2", полуавтоматическая винтовка "M1000 классическая", плазменный карабин "DRAK-25".] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Второстепенное вооружение разведчика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У разведчика на выбор есть следующее второстепенное вооружение: обрез, два пистолет-пулемета "Zhukov NUK17".] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Гаджеты разведчика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У разведчика есть следующие гаджеты: крюк, сигнальный пистолет.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Гранаты разведчика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У разведчика есть следующие гранаты на выбор: замедляющая граната, замораживающая граната, феромоновая граната.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

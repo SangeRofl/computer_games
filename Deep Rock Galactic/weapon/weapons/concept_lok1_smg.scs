@@ -1,0 +1,30 @@
+concept_lok1_smg
+=> nrel_main_idtf: [SMG "LOK - 1"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пистолет пулемет "LOK - 1"] (* <- lang_ru;; *);
+
+<- concept_weapon_submachine_gun;
+
+=> nrel_damage: 21;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 36;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 180;
+=> nrel_rate_of_fire: 6;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пистолет пулемет "LOK - 1")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолет пулемет "LOK - 1" - это пистолет пулемет с системой автонаведения, с средним уроном и средней скорострельностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_submachine_gun
+	};;
+*);
+
+<- sc_node_not_relation;;

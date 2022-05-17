@@ -1,0 +1,30 @@
+concept_weapon_bulldog_heavy_revolver
+=> nrel_main_idtf: [Heavy Revolver "Bulldog"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Тяжелый револьвер "Бульдог"] (* <- lang_ru;; *);
+
+<- concept_weapon_revolver;
+
+=> nrel_damage: 60;
+=> nrel_weakpoint_damage_bonus: 25;
+=> nrel_magazine_capacity: 6;
+=> nrel_stan_chance: 50;
+=> nrel_stan_duration: 2;
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 24;
+=> nrel_rate_of_fire: 2;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тяжелый револьвер "Бульдог")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Тяжелый револьвер "Бульдог" - это револьвер, с высоким уроном и низкой скорострельностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_revolver
+	};;
+*);
+
+<- sc_node_not_relation;;

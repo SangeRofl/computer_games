@@ -1,0 +1,45 @@
+concept_land_rover_range_rover_sport_svr
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Land Rover Range Rover Sport SVR](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4999; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 550;  
+=> nrel_maximum_speed: 280; 
+=> nrel_acceleration_to_100_km_h: 4.7; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 8;  
+=> nrel_body_type: jeep; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 2330;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 5;
+=> nrel_torque: 700;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Land Rover Range Rover Sport SVR)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Range Rover Sport второго поколения пережил рестайлинг в октябре 2017 года. В ходе обновления вседорожник получил новые светодиодные фары, переработанные бамперы и радиаторную решетку, а также переработанный салон с новой мультимедийной системой. Также в линейке Range Rover Sport появилась гибридная модификация с возможностью подзарядки от сети.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/land_rover_range_rover_sport.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

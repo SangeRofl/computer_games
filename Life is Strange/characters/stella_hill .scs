@@ -1,0 +1,56 @@
+stella_hill
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Стелла Хилл] (* <- lang_ru;;*);
+	[Stella Hill] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Такса](* <- lang_ru;;*);
+    [Стелла](* <- lang_ru;;*);
+    [Dachshund] (* <-lang_en;;*);
+    [Stella] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		stella_hill;
+		max_caulfield;
+		mark_jefferson
+		};;
+	=> nrel_main_idtf: [Опр.(Стелла)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Стелла Хилл — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element> Она посещает тот же класс искусств, что и <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element>, в котором преподает<b><sc_element sys_idtf="mark_jefferson"> мистер Джефферсоном</b></sc_element>. ] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Стелла)] (* <- lang_ru;; *);;
+		<= nrel_using_constants: { warren_graham};;
+     <= nrel_sc_text_translation: ... 
+       (*
+         ->rrel_example: 
+         [В альтернативной ветке времени можно увидеть Стеллу, находящуюся в отношениях с  <b><sc_element sys_idtf="warren_graham">Уорреном</b></sc_element> .]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+*);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/stella.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

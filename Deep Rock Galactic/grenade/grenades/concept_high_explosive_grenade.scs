@@ -1,0 +1,24 @@
+concept_high_explosive_grenade
+=> nrel_main_idtf: [High explosive grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Мощная граната] (* <- lang_ru;; *);
+
+<- concept_grenade_explosive;
+
+=> nrel_grenade_area_damage: 140;
+=> nrel_maximum_radius_damage: 3;
+=> nrel_minimum_damage: 35;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Мощная граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Мощная граната - это граната, которая производит мощный взрыв.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_explosive
+	};;
+*);
+
+<- sc_node_not_relation;;

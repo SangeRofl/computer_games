@@ -1,0 +1,39 @@
+concept_grenade
+=> nrel_main_idtf: [Grenade (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гранаты (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+<- computer_game_deep_rock_galactic;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_grenade_explosive;;
+	-> concept_grenade_physics;;
+	-> concept_grenade_bait;;
+	-> concept_grenade_noexp;;
+	=> nrel_main_idtf:[Разбиение по классам гранат] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Гранаты (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гранаты — устройства (каждая граната имеет уникальные свойства), <br>
+		которые метает игрок для уничтожения противиников в игре 'Deep Rock Galactic'.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Классы гранат из игры 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Существует 4 основных классов гранат из игры 'Deep Rock Galactic': <br>
+		взрывчатые, физические, приманка, без взрыва.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

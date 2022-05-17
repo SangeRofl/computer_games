@@ -1,0 +1,27 @@
+concept_grenade_physics
+=> nrel_main_idtf: [physics grenade (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [физическая граната (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(физическая граната (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Физическая граната — это граната, которая поражает врагов физическими свойствами и эффектами в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры физических гранат в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 6 экземпляра физических гранат.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

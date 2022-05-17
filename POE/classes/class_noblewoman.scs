@@ -1,0 +1,69 @@
+concept_class_noblewoman  
+=> nrel_main_idtf: [Class Noblewoman   ] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Дворянка ] (* <- lang_ru;; *);
+
+
+<-rrel_base_power: 20(*<-concept_power;;*);
+<-rrel_base_dexterity: 20(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 20(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 60(*<-concept_health_points;;*);
+<-rrel_base_mana: 50(*<-concept_mana;;*);
+
+
+=>concept_class_ascended;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Дворянка )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Дворянка  — дочь коррумпированной знати, Дворянка была изгнана в Рэкласт за убийство своего мужа во время первой брачной ночи. Она совмещает в себе все три ключевых характеристики – Силу, Ловкость и Интеллект, которые располагают её в центре дерева пассивных умений. Эта уникальная позиция позволяет построить почти любой билд, но в то же время теряет определенную специализацию, которую имеют другие шесть классов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Дворянка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре главная цель дворянки определяется основываясь на билде и пассивных умениях/характеристиках в дереве умений] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Дворянка )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Для класса Дворянка нет наиболее подходящего обмундирования. В конечном итоге, необходимо выбрать определённый тип брони, основываясь на выборе билда и выборе пассивных умений/характеристик в дереве умений. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв3.(Класс Дворянка )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Из-за сложности её развития, она не доступна для новых игроков. Игрок должен спасти Дворянку, её можно найти в последней области 3 акта, прямо перед сражением с последним боссом этого акта. Убийство босса не обязательно для освобождения Дворянки. Это можно сделать в Обычном мире (в любой лиге) для доступа к этому классу персонажа. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дворянка )](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_noblewoman.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

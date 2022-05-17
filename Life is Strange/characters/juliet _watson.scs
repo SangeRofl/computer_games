@@ -1,0 +1,60 @@
+juliet_watson 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Джульет Уотсон] (* <- lang_ru;;*);
+	[Juliet Watson] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Джульет](* <- lang_ru;;*);
+    [Х-тримальный репортер](* <- lang_ru;;*);
+    [Juliet] (* <-lang_en;;*);
+    [Juliet: X-treme Reporter] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: {
+     juliet_watson;
+     blackwell_academy;
+     blackwell_totem;
+     dormitories
+     } ;;
+	=> nrel_main_idtf: [Опр.(Джульет)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Джульет Уотсон — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.Репортёр школьной газеты<b><sc_element sys_idtf="blackwell_totem"> «Тотем Блэквелла»</b></sc_element>, живущая в <b><sc_element sys_idtf="dormitories">общежитии Прескоттов</b></sc_element>. ] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Джульет)] (* <- lang_ru;; *);;
+        <= nrel_using_constants: {
+          dana_ward;
+          sarah;
+          vortex_club
+        };;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->
+         [Она, <b><sc_element sys_idtf="dana_ward">Дана Уорд</b></sc_element> и <b><sc_element sys_idtf="sarah">Сара</b></sc_element> являются единственными <b><sc_element sys_idtf="vortex_club"> клуба "Циклон"</b></sc_element>, которые не были показаны в Альтернативной ветви времени.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/juliet.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

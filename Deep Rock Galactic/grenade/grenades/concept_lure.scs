@@ -1,0 +1,24 @@
+concept_lure
+=> nrel_main_idtf: [L.U.R.E] (* <- lang_en;; *);
+=> nrel_main_idtf: [L.U.R.E] (* <- lang_ru;; *);
+
+<- concept_grenade_bait;
+
+=> nrel_grenade_area_damage: [отсутствует];
+=> nrel_maximum_radius_damage: [отсутствует];
+=> nrel_minimum_damage: [отсутствует];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (L.U.R.E)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [L.U.R.E - это граната, которая создает голограмму, на которую отвлекаются противники.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_bait
+	};;
+*);
+
+<- sc_node_not_relation;;

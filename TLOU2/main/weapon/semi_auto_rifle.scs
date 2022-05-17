@@ -1,0 +1,267 @@
+sc_node_not_relation->concept_semi_auto_rifle;;
+
+sc_node_not_relation->action_spring;;
+
+sc_node_not_relation->percentage_increase_in_characteristics;;
+
+sc_node_not_relation->number;;
+
+sc_node_not_relation->grip;;
+
+sc_node_not_relation->trigger;; 
+
+trigger=>nrel_main_idtf:
+	[курок]
+	   (*<-lang_ru;;*);
+	   [trigger]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->black_grip;;
+
+sc_node_not_relation->capacity;;
+
+sc_node_not_relation->ammo_for_rifle;;
+
+ammo_for_rifle=>nrel_main_idtf:
+		[патроны для винтовки]
+	   (*<-lang_ru;;*);
+	   [ammo for rifle]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->scope;;
+
+sc_node_not_relation->4x_scope;;
+
+sc_node_not_relation->larger_clip;; 
+
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->metal_parts;; 
+
+sc_node_not_relation->what_was_added;;
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->capacity;;
+
+sc_node_not_relation->stability;;
+
+sc_node_not_relation->rate_of_fire;;
+
+sc_node_not_relation->firing_mode_switch;;
+
+firing_mode_switch=>nrel_main_idtf:
+		[изменение режима стрельбы]
+	   (*<-lang_ru;;*);
+	   [firing mode switch]
+	   (*<-lang_en;;*);;
+
+
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_change_in_appearance;; 
+
+sc_node_norole_relation->nrel_increase;;
+
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+sc_node_norole_relation->nrel_upgrade_cost;;
+
+sc_node_norole_relation->nrel_stability;; 
+
+
+concept_semi_auto_rifle
+
+->ammunition(*
+ =>nrel_ammunition_type(*
+ <-collected(*
+    <-ammo_for_rifle;;
+		*);;
+ *);;
+*);
+
+=>nrel_main_idtf:
+	   [Полуавтоматическая винтовка]
+	   (*<-lang_ru;;*);
+	   [Semi auto rifle]
+	   (*<-lang_en;;*);
+	   
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Возникновение] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		semi_auto_rifle
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "semi_auto_rifle"> Полуавтоматическую винтовку  </b></sc_element> Эбби получает на пропуске, перед вылазкой</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);	   
+	   
+	   
+=>nrel_upgrade: stock(*
+	=>nrel_increase:stability(*
+		<- 35 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+	=>nrel_upgrade_cost: 50 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:weight_gainer(*
+	   <-what_was_added;;
+	*);; 
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена приклада] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		semi_auto_rifle;
+		stock;
+		nrel_increase;
+		stability
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "nrel_increase">Увеличивается </b></sc_element> вес </b></sc_element> <b><sc_element sys_idtf= "stock"> приклада <b><sc_element sys_idtf= "semi_auto_rifle"> полуавтоматической винтовки</b></sc_element>, чтобы  </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличить </b></sc_element> <b><sc_element sys_idtf= "stability"> стабильность </b></sc_element> оружия </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+ 
+ 
+ =>nrel_upgrade: clip(*
+	=>nrel_increase: capacity(*
+		<- 3 (*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+	*);;
+	*);;
+		=>nrel_upgrade_cost: 60 (*
+		<-metal_parts;;
+		<-number;;
+	*);;
+	=>change_in_appearance: larger_clip(*
+	   <-what_was_added;;
+	*);;
+*);
+
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Увеличение магазина] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		semi_auto_rifle;
+		capacity;
+		clip;
+		nrel_increase;
+		capacity 
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Изготовление </b></sc_element> <b><sc_element sys_idtf= "nrel_increase"> увеличенного </b></sc_element> <b><sc_element sys_idtf= "clip"> магазина</b></sc_element>, вмещающий больше патронов в </b></sc_element> <b><sc_element sys_idtf= "capacity"> обойму </b></sc_element> <b><sc_element sys_idtf= "semi_auto_rifle"> полуавтоматической винтовки</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+ 
+ 
+ =>nrel_upgrade: scope(*
+	=>nrel_add:4x_scope;;
+		=>nrel_upgrade_cost: 80 (*
+		<-metal_parts;;
+		<-number;;
+	*);;
+	=>change_in_appearance: 4x_scope(*
+	   <-what_was_added;;
+	*);; 
+*);
+	
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Замена прицела] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		semi_auto_rifle;
+		scope;
+		4x_scope
+};;
+<=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Замена обычного </b></sc_element> <b><sc_element sys_idtf= "scope"> прицела </b></sc_element>, на </b></sc_element> <b><sc_element sys_idtf= "4x_scope"> прицел с четырехкратным зумом </b></sc_element>, позволяет точно стрелять на дальние дистанции с </b></sc_element> <b><sc_element sys_idtf= "semi_auto_rifle"> полуавтоматической винтовки</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+ 
+ 
+ =>nrel_upgrade:trigger(*
+	=>nrel_increase: rate_of_fire (*
+		<- 40(*
+		<-percentage_increase_in_characteristics;;
+		<-number;;
+		*);;
+	*);;	
+	=>nrel_upgrade_cost: 80 (*
+	<-metal_parts;;
+	<-number;;
+		*);;	
+	=>change_in_appearance:firing_mode_switch(*
+	   <-what_was_added;;
+	*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Улучшение курка] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		semi_auto_rifle;
+		trigger;
+		nrel_increase;
+		rate_of_fire
+};;
+	
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[Изменение </b></sc_element> <b><sc_element sys_idtf= "trigger"> спускового крючка </b></sc_element>, позволяет <b><sc_element sys_idtf= "nrel_increase"> повысить </b></sc_element> <b><sc_element sys_idtf= "rate_of_fire"> скорострельность </b></sc_element>, то есть производить серию из трех выстрелов из </b></sc_element> <b><sc_element sys_idtf= "semi_auto_rifle"> полуавтоматической винтовки </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация полуавтоматической винтовки (без улучшений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/semi_auto_rifle_non_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация полуавтоматической винтовки (полностью улучшенный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/semi_auto_rifle_upgr.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

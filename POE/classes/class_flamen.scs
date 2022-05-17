@@ -1,0 +1,61 @@
+concept_class_flamen   
+=> nrel_main_idtf: [Class Flamen] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Жрец] (* <- lang_ru;; *);
+
+
+<-rrel_base_power: 23(*<-concept_power;;*);
+<-rrel_base_dexterity: 14(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 23(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 57(*<-concept_health_points;;*);
+<-rrel_base_mana: 52(*<-concept_mana;;*);
+
+
+=>concept_class_inquisitor;
+=>concept_class_hierophant;
+=>concept_class_defender;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Жрец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Жрец — это класс персонажа основанный на комбинации Силы и Интеллекта. Это идеальный баланс мускулов и мозгов. Он – умелый боец, обученный владению множеством видов оружия: от острых сабель до тяжелых двуручных булав. Он с таким же комфортом может носить и щит как для дополнительной защиты, так и для нанесения смертельного урона. ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Жрец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса жрец наносить урон широким спектром магических способностей] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Жрец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для жреца: Кольчужные Койфы/Шлемы, Кольчуга/Байданы, Полукольчужные/Кольчужные перчатки, Полукольчужные/Кольчужные Ботинки и Каплевидные Щиты.  ] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Жрец)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_flamen.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

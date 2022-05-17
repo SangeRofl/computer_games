@@ -1,0 +1,59 @@
+computer_game_deep_rock_galactic
+=> nrel_main_idtf: [Deep Rock Galactic] (* <- lang_en;; *);
+=> nrel_main_idtf: [Deep Rock Galactic] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_setting_science_fiction;
+<- concept_paid_computer_game;
+<- concept_multiplayer;
+<- concept_shooter;
+<- concept_only_PVE;
+<- concept_procedurally_generated_world;
+-> concept_classes;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Deep Rock Galactic)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная игра в жанре кооперативного шутера от первого лица, 
+		разработанная датской студией Ghost Ship Games <br> 
+		и изданная компанией Coffee Stain Publishing для Microsoft Windows, 
+		Xbox One, PS4 в 2020 году.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_computer_game
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1(Deep Rock Galactic в пещерах Хоксес-4)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Действие игры происходит в пещерах под поверхностью опасной планеты Хоксес-4, <br>
+		богатой минералами, но населённой враждебной фауной.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_opponents;
+		concept_minerals
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2(Количество игроков в одной игре Deep Rock Galactic)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На одной карте в Deep Rock Galactic может быть от 1 до 4 игроков] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_map;
+		concept_player
+	};;
+*);
+
+<- sc_node_not_relation;;

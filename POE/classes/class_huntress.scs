@@ -1,0 +1,60 @@
+concept_class_huntress
+=> nrel_main_idtf: [Class Huntress] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Охотница] (* <- lang_ru;; *);
+
+
+<-rrel_base_power: 14(*<-concept_power;;*);
+<-rrel_base_dexterity: 32(*<-concept_dexterity;;*);
+<-rrel_base_intelligence: 14(*<-concept_intelligence;;*);
+<-rrel_base_health_points: 57(*<-concept_health_points;;*);
+<-rrel_base_mana: 52(*<-concept_mana;;*);
+
+
+=>concept_class_sniper;
+=>concept_class_raider;
+=>concept_class_tracker;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Охотница)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Охотница —   класс персонажа  основанный на ловкости. Она ловкая и быстрая, бросаясь в и из боя, наносит мощные критические удары, которые часто поражают противников за один прием.Её естественная быстрота даёт ей хорошую способность избегать нанесения урона.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв1.(Класс Охотница)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса охотница с помощью быстрых атак наносить урон с безопасного расстояния.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв2.(Класс Охотница)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Наиболее подходящее обмундирование для ловкой охотницы – это Шапки/Капюшоны, Кожанки/Облачения/Полукафтаны, перчатки из шкур, ботинки из шкур и баклеры..] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Охотница)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_huntress.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

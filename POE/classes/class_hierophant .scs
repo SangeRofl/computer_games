@@ -1,0 +1,39 @@
+concept_class_hierophant
+=> nrel_main_idtf: [Class Hierophant] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Иерофант] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Иерофант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Иерофант — избегает прямого столкновения и полагается на прочность тотемов и силу чар. Класс имеет доступ к дополнительным тотемам и бонусам, которые увеличиваются по мере увеличения количества ваших тотемов. Также Иерофант отлично подходит для билдов, использующих большой объем маны, делая ее своей защитой. Они также могут использовать Колдовской выброс с большими бонусами, а также могут генерировать заряды выносливости и энергии.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Иерофант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса иерофант танковать .] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Иерофант)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_hierophant.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

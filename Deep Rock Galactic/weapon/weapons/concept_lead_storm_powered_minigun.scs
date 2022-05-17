@@ -1,0 +1,30 @@
+concept_weapon_lead_storm_powered_minigun
+=> nrel_main_idtf: [Powered minigun "Lead storm"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Миниган с приводом "Свинцовый шторм"] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 10;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 2400;
+=> nrel_stan_chance: 20;
+=> nrel_stan_duration: 1;
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: [отсутствует];
+=> nrel_max_ammo: 2400;
+=> nrel_rate_of_fire: 15;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Миниган с приводом "Свинцовый шторм")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Миниган с приводом "Свинцовый шторм" - это трехствольное гатлинговое ружье, с высокой скорострельность и небольшим уроном.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

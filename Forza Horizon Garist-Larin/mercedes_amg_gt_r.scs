@@ -1,0 +1,45 @@
+concept_mercedes_amg_gt_r
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Mercedes AMG GT R](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3982; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 585;  
+=> nrel_maximum_speed: 318; 
+=> nrel_acceleration_to_100_km_h: 3.6; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: robotic;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: hatchback; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1630;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 700;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Mercedes AMG GT R)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[GT R - это высокопроизводительный вариант Mercedes-AMG GT, представленный на Гудвудском фестивале скорости 24 июня 2016 года. Двигатель M178 в этом варианте настроен на мощность 430 кВт (585 л.с., 577 л.с.) при 6250 об / мин и крутящий момент 700 Н · м (516 фунт-фут) при 5500 об / мин. GT R ​​разгоняется от 0 до 100 км / ч (62 миль / ч) за 3,6 секунды и имеет заявленную максимальную скорость 319 км / ч (198 миль / ч). Хотя GT R сохраняет основные механические отличия, GT C превосходит GT S, он также получает регулируемые вручную пружины койловера (в сочетании с подвеской AMG Ride Control базовых моделей), активный обтекатель днища, регулируемое вручную заднее антикрыло и 9-режимную систему AMG Traction Control. Как и подобает высокопроизводительному варианту, GT R лишается Keyless-Go, встроенного механизма открывания гаражных ворот, боковых зеркал с подогревом и складывания с электроприводом, внутренних и наружных зеркал с автоматическим затемнением и возвращается к базовой облегченной версии 4. -система динамиков, которая идет в комплекте с GT.](*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/mercedes-amg-gt-r.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

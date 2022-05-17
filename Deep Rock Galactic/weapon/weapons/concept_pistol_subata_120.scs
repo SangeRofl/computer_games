@@ -1,0 +1,30 @@
+concept_pistol_subata_120
+=> nrel_main_idtf: [Pistol "Subata 120"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пистолет "Subata 120"] (* <- lang_ru;; *);
+
+<- concept_weapon_pistol;
+
+=> nrel_damage: 12;
+=> nrel_weakpoint_damage_bonus: 20;
+=> nrel_magazine_capacity: 12;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 100;
+=> nrel_rate_of_fire: 8;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пистолет "Subata 120")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолет "Subata 120" - это простой пистолет с низким уроном и средней скорострельностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_pistol
+	};;
+*);
+
+<- sc_node_not_relation;;

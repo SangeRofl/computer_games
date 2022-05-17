@@ -1,0 +1,61 @@
+warren_graham
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Уоррен Дэниел Грэхем] (* <- lang_ru;;*);
+	[Warren Daniel Graham] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Уоррен](* <- lang_ru;;*);
+    [Доктор Грэхэм](* <- lang_ru;;*);
+    [Белый рыцарь](* <- lang_ru;;*);
+    [Ботаник](* <- lang_ru;;*);
+    [Science Guy] (* <-lang_en;;*);
+    [Dr. Graham] (* <-lang_en;;*);
+    [White Knight] (* <-lang_en;;*);
+    
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+    warren_graham;
+    blackwell_academy;
+    max_caulfield
+    } ;;
+	=> nrel_main_idtf: [Опр.(Уоррен)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Уоррен Дэниел Грэхем  — студент <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>, и один из основных второстепенных персонажей.Хороший друг <b><sc_element sys_idtf="max_caulfield">Макс</b></sc_element>, по отношению к которой испытывает влюбленность. ] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Уоррен)] (* <- lang_ru;; *);;
+        <= nrel_using_constants: {
+          principal_office;
+          blackwell_academy; 
+          dontnod_entertainment
+        };;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->rrel_example: 
+         [В его личном деле, которое можно просмотреть в<b><sc_element sys_idtf="principal_office"> офисе директора Уэллса</b></sc_element>, написано, что возраст Уоррена 16 лет. Неизвестно, опечатка это или нет. Уоррен проходит программу для особо одаренных детей, плюс его балл на курсе самый высокий среди сверстников. Вполне возможно, что Уоррен просто перескочил через несколько лет обучения, поступив прямиком в<b><sc_element sys_idtf="blackwell_academy"> Блэквелл</b></sc_element>. (<b><sc_element sys_idtf="dontnod_entertainment">Разработчики</b></sc_element> прокомментировали это, как опечатку.) ]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/warren.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,30 @@
+concept_deepcore_40mm_pgl_grenade_launcher
+=> nrel_main_idtf: [Grenade launcher "Deepcore 40mm PGL"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гранатомет "Deepcore 40mm PGL"] (* <- lang_ru;; *);
+
+<- concept_weapon_heavy;
+
+=> nrel_damage: 110;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 1;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: 50;
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 9;
+=> nrel_rate_of_fire: 1;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Гранатомет "Deepcore 40mm PGL")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Гранатомет "Deepcore 40mm PGL" - это грантомет, с высоким уроном по площади.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_heavy
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,75 @@
+episode_3
+    =>nrel_main_idtf: 
+			[Эпизод 3: Теория Хаоса](*<-lang_ru;;*);
+			[Episode 3: Chaos Theory](*<-lang_en;;*);
+	=>nrel_idtf:
+        [Эпизод 3](*<-lang_ru;;*);
+        [Episode 3](*<-lang_en;;*);
+    
+   
+    <-rrel_3 : concept_episode;
+
+<- rrel_key_sc_element: ... 
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/episode_3.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	    =>nrel_main_idtf: 
+	 	    [Иллюстрация эпизода]   (*<-lang_ru;;*);;
+	*);;
+*);
+=> concept_character:
+    {
+        max_caulfield;
+        kate_marsh;
+        victoria_chase;
+        nathan_prescott;
+        chloe_price;
+        david_madsen;
+        mark_jefferson;
+        raymond_wells;
+        warren_graham;
+        juliet_watson;
+        dana_ward;
+        taylor_christensen;
+        brooke_scott;
+        hayden_jones;
+        alyssa_anderson;
+        courtney_wagner;
+        evan_harris;
+        daniel_dacosta;
+        zachary_riggins; 
+        joyce_price;
+        william_price;
+        frank_bowers;
+        
+
+        nrel_mentioned: rachel_amber; 
+        nrel_mentioned: michelle_grant; 
+        nrel_mentioned: bernadette_hoida
+    };
+=>concept_location:
+    { 
+        main_campus;
+        high_school;
+        dormitories;
+        swimming_pool;
+        parking_lot;
+        chloe_house;
+        chloe_truck;
+        max_room;
+        diner;
+        railroad;
+        principal_office
+
+    };
+
+=>concept_death:
+        ...(* <=nrel_determinate: lisa_plant;;*);
+        ...(*<-...(* <-concept_bird;;*);;*);
+        ...(* <= nrel_mentioned:concep_fish;;*);
+        ...(*<-...(* <-concept_whale;;*);;*);;

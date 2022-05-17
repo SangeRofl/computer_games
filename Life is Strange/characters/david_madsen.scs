@@ -1,0 +1,52 @@
+david_madsen
+    => nrel_main_idtf:
+	[Дэвид Н. Мэдсен] (* <- lang_ru;;*);
+	[David N. Madsen] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Дэвид Мэдсен](* <- lang_ru;;*);
+    [David Madsen] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		david_madsen;
+		arcadia_bay;
+		joyce_price;
+		chloe_price
+		};;
+	=> nrel_main_idtf: [Опр.(Дэвид Н. Мэдсен)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Дэвид Н. Мэдсен — персонаж игры <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>. Он ветеран войны и охранник <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>. Женат на Джойс Мэдсен, является отчимом <b><sc_element sys_idtf="chloe_price">Хлои Прайс</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Дэвид Н. Мэдсен)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: { 
+		frank_bowers;
+		pompidou
+		};;
+
+     <= nrel_sc_text_translation: ... (*
+         -> 
+         [ Cкрытый протагонист после того, как многие из его подозрений оказываются правдой, и многие из его строгих мер предосторожности становятся вполне обоснованными.]
+         (*<-lang_ru;;*);;
+      *);;
+  *);
+
+ <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/david.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

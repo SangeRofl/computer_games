@@ -1,0 +1,64 @@
+concept_driller
+=> nrel_main_idtf: [Driller] (* <- lang_en;; *);
+=> nrel_main_idtf: [Бурильщик] (* <- lang_ru;; *);
+
+
+=> nrel_primary_weapon: concept_flamethrower; concept_cryo_cannon; concept_corrosiove_sludge;
+
+=> nrel_secondary_weapon: concept_pistol_subata_120; concept_plasma_pistol;
+
+=> nrel_throwables: concept_axe; concept_high_explosive_grenade; concept_toxic_grenade;
+
+<-concept_classes;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бурильщик))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бурильщик — один из классов в игре Deep Rock Galactic, эффективно разрушает карту для перемещения.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Основное вооружение бурильщика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У бурильщика на выбор есть следующее основное вооружение: огнемет "CRSPR", крио пушка, кислотная пушка "Corrosive Sludge Pump".] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Второстепенное вооружение бурильщика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У бурильщика на выбор есть следующее второстепенное вооружение: пистолет "Subata 120", плазменный пистолет "Experimental Plasma Charger".] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Гаджеты бурильщика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У бурильщика есть следующие гаджеты: ручные дрелли, заряды C4.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Гранаты бурильщика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У бурильщика есть следующие гранаты на выбор: граната топор, усиленная граната, токсичная граната.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

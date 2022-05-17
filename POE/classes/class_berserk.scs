@@ -1,0 +1,39 @@
+concept_class_berserk  
+=> nrel_main_idtf: [Class Berserk] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Берсерк] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Берсерк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Берсерк —  ориентирован на то, чтобы быть в гуще сражения, так как его дерево в большинстве своем содержит умения, требующие убийства или удара за последние 4 секунды. Его бонусы включают в себя увеличение урона, похищение здоровья и баффы от боевого клича. Так же они имеют возможность набирать заряды свирепости. Чем больше зарядов Свирепости, тем больше урона от атак и бонусов скорости они получают, но также и большую потерю максимума здоровья в секунду.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Берсерк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса берсерк нанести как можно большее количество урона.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Берсерк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_berserk.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

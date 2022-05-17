@@ -1,0 +1,30 @@
+concept_stubby_voltaic_smg
+=> nrel_main_idtf: [SMG "Stubby voltaic"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пистолет пулемет "Stubby voltaic"] (* <- lang_ru;; *);
+
+<- concept_weapon_submachine_gun;
+
+=> nrel_damage: 9;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 30;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 420;
+=> nrel_rate_of_fire: 11;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пистолет пулемет "Stubby voltaic")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолет пулемет "Stubby voltaic" - это пистолет пулемет, с средним уроном и высокой скорострельностью, так же стреляет электрическим пулями.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_submachine_gun
+	};;
+*);
+
+<- sc_node_not_relation;;

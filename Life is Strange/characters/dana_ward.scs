@@ -1,0 +1,56 @@
+dana_ward 
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Дана Уорд] (* <- lang_ru;;*);
+	[Dana Ward ] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Дана](* <- lang_ru;;*);
+    [Dana] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		dana_ward;
+		blackwell_academy;
+		dormitories
+	} ;;
+	=> nrel_main_idtf: [Опр.(Дана)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Дана Уорд — студентка <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element>.Чирлидерша, живущая в <b><sc_element sys_idtf="dormitories">общежитии Прескоттов</b></sc_element>. ] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Дана)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: { 
+			dana_ward;
+			computer_game_life_is_strange
+	};;
+     <= nrel_sc_text_translation: ...
+       (*
+         -> 
+         [Дана вновь появляется в Before the Storm, приквеле к событиям <b><sc_element sys_idtf ="computer_game_life_is_strange"> Life is Strange</b></sc_element>.]
+         (*<-lang_ru;; => nrel_format: format_html;;*);;
+       *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/dana.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

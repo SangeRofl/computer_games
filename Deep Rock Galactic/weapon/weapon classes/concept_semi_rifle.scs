@@ -1,0 +1,27 @@
+concept_weapon_semi_automatic_rifle
+=> nrel_main_idtf: [semi automatic rifle (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [полуавтоматическая винтовка (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(полуавтоматическая винтовка (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Полуавтоматическая винтовка — огнестрельное оружие, имеющее низкую скорострельность, средний урон и предназначенное для поражения противника в среднем и дальнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры полуавтоматических винтовок в (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 1 экземпляр полуавтоматической винтовки.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

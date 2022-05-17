@@ -1,0 +1,24 @@
+concept_plasma_grenade
+=> nrel_main_idtf: [Plasma grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Плазменная граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: 60;
+=> nrel_maximum_radius_damage: 4;
+=> nrel_minimum_damage: 10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Плазменная граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Плазменная граната - это граната, которая создает зепочку из плазмы, которая наносит урон противнику.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,27 @@
+concept_weapon_pistol
+=> nrel_main_idtf: [pistol (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пистолет (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пистолет (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пистолет — стрелковое оружие, имеющее низкую скорострельность, низкий урон и предназначенное для поражения противника в ближнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры пистолетов в игре 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре 'Deep Rock Galactic' существует 3 экземпляра пистолетов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

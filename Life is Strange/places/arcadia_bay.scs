@@ -1,0 +1,59 @@
+arcadia_bay
+    <-concept_location;
+    =>nrel_main_idtf:
+        [Аркадия Бэй](*<-lang_ru;;*);
+        [Arcadia Bay ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+    arcadia_bay;
+    computer_game_life_is_strange
+  };;
+	=> nrel_main_idtf: [Опр.(Аркадия Бэй)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Аркадия Бэй — живописный городок на морском побережье в штате Орегон, США, который первоначально появляется в <b><sc_element sys_idtf="computer_game_life_is_strange">Life is Strange</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);  
+  
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.1 (Вдохновение)] (* <- lang_ru;; *);;
+     <= nrel_using_constants: { 
+       dontnod_entertainment
+     };;
+     <= nrel_sc_text_translation: ...
+       (*
+         -> 
+         [Разработчики путешествовали по Тихоокеанскому северу-западу с целью передачи чувства ностальгии и осени в игре. Команда развития посетили регион, фотографировала, просматривала местные газеты и использовала Google Street View, чтобы как можно точнее воспроизвести окружающее.]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+  <- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.2 (Символизм)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ...
+       (*
+         ->rrel_example: 
+         [Аркадия - утопия, представленная в греческой и латинской мифологии, полная цветов, фруктов и лесов.]
+         (*<-lang_ru;; *);;
+       *);;
+  *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/arcadia_bay.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

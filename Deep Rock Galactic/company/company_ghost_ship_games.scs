@@ -1,0 +1,25 @@
+company_ghost_ship_games
+=> nrel_main_idtf: [Ghost Ship Games] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ghost Ship Games] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Respawn Entertainment)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ghost Ship Games — датская студия разработки игр, основанная весной 2016 года группой опытных разработчиков игр после многих лет совместной работы.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1(Количество сотрудников Ghost Ship Games)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На 2022 год компания насчитывает 28 сотрудников.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

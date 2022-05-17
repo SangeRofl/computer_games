@@ -1,0 +1,44 @@
+raymond_wells
+<-concept_character;
+=> nrel_main_idtf: 
+    [Raymon Wells] (* <- lang_en;; *);
+    [Рэй Уэллс] (* <- lang_ru;; *);
+    
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Рэй Уэллс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Рэй Уэллс - директор  <b><sc_element sys_idtf="blackwell_academy"> академии Блэквелл</b></sc_element>. Он не часто выходит из своего офиса, который находится в главном здании, и почти всегда выглядит немного дезориентированным. ] 
+       		(* <- lang_ru;;=> nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        raymond_wells;
+        blackwell_academy
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.1 (Макс и Директор)] (* <- lang_ru;; *);;
+	<= nrel_using_constants: {
+	    max_caulfield
+	};;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Так как <b><sc_element sys_idtf="max_caulfield"> Макс</b></sc_element> видела, как он мил с другими студентами, она считает, что она не нравится ему, ведь с самой первой встречи он не доверяет ей. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wells.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

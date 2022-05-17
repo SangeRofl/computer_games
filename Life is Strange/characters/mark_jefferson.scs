@@ -1,0 +1,52 @@
+mark_jefferson   
+<-concept_character;
+
+//идентификаторы
+=> nrel_main_idtf:
+	[Марк Джефферсон] (* <- lang_ru;;*);
+	[Mark Jefferson] (* <-lang_en;;*);
+=>nrel_idtf:
+    [Мистер Джефферсон](* <- lang_ru;;*);
+    [Mr. Jefferson] (* <-lang_en;;*);
+    
+
+//Определение
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: { 
+		mark_jefferson;
+		blackwell_academy;
+		computer_game_life_is_strange
+		};;
+	=> nrel_main_idtf: [Опр.(Марк Джефферсон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...(*
+        	-> [Марк Джефферсон— учитель искусства фотографии в <b><sc_element sys_idtf="blackwell_academy">академии Блэквелл</b></sc_element> и главный антагонист игры<b><sc_element sys_idtf="computer_game_life_is_strange"> Life is Strange.</b></sc_element>.] 
+            (*<-lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+//Утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- statement;;
+    => nrel_main_idtf:
+        [Утв.(Марк Джефферсон)] (* <- lang_ru;; *);;
+     <= nrel_sc_text_translation: ... (*
+         ->rrel_example: 
+         [Знаменитый фотограф и широко признанный художник во всей Америке, добившийся популярности в 90-е годы.]
+         (*<-lang_ru;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mark.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

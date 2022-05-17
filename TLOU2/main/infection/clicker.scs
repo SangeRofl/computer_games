@@ -1,0 +1,61 @@
+sc_node_not_relation->concept_clicker;;
+
+sc_node_not_relation->third;;
+
+third=>nrel_main_idtf:
+		[третья]
+	   (*<-lang_ru;;*);
+	   [third]
+	   (*<-lang_en;;*);;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+concept_clicker
+
+=>nrel_main_idtf:
+	   [Щелкун]
+	   (*<-lang_ru;;*);
+	   [Clicker]
+	   (*<-lang_en;;*);
+	   
+=>nrel_stage: third;
+
+=>nrel_than_to_eliminate: weapon_project;
+
+=>nrel_attack_type:near;
+
+<-rrel_key_sc_element: ... (*
+	<-definition;;
+	=>nrel_main_idtf:
+	[Описание] 
+	(*<-lang_ru;;*);;
+	=>nrel_using_constants: {
+		clicker
+};;
+	 <=nrel_sc_text_translation: ... (*
+          ->rrel_example:
+	[<b><sc_element sys_idtf= "clicker">Кликеры </b></sc_element> - это люди, инфицированные не менее одного года. За долгое время грибок распространился по всему их телу, ослепив их и заставив использовать эхолокацию для поиска добычи.</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация зараженного (Щелкун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../../images/clicker.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

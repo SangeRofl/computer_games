@@ -1,0 +1,67 @@
+computer_game_god_of_war_2005
+
+=> nrel_main_idtf: [Бог Войны 2005] (* <- lang_ru;; *);
+=> nrel_main_idtf: [God of War 2005] (* <- lang_en;; *);
+
+
+<- concept_hack_and_slash;
+<- concept_setting_greek_mythology;
+<- concept_singleplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_playstation_exclusive;
+
+=> nrel_developer: company_santa_monica_studio;
+=> nrel_publisher: company_sony_computer_entertainment;
+
+=> nrel_platform: concept_playstation_2; concept_playstation_3; concept_playstation_vita;
+
+=> nrel_game_mode: singleplayer_game_mode;
+
+=> nrel_game_camera: concept_third_person_view;
+
+=> nrel_game_engine: kinetica;
+
+=> nrel_publication_date: date_22_03_2005;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(God of War 2005)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [видеоигра с видом от третьего лица в жанре action-adventure, 
+			разработанная компанией SIE Santa Monica и изданная Sony Computer Entertainment. 
+			Это первая игра из одноимённой серии игр, 
+			она была выпущена 22 марта 2005 года для игровой приставки PlayStation 2.
+               ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_playstation_exclusive;;
+                -> concept_hack_and_slash;;
+                -> concept_three_dimensional_game;;
+                -> concept_third_person_view;;
+                -> concept_computer_game;;
+                -> company_sony_computer_entertainment;;
+                -> company_santa_monica_studio;;
+                -> computer_game_god_of_war_2005;;
+                -> concept_game_series_god_of_war;;
+        *);;
+*);
+
+
+//<- rrel_key_sc_element: ...
+//(*
+//	<- illustration;;
+//	<= nrel_sc_text_translation: ...
+//	(*
+//		-> rrel_example: "file://image/call_of_duty.png"
+//		(*
+//			=> nrel_format: format_png;;
+//		*);;
+//	*);;
+//*);
+
+<- sc_node_not_relation;;

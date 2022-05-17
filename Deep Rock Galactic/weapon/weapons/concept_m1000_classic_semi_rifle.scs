@@ -1,0 +1,30 @@
+concept_m1000_classic_semi_rifle
+=> nrel_main_idtf: [Semi automatic "M1000 classic"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Полуавтоматическая винтовка "M1000 classic"] (* <- lang_ru;; *);
+
+<- concept_weapon_semi_automatic_rifle;
+
+=> nrel_damage: 55;
+=> nrel_weakpoint_damage_bonus: 25;
+=> nrel_magazine_capacity: 8;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 3;
+=> nrel_max_ammo: 96;
+=> nrel_rate_of_fire: 4;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Полуавтоматическая винтовка "M1000 classic")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Полуавтоматическая винтовка "M1000 classic" - это полуавтоматическая винтовка, с высоким уроном, а скорострельность зависит быстроты нажатия курка.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_semi_automatic_rifle
+	};;
+*);
+
+<- sc_node_not_relation;;

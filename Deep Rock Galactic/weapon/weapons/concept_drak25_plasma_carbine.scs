@@ -1,0 +1,30 @@
+concept_drak25_plasma_carbine
+=> nrel_main_idtf: [Plasma carbine "DRAK 25"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Плазменный карабин "DRAK 25"] (* <- lang_ru;; *);
+
+<- concept_weapon_assault_rifle;
+
+=> nrel_damage: 9;
+=> nrel_weakpoint_damage_bonus: [отсутствует];
+=> nrel_magazine_capacity: 800;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: [отсутствует];
+=> nrel_max_ammo: 800;
+=> nrel_rate_of_fire: 13;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Плазменный карабин "DRAK 25")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Плазменный карабин "DRAK 25" - это плазменный карабин, с низким уроном и высокой скорострельностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_assault_rifle
+	};;
+*);
+
+<- sc_node_not_relation;;

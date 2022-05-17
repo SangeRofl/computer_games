@@ -1,0 +1,39 @@
+concept_class_saboteur
+=> nrel_main_idtf: [Class Saboteur] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Диверсант] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Диверсант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Диверсант — направлен на улучшение умений ловушек и мин полезными бонусами и дополнительными ловушками и минами. Он также обладает другими полезными навыками, такими как умение ослеплять, увеличенной областью действия, регенерацией и иммунитетом ко всем эффектам состояний.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Диверсант)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса диверсант наносить резкий и неожиданный урон по противнику.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Диверсант)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_saboteur.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

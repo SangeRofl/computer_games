@@ -1,0 +1,24 @@
+concept_toxic_grenade
+=> nrel_main_idtf: [Toxic grenade] (* <- lang_en;; *);
+=> nrel_main_idtf: [Токсичная граната] (* <- lang_ru;; *);
+
+<- concept_grenade_physics;
+
+=> nrel_grenade_area_damage: 5;
+=> nrel_maximum_radius_damage: 6;
+=> nrel_minimum_damage: 10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Токсичная граната)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Токсичная граната - это граната, которая создает облако токсичного газа и наносит урон противнику.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_grenade_physics
+	};;
+*);
+
+<- sc_node_not_relation;;

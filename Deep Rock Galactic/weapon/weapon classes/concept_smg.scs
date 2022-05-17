@@ -1,0 +1,27 @@
+concept_weapon_submachine_gun
+=> nrel_main_idtf: [sub-machine gun (Deep Rock Galactic)] (* <- lang_en;; *);
+=> nrel_main_idtf: [пистолет-пулемет (Deep Rock Galactic)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пистолет-пулемет (Deep Rock Galactic))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пистолет-пулемет — стрелковое оружие, имеющее высокую скорострельность, низкий урон и предназначенное для поражения противника в ближнем бою в игре 'Deep Rock Galactic'.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Экземпляры пистолетов-пулеметов в игре 'Deep Rock Galactic')] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В игре 'Deep Rock Galactic' существует 3 экземпляра пистолетов-пулеметов.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

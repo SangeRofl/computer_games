@@ -1,0 +1,67 @@
+concept_engineer
+=> nrel_main_idtf: [Engineer] (* <- lang_en;; *);
+=> nrel_main_idtf: [Инженер] (* <- lang_ru;; *);
+
+<-concept_classes;
+=> nrel_primary_weapon: concept_warthog_auto210_shotgun; concept_stubby_voltaic_smg; concept_lok1_smg;
+=> nrel_secondary_weapon: concept_deepcore_40mm_pgl_grenade_launcher; concept_breach_cutter;
+=> nrel_throwables: concept_lure; concept_plasma_grenade; concept_mine;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Инженер))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Инженер — один из классов в игре Deep Rock Galactic, <br> 
+		умеет расставлять платформы по карте и имеет сильное вооружение.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Основное вооружение инженера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У инженера на выбор есть следующее основное вооружение: дробовик "Warthog" <br>
+		Auto 210, пистолет-пулемет "Stubby" Voltaic, пистолет-пулемет LOK-1.] 
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Второстепенное вооружение инженера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У инженера на выбор есть следующее второстепенное вооружение: <br>
+		гранатомет Deepcore 40mm PGL, лазерная пушка Breach Cutter.] 
+		(* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Гаджеты инженера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У инженера есть следующие гаджеты: пушка для создания платформ, мобильная турель.] 
+		(* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Гранаты инженера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У инженера есть следующие гранаты на выбор: граната приманка, <br>
+		плазменная граната, мина - граната.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

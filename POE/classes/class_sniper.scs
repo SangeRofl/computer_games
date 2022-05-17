@@ -1,0 +1,39 @@
+concept_class_sniper  
+=> nrel_main_idtf: [Class Sniper] (* <- lang_en;; *);
+=> nrel_main_idtf: [Класс Снайпер] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Класс Снайпер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс Снайпер — наиболее ориентирован на нападение и фокусируется на уроне снарядами и области действия. Очевидно, что этот класс подходит для лучников, но большинство его модификаторов применимы к любым видам снарядов. А это означает, что большинство атак и чар, использующие снаряды, также извлекут выгоду от этого класса.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Класс Снайпер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Главная цель класса снайпер для нанесения урона по области.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Снайпер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/classes/Path_of_Exile_class_sniper.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

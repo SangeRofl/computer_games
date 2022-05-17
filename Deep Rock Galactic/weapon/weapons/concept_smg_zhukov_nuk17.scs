@@ -1,0 +1,30 @@
+concept_smg_zhukov_nuk17
+=> nrel_main_idtf: [SMGs "Zhukov NUK17"] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пистолеты пулеметы "Zhukov NUK17"] (* <- lang_ru;; *);
+
+<- concept_weapon_submachine_gun;
+
+=> nrel_damage: 12;
+=> nrel_weakpoint_damage_bonus: 15;
+=> nrel_magazine_capacity: 50;
+=> nrel_stan_chance: [отсутствует];
+=> nrel_stan_duration: [отсутствует];
+=> nrel_area_damage: [отсутствует];
+=> nrel_reload_time: 2;
+=> nrel_max_ammo: 650;
+=> nrel_rate_of_fire: 15;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пистолеты пулеметы "Zhukov NUK17")] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Пистолеты пулеметы "Zhukov NUK17" - это два пп, с низким уроном и очень высокой скорострельностью.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_weapon_submachine_gun
+	};;
+*);
+
+<- sc_node_not_relation;;
