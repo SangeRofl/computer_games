@@ -1,0 +1,2661 @@
+subject_domain_of_monsters
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Предметная область монстров]
+	(* <- lang_ru;; *);
+	[Subject domain of monsters]
+	(* <- lang_en;; *);
+
+=> nrel_primary_elements_class_private_subject_domain:
+    subject_domain_of_bosses;
+    subject_domain_of_beyond_demons;
+    subject_domain_of_rogue_exiles;
+    subject_domain_of_tormented_spirits;
+
+
+-> rrel_explored_relation:
+nrel_locate
+(*
+    => nrel_main_idtf: [locate* ] (* <- lang_en;; *);;
+    => nrel_main_idtf: [обитать* ] (* <- lang_ru;; *);;
+    => nrel_idtf: [находиться* ] (* <- lang_ru;; *);;
+    => nrel_idtf: [спавниться* ] (* <- lang_ru;; *);;
+    <- rrel_key_sc_element: ...
+    (*
+	    <- definition;;
+	    => nrel_main_idtf: [Опр.(обитать*)] (* <- lang_ru;; *);;
+	    <= nrel_sc_text_translation: ...
+	    (*
+        		-> [Пребывать, находиться где либо.] (* <- lang_ru;; *);;
+	    *);;
+    *);;
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(обитать*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каждый тип монстров спавниться на определенных локациях] (* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants: {
+        concept_monster;
+        concept_location
+	};;
+*);;
+<- sc_node_norole_relation;;
+*);
+
+nrel_use
+(*
+    => nrel_main_idtf: [use* ] (* <- lang_en;; *);;
+    => nrel_main_idtf: [применять* ] (* <- lang_ru;; *);;
+    => nrel_idtf: [использовать* ] (* <- lang_ru;; *);;
+    <- rrel_key_sc_element: ...
+    (*
+	    <- definition;;
+	    => nrel_main_idtf: [Опр.(применять*)] (* <- lang_ru;; *);;
+	    <= nrel_sc_text_translation: ...
+	    (*
+        		-> [Использовать какую-либо способность] (* <- lang_ru;; *);;
+	    *);;
+    *);;
+    <- sc_node_norole_relation;;
+*);
+
+
+-> rrel_maximum_studied_object_class:
+concept_monster;
+
+-> rrel_not_maximum_studied_object_class:
+concept_ape;
+concept_bandit;
+concept_beast;
+concept_birdman;
+concept_blackguard;
+concept_cannibal;
+concept_carrion;
+concept_chimeral;
+concept_construct;
+concept_devourer;
+concept_elemental;	
+concept_experimenter;
+concept_goatman;
+concept_ghost;
+concept_hellion;
+concept_maw;
+concept_miscreation;
+concept_necromancer;
+concept_plummeting_ursa;
+concept_rhoa;
+concept_ribbon;
+concept_rock;
+concept_shield_crab;
+concept_siren_s_daughter;
+concept_skeleton;
+concept_snake;
+concept_spider;
+concept_spiker;
+concept_spitter;
+concept_statue;
+concept_totem;
+concept_undying;
+concept_voidbearer;
+concept_watcher;
+concept_zombie;
+concept_normal_monster;
+concept_rare_monster;
+concept_magic_monster;
+concept_unique_monster;;
+
+//-------------------------------------------------------------------------------------------------
+concept_monster
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [monster]
+    (* <- lang_en;; *);
+    [монстр]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(монстр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Опр.(монстр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-energy_shield_recharged_20 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[20% скорости перезарядки энергетического щита в секунду] (* <- lang_ru;; *);;
+*);
+<-base_critical_strike_multiplier_130 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Базовый множитель критического удара - 130] (* <- lang_ru;; *);;
+*);
+<-max_movement_speed_128 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Максимальная скорость передвижения - 128] (* <- lang_ru;; *);;
+*);
+<-mana_regen_1_7 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Регенерация 1.7% маны в секунду] (* <- lang_ru;; *);;
+*);
+<-max_blade_flurry_stages_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+10 к максимуму стадий порыва клинков] (* <- lang_ru;; *);;
+*);
+<-all_elemental_resistances_per_endurance_charge_15 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+15% сопротивления ко всем стихиям за заряд выносливости] (* <- lang_ru;; *);;
+*);
+<-max_endurance_charges_3 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+3 к максимуму зарядов выносливости] (* <- lang_ru;; *);;
+*);
+<-max_power_charges_3 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+3 к максимуму зарядов энергии] (* <- lang_ru;; *);;
+*);
+<-max_frenzy_charges_3 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+3 к максимуму зарядов ярости] (* <- lang_ru;; *);;
+*);
+<-attack_speed_per_frenzy_charge_15 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[15% увеличение скорости атаки за заряд ярости] (* <- lang_ru;; *);;
+*);
+<-cast_speed_per_frenzy_charge_15  (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[15% увеличение скорости сотворения чар за заряд ярости] (* <- lang_ru;; *);;
+*);
+<-damage_per_10_rampage_stacks_2 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[2% увеличение урона за каждые 10 единиц буйства] (* <- lang_ru;; *);;
+*);
+<-critical_strike_chance_per_power_charge_200 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[200% увеличение шанса критического удара за заряд энергии] (* <- lang_ru;; *);;
+*);
+<-movement_speed_per_frenzy_charge_5 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[5% увеличение скорости передвижения за заряд ярости] (* <- lang_ru;; *);;
+*);
+<-can_have_rampage_stacks_1000 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 1000 единиц буйства] (* <- lang_ru;; *);;
+*);
+<-movement_speed_per_20_rampage_stacks_1 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[На 1% увеличение скорости передвижения за каждые 20 единиц буйства] (* <- lang_ru;; *);;
+*);
+<-damage_pre_frenzy_charge_4 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[На 4% больше урона за заряд ярости] (* <- lang_ru;; *);;
+*);
+<-max_number_of_summoned_totems_1 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+1 к максимальному количеству призванных тотемов] (* <- lang_ru;; *);;
+*);
+<-max_energy_shield_to_max_recovery_per_energy_shield_leech_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+10% от максимума энергетического щита к максимальному восстановлению за каждое похищение энергетического щита] (* <- lang_ru;; *);;
+*);
+<-max_energy_shield_to_max_total_recovery_per_second_from_shield_leech_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+10% от максимума энергетического щита к максимальному общему восстановлению в секунду от похищения энергетического щита] (* <- lang_ru;; *);;
+*);
+<-max_life_to_max_recovery_per_life_leech_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+10% от максимума здоровья к максимальному восстановлению за каждое похищение здоровья] (* <- lang_ru;; *);;
+*);
+<-max_mana_to_max_recovery_per_mana_leech_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+10% от максимума маны к максимальному восстановлению за каждое похищение маны] (* <- lang_ru;; *);;
+*);
+<-max_life_to_max_total_recovery_per_second_from_life_leech_20 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+20% от максимума здоровья к максимальному общему восстановлению в секунду от похищения здоровья] (* <- lang_ru;; *);;
+*);
+<-max_mana_to_max_total_recovery_per_second_from_mana_leech_20 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+20% от максимума маны к максимальному общему восстановлению в секунду от похищения маны] (* <- lang_ru;; *);;
+*);
+<-max_mana_200 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+200 к максимуму маны] (* <- lang_ru;; *);;
+*);
+<-max_chaos_resistance_75 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+75% к максимальному сопротивлению хаосу] (* <- lang_ru;; *);;
+*);
+<-max_cold_resistance_75  (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+75% к максимальному сопротивлению холоду] (* <- lang_ru;; *);;
+*);
+<-max_fire_resistance_75  (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+75% к максимальному сопротивлению огню] (* <- lang_ru;; *);;
+*);
+<-max_lighting_resistance_75  (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+75% к максимальному сопротивлению молнии] (* <- lang_ru;; *);;
+*);
+<-max_chance_to_block_attack_damage_75 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[+75% к максимальному шансу блокировать урон от атаки] (* <- lang_ru;; *);;
+*);
+<-max_chance_physical_damage_reduction_75(*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[75% к максимальному уменьшению физического урона] (* <- lang_ru;; *);;
+*);
+<-can_have_azurite_stacks_10 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 10 едениц азурита] (* <- lang_ru;; *);;
+*);
+<-can_have_corrupted_blood_rain_stacks_20 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 20 едениц капель оскверненного кровавого дождя] (* <- lang_ru;; *);;
+*);
+<-can_have_corrupted_blood_stacks_20 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 20 едениц оскверненной крови.] (* <- lang_ru;; *);;
+*);
+<-can_have_traps_placed_at_a_time_3 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 3 ловушек одновременно] (* <- lang_ru;; *);;
+*);
+<-can_have_viper_strike_orbs_4 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 4 сфер удара змеи.] (* <- lang_ru;; *);;
+*);
+<-can_have_explosive_arrow_stacks_5 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 5 едениц взрывных стрел] (* <- lang_ru;; *);;
+*);
+<-can_have_remote_mines_placed_at_a_time_5 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 5 дистанционных мин одновременно.] (* <- lang_ru;; *);;
+*);
+<-can_have_dodge_chance_75 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 75% шанса уклонения] (* <- lang_ru;; *);;
+*);
+<-can_have_spell_dodge_chance_74 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 75% шанса уклонения от заклинаний.] (* <- lang_ru;; *);;
+*);
+<-can_have_fire_beams_stacks_8 (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[Может иметь до 8 едениц огненного луча] (* <- lang_ru;; *);;
+*);
+<=nrel_subdividing: ...
+(*
+->concept_ape;;
+->concept_bandit;;
+->concept_beast;;
+->concept_birdman;;
+->concept_blackguard;;
+->concept_cannibal;;
+->concept_carrion;;
+->concept_chimeral;;
+->concept_construct;;
+->concept_devourer;;
+->concept_elemental;;
+->concept_experimenter;;
+->concept_goatman;;
+->concept_ghost;;
+->concept_hellion;;
+->concept_maw;;
+->concept_miscreation;;
+->concept_necromancer;;
+->concept_plummeting_ursa;;
+->concept_rhoa;;
+->concept_ribbon;;
+->concept_rock;;
+->concept_shield_crab;;
+->concept_siren_s_daughter;;
+->concept_skeleton;;
+->concept_snake;;
+->concept_spider;;
+->concept_spiker;;
+->concept_spitter;;
+->concept_statue;;
+->concept_totem;;
+->concept_undying;;
+->concept_voidbearer;;
+->concept_watcher;;
+->concept_zombie;;
+=>nrel_main_idtf: [Разбиение по типам монстров] (*<-lang_ru;;*);;
+*);
+<=nrel_subdividing: ...
+(*
+->concept_normal_monster
+(*
+<- sc_node_not_relation;;
+=> nrel_main_idtf:
+    [normal monster]
+    (* <- lang_en;; *);
+    [обычный монстр]
+    (* <- lang_ru;; *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(обычный моснтр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/normal_monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/normal_monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+*);;
+->concept_magic_monster
+(*
+<- sc_node_not_relation;;
+=> nrel_main_idtf:
+    [магический монстр]
+    (* <- lang_ru;; *);
+    [magic monster]
+    (* <- lang_en;; *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(магический моснтр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/magic_monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/magic_monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+*);;
+->concept_rare_monster
+(*
+<- sc_node_not_relation;;
+=> nrel_main_idtf:
+    [редкий монстр]
+    (* <- lang_ru;; *);
+    [rare monster]
+    (* <- lang_en;; *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(редкий моснтр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/rare_monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/rare_monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+*);;
+->concept_unique_monster
+(*
+<- sc_node_not_relation;;
+=> nrel_main_idtf:
+    [уникальный монстр]
+    (* <- lang_ru;; *);
+    [unique monster]
+    (* <- lang_en;; *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(уникальный моснтр)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/unique_monster_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/unique_monster_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+*);;
+=>nrel_main_idtf: [Разбиение по редкости] (*<-lang_ru;;*);;
+*);;
+//-------------------------------------------------------------------------------------------------
+concept_ape
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [ape]
+    (* <- lang_en;; *);
+    [обезьяна(монстр)]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(обезьяна(монстр))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_fire (*
+    <-sc_node_not_relation;;
+    =>nrel_main_idtf:[устойчив к огню] (* <- lang_ru;; *);;
+*);
+<=nrel_subdividing: ...
+(*
+->concept_blood_ape
+(*
+    =>nrel_main_idtf:[кровавый примат] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(кровавый примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/blood_ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/blood_ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(кровавый примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/blood_ape.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_southern_forest(*=> nrel_main_idtf: [южный лес](*<-lang_ru;;*);;*);
+    the_crossroads(*=> nrel_main_idtf: [перекресток](*<-lang_ru;;*);;*);
+    the_riverways(*=> nrel_main_idtf: [пойма реки](*<-lang_ru;;*);;*);;
+    <-resists_fire;;
+    <=nrel_inclusion: concept_normal_monster;;
+*);;
+->concept_carnage_ape
+(*
+    =>nrel_main_idtf:[примат убийца] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(примат убийца)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/carnage_ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/carnage_ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(примат убийца)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/carnage_ape.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_old_fields(*=> nrel_main_idtf: [старые поля](*<-lang_ru;;*);;*);
+    the_hedge_maze(*=> nrel_main_idtf: [зеленый лабиринт](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_normal_monster;;
+    <-resists_fire;;
+*);;
+->concept_barrow_ape
+(*
+    =>nrel_main_idtf:[холмовой примат] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(холмовой примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/barrow_ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/barrow_ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(холмовой примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/barrow_ape.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_den(*=> nrel_main_idtf: [берлога](*<-lang_ru;;*);;*);
+    the_imperial_gardens(*=> nrel_main_idtf: [имперские сады](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_normal_monster;;
+    <-resists_fire;;
+*);;
+->concept_stygian_ape
+(*
+    =>nrel_main_idtf:[адский примат] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(адский примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/stygian_ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/stygian_ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(адский примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/stygian_ape.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_crossroads;
+    the_riverways;;
+    <-resists_fire;;
+    <=nrel_inclusion: concept_normal_monster;;
+*);;
+->concept_dread_primate
+(*
+    =>nrel_main_idtf:[жуткий примат] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(жуткий примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/dread_primate_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/dread_primate_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(жуткий примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/dread_primate.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_dread_thicket(*=> nrel_main_idtf: [чащоба](*<-lang_ru;;*);;*);;
+    <-resists_fire;;
+    <=nrel_inclusion: concept_normal_monster;;
+*);;
+->concept_primitive_ape
+(*
+    =>nrel_main_idtf:[примитивный примат] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(примитивный примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/primitive_ape_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/primitive_ape_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(примитивный примат)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/primitive_ape.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    untained_paradise(*=> nrel_main_idtf: [нетронутый рай](*<-lang_ru;;*);;*);;
+    <-resists_fire;;
+    <-extra_life(*=>nrel_main_idtf:[увеличенное здоровье](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_magic_monster;;
+*);;
+->concept_blood_chieftain
+(*
+    =>nrel_main_idtf:[вожак кровавых обезьян] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(вожак кровавых обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/blood_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/blood_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв.(вожак кровавых обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/blood_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/blood_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(вожак кровавых обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/blood_chieftain.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_southern_forest;
+    the_crossroads;;
+    <-resists_fire;;
+    <=nrel_inclusion: concept_rare_monster;;
+*);;
+->concept_carnage_chieftain
+(*
+    =>nrel_main_idtf:[буйствующий вожак обезьян] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(буйствующий вожак обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/carnage_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/carnage_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв1.(буйствующий вожак обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/carnage_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/carnage_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв2.(буйствующий вожак обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/carnage_chieftain_2_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/carnage_chieftain_2_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(буйствующий вожак обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/carnage_chieftain.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_old_fields;;
+    <-resists_fire;;
+    <=nrel_inclusion: concept_rare_monster;;
+*);;
+->concept_stygian_silverback
+(*
+    =>nrel_main_idtf:[вожак адских обезьян] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(вожак адских обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/stygian_silverback_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/stygian_silverback_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв1.(вожак адских обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/stygian_silverback_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/stygian_silverback_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв2.(вожак адских обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/stygian_silverback_2_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/stygian_silverback_2_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(вожак адских обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/stygian_silverback.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_riverways;;
+    <-resists_fire;;  
+    <=nrel_inclusion: concept_rare_monster;;  
+*);;
+->concept_aboriginal_chieftain
+(*
+    =>nrel_main_idtf:[вожак доисторических обезьян] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(вожак доисторических обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/aboriginal_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/aboriginal_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв1.(вожак доисторических обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/aboriginal_chieftain_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/aboriginal_chieftain_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- statement;;
+        => nrel_main_idtf:[Утв2.(вожак доисторических обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/statements/aboriginal_chieftain_2_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/statements/aboriginal_chieftain_2_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(вожак доисторических обезьян)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/aboriginal_chieftain.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    untained_paradise;;
+    <-resists_fire;;  
+    <-extra_life;;
+    <=nrel_inclusion: concept_rare_monster;;
+*);;
+->concept_aidan_the_frenzied
+(*
+    =>nrel_main_idtf:[Эйдан Бешеный] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(Эйдан Бешеный)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/aidan_the_frenzied_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/aidan_the_frenzied_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(Эйдан Бешеный)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/aidan_the_frenzied.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_dread_thicket;;
+    <-resists_fire;;
+    <-increases_allies_attack_speed(*=>nrel_main_idtf:[увеличивает скорость атаки союзников](*<-lang_ru;;*);;*);;
+    <-increases_allies_movement_speed(*=>nrel_main_idtf:[увеличивает скорость передвижения союзников](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_unique_monster;;
+*);;
+->concept_nadia_the_soothing
+(*
+    =>nrel_main_idtf:[Надя Кроткая] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(Надя Кроткая)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/nadia_the_soothing_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/nadia_the_soothing_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(Надя Кроткая)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/nadia_the_soothing.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_dread_thicket;;
+    <-resists_fire;;
+    <-slows_enemies_movement_speed(*=>nrel_main_idtf:[уменьшает скорость передвижению врагов](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_unique_monster;;
+*);;
+*);;
+
+concept_bandit
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [bandit]
+    (* <- lang_en;; *);
+    [разбойник]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(разбойник)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/bandit_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/bandit_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_chaos(*=>nrel_main_idtf:[сопротивление хаосу](*<-lang_ru;;*);;*);
+<=nrel_subdividing: ...
+(*
+->concept_kraityn_thrall
+(*
+    =>nrel_main_idtf:[раб Крайлиста] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(раб Крайлиста)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/kraityn_thrall_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/kraityn_thrall_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(раб Крайлиста)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/kraityn_thrall.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_broken_bridge(*=> nrel_main_idtf: [разрушенный мост](*<-lang_ru;;*);;*);;
+    =>nrel_use: puncture(*=> nrel_main_idtf: [Надрез](*<-lang_ru;;*);;*);;
+    <=nrel_inclusion: concept_normal_monster;;
+*);;
+
+->concept_callow_thug
+(*
+    =>nrel_main_idtf:[головорез] (*<- lang_ru;;*);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(головорез)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/callow_thug_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/callow_thug_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+    <- rrel_key_sc_element:
+    ...
+    (*
+        <- illustration;;
+        => nrel_main_idtf:[Иллюстрация(головорез)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                    ->rrel_example: "file://content_html/images/callow_thug.png"
+                    (*
+                        ->nrel_format: format_png;;
+                    *);;
+            *);;
+    *);;
+    => nrel_locate:
+    the_broken_bridge;
+    the_crossroads;
+    the_riverways;;
+
+    =>nrel_use: puncture(*=> nrel_main_idtf: [Надрез](*<-lang_ru;;*);;*);;
+
+    <=nrel_inclusion: concept_normal_monster;;
+*);;
+
+->concept_shadow_stalker
+(*
+    =>nrel_main_idtf:[темный охотник] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira_blood_hand
+(*
+    =>nrel_main_idtf:[кровавая длань Антиопы] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira_blood_guard
+(*
+    =>nrel_main_idtf:[кровавый привратник Антиопы] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira_martyr
+(*
+    =>nrel_main_idtf:[мученик Антиопы] (*<- lang_ru;;*);;
+*);;
+
+->concept_oak_devoted
+(*
+    =>nrel_main_idtf:[приверженец Дуба] (*<- lang_ru;;*);;
+*);;
+
+->concept_oak_fist
+(*
+    =>nrel_main_idtf:[кулак Дуба] (*<- lang_ru;;*);;
+*);;
+
+->concept_kraityn_scout
+(*
+    =>nrel_main_idtf:[разведчик Крайтина] (*<- lang_ru;;*);;
+*);;
+
+->concept_kraityn_sniper
+(*
+    =>nrel_main_idtf:[лучник Крайлиста] (*<- lang_ru;;*);;
+*);;
+
+->concept_kraityn_high_guard
+(*
+    =>nrel_main_idtf:[cтарший охраны Крайлиста] (*<- lang_ru;;*);;
+*);;
+->concept_callow_sniper
+(*
+    =>nrel_main_idtf:[болотный охотник] (*<- lang_ru;;*);;
+*);;
+
+->concept_shadow_archer
+(*
+    =>nrel_main_idtf:[теневый лучник] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira_deadeye
+(*
+    =>nrel_main_idtf:[снайпер Антиопы] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira_souleye
+(*
+    =>nrel_main_idtf:[охотник за душами Антиопы] (*<- lang_ru;;*);;
+*);;
+
+->concept_oak_guardian
+(*
+    =>nrel_main_idtf:[караульный Дуба] (*<- lang_ru;;*);;
+*);;
+
+->concept_hired_ruffian
+(*
+    =>nrel_main_idtf:[наемник(лучник)] (*<- lang_ru;;*);;
+*);;
+
+->concept_calaf_headstaver
+(*
+    =>nrel_main_idtf:[Калаф, Дробитель черепов] (*<- lang_ru;;*);;
+*);;
+
+->concept_kall_foxfly	
+(*
+    =>nrel_main_idtf:[Кэл Лисий шаг] (*<- lang_ru;;*);;
+*);;
+
+->concept_kraityn
+(*
+    =>nrel_main_idtf:[Крайлист] (*<- lang_ru;;*);;
+*);;
+
+->concept_alira
+(*
+    =>nrel_main_idtf:[Антиопа] (*<- lang_ru;;*);;
+*);;
+
+->concept_oak
+(*
+    =>nrel_main_idtf:[Дуб] (*<- lang_ru;;*);;
+*);;
+
+->concept_witch_of_the_cauldron
+(*
+    =>nrel_main_idtf:[хозяйка котла] (*<- lang_ru;;*);;
+*);;
+
+->concept_oak_the_mighty	
+(*
+    =>nrel_main_idtf:[Могучий Дуб] (*<- lang_ru;;*);;
+*);;
+
+->concept_master_of_the_blade
+(*
+    =>nrel_main_idtf:[Мастер клинка] (*<- lang_ru;;*);;
+*);;
+
+->concept_massier
+(*
+    =>nrel_main_idtf:[Воротигора] (*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_beast
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [beast]
+    (* <- lang_en;; *);
+    [медведь]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(медведь)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/beast_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/beast_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-increased_damage(*=>nrel_main_idtf:[урон увеличен](*<-lang_ru;;*);;*);
+<-increased_hp(*=>nrel_main_idtf:[здоровье увеличено](*<-lang_ru;;*);;*);
+<=nrel_subdividing: ...
+(*
+->concept_cave_beast
+(*
+=>nrel_main_idtf:[пещерный зверь](*<-lang_ru;;*);;
+*);;
+
+->concept_bone_cruncher
+(*
+=>nrel_main_idtf:[костолом](*<-lang_ru;;*);;
+*);;
+
+
+->concept_hairy_bonecruncher
+(*
+=>nrel_main_idtf:[лохматый костолом](*<-lang_ru;;*);;
+*);;
+
+
+->concept_hairy_bonecrusher
+(*
+=>nrel_main_idtf:[волосатый костолом](*<-lang_ru;;*);;
+*);;
+
+
+->concept_thicket_hulk
+(*
+=>nrel_main_idtf:[чащобная громадина](*<-lang_ru;;*);;
+*);;
+
+
+->concept_shaggy_monstrosity
+(*
+=>nrel_main_idtf:[лохматое чудовище](*<-lang_ru;;*);;
+*);;
+
+
+->concept_armour_cruncher 
+(*
+=>nrel_main_idtf:[крушитель брони](*<-lang_ru;;*);;
+*);;
+
+
+->concept_skeletal_beast
+(*
+=>nrel_main_idtf:[костяк зверя](*<-lang_ru;;*);;
+*);;
+
+
+->concept_primal_veast
+(*
+=>nrel_main_idtf:[доисторический зверь](*<-lang_ru;;*);;
+*);;
+
+->concept_infested_beast 
+(*
+=>nrel_main_idtf:[Заражённый зверь](*<-lang_ru;;*);;
+*);;
+
+
+->concept_risen_infested_beast
+(*
+=>nrel_main_idtf:[остов заражённого зверя](*<-lang_ru;;*);;
+*);;
+
+
+->concept_the_great_white_beast
+(*
+=>nrel_main_idtf:[великий белый зверь](*<-lang_ru;;*);;
+*);;
+
+
+->concept_tyrannursus_maximus
+(*
+=>nrel_main_idtf:[Тиранурсус Максимус](*<-lang_ru;;*);;
+*);;
+
+
+->concept_beast_of_the_pits
+(*
+=>nrel_main_idtf:[зверь ям](*<-lang_ru;;*);;
+*);;
+*);;
+
+concept_birdman
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [birdman]
+    (* <- lang_en;; *);
+    [птицелюд]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(птицелюд)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/birdman_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/birdman_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_cold(*=>nrel_main_idtf:[сопротивление холоду](*<-lang_ru;;*);;*);
+<-consume_corpses(*=>nrel_main_idtf:[пожирание трупов](*<-lang_ru;;*);;*);
+<-vomit_corpses(*=>nrel_main_idtf:[плевок трупом](*<-lang_ru;;*);;*);
+<=nrel_subdividing: ... 
+(*
+->concept_gluttonous_gull
+(*
+=>nrel_main_idtf:[ненасытный падальщик](*<-lang_ru;;*);;
+*);;
+
+
+->concept_avian_retch
+(*
+=>nrel_main_idtf:[пернатый рыгатель](*<-lang_ru;;*);;
+*);;
+
+
+->concept_saqawine_retch
+(*
+=>nrel_main_idtf:[оскверненный падальщик](*<-lang_ru;;*);;
+*);;
+
+
+->concept_inti_of_the_blood_moon
+(*
+=>nrel_main_idtf:[Инти Кроваволунный](*<-lang_ru;;*);;
+*);;
+
+
+->concept_tyranny_archon
+(*
+=>nrel_main_idtf:[тиранический архонт](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+
+concept_blackguard
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [blackguard]
+    (* <- lang_en;; *);
+    [черная стража]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(черная стража)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/blackguard_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/blackguard_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_chaos;
+<=nrel_subdividing: ...
+(*
+->concept_elite_guard
+(*
+=>nrel_main_idtf:[элитный стражник](*<-lang_ru;;*);;
+*);;
+
+->concept_guard
+(*
+=>nrel_main_idtf:[стражник](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_scout
+(*
+=>nrel_main_idtf:[разведчик черной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_soldier
+(*
+=>nrel_main_idtf:[черный стражник](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_elite
+(*
+=>nrel_main_idtf:[элитный черный стражник](*<-lang_ru;;*);;
+*);;
+
+->concept_praetorian_guard
+(*
+=>nrel_main_idtf:[стражник-преторианец](*<-lang_ru;;*);;
+*);;
+
+->concept_corrupted_blackguard
+(*
+=>nrel_main_idtf:[совращённый чёрный стражник](*<-lang_ru;;*);;
+*);;
+
+->concept_elite_mercenary
+(*
+=>nrel_main_idtf:[элитный наёмник](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_mage
+(*
+=>nrel_main_idtf:[маг черной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_arcmage
+(*
+=>nrel_main_idtf:[архимаг черной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_firemage
+(*
+=>nrel_main_idtf:[пиромант черной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_mage_mercenary
+(*
+=>nrel_main_idtf:[Наёмник-колдун](*<-lang_ru;;*);;
+*);;
+
+->concept_captain_arteri
+(*
+=>nrel_main_idtf:[капитан Артемий](*<-lang_ru;;*);;
+*);;
+
+->concept_guard_captain
+(*
+=>nrel_main_idtf:[капитан Стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_captain_aurelianus
+(*
+=>nrel_main_idtf:[капитан Аврелий](*<-lang_ru;;*);;
+*);;
+
+->concept_imperator_stantinus_bitterblade
+(*
+=>nrel_main_idtf:[Император Стантинус Клинок горечи](*<-lang_ru;;*);;
+*);;
+
+->concept_draconarius_wilhelm_flamebrand
+(*
+=>nrel_main_idtf:[Дракон Вильхельм Клейменный пламенем](*<-lang_ru;;*);;
+*);;
+
+->concept_compulsor_octavia_sparkfist
+(*
+=>nrel_main_idtf:[принудитель Октавия Сверкающий кулак](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_avenger	
+(*
+=>nrel_main_idtf:[мститель чёрной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_tempest	
+(*
+=>nrel_main_idtf:[буря чёрной стражи](*<-lang_ru;;*);;
+*);;
+
+->concept_oriath_s_vigil
+(*
+=>nrel_main_idtf:[бдение Ориата](*<-lang_ru;;*);;
+*);;
+
+->concept_oriathvs_vengeance	
+(*
+=>nrel_main_idtf:[отмщение Ориата](*<-lang_ru;;*);;
+*);;
+
+->concept_oriath_s_virtue
+(*
+=>nrel_main_idtf:[добродетель Ориата](*<-lang_ru;;*);;
+*);;
+
+->concept_corrector_draconides
+(*
+=>nrel_main_idtf:[корректор Драконид](*<-lang_ru;;*);;
+*);;
+
+->concept_evocata_apocalyptica
+(*
+=>nrel_main_idtf:[эвоката Апокалиптика](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_of_hatred
+(*
+=>nrel_main_idtf:[черный стражник ненависти](*<-lang_ru;;*);;
+*);;
+
+->concept_blackguard_of_wrath	
+(*
+=>nrel_main_idtf:[черный стражник гнева](*<-lang_ru;;*);;
+*);;
+
+*);;
+
+
+
+concept_cannibal
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [cannibal]
+    (* <- lang_en;; *);
+    [людоед]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(людоед)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/cannibal_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/cannibal_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_chaos_50(*=>nrel_main_idtf:[сопротивление хаосу 50%](*<-lang_ru;;*);;*);
+<-throw_rocks(*=>nrel_main_idtf:[бросают камни](*<-lang_ru;;*);;*);
+<=nrel_subdividing: ...
+(*
+
+->concept_cannibal_male	
+(*
+=>nrel_main_idtf:[людоед (муж.)](*<-lang_ru;;*);;
+*);;
+
+->concept_cannibal_female	
+(*
+=>nrel_main_idtf:[людоед (жен.)](*<-lang_ru;;*);;
+*);;
+
+->concept_fire_fury	
+(*
+=>nrel_main_idtf:[огненная фурия](*<-lang_ru;;*);;
+*);;
+
+->concept_hailrake	
+(*
+=>nrel_main_idtf:[отморозок](*<-lang_ru;;*);;
+*);;
+
+->concept_perquil_the_lucky	
+(*
+=>nrel_main_idtf:[Перквил Удачливый](*<-lang_ru;;*);;
+*);;
+
+->concept_megaera	
+(*
+=>nrel_main_idtf:[Мегера](*<-lang_ru;;*);;
+*);;
+
+->concept_glace	
+(*
+=>nrel_main_idtf:[Ожеледь](*<-lang_ru;;*);;
+*);;
+
+->concept_graveblood	
+(*
+=>nrel_main_idtf:[могильник](*<-lang_ru;;*);;
+*);;
+
+->concept_nighteater	
+(*
+=>nrel_main_idtf:[ночной людоед](*<-lang_ru;;*);;
+*);;
+
+
+*);;
+
+
+
+concept_carrion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [carrion]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [жук(монстр)]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(жук(монстр))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/carrion_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/carrion_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<=nrel_subdividing: ...
+(*
+
+->concept_carrion_swarmer	
+(*
+=>nrel_main_idtf:[мерзкий жук](*<-lang_ru;;*);;
+*);;
+
+->concept_carrion_queen	
+(*
+=>nrel_main_idtf:[матка трупоедов](*<-lang_ru;;*);;
+*);;
+
+->concept_carrion_minion	
+(*
+=>nrel_main_idtf:[мерзкий выродок](*<-lang_ru;;*);;
+*);;
+
+->concept_scum_crawler	
+(*
+=>nrel_main_idtf:[сточник](*<-lang_ru;;*);;
+*);;
+
+->concept_corrupted_crawler	
+(*
+=>nrel_main_idtf:[нечистотник порчи](*<-lang_ru;;*);;
+*);;
+
+->concept_corrupted_swarmer	
+(*
+=>nrel_main_idtf:[жук осквернения](*<-lang_ru;;*);;
+*);;
+
+->concept_the_sunburst_queen	
+(*
+=>nrel_main_idtf:[Солнцеликая Царица](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+
+concept_chimeral
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [chimeral]
+    (* <- lang_en;; *);
+    [химера]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(химера)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/chimeral_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/chimeral_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_cold;
+<=nrel_subdividing: ...
+(*
+    ->concept_plumed_chimeral	
+(*
+=>nrel_main_idtf:[сливовый ящер](*<-lang_ru;;*);;
+*);;
+
+->concept_croaking_chimeral	
+(*
+=>nrel_main_idtf:[химеровый квакун](*<-lang_ru;;*);;
+*);;
+
+->concept_paradisae_venenum
+(*
+=>nrel_main_idtf:[райский ядоклюв](*<-lang_ru;;*);;
+*);;
+
+->concept_sallazzang	
+(*
+=>nrel_main_idtf:[Саллазанг](*<-lang_ru;;*);;
+*);;
+
+->concept_clutch_queen
+(*
+=>nrel_main_idtf:[когтистый вожак](*<-lang_ru;;*);;
+*);;
+
+->concept_alpha_paradisae
+(*
+=>nrel_main_idtf:[райский вожак](*<-lang_ru;;*);;
+*);;
+
+->concept_genesis_paradisae	
+(*
+=>nrel_main_idtf:[порождение рая](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_construct
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [construct]
+    (* <- lang_en;; *);
+    [механизм]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(механизм)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/construct_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/construct_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<=nrel_subdividing: ...
+(*
+->concept_colossal_vaal_fallen
+(*
+=>nrel_main_idtf:[огромный павший ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_arsonist
+(*
+=>nrel_main_idtf:[поджигатель ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_bone_warden
+(*
+=>nrel_main_idtf:[костяной надзиратель ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_fallen
+(*
+=>nrel_main_idtf:[павший ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_frost_guardian
+(*
+=>nrel_main_idtf:[морозный хранитель ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_frostguard	
+(*
+=>nrel_main_idtf:[морозный страж ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_alpha_paradisae
+(*
+=>nrel_main_idtf:[убийца ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_slayer
+(*
+=>nrel_main_idtf:[громовой страж ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_thunderguard
+(*
+=>nrel_main_idtf:[райский вожак](*<-lang_ru;;*);;
+*);;
+
+->concept_ancient_construct
+(*
+=>nrel_main_idtf:[древний механизм](*<-lang_ru;;*);;
+*);;
+
+->concept_ancient_construct_2
+(*
+=>nrel_main_idtf:[древний механизм](*<-lang_ru;;*);;
+*);;
+
+->concept_cairn_annihilator
+(*
+=>nrel_main_idtf:[истребитель расхитителей](*<-lang_ru;;*);;
+*);;
+
+->concept_shadow_minion
+(*
+=>nrel_main_idtf:[темный слуга](*<-lang_ru;;*);;
+*);;
+
+->concept_vaal_construct
+(*
+=>nrel_main_idtf:[механизм ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_shrapnelbearer
+(*
+=>nrel_main_idtf:[разбиватель](*<-lang_ru;;*);;
+*);;
+
+->concept_haviri_vaal_metalsmith
+(*
+=>nrel_main_idtf:[хавири, Кузнец руд ваал](*<-lang_ru;;*);;
+*);;
+
+->concept_atziri_s_chosen
+(*
+=>nrel_main_idtf:[избранник Азири](*<-lang_ru;;*);;
+*);;
+
+->concept_judgement_apparatus
+
+(*
+=>nrel_main_idtf:[исполняющий суд](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_devourer
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [devourer]
+    (* <- lang_en;; *);
+    [пожиратель]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(пожиратель)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/devourer_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/devourer_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+<-resists_cold;
+<-burrow(*=> nrel_main_idtf:[прячется в земле](*<- lang_ru;;*);;*);
+<-shoots_fire_projectiles(*=> nrel_main_idtf:[стреляет огненными снарядами](*<- lang_ru;;*);;*);
+ => nrel_locate:
+    the_blackwood(*=> nrel_main_idtf:[чернолесье](*<- lang_ru;;*);;*);
+    the_caverns(*=> nrel_main_idtf:[пещеры](*<- lang_ru;;*);;*);
+    the_imperial_gardens;
+    the_hedge_maze;
+<=nrel_subdividing: ...
+(*
+->concept_the_conqueror_wurm
+(*
+=>nrel_main_idtf:[Змей Завоеватель](*<-lang_ru;;*);;
+*);;
+
+->concept_kamaq_soilmake
+(*
+=>nrel_main_idtf:[Кэмак, Маратель](*<-lang_ru;;*);;
+*);;
+
+->concept_tunneltrap
+(*
+=>nrel_main_idtf:[туннельная ловушка](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_elemental<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [elemental]
+    (* <- lang_en;; *);
+    [элементаль]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(элементаль)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/elemental_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/elemental_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_experimenter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [experimenter]
+    (* <- lang_en;; *);
+    [опытник]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(опытник)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/experimenter_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/experimenter_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);
+    <-resists_chaos;
+<=nrel_subdividing: ...
+(*
+->concept_reanimator
+(*
+=>nrel_main_idtf:[Реаниматор](*<-lang_ru;;*);;
+*);;
+
+->concept_mortality_experimenter
+(*
+=>nrel_main_idtf:[Опытник смерти](*<-lang_ru;;*);;
+*);;
+
+->concept_flesh_sculptor
+(*
+=>nrel_main_idtf:[cкульптор плоти](*<-lang_ru;;*);;
+*);;
+
+->concept_fleshrend_grand_inquisitor
+(*
+=>nrel_main_idtf:[Шкуродер, Великий Инквизитор](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_goatman
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [goatman]
+    (* <- lang_en;; *);
+    [козерог]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(козерог)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/goatman_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/goatman_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_ghost
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [ghost]
+    (* <- lang_en;; *);
+    [призрак]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(призрак)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/ghost_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/ghost_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_hellion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [hellion]
+    (* <- lang_en;; *);
+    [лев]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(лев)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/hellion_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/hellion_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_maw
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [maw]
+    (* <- lang_en;; *);
+    [пасть]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(пасть)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/maw_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/maw_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_miscreation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [miscreation]
+    (* <- lang_en;; *);
+    [уродец]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(уродец)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/miscreation_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/miscreation_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_necromancer
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [necromancer]
+    (* <- lang_en;; *);
+    [некромант]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(некромант)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/necromancer_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/necromancer_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_plummeting_ursa
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [plummeting ursa]
+    (* <- lang_en;; *);
+    [верхолаз]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(верхолаз)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/plummeting_ursa_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/plummeting_ursa_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+    
+concept_rhoa
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [rhoa]
+    (* <- lang_en;; *);
+    [роа]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(роа)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/rhoa_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/rhoa_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_ribbon
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [ribbon]
+    (* <- lang_en;; *);
+    [лента]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(лента)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/ribbon_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/ribbon_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+    
+concept_rock
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [rock]
+    (* <- lang_en;; *);
+    [каменный голем]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(каменный голем)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/rock_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/rock_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_shield_crab
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [shield crab]
+    (* <- lang_en;; *);
+    [панцирник]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(панцирник)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/shield_crab_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/shield_crab_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_siren_s_daughter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [siren's daughter]
+    (* <- lang_en;; *);
+    [дочь сирены]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(дочь сирены)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/siren_s_daughter_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/siren_s_daughter_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_skeleton
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [skeleton]
+    (* <- lang_en;; *);
+    [скелет]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(скелет)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/skeleton_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/skeleton_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_snake
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [snake]
+    (* <- lang_en;; *);
+    [змея]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(змея)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/snake_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/snake_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_spider
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [spider]
+    (* <- lang_en;; *);
+    [паук]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(паук)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/spider_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/spider_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_spiker
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [spiker]
+    (* <- lang_en;; *);
+    [дикобраз]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(дикобраз)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/spiker_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/spiker_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_spitter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [spitter]
+    (* <- lang_en;; *);
+    [плевун]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(плевун)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/spitter_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/spitter_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+concept_statue
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [statue]
+    (* <- lang_en;; *);
+    [статуя]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(статуя)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/statue_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/statue_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_totem
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [totem]
+    (* <- lang_en;; *);
+    [тотем]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(тотем)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/totem_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/totem_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_undying
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [undying]
+    (* <- lang_en;; *);
+    [бессмертный]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(бессмертный)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/undying_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/undying_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_voidbearer
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [voidbearer]
+    (* <- lang_en;; *);
+    [носитель пустоты]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(носитель пустоты)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/voidbearer_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/voidbearer_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_watcher
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [watcher]
+    (* <- lang_en;; *);
+    [смотритель(монстр)]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(смотритель(монстр))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/watcher_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/watcher_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+concept_zombie
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [zombie]
+    (* <- lang_en;; *);
+    [зомби]
+    (* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:[Опр.(зомби)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    "file://content_html/definitions/zombie_en.html"
+                    (* <- lang_en;; *);
+                    "file://content_html/definitions/zombie_ru.html"
+                    (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_locate;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_locate;;
+asymmetric_relation -> nrel_locate;;
+
+nrel_locate => nrel_first_domain: concept_game_creature;;
+nrel_locate => nrel_second_domain: concept_location;;
+nrel_locate => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_game_creature;
+	    concept_location
+	};;
+*);;
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_locate;;
+number->2;;
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_use;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: asymmetric_relation;;
+antireflexive_relation -> nrel_use;;
+asymmetric_relation -> nrel_use;;
+
+nrel_use => nrel_first_domain: concept_game_creature;;
+nrel_use => nrel_second_domain: concept_location;;
+nrel_use => nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_game_creature;
+	    concept_location
+	};;
+*);;
+
+sc_node_not_relation -> arity;;
+sc_node_not_relation -> arity_2;;
+arity -> arity_2;;
+arity_2 => nrel_measurement:2;;
+arity_2 -> nrel_use;;
+number->2;;

@@ -1,0 +1,10 @@
+subject_domain_of_beyond_demons
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Предметная область демонов иномирья]
+	(* <- lang_ru;; *);
+	[Subject domain of beyond demons]
+	(* <- lang_en;; *);
+
+-> rrel_maximum_studied_object_class:
+concept_beyond_demon;;
