@@ -1,0 +1,54 @@
+nrel_coloration
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [coloration*] (* <- lang_en;; *);
+=> nrel_main_idtf: [окрас*] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(окрас*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [окрас* - окраска игрового монстра, определяемое неким цветом.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants:
+	{
+		concept_the_witcher_3_draconids;
+		concept_computer_game
+	};;
+*);;
+
+nrel_coloration
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- asymmetric_relation;;
+
+relation
+=> nrel_inclusion: oriented_relation;
+=> nrel_inclusion: binary_relation;;
+
+binary_relation
+=> nrel_inclusion: antireflexive_relation;
+=> nrel_inclusion: antitransitive_relation;
+=> nrel_inclusion: asymmetric_relation;;
+
+nrel_coloration
+=> nrel_first_domain: concept_the_witcher_3_draconids;
+=> nrel_second_domain: concept_coloration;
+=> nrel_definitional_domain : ...
+(*
+    <= nrel_combination: {
+	    concept_the_witcher_3_draconids;
+	    concept_coloration
+	};;
+*);;
+
+
+2
+<- number;
+<= nrel_measurement: ..arity;;
+
+..arity
+<- concept_arity;
+-> nrel_coloration;;

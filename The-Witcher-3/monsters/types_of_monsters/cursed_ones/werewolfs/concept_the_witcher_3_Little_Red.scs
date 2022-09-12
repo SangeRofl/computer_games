@@ -1,0 +1,54 @@
+concept_the_witcher_3_Little_Red
+=> nrel_main_idtf: [Little_Red] (* <- lang_en;; *);
+=> nrel_main_idtf: [Лили] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_human_race;
+<=nrel_inclusion: concept_the_witcher_3_werewolves;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Лили)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b>Лили</b>, более известная как Волчица (ориг. Little Red) — второстепенный персонаж в игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота.</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Биография)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Лили росла в обычной семье, за исключением того, что одним из её родителей был <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколак</b></sc_element>, способности которого передались и дочери. Когда Лили выросла, родители отправили учиться её в Оксенфуртскую Академию, взяв, вероятно, кредит на обучение. Однако из-за проблем с работой у отца семья оказалась в серьезных долгах и подвергалась угрозам и нападениям кредиторов, а кончилось всё тем, что на них наслали охотников за колдуньями. Тайна матери и отца Лили вскрылась, их поместили в темницу и казнили, однако мать успела написать дочери прощальное письмо, в котором призывала не мстить за них. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (О судьбе Неллана)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> узнает о Волчице — под этим прозвищем теперь была известна Лили, в ходе квеста «Красная Шапочка» от крестьян в деревне Янтра. Мужчины сообщают, что на их односельчанина охотится её банда, и просят <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> о защите. <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> соглашается, после чего остается ждать бандитов, которые, по словам кметов, должны напасть после заката. Дождавшись сумерек, <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> действительно сталкивается с бандой, однако решает сначала поговорить с самой Волчицей. Она рассказывает, что Бертрам раньше помогал её банде, но потом сдал её Охотникам за колдуньями, и что теперь она пришла за его головой. Волчица просит <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральтa</b></sc_element> не ввязываться в конфликт и обещает, что в этом случае никто кроме Бертрама не пострадает. <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> может остановить ее или же не мешать ей. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Little Red.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Волчица)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,52 @@
+concept_the_witcher_3_siren
+=> nrel_main_idtf: [Siren] (* <- lang_en;; *);
+=> nrel_main_idtf: [Сирена] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_hybrids;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сирена)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сирена — вид  <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибридов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Женщина, реже мужчина с рыбьим хвостом. У них зеленая кожа и такие же бледно-зеленые волосы, а нижняя часть их туловища оканчивается чешуйчатыми плавниками и рыбьим хвостом. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гнездятся рядом с логовами великанов. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/siren.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Сирена)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,44 @@
+concept_the_witcher_3_magic_ritual
+
+=> nrel_main_idtf:     
+	 [ Ритуал (Ведьмак 3)]   (*<-lang_ru;;*);
+      [ Ritual (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_magic;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. ( Ритуал(Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ритуал — это шаблонная  форма <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>, определенная процедура, применяемая для достижения какого-либо магического эффекта.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О ритуалах)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ритуалы, созданные и записанные <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародеями</b></sc_element> со всего <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континента</b></sc_element>, являются довольно шаблонной <b><sc_element sys_idtf="concept_the_witcher_3_magic">магией</b></sc_element>, простой для изучения, однако в то же время в некоторых аспектах способной превосходить и полноценные <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">магические заклинания</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ritual.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Ритуал)]   (*<-lang_ru;;*);;
+	*);;
+*);;

@@ -1,0 +1,79 @@
+concept_the_witcher_3_Vesemir
+
+=> nrel_main_idtf:     
+	 [Весемир (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Vesemir (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_witcher_race;
+<=nrel_inclusion: concept_the_witcher_3_key_heroes;
+
+=> nrel_studing: concept_the_witcher_3_school_wolf;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Весемир (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Весемир - один из <b><sc_element sys_idtf="concept_the_witcher_3_key_heroes">ключевых персонажей</b></sc_element> игры <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, старейший, самый опытный и уважаемый <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмак</b></sc_element> из <b><sc_element sys_idtf="concept_the_witcher_3_school_wolf">Школы Волка</b></sc_element>, являвшийся её мастером и хранителем традиций Цеха. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О Весемире)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Являясь одним из немногих <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмаков</b></sc_element>, переживших в прошлом нападение на <b><sc_element sys_idtf="concept_the_witcher_3_Kaer_Morhen">Каэр Морхен</b></sc_element>, Весемир выступал в роли наставника и практически отца легендарного <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральта из Ривии</b></sc_element> и ряда других охотников на <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстров</b></sc_element>. Обладал широкими познаниями в области фехтования и монстрологии, что, главным образом, и преподавал своим ученикам.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О внешности Весемира)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Весемир имеет довольно плотное телосложение, длинные, зачёсанные назад поседевшие волосы, а также носит усы. На умудрённом годами лице мастера имеется небольшой вертикальный шрам, пересекающий левую бровь.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О характере Весемира)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В молодости Весемир вёл довольно активный и разгульный образ жизни, часто посещал различные таверны и иные увеселительные заведения, всевозможные гуляния и празднества.С течением времени, повидав множество людского горя и несчастья, собственными глазами узрев последствия своих поступков и легкомысленности, а также несдержанных обещаний, Весемир пересмотрел свои жизненные взгляды, и, набираясь опыта и рассудительности, начал руководствоваться, прежде всего, принципами долга и чести, и впоследствии в воспитании учеников особое внимание уделял дисциплине.
+
+На вершине прожитых лет Весемир в целом имел довольно спокойный характер, и, в силу своего возраста и богатого жизненного опыта, обладал широкой мудростью и эрудицией. Он прекрасно разбирался в <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстрах</b></sc_element> и различных аспектах борьбы с ними, а также фехтовании, но не мог похвастаться серьёзными познаниями в алхимии или травах. Для своих учеников Весемир фактически играл роль отца, поскольку очень тепло и по-родственному относится к каждому из них — своих воспитанников, периодически мягко поучая их жизни, но никогда не отказывая в помощи.
+
+Тем не менее, при необходимости с учениками ведьмак был достаточно строг и не позволял излишних шалостей, не терпел хулиганств и не спускал с рук чинимую жестокость и несправедливость. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Vesemir.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Весемир)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

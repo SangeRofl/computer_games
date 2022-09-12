@@ -1,0 +1,52 @@
+concept_the_witcher_3_djinn
+=> nrel_main_idtf: [Djinn] (* <- lang_en;; *);
+=> nrel_main_idtf: [Джин] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_elementa;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Джин)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Джин — вид  <b><sc_element sys_idtf="concept_the_witcher_3_elementa">элементалей</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Джинн может достигать размеров стога сена. В таком виде он напоминает красно-оранжевую голову с висячей пастью с двумя когтистыми лапами по бокам. Существо имеет светящиеся глаза и может нападать на жертву, хватая ее за шею быстрым движением, а также вызывать ураганы и торнадо.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Заточен в кувшине, ожидая освобождения.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/djinn.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Джин)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

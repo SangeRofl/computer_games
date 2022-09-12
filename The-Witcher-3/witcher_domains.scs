@@ -1,0 +1,100 @@
+section_subject_domain_of_the_witcher_3_equipment
+	=> nrel_main_idtf: [Раздел. Предметная область экипировки Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 equipment] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_equipment] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_the_witcher_3_armor;
+		section_subject_domain_of_the_witcher_3_swords;
+		section_subject_domain_of_the_witcher_3_crossbows;
+		section_subject_domain_of_the_witcher_3_sword_materials;
+		section_subject_domain_of_the_witcher_3_weapon
+	};
+	-> rrel_key_sc_element:
+		concept_the_witcher_3_armor;
+		concept_the_witcher_3_weapon;
+		concept_the_witcher_3_glyph;
+		concept_the_witcher_3_rune;
+	-> rrel_maximum_studied_object_class: 
+			computer_game_the_witcher_3_wild_hunt;
+	-> rrel_not_maximum_studied_object_class:
+			concept_the_witcher_3_armor;
+			concept_the_witcher_3_weapon;
+			concept_the_witcher_3_glyph;
+			concept_the_witcher_3_master_of_rune;
+			concept_the_witcher_3_rune;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_the_witcher_3_armor
+	=> nrel_main_idtf: [Раздел. Предметная область брони Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 armor] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_armor] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_the_witcher_3_armor_trousers;
+		concept_the_witcher_3_armor_gloves;
+		concept_the_witcher_3_armor_cuirass;
+		concept_the_witcher_3_armor_boots;
+		concept_the_witcher_3_armor_crafted;
+		concept_the_witcher_3_armor_found;
+		concept_the_witcher_3_armor_non_playable_character_kill;
+		concept_the_witcher_3_armor_purchase;
+		concept_the_witcher_3_armor_heavy;
+		concept_the_witcher_3_armor_light;
+		concept_the_witcher_3_armor_medium;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_the_witcher_3_weapon
+	=> nrel_main_idtf: [Раздел. Предметная область оружия Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 weapon] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_weapon] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_the_witcher_3_swords;
+		section_subject_domain_of_the_witcher_3_crossbows;
+		section_subject_domain_of_the_witcher_3_sword_materials
+	};
+	-> rrel_key_sc_element:
+		concept_the_witcher_3_weapon_sword;
+		concept_the_witcher_3_weapon_crossbow;
+		concept_the_witcher_3_material;
+		concept_the_witcher_3_weapon_quest;
+		concept_the_witcher_3_weapon_purchase;
+		concept_the_witcher_3_weapon_non_playable_character_kill;
+		concept_the_witcher_3_weapon_found;
+		concept_the_witcher_3_weapon_crafted;
+	<- non_atomic_section;;
+	
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_the_witcher_3_swords
+	=> nrel_main_idtf: [Раздел. Предметная область мечей Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 swords] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_swords] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_damage;
+		nrel_durability;
+		nrel_rarity;
+			concept_the_witcher_3_weapon_sword_steel;
+			concept_the_witcher_3_weapon_sword_silver;
+	<- non_atomic_section;;
+	
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_the_witcher_3_sword_materials
+	=> nrel_main_idtf: [Раздел. Предметная область материалов мечей Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 sword materials] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_sword_materials] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_the_witcher_3_weapon_sword_material_silver;
+		concept_the_witcher_3_weapon_sword_material;
+		concept_the_witcher_3_weapon_sword_material_steel;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_the_witcher_3_crossbows
+	=> nrel_main_idtf: [Раздел. Предметная область арбалетов Ведьмака 3] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of the witcher 3 crossbows] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_the_witcher_3_crossbows] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_damage;
+		nrel_durability;
+		nrel_rarity;
+	<- non_atomic_section;;
+	

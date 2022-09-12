@@ -1,0 +1,56 @@
+concept_the_witcher_3_elf_race_aen_elle
+
+=> nrel_main_idtf:     
+	 [Эльф народа ольх (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Aen elle race (The Witcher 3)]  (*<-lang_en;;*);  
+=> nrel_idtf:
+	[Эльф народа ольх] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_elf_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Эльф народа ольх (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эльфы народа ольх  - народ <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">расы эльфов</b></sc_element>, произошедшие от <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_undod">эльфов единого народа</b></sc_element>, которые после неизвестной катастрофы, уничтожившей их родной мир во время Сопряжения Сфер переселились в другой мир.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О чистокровности эльфов народа ольх)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В биологическом смысле эльфы народа ольх как народ <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфов</b></sc_element> является полностью чистокровным, в отличие от <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_seidhe">эльфов народа гор</b></sc_element>, часть которых в лице оседлых <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфов</b></sc_element> в течении двухсот лет смешивалась с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О продолжительности жизни эльфов народа ольх)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Продолжительность их жизни коло 400-500 лет, по крайней мере один известный представитель эльфов народа ольх достиг 650 лет.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/aen_elle.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Эльф народа ольх)]   (*<-lang_ru;;*);;
+	*);;
+*);;

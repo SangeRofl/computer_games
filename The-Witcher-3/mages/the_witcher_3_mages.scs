@@ -1,0 +1,68 @@
+concept_the_witcher_3_mages
+
+=> nrel_main_idtf:     
+	 [Чародеи (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Mages (The Witcher 3)]  (*<-lang_en;;*);  
+
+=>nrel_idtf:
+	[Маги] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<-computer_game_the_witcher_3_wild_hunt;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Чародеи (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Чародеи — собирательные названия для тех мужчин и женщин, кто использует так называемую <b><sc_element sys_idtf="concept_the_witcher_3_magic">магию</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об использовании магии чародеями)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Чародеи используют для <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклинаний</b></sc_element> энергию, тут имеется дань традициям – четырех стихий. Огня, воздуха, воды и земли. Также они отнюдь не всегда взаимодействуют с самими стихиями, они черпают силы из них, их энергию, затем трансформируя ее и переливая в <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклинания</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О стихиях магии чародеев)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Каждый чародей при желании может черпать энергию из любой стихии, но каждому дается легче работа с определенной. Самая податливая и популярная в работе — Вода. Но не везде можно нащупать водяные жилы.Также популярна Земля, она всегда есть, ее всегда легко нащупать, но ей свойственна некоторая инертность, медлительность, потому тянуть из нее энергию сложнее, чем из подвижной и пластичной воды.
+Самой сложной стихией является Воздух. Он очень легок, энергия буквально ускользает, овладеть им смогли только сильнейшие маги.И последняя стихия — Огонь. Овладеть им очень легко, более того, он сам предоставляет свои силы, готов отдать всю свою неистовость. Но Огонь – самая опасная, почти запретная стихия, потому что он выжигает морально, он лишает всех относительно положительных чувств, оставляя только жажду власти и стремление нести хаос. Только самые умелые маги могут использовать магию огня для своих <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклинаний</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О заклинаниях чародеев)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">Заклинания</b></sc_element> чародеев являются смесью жестовых и речевых компонентов. Нередко у многих чародеев уходят годы, чтобы изучить верные жесты и правильное произношение слов. Малейшая ошибка в произношении или позиции пальцев может привести к катастрофическим последствиям.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mage.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Чародей)]   (*<-lang_ru;;*);;
+	*);;
+*);;

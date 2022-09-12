@@ -1,0 +1,60 @@
+concept_the_witcher_3_Blue_Mountains 
+
+=> nrel_main_idtf:     
+	 [Синие горы (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Blue Mountains (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_Northern_Kingdoms;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Синие горы (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Синие горы - термин в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> обозначающий большой горный хребет на востоке <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северных королевств</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об обитателях Синих гор )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Синие горы – традиционное место проживания  <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфов</b></sc_element>, у истоков Понтара расположены руины их древних и опустошенных  <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element> городов – Лок Муинне, ранее принадлежавшего  <b><sc_element sys_idtf="concept_the_witcher_3_vran_race">вранам</b></sc_element>, и Эст Хэмлета. Также в районе Долины Цветов в горах живут свободные  <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_seidhe">Aen Seidhe</b></sc_element>, ушедшие туда, не желая никак взаимодействовать с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О Синих горах горах)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У подножия Синих гор находятся знаменитая <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмачья</b></sc_element> крепость <b><sc_element sys_idtf="concept_the_witcher_3_school_wolf">Школы Волка</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Kaer_Morhen">Каэр Морхен</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_mages_schools_ban_ard">магическая академия в Бан Арде</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/BM.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Синие горы)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

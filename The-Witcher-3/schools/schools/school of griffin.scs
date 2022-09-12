@@ -1,0 +1,71 @@
+concept_the_witcher_3_school_griffin
+=> nrel_main_idtf: [school of  griffin (The Wiitcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [школа грифона (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.( школа грифона (Ведьмак 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Школа волка —  <b><sc_element sys_idtf="concept_the_witcher_3_school">ведьмачья школа</b></sc_element> появившаяся в графических романах (комиксах). Хотя школа никогда не была подробно описана, она упоминается, когда Лео Бонарт показывает свои трофеи — ведьмачьи медальоны, по-видимому, взятые с тел убитых ведьмаков. Tам были кошачий, волчий и грифоний медальоны, а также в прологе игры Ведьмак, когда на вопрос <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральта</b></sc_element> о других ведьмаках Весемир отвечает, что есть ещё 2 школы, но он о них давно не слышал. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (История)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта <b><sc_element sys_idtf="concept_the_witcher_3_school">школа</b></sc_element>, как и все остальные, возможно, прекратила своё существование. Также, судя по броне и способности школы грифона в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>, ученики данной школы специализировались в основном на  <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаках</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Факт про оружие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Eсть предположение что ведьмаки школы Грифона использовали двухстороннюю глефу вместо стандартных двух <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечей</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Факт про броню)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <b><sc_element sys_idtf="concept_the_witcher_3_armor">Броня</b></sc_element>школы Грифона имеет<b><sc_element sys_idtf="concept_the_witcher_3_armor_medium">средний вес</b></sc_element> и усиливает <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаки</b></sc_element> носящего; как таковая она в значительной степени предполагает, что ученики ее школы, скорее всего, специализируются на использовании <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.4 (Представители школы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Представители Школы Грифона: Джером, Георг.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/grifon.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Школа Грифона)]   (*<-lang_ru;;*);;
+		*);;
+	*);
+
+
+<- sc_node_not_relation;;

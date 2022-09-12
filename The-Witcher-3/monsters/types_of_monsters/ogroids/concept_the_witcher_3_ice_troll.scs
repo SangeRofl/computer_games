@@ -1,0 +1,53 @@
+concept_the_witcher_3_ice_troll
+=> nrel_main_idtf: [Ice Troll] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ледяной тролль] (* <- lang_ru;; *);
+
+=> nrel_vulnerability: concept_the_witcher_3_igni_sign;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ледяной тролль (ориг. Ice troll) — чудовище в играх <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота.</b></sc_element> и Ведьмак: Охотник на чудовищ, подвид <b><sc_element sys_idtf="concept_the_witcher_3_troll">тролля</b></sc_element>, обитающий преимущественно в местах с холодным и суровым климатом. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ледяные тролли встречаются повсеместно на Скеллиге, обитают обычно в пещерах, редко когда встречаются дружелюбные индивиды. <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> натыкается на разумных и сговорчивых ледяных троллей в ходе квеста «Владыка Ундвика». Они взяли в плен и теперь варят одного из дружинников Хьялмара, Фолана ан Тиршаха. <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> может либо оставить лучника умирать, либо сыграть с троллями в загадки и выиграть у них островитянина, либо же отбить его силой.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У <b><sc_element sys_idtf="concept_the_witcher_3_troll">троллей</b></sc_element> очень высокий уровень здоровья, а потому бой с ними всегда очень длинный. Используйте Масло против огров на <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мече</b></sc_element>, подойдите к троллю, наложите на него <b><sc_element sys_idtf="concept_the_witcher_3_axii_sign">Знак Аксий</b></sc_element> и три раза проведите сильную атаку (не больше – четвёртый удар он блокирует). Не бейте его в спину – там слишком мощная броня, кроме того вы будете оглушены и очень вероятно пропустите ответный удар тролля. Ледяные тролли крайне чувствительны к огню, поэтому эффективно против них будет использовать <b><sc_element sys_idtf="concept_the_witcher_3_igni_sign">Знак Игни</b></sc_element> . Не забывайте уклоняться во время его атак, особенно, когда он кидается камнями и начинает бежать на вас, размахивая руками. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ice troll.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,42 @@
+concept_the_witcher_3_noonwraith
+=> nrel_main_idtf: [Noonwraith] (* <- lang_en;; *);
+=> nrel_main_idtf: [Полуденица] (* <- lang_ru;; *);
+
+=> nrel_vulnerability: concept_the_witcher_3_yrden_sign;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Полуденница (ориг. Noonwraith) — чудовище в играх Ведьмак, <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element> и Ведьмак: Охотник на чудовищ, дух убитой женщины-невесты, встречающийся днем.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эта разновидность <b><sc_element sys_idtf="concept_the_witcher_3_specters">призраков</b></sc_element>, встречается в ясный и погожий день, когда солнце высоко. Родственна <b><sc_element sys_idtf="concept_the_witcher_3_nightwraith">полуночницам</b></sc_element>, появляющимся только в ночное время. Полуденница выглядит как измождённая и скорбная девушка, с очень загорелой кожей и длинными белыми волосами. Веки несчастной зашиты грубой ниткой, одета она в изодранное белое платье. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/noonwraith.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

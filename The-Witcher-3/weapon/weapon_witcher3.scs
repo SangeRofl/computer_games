@@ -1,0 +1,66 @@
+concept_the_witcher_3_weapon
+=> nrel_main_idtf: [Weapon (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Оружие (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_weapon_sword;;
+	-> concept_the_witcher_3_weapon_crossbow;;
+	=> nrel_main_idtf:[Разбиение по типу оружия] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_weapon_crafted;;
+	-> concept_the_witcher_3_weapon_purchase;;
+	-> concept_the_witcher_3_weapon_found;;
+	-> concept_the_witcher_3_weapon_quest;;
+	-> concept_the_witcher_3_weapon_non_playable_character_kill;;
+	=> nrel_main_idtf:[Разбиение по способу получения оружия] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Оружие (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Оружие — устройства, конструктивно предназначенные для нанесения урона живым существам.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Типы оружия Ведьмак 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 2 основных типа оружия в  <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечи</b></sc_element> и
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_crossbow">арбалеты</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Способы получения оружия в Ведьмаке 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Есть 5 видов получения оружия в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_crafted">создаваемое оружие</b></sc_element>,
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_purchase">покупное оружие</b></sc_element>, 
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_found">найденное оружие</b></sc_element>,
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_quest">квестовое оружие</b></sc_element>,
+ <b><sc_element sys_idtf="concept_the_witcher_3_weapon_non_playable_character_kill">отобранное оружие</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+

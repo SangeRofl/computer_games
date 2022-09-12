@@ -1,0 +1,243 @@
+concept_the_witcher_3_rune_3_lvl
+
+=> nrel_main_idtf: [greater Rune (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Слова силы третьего уровня (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Слова силы третьего уровня (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слова силы третьего уровня —  улучшения третьего уровня, которые становятся доступны после накопления 15000 новиградских крон.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_rune_3_lvl_extension;;
+	-> concept_the_witcher_3_rune_3_lvl_spirit;;
+	-> concept_the_witcher_3_rune_3_lvl_repletion;;
+	=> nrel_main_idtf:[Виды рун третьего уровня] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Улучшения для оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует три вида рун третьего уровня:
+			<ul>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_3_lvl_extension">Продление</b></sc_element> </li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_3_lvl_spirit">Воодушевление</b></sc_element></li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_3_lvl_repletion">Наполнение</b></sc_element></li>
+			</ul>
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_3_lvl_extension
+=> nrel_main_idtf: [rune of extension (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [продление (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(продление (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "продление" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">больших рунных камней</b></sc_element> Марена, Перун и Сварог.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Продление эффектов всех активных эликсиров на полсекунды после каждого удачного попадания по противнику. Фактически, это наилучший выбор для игроков, предпочитающих вкладывать очки навыков в ветку алхимии.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Марена - увеличивает шанс вызвать отравление </li>
+			<li> Рунный камень Перун - увеличивает получение адреналина </li>
+			<li> Рунный камень Сварог - увеличивает шанс пробития доспеха <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаков</b></sc_element> </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_perun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Перуна)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_marena.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Марена)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_3_lvl_spirit
+=> nrel_main_idtf: [rune of spirit (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [воодушевление (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(воодушевление (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "воодушевление" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">больших рунных камней</b></sc_element>  Девана, Зоря и Перун.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Гарантирует преобразование очков здоровья, накопленных после повышения уровня здоровья до максимума, в дополнительный урон при следующей атаке.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Перун - увеличивает получение адреналина </li>
+			<li> Рунный камень Девана - увеличивает шанс вызвать кровотечение </li>
+			<li> Рунный камень Зоря - увеличивает шанс вызвать заморозку </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_devan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Девана)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_zorya.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Зори)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_perun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Перуна)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_3_lvl_repletion
+=> nrel_main_idtf: [rune of repletion (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [наполнение (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(наполнение (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "наполнение" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">больших рунных камней</b></sc_element> Триглав, Марена и Даждьбог.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Наложение ведьмачего знака за счет одной ячейки шкалы адреналина, но при этом еще и заряжает <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">меч</b></sc_element> силой примененного <b><sc_element sys_idtf="concept_the_witcher_3_sign">знака</b></sc_element>.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Триглав - увеличивает шанс вызвать оглушение </li>
+			<li> Рунный камень Марена - увеличивает шанс вызвать отравление <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаков</b></sc_element> </li>
+			<li> Рунный камень Даждьбог - увеличивает шанс вызвать горение </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_marena.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Марена)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_perun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Даждьбог)]   (*<-lang_ru;;*);;
+	*);;
+*);;

@@ -1,0 +1,199 @@
+concept_the_witcher_3_glyph_3_lvl
+
+=> nrel_main_idtf: [greater Glyph (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Слова силы третьего уровня (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Слова силы третьего уровня (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слова силы третьего уровня —  улучшения третьего уровня, которые становятся доступны после накопления 15000 новиградских крон.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_glyph_3_lvl_explosion;;
+	-> concept_the_witcher_3_glyph_3_lvl_ownership;;
+	-> concept_the_witcher_3_glyph_3_lvl_lightness;;
+	-> concept_the_witcher_3_glyph_3_lvl_retribution;;
+	=> nrel_main_idtf:[Виды глиф третьего уровня] (* <- lang_ru;; *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Улучшения для брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует четыре видов глиф третьего уровня:
+			<ul>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_glyph_3_lvl_explosion">Взрыв</b></sc_element> </li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_glyph_3_lvl_ownership">Владение</b></sc_element></li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_glyph_3_lvl_lightness">Лёгкость</b></sc_element></li>
+								<li> <b><sc_element sys_idtf="concept_the_witcher_3_glyph_3_lvl_retribution">Воздаяние</b></sc_element></li>
+			</ul>
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_glyph_3_lvl_explosion
+=> nrel_main_idtf: [glyph of explosion (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [взрыв (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(взрыв (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "взрыв" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_glyph">больших глиф</b></sc_element> улучшения, <b><sc_element sys_idtf="concept_the_witcher_3_igni_sign">Игни</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_quen_sign">Квена</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Подожжённые знаком <b><sc_element sys_idtf="concept_the_witcher_3_igni_sign">Игни</b></sc_element> противники после смерти взорвутся, поджигая при этом соседних врагов. Это зачарование очень хорошо сочетается с словом силы <b><sc_element sys_idtf="concept_the_witcher_3_glyph_1_lvl_blazing">"Пылание"</b></sc_element> первого уровня, но совершенно несовместимо с <b><sc_element sys_idtf="concept_the_witcher_3_glyph_2_lvl_ring">"Кольцом"</b></sc_element> второго.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждого глифа по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Глиф улучшения - увеличивает прочность предмета +100%</li>
+			<li> Глиф Игни - увеличивает мощь Игни +10% </li>
+			<li> Глиф Квена - увеличивает мощь Ирдена +10% </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------------
+concept_the_witcher_3_glyph_3_lvl_ownership
+=> nrel_main_idtf: [glyph of ownership (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [владение (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(владение (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "владение" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_glyph">больших глиф</b></sc_element> связывания, <b><sc_element sys_idtf="concept_the_witcher_3_aard_sign">Аарда </b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_axii_sign">Аксия</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Позволяет скомбинировать свойства слов <b><sc_element sys_idtf="concept_the_witcher_3_glyph_1_lvl_usurpation">"Узурпация"</b></sc_element> первого уровня и <b><sc_element sys_idtf="concept_the_witcher_3_glyph_2_lvl_charm">"Очарование"</b></sc_element> второго, перекидывая эффект от наложенного знака <b><sc_element sys_idtf="concept_the_witcher_3_axii_sign">Аксий</b></sc_element> с одного противника на другого в случае скоропостижной кончины первого, а также продлевая длительность контроля разума на две секунды каждый раз, когда околдованный недруг успешно атакует кого-либо.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждого глифа по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Глиф связывания - увеличивает сопротивление кровотечению +5% </li>
+			<li> Глиф Аарда - увеличивает мощь Аарда +10% </li>
+			<li> Глиф Аксия - увеличивает мощь Аксия +10% </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+//-----------------------------------------------------------------------
+concept_the_witcher_3_glyph_3_lvl_lightness
+=> nrel_main_idtf: [glyph of lightness (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [легкость (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(легкость (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "легкость" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_glyph">больших глиф</b></sc_element> выздоровления, <b><sc_element sys_idtf="concept_the_witcher_3_aard_sign">Аарда</b></sc_element> и улучшения.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Все элементы экипированной <b><sc_element sys_idtf="concept_the_witcher_3_armor">брони</b></sc_element> превратятся в <b><sc_element sys_idtf="concept_the_witcher_3_armor_light">лёгкие доспехи</b></sc_element>. Они плохо защищают от урона, сильно уступая <b><sc_element sys_idtf="concept_the_witcher_3_armor_medium">средним</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_armor_heavy">тяжёлым</b></sc_element> доспехам, но гарантируют быстрое восстановление выносливости.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждого глифа по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Глиф выздоровления - увеличивает восстановление здоровья +3</li>
+			<li> Глиф Аарда - увеличивает мощь Игни +10% </li>
+			<li> Глиф улучшения - увеличивает прочность предмета +100% </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_glyph_3_lvl_retribution
+=> nrel_main_idtf: [glyph of retribution (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [воздаяние (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(воздаяние (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "воздаяние" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_glyph">больших глиф</b></sc_element> улучшения, <b><sc_element sys_idtf="concept_the_witcher_3_quen_sign">Квена</b></sc_element> и b><sc_element sys_idtf="concept_the_witcher_3_igni_sign">Игни</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [20%-ный шанс вернуть часть урона противнику, этот урон и нанёсшему.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждого глифа по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Глиф улучшения - увеличивает прочность предмета +100% </li>
+			<li> Глиф Квена - увеличивает мощь Квена +10% </li>
+			<li> Глиф Игни - увеличивает мощь Игни +10% </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+	

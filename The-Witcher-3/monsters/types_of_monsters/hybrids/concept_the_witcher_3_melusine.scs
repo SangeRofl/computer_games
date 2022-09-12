@@ -1,0 +1,54 @@
+concept_the_witcher_3_melusine
+=> nrel_main_idtf: [Melusine] (* <- lang_en;; *);
+=> nrel_main_idtf: [Мелюзина] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_hybrids;
+<=nrel_inclusion: concept_the_witcher_3_siren;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Мелюзина)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Мелюзина — вид  <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибридов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Страшное чудовище — напоминает огромную и свирепую <b><sc_element sys_idtf="concept_the_witcher_3_ekhidna">эхидну</b></sc_element>.Она имеет крайне худощавое тело, бледную, сине-зеленую чешую, широкие и мощные зеленоватые крылья с острием на конце, длинный кроваво-красного цвета хвост и такого же цвета лапы с тонкими и острыми когтями.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Селится в пещерах на севере Спикероога, оборудовав там свое гнездо.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/melusine.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Мелюзина)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

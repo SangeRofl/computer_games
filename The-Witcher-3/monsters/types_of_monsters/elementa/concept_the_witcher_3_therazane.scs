@@ -1,0 +1,53 @@
+concept_the_witcher_3_therazane
+=> nrel_main_idtf: [Therazane] (* <- lang_en;; *);
+=> nrel_main_idtf: [Феразин] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_elementa;
+<=nrel_inclusion: concept_the_witcher_3_earth_elemental;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Феразин)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Феразин — вид  <b><sc_element sys_idtf="concept_the_witcher_3_elementa">элементалей</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В отличие от других <b><sc_element sys_idtf="concept_the_witcher_3_earth_elemental">Элементалей Земли</b></sc_element>, состоящих из земли и бурого камня, Феразин сложен из острых глыб серого гранита, а его левая рука даже имеет подобие пальцев.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сталкиваются с этими существами, как в Кругах Стихий, так и в заброшенных мастерских и лабораториях.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/therazane.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Феразин)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,55 @@
+concept_the_witcher_3_wraith
+=> nrel_main_idtf: [Wraith] (* <- lang_en;; *);
+=> nrel_main_idtf: [Призрак] (* <- lang_ru;; *);
+
+=> nrel_vulnerability: concept_the_witcher_3_quen_sign;
+=> nrel_vulnerability: concept_the_witcher_3_yrden_sign;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b>Призрак</b> (ориг. Upiór) — чудовище в литературной саге и игровой серии, <b><sc_element sys_idtf="concept_the_witcher_3_specters">неупокоенная душа</b></sc_element>, вернувшаяся из-за завесы смерти. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Технически под термином призрак можно объединить довольно большую группу вернувшихся с того света нематериальных существ. Все они в той или иной степени являются разновидностями призраков, приобретающими свою специфику из-за необычных эмоций, их породивших, из-за конкретной причины и/или определенного места смерти. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> сталкивается со множеством призраков, которые повсеместно встречаются в ночное время или даже днем вблизи кладбищ, в катакомбах, склепах и других местах захоронений, либо вблизи мест, которые были важны для них при жизни: у заброшенных домов, разрушенных замков или разоренных деревень. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wraith.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

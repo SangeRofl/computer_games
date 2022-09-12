@@ -1,0 +1,52 @@
+concept_the_witcher_3_ghoul
+=> nrel_main_idtf: [Ghoul] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гуль] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Гуль)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гуль — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Несколько лет, проведенных в темных склепах, превратили их в ужасных созданий. Вечный голод гулей способно утолить только человеческое мясо. Именно поэтому они убивают людей, оставляя недоеденные останки в укромных местах своих склепов.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Излюбленными районами проживания гулей, а значит и особо опасными, считаются некрополи, кладбища, руины, подземелья и лабиринты, а также колодцы и оазисы в пустынях. В особо больших количествах гулей можно встретить на местах схваток, недавних побоищ. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ghoul.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гуль)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

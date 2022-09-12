@@ -1,0 +1,52 @@
+concept_the_witcher_3_ice_giant
+=> nrel_main_idtf: [Ice Giant] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ледяной Великан] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ледяной великан (ориг. Ice Giant) — чудовище в играх <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element> и Ведьмак: Охотник на чудовищ, подвид <b><sc_element sys_idtf="concept_the_witcher_3_giant">великана</b></sc_element>, черпающий силу из холода. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Трудно представить точный облик ледяного гиганта, ибо ни один <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмак</b></sc_element> ранее никогда не сталкивался с ним. Про великанов известно лишь из сказок и преданий, являющихся совокупностью правды и вымысла. Жители Скеллиге утверждают, что кожа великанов синего цвета, поскольку они были рождены от снега и льда, что, однако, представляется маловероятным.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Древний ледяной великан по имени Мыргыфф за некоторое время до начала событий игры пробуждается от спячки на острове Ундвик и убивает или прогоняет всех его жителей. <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт из Ривии</b></sc_element> отправляется на остров, чтобы помочь Хьялмару победить чудовище и освободить Ундвик.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ice giant.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

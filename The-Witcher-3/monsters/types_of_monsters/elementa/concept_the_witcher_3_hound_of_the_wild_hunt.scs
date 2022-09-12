@@ -1,0 +1,52 @@
+concept_the_witcher_3_hound_of_the_wild_hunt
+=> nrel_main_idtf: [Hound of the wild hunt] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гончая Дикой Охоты] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_elementa;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Джин)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гончая Дикой Охоты — вид  <b><sc_element sys_idtf="concept_the_witcher_3_elementa">элементалей</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дерутся с яростью, подобной <b><sc_element sys_idtf="concept_the_witcher_3_wolves">волкам</b></sc_element> или одичавшим <b><sc_element sys_idtf="concept_the_witcher_3_dogs">собакам</b></sc_element>. Знак Аксий может ослабить их, но лишь на мгновение. Охотятся стаями и могут быстро сокрушить неподготовленных противников] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Говорят, что иногда они сбиваются с пути и спускаются с ночного неба на землю, неся за собою холод и смерть.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/hound_of_the_wild_hunt.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гончая Дикой Охоты)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

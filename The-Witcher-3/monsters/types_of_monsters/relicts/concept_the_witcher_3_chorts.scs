@@ -1,0 +1,51 @@
+concept_the_witcher_3_chorts
+=> nrel_main_idtf: [Chort] (* <- lang_en;; *);
+=> nrel_main_idtf: [Чёрт] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Чёрт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Чёрт — вид  <b><sc_element sys_idtf="concept_the_witcher_3_relicts">реликтов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Является родственным с <b><sc_element sys_idtf="concept_the_witcher_3_fiends">бесами</b></sc_element> видом и очень похож на него: огромное существо, передвигающееся на четырех конечностях, имеет огромные рога, третий глаз во лбу. Передние лапы черта четырехпалые и заканчиваются короткими когтями, а один из пальцев является прибылым, задние же конечности оканчиваются копытами. Голова вытянутая, большой рот, полный острых зубов с длинными выдающимися клыками на обеих челюстях. Покрытая пятнами кожа и недлинная шерсть, растущая вокруг головы, в паху и на задних лапах, может носить разный окрас: от бурого и желтоватого до серого и светлых оттенков. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эти существа предпочитают обитать в лесных чащобах или неглубоких пещерах, яростно охраняют свою территорию и свирепо расправляются с любым конкурентом.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/chort.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Чёрт)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

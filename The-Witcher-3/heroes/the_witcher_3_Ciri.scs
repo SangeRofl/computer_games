@@ -1,0 +1,84 @@
+concept_the_witcher_3_Ciri
+
+=> nrel_main_idtf:     
+	 [Цирилла (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Cirilla (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_witcher_race;
+<=nrel_inclusion: concept_the_witcher_3_key_heroes;
+
+=> nrel_studing: concept_the_witcher_3_school_wolf;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Цирилла (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Цирилла - одна из <b><sc_element sys_idtf="concept_the_witcher_3_key_heroes">ключевых персонажей</b></sc_element> игры <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, дочь <b><sc_element sys_idtf="concept_the_witcher_3_Cintra">цинтрийской</b></sc_element> принцессы Паветты и князя Дани, внучка Калантэ и Рёгнера из Эббинга, королей <b><sc_element sys_idtf="concept_the_witcher_3_Cintra">Цинтры</b></sc_element>, дитя Старшей Крови. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О Цири и Геральте)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Цирилла стала <b><sc_element sys_idtf="concept_the_witcher_3_law_of_surprise">ребёнком-неожиданностью</b></sc_element> (предназначением) <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмака</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральта из Ривии</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О жизни Цири)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Когда Цири была совсем маленькой, её родители без вести пропали во время морского шторма в месте. С этого момента они считались погибшими, а Цири стала наследницей престола после своей бабушки, королевы Калантэ.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О жизни Цири)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После захвата <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Нильфгаардом</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Cintra">Цинтры</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> забирает Цири с собой в замок <b><sc_element sys_idtf="concept_the_witcher_3_Kaer_Morhen">Каэр Морхен</b></sc_element>, чтобы сделать из неё <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмачку</b></sc_element>. Цирилла воспитывалась под руководством двух <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародеек</b></sc_element> — сначала <b><sc_element sys_idtf="concept_the_witcher_3_Triss">Трисс Меригольд</b></sc_element>, которая приехала в <b><sc_element sys_idtf="concept_the_witcher_3_Kaer_Morhen">Каэр Морхен</b></sc_element>; затем ведьмакам приходится распрощаться с воспитанницей и передать её на воспитание в храм Мэлителе в Элландере, где её начнёт обучать <b><sc_element sys_idtf="concept_the_witcher_3_Yennefer">Йеннифэр из Венгерберга</b></sc_element>. В храме Цири продолжает своё обучение. Таким образом она получила азы ведьмачьего мастерства, так и не подвергаясь мутации, а затем — элементарное образование при храме и основы <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.4 (О происхождении Цири)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Неоднократно подчеркивается, что в жилах Цириллы течет Старшая Кровь (кровь Эльфов), о чём свидетельствуют телосложение и миндалевидные зелёные глаза.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Ciri.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Цирилла)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

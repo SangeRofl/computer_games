@@ -1,0 +1,93 @@
+concept_the_witcher_3_armor
+=> nrel_main_idtf: [Armor (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Броня (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_armor_light;;
+	-> concept_the_witcher_3_armor_medium;;
+	-> concept_the_witcher_3_armor_heavy;;
+	=> nrel_main_idtf:[Разбиение по классу брони] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_armor_gloves;;
+	-> concept_the_witcher_3_armor_boots;;
+	-> concept_the_witcher_3_armor_trousers;;
+	-> concept_the_witcher_3_armor_cuirass;;
+	=> nrel_main_idtf:[Разбиение по типу брони] (* <- lang_ru;;
+ *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_armor_crafted;;
+	-> concept_the_witcher_3_armor_purchase;;
+	-> concept_the_witcher_3_armor_found;;
+	-> concept_the_witcher_3_armor_non_playable_character_kill;;
+	=> nrel_main_idtf:[Разбиение по способу получения брони] (* <- lang_ru;;
+ *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Броня (The Witcher 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Броня - вид одежды, который можно носить для того чтобы повысить сопротивляемости тем или иным негативным эффектам и урону.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Характеристики брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Характеристика брони зависит от уровня персонажа, и имеет свой собственный уровень. Также для пользования тем или иным предметом доспеха может потребоваться достижение какого то уровня.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Изнашивание брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Броня изнашивается гораздо медленнее <b><sc_element sys_idtf="concept_the_witcher_3_weapon">оружия</b></sc_element>, однако время от времени, которое также зависит от категории предмета, ее также приходится чинить либо у бронников, либо с помощью ремонтных наборов. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Улучшение брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре<b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> в броню с ячейками можно вставлять <b><sc_element sys_idtf="concept_the_witcher_3_glyph">глифы</b></sc_element>, наделяя их тем самым особыми свойствами. Также любой доспех, который <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> носит в данный момент, можно на короткое время улучшать на верстаке (подобно заточке оружия на точиле), что дает 15 минутный бонус.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://type/images/armor.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Перчатки)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;
+
+

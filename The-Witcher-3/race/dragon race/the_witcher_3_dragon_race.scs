@@ -1,0 +1,56 @@
+concept_the_witcher_3_dragon_race
+
+=> nrel_main_idtf:     
+	 [Раса драконов (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Dragon race (The Witcher 3)]  (*<-lang_en;;*);  
+=>nrel_idtf:
+	[Драконы] (*<-lang_ru;;*);      
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Раса драконов (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Драконы — <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element> весьма редких летающих разумных существ, имеющих сходства с рептилиями в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О внешности драконов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Драконы — огромные покрытые чешуей рептилии с четырьмя конечностями и широкими нетопыриными крыльями. Они имеют длинные стройные шеи и узкие треугольные головы, а также раздвоенные языки. Некоторые особи также имеют костяные наросты-рога на голове и/или по хребту. Цвет чешуи, размеры, а также способность испускать разные опасные вещества в бою — огонь, кислоту или пар, зависят от вида дракона. Также они обладают ускоренной регенерацией.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об отношениях драконов к другим расам)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Драконы по-разному воспринимаются разными разумными существами, однако, подавляющее большинство самих драконов имеет некое инстинктивное, нерациональное отвращение к <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людям</b></sc_element>. В то же время, обладая даром речи, драконы иногда контактируют с иными разумными <b><sc_element sys_idtf="concept_the_witcher_3_race">расами</b></sc_element> и даже заключают с ними «пакты о ненападении».](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/D.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Дракон)]   (*<-lang_ru;;*);;
+	*);;
+*);;

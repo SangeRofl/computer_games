@@ -1,0 +1,49 @@
+concept_the_witcher_3_draconids
+=> nrel_main_idtf: [Draconid] (* <- lang_en;; *);
+=> nrel_main_idtf: [Драконид] (* <- lang_ru;; *);
+
+=> nrel_vulnerability: concept_the_witcher_3_draconids_oil;
+
+
+
+=> nrel_inclusion:
+concept_the_witcher_3_basilisk;
+concept_the_witcher_3_cockatrice;
+concept_the_witcher_3_forktail;
+concept_the_witcher_3_shrieker;
+concept_the_witcher_3_wyvern;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Драконид] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Драконид - разнообразный отряд квазирептилий, которые доставляют неприятности гуманоидным расам. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Сокровище драконидов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дракониды охраняют сокровище, которые становятся причиной охоты на них. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Применение драконидов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Драконидов иногда разводят в качестве домашних животных или для охраны. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,64 @@
+concept_the_witcher_3_magic_spell
+
+=> nrel_main_idtf:     
+	 [Заклинание (Ведьмак 3)]   (*<-lang_ru;;*);
+      [ Spell (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_magic;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Заклинание (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Заклинание - основная форма <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>, используемая <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародеями</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об видах заклинаний)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Заклинания могут иметь совершенно различные масштабы и сложность применения, и соответственно этому ранжируются как по необходимому мастерству, так и по четырем стихиям — Земли, Воздуха, Огня и Воды.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О заклинаниях)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Сотворение заклинания требует достаточного навыка и огромной концентрации <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародея</b></sc_element>, поэтому далеко не все из них способны на это. В подавляющем большинстве случаев необходимо обучение в одной из <b><sc_element sys_idtf="concept_the_witcher_3_mages_schools">магических школ</b></sc_element> либо под руководством опытного наставника, в противном случае грамотно использовать потенциал и управлять энергией практически невозможно.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О применениях заклинаний)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Долгое время удерживать <b><sc_element sys_idtf="concept_the_witcher_3_magic">магическую</b></sc_element> энергию для сотворения заклинания на расстоянии очень тяжело, поэтому большинство из них применяется на сравнительно небольшой дистанции.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/spell.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Заклинание)]   (*<-lang_ru;;*);;
+	*);;
+*);;

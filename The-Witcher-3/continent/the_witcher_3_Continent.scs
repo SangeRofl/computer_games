@@ -1,0 +1,60 @@
+concept_the_witcher_3_Continent
+
+=> nrel_main_idtf:     
+	 [Континент (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Continent (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+<-computer_game_the_witcher_3_wild_hunt;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. ( Континент (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Континент - термин в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, описывающий известную нордлингам часть мира, в который их привела Первая высадка. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О Континенте)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Термином Континент, на самом деле, принято называть лишь западное побережье реального материка или обширной части суши, где расположены <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северные королевства</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Империя Нильфгаард</b></sc_element>, на некой планете.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О составе Континента)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ К середине XIII в. на Континенте сформировались два мощных <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человеческих</b></sc_element> блока: <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северные королевства</b></sc_element>, включавшие древнейшие государства, основанные первыми прибывшими на Континент <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>, такие как <b><sc_element sys_idtf="concept_the_witcher_3_Cintra">Цинтра</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_Temeria">Темерия</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_Redania">Редания</b></sc_element>, и остальные появившиеся впоследствии в той же части света менее могущественные и древние государства и <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Империя Нильфгаард</b></sc_element> — огромное, мощное и развитое государство, огнем, мечом и дипломатией объединившее под знаменем коренных нильфгаардцев все страны к югу от цепи Амелл: Назаир, Мехт, Метинну, Гесо, Виковаро и т.д.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Continent.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Континент)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

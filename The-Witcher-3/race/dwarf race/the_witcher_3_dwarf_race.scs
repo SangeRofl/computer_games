@@ -1,0 +1,67 @@
+concept_the_witcher_3_dwarf_race
+
+=> nrel_main_idtf:     
+	 [Раса гномов (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Dwarf race (The Witcher 3)]  (*<-lang_en;;*);  
+      
+=>nrel_idtf:
+	[Гномы] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Раса гномов (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Гномы —  название для <b><sc_element sys_idtf="concept_the_witcher_3_race">расы</b></sc_element> очень маленьких существ, с вытянутыми острыми ушами и длинным носом в <b><sc_element sys_idtf="computer_game_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О возрасте расы гномов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Раса гномов - самая древняя <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element> на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element> после <b><sc_element sys_idtf="concept_the_witcher_3_vran_race">вранов</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О родственных с гномами расах)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="concept_the_witcher_3_gnome_race">Краснолюды</b></sc_element> и гномы — это родственные <b><sc_element sys_idtf="concept_the_witcher_3_race">расы</b></sc_element>, живущие в похожих условиях; похожим образом занимающиеся, в основном, горным делом и металлургией; имеющие похожую клановую структуру общества.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О работе гномов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В металлургии гномы превзошли все остальные <b><sc_element sys_idtf="concept_the_witcher_3_race">расы</b></sc_element>. Изготовленное ими оружие является самым ценным на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/dwarf.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гном)]   (*<-lang_ru;;*);;
+	*);;
+*);;

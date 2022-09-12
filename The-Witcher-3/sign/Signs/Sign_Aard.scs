@@ -1,0 +1,37 @@
+concept_the_witcher_3_aard_sign
+=> nrel_main_idtf:     [Знак Аард ]   (*<-lang_ru;;*);
+=> nrel_main_idtf:     [Sign Aard ]  (*<-lang_en;;*);  
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Aard.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр. Знак Аард] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Знак Аард основан на элементе воздуха и является одним из наиболее часто используемых Знаков. Аард — это заряд телекинетической энергии, который может оглушить, разоружить, сбить с ног или отбросить противников от ведьмака, а также разрушать преграды.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+  
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (О происхождении Знака Аард)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Так называемый Знак Аард, <b><sc_element sys_idtf="concept_the_witcher_3_ciri">Цири</b></sc_element>, это очень простое заклинание из разряда психокинетических чар, основывающееся на направлении энергии в требуемую сторону. Мощность броска зависит от концентрации воли излучающего и выданной им Силы. Она может быть значительной. <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race"> Ведьмаки</b></sc_element> освоили это заклинание, воспользовавшись тем, что оно не требует знания магической формулы — достаточно концентрации и жеста. Поэтому они назвали его <b><sc_element sys_idtf="concept_the_witcher_3_sign"> Знаком</b></sc_element>. Откуда они взяли название, не знаю, возможно, из Старшей Речи. Слово "ard" означает, как известно, "верх", "верхний", "высочайший". Если так, то название это очень обманчиво, потому что трудно найти более лёгкое психокинетическое заклинание.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+concept_the_witcher_3_aard_sign=>nrel_inclusion:concept_game_the_witcher_3_sign;;

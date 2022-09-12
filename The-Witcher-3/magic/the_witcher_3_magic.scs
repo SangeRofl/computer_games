@@ -1,0 +1,46 @@
+concept_the_witcher_3_magic
+
+=> nrel_main_idtf:     
+	 [Магия (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Magic (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<-computer_game_the_witcher_3_wild_hunt;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Магия (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Магия — искусство и одновременно проявление управления силами Изначального Хаоса, появившегося в мире после Сопряжения Сфер, а также направление его исследования.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;     
+  *);
+
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О видах магии)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Существуют шесть форм магии:<b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклинания</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_magic_invocation">инвокации</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_magic_ritual">ритуалы</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_magic_curse">проклятия</b></sc_element>, b><sc_element sys_idtf="concept_the_witcher_3_sign">ведьмачьи знаки</b></sc_element> и запрещённая магия .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/magic.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Магия)]   (*<-lang_ru;;*);;
+	*);;
+*);;

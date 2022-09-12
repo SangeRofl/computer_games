@@ -1,0 +1,52 @@
+concept_the_witcher_3_alghoul
+=> nrel_main_idtf: [Alghoul] (* <- lang_en;; *);
+=> nrel_main_idtf: [Альгуль] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Альгуль)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Альгуль — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Альгули имеют острые, как бритвы, шипы, и более мощное относительно <b><sc_element sys_idtf="concept_the_witcher_3_ghoul">гулей</b></sc_element> тело. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Чаще всего их можно встретить в склепах и на полях сражений в окружении простых <b><sc_element sys_idtf="concept_the_witcher_3_ghoul">гулей</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/alghoul.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Альгуль)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

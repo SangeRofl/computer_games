@@ -1,0 +1,231 @@
+concept_the_witcher_3_rune_2_lvl
+
+=> nrel_main_idtf: [just Rune (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Слова силы второго уровня (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Слова силы второго уровня (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слова силы второго уровня —  улучшения второго уровня, которые становятся доступны после накопления 10000 новиградских крон.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_rune_2_lvl_triumph;;
+	-> concept_the_witcher_3_rune_2_lvl_renovation;;
+	-> concept_the_witcher_3_rune_2_lvl_dissection;;
+	=> nrel_main_idtf:[Виды рун второго уровня] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Улучшения для оружия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует три вида рун второго уровня:
+			<ul>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_2_lvl_triumph">Триумф</b></sc_element> </li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_2_lvl_renovation">Обновление</b></sc_element></li>
+				<li> <b><sc_element sys_idtf="concept_the_witcher_3_rune_2_lvl_dissection">Рассечение</b></sc_element></li>
+			</ul>
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_2_lvl_triumph
+=> nrel_main_idtf: [rune of triumph (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [триумф (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(триумф (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "триумф" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">рунных камней</b></sc_element> Даждьбог, Велес и Девана.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В следствии зачарования ведьмачьего клинка этим словом, каждый смертельный удар по врагу повысит уровень адреналина на 0.1-0.25 шкалы.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Девана - увеличивает шанс вызвать кровотечение </li>
+			<li> Рунный камень Велес - увеличивает мощь <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаков</b></sc_element> </li>
+			<li> Рунный камень Даждьбог - увеличивает шанс вызвать горение </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_devan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Девана)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_daj.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Даждьбог)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_2_lvl_renovation
+=> nrel_main_idtf: [rune of renovation (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [обновление (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(обновление (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "обновление" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">рунных камней</b></sc_element> Перун, Сварог и Стрибог.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Позволят восстанавливать четверть шкалы энергии после каждого смертельного удара по противнику.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Перун - увеличивает получение адреналина </li>
+			<li> Рунный камень Сварог - увеличивает шанс пробития доспеха <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаков</b></sc_element> </li>
+			<li> Рунный камень Стрибог - увеличивает шанс вывести из равновесия </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_perun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Перуна)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_striborg.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Стриборг)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+//-----------------------------------------------------------------------
+concept_the_witcher_3_rune_2_lvl_dissection
+=> nrel_main_idtf: [rune of dissection (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [рассечение (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(рассечение (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Слово силы "рассечение" - слово, созданное из <b><sc_element sys_idtf="concept_the_witcher_3_rune">рунных камней</b></sc_element> Зоря, Велес и Перун.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Эффект)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Увеличивает радиус действия вихря и разрыва. Вихрь — особая атака и одноимённый навык персонажа, предназначенная для ведения боя против нескольких противников. Разрыв также является особым навыком, позволяющим провести невероятно мощную, но медленную атаку за счёт опустошения шкалы выносливости.
+				] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Эффект каждой руны по отдельности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ <ul>
+			<li> Рунный камень Зоря - увеличивает шанс вызвать заморозку </li>
+			<li> Рунный камень Велес - увеличивает мощь <b><sc_element sys_idtf="concept_the_witcher_3_sign">знаков</b></sc_element> </li>
+			<li> Рунный камень Перун - увеличивает получение адреналина </li>
+		     </ul>] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_zorya.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Зори)]   (*<-lang_ru;;*);;
+	*);;
+*);
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rune_perun.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Руна Перуна)]   (*<-lang_ru;;*);;
+	*);;
+*);;

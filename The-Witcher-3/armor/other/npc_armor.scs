@@ -1,0 +1,29 @@
+concept_the_witcher_3_armor_non_playable_character_kill
+=> nrel_main_idtf: [non playable character kill armor (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [отобранная броня (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(отобранная броня (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [отобранная броня —  <b><sc_element sys_idtf="concept_the_witcher_3_armor">броня</b></sc_element>, полученная в ходе убийства противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Особенности отобранной брони)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Доступно только в качестве трофея и, в отдельных случаях, в продаже.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

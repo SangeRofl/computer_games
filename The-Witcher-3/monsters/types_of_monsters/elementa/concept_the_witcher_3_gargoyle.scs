@@ -1,0 +1,52 @@
+concept_the_witcher_3_gargoyle
+=> nrel_main_idtf: [Gargoyle] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гаргулья] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_elementa;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Гаргулья)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гаргулья — вид  <b><sc_element sys_idtf="concept_the_witcher_3_elementa">элементалей</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В отличие от <b><sc_element sys_idtf="concept_the_witcher_3_golem">големов</b></sc_element> гаргульи имеют более-менее одинаковый вид и всегда изготавливаются в виде статуй – возможно, это часть традиций или необходимая для работы заклинания или рун геометрическая форма.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Во времена, когда молодежь была более учтива, девушки чаще соглашались, а цены были много ниже, чародеи могли оживлять неживое и при помощи этого искусства делали себе вытесанных из камня слуг.Их и сейчас можно увидеть в городах с древней историей ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/gargoyle.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гаргулья)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

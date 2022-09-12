@@ -1,0 +1,51 @@
+concept_the_witcher_3_fiends
+=> nrel_main_idtf: [Fiend] (* <- lang_en;; *);
+=> nrel_main_idtf: [Бес] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бес)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бес — вид  <b><sc_element sys_idtf="concept_the_witcher_3_relicts">реликтов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Является родственным с <b><sc_element sys_idtf="concept_the_witcher_3_succubus">суккубами</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_sylvans">сильванами</b></sc_element> и чертами видом и очень похож на последних: огромное существо, передвигающееся на четырех конечностях, имеет огромные рога, третий глаз во лбу.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Населяют Лысую гору, руины Каэр Ниссена близ деревни Боксхольм.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/fiend.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Бес)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

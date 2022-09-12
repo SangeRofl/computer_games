@@ -1,0 +1,40 @@
+concept_the_witcher_3_magic_invocation
+
+=> nrel_main_idtf:     
+	 [ Инвокация (Ведьмак 3)]   (*<-lang_ru;;*);
+      [ Invocation (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_magic;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. ( Инвокация(Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Инвокация - форма <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>, используемая жрецами и друидами.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об инвокациях )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Жрецы, строго говоря, способны творить некоторые <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклинания</b></sc_element, однако не могут точным образом направлять свои силы, что необходимо для полноценных форм <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>. В силу этого они используют различные инвокации и символы, которые являются куда более простой в использовании <b><sc_element sys_idtf="concept_the_witcher_3_magic">магией</b></sc_element>, основанной на активной и порой хаотичной жестикуляции, а также произнесении нужных словесных формул. .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О разнице между заклинаниями и инвокациями)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Инвокации по большому счету, слабее <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародейских</b></sc_element <b><sc_element sys_idtf="concept_the_witcher_3_spell">заклинаний</b></sc_element>, а вместо стихий для получения энергии её адепты, вероятно, обращаются к божественным и природным источникам.   .](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

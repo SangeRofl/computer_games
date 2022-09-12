@@ -1,0 +1,63 @@
+concept_the_witcher_3_school_wolf
+=> nrel_main_idtf: [school of  wolf (The Wiitcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [школа волка (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.( школа волка (Ведьмак 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Школа волка —  <b><sc_element sys_idtf="concept_the_witcher_3_school">ведьмачья школа</b></sc_element>, к которой принадлежит <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт из Ривии</b></sc_element>. Располагается в крепости Каэр Морхен в окрестностях Каэдвена. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Лидер школы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ После падения крепости и гибели большинства ведьмаков школу возглавлял единственный из выживших наставников — Весемир.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (История)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Каэр Морхен малодоступен, тем не менее он пережил три нападения. В первый раз атака была произведена на крепость фанатиками, считающими ведьмаков монстрами, когда она была ещё наполнена ведьмаками и учениками. Тогда погибли фактически все обитатели Каэр Морхена, выжили только те ведьмаки, которых не было на тот момент в замке. После этого ученики в школе больше не тренируются. Во второй раз атакующих бандитов группировки Саламандра встречали всего несколько ведьмаков. В третий раз на крепость напали всадники Дикой Охоты с целью захватить <b><sc_element sys_idtf="concept_the_witcher_3_Ciri">Цири</b></sc_element>. Но здесь, по сравнению со второй атакой, защитников было намного больше. После этой атаки, а также смерти старого ведьмака Весемира, ведьмаки Школы Волка разбрелись по миру.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Представители школы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Представители школы волка: <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element>, Всемир, Эскель, Ламберт, b><sc_element sys_idtf="concept_the_witcher_3_Ciri">Цири</b></sc_element> (не прошла Испытание Травами), Беренгар, Лео (не прошла Испытание Травами), Вольтер (погиб на Испытании по активации ведьмачьего медальона), Адон (погиб, обрушив свод на врагов, в руинах эльфского дворца в Туссенте), Варин, Бармин, Эльгар
+		] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wolf.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Школа волка)]   (*<-lang_ru;;*);;
+		*);;
+	*);
+
+
+<- sc_node_not_relation;;

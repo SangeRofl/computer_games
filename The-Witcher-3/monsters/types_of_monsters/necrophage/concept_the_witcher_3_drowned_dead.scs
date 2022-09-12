@@ -1,0 +1,52 @@
+concept_the_witcher_3_drowned_dead
+=> nrel_main_idtf: [Drowned dead] (* <- lang_en;; *);
+=> nrel_main_idtf: [Плавун] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Плавун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Плавун — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это бесстрашные создания ведут ночной образ жизни и выглядят как крупные <b><sc_element sys_idtf="concept_the_witcher_3_drowner">утопцы</b></sc_element>, разновидностью которых являются, а их гниющая кожа носит красноватый или еще более синюшный оттенок, чем у их сородичей, вплоть до фиолетового. Также на их предплечьях растут плавники. Они часто возглавляют группы обычных утопцев и гораздо реже собираются в стаи, полностью состоящие из плавунов.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На берегах рек, озер, прудов и в болотах] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/drowned_dead.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Плавун)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

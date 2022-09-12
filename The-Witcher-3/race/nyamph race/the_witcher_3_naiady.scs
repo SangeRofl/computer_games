@@ -1,0 +1,54 @@
+concept_the_witcher_3_nyamph_race_naiad
+
+=> nrel_main_idtf:     
+	 [Наяда (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Naiad (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_nyamph_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. Hаяда( (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Hаяда - одна из разновидностей <b><sc_element sys_idtf="concept_the_witcher_3_nyamph_race">нимф</b></sc_element>, обитающая в реках или озёрах.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О способностях наяд)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Наяды отличные телепаты и телеэмпаты, в основном иммунные ко всем видам психических атак. Они также могут очаровывать <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людей</b></sc_element>. Самые сильные наяды могут по своему желанию командовать водами своего озера, вызывая миниатюрные штормы, в которых они топят своих противников. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об особенностях наяд)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Наяды прекрасно приспособлены к окружающей среде. Возможно, наиболее отличительной их особенностью являются перепонки между пальцами, которые есть у некоторых наяд, что позволяет им плавать еще легче. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/naiad.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Наяда)]   (*<-lang_ru;;*);;
+	*);;
+*);;

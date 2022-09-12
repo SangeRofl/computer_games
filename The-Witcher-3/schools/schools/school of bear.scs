@@ -1,0 +1,62 @@
+concept_the_witcher_3_school_bear
+=> nrel_main_idtf: [school of  bear (The Wiitcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [школа медведя (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.( школа медведя )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Школа медведя - <b><sc_element sys_idtf="concept_the_witcher_3_school">ведьмачья школа</b></sc_element>, появившаяся в игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>. Как и <b><sc_element sys_idtf="concept_the_witcher_3_school_viper">Школа Змеи</b></sc_element>, эта школа не упоминается в книгах А. Сапковского и графических романах.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Боевые навыки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Ведьмаки данной школы отличались крупным телосложением, а в бою полагались на силу ударов и <b><sc_element sys_idtf="concept_the_witcher_3_armor_heavy">крепость доспехов</b></sc_element>. Также можно предположить, что основной ареал их деятельности был на Скеллиге, ведь этот суровый край всегда был известен своими чудовищами-исполинами, такими как циклопы и великаны.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Факт про оружие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Школа Медведя, наряду со <b><sc_element sys_idtf="concept_the_witcher_3_school_cat">Школой Кота</b></sc_element>, являются единственными известными <b><sc_element sys_idtf="concept_the_witcher_3_school">ведьмачьими школами</b></sc_element>, которые используют <b><sc_element sys_idtf="concept_the_witcher_3_weapon_crossbow">арбалеты</b></sc_element> в своей работе.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (Представители школы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Представители Школы Медведя: Герд, Юнод из Бельхавена.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/bear.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Школа Медведя)]   (*<-lang_ru;;*);;
+		*);;
+	*);
+
+
+<- sc_node_not_relation;;

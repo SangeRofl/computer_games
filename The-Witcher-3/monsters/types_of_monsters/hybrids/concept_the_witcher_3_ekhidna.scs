@@ -1,0 +1,54 @@
+concept_the_witcher_3_ekhidna
+=> nrel_main_idtf: [Ekhidna] (* <- lang_en;; *);
+=> nrel_main_idtf: [Эхидна] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_hybrids;
+<=nrel_inclusion: concept_the_witcher_3_siren;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Эхидна)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эхидна — вид  <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибридов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Более крупная и сильная разновидность <b><sc_element sys_idtf="concept_the_witcher_3_siren">сирен</b></sc_element> ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Встречаются на Скеллиге.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ekhidna.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Эхидна)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;
