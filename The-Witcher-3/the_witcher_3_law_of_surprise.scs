@@ -1,0 +1,43 @@
+concept_the_witcher_3_law_of_surprise
+
+=> nrel_main_idtf:     
+	 [Право неожиданности (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Law of surprise (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<-computer_game_the_witcher_3_wild_hunt;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Право неожиданности (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Право неожиданности — обычай, известный на территории <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северных королевств</b></sc_element> в  <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>. Любой <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человек</b></sc_element> или существо вправе потребовать за какую-нибудь услугу с незнакомого ему <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человека</b></sc_element> (существа) право неожиданности.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О времени действия Права неожиданности )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Несмотря на видимую условность, это право после давания клятвы и при соблюдении ряда условий гарантирует его обладателю получение желаемого даже через огромный промежуток времени.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О словах клятвы Права неожиданности)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Даваемая клятва: «(<b><sc_element sys_idtf="concept_the_witcher_3_human_race">Человек</b></sc_element>/существо) обещает отдать другому (<b><sc_element sys_idtf="concept_the_witcher_3_human_race">человеку</b></sc_element>/существу) то, что оставил дома, но о чем не знает и чего не ожидает.»](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+

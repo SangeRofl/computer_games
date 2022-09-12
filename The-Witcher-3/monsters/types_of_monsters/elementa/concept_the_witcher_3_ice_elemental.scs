@@ -1,0 +1,52 @@
+concept_the_witcher_3_ice_elemental
+=> nrel_main_idtf: [Ice elemental] (* <- lang_en;; *);
+=> nrel_main_idtf: [Элементаль Льда] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_elementa;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Элементаль Льда)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Элементаль Льда — вид  <b><sc_element sys_idtf="concept_the_witcher_3_elementa">элементалей</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это чудовище выглядит как нагромождение льда, обретшее форму человека.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Могут возникать самостоятельно в некоторых подходящих для этого местах – например, в Драконьих горах, где море омывает заснеженные пики, что создает отличные условия для стихии воды.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ice_elemental.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Элементаль Льда)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

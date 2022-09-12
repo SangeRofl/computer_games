@@ -1,0 +1,21 @@
+concept_the_witcher_3_yrden_sign
+
+=> nrel_main_idtf:     
+	[Знак Ирден ]   (*<-lang_ru;;*);
+     	 [Sign Yrden ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+
+
+=> nrel_main_idtf:
+      [Опр. Знак Ирден] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Знак Ирден основан на пятом элементе, сути магии. С помощью этого <b><sc_element sys_idtf="concept_the_witcher_3_sign">Знака </b></sc_element> ведьмак может создать магический заслон, который можно использовать как замок или «ловушку». В разных случаях противник будет не в силах преодолеть Ирден, или, оказавшись внутри зоны действия <b><sc_element sys_idtf="concept_the_witcher_3_sign">Знака</b></sc_element>, окажется замедлен или, например, овеществлен или лишён невидимости. Является весьма мощным оружием, но, как и большинство других <b><sc_element sys_idtf="concept_the_witcher_3_sign">Знаков</b></sc_element>, почти не действует на крупных существ. Ирденом можно также прерывать магическую сигнатуру порталов. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+  

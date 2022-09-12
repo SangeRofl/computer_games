@@ -1,0 +1,53 @@
+concept_the_witcher_3_monster
+
+=> nrel_main_idtf:     
+	[Монстр ]   (*<-lang_ru;;*);
+     	 [Monster ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+=> nrel_inclusion:
+concept_the_witcher_3_beasts;
+concept_the_witcher_3_cursed_ones;
+concept_the_witcher_3_draconids;
+concept_the_witcher_3_elementa;
+concept_the_witcher_3_hybrids;
+concept_the_witcher_3_insectoids;
+concept_the_witcher_3_necrophages;
+concept_the_witcher_3_ogroids;
+concept_the_witcher_3_relicts;
+concept_the_witcher_3_specters;
+concept_the_witcher_3_vampires;
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Монстр)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[ Монстры (ориг. The Witcher 3 bestiary) — противники в игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>. Как и в предыдущих играх, монстры поделены на классы. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/monster.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf: [Утв.(Монстр)](*<- lang_ru;;*);;
+ 	=> nrel_main_idtf: [St.(Monster)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[ За убийство монстра <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> получает одну единицу опыта
+                 ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+*);;
+
+

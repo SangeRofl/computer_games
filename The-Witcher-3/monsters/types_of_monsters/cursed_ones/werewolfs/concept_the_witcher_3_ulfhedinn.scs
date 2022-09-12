@@ -1,0 +1,77 @@
+concept_the_witcher_3_ulfhedinn
+=> nrel_main_idtf: [ulfhedinn] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ульфхединн] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_werewolves;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Ульфхединн)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b>Ульфхединн</b> (ориг. Ulfhedinn) — чудовище в игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>, cкеллигский подвид <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколаков</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ульфхединны — подвид <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколака</b></sc_element>, обитающий преимущественно на Скеллиге. Они также, как и их собратья, представляют собой своеобразный <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибрид</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человека</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_wolves">волка</b></sc_element> с непропорционально длинными конечностями, перемещаются преимущественно на двух задних лапах, иногда используют передние в качестве опоры, имеют длинные когти и острые зубы и клыки. Их рост даже в полусогнутом состоянии превышает <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человеческий</b></sc_element>, а выпрямившись во весь рост, такое чудовище раза в 1,5 выше <b><sc_element sys_idtf="concept_the_witcher_3_human_race">человека</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Об отличительных особенностях)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [От обычных <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколаков</b></sc_element> эти отличаются темной, почти черной или светлой, почти белой шкурой, черной шерстью, которая растет у них клоками на руках, груди, в паху, на щиколотках и особенно густо на спине, а также отличительными белыми пятнами на носу, щеках и лбу, которые, однако, минуют глазные впадины, что очень похоже на боевой раскрас. Кроме того, ульфхединны отличаются большей силой, ловкостью, выносливостью, а также агрессивностью и свирепостью. Они особенно опасны, когда чувствуют, что их силы на исходе — тогда они начинают призывать своем воем <b><sc_element sys_idtf="concept_the_witcher_3_wolves">волков</b></sc_element>, а также яростнее атаковать. В отличие от обычных <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколаков</b></sc_element> ульфхединны не делают никаких попыток контактировать с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element> и не разговаривают с ними. Не вполне понятно, посредством какого <b><sc_element sys_idtf="concept_the_witcher_3_magic_curse">проклятья</b></sc_element> можно стать ульфхединном, и чем оно отличается от обычного проклятия ликантропи. 
+
+] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.3 (О месте обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ульфхединн — это разновидность волколака, которая встречается главным образом на Скеллиге. Быть может, из-за сурового климата этих мест и потому что он вынужден охотиться на людей, которые никогда не сдаются без борьбы, ульфхединн сильнее своих родичей с континента. Старые, особенно опасные ульфхединны называются ворефами. Смельчаков, которым удавалось их победить, было в истории Скеллиге всего несколько. И всех их до сего дня прославляют в песнях как героев.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ulfheddin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Неллен)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ulfheddin1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Неллен1)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+<- sc_node_not_relation;;

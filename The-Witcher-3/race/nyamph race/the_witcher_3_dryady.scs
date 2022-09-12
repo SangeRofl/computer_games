@@ -1,0 +1,64 @@
+concept_the_witcher_3_nimph_race_dryad
+
+=> nrel_main_idtf:     
+	 [Дриада (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Dryad (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_nimph_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Дриада (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Дриады  — прекрасные и гордые воительницы, живущие в лесу Брокилон.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О внешности дриад)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Дриады очень красивы, хотя и разительно отличаются от привычных b><sc_element sys_idtf="concept_the_witcher_3_human_race">людям</b></sc_element> канонов. Они имеют зеленоватую кожу, помогающую им идеально сливаться с листвой деревьев; цвет их волос колеблется между цветом корицы и изумрудной зеленью. Черты лица очень острые, лица узкие, равно как и очень лёгкие жилистые тела. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об особенностях дриад)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Дриады принимают в свои ряды и b><sc_element sys_idtf="concept_the_witcher_3_human_race">человеческих</b></sc_element> девочек, подкинутых или потерявшихся в лесу. Для этого они используют воду из особого Брокилонского источника, обладающую токсичными свойствами. После принятия воды девочки забывают всю свою прошлую жизнь и с этого момента их воспитывают как дриад. Превращенные в дриад девочки несколько отличаются внешним обликом, чем дочери настоящих дриад. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (Об образе жизни дриад)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Дриады имеют подобие государственной структуры, искусства и своеобразные ремёсла.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/dryad.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Дриада)]   (*<-lang_ru;;*);;
+	*);;
+*);;

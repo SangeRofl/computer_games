@@ -1,0 +1,59 @@
+concept_the_witcher_3_shrieker
+=> nrel_main_idtf: 
+                  [Shrieker] (* <- lang_en;; *);
+                   [Крикун] (* <- lang_ru;; *);
+
+
+=> nrel_coloration: black;
+
+
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Крикун)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*  -> rrel_example:
+		 [Крикун — вид драконидов <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Witcher</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> rrel_example:
+		[Крикун похож на петуха скрещённого с василиском.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> rrel_example:
+		 [Крикуны любят темные, влажные места, такие как подвалы и пещеры.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/shrieker.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Крикун)]   (*<-lang_ru;;*);;
+	*);;
+	*);;
+
+

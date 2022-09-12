@@ -1,0 +1,54 @@
+concept_the_witcher_3_erynia
+=> nrel_main_idtf: [Erynia] (* <- lang_en;; *);
+=> nrel_main_idtf: [Эриния] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_hybrids;
+<=nrel_inclusion: concept_the_witcher_3_harpy;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Эриния)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эриния — вид  <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибридов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Внешним видом и поведением эринии полностью похожи на <b><sc_element sys_idtf="concept_the_witcher_3_harpy">гарпий</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Населяют острова Скеллиге.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/erynia.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Эриния)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

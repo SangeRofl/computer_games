@@ -1,0 +1,56 @@
+concept_the_witcher_3_elf_race_aen_undod
+
+=> nrel_main_idtf:     
+	 [Эльф единого народа (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Aen undod race (The Witcher 3)]  (*<-lang_en;;*);  
+=> nrel_idtf:
+	[Эльф единого народа] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_elf_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Эльф единого народа (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эльфы единого народа - древний народ <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">расы эльфов</b></sc_element>, существовавший задолго до Сопряжения Сфер.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О времени существования эльфов единого народа)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Единый народ эльфов существовал в незапамятные времена, пока неизвестная катастрофа не уничтожила их родной мир и не вынудила заняться колонизацией новых миров. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О потомках эльфов единого народа)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Потомки эльфов единого народа разделились на две разные группы – <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_elle">эльфов народа ольх</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_seidhe">эльфов народа гор</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/aen_undod.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Эльф единого народа)]   (*<-lang_ru;;*);;
+	*);;
+*);;

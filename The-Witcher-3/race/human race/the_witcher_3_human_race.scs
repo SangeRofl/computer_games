@@ -1,0 +1,67 @@
+concept_the_witcher_3_human_race
+
+=> nrel_main_idtf:     
+	 [Человеческая раса (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Human race (The Witcher 3)]  (*<-lang_en;;*);  
+=>nrel_idtf:
+	[Люди] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Человеческая раса (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Люди — самая молодая и наиболее многочисленная <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element> на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element> в <b><sc_element sys_idtf="computer_game_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, составляющая большую часть населения <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северных Королевств</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Нильфгаардской Империи</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв 1. (О прибытии на континент человеческой расы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После прибытия на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континент</b></sc_element> люди начали агрессивную экспансию, завоевывая населенные другими <b><sc_element sys_idtf="concept_the_witcher_3_race">расами</b></sc_element> земли.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об отношениях людей с эльфами)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Раса людей и <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">раса эльфов</b></sc_element> могут производить потомство, поэтому большинство людей являются полукровками с эльфийскими корнями.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (Раса людей и их враги)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[На данный момент человеческая раса конфликтует с <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфами</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_dwarf_race"> гномами</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_gnome_race">краснолюдами</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_halfling_race">низушками</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+ <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/human.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Человек)]   (*<-lang_ru;;*);;
+	*);;
+*);;

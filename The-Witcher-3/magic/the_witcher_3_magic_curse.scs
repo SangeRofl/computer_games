@@ -1,0 +1,54 @@
+concept_the_witcher_3_magic_curse
+
+=> nrel_main_idtf:     
+	 [Проклятие (Ведьмак 3)]   (*<-lang_ru;;*);
+      [ Curse (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_magic;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Проклятие (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Проклятие - один из видов длительной <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>, связанный с проведением какого-либо <b><sc_element sys_idtf="concept_the_witcher_3_magic_ritual">ритуала</b></sc_element> или наложением <b><sc_element sys_idtf="concept_the_witcher_3_magic_spell">заклятия</b></sc_element>, что вызывает определенные обычно негативные эффекты или последствия для различных субъектов или объектов.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О проклятиях)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Проклятия не возникают стихийно и случайно, а насылаются целенаправленно, пусть его автор и не понимает, что он сотворил, и каждый из эффектов проклятия, как правило, связан с причиной его появления. Может быть такое, что проклятие накладывает человек, не практикующий магию и не имеющий к ней отношения – в этом случае считается, что последствия вызваны силой его воли и психо-эмоциональным резонансом в момент наложения проклятия. Их эффекты классифицируются по двум признакам: интенсивности — она может низкая, средняя или высокая, а также последующим эффектам — их составляют жестокость, предательство или бездействие.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О проклятиях)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Каждое проклятие индивидуально и требует своего собственного способа его снятия в зависимости от особенностей и причин наложения. Способы снятия проклятия также варьируются в зависимости от его сложности и тяжести.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/curse.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Проклятие)]   (*<-lang_ru;;*);;
+	*);;
+*);;

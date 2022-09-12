@@ -1,0 +1,53 @@
+concept_the_witcher_3_giant
+=> nrel_main_idtf: [Giant] (* <- lang_en;; *);
+=> nrel_main_idtf: [Великан] (* <- lang_ru;; *);
+
+=> nrel_inclusion: concept_the_witcher_3_ice_giant;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Великаны, иногда также называемые титанами и гигантами (ориг. Gigant) — существа, населяющие мир <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континента</b></sc_element> и некоторые другие миры, редкие гуманоиды гигантского роста. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эти гуманоидные <b><sc_element sys_idtf="concept_the_witcher_3_ogroids">огроиды</b></sc_element> – крупные и могучие существа примерно 4-5-метрового роста, которые обычно обитают в одиночестве в горах, но их также иногда можно встретить и в другой местности. Великаны, хотя и примитивны, но разумны, носят подобие одежды, украшают свои тела белыми татуировками, а также способны изготавливать простые орудия труда и оружие. Существует несколько их разновидностей с разным цветом кожи, например, <b><sc_element sys_idtf="concept_the_witcher_3_ice_giant">ледяные великаны</b></sc_element>. Из всех остальных <b><sc_element sys_idtf="concept_the_witcher_3_ogroids">огров</b></sc_element> к ним, пожалуй, ближе всего <b><sc_element sys_idtf="concept_the_witcher_3_cyclops">циклопы</b></sc_element>, обычно не уступающие им в размерах. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> по просьбе Краха может помочь его сыну освободить остров Ундвик от <b><sc_element sys_idtf="concept_the_witcher_3_ice_giant">ледяного великана</b></sc_element> Мыргыффа. Также, по поверьям жителей Скеллиге, на краю океана живет крылатый великан и отец <b><sc_element sys_idtf="concept_the_witcher_3_siren">сирен</b></sc_element> Храсвельг, взмахи крыльев которого создают ураганы. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/giant.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

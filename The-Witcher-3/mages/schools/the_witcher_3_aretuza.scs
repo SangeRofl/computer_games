@@ -1,0 +1,64 @@
+concept_the_witcher_3_mages_schools_aretuza
+
+=> nrel_main_idtf:     
+	 [Аретуза (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Aretuza (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_mages_schools;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Аретуза (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Аретуза — школа <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element> для юных <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародеек</b></sc_element>, расположенная в одноименном дворце на острове Танедд.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (Об основании Аретузы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Была основана в 839 году Кларой Лариссой де Винтер.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О ценности выпускниц Аретузы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В отличие от выпускников <b><sc_element sys_idtf="concept_the_witcher_3_mages_schools_ban_ard">Бан Арда</b></sc_element>, школы для мальчиков, выпускницы Аретузы ценятся на порядок выше.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О жизни учениц Аретузы)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ученицам Аретузы не разрешается покидать остров, и посетителям юных адепток для встреч приходилось идти в Локсию, единственное доступное для посторонних место на острове.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/aretuza.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Аретуза)]   (*<-lang_ru;;*);;
+	*);;
+*);;

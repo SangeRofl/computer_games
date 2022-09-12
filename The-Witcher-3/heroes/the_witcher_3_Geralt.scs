@@ -1,0 +1,87 @@
+concept_the_witcher_3_Geralt
+
+=> nrel_main_idtf:     
+	 [Геральт из Ривии (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Geralt of Rivia (The Witcher 3)]  (*<-lang_en;;*);  
+
+=>nrel_idtf:
+	[Геральт] (*<-lang_ru;;*); 
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_witcher_race;
+
+<=nrel_inclusion: concept_the_witcher_3_main_hero;
+=> nrel_studing: concept_the_witcher_3_school_wolf;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Геральт из Ривии (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Геральт из Ривии - <b><sc_element sys_idtf="concept_the_witcher_3_main_hero">главный герой</b></sc_element> игры <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмак</b></sc_element>, профессиональный охотник на <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстров</b></sc_element>, один из лучших фехтовальщиков Севера. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О внешности Геральта)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Геральт описывается как высокий, худощавый, стройный неестественно бледный не молодой и не старый мужчина с полностью седыми, как молоко, волосами, в книгах перехваченными на лбу кожаной повязкой, в играх же он собирает их в высокий хвост на затылке. Имеет жёлтые фосфоресцирующие глаза с вертикальными зрачками.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О характере Геральта)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Геральт обладает весьма примечательным, хотя и на редкость несносным характером. Годы, проведённые на большаке среди различного рода и степени маргинальных личностей, скитания по всему свету, бесчисленное количество схваток и передряг выработали в Геральте ряд качеств, которые в течение его приключений позволяли ему выживать и выходить относительным победителем из любой ситуации. Основными чертами характера ведьмака являются: сдержанность, молчаливость, прямолинейность, честность, красноречие, любознательность, рассудительность, скрытность, умеренность во всём и способности не терять самообладание в любой ситуации. Также Геральт опытен и практичен, неприхотлив и независим. Кроме того, он отличается сильнейшим гуманизмом, хотя и не питает иллюзий об устройстве мира и его обитателях и не наивен. Ведьмак сообразителен, разумен и, как правило, способен принимать взвешенные и продуманные решения. Несмотря на склонность к бродяжничеству и неспособность долго жить в одном месте, что связано как с чертами характера, так и с образом жизни, Геральт высоко ценит дом и удобства, не отказываясь от них при возможности. Тем не менее, несмотря на всю свою дальновидность и определённую степень мудрости, Геральт остёр на язык, грубоват, саркастичен и вообще обладает специфическим чувством юмора.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (О любовных интересах и друзьях Геральта)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Геральт имеет романтический интерес к двум <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародейкам</b></sc_element>: <b><sc_element sys_idtf="concept_the_witcher_3_Yennefer">Йеннифэр из Венгерберга</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_Triss">Трисс Меригольд</b></sc_element>.Его лучшими друзьями помимо <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмаков</b></sc_element> из <b><sc_element sys_idtf="concept_the_witcher_3_school_wolf">Школы Волка</b></sc_element> являются бард <b><sc_element sys_idtf="concept_the_witcher_3_Dandelion">Лютик</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_gnome_race">краснолюд</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Zoltan_Chivay">Золтан Хивай</b></sc_element> и  <b><sc_element sys_idtf="concept_the_witcher_3_higher_vampire_race">высший вампир</b></sc_element> <b><sc_element sys_idtf="concept_the_witcher_3_Emiel_Regis">Эмиель Регис</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.4 (Об оружии Геральта)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Геральт из Ривии пользуется двумя <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечами</b></sc_element> — <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_steel">стальным</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_silver">серебряным</b></sc_element>. Их он получил после обучения в <b><sc_element sys_idtf="concept_the_witcher_3_Kaer_Morhen">Каэр Морхене</b></sc_element> и пользовался на протяжении многих лет. Несмотря на распространённое мнение, будто стальной меч — против <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людей</b></sc_element>, а серебряный — против <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстров</b></sc_element>, они оба предназначены для схваток с последними поскольку для некоторых из них смертельна сталь, а для некоторых — серебро. Геральт упоминает, что его <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечи</b></sc_element> были специально сделаны и подогнаны под него.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Geralt.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Геральт из Ривии)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

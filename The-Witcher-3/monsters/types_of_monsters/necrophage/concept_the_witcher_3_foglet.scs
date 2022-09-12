@@ -1,0 +1,52 @@
+concept_the_witcher_3_foglet
+=> nrel_main_idtf: [Foglet] (* <- lang_en;; *);
+=> nrel_main_idtf: [Туманник] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Туманник)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Туманник — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У туманников сутулое и костлявое тело, непропорционально длинные четырехпалые руки с жуткими когтями, большие головы с острыми отвислыми ушами и отсутствующим носом, широкими пастями с большей частью тупыми неровными зубами и будто затянутыми бельмом глазами без зрачков. Несмотря на видимую сухость и хрупкость тела, туманники крупнее и выше людей, а также превосходят их физической силой. Их бледная кожа может быть разных цветов: желто-зеленовато-бирюзовая, синюшно-черно-сиреневая и т.д. Кроме того, впалая грудная клетка сгорбленного тела мгляка с раздвинутыми ребрами.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Любят обитать везде, где возникает густой туман: на болотах, горных перевалах или на берегах рек и озер. Если тумана не ожидается, эти существа могут создать или вызвать его сами. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/foglet.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Туманник)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

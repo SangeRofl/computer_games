@@ -1,0 +1,56 @@
+concept_the_witcher_3_vran_race
+
+=> nrel_main_idtf:     
+	 [Раса вранов (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Vran race (The Witcher 3)]  (*<-lang_en;;*);  
+=>nrel_idtf:
+	[Враны] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Раса вранов (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Враны —  древняя развитая <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element> разумных гуманоидных ящеров в <b><sc_element sys_idtf="computer_game_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, создавшая в древнейшие времена <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континента</b></sc_element> первую цивилизацию.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв 1. (О внешности расы вранов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Враны имеют длинные хвосты и когти на пяти развитых пальцах, нижние же конечности заканчиваются длинным стопами с тремя массивными пальцами с когтями. У них несколько вытянутые лица с красными глазами, широкие рты, полные острых ровных конических зубов, ноздри-щелочки. Враны высоки, но примерно одного роста с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element> или выше их, широки в плечах и мускулисты. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О способностях вранов)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Враны — разумная и развитая <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element>, способная обрабатывать металлы и строить сложные архитектурные сооружения.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+ 
+ <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/vran.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Вран)]   (*<-lang_ru;;*);;
+	*);;
+*);;

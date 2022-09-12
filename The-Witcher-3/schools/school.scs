@@ -1,0 +1,22 @@
+concept_the_witcher_3_schools
+=> nrel_main_idtf: [Schools (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Школы (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+
+<=nrel_inclusion: concept_the_witcher_3_school;
+<=nrel_inclusion: concept_the_witcher_3_mages_schools;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Школы (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> место обучения.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

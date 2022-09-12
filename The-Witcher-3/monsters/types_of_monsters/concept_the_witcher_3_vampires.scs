@@ -1,0 +1,44 @@
+concept_the_witcher_3_vampires
+
+=> nrel_main_idtf:     
+	[Вампиры]   (*<-lang_ru;;*);
+     	 [Vampires]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+=> nrel_vulnerability: concept_the_witcher_3_vampire_oil;
+
+=> nrel_inclusion:
+concept_the_witcher_3_ekimma;
+concept_the_witcher_3_katakan;
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Вампиры)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[Вампиры (ориг. Wampir) — собирательное название группы существ, попавших на Континент во время глобального катаклизма под названием Сопряжение Сфер. Существует несколько видов вампиров, различных по повадкам и привычкам, а также по способностям и слабостям.](*<- lang_ru;;*);;
+        *);;
+*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/vampires.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf: [Утв.(Вампиры)](*<- lang_ru;;*);;
+ 	=> nrel_main_idtf: [St.(Vampires)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[В течение веков существования вампиры «обросли» обширным количеством не соответствующих действительности мифов. Полное суеверий описание вампиров даётся в книге «Physiologus». ](*<- lang_ru;;*);;
+
+            *);;
+*);;
+

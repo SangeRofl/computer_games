@@ -1,0 +1,52 @@
+concept_the_witcher_3_harpy
+=> nrel_main_idtf: [Harpy] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гарпия] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_hybrids;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Гарпия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гарпия — вид  <b><sc_element sys_idtf="concept_the_witcher_3_hybrids">гибридов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гуманоидные существа с руками, с пятью развитыми пальцами, с острыми когтями и такими же когтистыми ногами. За их плечам растут два пернатых крыла] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Эти существа живут преимущественно в горных краях, где на склонах отвесных скал вьют свои гнезда.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/harpy.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гарпия)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

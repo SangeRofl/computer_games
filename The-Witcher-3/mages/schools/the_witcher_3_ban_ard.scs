@@ -1,0 +1,64 @@
+concept_the_witcher_3_mages_schools_ban_ard
+
+=> nrel_main_idtf:     
+	 [ Бан Ард (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Ban Ard (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_mages_schools;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Бан Ард (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Бан Ард - школа <b><sc_element sys_idtf="concept_the_witcher_3_mages">чародеев</b></sc_element>, которая обучает <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element> только мальчиков.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О расположении Бан Арда)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В целях престижа и безопасности школа Бан Ард расположена за городскими стенами, в заброшенном <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфийском</b></sc_element> дворцовом комплексе, укрытом в лесу недалеко от города, вблизи от дороги. Причиной выбора этого места было также изучение руин древней <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфийской</b></sc_element> гробницы, расположенной в глубине леса. Вокруг Академии произрастает ухоженный сад, стилизованный под «дикий», плавно перетекающий в настоящий лес.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об уровне подготовки в Бан Арде )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Известно, что уровень подготовки в Бан Ард несколько хуже чем в <b><sc_element sys_idtf="concept_the_witcher_3_mages_schools_aretuza">Аретузе</b></sc_element>. Виной тому считаются более мягкие условия обучения: студентам разрешено посещать город, в котором они не наказываются за употребление алкоголя, утехи с проститутками и другие развлечения.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (Об обучении в Бан Арде )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Бан Ард жестоко преследует изучение и практику запрещенных видов <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element> среди своих студентов и учителей, такие, например, как некромантия.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/school.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Бан Ард)]   (*<-lang_ru;;*);;
+	*);;
+*);;

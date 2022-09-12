@@ -1,0 +1,56 @@
+concept_the_witcher_3_elf_race_aen_seidhe
+
+=> nrel_main_idtf:     
+	 [Эльф народа гор  (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Aen seidhe race (The Witcher 3)]  (*<-lang_en;;*);  
+=> nrel_idtf:
+	[Эльф народа гор] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_elf_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Эльфы народа гор (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Эльфы народа гор - народ <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">расы эльфов</b></sc_element>, произошедшие от <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_undod">эльфов единого народа</b></sc_element>, которые после неизвестной катастрофы, уничтоживший их родной мир, занялись поиском новых миров.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О продолжительности жизни народа гор)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Продолжительность жизни народа гор около двухсот-трёхсот лет.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О войне эльфов народа гор с людьми)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После войны с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>, эльфы народа гор отступили, сдав свои города, и ушли в горы, став свободными <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфами</b></sc_element>, а некоторые из них постепенно начали селиться с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>, став оседлыми <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфами</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/aen_seidhe.jpeg"
+		(*
+			=> nrel_format: format_jpeg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Эльф народа гор)]   (*<-lang_ru;;*);;
+	*);;
+*);;

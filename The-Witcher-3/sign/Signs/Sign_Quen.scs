@@ -1,0 +1,28 @@
+concept_the_witcher_3_quen_sign
+
+=> nrel_main_idtf:     
+	[Знак Квен ]   (*<-lang_ru;;*);
+     	 [Sign Quen ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Quen.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+	=> nrel_main_idtf:
+      [Опр. Знак Квен] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Знак Квен основан на элементе земли. Он создаёт магический заслон, не позволяющий нанести <b><sc_element sys_idtf="concept_the_witcher_3_witcher_race">ведьмаку </b></sc_element> урон, а при должном развитии способен ещё и наносить урон атакующему.   ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

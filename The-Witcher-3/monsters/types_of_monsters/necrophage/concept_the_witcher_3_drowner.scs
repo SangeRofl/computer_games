@@ -1,0 +1,52 @@
+concept_the_witcher_3_drowner
+=> nrel_main_idtf: [Drowner] (* <- lang_en;; *);
+=> nrel_main_idtf: [Утопец] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Утопец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Утопец — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Утопцы представляет собой переродившихся преступников или грешников, которые закончили свою жизнь в воде. Ростом они со среднего человека или выше, в большинстве случаев тощие, костлявые, с гребнями на загривке и с ластами на ногах, а также тонкими острыми когтями на руках. Утопцы имеют большие выпуклые глаза на вздутой башке с редкими волосами. Чудовища покрыты липкой слизью, которая остаётся на поверхностях, которых они касались. Кожа, имеющая следы гниения, чаще всего зеленоватая, либо синяя.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Обычно у рек и озер, иногда в канализациях.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/drowner.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Утопец)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

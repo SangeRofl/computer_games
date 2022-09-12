@@ -1,0 +1,58 @@
+concept_the_witcher_3_unicorn_race
+
+=> nrel_main_idtf:     
+	 [Раса единорогов (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Unicorn race (The Witcher 3)]  (*<-lang_en;;*);  
+=>nrel_idtf:
+	[Единороги] (*<-lang_ru;;*);
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. ( Раса единорогов (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Единороги — <b><sc_element sys_idtf="concept_the_witcher_3_race">раса</b></sc_element> разумных существ, которые пришли в мир после Сопряжения Сфер в <b><sc_element sys_idtf="computer_game_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв 1. (О единорогах)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Единороги выглядят, как лошади со спиральным рогом на лбах. Для общения используют телепатию и легко проходят сквозь параллельные действительности и время. Рог единорога является универсальным противоядием. Бывают различных мастей и меняют цвет с возрастом.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об отношениях единорогов с эльфами)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Единороги не терпят присутствие <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфов</b></sc_element>, в частности, <b><sc_element sys_idtf="concept_the_witcher_3_elf_race_aen_elle">Народа Ольх</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  
+  
+  
+ <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Unicorn.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Единорог)]   (*<-lang_ru;;*);;
+	*);;
+*);;

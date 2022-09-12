@@ -1,0 +1,55 @@
+concept_the_witcher_3_troll
+=> nrel_main_idtf: [Troll] (* <- lang_en;; *);
+=> nrel_main_idtf: [Tролль] (* <- lang_ru;; *);
+
+=> nrel_inclusion:
+concept_the_witcher_3_ice_troll;
+concept_the_witcher_3_rock_troll;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Тролли (ориг. Troll) — группа существ, встречающихся на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element>, разнообразные крупные создания, отличающиеся низким интеллектом и пьянством. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [«Существует множество видов троллей. Однако до сих пор не удалось найти ни одного, который не был бы туп, как ведро гвоздей».] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Внешний вид и повадки этих чудовищ могут различаться в зависимости от вида. Общими являются следующие особенности: тролли — крупные примитивные создания, обладающие огромной силой и крепкой кожей, однако они медлительны и туповаты. Несмотря на существующие суеверия, тролли не боятся солнца и не превращаются в камень от его лучей, наоборот предпочитая день ночи. Тролли разумны и способны говорить, однако сильно коверкают слова и говорят простейшими односложными или безличными предложениями. Имеют привычку чесать затылок, когда думают. Способны на чувства и ценят доброту, проявленную к ним. Любят играть в загадки.  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/troll.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

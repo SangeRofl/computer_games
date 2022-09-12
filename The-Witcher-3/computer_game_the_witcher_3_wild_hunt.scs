@@ -1,0 +1,72 @@
+computer_game_the_witcher_3_wild_hunt
+
+=> nrel_main_idtf:     
+	 [Ведьмак 3: Дикая Охота]   (*<-lang_ru;;*);
+      [The Witcher 3: Wild Hunt]  (*<-lang_en;;*);  
+
+=>nrel_idtf:
+	 [Ведьмак 3]   (*<-lang_ru;;*);
+      [The Witcher 3]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+
+<-concept_open_RPG;
+<-concept_setting_fantasy;
+<-concept_multiplatform_game;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_announcement_date: date_19.05.2015;
+=>nrel_publication_date: date_30.08.2016;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_camera: concept_third_person_view;
+=>nrel_game_engine: aurora_engine;
+
+=>nrel_publisher: company_atari;
+
+
+=>nrel_platform: concept_microsoft_windows;
+=>nrel_platform: xbox_360;
+=>nrel_platform: playstation_3;
+=>nrel_platform: playstation_4;
+=>nrel_platform: xbox_one;
+=>nrel_platform: nintendo_switch;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Ведьмак 3: Дикая Охота)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          concept_singleplayer_game
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ The Witcher 3: Wild Hunt — <b><sc_element sys_idtf="concept_multiplatform_game">мультиплатформенная</b></sc_element> компьютерная <b><sc_element sys_idtf="concept_open_RPG">ролевая  игра с открытым миром</b></sc_element> <b><sc_element sys_idtf="concept_heroic_fantasy"> героическая фэнтэзи</b></sc_element> <b><sc_element sys_idtf="concept_open_RPG">ролевая  игра с открытым миром</b></sc_element>,
+ разработанная студией CD Project Red и выпущенная компанией CD Project.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/The_Witcher_3_Wild_Hunt.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (Ведьмак 3)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Подобно предыдущим играм <b><sc_element sys_idtf="concept_game_series_the_witcher_3_wild_hunt">серии</b></sc_element>, Witcher 3 предоставляет игроку возможность свободно путешествовать по обширному игровому миру, исследуя его и самостоятельно находя новые места и задания. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

@@ -1,0 +1,40 @@
+concept_the_witcher_3_elder_races
+
+=> nrel_main_idtf:     
+	 [Старшие расы (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Elder races (The Witcher 3)]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<-computer_game_the_witcher_3_wild_hunt;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Старшие расы (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Старшие расы — общее обозначение, используемое <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфами</b></sc_element> для описания разумных <b><sc_element sys_idtf="concept_the_witcher_3_race">рас</b></sc_element>, которые обитали на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element> до прихода <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людей</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О составе старших рас в Ведьмаке 3)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Старшие расы включают в себя: <b><sc_element sys_idtf="concept_the_witcher_3_dwarf_race">гномов</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_halfling_race">низушек</b></sc_element>,<b><sc_element sys_idtf="concept_the_witcher_3_gnome_race">краснолюдов</b></sc_element> , <b><sc_element sys_idtf="concept_the_witcher_3_vran_race">вранов</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_elf_race">эльфов</b></sc_element>, <b><sc_element sys_idtf="concept_the_witcher_3_nyamph_race">нимф</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об отношении людей к старшим расам )] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="concept_the_witcher_3_human_race">Люди</b></sc_element> называют народы старших рас нелюдями.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

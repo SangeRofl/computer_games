@@ -1,0 +1,55 @@
+concept_the_witcher_3_Morkvarg
+=> nrel_main_idtf: [Morkvarg] (* <- lang_en;; *);
+=> nrel_main_idtf: [Моркварг] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_human_race;
+<=nrel_inclusion: concept_the_witcher_3_werewolves;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Моркварг)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b>Моркварг</b> (ориг. Morkvarg) — второстепенный персонаж в игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>, морской разбойник и пират со Скеллиге, предводительствовавший собственной бандой.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Биография)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Моркварг со своей группировкой держал в страхе все Острова, но однажды после наложенного <b><sc_element sys_idtf="concept_the_witcher_3_magic_curse">проклятия</b></sc_element> стал <b><sc_element sys_idtf="concept_the_witcher_3_werewolves">волколаком</b></sc_element>. Моркварга ранил «клыком волка с рунами» Тордар, член его команды, для которого убийство жриц, в отличие от убийств детей и женщин, было святотатством. Моркварг, превратившись в <b><sc_element sys_idtf="concept_the_witcher_3_monster">чудовище</b></sc_element>, разорвал всех членов своей команды. Единственный выживший в той резне, Тордар, придумал легенду о том, что на Моркварга перед смертью успела наслать <b><sc_element sys_idtf="concept_the_witcher_3_magic_curse">проклятие</b></sc_element> верховная жрица Ульве, в то время как о себе он говорил как о паломнике. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Morkvarg.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Моркварг)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Morkvarg1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Моркварг1)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+<- sc_node_not_relation;;

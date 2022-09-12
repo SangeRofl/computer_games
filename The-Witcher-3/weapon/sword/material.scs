@@ -1,0 +1,28 @@
+concept_the_witcher_3_weapon_sword_material
+=> nrel_main_idtf: [sword material (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [материал меча (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(материал меча (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Материал меча — вещество или предмет, из которого делается <b><sc_element sys_idtf="concept_the_witcher_3_weapon">оружие</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Виды материла)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> существует 2 вида материалов мечей: <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_silver">серебро</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_steel">сталь</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- sc_node_not_relation;;

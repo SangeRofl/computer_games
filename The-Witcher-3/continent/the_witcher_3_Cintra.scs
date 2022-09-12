@@ -1,0 +1,62 @@
+concept_the_witcher_3_Cintra
+
+=> nrel_main_idtf:     
+	 [Цинтра (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Cintra (The Witcher 3)]  (*<-lang_en;;*);  
+
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_Northern_Kingdoms;
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Цинтра (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Цинтра - провинция <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Нильфгаардской Империи</b></sc_element>, а ранее — свободное <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северное королевство</b></sc_element> на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element> в <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О прошлом Цинтры)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Это было могущественное королевство со своими древними обычаями. Цинтра была на пике могущества во время правления Калантэ — «Львицы из Цинтры» — и занимала не последнее место в политике <b><sc_element sys_idtf="concept_the_witcher_3_Northern_Kingdoms">Северных королевств</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (О захвате Цинтры)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После резни в Цинтре страна пришла в упадок, столица государства была почти полностью сожжена и разграблена завоевателями. Королева Калантэ и практически вся знать, составлявшая элиту, были уничтожены. Выжила лишь внучка Калантэ, наследница трона Цинтры — <b><sc_element sys_idtf="concept_the_witcher_3_Ciri">Цирилла</b></sc_element>.
+Потеряв свою независимость, королевство, несмотря на яростное сопротивление, было захвачено <b><sc_element sys_idtf="concept_the_witcher_3_Nilfgaardian_Empire">Нильфгаардом</b></sc_element> и превращено в его провинцию.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  
+  
+  
+  <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/C.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Цинтра)]   (*<-lang_ru;;*);;
+	*);;
+*);;
+  
+  
+  

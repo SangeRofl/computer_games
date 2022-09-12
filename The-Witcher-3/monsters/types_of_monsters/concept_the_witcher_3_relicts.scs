@@ -1,0 +1,42 @@
+concept_the_witcher_3_relicts
+
+=> nrel_main_idtf:     
+	[Реликты]   (*<-lang_ru;;*);
+     	 [Relicts]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+=> nrel_inclusion:
+concept_the_witcher_3_chorts;
+concept_the_witcher_3_crones;
+concept_the_witcher_3_doppler_race;
+concept_the_witcher_3_fiends;
+concept_the_witcher_3_fugass;
+concept_the_witcher_3_godlings;
+concept_the_witcher_3_howlers;
+concept_the_witcher_3_imps;
+concept_the_witcher_3_kernuns;
+concept_the_witcher_3_leshens;
+concept_the_witcher_3_morvudds;
+concept_the_witcher_3_sylvans;
+concept_the_witcher_3_woodlands_spirits;
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[Реликты (ориг. Relict) — класс чудовищ в литературной саге, а также в играх Ведьмак, <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element>](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+    => nrel_main_idtf: [Опр.(Реликты)](*<- lang_ru;;*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/chorts.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+

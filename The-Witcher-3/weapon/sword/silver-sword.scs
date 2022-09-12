@@ -1,0 +1,53 @@
+concept_the_witcher_3_weapon_sword_silver
+=> nrel_main_idtf: [silver sword  (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [серебряный меч (Ведьмак 3)] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Серебряный меч (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Серебряный меч — <b><sc_element sys_idtf="concept_the_witcher_3_weapon">оружие</b></sc_element>, которое применяется против различных <b><sc_element sys_idtf="concept_the_witcher_3_monster">чудовищ</b></sc_element> и всадников Дикой Охоты.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Количество разнообразных мечей)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В игре <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> существует более ста видов <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечей</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Строение серебряного меча)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Лезвие серебряного меча состоит из <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_steel">стального сердечника</b></sc_element>, который покрыт толстым слоем <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_silver">серебра</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/swords_silver.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Серебряные мечи)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

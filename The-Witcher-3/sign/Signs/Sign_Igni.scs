@@ -1,0 +1,29 @@
+concept_the_witcher_3_igni_sign
+
+=> nrel_main_idtf:     
+	[Знак Игни ]   (*<-lang_ru;;*);
+     	 [Sign Igni ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Igni.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+	=> nrel_main_idtf:
+      [Опр. Знак Игни] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Знак Игни основан на элементе огня и позволяет ведьмаку выпустить струю пламени из пальцев, что позволяет поджигать противников и освещать помещения. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

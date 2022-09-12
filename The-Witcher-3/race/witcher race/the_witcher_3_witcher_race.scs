@@ -1,0 +1,67 @@
+concept_the_witcher_3_witcher_race
+
+=> nrel_main_idtf:     
+	 [Раса ведьмаков (Ведьмак 3)]   (*<-lang_ru;;*);
+      [Witcher race (The Witcher 3)]  (*<-lang_en;;*); 
+=>nrel_idtf:
+	[Ведьмаки] (*<-lang_ru;;*);      
+       
+
+<-sc_node_not_relation;
+
+<=nrel_inclusion: concept_the_witcher_3_race;
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Раса ведьмаков (Ведьмак 3))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ведьмаки —  название для <b><sc_element sys_idtf="concept_witcher_3_race">расы</b></sc_element> искусственно созданных мутантов, прошедших специальную подготовку и обладающих сверхъестественными способностями и возможностями в <b><sc_element sys_idtf="computer_game_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element>, чьё изначальное предназначение — истреблять <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстров</b></sc_element>.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.1 (О способностях ведьмаков)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ведьмаки долгие годы упражняются в фехтовании и работе ног, доводят до автоматизма движения и вырабатывают рефлексы, которые впоследствии, соединённые с нечеловеческой скоростью, позволяют им выходить победителями практически из любых схваток. Кроме того, все ведьмаки учатся акробатическим трюкам, пируэтам и вольтам, которые используют в бою.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.2 (Об магии ведьмаков)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Ведьмаки владеют так называемыми <b><sc_element sys_idtf="concept_the_witcher_3_sign">ведьмачьими знаками</b></sc_element> — разновидностью боевой простейшей <b><sc_element sys_idtf="concept_the_witcher_3_magic">магии</b></sc_element>, требующей минимальных способностей для применения.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.3 (Об оружии ведьмаков)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Большинство ведьмаков вооружены двумя <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">мечами</b></sc_element> : <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_steel">стальным</b></sc_element> и <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword_material_silver">серебряным</b></sc_element>, которые носятся на ремнях за спиной, что также является отличительной чертой цеха.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/witcher.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Ведьмак)]   (*<-lang_ru;;*);;
+	*);;
+*);;

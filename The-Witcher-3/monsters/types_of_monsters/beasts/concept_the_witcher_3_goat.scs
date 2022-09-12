@@ -1,0 +1,42 @@
+concept_the_witcher_3_goat
+=> nrel_main_idtf: [Gont] (* <- lang_en;; *);
+=> nrel_main_idtf: [Коза] (* <- lang_ru;; *);
+
+=> nrel_inclusion: concept_the_witcher_3_beasts;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Коза (ориг. Goat) — животное, обитающее на <b><sc_element sys_idtf="concept_the_witcher_3_Continent">Континенте</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Козы, обычные <b><sc_element sys_idtf="concept_the_witcher_3_beasts">животные</b></sc_element>, мелкий рогатый скот, обитают повсеместно — и на крестьянских подворьях, и в дикой природе. Домашние козы достаточно пугливы (в отличие от коров и свиней) и разбегаются при приближении к ним <b><sc_element sys_idtf="concept_the_witcher_3_beasts">ведьмака</b></sc_element>. С убитых коз, как диких, так и домашних, можно получить ремесленные компоненты и еду — козье молоко, сырое мясо и шкуры. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/goat.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

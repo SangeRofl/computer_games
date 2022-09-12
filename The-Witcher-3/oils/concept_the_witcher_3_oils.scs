@@ -1,0 +1,29 @@
+concept_the_witcher_3_oils
+
+=> nrel_main_idtf:     
+	[Масла ]   (*<-lang_ru;;*);
+     	 [Oils ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example:[ Для каждого класса <b><sc_element sys_idtf="concept_the_witcher_3_monster">монстров</b></sc_element> существует свое собственное масло, кроме того особенное масло есть и для боя с <b><sc_element sys_idtf="concept_the_witcher_3_human_race">людьми</b></sc_element>. При нанесении на <b><sc_element sys_idtf="concept_the_witcher_3_weapon_sword">клинок</b></sc_element> масло сохраняет свой эффект определенное количество ударов. Как и в предыдущих играх, основой любого масла служит жир <b><sc_element sys_idtf="concept_the_witcher_3_beasts">животного</b></sc_element>, однако собирать все компоненты и готовить масло следует всего один раз — в дальнейшем их запас будет пополняться с каждой медитацией автоматически, при этом будет тратиться лишь имеющееся у <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральта</b></sc_element> сало (по умолчанию для воссоздания масла используется <b><sc_element sys_idtf="concept_the_witcher_3_bears">Медвежье</b></sc_element> сало, однако, если его нет в инвентаре, также подойдет <b><sc_element sys_idtf="concept_the_witcher_3_dogs">Собачье</b></sc_element> или иное другое). Кроме того, масла теперь можно наносить как до боя, так и во время него. Новеллой является также появление возможности улучшать каждое масло на две «ступени»: до улучшенного и отличного состояния — с которыми увеличиваются процентный уровень урона и количество ударов, которые <b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> может нанести, пока масло не сотрется с клинка. Улучшается также категория предмета: обычное масло является Предметом мастера, улучшенное становится Магическим предметом, отличное — Реликтом. Для приготовления новой «ступени» требуется найти соответствующий новый рецепт и нужные ингредиенты. ](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/oils.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;	
+
+

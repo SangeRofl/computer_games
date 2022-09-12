@@ -1,0 +1,52 @@
+concept_the_witcher_3_flying_redanian
+=> nrel_main_idtf: [Flying Redanian] (* <- lang_en;; *);
+=> nrel_main_idtf: [Летучий Реданец] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [«Летучий Реданец» (ориг. Flying Redanian) – корабль-призрак, замеченный моряками в океане между Ард Скеллигом, Ан Скеллигом и Хиндарсфьяллем. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ходят легенды о <b><sc_element sys_idtf="concept_the_witcher_3_Redania">реданском</b></sc_element> корабле-призраке, чья команда обнаружила настолько ценное сокровище, что не смогла поделить свою добычу и теперь <b><sc_element sys_idtf="concept_the_witcher_3_magic_curse">проклята</b></sc_element> бороздить моря за этим занятием вечность ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [<b><sc_element sys_idtf="concept_the_witcher_3_Geralt">Геральт</b></sc_element> может увидеть корабль-призрак каждую ночь к северо-востоку от Тенгельстранда и к северо-западу от Ингдалена. Тот появляется из-под воды, несколько секунд плывет над гладью, после чего снова «ныряет».  ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/flying redanian.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

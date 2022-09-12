@@ -1,0 +1,22 @@
+concept_the_witcher_3_glyph
+
+=> nrel_main_idtf: [glyph (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [глифы (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Глифы (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Глифы —  бонусный эффект, накладываемый на <b><sc_element sys_idtf="concept_the_witcher_3_armor">броню</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_glyph_1_lvl;;
+	-> concept_the_witcher_3_glyph_2_lvl;;
+	-> concept_the_witcher_3_glyph_3_lvl;;
+	=> nrel_main_idtf:[Уровни наложения глиф] (* <- lang_ru;; *);;
+*);;

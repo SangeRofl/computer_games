@@ -1,0 +1,49 @@
+concept_skyrim_dragonplate_armor_bracers
+
+=> nrel_main_idtf: [Dragonplate Gauntlets] (* <- lang_en;; *);
+=> nrel_main_idtf: [Драконьи панцирные перчатки] (* <- lang_ru;; *);
+
+<- concept_skyrim_heavy_armor;
+<- concept_skyrim_armor_bracers;
+
+=> nrel_baseline_protection: 17;
+=> nrel_weight: 8;
+=> nrel_default_cost: 425;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Драконьи панцирные перчатки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Драконьи панцирные перчатки — <b><sc_element sys_idtf="concept_skyrim_armor_bracers">перчатки</b></sc_element>,  <b><sc_element sys_idtf="concept_skyrim_heavy_armor">тяжёлая броня</b></sc_element> 
+в игре <b><sc_element sys_idtf="computer_game_the_elder_scrolls_5_skyrim">The Elder Scrolls V: Skyrim</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Драконьи панцирные перчатки— <b><sc_element sys_idtf="concept_skyrim_armor_bracers">тяжёлые перчатки</b></sc_element> с очень высокими показателями защиты, встречаемые в игре.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/bracers.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Драконьи панцирные перчатки)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;

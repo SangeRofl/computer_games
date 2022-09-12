@@ -1,0 +1,57 @@
+concept_the_witcher_3_school
+=> nrel_main_idtf: [School (The Witcher 3)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Школы (Ведьмак 3)] (* <- lang_ru;; *);
+
+<- computer_game_the_witcher_3_wild_hunt;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_the_witcher_3_school_wolf;;
+	-> concept_the_witcher_3_school_cat;;
+	-> concept_the_witcher_3_school_griffin;;
+	-> concept_the_witcher_3_school_bear;;
+	-> concept_the_witcher_3_school_manticore;;
+	-> concept_the_witcher_3_school_viper;;
+	=> nrel_main_idtf:[Виды школ] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Школы (Ведьмак 3))] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">The Witcher 3: Wild Hunt</b></sc_element> ведьмаки обучаются воинскому искусству в ведьмачих школах.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (История создания шокл)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Оригинальная «школа» ведьмаков на самом деле вовсе не была школой. До того, как ведьмы приняли более раздробленное существование, когда концепция ведьм впервые применялась на практике, существовала только одна фракция: Орден Ведьмаков.
+
+Практика мутировавших ведьмаков и обучения их убийствам монстров началась в 10-м веке, впервые по заказу многих королей континента (и их придворных магов), которые пытались создать орден рыцарей, использующих магию. Идея создания колдунов почти такая же, как и на современном континенте: спроектировать воинов, способных уничтожить легендарных монстров, которых обычные солдаты не могли остановить.
+
+Однако Орден не смог произвести впечатление на правителей, которые его основали, и поэтому его члены распустили организацию и разделились на различные группы, которые станут школами ведьм.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Навыки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ В каждой школе обучают своим приемам и уникальным методам убийства монстров.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+
+<- sc_node_not_relation;;

@@ -1,0 +1,29 @@
+concept_the_witcher_3_axii_sign
+
+=> nrel_main_idtf:     
+	[Знак Aксий ]   (*<-lang_ru;;*);
+     	 [Sign Axii ]  (*<-lang_en;;*);  
+
+<-sc_node_not_relation;
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/Axii.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+	=> nrel_main_idtf:
+      [Опр. Знак Аксий] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Знак Аксий основан на элементе воды. Этот <b><sc_element sys_idtf="concept_the_witcher_3_sign">Знак </b></sc_element> позволяет установить временный контроль над разумом противника или даже нескольких.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;

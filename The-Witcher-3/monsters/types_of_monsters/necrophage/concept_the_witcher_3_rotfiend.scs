@@ -1,0 +1,52 @@
+concept_the_witcher_3_rotfiend
+=> nrel_main_idtf: [Rotfiend] (* <- lang_en;; *);
+=> nrel_main_idtf: [Гнилец] (* <- lang_ru;; *);
+
+<=nrel_inclusion: concept_the_witcher_3_necrophages;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Гнилец)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Гнилец — вид  <b><sc_element sys_idtf="concept_the_witcher_3_necrophages">трупоедов</b></sc_element>.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Описание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [С четырьмя конечностями с развитыми пальцами и крупной, будто бы раздутой безобразной головой. Их кожа свисает с мышц клочьями и может быть разных цветов: от желтоватого и красного до черного и бурого. У них маленькие глазки и неширокие пасти с кривыми зубами, ребра торчат из грудной клетки, а голова с иногда окружающими ее трубками полна газов, которые в случае нанесения гнильцу критического урона вырываются наружу, разнося чудовище на куски, отравляя воздух и оглушая всех в радиусе взрыва. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2 (Места обитания)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Встречаются на местах сражений, у груд не захороненных мертвецов или на погостах с плохо закопанными трупами. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/rotfiend.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация (Гнилец)]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+<- sc_node_not_relation;;

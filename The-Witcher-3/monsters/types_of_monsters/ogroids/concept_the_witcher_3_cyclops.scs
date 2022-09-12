@@ -1,0 +1,55 @@
+concept_the_witcher_3_cyclops
+=> nrel_main_idtf: [Cyclops] (* <- lang_en;; *);
+=> nrel_main_idtf: [Циклоп] (* <- lang_ru;; *);
+
+=> nrel_vulnerability: concept_the_witcher_3_quen_sign;
+=> nrel_vulnerability: concept_the_witcher_3_axii_sign;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Циклоп (ориг. Cyclops) — чудовище в играх <b><sc_element sys_idtf="computer_game_the_witcher_3_wild_hunt">Ведьмак 3: Дикая Охота</b></sc_element> и Ведьмак: Охотник на чудовищ, крупный гуманоид всего с одним глазом посередине лица. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Циклоп — сильный и живучий противник, однако довольно медлительный и неповоротливый. Необходимо использовать перекаты и быстрые атаки, чтобы наносить ему быстрые удары со спины и флангов. Следует опасаться особенных атак циклопа, когда он бежит, размахивая руками – так чудовище наносит наибольший урон. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.2] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Циклопы являются очень высокими (рост до 5 метров) человекоподобными существами с кожей светло-фиолетового цвета и темными волосами. Отличительной особенностью циклопов является их единственный глаз посередине лица, в то время как нос смещен влево на место другой глазницы. ] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/cyclops.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	=>nrel_main_idtf: 
+	 [Иллюстрация ]   (*<-lang_ru;;*);;
+	*);;
+	*);
+
+
+<- sc_node_not_relation;;
