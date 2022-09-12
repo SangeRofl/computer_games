@@ -1,0 +1,131 @@
+amber
+=> nrel_main_idtf: [Амбер](*<- lang_ru;;*);
+=> nrel_main_idtf: [Amber](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Амбер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Амбер просто обожает огонь и постоянно с ним балуется, однако она не самый лучший в нём спец.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Амбер(dragon_breath))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Амбер направляет на врагов поток огня. Выглядит круто, но всё-таки лучше смотреть на это издалека. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Амбер(torch_em))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Амбер бросает флягу огненной жидкости, которую затем может поджечь своим дыханием дракона. Вражеские бойцы горят также, как и кусты!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Амбер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 1 <b><sc_element sys_idtf="concept_gadget">гаджет</b></sc_element> Амбер: 
+<b><sc_element sys_idtf="fire_starters">лава</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Амбер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Амбер: 
+<b><sc_element sys_idtf="wild_flames">дикое пламя</b></sc_element>,
+<b><sc_element sys_idtf="scorching_siphon">заправка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Амбер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Амбер: 
+Редкость - <b><sc_element sys_idtf="concept_legendary">легендарная</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//amber.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+fire_starters
+=> nrel_main_idtf: [лава](*<- lang_ru;;*);
+=> nrel_main_idtf: [fire starters](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (лава)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[В течение 3.0 с. Амбер движется быстрее и расплёскивает огненную жидкость, которую затем можно поджечь. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+wild_flames
+=> nrel_main_idtf: [дикое пламя](*<- lang_ru;;*);
+=> nrel_main_idtf: [wild flames](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (дикое пламя)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амбер может одновременно создать на земле две огненные лужи. Когда она стоит рядом с одной из них, её Супер заряжается автоматически.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+scorching_siphon
+=> nrel_main_idtf: [заправка](*<- lang_ru;;*);
+=> nrel_main_idtf: [scorching siphon](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (заправка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда Амбер находится рядом с огненной лужей, её огненное дыхание заряжается на 50% быстрее.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+
+
+
+
+
+
+
+

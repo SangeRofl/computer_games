@@ -1,0 +1,149 @@
+ash
+=> nrel_main_idtf: [Эш](*<- lang_ru;;*);
+=> nrel_main_idtf: [ash](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Эшу постоянно приходится убирать мусор в Сказочном Замке, который появляется там очень часто. Из-за этого он выходит из себя, но со временем он утихает.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Эш атакует, сильно ударяя метлой сверху вниз. Прочь с дороги, не то наглотаешься пыли. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Крысы-роботы в роли уборщиков? Запросто! Они взрываются при столкновении, нанося урон противникам и повышая уровень ярости Эша.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(шкала ярости)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [У Эша есть шкала ярости, которая пополняется при нанесении или получении урона. Чем выше уровень ярости, тем быстрее и сильнее он становится. Когда шкала ярости заполняется целиком, Эш на некоторое время становится значительно мощнее. Со временем шкала понижается.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Эш: 
+<b><sc_element sys_idtf="chill_pill">Успокоительное</b></sc_element>,
+<b><sc_element sys_idtf="rotten_banana">Гнилой банан</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Эш: 
+<b><sc_element sys_idtf="first_bash">Первый удар</b></sc_element>,
+<b><sc_element sys_idtf="mad_as_heck">Чертовски зол</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Эш)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Эш: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_tank">танк</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//ash.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+chill_pill
+=> nrel_main_idtf: [Успокоительное](*<- lang_ru;;*);
+=> nrel_main_idtf: [chill pill](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Успокоительное)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Пора взять себя в руки! Полная шкала ярости восстановит 2500 очк. здоровья. Чем меньше ярости, тем меньше здоровья восстановится.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+rotten_banana
+=> nrel_main_idtf: [Гнилой банан](*<- lang_ru;;*);
+=> nrel_main_idtf: [rotten banana](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Гнилой банан)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Эш теряет 40 % здоровья и сразу же получает 40 % ярости.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+mad_as_heck
+=> nrel_main_idtf: [Чертовски зол](*<- lang_ru;;*);
+=> nrel_main_idtf: [mad as heck](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Чертовски зол)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Нанося противнику удар с полностью заряженной атакой, Эш звереет ещё больше. Его ярость увеличивается на 200%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+first_bash
+=> nrel_main_idtf: [Первый удар](*<- lang_ru;;*);
+=> nrel_main_idtf: [first bash](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Первый удар)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Полностью впав в ярость, Эш машет метлой на 30% быстрее. Скорость атаки постепенно повышается с ростом уровня ярости.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

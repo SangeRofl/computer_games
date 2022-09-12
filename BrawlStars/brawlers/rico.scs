@@ -1,0 +1,139 @@
+rico
+=> nrel_main_idtf: [Рико](*<- lang_ru;;*);
+=> nrel_main_idtf: [Rico](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Выпущенные Рико пули могут отскакивать от стен. Его Супер преодолевает большую дистанцию и насквозь прошивает цель.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Его атака — пули, которые могут отскакивать от стен и пролетать на 1.67 клеток больше. Эта способность может позволить Рико наносить урон врагам в укрытиях при правильном прицеливании. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range">очень далекая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Рико выпускает длинную очередь пуль, которая прошивает врагов и может покрывать ещё большую дистанцию, отскакивая от стен!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Рико: 
+<b><sc_element sys_idtf="bouncy_castle">надувной замок</b></sc_element>,
+<b><sc_element sys_idtf="multiball_launcher">шаромёт</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Рико: 
+<b><sc_element sys_idtf="super_bouncy">cуперотскок</b></sc_element>,
+<b><sc_element sys_idtf="robo_retreat">oтступление машин</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Рико)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Рико: 
+Редкость - <b><sc_element sys_idtf="concept_super_rare">очень редкая</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//rico.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+bouncy_castle
+=> nrel_main_idtf: [надувной замок](*<- lang_ru;;*);
+=> nrel_main_idtf: [bouncy castle](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (надувной замок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая атака Рико восполнит ему 250 очков здоровья за каждый отскок пули. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+multiball_launcher
+=> nrel_main_idtf: [шаромёт](*<- lang_ru;;*);
+=> nrel_main_idtf: [multiball launcher](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (шаромёт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Рико стреляет во все стороны очередями пружинящих пуль. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+super_bouncy
+=> nrel_main_idtf: [cуперотскок](*<- lang_ru;;*);
+=> nrel_main_idtf: [super bouncy](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (cуперотскок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[При атаке или использования Супера пули Рико набирают энергию после первого отскока и наносят 124 очк. дополнительного урона.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+robo_retreat
+=> nrel_main_idtf: [oтступление машин](*<- lang_ru;;*);
+=> nrel_main_idtf: [robo retreat](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (oтступление машин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда у Рико остаётся меньше 40% здоровья, он движется на 34% быстрее.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

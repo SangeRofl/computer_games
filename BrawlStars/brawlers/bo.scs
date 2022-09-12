@@ -1,0 +1,139 @@
+bo
+=> nrel_main_idtf: [Бо](*<- lang_ru;;*);
+=> nrel_main_idtf: [Bo](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Бо)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Бо выпускает три взрывные стрелы. Его Супер — установка трёх секретных ловушек!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Бо(eagle eyed))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Три выпущенных Бо взрывные стрелы рвут врагов на части, как орлиные когти. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Бо(catch a fox))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Ловушки Бо взрываются после активации врагом с небольшой задержкой. Нанеся урон, они отбрасывают противников назад.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Бо)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Бо: 
+<b><sc_element sys_idtf="super_totem">супер тотем</b></sc_element>,
+<b><sc_element sys_idtf="trip_wire">растяжка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Бо)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Бо: 
+<b><sc_element sys_idtf="circling_eagle">парящий орел</b></sc_element>,
+<b><sc_element sys_idtf="snare_a_bear">медвежий капкан</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Бо)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Бо: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//bo.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+super_totem
+=> nrel_main_idtf: [Cупер тотем](*<- lang_ru;;*);
+=> nrel_main_idtf: [Super totem](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (супер тотем)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Бо оставляет на поле боя тотем, который восстанавливает Суперы Бо и его союзников в радиусе действия. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+trip_wire
+=> nrel_main_idtf: [Растяжка](*<- lang_ru;;*);
+=> nrel_main_idtf: [Trip wire](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (растяжка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Все ловушки Бо взрываются с задержкой в 1.5 с. До активации мины не могут быть обнаружены соперником. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+circling_eagle
+=> nrel_main_idtf: [парящий орел](*<- lang_ru;;*);
+=> nrel_main_idtf: [circling eagle](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (парящий орел)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Бо видит врагов, прячущихся в кустах, с расстояния на 150% больше обычного.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+snare_a_bear
+=> nrel_main_idtf: [медвежий капкан](*<- lang_ru;;*);
+=> nrel_main_idtf: [snare a bear](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (медвежий капкан)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Вместо того, чтобы отбрасывать противников назад, при активации ловушки Бо теперь оглушают врага на 2,0 с.!] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

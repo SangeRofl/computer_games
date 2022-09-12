@@ -1,0 +1,448 @@
+concept_game_brawl_stars
+<-sc_node_not_relation;
+=> nrel_main_idtf: [бравл старс] (* <- lang_ru;; *);
+=> nrel_main_idtf: [brawl stars] (* <- lang_en;; *);;
+definition -> brawl_stars_description
+(*
+    -> rrel_key_sc_element: concept_game_brawl_stars;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [игра для мобильных устройств в жанре MOBA, разработанная и изданная компанией Supercell. Глобальный релиз состоялся 12 декабря 2018 года.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бравл старс)](*<- lang_ru;;*);;
+*);;
+
+statement -> brawl_stars_statement
+(*
+    -> rrel_key_sc_element: concept_game_brawl_stars;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Brawl Stars является самой популярной мобильной игрой 2019-2020 годов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(бравл старс)](*<- lang_ru;;*);;
+*);;
+
+
+concept_brawler
+<-sc_node_not_relation;
+=> nrel_main_idtf: [бравлер] (* <- lang_ru;; *);
+=> nrel_main_idtf: [brawler] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 concept_main_characteristics;
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (различные бравлеры)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 56 различных бравлеров в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="rico">Рико</b></sc_element>,
+<b><sc_element sys_idtf="lou">Лу</b></sc_element>,
+<b><sc_element sys_idtf="piper">Пайпер</b></sc_element>,
+<b><sc_element sys_idtf="byron">Байрон</b></sc_element>,
+<b><sc_element sys_idtf="8_bit">8-Бит</b></sc_element>,
+<b><sc_element sys_idtf="eve">Ева</b></sc_element>,
+<b><sc_element sys_idtf="bea">Беа</b></sc_element>,
+<b><sc_element sys_idtf="gene">Джин</b></sc_element>,
+<b><sc_element sys_idtf="leon">Леон</b></sc_element>,
+<b><sc_element sys_idtf="fang">Фэнг</b></sc_element>,
+<b><sc_element sys_idtf="belle">Белль</b></sc_element>,
+<b><sc_element sys_idtf="shelly">Шелли</b></sc_element>,
+<b><sc_element sys_idtf="poco">Поко</b></sc_element>,
+<b><sc_element sys_idtf="colt">Кольт</b></sc_element>,
+<b><sc_element sys_idtf="jessie">Джесси</b></sc_element>,
+<b><sc_element sys_idtf="crow">Ворон</b></sc_element>,
+<b><sc_element sys_idtf="mr_p">Мистер П</b></sc_element>,
+<b><sc_element sys_idtf="lola">Лола</b></sc_element>,
+<b><sc_element sys_idtf="penny">Пенни</b></sc_element>,
+<b><sc_element sys_idtf="brock">Брок</b></sc_element>,
+<b><sc_element sys_idtf="griff">Грифф</b></sc_element>,
+<b><sc_element sys_idtf="bo">Бо</b></sc_element>,
+<b><sc_element sys_idtf="carl">Карл</b></sc_element>,
+<b><sc_element sys_idtf="barley">Барли</b></sc_element>,
+<b><sc_element sys_idtf="nani">Нани</b></sc_element>,
+<b><sc_element sys_idtf="tick">Тик</b></sc_element>,
+<b><sc_element sys_idtf="gale">Гэйл</b></sc_element>,
+<b><sc_element sys_idtf="colette">Колетт</b></sc_element>,
+<b><sc_element sys_idtf="max">Макс</b></sc_element>,
+<b><sc_element sys_idtf="stu">Сту</b></sc_element>,
+<b><sc_element sys_idtf="colonel_ruffs">Генерал Гавс</b></sc_element>,
+<b><sc_element sys_idtf="grom">Гром</b></sc_element>,
+<b><sc_element sys_idtf="pam">Пэм</b></sc_element>,
+<b><sc_element sys_idtf="tara">Тара</b></sc_element>,
+<b><sc_element sys_idtf="squeak">Скуик</b></sc_element>,
+<b><sc_element sys_idtf="spike">Спайк</b></sc_element>,
+<b><sc_element sys_idtf="amber">Амбер</b></sc_element>,
+<b><sc_element sys_idtf="dynamike">Динамайк</b></sc_element>,
+<b><sc_element sys_idtf="bull">Булл</b></sc_element>,
+<b><sc_element sys_idtf="frank">Фрэнк</b></sc_element>,
+<b><sc_element sys_idtf="nita">Нита</b></sc_element>,
+<b><sc_element sys_idtf="darryl">Дэррил</b></sc_element>,
+<b><sc_element sys_idtf="emz">Эмз</b></sc_element>,
+<b><sc_element sys_idtf="ash">Эш</b></sc_element>,
+<b><sc_element sys_idtf="sprout">Спраут</b></sc_element>,
+<b><sc_element sys_idtf="sandy">Сэнди</b></sc_element>,
+<b><sc_element sys_idtf="meg">Мэг</b></sc_element>,
+<b><sc_element sys_idtf="janet">Джанет</b></sc_element>,
+<b><sc_element sys_idtf="surge">Вольт</b></sc_element>,
+<b><sc_element sys_idtf="edgar">Эдгар</b></sc_element>,
+<b><sc_element sys_idtf="buzz">Базз</b></sc_element>,
+<b><sc_element sys_idtf="jacky">Джеки</b></sc_element>,
+<b><sc_element sys_idtf="bibi">Биби</b></sc_element>,
+<b><sc_element sys_idtf="mortis">Мортис</b></sc_element>,
+<b><sc_element sys_idtf="rosa">Роза</b></sc_element>,
+<b><sc_element sys_idtf="el_primo">Эль Примо</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+definition -> short_brawler_description
+(*
+    -> rrel_key_sc_element: concept_brawler;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Игроку предлагается на выбор большое количество разных бравлеров с различной механикой игры. Каждый боец будет отличаться своей <b><sc_element sys_idtf="concept_main_attack">атакой</b></sc_element> (радиусом и уроном), своим <b><sc_element sys_idtf="concept_super">Супером</b></sc_element>, <b><sc_element sys_idtf="concept_gadget">Гаджетами</b></sc_element>, <b><sc_element sys_idtf="concept_star_power">Звёздными силами</b></sc_element>, количеством здоровья и скоростью — ко всем им нужен разнообразный подход, чтобы добиться победы.](*<- lang_ru;; => nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бравлер)](*<- lang_ru;;*);;
+*);;
+
+
+
+
+concept_super
+<-sc_node_not_relation;
+=> nrel_main_idtf: [супер] (* <- lang_ru;; *);
+=> nrel_main_idtf: [super] (* <- lang_en;; *);;
+
+definition -> short_super_description
+(*
+    -> rrel_key_sc_element: concept_super;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Особая атака (или действие) бойца, которая собирается за счёт выстрелов, которые попали во врага, либо же накапливается благодаря особенностям бойца. Некоторые Суперы похожи, но в любом случае уникальные.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(супер)](*<- lang_ru;;*);;
+*);;
+
+concept_hero_model
+<-sc_node_not_relation;
+=> nrel_main_idtf: [модель героя] (* <- lang_ru;; *);
+=> nrel_main_idtf: [hero model] (* <- lang_en;; *);;
+
+definition -> short_hero_model_description
+(*
+    -> rrel_key_sc_element: concept_hero_model;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Содержит изображение бравлера.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(модель героя)](*<- lang_ru;;*);;
+*);;
+
+concept_gadget
+<-sc_node_not_relation;
+=> nrel_main_idtf: [гаджет] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gadget] (* <- lang_en;; *);;
+
+definition -> short_gadget_description
+(*
+    -> rrel_key_sc_element: concept_gadget;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Гаджеты позволяют бойцам расширять свои способности и приобретать новые тактические маневры, для каждого героя спектр доступных гаджетов ограничен.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гаджет)](*<- lang_ru;;*);;
+*);;
+
+concept_star_power
+<-sc_node_not_relation;
+=> nrel_main_idtf: [звездная сила] (* <- lang_ru;; *);
+=> nrel_main_idtf: [star power] (* <- lang_en;; *);;
+
+definition -> short_star_power_description
+(*
+    -> rrel_key_sc_element: concept_star_power;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Звёздная сила — это предмет, получаемый в ящиках и используемый бойцом в качестве их пассивной способности.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(звездная сила)](*<- lang_ru;;*);;
+*);;
+
+
+//brawlers rarity
+concept_brawler_rarity
+=> nrel_main_idtf: [редкость бравлера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [brawler rarity] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_trophy_road_reward;;
+    	-> concept_rare;;
+    	-> concept_epic;;
+    	-> concept_super_rare;;
+    	-> concept_chromatic;;
+    	-> concept_mythic;;
+    	-> concept_legendary;;
+	=> nrel_main_idtf:[Разбиение по редкости бравлеров] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(редкость бравлера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Редкость бравлера показывает шанс его выпадения из ящиков.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (редкость бравлера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 7 редкостей бравлеров в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+  <b><sc_element sys_idtf="concept_rare">редкий</b></sc_element>,
+ <b><sc_element sys_idtf="concept_super_rare">очень редкий</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_epic">эпический</b></sc_element>,
+   <b><sc_element sys_idtf="concept_mythic">мифический</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_chromatic">хроматический</b></sc_element>,
+ <b><sc_element sys_idtf="concept_legendary">легендарный</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+//brawlers main characteristics
+
+concept_main_characteristics
+=> nrel_main_idtf: [основные характеристики] (* <- lang_ru;; *);
+=> nrel_main_idtf: [main characteristics] (* <- lang_en;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	->concept_main_attack;;
+	->concept_super;;
+	->concept_hero_model;;
+	->concept_gadget;;
+	->concept_star_power;;
+	->concept_brawler_rarity;;
+	->concept_brawler_class;;
+	=> nrel_main_idtf:[Разбиение по основным характеристикам бравлеров] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(основные характеристики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Основные характеристики определяют важные особенности каждого бравлера.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (основные характеристики)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 7 основных характеристик бравлеров в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_main_attack">основная атака</b></sc_element>,
+  <b><sc_element sys_idtf="concept_super">супер</b></sc_element>,
+ <b><sc_element sys_idtf="concept_hero_model">модель героя</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_gadget">гаджет</b></sc_element>,
+   <b><sc_element sys_idtf="concept_brawler_rarity">редкость бравлера</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_brawler_class">класс бравлера</b></sc_element>,
+ <b><sc_element sys_idtf="concept_star_power">звездная сила</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+
+//brawler class
+
+concept_brawler_class
+=> nrel_main_idtf: [класс бравлера] (* <- lang_ru;; *);
+=> nrel_main_idtf: [brawler class] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	->concept_assassin;;
+	->concept_support;;
+	->concept_hybrid;;
+	->concept_damage_dealer;;
+	->concept_tank;;
+	=> nrel_main_idtf:[Разбиение по классам бравлеров] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(класс)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Классы не имеют отдельного цвета обозначения, в отличии от <b><sc_element sys_idtf="concept_brawler_rarity">редкостей</b></sc_element> бравлера. Это можно заметить в лево-верхнем углу картинок из игры.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(класс бравлера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [У каждого бойца в игре <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element> есть свой класс. Каждый боец выделяется своим типом в битве, и класс помогает его определить и понять, что он делает.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (класс бравлера)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 5 классов бравлеров в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_assassin">ассасин</b></sc_element>,
+  <b><sc_element sys_idtf="concept_support">поддержка</b></sc_element>,
+ <b><sc_element sys_idtf="concept_hybrid">гибрид</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>,
+ <b><sc_element sys_idtf="concept_tank">танк</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+
+concept_main_attack
+=> nrel_main_idtf: [основная атака] (* <- lang_ru;; *);
+=> nrel_main_idtf: [main attack] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	->concept_attack_range;;
+	->concept_reload_speed;;
+	=> nrel_main_idtf:[Разбиение по свойствам основной атаки] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(основная атака)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Содержит информацию об основной атаке бравлера.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (основная атака бравлеров)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 2 основных характеристики атаки бравлеров в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_attack_range">дальность атаки</b></sc_element>,
+ <b><sc_element sys_idtf="concept_reload_speed">скорость перезарядки</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- sc_node_not_relation;;
+
+concept_reload_speed
+=> nrel_main_idtf: [reload speed] (* <- lang_en;; *);
+=> nrel_main_idtf: [скорость перезарядки] (* <- lang_ru;; *);
+
+<- concept_main_attack;
+
+<= nrel_subdividing: ...
+(*
+	->concept_very_fast_reload_speed;;
+	->concept_normal_reload_speed;;
+	->concept_fast_reload_speed;;
+	->concept_very_slow_reload_speed;;
+	->concept_slow_reload_speed;;
+	=> nrel_main_idtf:[Разбиение по скорости перезарядки] (* <- lang_ru;; *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(скорость перезарядки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Скорость перезарядки атаки бойца показывает скорость, с которой бравлер сможет нанести следующий удар.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (скорость перезарядки бравлеров)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 5 скоростей перезарядки оружия в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_very_fast_reload_speed">очень быстрая перезарядка</b></sc_element>,
+  <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая перезарядка</b></sc_element>,
+ <b><sc_element sys_idtf="concept_normal_reload_speed">обычная перезарядка</b></sc_element>, 
+  <b><sc_element sys_idtf="concept_slow_reload_speed">медленная перезарядка</b></sc_element>,
+ <b><sc_element sys_idtf="concept_very_slow_reload_speed">очень медленная перезарядка</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_attack_range
+=> nrel_main_idtf: [attack range] (* <- lang_en;; *);
+=> nrel_main_idtf: [дальность атаки] (* <- lang_ru;; *);
+
+<- concept_main_attack;
+
+<= nrel_subdividing: ...
+(*
+	->concept_short_attack_range;;
+	->concept_long_attack_range;;
+	->concept_normal_attack_range;;
+	->concept_very_long_attack_range;;
+	=> nrel_main_idtf:[Разбиение по дальности атаки] (* <- lang_ru;; *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(дальность атаки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность атаки бравлера показывает радиус поражения цели основной атакой.] (* <- lang_ru;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв. (дальность атаки бравлеров)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [ Существует 4 основных дальности атаки бравлеров в  <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+ <b><sc_element sys_idtf="concept_short_attack_range">короткая атака</b></sc_element>,
+ <b><sc_element sys_idtf="concept_normal_attack_range">обычная атака</b></sc_element>,
+ <b><sc_element sys_idtf="concept_long_attack_range">длинная атака</b></sc_element>, 
+ <b><sc_element sys_idtf="concept_very_long_attack_range">очень длинная атака</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+//-------------------------------------------------------------------------------------------------------------
+
+concept_brawl_pass
+=> nrel_main_idtf: [brawl pass] (* <- lang_en;; *);
+=> nrel_main_idtf: [бравл пасс] (* <- lang_ru;; *);
+<- sc_node_not_relation;;
+//-------------------------------------------------------------------------------------------------------------
+
+concept_trophy_road
+=> nrel_main_idtf: [trophy road] (* <- lang_en;; *);
+=> nrel_main_idtf: [дорога славы] (* <- lang_ru;; *);
+<- sc_node_not_relation;;
+//-------------------------------------------------------------------------------------------------------------
+
+concept_currency
+=> nrel_main_idtf: [currency] (* <- lang_en;; *);
+=> nrel_main_idtf: [валюта] (* <- lang_ru;; *);
+<- sc_node_not_relation;;
+//-------------------------------------------------------------------------------------------------------------
+
+concept_shop
+=> nrel_main_idtf: [shop] (* <- lang_en;; *);
+=> nrel_main_idtf: [магазин] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

@@ -1,0 +1,165 @@
+meg
+=> nrel_main_idtf: [Мэг](*<- lang_ru;;*);
+=> nrel_main_idtf: [meg](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[У Мэг два режима - стандартный и продвинутый, в котором она использует меха-костюм. Костюм постепенно теряет здоровье, и после его разрушения Мэг возвращается в стандартный режим.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Мэг выстреливает очередью по 2 лазера, которые наносят незначительный урон. Однако, её заряды перезаряжаются довольно быстро и имеют весьма высокую дистанцию. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_very_fast_reload_speed"> очень быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [После активации Супера, Мэг залезает в робота, который имеет в ~2,5 раза больше здоровья. Он обладает собственными атакой и Супером. Каждую секунду робот Мэг тратит по 100 ед. здоровья (на первом уровне силы), а после уничтожения он пропадает.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Мехи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Робот Мэг стреляет очередями по 8 выстрелов, которые наносят чуть меньше ед. урона, чем её основная атака.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Мехи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Меха махает своими клешнями, нанося довольно приличный урон по области — Attack icon.png2400 (на 1 силе). Он накапливается только со временем, атака на скорость зарядки Супера не влияет.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Мэг: 
+b><sc_element sys_idtf="jolting_volts">Источник питания</b></sc_element>,
+<b><sc_element sys_idtf="toolbox">Ящик с инструментами</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Мэг: 
+<b><sc_element sys_idtf="force_field">Силовое поле</b></sc_element>,
+<b><sc_element sys_idtf="heavy_metal">Тяжёлый металл</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Мэг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Мэг: 
+Редкость - <b><sc_element sys_idtf="concept_legendary">легендарная</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//meg.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+jolting_volts
+=> nrel_main_idtf: [Источник питания](*<- lang_ru;;*);
+=> nrel_main_idtf: [jolting volts](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Источник питания)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Меха восстанавливает 450 очк. здоровья в секунду в течение 5 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+toolbox
+=> nrel_main_idtf: [Ящик с инструментами](*<- lang_ru;;*);
+=> nrel_main_idtf: [toolbox](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ящик с инструментами)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Мэг ставит на землю ящик с инструментами, который увеличивает скорость перезарядки находящихся по близости союзников на 35%, пока не будет уничтожен.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+force_field
+=> nrel_main_idtf: [Силовое поле](*<- lang_ru;;*);
+=> nrel_main_idtf: [force field](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Силовое поле)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[После уничтожения мехи у Мэг появляется щит, который уменьшает наносимый ей урон на 35% в течение 30 секунд.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+heavy_metal
+=> nrel_main_idtf: [Тяжёлый металл](*<- lang_ru;;*);
+=> nrel_main_idtf: [heavy metal](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тяжёлый металл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда время работы мехи истекает, она взрывается и наносит 1500 ед. урона находящимся вблизи противникам, отбрасывая их в стороны.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+
+
+
+
+
+
+
+

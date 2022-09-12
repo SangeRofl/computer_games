@@ -1,0 +1,139 @@
+barley
+=> nrel_main_idtf: [Барли](*<- lang_ru;;*);
+=> nrel_main_idtf: [Barley](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Барли атакует, швыряя во врага бутылку; урон наносится брызгами. Его Супер — шквал бутылок, наполненных зажигательной смесью!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [ТБарли швыряет бутылку, и она разбивается о землю. Разлетевшиеся брызги наносят урон врагам. Те из них, кто остаются в луже, продолжают получать урон. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">очень далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Обрушив шквал огненных бутылок, Барли заливает огнём огромную площадь. За счёт заведения!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Барли: 
+<b><sc_element sys_idtf="sticky_syrup_mixer">липкий сироп</b></sc_element>,
+<b><sc_element sys_idtf="herbal_tonic">лечебная настойка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Бо: 
+<b><sc_element sys_idtf="medical_use">лекарство</b></sc_element>,
+<b><sc_element sys_idtf="extra_noxious">опасно для здоровья</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Барли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Барли: 
+Редкость - <b><sc_element sys_idtf="concept_rare">редкий</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//barley.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+sticky_syrup_mixer
+=> nrel_main_idtf: [Липкий сироп](*<- lang_ru;;*);
+=> nrel_main_idtf: [Sticky syrup mixer](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (липкий сироп)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Барли разбивает бутылку липкой смеси, оставляя лужу, которая замедляет всех наступивших в неё врагов. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+herbal_tonic
+=> nrel_main_idtf: [Лечебная настойка](*<- lang_ru;;*);
+=> nrel_main_idtf: [Herbal tonic](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (лечебная настойка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Барли швыряет в сторону ближайших союзников зелье, лужа которого восстанавливает 500 очков здоровья в секунду. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+medical_use
+=> nrel_main_idtf: [лекарство](*<- lang_ru;;*);
+=> nrel_main_idtf: [medical use](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (лекарство)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Барли восстанавливает 400 очков здоровья с каждой атакой.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+extra_noxious
+=> nrel_main_idtf: [опасно для здоровья](*<- lang_ru;;*);
+=> nrel_main_idtf: [extra noxious](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (опасно для здоровья)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Урон от основной атаки Барли увеличивается на 200 очков в секунду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

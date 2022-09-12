@@ -1,0 +1,123 @@
+griff
+=> nrel_main_idtf: [Гриф](*<- lang_ru;;*);
+=> nrel_main_idtf: [griff](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Грифф — владелец магазина сувениров в парке Старр. Бизнес у него не идёт, но он всё равно разбрасывается деньгами, которые берёт из чаевых своих работников.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Злой Грифф забрасывает противников монетами. Он выпускает три залпа, разлетающихся по конусообразной области. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Грифф разбрасывает по широкой конусообразной области банкноты с острым краем, которые возвращаются к нему и могут поразить одну и ту же цель снова. Чем дальше находится противник, тем больше урона получает.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 1 <b><sc_element sys_idtf="concept_gadget">гаджет</b></sc_element> Гриф: 
+<b><sc_element sys_idtf="money_box">Копилка</b></sc_element>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Гриф: 
+<b><sc_element sys_idtf="leave_change_for_yourself">Сдачу оставь себе!</b></sc_element>,
+<b><sc_element sys_idtf="business_acumen">Деловая хватка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Гриф)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Гриф: 
+Редкость - <b><sc_element sys_idtf="concept_epic"эпический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//griff.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+money_box
+=> nrel_main_idtf: [Копилка](*<- lang_ru;;*);
+=> nrel_main_idtf: [money box](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Копилка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Грифф бросает на землю копилку с петардами, которая взрывается через некоторое время, разрушая препятствия и нанося 1000 ед. урона противникам в зоне поражения. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+leave_change_for_yourself
+=> nrel_main_idtf: [Сдачу оставь себе!](*<- lang_ru;;*);
+=> nrel_main_idtf: [leave change for yourself!](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Сдачу оставь себе!)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Взбешённый Грифф швыряет монеты ещё быстрее! Полная разрядка боеприпасов занимает на 35% меньше времени.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+business_acumen
+=> nrel_main_idtf: [Деловая хватка](*<- lang_ru;;*);
+=> nrel_main_idtf: [business acumen](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Деловая хватка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Каждые 2 с. Грифф восстанавливает до 10% недостающего здоровья.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

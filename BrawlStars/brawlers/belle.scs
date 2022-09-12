@@ -1,0 +1,125 @@
+belle
+=> nrel_main_idtf: [Белль](*<- lang_ru;;*);
+=> nrel_main_idtf: [Belle](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Белль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Белль - самая опасная бандитка на Диком Западе. Её электрический дробовик способен убрать любого, кто встанет ей на пути!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Белль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Белль стреляет дальнобойным электроразрядом, нанося урон всем поражаемым целям. После небольшой паузы разряд перескакивает на любую ближайшую цель и наносит урон; этот процесс повторяется до трёх раз, пока в зоне досягаемости есть подходящие цели. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range">очень далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Белли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Белль стреляет трассирующей пулей, которая помечает поражаемого противника. Помеченный противник получает больше урона вне зависимости от источника урона. Одновременно может быть помечена лишь одна цель.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Белли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 1 <b><sc_element sys_idtf="concept_gadget">гаджет</b></sc_element> Белли: 
+<b><sc_element sys_idtf="nest_egg">яйцо в гнезде</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Белли)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Бо: 
+<b><sc_element sys_idtf="positive_feedback">положительный отзыв</b></sc_element>,
+<b><sc_element sys_idtf="grounded">заземление</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Белль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Белль: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">Хроматическая редкость</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//belle.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+nest_egg
+=> nrel_main_idtf: [Яйцо в гнезде](*<- lang_ru;;*);
+=> nrel_main_idtf: [Nest egg](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (яйцо в гнезде)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Белль ставит ловушку, которая реагирует на противника взрывом. Ловушка наносит 500 ед. урона и замедляет всех бойцов в зоне поражения на 3 с. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+positive_feedback
+=> nrel_main_idtf: [положительный отзыв](*<- lang_ru;;*);
+=> nrel_main_idtf: [positive feedback](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (положительный отзыв)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Белль получает 20-процентную защиту от урона при каждом попадании её электроразряда в цель.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+grounded
+=> nrel_main_idtf: [заземление](*<- lang_ru;;*);
+=> nrel_main_idtf: [grounded](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (заземление)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Противник, помеченный Супером Белль, не может перезарядить оружие в течение 3 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

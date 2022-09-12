@@ -1,0 +1,139 @@
+dynamike
+=> nrel_main_idtf: [Динамайк](*<- lang_ru;;*);
+=> nrel_main_idtf: [dynamike](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Динамайк бросает пару динамитных шашек. Его Супер — начинённая динамитом бочка, которая разносит укрытия в щепки.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Динамайк бросает две шашки динамита за раз, которые взрываются после короткой задержки и наносят большой урон всем врагам, попавшим в радиус их взрыва. Две шашки располагаются на небольшом расстоянии друг от друга перпендикулярно направлению броска, однако во вражеского бойца может попасть только одна. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далекая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Динамайк бросает бочку с динамитом, которую он постоянно носит на спине. Бочка может быть брошена на большое расстояние, и когда она детонирует, наносит очень большой урон врагам в пределах своего большого радиуса взрыва. Любые бойцы, которые выживают после взрыва, отбрасываются назад относительно их прежнего местонахождения. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Динамайк: 
+<b><sc_element sys_idtf="fidget_spinner">Спиннер</b></sc_element>,
+<b><sc_element sys_idtf="satchel_charge">Тяжёлый ранец</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Динамайк: 
+<b><sc_element sys_idtf="dyna_jump">Динапрыжок</b></sc_element>,
+<b><sc_element sys_idtf="demolition">Демонтаж</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Динамайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Динамайк: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//dynamike.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+fidget_spinner
+=> nrel_main_idtf: [Спиннер](*<- lang_ru;;*);
+=> nrel_main_idtf: [fidget spinner](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Спиннер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Динамайк бешено вращается, ускоряясь и разбрасывая вокруг себя динамит. Каждая динамитная шашка наносит врагам 1200 ед. урона. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+satchel_charge
+=> nrel_main_idtf: [Тяжёлый ранец](*<- lang_ru;;*);
+=> nrel_main_idtf: [satchel charge](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тяжёлый ранец)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[После активации следующая основная атака оглушает врагов на 1,5 с. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+dyna_jump
+=> nrel_main_idtf: [Динапрыжок](*<- lang_ru;;*);
+=> nrel_main_idtf: [dyna jump](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Динапрыжок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основная атака и Супер Динамайка подбрасывают и откидывают его в воздух. Он также может перепрыгивать через стены.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+demolition
+=> nrel_main_idtf: [Демонтаж](*<- lang_ru;;*);
+=> nrel_main_idtf: [demolition](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Демонтаж)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Супер Майка наносит на 1000 очков урона больше.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

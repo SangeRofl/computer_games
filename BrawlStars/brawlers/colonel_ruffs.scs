@@ -1,0 +1,139 @@
+colonel_ruffs
+=> nrel_main_idtf: [Генерал Гавс](*<- lang_ru;;*);
+=> nrel_main_idtf: [colonel_ruffs](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Лучи из лазерного ружья Гавса отражаются от стен.Его Супер - авиапоставка,которая наносит урон противникам в зоне приземления и оставляет усилитель для команды.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Лучи из лазерного оружия Гавса отражаются от стен и могут достать находящихся в укрытии за стеной врагов Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далекая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Генерал Гавс вызывает авиапосылку, которая взрывается и наносит урон врагам поблизости (числовое значение урона равно урону от основной атаки), а из неё выпадает усилитель, который при подбирании улучшает характеристики союзного бравлера или самого Генерала Гавса; бравлер, подобравший усилитель, получает дополнительные 700 очков здоровья, а его урон увеличивается на 20%. При этом союзный бравлер или Генерал Гавс не могут подобрать второе усиление, если уже получили его.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Генерал Гавс: 
+<b><sc_element sys_idtf="take_cover">В укрытие</b></sc_element>,
+<b><sc_element sys_idtf="air_support">Поддержка с воздуха</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Генерал Гавс: 
+<b><sc_element sys_idtf="field_promotion">Продвижение по службе</b></sc_element>,
+<b><sc_element sys_idtf="air_superiority">Воздушное превосходство</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Генерал Гавс)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Генерал Гавс: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_support">поддержка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//colonel_ruffs.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+take_cover
+=> nrel_main_idtf: [В укрытие](*<- lang_ru;;*);
+=> nrel_main_idtf: [take cover](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (В укрытие)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гавс устраивает укрытие из 3 мешков с песком. Запас здоровья каждого мешка: 2000 очков. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+air_support
+=> nrel_main_idtf: [Поддержка с воздуха](*<- lang_ru;;*);
+=> nrel_main_idtf: [air support](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Поддержка с воздуха)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гавс проводит бомбардировку области вокруг ближайшего противника, нанося 700 ед. урона с каждым попаданием. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+air_superiority
+=> nrel_main_idtf: [Воздушное превосходство](*<- lang_ru;;*);
+=> nrel_main_idtf: [air superiority](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Воздушное превосходство)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[В авиапоставку теперь входит бомба, которая увеличивает урон при приземлении на 1000 единиц и может разрушить стены.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+field_promotion
+=> nrel_main_idtf: [Продвижение по службе](*<- lang_ru;;*);
+=> nrel_main_idtf: [field promotion](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Продвижение по службе)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Максимальное здоровье товарищей по команде в зоне досягаемости Гавса увеличивается на 30 единиц каждую секунду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

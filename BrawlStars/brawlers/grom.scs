@@ -1,0 +1,139 @@
+grom
+=> nrel_main_idtf: [Гром](*<- lang_ru;;*);
+=> nrel_main_idtf: [grom](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Стражник Гром всегда начеку. Атакует броском рации. Его Супер - огромная бомба, разрушающая стены и отбрасывающая врагов.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Гром атакует броском разрывной рации! Взрыв распространяется по крестообразной области и наносит урон всем врагам в зоне поражения. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далекая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Гром швыряет рацию, усиленную мощной гром-бомбой! Бомба наносит огромный урон и крушит стены, а её взрывная волна отбрасывает всех врагов. Почти тоже самое, что и основная атака, но больше, сильнее, отбрасывает врагов и рушит стены. При столкновении одного снаряда со стеной он ломается (перестаёт лететь).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Гром: 
+<b><sc_element sys_idtf="watchtower">Сторожевая башня</b></sc_element>,
+<b><sc_element sys_idtf="radio_check">Проверка радиосвязи</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Гром: 
+<b><sc_element sys_idtf="foot_patrol">Обход</b></sc_element>,
+<b><sc_element sys_idtf="x_factor">Икс-фактор</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Гром)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Гром: 
+Редкость - <b><sc_element sys_idtf="concept_epic">эпический</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//grom.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+watchtower
+=> nrel_main_idtf: [Сторожевая башня](*<- lang_ru;;*);
+=> nrel_main_idtf: [watchtower](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Сторожевая башня)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гром достаёт из гром-бомбы дозорную вышку, которая позволяет союзникам видеть происходящее в кустах на большой площади.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+radio_check
+=> nrel_main_idtf: [Проверка радиосвязи](*<- lang_ru;;*);
+=> nrel_main_idtf: [radio check](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Проверка радиосвязи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[При следующей атаке Гром швыряет разрывную рацию 3 р.подряд.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+x_factor
+=> nrel_main_idtf: [Икс-фактор](*<- lang_ru;;*);
+=> nrel_main_idtf: [x factor](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Икс-фактор)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Основная атака Грома наносит до 30% дополнительного урона на максимальном расстоянии.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+foot_patrol
+=> nrel_main_idtf: [Обход](*<- lang_ru;;*);
+=> nrel_main_idtf: [foot patrol](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Обход)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда Супер Грома полностью заряжен, он движется на 15% быстрее.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

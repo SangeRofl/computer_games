@@ -1,0 +1,139 @@
+bull
+=> nrel_main_idtf: [Булл](*<- lang_ru;;*);
+=> nrel_main_idtf: [bull](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Ружьё Булла наносит серьёзный урон на небольшой дистанции. Его Супер позволяет ему прорываться сквозь препятствия и отбрасывать врагов назад.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Двухстволка Булла наносит серьёзный урон, но обладает малой дальностью. Поэтому Булл предпочитает тесное общение. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Булл бежит на длинную дистанцию по прямой в любом направлении. Он уничтожает любые препятствия на своём пути, отбрасывая вражеских бойцов назад и нанося им небольшой урон. Тому, кто будет стоять на пути Булла, не поздоровится. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Булл: 
+<b><sc_element sys_idtf="t_bone_injector">Сочный стейк</b></sc_element>,
+<b><sc_element sys_idtf="stomper">Страх и топот</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Булл: 
+<b><sc_element sys_idtf="berserker">Берсерк</b></sc_element>,
+<b><sc_element sys_idtf="tough_guy">Крепкий парень</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Булл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Булл: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_tank">танк</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//bull.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+t_bone_injector
+=> nrel_main_idtf: [Сочный стейк](*<- lang_ru;;*);
+=> nrel_main_idtf: [t bone injector](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Сочный стейк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Булл мгновенно восстанавливает 1500 очков здоровья. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+stomper
+=> nrel_main_idtf: [Страх и топот](*<- lang_ru;;*);
+=> nrel_main_idtf: [stomper](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Страх и топот)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Булл прекращает действие своего Супера и на 1,5 с. замедляет всех врагов поблизости мощным ударом ноги о землю. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+berserker
+=> nrel_main_idtf: [Берсерк](*<- lang_ru;;*);
+=> nrel_main_idtf: [berserker](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Берсерк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда здоровье Булла становится меньше 60%, его скорость перезарядки увеличивается вдвое.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+tough_guy
+=> nrel_main_idtf: [Крепкий парень](*<- lang_ru;;*);
+=> nrel_main_idtf: [tough guy](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Крепкий парень)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда у Булла остаётся меньше 40% здоровья, у него появляется щит. Этот щит уменьшает весь получаемый им урон на 30%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

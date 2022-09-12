@@ -1,0 +1,140 @@
+colt
+
+=> nrel_main_idtf: [Кольт](*<- lang_ru;;*);
+=> nrel_main_idtf: [colt](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Выстрелы из револьверов Кольта невероятно точны. Его Супер крошит укрытия и преодолевает ещё большую дистанцию!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Кольт делает шесть выстрелов большой дальности из револьверов. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Пули из револьверов Кольта покрывают огромное расстояние и уничтожают укрытия.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Кольт: 
+<b><sc_element sys_idtf="recharge_device">Устройство для перезарядки</b></sc_element>,
+<b><sc_element sys_idtf="silver_bullet">Серебряная пуля</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Кольт: 
+<b><sc_element sys_idtf="fashion_boots">Модные сапоги</b></sc_element>,
+<b><sc_element sys_idtf="magnum">Магнум</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Кольт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Кольт: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">путь к награде</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//colt.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+recharge_device
+=> nrel_main_idtf: [Устройство для перезарядки](*<- lang_ru;;*);
+=> nrel_main_idtf: [recharge_device](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Устройство для перезарядки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кольт мгновенно перезаряжает револьверы 2 пулями. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+silver_bullet
+=> nrel_main_idtf: [Серебряная пуля](*<- lang_ru;;*);
+=> nrel_main_idtf: [silver_bullet](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Серебряная пуля)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая атака Кольта — мощный выстрел, который наносит столько же урона, сколько 2 обычные пули, и прошивает насквозь и врагов и препятствия. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+fashion_boots
+=> nrel_main_idtf: [Модные сапоги](*<- lang_ru;;*);
+=> nrel_main_idtf: [fashion_boots](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Модные сапоги)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кольт движется на 13% быстрее обычного.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+magnum
+=> nrel_main_idtf: [Магнум](*<- lang_ru;;*);
+=> nrel_main_idtf: [Magnum](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Магнум)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Дальность и скорость выстрелов Кольта увеличиваются на 11%] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

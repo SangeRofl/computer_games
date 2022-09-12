@@ -1,0 +1,145 @@
+section_subject_domain_of_game_Brawl_stars
+	=> nrel_main_idtf: [Раздел. Предметная область игры Бравл Старс] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of game Brawl Stars] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_game_Brawl_stars] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_brawler;
+		section_subject_domain_of_currency;
+		section_subject_domain_of_brawl_pass;
+		section_subject_domain_of_shop;
+		section_subject_domain_of_trophy_road;
+		section_subject_domain_of_game_events
+	};
+	-> rrel_key_sc_element:
+		concept_game_brawl_stars;
+		concept_brawler;
+		concept_currency;
+		concept_brawl_pass;
+		concept_shop;
+		concept_trophy_road;
+		concept_game_events;
+	-> rrel_maximum_studied_object_class: 
+			concept_game_brawl_stars;
+	-> rrel_not_maximum_studied_object_class:
+			concept_game_brawl_stars;
+			concept_currency;
+			concept_brawl_pass;
+			concept_shop;
+			concept_game_events;
+			concept_trophy_road;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_brawler
+	=> nrel_main_idtf: [Раздел. Предметная область бравлера] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of brawler] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_brawler] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_class;
+		nrel_attack;
+		nrel_rarity;
+			concept_brawler;
+			concept_main_characteristics;
+			concept_main_attack;
+			concept_super;
+			concept_hero_model;
+			concept_gadget;
+			concept_brawler_rarity;
+			concept_star_power;
+			concept_brawler_class;
+			concept_attack_range;
+			concept_reload_speed;
+	-> rrel_maximum_studied_object_class: 
+			concept_brawler;
+	-> rrel_explored_relation:
+			nrel_class;
+			nrel_attack;
+			nrel_rarity;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_currency
+	=> nrel_main_idtf: [Раздел. Предметная область валюты] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of currency] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_currency] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+			concept_gems;
+			concept_coins;
+			concept_star_points;
+			concept_gear_scrap;
+			concept_power_points;
+			concept_club_coins;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_brawl_pass
+	=> nrel_main_idtf: [Раздел. Предметная область бравл паса] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of brawl pass] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_game_brawl_pass] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_level_up;
+		nrel_reward;
+		nrel_season;
+			concept_brawl_pass_token;
+			concept_quest;
+	-> rrel_explored_relation:
+			nrel_level_up;
+			nrel_reward;
+			nrel_season;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_game_events
+	=> nrel_main_idtf: [Раздел. Предметная область игровых режимов] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of game events] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_game_events] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_temporary_event;
+		nrel_permanent_event;
+			concept_game_events;
+			concept_brawl_ball;
+			concept_gem_grab;
+			concept_showdown;
+			concept_heist;
+			concept_siege;
+			concept_knockout;
+			concept_hot_zone;
+			concept_bounty;
+	-> rrel_explored_relation:
+			nrel_temporary_event;
+			nrel_permanent_event;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_shop
+	=> nrel_main_idtf: [Раздел. Предметная область магазина] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of shop] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_shop] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_cost;
+			concept_skins;
+			concept_daily_deals;
+			concept_special_offer;
+			concept_star_shop;
+			concept_boxes;
+			concept_gem_packs;
+			concept_coin_packs;
+			concept_token_doubler;
+	-> rrel_explored_relation:
+			nrel_cost;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_trophy_road
+	=> nrel_main_idtf: [Раздел. Предметная область дороги славы] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of trophy road] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_trophy_road] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		nrel_level_up;
+		nrel_reward;
+			concept_boxes;
+			concept_brawler;
+			concept_coins;
+			concept_power_points;
+			concept_level;
+	-> rrel_explored_relation:
+			nrel_level_up;
+			nrel_reward;
+	<- non_atomic_section;;
+	
+	

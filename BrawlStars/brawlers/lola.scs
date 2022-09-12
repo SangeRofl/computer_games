@@ -1,0 +1,138 @@
+lola
+=> nrel_main_idtf: [Лола](*<- lang_ru;;*);
+=> nrel_main_idtf: [lola](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Лола)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[ЛЛола — гид на полставки, а также дива и ведущая актриса Броуливуда. Использует для атаки горжетку, а в роли Супера выступает её собственное эго.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Лола)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [На помощь Лоле приходит её эго, копирующее каждое её движение. Если эго находится слишком близко к Лоле, наносимый им урон уменьшается. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range"> очень большая дальность атаки</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Лола)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [На помощь Лоле приходит её эго, копирующее каждое её движение. Если эго находится слишком близко к Лоле, наносимый им урон уменьшается.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Джин: 
+<b><sc_element sys_idtf="freeze_frame">Стоп-кадр</b></sc_element>,
+<b><sc_element sys_idtf="doubler">Дублёрша</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Лола)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Лола: 
+<b><sc_element sys_idtf="improvisation">Импровизация</b></sc_element>,
+<b><sc_element sys_idtf="air_kiss">Воздушный поцелуй</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Лола)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Лола: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic"хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//lola.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+freeze_frame
+=> nrel_main_idtf: [Стоп-кадр](*<- lang_ru;;*);
+=> nrel_main_idtf: [freeze_frame](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Стоп-кадр)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Эго Лолы замирает, позируя для папарации, и получает 75-процентную защиту от урона на 4 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+doubler
+=> nrel_main_idtf: [Дублёрша](*<- lang_ru;;*);
+=> nrel_main_idtf: [doubler](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Дублёрша)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Лола и её эго меняются местами, восстанавливая при этом 350 очков здоровья.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+improvisation
+=> nrel_main_idtf: [Импровизация](*<- lang_ru;;*);
+=> nrel_main_idtf: [improvisation](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Импровизация)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Последний заряд Лолы наносит на 30% больше урона.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+air_kiss
+=> nrel_main_idtf: [Воздушный поцелуй](*<- lang_ru;;*);
+=> nrel_main_idtf: [air kiss](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Воздушный поцелуй)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Попадая в союзников, эго Лолы восстанавливает им 100 очков здоровья] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

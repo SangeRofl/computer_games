@@ -1,0 +1,161 @@
+concept_short_attack_range
+=> nrel_main_idtf: [short attack range] (* <- lang_en;; *);
+=> nrel_main_idtf: [короткая дальность атаки] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(короткая дальность атаки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность атаки бравлера находящаяся в пределах от 0 до 5.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры с короткой дальностью атаки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 7 бравлеров с короткой дальностью атаки в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="edgar">Эдгар</b></sc_element>,
+<b><sc_element sys_idtf="buzz">Базз</b></sc_element>,
+<b><sc_element sys_idtf="jacky">Джеки</b></sc_element>,
+<b><sc_element sys_idtf="bibi">Биби</b></sc_element>,
+<b><sc_element sys_idtf="mortis">Мортис</b></sc_element>,
+<b><sc_element sys_idtf="rosa">Роза</b></sc_element>,
+<b><sc_element sys_idtf="el_primo">Эль Примо</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_normal_attack_range
+=> nrel_main_idtf: [normal attack range] (* <- lang_en;; *);
+=> nrel_main_idtf: [нормальная дальность атаки] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(нормальная дальность атаки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность атаки бравлера находящаяся в пределах от 5 до 8.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры с нормальной дальностью атаки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 11 бравлеров с нормальной дальностью атаки в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="bull">Булл</b></sc_element>,
+<b><sc_element sys_idtf="frank">Фрэнк</b></sc_element>,
+<b><sc_element sys_idtf="nita">Нита</b></sc_element>,
+<b><sc_element sys_idtf="darryl">Дэррил</b></sc_element>,
+<b><sc_element sys_idtf="emz">Эмз</b></sc_element>,
+<b><sc_element sys_idtf="ash">Эш</b></sc_element>,
+<b><sc_element sys_idtf="sprout">Спраут</b></sc_element>,
+<b><sc_element sys_idtf="sandy">Сэнди</b></sc_element>,
+<b><sc_element sys_idtf="meg">Мэг</b></sc_element>,
+<b><sc_element sys_idtf="janet">Джанет</b></sc_element>,
+<b><sc_element sys_idtf="surge">Вольт</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_long_attack_range
+=> nrel_main_idtf: [long attack range] (* <- lang_en;; *);
+=> nrel_main_idtf: [большая дальность атаки] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(большая дальность атаки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность атаки бравлера находящаяся в пределах от 8 до 9.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры с большой дальностью атаки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 27 бравлеров с большой дальностью атаки в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="shelly">Шелли</b></sc_element>,
+<b><sc_element sys_idtf="poco">Поко</b></sc_element>,
+<b><sc_element sys_idtf="colt">Кольт</b></sc_element>,
+<b><sc_element sys_idtf="jessie">Джесси</b></sc_element>,
+<b><sc_element sys_idtf="crow">Ворон</b></sc_element>,
+<b><sc_element sys_idtf="mr_p">Мистер П</b></sc_element>,
+<b><sc_element sys_idtf="lola">Лола</b></sc_element>,
+<b><sc_element sys_idtf="penny">Пенни</b></sc_element>,
+<b><sc_element sys_idtf="brock">Брок</b></sc_element>,
+<b><sc_element sys_idtf="griff">Грифф</b></sc_element>,
+<b><sc_element sys_idtf="bo">Бо</b></sc_element>,
+<b><sc_element sys_idtf="carl">Карл</b></sc_element>,
+<b><sc_element sys_idtf="barley">Барли</b></sc_element>,
+<b><sc_element sys_idtf="nani">Нани</b></sc_element>,
+<b><sc_element sys_idtf="tick">Тик</b></sc_element>,
+<b><sc_element sys_idtf="gale">Гэйл</b></sc_element>,
+<b><sc_element sys_idtf="colette">Колетт</b></sc_element>,
+<b><sc_element sys_idtf="max">Макс</b></sc_element>,
+<b><sc_element sys_idtf="stu">Сту</b></sc_element>,
+<b><sc_element sys_idtf="colonel_ruffs">Генерал Гавс</b></sc_element>,
+<b><sc_element sys_idtf="grom">Гром</b></sc_element>,
+<b><sc_element sys_idtf="pam">Пэм</b></sc_element>,
+<b><sc_element sys_idtf="tara">Тара</b></sc_element>,
+<b><sc_element sys_idtf="squeak">Скуик</b></sc_element>,
+<b><sc_element sys_idtf="spike">Спайк</b></sc_element>,
+<b><sc_element sys_idtf="amber">Амбер</b></sc_element>,
+<b><sc_element sys_idtf="dynamike">Динамайк</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_very_long_attack_range
+=> nrel_main_idtf: [very long attack range] (* <- lang_en;; *);
+=> nrel_main_idtf: [очень большая дальность атаки] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(очень большая дальность атаки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность атаки бравлера находящаяся в пределах от 9 до 11.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры с очень большой дальностью атаки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 11 бравлеров с очень большой дальностью атаки в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="rico">Рико</b></sc_element>,
+<b><sc_element sys_idtf="lou">Лу</b></sc_element>,
+<b><sc_element sys_idtf="piper">Пайпер</b></sc_element>,
+<b><sc_element sys_idtf="byron">Байрон</b></sc_element>,
+<b><sc_element sys_idtf="8_bit">8-Бит</b></sc_element>,
+<b><sc_element sys_idtf="eve">Ева</b></sc_element>,
+<b><sc_element sys_idtf="bea">Беа</b></sc_element>,
+<b><sc_element sys_idtf="gene">Джин</b></sc_element>,
+<b><sc_element sys_idtf="leon">Леон</b></sc_element>,
+<b><sc_element sys_idtf="fang">Фэнг</b></sc_element>,
+<b><sc_element sys_idtf="belle">Белль</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;

@@ -1,0 +1,139 @@
+carl
+=> nrel_main_idtf: [Карл](*<- lang_ru;;*);
+=> nrel_main_idtf: [Carl](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Карл бросает кирку, словно бумеранг. Его Супер — бешеное вращение сбивающей всех вокруг вагонетки.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Карл бросает кирку, словно бумеранг. Как только Кирка прилетит обратно, он может метнуть её снова. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range">очень далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Карл крутится волчком в течение нескольких секунд, сшибая находящихся рядом врагов и нанося им урон.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Карл: 
+<b><sc_element sys_idtf="heat_ejector">клапан сброса</b></sc_element>,
+<b><sc_element sys_idtf="flying_hook">летающий крюк</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Карл: 
+<b><sc_element sys_idtf="protective_pirouette">защитный пируэт</b></sc_element>,
+<b><sc_element sys_idtf="power_throw">усиленный бросок</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Карл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Карл: 
+Редкость - <b><sc_element sys_idtf="cconcept_super_rare">сверх редкий</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//carl.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+super_totem
+=> nrel_main_idtf: [Клапан сброса](*<- lang_ru;;*);
+=> nrel_main_idtf: [Heat ejector](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Клапан сброса)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующий бросок кирки Карла оставляет за собой шлейф горячих камней! Прикоснувшихся к ним врагов охватывает огонь, постепенно нанося каждому 1200 ед. урона.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+trip_wire
+=> nrel_main_idtf: [Летающий крюк](*<- lang_ru;;*);
+=> nrel_main_idtf: [Flying hook](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Летающий крюк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Во время следующей атаки Карл переносится на место, до которого долетела кирка.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+circling_eagle
+=> nrel_main_idtf: [защитный пируэт](*<- lang_ru;;*);
+=> nrel_main_idtf: [protective pirouette](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (парящий орел)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Пока Супер Карла действует, весь наносимый ему урон уменьшается на 35%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+snare_a_bear
+=> nrel_main_idtf: [усиленный бросок](*<- lang_ru;;*);
+=> nrel_main_idtf: [power throw](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (медвежий капкан)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Карл бросает кирку на 12% сильнее обычного, так что она летит и возвращается быстрее.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

@@ -1,0 +1,139 @@
+sandy
+=> nrel_main_idtf: [Сэнди](*<- lang_ru;;*);
+=> nrel_main_idtf: [sandy](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Сэнди — это боец с хроническим недосыпом, способный управлять стихией земли: забрасывает врага колючим гравием и прячет товарищей за песчаной завесой.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Сэнди кидает во врагов колючий гравий, который наносит урон на конусовидной территории. Колючий гравий может наносить урон нескольким противникам. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Сэнди призывает песчаную бурю и прячет в ней товарищей по команде на 9 с. Но если Сэнди будет атаковать, то будет становиться видимым на миг. Также враги смогут его заметить, если подойдут слишком близко. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Сэнди: 
+<b><sc_element sys_idtf="sleep_stimulator">Снотворное</b></sc_element>,
+<b><sc_element sys_idtf="sweet_dreams">Спокойной ночи</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Сэнди: 
+<b><sc_element sys_idtf="rude_sands">Вредный песок</b></sc_element>,
+<b><sc_element sys_idtf="healing_winds">Целебный ветер</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Сэнди)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Сэнди: 
+Редкость - <b><sc_element sys_idtf="concept_legendary">легендарная</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_support">поддержка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//sandy.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+sleep_stimulator
+=> nrel_main_idtf: [Снотворное](*<- lang_ru;;*);
+=> nrel_main_idtf: [sleep stimulator](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Снотворное)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Сэнди засыпает на 2.0 с. и полностью восстанавливает здоровье.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+sweet_dreams
+=> nrel_main_idtf: [Спокойной ночи](*<- lang_ru;;*);
+=> nrel_main_idtf: [sweet dreams](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Спокойной ночи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая атака Сэнди погружает противников в сон на 1 с. Противники проснутся, если получат урон.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+rude_sands
+=> nrel_main_idtf: [Вредный песок](*<- lang_ru;;*);
+=> nrel_main_idtf: [rude sands](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Вредный песок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Песчаная буря также наносит врагам 100 очков урона в секунду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+healing_winds
+=> nrel_main_idtf: [Целебный ветер](*<- lang_ru;;*);
+=> nrel_main_idtf: [healing winds](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Целебный ветер)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Песчаная буря также восстанавливает товарищам 300 очков здоровья в секунду. ] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

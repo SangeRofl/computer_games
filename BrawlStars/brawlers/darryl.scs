@@ -1,0 +1,139 @@
+darryl
+=> nrel_main_idtf: [Дэррил](*<- lang_ru;;*);
+=> nrel_main_idtf: [darryl](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Атака из пары дробовиков Дэррила невероятно мощна. Его Супер — усиленная бочка, в которой он катится вперёд, отскакивая от стен по пути.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Дэррил дважды стреляет из обеих двустволок, нанося огромный урон на короткой дистанции. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Дэррил превращается в бочку, и он начинает очень быстро кататься по выбранной траектории. Отскок не увеличивает дальность Супера, как атака <b><sc_element sys_idtf="rico">Рико</b></sc_element>. Подходит для внезапного нападения или же побега. Также на время действия Супера у Дэррила появляется щит, поглощающий 50% наносимого ему урона. Кроме того, Супер Дэррила автоматически перезаряжается в течение 30 секунд!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Дэррил: 
+<b><sc_element sys_idtf="recoiling_rotator">Поворотное устройство</b></sc_element>,
+<b><sc_element sys_idtf="tar_barrel">Бочка со смолой</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Дэррил: 
+<b><sc_element sys_idtf="steel_hoops">Стальные обручи</b></sc_element>,
+<b><sc_element sys_idtf="rolling_reload">Перезарядка на ходу</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Дэррил)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Дэррил: 
+Редкость - <b><sc_element sys_idtf="concept_super_rare">очень редкая</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_hybrid">гибрид</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//darryl.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+recoiling_rotator
+=> nrel_main_idtf: [Поворотное устройство](*<- lang_ru;;*);
+=> nrel_main_idtf: [recoiling rotator](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Поворотное устройство)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Дэррил крутится вокруг своей оси, стреляя во всех направлениях. Каждый достигший цели выстрел наносит 400 ед. урона и заряжает его Супер на 25%! Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+tar_barrel
+=> nrel_main_idtf: [Бочка со смолой](*<- lang_ru;;*);
+=> nrel_main_idtf: [tar barrel](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Бочка со смолой)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Дэррил создаёт вокруг себя замедляющую область, которая держится 5 секунд. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+steel_hoops
+=> nrel_main_idtf: [Стальные обручи](*<- lang_ru;;*);
+=> nrel_main_idtf: [steel hoops](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Стальные обручи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[После использования Супера весь наносимый Дэррилу урон уменьшается на 25% на 2 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+rolling_reload
+=> nrel_main_idtf: [Перезарядка на ходу](*<- lang_ru;;*);
+=> nrel_main_idtf: [rolling reload](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Перезарядка на ходу)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[При использовании Супера скорость перезарядки Дэррила увеличивается вдвое на 5 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+
