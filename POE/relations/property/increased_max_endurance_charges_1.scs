@@ -1,0 +1,4 @@
+concept_increased_max_endurance_charges_1
+=> nrel_main_idtf: [+1 to maximum endurance charges] (* <- lang_en;; *);
+=> nrel_main_idtf: [+1 к максимуму зарядов выносливости] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

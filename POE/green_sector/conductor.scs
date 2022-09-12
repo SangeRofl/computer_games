@@ -1,0 +1,32 @@
+concept_conductor
+=> nrel_main_idtf: [Conductor] (* <- lang_en;; *);
+=> nrel_main_idtf: [Проводник] (* <- lang_ru;; *);
+
+->concept_shares_charges_with_nearby_party_members;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Проводник)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Проводник - это пассивное умение относящяяся к виду ключевых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Проводник)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/Conductor.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

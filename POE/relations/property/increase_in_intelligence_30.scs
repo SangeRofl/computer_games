@@ -1,0 +1,4 @@
+concept_increase_in_intelligence_30
+=> nrel_main_idtf: [+30 Intelligence] (* <- lang_en;; *);
+=> nrel_main_idtf: [+30 к интеллекту] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

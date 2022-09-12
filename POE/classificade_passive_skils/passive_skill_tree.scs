@@ -1,0 +1,60 @@
+concept_passive_skill_tree
+=> nrel_main_idtf: [Passive skill tree] (* <- lang_en;; *);
+=> nrel_main_idtf: [Древо пассивных умений] (* <- lang_ru;; *);
+
+<= nrel_subdividing: ...
+(*
+	->concept_red_sector_of_passive_skills;;
+	->concept_blue_sector_of_passive_skills;;
+	->concept_green_sector_of_passive_skills;;
+	=> nrel_main_idtf:[Разбиение по секторам] (* <- lang_ru;; *);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Древо пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Древо пассивных умений -  это гигантская паутина состоящая из 1325 умений.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Древо пассивных умений в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В Path of Exile  древо пассивных умений делится на 3 сектора по цвету.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Древо пассивных умений в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Когда герой получает уровень он получает одно очко пассивных умений и может вложить в один из секторов дерева.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Броня)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/passive_skill_tree.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

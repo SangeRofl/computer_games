@@ -1,0 +1,4 @@
+concept_increased_power_charge_duration_20
+=> nrel_main_idtf: [20% increased power charge duration] (* <- lang_en;; *);
+=> nrel_main_idtf: [20% увеличение длительности заряда энергии] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

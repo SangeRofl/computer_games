@@ -1,0 +1,4 @@
+concept_increased_blind_duration_40
+=> nrel_main_idtf: [40% increased blind duration] (* <- lang_en;; *);
+=> nrel_main_idtf: [40% увеличение длительности ослепления] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

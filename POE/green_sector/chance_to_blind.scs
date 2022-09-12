@@ -1,0 +1,32 @@
+concept_chance_to_blind
+=> nrel_main_idtf: [Chance to blind] (* <- lang_en;; *);
+=> nrel_main_idtf: [Шанс ослепить] (* <- lang_ru;; *);
+
+->concept_chance_to_blind_on_hit_with_attacks_10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Шанс ослепить)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Шанс ослепить - это пассивное умение относящяяся к виду малых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Шанс ослепить)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/chance_to_blind.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,32 @@
+concept_skill_duration
+=> nrel_main_idtf: [Skill duration] (* <- lang_en;; *);
+=> nrel_main_idtf: [Длительность умений] (* <- lang_ru;; *);
+
+->concept_increased_skill_duration_10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Длительность умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Длительность умений - это пассивное умение относящяяся к виду малых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Длительность умений)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/skill_duration.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

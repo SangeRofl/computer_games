@@ -1,0 +1,31 @@
+concept_physical_damage
+=> nrel_main_idtf: [Physical Damage] (* <- lang_en;; *);
+=> nrel_main_idtf: [Физический урон] (* <- lang_ru;; *);
+
+->concept_damage_increase_12;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Физический урон)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Физический урон - это пассивное умение относящяяся к виду малых пассивных умений и входящее в крассный сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Физический урон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/physical_damage.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

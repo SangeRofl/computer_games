@@ -1,0 +1,32 @@
+concept_liveliness
+=> nrel_main_idtf: [Liveliness] (* <- lang_en;; *);
+=> nrel_main_idtf: [Живость] (* <- lang_ru;; *);
+
+->concept_increase_in_agility_30;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Живость)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Живость - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Живость)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/liveliness.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

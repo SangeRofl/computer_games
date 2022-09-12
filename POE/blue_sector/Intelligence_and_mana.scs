@@ -1,0 +1,33 @@
+concept_intelligence_and_mana_regeneration
+=> nrel_main_idtf: [Intelligence and mana regeneration] (* <- lang_en;; *);
+=> nrel_main_idtf: [Интеллект и регенерация маны] (* <- lang_ru;; *);
+
+->concept_increased_mana_regeneration_20;
+->concept_increase_in_intelligence_5;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Интеллект и регенерация маны)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Интеллект и регенерация маны - это пассивное умение относящяяся к виду малых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Интеллект и регенерация маны)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/Intelligence_and_mana.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+

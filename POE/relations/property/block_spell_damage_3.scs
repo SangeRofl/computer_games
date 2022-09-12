@@ -1,0 +1,4 @@
+concept_block_spell_damage_3
+=> nrel_main_idtf: [+3% chance to block spell damage while wielding a staff or shield] (* <- lang_en;; *);
+=> nrel_main_idtf: [+3% шанс блокировать урон от чар с посохом или щитом в руках] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

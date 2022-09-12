@@ -1,0 +1,16 @@
+nrel_explore
+=> nrel_main_idtf: [explore*] (* <- lang_en;; *);
+=> nrel_main_idtf: [изучить*] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(изучить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это действие направленное на приобретение пассивного умения из одного из секторов дерева пассивных умений.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_norole_relation;;

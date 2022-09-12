@@ -1,0 +1,4 @@
+concept_increased_maximum_health_10
+=> nrel_main_idtf: [10% increased maximum life] (* <- lang_en;; *);
+=> nrel_main_idtf: [10% увеличение максимума здоровья] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

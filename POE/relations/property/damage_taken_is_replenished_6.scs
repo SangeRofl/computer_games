@@ -1,0 +1,4 @@
+concept_damage_taken_is_replenished_6
+=> nrel_main_idtf: [6% of Damage taken is healed as Life] (* <- lang_en;; *);
+=> nrel_main_idtf: [6% полученного урона восполняется в виде здоровья] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

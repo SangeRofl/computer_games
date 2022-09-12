@@ -1,0 +1,33 @@
+concept_bloodless
+=> nrel_main_idtf: [Bloodless] (* <- lang_en;; *);
+=> nrel_main_idtf: [Бескровный] (* <- lang_ru;; *);
+
+->concept_dont_steal_health;
+->concept_increased_maximum_health_10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бескровный)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бескровный - это пассивное умение относящяяся к виду значемых пассивных умений и входящее в красный сектор и усиливающее здоповье персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Бескровный)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/Bloodless.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

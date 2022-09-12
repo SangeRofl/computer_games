@@ -1,0 +1,31 @@
+concept_critical_hits_against_blinded_enemies
+=> nrel_main_idtf: [Critical hits against blinded enemies] (* <- lang_en;; *);
+=> nrel_main_idtf: [Критические удары по ослеплённым врагам] (* <- lang_ru;; *);
+
+->concept_critical_strike_against_blinded_enemies_25;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Критические удары по ослеплённым врагам)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Критические удары по ослеплённым врагам - это пассивное умение относящяяся к виду малых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Критические удары по ослеплённым врагам)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/critical_hits.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

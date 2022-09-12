@@ -1,0 +1,41 @@
+concept_unholy_guardian
+=> nrel_main_idtf: [Unholy guardian] (* <- lang_en;; *);
+=> nrel_main_idtf: [Нечестивый страж] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Нечестивый страж)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Нечестивый страж - это пассивное умение относящяяся к виду ключевых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Бонус от пассивного умения Нечестивый страж)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Перезарядка энергетического щита не прерывается получением урона, если началась недавно.На 40% меньше скорости перезарядки энергетического щита.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Нечестивый страж)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/unholy_guardian.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

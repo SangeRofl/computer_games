@@ -1,0 +1,4 @@
+concept_health_increase_per_hit_5
+=> nrel_main_idtf: [+5 health per enemy hit with attacks] (* <- lang_en;; *);
+=> nrel_main_idtf: [+5 здоровья за каждый удар атаками по врагу] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

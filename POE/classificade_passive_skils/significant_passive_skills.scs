@@ -1,0 +1,39 @@
+concept_significant_passive_skills
+=> nrel_main_idtf: [Significant passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Значимые пассивные умения] (* <- lang_ru;; *);
+
+->concept_ballistics;
+->concept_will_of_blades;
+->concept_endurance;
+->concept_alchemy;
+->concept_annihilation;
+->concept_bitter_experience;
+->concept_bloodless;
+->concept_bull;
+->concept_liveliness;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Значимые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Значимые пассивные умения -  это уменя которые состовляют основу всех пассивных умений игрока.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Значимые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Значимые пассивные умения дают существенное преимущество персонажу.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+
+<- sc_node_not_relation;;

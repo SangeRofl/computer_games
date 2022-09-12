@@ -1,0 +1,19 @@
+section_subject_domain_of_passive_skills
+
+=> nrel_main_idtf: 
+	[Раздел. Предметная область пассивных умений](* <- lang_ru;; *);
+	[Section. Subject domain of passive skills](* <- lang_en;; *);
+
+
+<- non_atomic_section;
+<- ui_start_sc_element;;
+
+	
+section_subject_domain_of_passive_skills = [*^"file://subject_domain_of_passive_skills.scsi"*];;
+
+
+section_subject_domain_of_passive_skills
+-> rrel_key_sc_element: concept_small_passive_skills;
+-> rrel_key_sc_element: subject_domain_of_passive_skills;
+-> rrel_key_sc_element: concept_significant_passive_skills;
+-> rrel_key_sc_element: concept_crucial_passive_skills;;

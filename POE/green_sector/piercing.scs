@@ -1,0 +1,32 @@
+concept_piercing
+=> nrel_main_idtf: [Piercing] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пронзание] (* <- lang_ru;; *);
+
+->concept_target_piercing;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Пронзание)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пронзание - это пассивное умение относящяяся к виду малых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Пронзание)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/piercing.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

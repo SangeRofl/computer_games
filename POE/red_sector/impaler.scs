@@ -1,0 +1,41 @@
+concept_impaler
+=> nrel_main_idtf: [Impaler] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пронзатель] (* <- lang_ru;; *);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Пронзатель)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пронзатель - это пассивное умение относящяяся к виду ключевых пассивных умений и входящее в красный сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Бонус от пассивного умения Пронзатель)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Когда ваши удары накладывают Прокол на врагов, другие враги возле них также получают Прокол.Накладывает 4 дополнительных Прокола на врагов, которых вы прокалываете.Уже проколотые вами враги не могут получить Прокол в течение 4 секунд и Зов стали не может удалить с них Проколы.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Пронзатель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/impaler.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

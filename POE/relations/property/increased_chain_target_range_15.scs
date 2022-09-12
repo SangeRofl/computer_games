@@ -1,0 +1,4 @@
+concept_increased_chain_target_range_15
+=> nrel_main_idtf: [15% increased chain target range.] (* <- lang_en;; *);
+=> nrel_main_idtf: [15% увеличение дальности поражения целей по цепи.] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

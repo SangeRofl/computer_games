@@ -1,0 +1,32 @@
+concept_armor
+=> nrel_main_idtf: [Armor] (* <- lang_en;; *);
+=> nrel_main_idtf: [Броня] (* <- lang_ru;; *);
+
+->concept_increased_armor_8;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Броня)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Броня - это пассивное умение относящяяся к виду малых пассивных умений и входящее в крассный сектор которое увеличивает броню персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Броня)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/bronia.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

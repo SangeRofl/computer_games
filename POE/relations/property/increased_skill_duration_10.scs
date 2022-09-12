@@ -1,0 +1,4 @@
+concept_increased_skill_duration_10
+=> nrel_main_idtf: [10% increased skill effect duration] (* <- lang_en;; *);
+=> nrel_main_idtf: [10% увеличение длительности эффекта умения] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

@@ -1,0 +1,32 @@
+concept_bitter_experience
+=> nrel_main_idtf: [Bitter experience] (* <- lang_en;; *);
+=> nrel_main_idtf: [Горький опыт] (* <- lang_ru;; *);
+
+->concept_increase_in_intelligence_30;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Горький опыт)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Горький опыт - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Горький опыт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/bitter_experience.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

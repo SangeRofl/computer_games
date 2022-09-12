@@ -1,0 +1,4 @@
+concept_increase_in_strength_30
+=> nrel_main_idtf: [+30 strength] (* <- lang_en;; *);
+=> nrel_main_idtf: [+30 к силе] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

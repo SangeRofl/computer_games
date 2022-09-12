@@ -1,0 +1,4 @@
+concept_increased_critical_strike_chance_40
+=> nrel_main_idtf: [40% increased critical strike chance.] (* <- lang_en;; *);
+=> nrel_main_idtf: [40% повышение шанса критического удара.] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

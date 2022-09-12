@@ -1,0 +1,41 @@
+concept_passive_skill
+=> nrel_main_idtf: [Passive skill] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пассивное умение] (* <- lang_ru;; *);
+
+
+<= nrel_subdividing: ...
+(*
+	->concept_small_passive_skills;;
+	->concept_significant_passive_skills;;
+	->concept_crucial_passive_skills;;
+	=> nrel_main_idtf:[Разбиение по значимости] (* <- lang_ru;; *);;
+*);
+
+->concept_passive_skill_tree;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Пассивное умение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пассивное умение -  это умение дающее пассивный положительный эффект или бонусы к атрибутам, усиливающим вашего персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Пассивные умения в Path of Exile)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В Path of Exile пассивные уменя можно поделить на малые, средние и ключевые.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+
+<- sc_node_not_relation;;

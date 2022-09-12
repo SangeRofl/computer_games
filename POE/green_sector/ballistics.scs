@@ -1,0 +1,34 @@
+concept_ballistics
+=> nrel_main_idtf: [Ballistics] (* <- lang_en;; *);
+=> nrel_main_idtf: [Баллистика] (* <- lang_ru;; *);
+
+->concept_increased_projectile_damage_20;
+->concept_increase_in_agility_20;
+->concept_increased_projectile_speed_20;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Баллистика)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Баллистика - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Баллистика)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/ballistics.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

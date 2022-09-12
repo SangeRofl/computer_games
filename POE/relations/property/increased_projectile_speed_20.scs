@@ -1,0 +1,4 @@
+concept_increased_projectile_speed_20
+=> nrel_main_idtf: [20% increased projectile speed] (* <- lang_en;; *);
+=> nrel_main_idtf: [20% повышение скорости снарядов] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

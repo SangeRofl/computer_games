@@ -1,0 +1,51 @@
+concept_red_sector_of_passive_skills
+=> nrel_main_idtf: [Red sector of passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Красный сектор пассивных умений] (* <- lang_ru;; *);
+
+
+->concept_block;
+->concept_armor;
+->concept_health_and_stroke;
+->concept_health_replenishment;
+->concept_bloodless;
+->concept_bull;
+->concept_impaler;
+->concept_physical_damage;
+->concept_endurance;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Красный сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Красный сектор древа пассивных умений -  это сектор который называют сектором ближнего боя.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Красный сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пассивные умения красного сектора увеличивают силу, броню, физический урон и все остальные характеристики ближнего боя.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Красный сектор пассивных умений)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/red_sector_of_passive_skills.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

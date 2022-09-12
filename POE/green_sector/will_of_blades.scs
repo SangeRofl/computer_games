@@ -1,0 +1,42 @@
+concept_will_of_blades
+=> nrel_main_idtf: [Will of blades] (* <- lang_en;; *);
+=> nrel_main_idtf: [Воля клинков] (* <- lang_ru;; *);
+
+->concept_increased_physical_damage_20;
+->concept_increased_critical_strike_chance_40;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Воля клинков)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Воля клинков - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Бонус от пассивного умения Воля клинков)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [20% увеличение физического урона.40% повышение шанса критического удара.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Воля клинков)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/will_of_blades.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,4 @@
+concept_target_piercing
+=> nrel_main_idtf: [projectiles pierce an additional target.] (* <- lang_en;; *);
+=> nrel_main_idtf: [Снаряды пронзают дополнительную цель.] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

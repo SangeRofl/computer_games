@@ -1,0 +1,4 @@
+concept_increased_critical_strike_50
+=> nrel_main_idtf: [50% increased critical strike chance for spells] (* <- lang_en;; *);
+=> nrel_main_idtf: [50% повышение шанса критического удара для чар] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

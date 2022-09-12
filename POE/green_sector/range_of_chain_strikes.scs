@@ -1,0 +1,32 @@
+concept_range_of_chain_strikes
+=> nrel_main_idtf: [Range of chain strikes] (* <- lang_en;; *);
+=> nrel_main_idtf: [Дальность ударов по цепи] (* <- lang_ru;; *);
+
+->concept_increased_chain_target_range_15;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Дальность ударов по цепи)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Дальность ударов по цепи - это пассивное умение относящяяся к виду малых пассивных умений и входящее в зеленый сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Дальность ударов по цепи)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/range_of_chain_strikes.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

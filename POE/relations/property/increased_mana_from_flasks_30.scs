@@ -1,0 +1,4 @@
+concept_increased_mana_from_flasks_30
+=> nrel_main_idtf: [30% increased mana recovery from flasks] (* <- lang_en;; *);
+=> nrel_main_idtf: [30% увеличение восстановления маны от флаконов] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

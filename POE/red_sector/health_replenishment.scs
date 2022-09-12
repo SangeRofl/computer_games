@@ -1,0 +1,31 @@
+concept_health_replenishment
+=> nrel_main_idtf: [health replenishment] (* <- lang_en;; *);
+=> nrel_main_idtf: [Восполнение здоровья] (* <- lang_ru;; *);
+
+->concept_damage_taken_is_replenished_6;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Восполнение здоровья)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Восполнение здоровья - это пассивное умение относящяяся к виду малых пассивных умений и входящее в крассный сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Восполнение здоровья)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/health.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

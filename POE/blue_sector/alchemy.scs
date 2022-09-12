@@ -1,0 +1,34 @@
+concept_alchemy
+=> nrel_main_idtf: [Alchemy] (* <- lang_en;; *);
+=> nrel_main_idtf: [Алхимия] (* <- lang_ru;; *);
+
+->concept_increased_maximum_mana_15;
+->concept_increased_mana_from_flasks_30;
+->concept_mana_flasks_gain_charge_1;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Алхимия)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Алхимия - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Алхимия)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/alchemy.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

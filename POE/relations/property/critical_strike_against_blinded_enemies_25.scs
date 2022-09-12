@@ -1,0 +1,4 @@
+concept_critical_strike_against_blinded_enemies_25
+=> nrel_main_idtf: [25% increased critical strike chance against blinded enemies] (* <- lang_en;; *);
+=> nrel_main_idtf: [25% повышение шанса критического удара по ослепленным врагам] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

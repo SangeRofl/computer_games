@@ -1,0 +1,49 @@
+concept_green_sector_of_passive_skills
+=> nrel_main_idtf: [Green sector of passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Зеленый сектор пассивных умений] (* <- lang_ru;; *);
+
+->concept_range_of_chain_strikes;
+->concept_blind_duration;
+->concept_critical_hits_against_blinded_enemies;
+->concept_piercing;
+->concept_ballistics;
+->concept_will_of_blades;
+->concept_conductor;
+->concept_chance_to_blind;
+->concept_liveliness;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Зеленый сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Зеленый сектор древа пассивных умений -  это сектор который называют сектором дальнего боя.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Зеленый сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пассивные умения этого сектора увеличивают урон снарядов, уклонение и все остальные характеристики дальнего боя.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Зеленый сектор пассивных умений)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/green_passive_skills/green_sector_of_passive_skills.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

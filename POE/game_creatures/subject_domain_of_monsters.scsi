@@ -472,6 +472,7 @@ concept_ape
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_2;
 <-resists_fire (*
     <-sc_node_not_relation;;
     =>nrel_main_idtf:[устойчив к огню] (* <- lang_ru;; *);;
@@ -1062,6 +1063,7 @@ concept_bandit
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_2;
 <-resists_chaos(*=>nrel_main_idtf:[сопротивление хаосу](*<-lang_ru;;*);;*);
 <=nrel_subdividing: ...
 (*
@@ -1148,120 +1150,144 @@ concept_bandit
 ->concept_shadow_stalker
 (*
     =>nrel_main_idtf:[темный охотник] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_alira_blood_hand
 (*
     =>nrel_main_idtf:[кровавая длань Антиопы] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_alira_blood_guard
 (*
     =>nrel_main_idtf:[кровавый привратник Антиопы] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_alira_martyr
 (*
     =>nrel_main_idtf:[мученик Антиопы] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_oak_devoted
 (*
     =>nrel_main_idtf:[приверженец Дуба] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_oak_fist
 (*
     =>nrel_main_idtf:[кулак Дуба] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_kraityn_scout
 (*
     =>nrel_main_idtf:[разведчик Крайтина] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_kraityn_sniper
 (*
     =>nrel_main_idtf:[лучник Крайлиста] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_kraityn_high_guard
 (*
     =>nrel_main_idtf:[cтарший охраны Крайлиста] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_rare_monster;;
 *);;
 ->concept_callow_sniper
 (*
     =>nrel_main_idtf:[болотный охотник] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_shadow_archer
 (*
     =>nrel_main_idtf:[теневый лучник] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_alira_deadeye
 (*
     =>nrel_main_idtf:[снайпер Антиопы] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_alira_souleye
 (*
     =>nrel_main_idtf:[охотник за душами Антиопы] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_oak_guardian
 (*
     =>nrel_main_idtf:[караульный Дуба] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_hired_ruffian
 (*
     =>nrel_main_idtf:[наемник(лучник)] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_calaf_headstaver
 (*
     =>nrel_main_idtf:[Калаф, Дробитель черепов] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_kall_foxfly	
 (*
     =>nrel_main_idtf:[Кэл Лисий шаг] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_kraityn
 (*
     =>nrel_main_idtf:[Крайлист] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_alira
 (*
     =>nrel_main_idtf:[Антиопа] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_oak
 (*
     =>nrel_main_idtf:[Дуб] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_witch_of_the_cauldron
 (*
     =>nrel_main_idtf:[хозяйка котла] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_oak_the_mighty	
 (*
     =>nrel_main_idtf:[Могучий Дуб] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_master_of_the_blade
 (*
     =>nrel_main_idtf:[Мастер клинка] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_massier
 (*
     =>nrel_main_idtf:[Воротигора] (*<- lang_ru;;*);;
+    <=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -1287,6 +1313,7 @@ concept_beast
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_2;
 <-increased_damage(*=>nrel_main_idtf:[урон увеличен](*<-lang_ru;;*);;*);
 <-increased_hp(*=>nrel_main_idtf:[здоровье увеличено](*<-lang_ru;;*);;*);
 <=nrel_subdividing: ...
@@ -1358,18 +1385,21 @@ concept_beast
 ->concept_the_great_white_beast
 (*
 =>nrel_main_idtf:[великий белый зверь](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 
 ->concept_tyrannursus_maximus
 (*
 =>nrel_main_idtf:[Тиранурсус Максимус](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 
 ->concept_beast_of_the_pits
 (*
 =>nrel_main_idtf:[зверь ям](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -1395,6 +1425,9 @@ concept_birdman
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_1;
+		act_2;
+		act_3;
 <-resists_cold(*=>nrel_main_idtf:[сопротивление холоду](*<-lang_ru;;*);;*);
 <-consume_corpses(*=>nrel_main_idtf:[пожирание трупов](*<-lang_ru;;*);;*);
 <-vomit_corpses(*=>nrel_main_idtf:[плевок трупом](*<-lang_ru;;*);;*);
@@ -1421,12 +1454,14 @@ concept_birdman
 ->concept_inti_of_the_blood_moon
 (*
 =>nrel_main_idtf:[Инти Кроваволунный](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 
 ->concept_tyranny_archon
 (*
 =>nrel_main_idtf:[тиранический архонт](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -1455,6 +1490,7 @@ concept_blackguard
             *);;
     *);
 <-resists_chaos;
+=> nrel_locate: act_3;
 <=nrel_subdividing: ...
 (*
 ->concept_elite_guard
@@ -1520,76 +1556,91 @@ concept_blackguard
 ->concept_captain_arteri
 (*
 =>nrel_main_idtf:[капитан Артемий](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_guard_captain
 (*
 =>nrel_main_idtf:[капитан Стражи](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_captain_aurelianus
 (*
 =>nrel_main_idtf:[капитан Аврелий](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_imperator_stantinus_bitterblade
 (*
 =>nrel_main_idtf:[Император Стантинус Клинок горечи](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_draconarius_wilhelm_flamebrand
 (*
 =>nrel_main_idtf:[Дракон Вильхельм Клейменный пламенем](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_compulsor_octavia_sparkfist
 (*
 =>nrel_main_idtf:[принудитель Октавия Сверкающий кулак](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_blackguard_avenger	
 (*
 =>nrel_main_idtf:[мститель чёрной стражи](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_blackguard_tempest	
 (*
 =>nrel_main_idtf:[буря чёрной стражи](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_oriath_s_vigil
 (*
 =>nrel_main_idtf:[бдение Ориата](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_oriathvs_vengeance	
 (*
 =>nrel_main_idtf:[отмщение Ориата](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_oriath_s_virtue
 (*
 =>nrel_main_idtf:[добродетель Ориата](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_corrector_draconides
 (*
 =>nrel_main_idtf:[корректор Драконид](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_evocata_apocalyptica
 (*
 =>nrel_main_idtf:[эвоката Апокалиптика](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_blackguard_of_hatred
 (*
 =>nrel_main_idtf:[черный стражник ненависти](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_blackguard_of_wrath	
 (*
 =>nrel_main_idtf:[черный стражник гнева](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 *);;
@@ -1620,6 +1671,7 @@ concept_cannibal
     *);
 <-resists_chaos_50(*=>nrel_main_idtf:[сопротивление хаосу 50%](*<-lang_ru;;*);;*);
 <-throw_rocks(*=>nrel_main_idtf:[бросают камни](*<-lang_ru;;*);;*);
+=> nrel_locate: act_1;
 <=nrel_subdividing: ...
 (*
 
@@ -1696,6 +1748,9 @@ concept_carrion
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_1;
+		act_2;
+		act_3;
 <=nrel_subdividing: ...
 (*
 
@@ -1760,6 +1815,7 @@ concept_chimeral
             *);;
     *);
 <-resists_cold;
+=> nrel_locate: act_3;
 <=nrel_subdividing: ...
 (*
     ->concept_plumed_chimeral	
@@ -1821,97 +1877,116 @@ concept_construct
                     (* <- lang_ru;; *);;
             *);;
     *);
+=> nrel_locate: act_2;
 <=nrel_subdividing: ...
 (*
 ->concept_colossal_vaal_fallen
 (*
 =>nrel_main_idtf:[огромный павший ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_vaal_arsonist
 (*
 =>nrel_main_idtf:[поджигатель ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_vaal_bone_warden
 (*
 =>nrel_main_idtf:[костяной надзиратель ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_vaal_fallen
 (*
 =>nrel_main_idtf:[павший ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_vaal_frost_guardian
 (*
 =>nrel_main_idtf:[морозный хранитель ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_vaal_frostguard	
 (*
 =>nrel_main_idtf:[морозный страж ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_alpha_paradisae
 (*
 =>nrel_main_idtf:[убийца ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_vaal_slayer
 (*
 =>nrel_main_idtf:[громовой страж ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_vaal_thunderguard
 (*
 =>nrel_main_idtf:[райский вожак](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_ancient_construct
 (*
 =>nrel_main_idtf:[древний механизм](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_ancient_construct_2
 (*
 =>nrel_main_idtf:[древний механизм](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_cairn_annihilator
 (*
 =>nrel_main_idtf:[истребитель расхитителей](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_shadow_minion
 (*
 =>nrel_main_idtf:[темный слуга](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_vaal_construct
 (*
 =>nrel_main_idtf:[механизм ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_shrapnelbearer
 (*
 =>nrel_main_idtf:[разбиватель](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_haviri_vaal_metalsmith
 (*
 =>nrel_main_idtf:[хавири, Кузнец руд ваал](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_atziri_s_chosen
 (*
 =>nrel_main_idtf:[избранник Азири](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_judgement_apparatus
 
 (*
 =>nrel_main_idtf:[исполняющий суд](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -1939,6 +2014,8 @@ concept_devourer
             *);;
     *);
 <-resists_cold;
+=> nrel_locate: act_2;
+		act_3;
 <-burrow(*=> nrel_main_idtf:[прячется в земле](*<- lang_ru;;*);;*);
 <-shoots_fire_projectiles(*=> nrel_main_idtf:[стреляет огненными снарядами](*<- lang_ru;;*);;*);
  => nrel_locate:
@@ -1951,16 +2028,19 @@ concept_devourer
 ->concept_the_conqueror_wurm
 (*
 =>nrel_main_idtf:[Змей Завоеватель](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_kamaq_soilmake
 (*
 =>nrel_main_idtf:[Кэмак, Маратель](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 
 ->concept_tunneltrap
 (*
 =>nrel_main_idtf:[туннельная ловушка](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -2012,26 +2092,31 @@ concept_experimenter
             *);;
     *);
     <-resists_chaos;
+=> nrel_locate: act_3;
 <=nrel_subdividing: ...
 (*
 ->concept_reanimator
 (*
 =>nrel_main_idtf:[Реаниматор](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_normal_monster;;
 *);;
 
 ->concept_mortality_experimenter
 (*
 =>nrel_main_idtf:[Опытник смерти](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_magic_monster;;
 *);;
 
 ->concept_flesh_sculptor
 (*
 =>nrel_main_idtf:[cкульптор плоти](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_rare_monster;;
 *);;
 
 ->concept_fleshrend_grand_inquisitor
 (*
 =>nrel_main_idtf:[Шкуродер, Великий Инквизитор](*<-lang_ru;;*);;
+<=nrel_inclusion: concept_unique_monster;;
 *);;
 *);;
 
@@ -2057,7 +2142,9 @@ concept_goatman
                     "file://content_html/definitions/goatman_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;
+<-resists_fire_50(*=>nrel_main_idtf:[сопротивление огню 50%](*<-lang_ru;;*);;*);;
 
 
 
@@ -2082,7 +2169,11 @@ concept_ghost
                     "file://content_html/definitions/ghost_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+<-resists_chaos_50(*=>nrel_main_idtf:[сопротивление огню 50%](*<-lang_ru;;*);;*);
+=> nrel_locate: act_1;
+=>nrel_deal:concept_lightning_damage(*=>nrel_main_idtf:[урон от молнии](*<-lang_ru;;*);;*);
+=>nrel_have:concept_energy_shield(*=>nrel_main_idtf:[энергетический щит](*<-lang_ru;;*);;*);;
 
 
 
@@ -2107,7 +2198,9 @@ concept_hellion
                     "file://content_html/definitions/hellion_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;
+<-resists_lightning(*=>nrel_main_idtf:[сопротивление молнии](*<-lang_ru;;*);;*);;
 
 
 
@@ -2132,7 +2225,9 @@ concept_maw
                     "file://content_html/definitions/maw_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;;
+
 
 
 
@@ -2157,7 +2252,8 @@ concept_miscreation
                     "file://content_html/definitions/miscreation_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
 
@@ -2182,7 +2278,8 @@ concept_necromancer
                     "file://content_html/definitions/necromancer_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_2;;
 
 
 
@@ -2207,7 +2304,8 @@ concept_plummeting_ursa
                     "file://content_html/definitions/plummeting_ursa_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_2;;
 
 
     
@@ -2232,7 +2330,8 @@ concept_rhoa
                     "file://content_html/definitions/rhoa_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;;
 
 
 
@@ -2257,7 +2356,8 @@ concept_ribbon
                     "file://content_html/definitions/ribbon_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
     
@@ -2282,7 +2382,8 @@ concept_rock
                     "file://content_html/definitions/rock_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_2;;
 
 
 
@@ -2307,7 +2408,8 @@ concept_shield_crab
                     "file://content_html/definitions/shield_crab_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;;
 
 
 
@@ -2332,7 +2434,8 @@ concept_siren_s_daughter
                     "file://content_html/definitions/siren_s_daughter_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;;
 
 
 
@@ -2357,7 +2460,10 @@ concept_skeleton
                     "file://content_html/definitions/skeleton_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;
+		act_2;
+		act_3;;
 
 
 
@@ -2382,8 +2488,9 @@ concept_snake
                     "file://content_html/definitions/snake_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
-
+    *);
+=> nrel_locate: act_1;
+		act_2;;
 
 
 concept_spider
@@ -2407,7 +2514,10 @@ concept_spider
                     "file://content_html/definitions/spider_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;
+		act_2;
+		act_3;;
 
 
 
@@ -2432,7 +2542,8 @@ concept_spiker
                     "file://content_html/definitions/spiker_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
 
@@ -2457,7 +2568,8 @@ concept_spitter
                     "file://content_html/definitions/spitter_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;;
 
 
 concept_statue
@@ -2481,7 +2593,8 @@ concept_statue
                     "file://content_html/definitions/statue_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
 
@@ -2506,7 +2619,9 @@ concept_totem
                     "file://content_html/definitions/totem_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_2;
+		act_3;;
 
 
 
@@ -2531,7 +2646,8 @@ concept_undying
                     "file://content_html/definitions/undying_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
 
@@ -2556,7 +2672,8 @@ concept_voidbearer
                     "file://content_html/definitions/voidbearer_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_3;;
 
 
 
@@ -2581,7 +2698,9 @@ concept_watcher
                     "file://content_html/definitions/watcher_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
+    *);
+=> nrel_locate: act_1;
+		act_3;;
 
 
 
@@ -2606,8 +2725,9 @@ concept_zombie
                     "file://content_html/definitions/zombie_ru.html"
                     (* <- lang_ru;; *);;
             *);;
-    *);;
-
+    *);
+=> nrel_locate: act_1;
+		act_2;;
 
 
 relation => nrel_inclusion: oriented_relation;;
@@ -2659,3 +2779,14 @@ arity -> arity_2;;
 arity_2 => nrel_measurement:2;;
 arity_2 -> nrel_use;;
 number->2;;
+
+act_1	
+=>nrel_main_idtf:[Акт 1](*<-lang_ru;;*);;
+
+act_2	
+=>nrel_main_idtf:[Акт 2](*<-lang_ru;;*);;
+
+act_3	
+=>nrel_main_idtf:[Акт 3](*<-lang_ru;;*);;
+
+

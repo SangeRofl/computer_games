@@ -1,0 +1,4 @@
+concept_increased_armor_8
+=> nrel_main_idtf: [8% increased armor] (* <- lang_en;; *);
+=> nrel_main_idtf: [8% повышение брони] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

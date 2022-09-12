@@ -1,0 +1,4 @@
+concept_increase_in_agility_20
+=> nrel_main_idtf: [+20 Agility] (* <- lang_en;; *);
+=> nrel_main_idtf: [+20 к ловкости] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

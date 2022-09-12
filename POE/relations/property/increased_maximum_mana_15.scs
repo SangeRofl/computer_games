@@ -1,0 +1,4 @@
+concept_increased_maximum_mana_15
+=> nrel_main_idtf: [15% increased maximum mana] (* <- lang_en;; *);
+=> nrel_main_idtf: [15% увеличение максимума маны] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

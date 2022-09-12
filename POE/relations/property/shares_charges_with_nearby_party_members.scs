@@ -1,0 +1,4 @@
+concept_shares_charges_with_nearby_party_members
+=> nrel_main_idtf: [shares power, endurance, and frenzy charges with nearby party members] (* <- lang_en;; *);
+=> nrel_main_idtf: [Делится зарядами энергии, выносливости и ярости с ближайшими членами группы] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

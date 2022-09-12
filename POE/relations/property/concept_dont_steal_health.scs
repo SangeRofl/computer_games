@@ -1,0 +1,4 @@
+concept_dont_steal_health
+=> nrel_main_idtf: [enemies cannot leech health from you] (* <- lang_en;; *);
+=> nrel_main_idtf: [враги не могут похищать у вас здоровье] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

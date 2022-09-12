@@ -1,0 +1,11 @@
+subject_domain_of_passive_skills
+
+=> nrel_main_idtf: 
+	[Предметная область пассивных умений](* <- lang_ru;; *);
+	[Subject domain of passive skills](* <- lang_en;; *);
+	
+
+-> rrel_maximum_studied_object_class: concept_passive_skill;
+
+-> rrel_explored_relation : nrel_effect;
+-> rrel_explored_relation : nrel_explore;;

@@ -1,0 +1,4 @@
+concept_spell_critical_strike_15
+=> nrel_main_idtf: [+15% spell critical strike multiplier] (* <- lang_en;; *);
+=> nrel_main_idtf: [+15% к множителю критического удара чарами] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

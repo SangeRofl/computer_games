@@ -1,0 +1,4 @@
+concept_chance_to_blind_on_hit_with_attacks_10
+=> nrel_main_idtf: [10% chance to blind enemies on hit with attacks] (* <- lang_en;; *);
+=> nrel_main_idtf: [10% шанс ослепить врагов при нанесении удара атаками] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

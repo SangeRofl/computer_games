@@ -1,0 +1,4 @@
+concept_increased_physical_damage_20
+=> nrel_main_idtf: [20% increased physical damage.] (* <- lang_en;; *);
+=> nrel_main_idtf: [20% увеличение физического урона.] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

@@ -1,0 +1,51 @@
+concept_blue_sector_of_passive_skills
+=> nrel_main_idtf: [Blue sector of passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Синий сектор пассивных умений] (* <- lang_ru;; *);
+
+->concept_spell_block;
+->concept_charge_duration;
+->concept_skill_duration;
+->concept_intelligence_and_mana_regeneration;
+->concept_alchemy;
+->concept_annihilation;
+->concept_unholy_guardian;
+->concept_mana_flasks;
+->concept_bitter_experience;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Синий сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Синий сектор древа пассивных умений -  это сектор который называют сектором магии.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Синий сектор пассивных умений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Пассивные умения этого сектора увеличивают интеллект, урон от стихий, от чар, энергетический щит, урон жезлами, характеристики приспешников и т.п.,то есть всё, связанное с магией.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Синий сектор пассивных умений)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/blue_sector_of_passive_skills.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

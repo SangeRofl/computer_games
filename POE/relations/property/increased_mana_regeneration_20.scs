@@ -1,0 +1,4 @@
+concept_increased_mana_regeneration_20
+=> nrel_main_idtf: [20% increased mana regeneration rate] (* <- lang_en;; *);
+=> nrel_main_idtf: [20% повышение скорости регенерации маны] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

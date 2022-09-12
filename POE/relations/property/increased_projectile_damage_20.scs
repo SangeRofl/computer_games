@@ -1,0 +1,4 @@
+concept_increased_projectile_damage_20
+=> nrel_main_idtf: [20% increased projectile damage] (* <- lang_en;; *);
+=> nrel_main_idtf: [20% увеличение урона снарядов] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

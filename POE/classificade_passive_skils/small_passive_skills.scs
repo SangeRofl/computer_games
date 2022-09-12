@@ -1,0 +1,44 @@
+concept_small_passive_skills
+=> nrel_main_idtf: [Small passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Малые пассивные умения] (* <- lang_ru;; *);
+
+
+->concept_block;
+->concept_armor;
+->concept_health_and_stroke;
+->concept_health_replenishment;
+->concept_physical_damage;
+->concept_spell_block;
+->concept_charge_duration;
+->concept_mana_flasks;
+->concept_skill_duration;
+->concept_intelligence_and_mana_regeneration;
+->concept_range_of_chain_strikes;
+->concept_blind_duration;
+->concept_chance_to_blind;
+->concept_critical_hits_against_blinded_enemies;
+->concept_piercing;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Малые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Малые пассивные умения -  это уменя которые проще всего открыть и которыя являются слабейшими пассивными умениями в игре.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Малые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Малые пассивные умения дают небольшое преимущество персонажу. .] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+
+<- sc_node_not_relation;;

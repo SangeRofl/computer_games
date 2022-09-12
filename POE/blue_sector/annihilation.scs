@@ -1,0 +1,42 @@
+concept_annihilation
+=> nrel_main_idtf: [Annihilation] (* <- lang_en;; *);
+=> nrel_main_idtf: [Аннигиляция] (* <- lang_ru;; *);
+
+->concept_spell_critical_strike_15;
+->concept_increased_critical_strike_50;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Аннигиляция)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Аннигиляция - это пассивное умение относящяяся к виду значимых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Бонус от пассивного умения Аннигиляция)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [+15% к множителю критического удара чарами.50% повышение шанса критического удара для чар.] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Аннигиляция)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/annihilation.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,31 @@
+concept_mana_flasks
+=> nrel_main_idtf: [Mana flasks] (* <- lang_en;; *);
+=> nrel_main_idtf: [Флаконы маны] (* <- lang_ru;; *);
+
+->concept_increased_mana_from_flasks_10;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Флаконы маны)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Флаконы маны - это пассивное умение относящяяся к виду малых пассивных умений и входящее в синий сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Флаконы маны)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/blue_passive_skills/mana_flasks.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

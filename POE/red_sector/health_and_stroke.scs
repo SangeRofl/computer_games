@@ -1,0 +1,32 @@
+concept_health_and_stroke
+=> nrel_main_idtf: [Health and stroke] (* <- lang_en;; *);
+=> nrel_main_idtf: [Здоровье и удар] (* <- lang_ru;; *);
+
+->concept_health_increase_per_hit_5;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Здоровье и удар)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Здоровье и удар - это пассивное умение относящяяся к виду малых пассивных умений и входящее в крассный сектор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Иллюстрация (Здоровье и удар)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://../images/passive_skills/red_passive_skills/health_kick.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,16 @@
+nrel_effect
+=> nrel_main_idtf: [Effect*] (* <- lang_en;; *);
+=> nrel_main_idtf: [Эффект*] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Эффект*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       		-> [Это явление определяющее какое изменение вызывает пассивное умение у персонажа.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_norole_relation;;

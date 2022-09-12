@@ -1,0 +1,32 @@
+concept_crucial_passive_skills
+=> nrel_main_idtf: [Crucial passive skills] (* <- lang_en;; *);
+=> nrel_main_idtf: [Ключевые пассивные умения] (* <- lang_ru;; *);
+
+->concept_conductor;
+->concept_unholy_guardian;
+->concept_impaler;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Ключевые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ключевые пассивные умения -  уникальные могущественные пассивные умения, значительно влияющие на геймплей.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Ключевые пассивные умения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Ключевые пассивные умения значительно меняют персонажа. .] (* <- lang_ru;; *);;
+	*);;
+	
+*);
+
+
+<- sc_node_not_relation;;

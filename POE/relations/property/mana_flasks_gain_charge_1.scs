@@ -1,0 +1,4 @@
+concept_mana_flasks_gain_charge_1
+=> nrel_main_idtf: [mana flasks gain 1 charge every 3 seconds] (* <- lang_en;; *);
+=> nrel_main_idtf: [Флаконы маны получают 1 заряд каждые 3 секунды] (* <- lang_ru;; *);
+<- sc_node_not_relation;;

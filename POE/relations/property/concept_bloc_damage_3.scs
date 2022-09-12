@@ -1,0 +1,4 @@
+concept_bloc_damage_3
+=> nrel_main_idtf: [+3% chance to block attack damage while dual wielding or while wielding a shield] (* <- lang_en;; *);
+=> nrel_main_idtf: [+3% шанс блокировать урон от атак с парным оружием или со щитом в руках] (* <- lang_ru;; *);
+<- sc_node_not_relation;;
