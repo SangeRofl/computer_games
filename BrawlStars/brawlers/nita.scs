@@ -1,0 +1,139 @@
+nita
+=> nrel_main_idtf: [Нита](*<- lang_ru;;*);
+=> nrel_main_idtf: [nita](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Нита атакует врагов волной энергии. Её Супер призывает огромного медведя, который сражается рядом с ней.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Нита создаёт прямую ударную волну средней дальности, которая наносит средний урон и способна проходить сквозь противников.. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_very_fast_reload_speed">очень быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Нита призывает медведя, который будет преследовать ближайших врагов и наносить им низкий урон. Его можно призвать на небольшом от себя расстоянии.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Нита: 
+<b><sc_element sys_idtf="bear_paws">Медвежьи лапы</b></sc_element>,
+<b><sc_element sys_idtf="faux_fur">Искусственный мех</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Нита: 
+<b><sc_element sys_idtf="bear_with_me">Медвежья услуга</b></sc_element>,
+<b><sc_element sys_idtf="hyper_bear">Медведь-шатун</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Нита)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Нита: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//nita.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+bear_paws
+=> nrel_main_idtf: [Медвежьи лапы](*<- lang_ru;;*);
+=> nrel_main_idtf: [bear paws](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Медвежьи лапы)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Нита приказывает медведю нанести по земле удар, оглушающий всех врагов в радиусе действия. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+faux_fur
+=> nrel_main_idtf: [Искусственный мех](*<- lang_ru;;*);
+=> nrel_main_idtf: [faux fur](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Искусственный мех)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Медведь Ниты получает 35-процентную защиту от урона на следующие 3 с. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+bear_with_me
+=> nrel_main_idtf: [Медвежья услуга](*<- lang_ru;;*);
+=> nrel_main_idtf: [bear with me](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Медвежья услуга)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Нита восстанавливает 800 очков здоровья, когда её медведь наносит урон вражескому бойцу. Когда Нита наносит урон, её медведь восстанавливает 800 очков здоровья.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+hyper_bear
+=> nrel_main_idtf: [Медведь-шатун](*<- lang_ru;;*);
+=> nrel_main_idtf: [hyper bear](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Медведь-шатун)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Медведь Ниты атакует быстрее. Время между его ударами сокращается на 60%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

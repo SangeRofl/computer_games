@@ -1,0 +1,140 @@
+crow
+
+=> nrel_main_idtf: [Ворон](*<- lang_ru;;*);
+=> nrel_main_idtf: [crow](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Ворон бросает три отравленных кинжала. Его Супер — стремительный прыжок, начиная и заканчивая который, Ворон разбрасывает по сторонам кинжалы!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Ворон бросает три кинжала. Враги, задетые отравленными кинжалами, постепенно теряют здоровье, а любой действующий на них лечебный эффект уменьшается. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Взмывая в небо и возвращаясь на землю, Ворон окружает себя кольцом отравленных кинжалов.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Ворон: 
+<b><sc_element sys_idtf="defense_booster">Усилитель защиты</b></sc_element>,
+<b><sc_element sys_idtf="retarding_toxin">Замедляющий токсин</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Ворон: 
+<b><sc_element sys_idtf="deadly_poison">Смертельный яд</b></sc_element>,
+<b><sc_element sys_idtf="vulture">Стервятник</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Ворон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Ворон: 
+Редкость - <b><sc_element sys_idtf="concept_legendary">легендарный боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_assassin">Убийца</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//crow.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+defense_booster
+=> nrel_main_idtf: [Усилитель защиты](*<- lang_ru;;*);
+=> nrel_main_idtf: [defense booster](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Усилитель защиты)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Ворон мгновенно перезаряжает револьверы 2 пулями. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+retarding_toxin
+=> nrel_main_idtf: [Замедляющий токсин](*<- lang_ru;;*);
+=> nrel_main_idtf: [retarding toxin](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Замедляющий токсин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая атака Ворона — мощный выстрел, который наносит столько же урона, сколько 2 обычные пули, и прошивает насквозь и врагов и препятствия. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+deadly_poison
+=> nrel_main_idtf: [Смертельный яд](*<- lang_ru;;*);
+=> nrel_main_idtf: [deadly poison](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Смертельный яд)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Ворон движется на 13% быстрее обычного.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+vulture
+=> nrel_main_idtf: [Стервятник](*<- lang_ru;;*);
+=> nrel_main_idtf: [vulture](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Стервятник)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Дальность и скорость выстрелов Ворона увеличиваются на 11%] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

@@ -1,0 +1,139 @@
+fang
+=> nrel_main_idtf: [Фэнг](*<- lang_ru;;*);
+=> nrel_main_idtf: [fang](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Фэнг — мастер скоростного пинка. Во время основной атаки у него с ноги слетает кроссовка, а его Супер — серия мощных ударов ногой по находящимся рядом врагам.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Быстрый удар ногой с подвохом: если он не достигнет цели, то с ноги Фэнга слетит кроссовка! Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Фэнг делает мощный удар ногой, который дополнительно может поразить до 3 врагов, находящихся поблизости.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Фэнг: 
+<b><sc_element sys_idtf="corn_fu">Корн-фу</b></sc_element>,
+<b><sc_element sys_idtf="roundhouse_kick">Удар с разворота</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Фэнг: 
+<b><sc_element sys_idtf="fresh_start">Свежий Старт</b></sc_element>,
+<b><sc_element sys_idtf="happy_sneakers">Счастливые Кроссовки</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Фэнг)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Фэнг: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//fang.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+corn_fu
+=> nrel_main_idtf: [Корн-фу](*<- lang_ru;;*);
+=> nrel_main_idtf: [corn fu](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Корн-фу)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фэнг устраивает дождь из попкорна, бросив в воздух горсть кукурузных зёрен! Каждое зерно наносит 500 очк. урона. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+roundhouse_kick
+=> nrel_main_idtf: [Удар с разворота](*<- lang_ru;;*);
+=> nrel_main_idtf: [roundhouse kick](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Удар с разворота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фэнг бьёт ногой с разворота по всем окружающим его врагам, оглушая их на 0,5с. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+fresh_start
+=> nrel_main_idtf: [Свежий Старт](*<- lang_ru;;*);
+=> nrel_main_idtf: [fresh start](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Свежий Старт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Если Фэнг победит врага с помощью Супера, то его Супер сразу же зарядится и снова будет готов к использованию!] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+happy_sneakers
+=> nrel_main_idtf: [Счастливые Кроссовки](*<- lang_ru;;*);
+=> nrel_main_idtf: [happy sneakers](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Счастливые Кроссовки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Уменьшает получаемый урон на 500 один раз каждые 3 с. Максимальное возможное понижение урона: 90%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

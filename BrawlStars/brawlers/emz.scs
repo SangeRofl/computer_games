@@ -1,0 +1,139 @@
+emz
+=> nrel_main_idtf: [Эмз](*<- lang_ru;;*);
+=> nrel_main_idtf: [emz](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Эмз атакует, разбрызгивая лак для волос, облака которого наносят урон с течением времени. Её Супер замедляет врагов.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Эмз брызгает лаком для волос, оставляя облако ядовитого газа, наносящее урон в течении 0,5 секунд. Если противник останется в нём на небольшой дистанции, то получит трёхкратный урон. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">низкая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Эмз окружает себя ядовитым облаком, которое замедляет врагов и наносит им урон.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Эмз: 
+<b><sc_element sys_idtf="friendzoner">Френдзона</b></sc_element>,
+<b><sc_element sys_idtf="acid_spray">Кислотный лак</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Эмз: 
+<b><sc_element sys_idtf="bad_karma">Плохая карма</b></sc_element>,
+<b><sc_element sys_idtf="hype">Хайп</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Эмз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Эмз: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">награда пути к славе</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//emz.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+friendzoner
+=> nrel_main_idtf: [Френдзона](*<- lang_ru;;*);
+=> nrel_main_idtf: [friendzoner](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Френдзона)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Эмз отбрасывает назад всех врагов вокруг себя, нанося им 500 ед. урона. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+acid_spray
+=> nrel_main_idtf: [Кислотный лак](*<- lang_ru;;*);
+=> nrel_main_idtf: [acid spray](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Кислотный лак)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующий заряд лака для волос Эмз проходить сквозь стены, но наносит на 20% меньше урона. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+bad_karma
+=> nrel_main_idtf: [Плохая карма](*<- lang_ru;;*);
+=> nrel_main_idtf: [bad karma](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Плохая карма)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Урон, получаемый врагами в облаках ядовитого лака Эмз, возрастает на 25% с каждым ударом.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+hype
+=> nrel_main_idtf: [Хайп](*<- lang_ru;;*);
+=> nrel_main_idtf: [hype](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Хайп)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Во время использования Супера Эмз восстанавливает себе 420 единиц здоровья за счёт нанесения такого же количества урона по врагу, находящегося в радиусе действия Супера. Чем больше вражеских бойцов будет в этой зоне, тем больше здоровья она себе восстановит (максимально 2100 за одного бойца).] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

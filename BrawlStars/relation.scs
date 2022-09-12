@@ -1,0 +1,259 @@
+nrel_class
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawler;
+nrel_second_domain: concept_brawler_class;
+=> nrel_main_idtf:
+[Отношение к классу*] (*<-lang_ru;;*);
+[Belonging to a class*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Отношение к классу*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+class
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Разбиение по классам бравлеров.](*<-lang_ru;; *);;
+*);;
+*);;
+//_________________________________________________________
+nrel_attack
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawler;
+nrel_second_domain: concept_main_attack;
+=> nrel_main_idtf:
+[Атака*] (*<-lang_ru;;*);
+[Attack*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Атака*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+reinforcement
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Характеризует тип атаки персонажа](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_rarity
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawler;
+nrel_second_domain: concept_brawler_rarity;
+=> nrel_main_idtf:
+[Редкость*] (*<-lang_ru;;*);
+[Rarity*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Редкость*)] (* <- lang_ru;; *);;
+
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Характеризует редкость персонажа](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_level_up
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawl_pass;
+nrel_second_domain: concept_brawl_pass_token;
+=> nrel_main_idtf:
+[Повышение уровня*] (*<-lang_ru;;*);
+[Rarity*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Повышение уровня*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+level; boxes; brawler; coin; power_points
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Повышение уровня боевого пропуска](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_reward
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawl_pass;
+nrel_second_domain: concept_brawl_pass_token;
+nrel_third_domain: concept_quest;
+=> nrel_main_idtf:
+[Награда*] (*<-lang_ru;;*);
+[Reward*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Награда*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+boxes; brawler; coin; power_points
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Награда за уровень боевого пропуска](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_season
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawl_pass;
+
+=> nrel_main_idtf:
+[Сезон*] (*<-lang_ru;;*);
+[Season*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Сезон*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+concept_brawl_pass
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Длительность боевого пропуска](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_temporary_event
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_game_events;
+nrel_second_domain: concept_brawler;
+=> nrel_main_idtf:
+[Временный режим*] (*<-lang_ru;;*);
+[Temporary event*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Временный режим*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+time
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Описание принадлежности к игровому режиму](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_permanent_event
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_game_events;
+nrel_second_domain: concept_brawler;
+
+=> nrel_main_idtf:
+[Постоянный режим*] (*<-lang_ru;;*);
+[Permanent event*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Постоянный режим*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+time
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Описание принадлежности к игровому режиму](*<-lang_ru;; *);;
+*);;
+*);;
+//___________________________________________________________
+nrel_cost
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_brawl_pass;
+
+=> nrel_main_idtf:
+[Стоимость*] (*<-lang_ru;;*);
+[Cost*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Стоимость*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+coins; power_points
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Стоимость покупки разных предметов в магазине](*<-lang_ru;; *);;
+*);;
+*);;
+
+nrel_damage
+
+<-sc_node_norole_relation;
+
+<- antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+=>nrel_first_domain: concept_firearms;
+nrel_second_domain: concept_mutant;
+=> nrel_main_idtf:
+[Урон*] (*<-lang_ru;;*);
+[Damage*] (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+<- definition;;
+=> nrel_main_idtf:
+[Опр. (Урон*)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+reinforcement
+};;
+<= nrel_sc_text_translation: ... (*
+-> rrel_example:
+[Урон - количество снимаемых очков здоровья и брони у врага, при попадании в него из определенного оружия.](*<-lang_ru;; *);;
+*);;
+*);;

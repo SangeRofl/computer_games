@@ -1,0 +1,222 @@
+concept_assassin
+=> nrel_main_idtf: [assassin] (* <- lang_en;; *);
+=> nrel_main_idtf: [убийца] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(убийца)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бойцы этого <b><sc_element sys_idtf="concept_brawler_class">класса</b></sc_element> имеют высокую скорость передвижения, большой урон, а также возможность быстро сократить дистанцию с врагом и легко преследовать цель, будь то посредством <b><sc_element sys_idtf="concept_super">супера</b></sc_element> или <b><sc_element sys_idtf="concept_main_attack">основной атаки</b></sc_element>.]  (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры класса убийца)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 6 бравлеров награды пути к славе в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>:
+<b><sc_element sys_idtf="edgar">Эдгар</b></sc_element>,
+<b><sc_element sys_idtf="buzz">Базз</b></sc_element>,
+<b><sc_element sys_idtf="stu">Сту</b></sc_element>,
+<b><sc_element sys_idtf="mortis">Мортис</b></sc_element>,
+<b><sc_element sys_idtf="leon">Леон</b></sc_element>,
+<b><sc_element sys_idtf="crow">Ворон</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_support
+=> nrel_main_idtf: [support] (* <- lang_en;; *);
+=> nrel_main_idtf: [поддержка] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(поддержка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бравлеры этого <b><sc_element sys_idtf="concept_brawler_class">класса</b></sc_element> должны поддерживать или же лечить свою команду, находясь в центре неё. ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (факт о Джине)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Раньше <b><sc_element sys_idtf="gene">Джин</b></sc_element> являлся единственным бравлером класса «Поддержка», но после распределения в этот класс попало множество бравлеров.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры класса поддержка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 8 бравлеров класса поддержка в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="poco">Поко</b></sc_element>,
+<b><sc_element sys_idtf="max">Макс</b></sc_element>,
+<b><sc_element sys_idtf="pam">Пэм</b></sc_element>,
+<b><sc_element sys_idtf="sprout">Спраут</b></sc_element>,
+<b><sc_element sys_idtf="colonel_ruffs">Генерал Гавс</b></sc_element>,
+<b><sc_element sys_idtf="byron">Байрон</b></sc_element>,
+<b><sc_element sys_idtf="sandy">Сэнди</b></sc_element>,
+<b><sc_element sys_idtf="gene">Джин</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_hybrid
+=> nrel_main_idtf: [hybrid] (* <- lang_en;; *);
+=> nrel_main_idtf: [гибрид] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(гибрид)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Исходя из названия, бравлеры этого класса сочетают в себе другие классы. К примеру, бравлер <b><sc_element sys_idtf="darryl">Дэррил</b></sc_element> имеет высокое количество здоровья и высокий урон, что может относить его к классу <b><sc_element sys_idtf="concept_tank">«Танк»</b></sc_element>, но в тоже время он имеет способость быстро приблизиться к врагу, что может относить его к классу <b><sc_element sys_idtf="concept_assassin">«Убийца»</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры класса гибрид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 3 бравлера класса гибрид в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="gale">Гэйл</b></sc_element>,
+<b><sc_element sys_idtf="lou">Лу</b></sc_element>,
+<b><sc_element sys_idtf="darryl">Дэррил</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_damage_dealer
+=> nrel_main_idtf: [damage dealer] (* <- lang_en;; *);
+=> nrel_main_idtf: [разрушитель] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(разрушитель)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Удивительно, но несмотря на название класса, многие из бравлеров которые к нему относятся не способны разрушать окружающую среду, так что сама идея класса — нанесение высокого количества урона] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:[Утв.(факт о разрушителях)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Класс «Разрушитель» содержит самое большое количество бравлеров среди всех остальных классов в игре.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры класса разрушитель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 33 бравлера класса разрушитель в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="rico">Рико</b></sc_element>,
+<b><sc_element sys_idtf="piper">Пайпер</b></sc_element>,
+<b><sc_element sys_idtf="8_bit">8-Бит</b></sc_element>,
+<b><sc_element sys_idtf="eve">Ева</b></sc_element>,
+<b><sc_element sys_idtf="bea">Беа</b></sc_element>,
+<b><sc_element sys_idtf="fang">Фэнг</b></sc_element>,
+<b><sc_element sys_idtf="belle">Белль</b></sc_element>,
+<b><sc_element sys_idtf="shelly">Шелли</b></sc_element>,
+<b><sc_element sys_idtf="colt">Кольт</b></sc_element>,
+<b><sc_element sys_idtf="jessie">Джесси</b></sc_element>,
+<b><sc_element sys_idtf="mr_p">Мистер П</b></sc_element>,
+<b><sc_element sys_idtf="lola">Лола</b></sc_element>,
+<b><sc_element sys_idtf="penny">Пенни</b></sc_element>,
+<b><sc_element sys_idtf="brock">Брок</b></sc_element>,
+<b><sc_element sys_idtf="griff">Грифф</b></sc_element>,
+<b><sc_element sys_idtf="bo">Бо</b></sc_element>,
+<b><sc_element sys_idtf="carl">Карл</b></sc_element>,
+<b><sc_element sys_idtf="barley">Барли</b></sc_element>,
+<b><sc_element sys_idtf="nani">Нани</b></sc_element>,
+<b><sc_element sys_idtf="tick">Тик</b></sc_element>,
+<b><sc_element sys_idtf="colette">Колетт</b></sc_element>,
+<b><sc_element sys_idtf="grom">Гром</b></sc_element>,
+<b><sc_element sys_idtf="tara">Тара</b></sc_element>,
+<b><sc_element sys_idtf="squeak">Скуик</b></sc_element>,
+<b><sc_element sys_idtf="spike">Спайк</b></sc_element>,
+<b><sc_element sys_idtf="amber">Амбер</b></sc_element>,
+<b><sc_element sys_idtf="dynamike">Динамайк</b></sc_element>,
+<b><sc_element sys_idtf="nita">Нита</b></sc_element>,
+<b><sc_element sys_idtf="emz">Эмз</b></sc_element>,
+<b><sc_element sys_idtf="meg">Мэг</b></sc_element>,
+<b><sc_element sys_idtf="janet">Джанет</b></sc_element>,
+<b><sc_element sys_idtf="surge">Вольт</b></sc_element>,
+<b><sc_element sys_idtf="bibi">Биби</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+concept_tank
+=> nrel_main_idtf: [tank] (* <- lang_en;; *);
+=> nrel_main_idtf: [танк] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(танк)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Бравлеры этого класса имеют самое высокое количество здоровья среди всех остальных бойцов в игре. Также бравлеры этого класса имеют достаточно большие модели.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(особенности танков)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Танки имеют короткий радиус атаки (кроме <b><sc_element sys_idtf="frank">Фрэнка</b></sc_element>), высокий урон и скорость (770). Все бойцы этого класса (за исключением <b><sc_element sys_idtf="rosa">Розы</b></sc_element> и <b><sc_element sys_idtf="ash">Эша</b></sc_element>) имеют особенность: "Накопление Супера от ударов на себя".] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (бравлеры класса танк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 6 редких бравлеров класса танк в <b><sc_element sys_idtf="concept_game_brawl_stars">Brawl Stars</b></sc_element>: 
+<b><sc_element sys_idtf="rosa">Роза</b></sc_element>,
+<b><sc_element sys_idtf="frank">Фрэнк</b></sc_element>,
+<b><sc_element sys_idtf="ash">Эш</b></sc_element>,
+<b><sc_element sys_idtf="jacky">Джеки</b></sc_element>,
+<b><sc_element sys_idtf="bull">Булл</b></sc_element>,
+<b><sc_element sys_idtf="el_primo">Эль Примо</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+

@@ -1,0 +1,104 @@
+concept_game_events
+<-sc_node_not_relation;
+=> nrel_main_idtf: [игровые режимы] (* <- lang_ru;; *);
+=> nrel_main_idtf: [game events] (* <- lang_en;; *);;
+definition -> game_events_description
+(*
+    -> rrel_key_sc_element: concept_game_events;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Одна из важных особенностей Бравл Старс это игровые режимы, которые обновляются раз в сутки. Бои в них проходят быстро, не более трех минут. За победу вы сможете получить кубки, монеты и звездные жетоны.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(игровые режимы)](*<- lang_ru;;*);;
+*);;
+definition -> brawl_stars_logo
+(*
+    -> rrel_key_sc_element: concept_game_brawl_stars;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> nrel_image: "file://brawlers//brawlerImages//BrawlStars.jpg"(*<- lang_ru;;*);;
+        *);;
+*);;
+
+sc_node_class->brawl_ball;;
+sc_node_class->gem_grab;;
+sc_node_class->showdown;;
+concept_game_events<=nrel_inclusion: main_events
+(*
+	->brawl_ball;;
+	->gem_grab;;
+	->showdown;;
+
+*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: main_events;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Основные режимы игры, доступные в любое время.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(основные режимы)](*<- lang_ru;;*);;
+*);;
+
+
+brawl_ball=> nrel_main_idtf: [броулбол] (* <- lang_ru;; *);;
+brawl_ball=> nrel_main_idtf: [brawl ball] (* <- lang_en;; *);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: brawl_ball;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Забей гол в ворота противника! Матч закончится по истечении времени или после двух голов, забитых одной из команд.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(броулбол)](*<- lang_ru;;*);;
+*);;
+
+
+gem_grab=> nrel_main_idtf: [захват кристаллов] (* <- lang_ru;; *);;
+gem_grab=> nrel_main_idtf: [gem grab] (* <- lang_en;; *);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: gem_grab;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Собирай кристаллы, появляющиеся из кристальной шахты в центре или же отбирай их у врагов! Для победы удержи у себя 10 кристаллов до конца обратного отсчёта.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(захват кристаллов)](*<- lang_ru;;*);;
+*);;
+
+showdown=> nrel_main_idtf: [столкновение] (* <- lang_ru;; *);;
+showdown=> nrel_main_idtf: [showdown] (* <- lang_en;; *);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: showdown;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Режим в жанре Королевской Битвы. Есть 2 типа режима — одиночное и парное. В одиночном столкновении побеждает последний выживший среди 10 игроков, а в парном — последняя выжившая команда из 2-х игроков среди 5 команд (тоже по 2 игрока). По карте разбросаны коробки с кубиками усиления, которые повышают здоровье и урон игрока, а также со временем карта будет сужаться к центру ядовитыми облаками, наносящими возрастающий урон игрокам каждую секунду](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(столкновение)](*<- lang_ru;;*);;
+*);;
+
+//////////////////////////////////////////////////////////////////////////
+sc_node_class->heist;;
+sc_node_class->siege;;
+sc_node_class->knockout;;
+sc_node_class->hot_zone;;
+sc_node_class->bounty;;
+concept_game_events<=nrel_inclusion: periodical_events
+(*
+	->heist;;
+	->siege;;
+	->knockout;;
+	->hot_zone;;
+	->bounty;;
+
+*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: periodical_events;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Попеременно чередующиеся между собой режимы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(периодические режимы)](*<- lang_ru;;*);;
+*);;

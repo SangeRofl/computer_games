@@ -1,0 +1,139 @@
+gene
+=> nrel_main_idtf: [Джин](*<- lang_ru;;*);
+=> nrel_main_idtf: [gene](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Джин выпускает из своей волшебной лампы разделяющиеся снаряды. Его Супер — волшебная рука, которая хватает и притягивает врагов к нему!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Джин стреляет из лампы плотным шаром волшебного дыма. Если шар не попадает в цель, то превращается в наносящий урон конус. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range">очень далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Джин выпускает из лампы волшебную руку. Если рука достигает врага, то подтаскивает его прямо к Джину!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Джин: 
+<b><sc_element sys_idtf="broke_lamp">Разбитая лампа</b></sc_element>,
+<b><sc_element sys_idtf="mengeful_spirit">Мстительный дух</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Джин: 
+<b><sc_element sys_idtf="magic_mist">Волшебный туман</b></sc_element>,
+<b><sc_element sys_idtf="magic_pendel">Волшебный пендель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Джин: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_support">Поддержка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//gene.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+broke_lamp
+=> nrel_main_idtf: [Разбитая лампа](*<- lang_ru;;*);
+=> nrel_main_idtf: [broke_lamp](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Разбитая лампа)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Всех врагов, подобравшихся близко к Джину, отбрасывает назад. Джин также восстанавливает Health icon.png600 очков здоровья, если в зоне гаджета есть хотя бы один враг. ] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+mengeful_spirit
+=> nrel_main_idtf: [Мстительный дух](*<- lang_ru;;*);
+=> nrel_main_idtf: [mengeful spirit](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Мстительный дух)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Самонаводящиеся ракеты Джина летят во всех видимых врагов в радиусе действия, нанося до 1000 единиц урона в зависимости от расстояния] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+magic_mist
+=> nrel_main_idtf: [Волшебный туман](*<- lang_ru;;*);
+=> nrel_main_idtf: [magic mist](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Волшебный туман)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Джин лечит всех союзников поблизости, восстанавливая им 400 очков здоровья в секунду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+magic_pendel
+=> nrel_main_idtf: [Волшебный пендель](*<- lang_ru;;*);
+=> nrel_main_idtf: [magic pendel](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Волшебный пендель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда Супер Джина заряжен полностью, его атака наносит на 300 единиц урона больше.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

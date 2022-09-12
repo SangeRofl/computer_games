@@ -1,0 +1,139 @@
+spike
+=> nrel_main_idtf: [Спайк](*<- lang_ru;;*);
+=> nrel_main_idtf: [spike](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Спайк бросает кактусные гранаты, осыпающие всё вокруг иголками. Его ошеломительный Супер создаёт поле с шипами, замедляющее врагов и наносящее им урон.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Спайк кидает кактус, который при ударе обо что-либо или достижении максимальной дальности взрывается, разбрасывая шипы в разных направлениях. Шипы наносят урон врагам, которых они задели. Сам кактус летит на среднее расстояние, но его шипы увеличивают его дальность на более высокую. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далекая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">низкая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Спайк бросает шипастую гранату, которая наносит урон в течении 5 секунд и замедляет врагов, попавших в зону взрыва. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Спайк: 
+<b><sc_element sys_idtf="popping_pincushion">Игольница</b></sc_element>,
+<b><sc_element sys_idtf="life_plant">Кактус жизни</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Спайк: 
+<b><sc_element sys_idtf="fertilize">Удобрение</b></sc_element>,
+<b><sc_element sys_idtf="curveball">Кручёная подача</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Спайк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Спайк: 
+Редкость - <b><sc_element sys_idtf="concept_legendary">легендарная</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//spike.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+popping_pincushion
+=> nrel_main_idtf: [Игольница](*<- lang_ru;;*);
+=> nrel_main_idtf: [popping pincushion](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Игольница)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Спайк выпускает во все стороны очереди иголок (3), нанося 520 ед. урона при каждом попадании. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+life_plant
+=> nrel_main_idtf: [Кактус жизни](*<- lang_ru;;*);
+=> nrel_main_idtf: [life plant](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Кактус жизни)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Спайк сажает огромный кактус с 1750 очками здоровья, который союзники могут использовать как укрытие. При уничтожении кактус взрывается, восстанавливая всем союзникам поблизости 1000 очков здоровья. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+fertilize
+=> nrel_main_idtf: [Удобрение](*<- lang_ru;;*);
+=> nrel_main_idtf: [fertilize](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Удобрение)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Используя Супер и находясь в зоне его действия, Спайк восстанавливает 800 очков здоровья в секунду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+curveball
+=> nrel_main_idtf: [Кручёная подача](*<- lang_ru;;*);
+=> nrel_main_idtf: [curveball](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Кручёная подача)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Иголки от кактусной гранаты летят по кривой, что увеличивает шанс попадания в цель.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

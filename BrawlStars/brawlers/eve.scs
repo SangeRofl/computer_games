@@ -1,0 +1,140 @@
+eve
+
+=> nrel_main_idtf: [Ева](*<- lang_ru;;*);
+=> nrel_main_idtf: [eve](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Ева считает, что каждый может принести пользу... став обедом для её малышей.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Ева стреляет тремя яйцами подряд. Каждое следующие яйцо крупнее предыдущего и наносит больше урона. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_fast_reload_speed">быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Ева откладывает большое яйцо, из которого появляется выводок детёнышей. Они присасываются к врагам и наносят постепенный урон.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Ева: 
+<b><sc_element sys_idtf="its_time_to_fall">Пора валить!</b></sc_element>,
+<b><sc_element sys_idtf="mothers_love">Материнская любовь</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Ева: 
+<b><sc_element sys_idtf="backwards">Задом наперёд</b></sc_element>,
+<b><sc_element sys_idtf="pleasant_surprise">Приятный сюрприз</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Ева)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Ева: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//eve.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+its_time_to_fall
+=> nrel_main_idtf: [Пора валить!](*<- lang_ru;;*);
+=> nrel_main_idtf: [it's time to fall!](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пора валить!)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Ева отпрыгивает в сторону, оставляя на прежнем месте детёныша.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+mothers_love
+=> nrel_main_idtf: [Материнская любовь](*<- lang_ru;;*);
+=> nrel_main_idtf: [Mother's love](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Материнская любовь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Детёныши, появляющиеся из активированного яйца, вместо нанесения урона исцеляют союзников.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+backwards
+=> nrel_main_idtf: [Задом наперёд](*<- lang_ru;;*);
+=> nrel_main_idtf: [backwards](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Задом наперёд)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Яйцемёт стреляет яйцами в обратном порядке.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+pleasant_surprise
+=> nrel_main_idtf: [Приятный сюрприз](*<- lang_ru;;*);
+=> nrel_main_idtf: [pleasant surprise](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Приятный сюрприз)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Если самое большое яйцо из яйцемёта попадает во вражеского бойца, из него появляется детёныш.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

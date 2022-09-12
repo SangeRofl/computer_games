@@ -1,0 +1,138 @@
+leon
+=> nrel_main_idtf: [Леон](*<- lang_ru;;*);
+=> nrel_main_idtf: [leon](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Леон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Леон поражает цель роем метательных клинков. Его Супер — дымовая бомба, делающая его невидимым на некоторое время.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Леон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Лёгким движением руки, Леон отправляет вперёд четыре крутящихся лезвия. Чем дальше они летят, тем ниже урон. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range"> очень большая дальность атаки</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Леон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Леон может на 6 с. стать невидимым, но, атаковав, он выдаст себя. Если враги подойдут к Леону слишком близко, то смогут его заметить.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Джин)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Джин: 
+<b><sc_element sys_idtf="cloning">Клонирование</b></sc_element>,
+<b><sc_element sys_idtf="fallen_lollipop">Упавший леденец</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Леон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Леон: 
+<b><sc_element sys_idtf="trail_of_smoke">След дыма</b></sc_element>,
+<b><sc_element sys_idtf="secret_medicine">Тайное лекарство</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Леон)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Леон: 
+Редкость - <b><sc_element sys_idtf="concept_legendary"легендарный боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_assasin">Убийца</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//leon.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+cloning
+=> nrel_main_idtf: [Клонирование](*<- lang_ru;;*);
+=> nrel_main_idtf: [cloning](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Клонирование)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Леон создаёт своего двойника, сбивая врагов с толку. Зарядов на матч: 3] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+fallen_lollipop
+=> nrel_main_idtf: [Упавший леденец](*<- lang_ru;;*);
+=> nrel_main_idtf: [fallen lollipop](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Упавший леденец)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Леон создаёт для своей команды скрытую область, в которой можно спрятаться. Запас здоровья области постепенно убывает. Зарядов на матч: 3] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+trail_of_smoke
+=> nrel_main_idtf: [След дыма](*<- lang_ru;;*);
+=> nrel_main_idtf: [trail of smoke](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (След дыма)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Активировав Супер, Леон движется на 30% быстрее, пока действует его невидимость.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+secret_medicine
+=> nrel_main_idtf: [Тайное лекарство](*<- lang_ru;;*);
+=> nrel_main_idtf: [secret medicine](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Тайное лекарство)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Леон восстанавливает 1000 очков здоровья в секунду, пока действует его Супер.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

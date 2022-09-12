@@ -1,0 +1,140 @@
+brock
+
+=> nrel_main_idtf: [Брок](*<- lang_ru;;*);
+=> nrel_main_idtf: [brock](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Взрывная ракета Брока летит на большую дистанцию. Его Супер — сметающий укрытия дождь из баллистических ракет!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Выпущенная Броком роковая ракета летит высоко и далеко. Тип атаки: <b><sc_element sys_idtf="concept_very_long_attack_range">очень далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">обычная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Заградительный ракетный огонь Брока сметает препятствия и врагов. Он искупает тебя под ракетным дождем!] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Брок: 
+<b><sc_element sys_idtf="jet_sneakers">Реактивные кроссовки</b></sc_element>,
+<b><sc_element sys_idtf="rocket_fuel">Ракетное топливо</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Брок: 
+<b><sc_element sys_idtf="more_rockets">Больше ракет!</b></sc_element>,
+<b><sc_element sys_idtf="rocket_№4">Ракета №4</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Брок)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Брок: 
+Редкость - <b><sc_element sys_idtf="concept_trophy_road_reward">путь к награде</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//brock.png"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+jet_sneakers
+=> nrel_main_idtf: [Реактивные кроссовки](*<- lang_ru;;*);
+=> nrel_main_idtf: [jet sneakers](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Реактивные кроссовки)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Брок взрывает землю под собой и взмывает ввысь. Взрыв наносит 500 ед. урона врагам, находящимся поблизости. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+rocket_fuel
+=> nrel_main_idtf: [Ракетное топливо](*<- lang_ru;;*);
+=> nrel_main_idtf: [rocket fuel](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ракетное топливо)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая основная атака Брока — мегаракета, которая больше, круче и быстрее обычной. А ещё разрушает стены. Зарядов на матч: 3.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+more_rockets
+=> nrel_main_idtf: [Больше ракет!](*<- lang_ru;;*);
+=> nrel_main_idtf: [more rockets!](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Больше ракет!)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Супер Брока теперь имеет на 44% больше ракет.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+rocket_4
+=> nrel_main_idtf: [Ракета 4](*<- lang_ru;;*);
+=> nrel_main_idtf: [rocket_4](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ракета 4)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Брок увеличивает количество боеприпасов, заряжая установку четвёртой ракетой (пришлось выбросить термос, занимавший её ячейку).] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

@@ -1,0 +1,139 @@
+sprout
+=> nrel_main_idtf: [Спраут](*<- lang_ru;;*);
+=> nrel_main_idtf: [sprout](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Спраут был создан, чтобы сеять жизнь и любовь с помощью скачущих зернобомб. Его Супер создаёт преграду из кустов.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Атака Спраута может отскакивать от стен и земли, пока не соприкоснётся с врагом или не достигнет максимального числа отскока (в зависимости от числа преград и их расположения). Свой сгусток листьев он может кидать и через преграды, но если игрок уже использовал атаку, то эта зернобомба не сможет больше пройти через преграду. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">нормальная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Спраут кидает свой Супер, который при контакте с землёй, создаёт стену, размер и форма которого зависят от расположения преград и игроков. Если вы кинете Супер в игрока, то он переместится в другую сторону. Можно использовать в качестве клетки, если игрок стоит в углу между двумя линиями преград или в воротах, без щита недавнего возрождения, кинув в место, куда надо забивать мяч. Стена пропадёт по истечении 10 секунд или в случае попадания по нему игрока с щитом после недавнего возрождения. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Спраут: 
+<b><sc_element sys_idtf="garden_mulcher">Ландшафтный дизайн</b></sc_element>,
+<b><sc_element sys_idtf="transplant">Пересадка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Спраут: 
+<b><sc_element sys_idtf="overgrowth">Сверхрост</b></sc_element>,
+<b><sc_element sys_idtf="photosynthesis">Фотосинтез</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Спраут)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Спраут: 
+Редкость - <b><sc_element sys_idtf="concept_mythic">мифическая</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_support">поддержка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//sprout.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+garden_mulcher
+=> nrel_main_idtf: [Ландшафтный дизайн](*<- lang_ru;;*);
+=> nrel_main_idtf: [garden mulcher](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ландшафтный дизайн)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Спраут съедает куст, восстанавливая себе 1500 очков здоровья.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+transplant
+=> nrel_main_idtf: [Пересадка](*<- lang_ru;;*);
+=> nrel_main_idtf: [transplant](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пересадка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Спраут мгновенно заряжает супер, убрав созданную им преграду.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+overgrowth
+=> nrel_main_idtf: [Сверхрост](*<- lang_ru;;*);
+=> nrel_main_idtf: [overgrowth](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Сверхрост)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Каждые 5 секунд зернобомба взрывается с увеличенным радиусом.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+photosynthesis
+=> nrel_main_idtf: [Фотосинтез](*<- lang_ru;;*);
+=> nrel_main_idtf: [photosynthesis](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Фотосинтез)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Когда Спраут находится в кустах, то срабатывает щит, который защищает его от атак противников (на 30%). ] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

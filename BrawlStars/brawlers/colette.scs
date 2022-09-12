@@ -1,0 +1,140 @@
+colette
+
+=> nrel_main_idtf: [Колетт](*<- lang_ru;;*);
+=> nrel_main_idtf: [colette](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[От Колетт не уйти! Она облагает сильным здоровьем противников драконовским налогом и весьма проворно двигается.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Выстрел Колетт собирает с врагов очки здоровья! Чем больше здоровья, тем больше налог. Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_normal_reload_speed">обычная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Колетт бросается вперёд и сразу же обратно, нанося урон по пути. Урон зависит от максимального запаса здоровья противника.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Колетт: 
+<b><sc_element sys_idtf="n_on">Н-на!</b></sc_element>,
+<b><sc_element sys_idtf="have_a_contact">Есть контакт</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Колетт: 
+<b><sc_element sys_idtf="rollback">Откат</b></sc_element>,
+<b><sc_element sys_idtf="mass_extortions">Массовые поборы</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Колетт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Колетт: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_damage_dealer">Разрушитель</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//colette.png"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+n_on
+=> nrel_main_idtf: [Н-на!](*<- lang_ru;;*);
+=> nrel_main_idtf: [n-on!](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Н-на!)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующий выстрел Колетт наносит на 1000 ед. урона больше.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+have_a_contact
+=> nrel_main_idtf: [Есть контакт](*<- lang_ru;;*);
+=> nrel_main_idtf: [have_a_contact](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Есть контакт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[После активации выстрелы Колетт в течение 5 с. восстанавливают её здоровье на 80% от наносимого урона.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+rollback
+=> nrel_main_idtf: [Откат](*<- lang_ru;;*);
+=> nrel_main_idtf: [rollback](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Откат)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Всех врагов, попавших под Супер Колетт, отбрасывает в самую дальнюю точку этого Супера.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+mass_extortions
+=> nrel_main_idtf: [Массовые поборы](*<- lang_ru;;*);
+=> nrel_main_idtf: [mass extortions](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Массовые поборы)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Супер Колетт даёт ей щит прочностью 20% на 5.0 с. Каждый враг, попавший под удар, увеличивает прочность щита еще на 10%.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

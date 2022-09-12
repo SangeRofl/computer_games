@@ -1,0 +1,139 @@
+frank
+=> nrel_main_idtf: [Фрэнк](*<- lang_ru;;*);
+=> nrel_main_idtf: [frank](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Взмах молота Фрэнка порождает взрывную волну. Его неимоверно мощный Супер оглушает противников.](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Ударив молотом по земле, Фрэнк посылает ударную волну, которая может поразить нескольких врагов, однако ему нужно время, чтобы атаковать. Он уязвим в течение почти половины секунды, так как он не может двигаться во время атаки. Тип атаки: <b><sc_element sys_idtf="concept_normal_attack_range">нормальная</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_very_fast_reload_speed">очень быстрая</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер атака Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Фрэнк совершает удар молотом по земле, который провоцирует большую ударную волну. Она может ломать стены, поражать неограниченное количество бойцов в радиусе действия и оглушать их на довольно долгое время, что делает их бесполезными и уязвимыми.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Фрэнк: 
+<b><sc_element sys_idtf="active_noise_canceling">Шумоподавитель</b></sc_element>,
+<b><sc_element sys_idtf="irresistible_attraction">Непреодолимое Притяжение</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Фрэнк: 
+<b><sc_element sys_idtf="power_grab">Похищение силы</b></sc_element>,
+<b><sc_element sys_idtf="sponge">Губка</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Фрэнк)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Фрэнк: 
+Редкость - <b><sc_element sys_idtf="concept_epic">эпический</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_tank">танк</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//frank.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+active_noise_canceling
+=> nrel_main_idtf: [Шумоподавитель](*<- lang_ru;;*);
+=> nrel_main_idtf: [active noise canceling](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Шумоподавитель)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фрэнк прерывает любые действующие на него негативные эффекты и ненадолго становится невосприимчивым к оглушению, замедлению и отбрасыванию назад.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+irresistible_attraction
+=> nrel_main_idtf: [Непреодолимое Притяжение](*<- lang_ru;;*);
+=> nrel_main_idtf: [irresistible attraction](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Непреодолимое Притяжение)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Следующая атака Фрэнка наносит на 100% больше урона, а также притягивает к нему противников.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+sponge
+=> nrel_main_idtf: [Губка](*<- lang_ru;;*);
+=> nrel_main_idtf: [sponge](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Губка)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фрэнк получает 1100 дополнительных очков здоровья.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+power_grab
+=> nrel_main_idtf: [Похищение силы](*<- lang_ru;;*);
+=> nrel_main_idtf: [power grab](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Похищение силы)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Фрэнк забирает силу пораженного врага, добавляя к своему урону 50% на 12 секунд.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+

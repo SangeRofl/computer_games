@@ -1,0 +1,9 @@
+mr_p
+
+ => nrel_main_idtf: [Мистер П](*<- lang_ru;;*);
+ => nrel_main_idtf: [mr p](*<- lang_en;;*);
+
+<-sc_node_not_relation;;
+
+
+

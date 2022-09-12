@@ -1,0 +1,139 @@
+gale
+=> nrel_main_idtf: [Гейл](*<- lang_ru;;*);
+=> nrel_main_idtf: [gale](*<- lang_en;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Гэйл — мастер на все руки! Он атакует врагов ветром со снегом, а его Супер отбрасывает их назад мощным порывом ветра!](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Атака Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Гэйл забрасывает врагов огромными снежками! Тип атаки: <b><sc_element sys_idtf="concept_long_attack_range">далёкая</b></sc_element>. Скорость перезарядки: <b><sc_element sys_idtf="concept_slow_reload_speed">медленная</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(Супер Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Гэйл атакует мощным потоком воздуха со снегом, который отбрасывает назад всех оказавшихся на пути врагов.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (гаджеты Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_gadget">гаджета</b></sc_element> Гейл: 
+<b><sc_element sys_idtf="spring_launcher">Пружиномёт</b></sc_element>,
+<b><sc_element sys_idtf="vortex">Вихрь</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (звёздные силы Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Существует 2 <b><sc_element sys_idtf="concept_star_power">звёздные силы</b></sc_element> Гейл: 
+<b><sc_element sys_idtf="frenzied_rush">Бешеный порыв</b></sc_element>,
+<b><sc_element sys_idtf="ice_snow">Ледяной снег</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (характеристики Гейл)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		->[Основные характеристики Гейл: 
+Редкость - <b><sc_element sys_idtf="concept_chromatic">хроматический боец</b></sc_element>,
+Класс - <b><sc_element sys_idtf="concept_hybrid">Гибрид</b></sc_element>.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Модель героя](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	 (*
+            -> nrel_image: "file://brawlerImages//gale.jpg"(*<- lang_ru;;*);;
+        *);;
+*);
+<-sc_node_not_relation;;
+//--------------------------------------------------------GADGETS------------------------------------------------------
+spring_launcher
+=> nrel_main_idtf: [Пружиномёт](*<- lang_ru;;*);
+=> nrel_main_idtf: [spring launcher](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Пружиномёт)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гэйл бросает под ноги пружину, которая отправляет в воздух как друзей, так и врагов.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+vortex
+=> nrel_main_idtf: [Вихрь](*<- lang_ru;;*);
+=> nrel_main_idtf: [vortex](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Вихрь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гэйл создаёт с помощью своей воздуходувки небольшой торнадо, который отталкивает всех противников, пытающихся пройти сквозь него.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+//--------------------------------------------------------STAR POWERS------------------------------------------------------------
+frenzied_rush
+=> nrel_main_idtf: [Бешеный порыв](*<- lang_ru;;*);
+=> nrel_main_idtf: [frenzied rush](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Бешеный порыв)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Супер теперь оглушает врагов при отталкивании к препятствиям.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+ice_snow
+=> nrel_main_idtf: [Ледяной снег](*<- lang_ru;;*);
+=> nrel_main_idtf: [ice snow](*<- lang_en;;*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Ледяной снег)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Снежки Гэйла замедляют врагов на 0,5 с.] (*<- lang_ru;;*);;
+	*);;
+*);
+<-sc_node_not_relation;;
+
+
+
