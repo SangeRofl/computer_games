@@ -1,0 +1,13 @@
+section_subject_domain_of_esport_games
+
+=> nrel_main_idtf: 
+	[Раздел. Предметная область киберспортивных игр](* <- lang_ru;;*);
+	[Section. Subject domain of esport games](* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_esport_games = [*^"file://section_subject_domain_of_esport_games.scsi"*];;
+
+section_subject_domain_of_esport_games
+-> rrel_key_sc_element: subject_domain_of_esport_games;;
