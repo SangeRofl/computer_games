@@ -1,13 +1,16 @@
 subject_domain_of_computer_games
 
 => nrel_main_idtf: 
-	[Предметная область игровых дисциплин](* <- lang_ru;; *);
+	[Предметная область компьютерных игр](* <- lang_ru;; *);
 	[Subject domain of computer games](* <- lang_en;; *);
 
 <- subject_domain;
 
--> rrel_maximum_studied_object_class: video_game;
+-> rrel_maximum_studied_object_class: concept_computer_game;
 
-=> nrel_computer_games:
-	dota_2;
-	league_of_legends;;	
+-> rrel_not_maximum_studied_object_class:
+computer_game_path_of_exile;;
+
+// => nrel_computer_games:
+// 	dota_2;
+// 	league_of_legends;;	

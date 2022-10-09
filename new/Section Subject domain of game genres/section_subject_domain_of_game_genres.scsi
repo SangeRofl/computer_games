@@ -7,7 +7,64 @@ subject_domain_of_game_genres
 <- subject_domain;
 
 -> rrel_maximum_studied_object_class: 
-	game_genre;;
+	concept_game_genre;
 
-
+->rrel_not_maximum_studied_object_class:
+concept_test;
+concept_hero;
+concept_toure;
+concept_arcade;
+concept_horror;
+concept_shooter;
+concept_sport;
+concept_simulator;
+concept_logic;
+concept_tactic;
+concept_microcontrol;
+concept_building;
+//concept_life_sim;
+concept_care;
+concept_create;
+concept_control;
+concept_tactic;
+concept_planning;
+concept_collecting;
+concept_evasion;
+concept_destruction;
+concept_competition;
+concept_technique;
+concept_education;
+concept_riddles;
+concept_communication;
+concept_role;
+concept_studying; 
+concept_open_RPG;
+concept_open_action;
+concept_global_strategy;
+concept_RPG; 
+concept_interactive_fiction; 
+concept_MMORPG; 
+concept_action; 
+concept_slasher;
+concept_battle_racing; 
+concept_strategy; 
+concept_sim_strategy; 
+concept_global_wargame; 
+concept_puzzle; 
+concept_quest; 
+concept_browser_RPG; 
+concept_adventure; 
+concept_platformer; 
+concept_stealth_action;
+concept_fighting;
+concept_racing; 
+concept_economical; 
+concept_tower_defence; 
+concept_wargame; 
+concept_cardgame;
+concept_action_RPG;
+concept_MMOFPS;
+concept_survival;
+concept_RTS;
+concept_MOBA;;
 	

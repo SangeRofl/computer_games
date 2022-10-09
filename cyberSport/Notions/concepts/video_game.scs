@@ -1,5 +1,4 @@
 video_game
-
 => nrel_main_idtf: 
 	[дисциплина](* <- lang_ru;;*);
 	[video game](* <- lang_en;; *);;
