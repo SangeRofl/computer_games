@@ -1,0 +1,45 @@
+concept_volkswagen_scirocco_r
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Volkswagen Scirocco R](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1984; 
+=> nrel_release_date: 2009;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 265;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 6.0; 
+=> nrel_drive_type: front;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1419;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 350;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Volkswagen Scirocco R)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Переднеприводный Volkswagen Scirocco R оснащен двухлитровым турбированным двигателем от «пятого» Golf GTI, мощность которого за счет ряда усовершенствований, включая увеличение давления наддува и установку нового интеркулера, возросла с 200 до 265 л. с. Мотор будет агрегироваться либо с шестиступенчатой механической коробкой передач, либо с преселективной КПП с двумя сцеплениями (DSG).] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/volkswagen-scirocco.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

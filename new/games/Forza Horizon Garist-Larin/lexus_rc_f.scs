@@ -1,0 +1,45 @@
+concept_lexus_rc_f
+<-sc_node_not_relation;
+
+<-concept_car;
+
+=> nrel_main_idtf:[Lexus RC F](*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4968; 
+=> nrel_release_date: 2015;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 477;  
+=> nrel_maximum_speed: 270; 
+=> nrel_acceleration_to_100_km_h: 4.5; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 8;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1765;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 530;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Lexus RC F)] (* <- lang_ru;; *);;
+	<=  nrel_sc_text_translation: ... 
+	(*
+		->[Lexus RC F — «заряженное» спортивное купе, оборудованное самым мощным в истории Lexus двигателем V8 — атмосферным агрегатом объемом пять литров с отдачей 477 «сил». Внешне от базового купе RC исполнение с литерой F в названии отличается аэродинамическим обвесом с массивным антикрылом. Автомобиль имеет специально разработанные тормозные механизмы и систему подвески, более широкие колеса и шины, а также уникальные элементы дизайна, одновременно служащие и для функциональности, как например, четыре патрубка выхлопной системы.  На рынке РФ купе было предложено в двух комплектациях: Luxury и Carbon. В первом из перечисленных исполнений RC F оборудован люком с электроприводом и декоративными вставками в интерьере из стекловолокна. Версия Carbon предусматривает наличие капота, крыши и заднего спойлера, изготовленных из углепластика.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/lexus_rc_f.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);; 
+*);; 

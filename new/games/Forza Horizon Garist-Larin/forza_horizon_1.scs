@@ -1,0 +1,74 @@
+concept_computer_game_forza_horizon_1
+=> nrel_main_idtf: [Forza Horizon 1] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Forza Horizon 1] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_racing;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_singleplatform_game;
+
+=> nrel_developer: company_playground_games; company_turn_10_studios;
+=> nrel_publisher: company_microsoft_studios;
+
+=> nrel_platform: xbox_360; 
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_engine: forza_tech;
+
+=> nrel_publication_date: date_26_10_2012;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Forza Horizon 1)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [видеоигра в жанре автосимулятор с открытым миром, разработанная компанией Playground Games 
+совместно c Turn 10 Studios исключительно для игровой приставки Xbox 360. 
+Это часть считается больше спин-оффом, чем полноценным продолжением франшизы.
+Forza Horizon представляет собой аркадную гоночную игру с открытым миром (в котором реализована динамическая смена времени суток), выполненную в трёхмерной графике.
+] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+                -> concept_singleplayer_game;;
+                -> concept_multiplayer_game;;
+                -> concept_three_dimensional_game;;
+                -> concept_singleplatform_game;;
+                -> company_playground_games;;
+                -> company_turn_10_studios;;
+                -> company_microsoft_studios;;
+                -> concept_game_series_forza_horizon;;
+        *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+        <- concept_plot;;
+        => nrel_main_idtf: [Сюжет] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [По сюжету новичок приезжает на фестиваль Horizon в Колорадо, где собирается участвовать в гонках 
+и стараться получить титул лучшего гонщика, коим на момент его прибытия является Дариус Флинт. Он, как и другие звёзды гонок фестиваля, невзлюбил новичка и
+не посчитал его достойным соперником, несмотря на уверенные достижения новичка в первых же заездах. Новичок решает пробиться в лидеры, побеждая в заездах и, тем самым,
+зарабатывая репутацию на фестивале.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Обложка игры] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/forza-horizon.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+
+<- sc_node_not_relation;;
