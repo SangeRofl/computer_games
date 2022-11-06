@@ -1,22 +1,4 @@
-sc_node_not_relation->concept_double_barrel_shotgun;;
 
-sc_node_not_relation->percentage_increase_in_characteristics;;
-
-sc_node_not_relation->number;;
-
-sc_node_not_relation->picture;;
-
-sc_node_not_relation->metal_parts;;
-
-sc_node_not_relation->weight_gainer;; 
-
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->fiery;;
 
 fiery=>nrel_main_idtf:
 		[зажигательные]
@@ -24,7 +6,7 @@ fiery=>nrel_main_idtf:
 	   [fiery]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->ammo_for_shotgun;;
+
 
 ammo_for_shotgun=>nrel_main_idtf:
 		[патроны для дробовика]
@@ -32,9 +14,7 @@ ammo_for_shotgun=>nrel_main_idtf:
 	   [ammo for shotgun]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->reload;;
 
-sc_node_not_relation->bandolier;;
 
 bandolier=>nrel_main_idtf:
 		[патронташ]
@@ -42,15 +22,7 @@ bandolier=>nrel_main_idtf:
 	   [bandolier]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->new_barrel;;
 
-sc_node_not_relation->stability;;
-
-sc_node_not_relation->reload_speed;;
-
-sc_node_not_relation->damage;;
-
-sc_node_not_relation->recoil;;
 
 recoil=>nrel_main_idtf:
 		[отдача]
@@ -59,11 +31,7 @@ recoil=>nrel_main_idtf:
 	   (*<-lang_en;;*);; 
 
 
-sc_node_norole_relation->nrel_ammunition_type;;
 
-sc_node_norole_relation->nrel_upgrade;;
-
-sc_node_norole_relation->nrel_reduce;;
 
 nrel_reduce=>nrel_main_idtf:
 	    [уменьшение*]
@@ -71,13 +39,6 @@ nrel_reduce=>nrel_main_idtf:
 	   [reduce*]
 	   (*<-lang_en;;*);; 
 
-sc_node_norole_relation->nrel_change_in_appearance;; 
-
-sc_node_norole_relation->nrel_increase;;
- 
-sc_node_norole_relation->nrel_illustration_in_picture;;
-
-sc_node_norole_relation->nrel_upgrade_cost;;
 
 
 

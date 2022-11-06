@@ -1,14 +1,10 @@
-sc_node_not_relation->concept_sniper_rifle;;
-
-sc_node_not_relation->stock;;
-
 stock=>nrel_main_idtf:
 	   [приклад]
 	   (*<-lang_ru;;*);
 	   [stock]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->percentage_increase_in_characteristics;;
+
 
 percentage_increase_in_characteristics=>nrel_main_idtf:
 	   [процент увелечения в характеристики]
@@ -16,7 +12,6 @@ percentage_increase_in_characteristics=>nrel_main_idtf:
 	   [percentage increase in characteristics]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->number;;
 
 number=>nrel_main_idtf:
 	   [число]
@@ -24,7 +19,6 @@ number=>nrel_main_idtf:
 	   [number]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->long_barrel;;
 
 long_barrel=>nrel_main_idtf:
 	   [длинный ствол]
@@ -32,7 +26,7 @@ long_barrel=>nrel_main_idtf:
 	   [long barrel]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->scope;;
+
 
 scope=>nrel_main_idtf:
 	   [прицел]
@@ -40,7 +34,6 @@ scope=>nrel_main_idtf:
 	   [scope]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->6x_scope;;
 
 6x_scope=>nrel_main_idtf:
 	   [6 кратный прицел]
@@ -50,7 +43,7 @@ sc_node_not_relation->6x_scope;;
 
 sc_node_not_relation->barrel;;
 
-sc_node_not_relation->capacity;;
+
 
 capacity=>nrel_main_idtf:
        [объем магазина]
@@ -58,7 +51,7 @@ capacity=>nrel_main_idtf:
 	   [capacity]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->clip;;
+
 
 clip=>nrel_main_idtf:
        [магазин]
@@ -66,7 +59,7 @@ clip=>nrel_main_idtf:
 	   [clip]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->larger_clip;; 
+
 
 larger_clip=>nrel_main_idtf:
         [увеличенный магазин]
@@ -75,9 +68,7 @@ larger_clip=>nrel_main_idtf:
 	   (*<-lang_en;;*);; 
 
 
-sc_node_not_relation->picture;;
 
-sc_node_not_relation->metal_parts;;
 
 metal_parts=>nrel_main_idtf:
         [металлические части]
@@ -85,7 +76,7 @@ metal_parts=>nrel_main_idtf:
 	   [metal parts]
 	   (*<-lang_en;;*);;  
 
-sc_node_not_relation->weight_gainer;;
+
 
 weight_gainer=>nrel_main_idtf:
        [увеличитель веса]
@@ -93,7 +84,7 @@ weight_gainer=>nrel_main_idtf:
 	   [weight gainer]
 	   (*<-lang_en;;*);;  
 
-sc_node_not_relation->ammunition;;
+
 
 ammunition=>nrel_main_idtf:
            [аммуниция]
@@ -101,7 +92,7 @@ ammunition=>nrel_main_idtf:
 	   [ammunition]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->collected;;
+
 
 collected=>nrel_main_idtf:
            [собираемые]
@@ -109,7 +100,7 @@ collected=>nrel_main_idtf:
 	   [collected]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->ordinary;;
+
 
 ordinary=>nrel_main_idtf:
 	   [обычные]
@@ -117,7 +108,7 @@ ordinary=>nrel_main_idtf:
 	   [ordinary]
 	   (*<-lang_en;;*);; 
 
-sc_node_not_relation->ammo_for_sniper_rifle;;
+
 
 ammo_for_sniper_rifle=>nrel_main_idtf:
 	   [патроны для снайперской винтовки]
@@ -125,7 +116,6 @@ ammo_for_sniper_rifle=>nrel_main_idtf:
 	   [ammo for sniper rifle]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->stability;;
 
 stability=>nrel_main_idtf:
 	   [стабильность]
@@ -133,7 +123,7 @@ stability=>nrel_main_idtf:
 	   [stability]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->damage;;
+
 
 damage=>nrel_main_idtf:
 	   [урон]
@@ -141,7 +131,7 @@ damage=>nrel_main_idtf:
 	   [damage]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->reload_speed;;
+
 
 reload_speed=>nrel_main_idtf:
 	   [скорость перезарядки]
@@ -151,7 +141,7 @@ reload_speed=>nrel_main_idtf:
 
 
 
-sc_node_norole_relation->nrel_upgrade;;
+
 
 nrel_upgrade=>nrel_main_idtf:
 	   [улучшение*]
@@ -159,7 +149,7 @@ nrel_upgrade=>nrel_main_idtf:
 	   [upgrade*]
 	   (*<-lang_en;;*);;
 
-sc_node_norole_relation->nrel_increase;;
+
 
 nrel_increase=>nrel_main_idtf:
 		[увелечение*]
@@ -167,7 +157,7 @@ nrel_increase=>nrel_main_idtf:
 	   [increase*]
 	   (*<-lang_en;;*);;
 
-sc_node_norole_relation->nrel_change_in_appearance;;
+
 
 nrel_change_in_appearance=>nrel_main_idtf:
 		[изменения во внешности*]
@@ -175,7 +165,7 @@ nrel_change_in_appearance=>nrel_main_idtf:
 	   [change in appearance*]
 	   (*<-lang_en;;*);; 
 
-sc_node_norole_relation->nrel_add;;
+
 
 nrel_add=>nrel_main_idtf:
 		[добавить*]
@@ -183,9 +173,7 @@ nrel_add=>nrel_main_idtf:
 	   [add*]
 	   (*<-lang_en;;*);;
 
-sc_node_norole_relation->nrel_illustration_in_picture;;
 
-sc_node_norole_relation->nrel_upgrade_cost;;
 
 nrel_upgrade_cost=>nrel_main_idtf:
 	[стоимость улучшения*]
