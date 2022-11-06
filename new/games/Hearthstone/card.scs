@@ -39,7 +39,7 @@ concept_card
 //Утверждение 1						
 <- rrel_key_sc_element: ...(*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв[1].(Типы карт)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв1.(Типы карт)] (* <- lang_ru;; *);;
 	<= nrel_using_constants: ...(*
 		-> concept_card_minion;;
 		-> concept_card_spell;;
