@@ -34,7 +34,7 @@ computer_game_tomb_raider_2_the_dagger_of_xian
                 -> [вторая игра в серии Tomb Raider, разработанная британской студией Core Design и 
 				выпущенная в 1997 году Eidos Interactive для платформ Windows и PlayStation. В 1998 году игра была портирована на Mac OS, 
 				в 1999 году для Windows вышло переиздание Tomb Raider II: Golden Mask, содержащее улучшения и дополнительные уровни. 
-				К 2009 году было продано свыше 6,8 млн копий игры по всему миру[3], в Великобритании Tomb Raider II стал второй самой продаваемой игрой для PlayStation[4].
+				К 2009 году было продано свыше 6,8 млн копий игры по всему миру, в Великобритании Tomb Raider II стал второй самой продаваемой игрой для PlayStation.
                ] (* <- lang_ru;; *);;
         *);;
         <= nrel_using_constants: ...

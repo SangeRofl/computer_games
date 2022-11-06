@@ -12,4 +12,4 @@ nrel_awards
 => nrel_main_idtf: [Награды] (* <-lang_ru;; *);
 => nrel_main_idtf:[Awards] (* <-lang_en;; *);
 
-<- sc_node_not_relation;;
+<- sc_node_norole_relation;;
