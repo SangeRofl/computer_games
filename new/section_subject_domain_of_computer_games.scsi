@@ -9,6 +9,7 @@ subject_domain_of_computer_games
 -> rrel_maximum_studied_object_class: concept_computer_game;
 
 -> rrel_not_maximum_studied_object_class:
+computer_game_battlefield3;
 computer_game_path_of_exile;;
 
 // => nrel_computer_games:

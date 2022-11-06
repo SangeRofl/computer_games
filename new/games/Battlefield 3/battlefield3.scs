@@ -1,0 +1,60 @@
+computer_game_battlefield3
+=> nrel_main_idtf:
+    [Battlefield 3]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [Battlefield 3]
+    (* <- lang_ru;; *);
+
+<-concept_computer_game;
+<-concept_shooter;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: concept_playstation_3;
+=> nrel_platform: concept_xbox_360;
+=> nrel_publisher: Electronic_Arts;
+=> nrel_publisher: Sega;
+=> nrel_developer: EA_Digital_Illusions_CE;
+=> nrel_publication_date: date_2011;
+
+=> nrel_game_engine: Frostbite_2_._0;
+=> nrel_plot: [Сюжет завязан на Американском морпехе, Генри Блэкбэрне, который на допросе в ЦРУ рассказывает агентам о человеке по имени Соломон и угрозе, которую он представляет для США. Ему обещают помочь, но Блэкбэрн должен сказать, откуда он знает о Соломоне.Дальше повествование ведется от лица морпеха в котором он расказывает о собыитях связанных с ним и Соломоном];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Battlefield3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Компьютерная однопользовательская игра с мультиплеером в жанре шутер, разработанная компанией EA Digital Illusions CE и выпущенная компаниями Electronic Arts и Sega
+         для Windows,Xbox 360 и PlayStation 3 в 2011 году.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+		concept_computer_game;
+		concept_multiplayer;
+        concept_microsoft_playstation_3;
+		concept_microsoft_xbox_360;
+		concept_microsoft_windows;
+        nrel_publisher: company_grinding_gear_games;
+        date_2011
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Выбор класса в Battlefield3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В мультиплеере игрок может выбрать для персонажа один из четырех классов с различным вооружением — 
+        Штурмовик, Инженер, Поддержка, Разведка.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_computer_game;
+        player;
+        nrel_character;
+        concept_character_class
+	};;
+*);
+
+
+<-sc_node_not_relation;;

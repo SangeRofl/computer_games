@@ -1,0 +1,15 @@
+section_subject_domain_of_types_of_quests 
+
+=> nrel_main_idtf: 
+	[Раздел. Предметная область типов квестов](* <- lang_ru;; *);
+	[Section. Subject domain of types of quests](* <- lang_en;; *);
+
+
+<- non_atomic_section;
+<- ui_start_sc_element;;
+
+
+subject_domain_of_types_of_quests= [*^"file://subject_domain_of_types_of_quests.scsi"*];;
+
+section_subject_domain_of_quests
+-> rrel_key_sc_element: subject_domain_of_types_of_quests;;
