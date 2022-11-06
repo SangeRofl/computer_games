@@ -1,18 +1,3 @@
-sc_node_not_relation->concept_9mm_pistol;;
-
-sc_node_not_relation->action_spring;;
-
-sc_node_not_relation->percentage_increase_in_characteristics;;
-
-sc_node_not_relation->percentage_decrease_in_characteristics;;
-
-sc_node_not_relation->number;;
-
-sc_node_not_relation->grip;;
-
-sc_node_not_relation->sway;;
-
-sc_node_not_relation->blue_trigger;; 
 
 blue_trigger=>nrel_main_idtf:
 		[голубой курок]
@@ -20,50 +5,11 @@ blue_trigger=>nrel_main_idtf:
 	   [blue trigger]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->black_grip;;
-
-sc_node_not_relation->compensator;; 
-
-sc_node_not_relation->capacity;;
-
-sc_node_not_relation->larger_clip;; 
-
-sc_node_not_relation->picture;;
-
-sc_node_not_relation->metal_parts;; 
-
-sc_node_not_relation->what_was_added;;
-
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->ammo_for_pistol;;
-
-sc_node_not_relation->rate_of_fire;;
-
-sc_node_not_relation->clip;;
 
 
 
 
-sc_node_norole_relation->nrel_upgrade;;
 
-sc_node_norole_relation->nrel_rate_of_fire;;
-
-sc_node_norole_relation->nrel_reduce;;
-
-sc_node_norole_relation->nrel_increase;;
-
-sc_node_norole_relation->nrel_change_in_appearance;; 
-
-sc_node_norole_relation->nrel_accuracy;;
-
-sc_node_norole_relation->nrel_illustration_in_picture;;
-
-sc_node_norole_relation->nrel_upgrade_cost;; 
 
 
 concept_9mm_pistol

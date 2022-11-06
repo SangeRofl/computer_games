@@ -1,4 +1,3 @@
-sc_node_not_relation->concept_hand_to_hand;;
 
 
 concept_hand_to_hand=>nrel_main_idtf:
@@ -7,7 +6,7 @@ concept_hand_to_hand=>nrel_main_idtf:
 	   [hand to hand]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->knife;;
+
 
 knife=>nrel_main_idtf:
 		[нож]
@@ -15,7 +14,6 @@ knife=>nrel_main_idtf:
 	   [knife]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->fists;;
 
 fists=>nrel_main_idtf:
 		[кулаки]
@@ -23,20 +21,11 @@ fists=>nrel_main_idtf:
 	   [fists]
 	   (*<-lang_en;;*);;
 
-sc_node_norole_relation->nrel_use_ellie;;
 
 nrel_use_ellie=>nrel_main_idtf:
 		[использует Элли*]
 	   (*<-lang_ru;;*);
 	   [use Ellie*]
-	   (*<-lang_en;;*);;
-
-sc_node_norole_relation->nrel_use_ebbie;;
-
-nrel_use_ebbie=>nrel_main_idtf:
-		[использует Эбби*]
-	   (*<-lang_ru;;*);
-	   [use Ebbie*]
 	   (*<-lang_en;;*);;
 
 

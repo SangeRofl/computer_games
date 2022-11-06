@@ -1,78 +1,213 @@
-sc_node_not_relation->concept_subject_domain_of_the_game_the_The_last_of_us_2;;
+sc_node_not_relation->concept_subject_domain_of_the_game_the_The_last_of_us_2;;sc_node_not_relation->weapon_project;;weapon_project=>nrel_main_idtf:
 
-sc_node_not_relation->weapon_project;;
-
-weapon_project=>nrel_main_idtf:
 		[оружейный проект]
+
 	   (*<-lang_ru;;*);
+
 	   [weapon project]
-	   (*<-lang_en;;*);;
 
+	   (*<-lang_en;;*);;sc_node_not_relation->infected_project;;infected_project=>nrel_main_idtf:
 
-
-sc_node_not_relation->infected_project;;
-
-infected_project=>nrel_main_idtf:
 		[проект инфицированные]
+
 	   (*<-lang_ru;;*);
+
 	   [infected project]
-	   (*<-lang_en;;*);;
 
-concept_subject_domain_of_the_game_the_The_last_of_us_2
+	   (*<-lang_en;;*);;concept_subject_domain_of_the_game_the_The_last_of_us_2
+
   
+
 =>nrel_main_idtf:
+
 	   [Предметная область игры Одни из нас часть 2]
+
 	   (*<-lang_ru;;*);
+
 	   [Subject domain of the game the The last of us 2]
+
 	   (*<-lang_en;;*);
+
 	   
+
 	   
-->weapon_project(*
 
-<-concept_sniper_rifle;;
-
-<-concept_9mm_pistol;;
-
-<-concept_revolver;;
-
-<-concept_bow;;
-
-<-concept_shotgun;;
-
-<-concept_mp5_silenced;;
-
-<-concept_military_pistol;;
-
-<-concept_semi_auto_rifle;;
-
-<-concept_crossbow;;
-
-<-concept_double_barrel_shotgun;;
-
-<-concept_hunter_pistol;;
-
-<-concept_flamethrower;;
-
-<-concept_hand_to_hand;;
-
-*);
-
+->weapon_project(*<-concept_sniper_rifle;;<-concept_9mm_pistol;;<-concept_revolver;;<-concept_bow;;<-concept_shotgun;;<-concept_mp5_silenced;;<-concept_military_pistol;;<-concept_semi_auto_rifle;;<-concept_crossbow;;<-concept_double_barrel_shotgun;;<-concept_hunter_pistol;;<-concept_flamethrower;;<-concept_hand_to_hand;;*);
 
 ->infected_project(*
 
+<-concept_runner;;<-concept_stalker;;<-concept_clicker;;<-concept_bloater;;<-concept_shambler;;<-concept_rat_king;;<-concept_spore;;*);;
 
-<-concept_runner;;
 
-<-concept_stalker;;
+sc_node_not_relation->concept_military_pistol;;
 
-<-concept_clicker;;
+sc_node_not_relation->action_spring;;
 
-<-concept_bloater;;
+sc_node_not_relation->percentage_increase_in_characteristics;;
 
-<-concept_shambler;;
+sc_node_not_relation->percentage_decrease_in_characteristics;;
 
-<-concept_rat_king;;
+sc_node_not_relation->number;;
 
-<-concept_spore;;
+sc_node_not_relation->grip;;
 
-*);;
+sc_node_not_relation->sway;;
+
+sc_node_not_relation->new_trigger;; 
+
+sc_node_not_relation->black_grip;;
+
+sc_node_not_relation->compensator;; 
+
+sc_node_not_relation->capacity;;
+
+sc_node_not_relation->larger_clip;; 
+
+sc_node_not_relation->rate_of_fire;;
+
+sc_node_not_relation->picture;;
+
+sc_node_not_relation->what_was_added;;
+
+sc_node_not_relation->ammunition;;
+
+sc_node_not_relation->collected;;
+
+sc_node_not_relation->ordinary;;
+
+sc_node_not_relation->ammo_for_pistol;;
+
+sc_node_not_relation->recoil;;
+
+sc_node_norole_relation->nrel_upgrade;;
+
+sc_node_norole_relation->nrel_increase;;
+
+sc_node_norole_relation->nrel_reduce;;
+
+
+sc_node_norole_relation->nrel_illustration_in_picture;;
+
+
+sc_node_not_relation->concept_mp5_silenced;;
+
+sc_node_not_relation->no_upgrade;;
+sc_node_not_relation->ammo_for_mp5;;
+
+sc_node_norole_relation->nrel_ammunition_type;;
+ 
+
+sc_node_not_relation->concept_9mm_pistol
+;;
+
+
+sc_node_not_relation->blue_trigger
+;; 
+
+
+sc_node_not_relation->clip;;
+sc_node_norole_relation->nrel_rate_of_fire;;sc_node_norole_relation->nrel_accuracy;;
+
+sc_node_not_relation->concept_revolver;;
+
+sc_node_not_relation->hammer_spring;;
+
+
+sc_node_not_relation->scope;;
+
+sc_node_not_relation->speed_loader;; 
+
+sc_node_not_relation->long_barrel;;
+  
+
+sc_node_not_relation->ammo_for_revolver;;
+
+sc_node_not_relation->stability;;
+
+sc_node_not_relation->accuracy;;
+
+sc_node_not_relation->damage;;
+
+sc_node_not_relation->reload_speed;;
+sc_node_norole_relation->nrel_add;;
+sc_node_not_relation->hand_to_hand;;
+
+sc_node_not_relation->weapon;;
+
+sc_node_not_relation->further;;
+
+sc_node_not_relation->near;;
+
+sc_node_norole_relation->nrel_than_to_eliminate;;
+
+sc_node_norole_relation->nrel_stage;;
+
+
+sc_node_not_relation->moon_clip;;
+
+sc_node_not_relation->concept_runner;;
+
+sc_node_not_relation->first;;
+
+sc_node_not_relation->concept_semi_auto_rifle;;
+
+
+sc_node_not_relation->trigger;; 
+
+
+sc_node_not_relation->ammo_for_rifle;;
+sc_node_not_relation->4x_scope;;
+sc_node_not_relation->firing_mode_switch;;
+
+sc_node_norole_relation->nrel_upgrade_cost;;
+
+sc_node_norole_relation->nrel_stability;; 
+
+sc_node_not_relation->concept_shotgun;;
+
+sc_node_not_relation->spring;;
+sc_node_not_relation->magazine_tube;;
+
+sc_node_not_relation->ammo_for_shotgun;;
+
+
+sc_node_not_relation->new_gate;;
+
+
+
+sc_node_not_relation->concept_flamethrower;;
+
+sc_node_not_relation->ammo_for_flamethrower;;
+sc_node_not_relation->concept_hand_to_hand;;
+sc_node_not_relation->knife;;
+sc_node_not_relation->fists;;
+sc_node_norole_relation->nrel_use_ellie;;
+
+
+ sc_node_not_relation->concept_hunter_pistol;;
+
+
+sc_node_not_relation->metal_parts;;
+sc_node_not_relation->ammo_for_hunter_pistol;;
+
+sc_node_not_relation->reload;;
+
+sc_node_not_relation->new_barrel;;
+sc_node_not_relation->barrel;;
+sc_node_not_relation->new_grip;;
+sc_node_not_relation->concept_sniper_rifle;;
+sc_node_not_relation->stock;;
+sc_node_not_relation->6x_scope;;
+sc_node_not_relation->weight_gainer;;
+sc_node_not_relation->ammo_for_sniper_rifle;;
+sc_node_norole_relation->nrel_change_in_appearance;;
+sc_node_not_relation->concept_bow;;
+sc_node_not_relation->bowstring;;
+sc_node_not_relation->improved_bowstring;;
+sc_node_not_relation->improved_scope;;
+sc_node_not_relation->crafting;;
+sc_node_not_relation->exploding;;
+sc_node_not_relation->arrows_for_bow;;
+sc_node_not_relation->nocking_speed;;
+sc_node_not_relation->concept_double_barrel_shotgun;; 
+sc_node_not_relation->fiery;;sc_node_not_relation->bandolier;;

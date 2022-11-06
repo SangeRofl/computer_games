@@ -7,7 +7,7 @@ nrel_damage
 <|- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_firearms;
-nrel_second_domain: concept_mutant;
+=>nrel_second_domain: concept_mutant;
 => nrel_main_idtf:
 [Урон*] (*<-lang_ru;;*);
 [Damage*] (*<-lang_en;;*);

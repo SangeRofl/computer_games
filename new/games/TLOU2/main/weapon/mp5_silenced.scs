@@ -1,14 +1,4 @@
-sc_node_not_relation->concept_mp5_silenced;;
 
-sc_node_not_relation->no_upgrade;;
-
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->ammo_for_mp5;;
 
 ammo_for_mp5=>nrel_main_idtf:
 		[патроны для мп5]
@@ -18,13 +8,6 @@ ammo_for_mp5=>nrel_main_idtf:
 
 
 
-
-sc_node_norole_relation->nrel_ammunition_type;;
-
-sc_node_norole_relation->nrel_upgrade;;
-
-sc_node_norole_relation->nrel_illustration_in_picture;;
- 
 
 
 concept_mp5_silenced

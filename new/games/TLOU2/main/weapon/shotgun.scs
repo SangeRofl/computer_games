@@ -1,6 +1,4 @@
-sc_node_not_relation->concept_shotgun;;
 
-sc_node_not_relation->spring;;
 
 spring=>nrel_main_idtf:
 	[пружина]
@@ -8,15 +6,6 @@ spring=>nrel_main_idtf:
 	   [spring]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->percentage_increase_in_characteristics;;
-
-sc_node_not_relation->number;;
-
-sc_node_not_relation->grip;;
-
-sc_node_not_relation->black_grip;;
-
-sc_node_not_relation->magazine_tube;;
 
 magazine_tube=>nrel_main_idtf:
 		[магазинная трубка]
@@ -32,25 +21,7 @@ extented_magazine_tube=>nrel_main_idtf:
 	   [extented magazine tube]
 	   (*<-lang_en;;*);;
   
-sc_node_not_relation->picture;;
 
-sc_node_not_relation->metal_parts;; 
-
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->ammo_for_shotgun;;
-
-sc_node_not_relation->recoil;;
-
-sc_node_not_relation->rate_of_fire;;
-
-sc_node_not_relation->stability;;
-
-sc_node_not_relation->new_gate;;
 
 new_gate=>nrel_main_idtf:
 		[новый затвор]
@@ -60,21 +31,6 @@ new_gate=>nrel_main_idtf:
 
 
 
-sc_node_norole_relation->nrel_ammunition_type;;
-
-sc_node_norole_relation->nrel_upgrade;;
-
-sc_node_norole_relation->nrel_reduce;;
-
-sc_node_norole_relation->nrel_increase;;
-
-sc_node_norole_relation->nrel_stability;;
-
-sc_node_norole_relation->nrel_change_in_appearance;; 
-
-sc_node_norole_relation->nrel_illustration_in_picture;;
-
-sc_node_norole_relation->nrel_upgrade_cost;; 
 
 
 concept_shotgun

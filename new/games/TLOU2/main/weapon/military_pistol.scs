@@ -1,16 +1,9 @@
-sc_node_not_relation->concept_military_pistol;;
-
-sc_node_not_relation->action_spring;;
-
 action_spring=>nrel_main_idtf:
 		[боевая пружина]
 	   (*<-lang_ru;;*);
 	   [action spring]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->percentage_increase_in_characteristics;;
-
-sc_node_not_relation->percentage_decrease_in_characteristics;;
 
 percentage_decrease_in_characteristics=>nrel_main_idtf:
 		[процент уменьшения в характеристики]
@@ -18,23 +11,13 @@ percentage_decrease_in_characteristics=>nrel_main_idtf:
 	   [percentage decrease in characteristics]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->number;;
-
-sc_node_not_relation->grip;;
-
-sc_node_not_relation->sway;;
-
-sc_node_not_relation->new_trigger;; 
-
 new_trigger=>nrel_main_idtf:
 		[новый курок]
 	   (*<-lang_ru;;*);
 	   [new trigger]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->black_grip;;
 
-sc_node_not_relation->compensator;; 
 
 compensator=>nrel_main_idtf:
 	   [компенсатор]
@@ -42,15 +25,6 @@ compensator=>nrel_main_idtf:
 	   [compensator]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->capacity;;
-
-sc_node_not_relation->larger_clip;; 
-
-sc_node_not_relation->picture;;
-
-sc_node_not_relation->metal_parts;; 
-
-sc_node_not_relation->what_was_added;;
 
 what_was_added=>nrel_main_idtf:
 		[что было добавлено]
@@ -58,13 +32,6 @@ what_was_added=>nrel_main_idtf:
 	   [what was added]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->ammo_for_pistol;;
 
 ammo_for_pistol=>nrel_main_idtf:
 		[патроны для пистолета]
@@ -72,7 +39,7 @@ ammo_for_pistol=>nrel_main_idtf:
 	   [ammo for pistol]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->rate_of_fire;;
+
 
 rate_of_fire=>nrel_main_idtf:
 		[скорострельность]
@@ -80,25 +47,7 @@ rate_of_fire=>nrel_main_idtf:
 	   [rate of fire]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->recoil;;
 
-sc_node_not_relation->stability;;
-
-sc_node_not_relation->capacity;;
-
-
-
-sc_node_norole_relation->nrel_upgrade;;
-
-sc_node_norole_relation->nrel_increase;;
-
-sc_node_norole_relation->nrel_reduce;;
-
-sc_node_norole_relation->nrel_change_in_appearance;; 
-
-sc_node_norole_relation->nrel_illustration_in_picture;;
-
-sc_node_norole_relation->nrel_upgrade_cost;; 
 
 
 concept_military_pistol

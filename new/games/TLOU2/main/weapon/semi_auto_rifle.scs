@@ -1,14 +1,4 @@
-sc_node_not_relation->concept_semi_auto_rifle;;
 
-sc_node_not_relation->action_spring;;
-
-sc_node_not_relation->percentage_increase_in_characteristics;;
-
-sc_node_not_relation->number;;
-
-sc_node_not_relation->grip;;
-
-sc_node_not_relation->trigger;; 
 
 trigger=>nrel_main_idtf:
 	[курок]
@@ -16,11 +6,7 @@ trigger=>nrel_main_idtf:
 	   [trigger]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->black_grip;;
 
-sc_node_not_relation->capacity;;
-
-sc_node_not_relation->ammo_for_rifle;;
 
 ammo_for_rifle=>nrel_main_idtf:
 		[патроны для винтовки]
@@ -28,31 +14,6 @@ ammo_for_rifle=>nrel_main_idtf:
 	   [ammo for rifle]
 	   (*<-lang_en;;*);;
 
-sc_node_not_relation->scope;;
-
-sc_node_not_relation->4x_scope;;
-
-sc_node_not_relation->larger_clip;; 
-
-sc_node_not_relation->picture;;
-
-sc_node_not_relation->metal_parts;; 
-
-sc_node_not_relation->what_was_added;;
-
-sc_node_not_relation->ammunition;;
-
-sc_node_not_relation->collected;;
-
-sc_node_not_relation->ordinary;;
-
-sc_node_not_relation->capacity;;
-
-sc_node_not_relation->stability;;
-
-sc_node_not_relation->rate_of_fire;;
-
-sc_node_not_relation->firing_mode_switch;;
 
 firing_mode_switch=>nrel_main_idtf:
 		[изменение режима стрельбы]
@@ -62,17 +23,7 @@ firing_mode_switch=>nrel_main_idtf:
 
 
 
-sc_node_norole_relation->nrel_upgrade;;
 
-sc_node_norole_relation->nrel_change_in_appearance;; 
-
-sc_node_norole_relation->nrel_increase;;
-
-sc_node_norole_relation->nrel_illustration_in_picture;;
-
-sc_node_norole_relation->nrel_upgrade_cost;;
-
-sc_node_norole_relation->nrel_stability;; 
 
 
 concept_semi_auto_rifle
