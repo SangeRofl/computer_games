@@ -7,7 +7,7 @@ nrel_class
 <- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_brawler;
-nrel_second_domain: concept_brawler_class;
+=>nrel_second_domain: concept_brawler_class;
 => nrel_main_idtf:
 [Отношение к классу*] (*<-lang_ru;;*);
 [Belonging to a class*] (*<-lang_en;;*);
@@ -33,7 +33,7 @@ nrel_attack
 <|- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_brawler;
-nrel_second_domain: concept_main_attack;
+=>nrel_second_domain: concept_main_attack;
 => nrel_main_idtf:
 [Атака*] (*<-lang_ru;;*);
 [Attack*] (*<-lang_en;;*);
@@ -59,7 +59,7 @@ nrel_rarity
 <- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_brawler;
-nrel_second_domain: concept_brawler_rarity;
+=>nrel_second_domain: concept_brawler_rarity;
 => nrel_main_idtf:
 [Редкость*] (*<-lang_ru;;*);
 [Rarity*] (*<-lang_en;;*);
@@ -83,7 +83,7 @@ nrel_level_up
 <|- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_brawl_pass;
-nrel_second_domain: concept_brawl_pass_token;
+=>nrel_second_domain: concept_brawl_pass_token;
 => nrel_main_idtf:
 [Повышение уровня*] (*<-lang_ru;;*);
 [Rarity*] (*<-lang_en;;*);
@@ -109,8 +109,8 @@ nrel_reward
 <|- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_brawl_pass;
-nrel_second_domain: concept_brawl_pass_token;
-nrel_third_domain: concept_quest;
+=>nrel_second_domain: concept_brawl_pass_token;
+=>nrel_third_domain: concept_quest;
 => nrel_main_idtf:
 [Награда*] (*<-lang_ru;;*);
 [Reward*] (*<-lang_en;;*);
@@ -162,7 +162,7 @@ nrel_temporary_event
 <- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_game_events;
-nrel_second_domain: concept_brawler;
+=>nrel_second_domain: concept_brawler;
 => nrel_main_idtf:
 [Временный режим*] (*<-lang_ru;;*);
 [Temporary event*] (*<-lang_en;;*);
@@ -188,7 +188,7 @@ nrel_permanent_event
 <- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_game_events;
-nrel_second_domain: concept_brawler;
+=>nrel_second_domain: concept_brawler;
 
 => nrel_main_idtf:
 [Постоянный режим*] (*<-lang_ru;;*);
@@ -241,7 +241,7 @@ nrel_damage
 <|- transitive_relation;
 <- oriented_relation;
 =>nrel_first_domain: concept_firearms;
-nrel_second_domain: concept_mutant;
+=>nrel_second_domain: concept_mutant;
 => nrel_main_idtf:
 [Урон*] (*<-lang_ru;;*);
 [Damage*] (*<-lang_en;;*);

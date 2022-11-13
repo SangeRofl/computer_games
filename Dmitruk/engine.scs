@@ -23,7 +23,7 @@ concept_engine
     => nrel_using_constants: concept_hull_of_tank;;
     <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[В основном двигатель вставляют в консрукцию\корпус механизма.](*<-lang_ru;; => nrel_format: format_html;;*);;
+[В основном двигатель вставляют в консрукцию или корпус механизма.](*<-lang_ru;; => nrel_format: format_html;;*);;
       *);;
   *);;
 

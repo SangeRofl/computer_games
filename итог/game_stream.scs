@@ -65,6 +65,4 @@ nrel_game_stream
 
 <- sc_node_role_relation;;
 
-concept_game_streamer
-=> nrel_main_idtf: [стример] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
+

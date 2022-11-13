@@ -1,6 +1,4 @@
 nrel_mana_cost
-<-sc_node_norole_relation;
-
 	=> nrel_main_idtf:
 		[стоимость маны*] (*<-lang_ru;;*);
 		[mana cost*] (*<-lang_en;;*);;
