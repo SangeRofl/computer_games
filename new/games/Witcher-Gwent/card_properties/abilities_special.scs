@@ -36,7 +36,7 @@ gwent_ability_mardroeme_special
 gwent_ability_decoy
     <- sc_node_not_relation;
     => nrel_main_idtf: [Ability: Decoy](* <- lang_en;; *);
-    => nrel_main_idtf: [Способность: Подмена](* <- lang_ru;; *);;
+    => nrel_main_idtf: [Способность: Чучело](* <- lang_ru;; *);;
 //This non-unit Neutral card allows you to swap it with a card on the battlefield to return it to your hand. 
 
 
