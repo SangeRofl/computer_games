@@ -1,0 +1,10 @@
+
+nrel_decimal_representation
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Decimal representation](* <- lang_en;; *);
+    => nrel_main_idtf: [Представление в десятичной системе](* <- lang_ru;; *);;
+
+nrel_measurement
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Measurement](* <- lang_en;; *);
+    => nrel_main_idtf: [Измерение](* <- lang_ru;; *);;
