@@ -1,0 +1,33 @@
+
+gwent_combat_row
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Combat row](* <- lang_en;; *);
+    => nrel_main_idtf: [Ряд](* <- lang_ru;; *);;
+
+gwent_combat_row <= nrel_subdividing: {
+    gwent_row_close;
+    gwent_row_ranged;
+    gwent_row_seige
+};;
+
+
+gwent_row_close
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Close row](* <- lang_en;; *);
+    => nrel_main_idtf: [Рукопашный ряд](* <- lang_ru;; *);;
+
+gwent_row_ranged
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ranged row](* <- lang_en;; *);
+    => nrel_main_idtf: [Дальнобойный ряд](* <- lang_ru;; *);;
+
+gwent_row_seige
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Seige row](* <- lang_en;; *);
+    => nrel_main_idtf: [Ряд осадных орудий](* <- lang_ru;; *);;
+
+
+
+
+
+

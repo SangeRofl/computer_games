@@ -1,0 +1,100 @@
+
+gwent_strength
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Strength](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила](* <- lang_ru;; *);;
+
+
+gwent_strength_0
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 0](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 0](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [0];; *);;
+
+gwent_strength_1
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 1](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 1](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [1];; *);;
+
+
+gwent_strength_2
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 2](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 2](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [2];; *);;
+
+
+gwent_strength_3
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 3](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 3](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [3];; *);;
+
+
+gwent_strength_4
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 4](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 4](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [4];; *);;
+
+
+gwent_strength_5
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 5](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 5](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [5];; *);;
+
+
+gwent_strength_6
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 6](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 6](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [6];; *);;
+
+
+gwent_strength_7
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 7](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 7](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [7];; *);;
+
+
+gwent_strength_8
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 8](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 8](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [8];; *);;
+
+
+gwent_strength_9
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 9](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 9](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [9];; *);;
+
+
+gwent_strength_10
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 10](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 10](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [10];; *);;
+
+
+gwent_strength_15
+    <- sc_node_not_relation;
+    <- gwent_strength;
+    => nrel_main_idtf: [Strength 15](* <- lang_en;; *);
+    => nrel_main_idtf: [Сила 15](* <- lang_ru;; *);
+    => measurement: ...(* <- number;; => nrel_decimal_representation: [15];; *);;

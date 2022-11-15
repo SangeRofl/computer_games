@@ -1,0 +1,10 @@
+
+gwent_card
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card](* <- lang_en;; *);
+    => nrel_main_idtf: [Карта](* <- lang_ru;; *);;
+
+gwent_deck
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Deck](* <- lang_en;; *);
+    => nrel_main_idtf: [Колода](* <- lang_ru;; *);;

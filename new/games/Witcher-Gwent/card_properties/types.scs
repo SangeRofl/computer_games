@@ -1,0 +1,30 @@
+
+gwent_card <= nrel_subdividing: {
+    gwent_card_unit;
+    gwent_card_special
+};;
+
+
+gwent_card_unit => nrel_inclusion: gwent_card_hero;;
+gwent_card_special => nrel_inclusion: gwent_card_weather;;
+
+
+gwent_card_unit
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Unit card](* <- lang_en;; *);
+    => nrel_main_idtf: [Карта-Отряд](* <- lang_ru;; *);;
+
+gwent_card_special
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Special card](* <- lang_en;; *);
+    => nrel_main_idtf: [Специальная карта](* <- lang_ru;; *);;
+
+gwent_card_hero
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Hero card](* <- lang_en;; *);
+    => nrel_main_idtf: [Карта-Герой](* <- lang_ru;; *);;
+
+gwent_card_weather
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Weather card](* <- lang_en;; *);
+    => nrel_main_idtf: [Карта-Погода](* <- lang_ru;; *);;
