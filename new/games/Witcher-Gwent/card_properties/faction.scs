@@ -1,0 +1,39 @@
+
+gwent_faction
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Faction](* <- lang_en;; *);
+    => nrel_main_idtf: [Фракция](* <- lang_ru;; *);;
+
+
+gwent_faction
+    -> gwent_faction_northen_realms;
+    -> gwent_faction_skellige;
+    -> gwent_faction_monsters;
+    -> gwent_faction_syndicate;
+    -> gwent_faction_nilfgaard;
+    -> gwent_faction_scoiatael;;
+
+
+gwent_faction_northen_realms
+    => nrel_main_idtf: [Northen Realms](* <- lang_en;; *);
+    => nrel_main_idtf: [Северное Королевства](* <- lang_ru;; *);;
+
+gwent_faction_skellige
+    => nrel_main_idtf: [Skellige](* <- lang_en;; *);
+    => nrel_main_idtf: [Скеллиге](* <- lang_ru;; *);;
+
+gwent_faction_monsters
+    => nrel_main_idtf: [Monsters](* <- lang_en;; *);
+    => nrel_main_idtf: [Чудовища](* <- lang_ru;; *);;
+
+gwent_faction_syndicate
+    => nrel_main_idtf: [Syndicate](* <- lang_en;; *);
+    => nrel_main_idtf: [Синдикат](* <- lang_ru;; *);;
+
+gwent_faction_nilfgaard
+    => nrel_main_idtf: [Nilfgaard](* <- lang_en;; *);
+    => nrel_main_idtf: [Нильфгаард](* <- lang_ru;; *);;
+
+gwent_faction_scoiatael
+    => nrel_main_idtf: [Scoia'tael](* <- lang_en;; *);
+    => nrel_main_idtf: [Скоя'таэли](* <- lang_ru;; *);;
