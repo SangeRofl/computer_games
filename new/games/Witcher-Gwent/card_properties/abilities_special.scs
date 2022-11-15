@@ -1,0 +1,74 @@
+
+gwent_special_ability <= nrel_subdividing: {
+    gwent_ability_comanders_horn;
+    gwent_ability_scorch_special;
+    gwent_ability_mardroeme_special;
+    gwent_ability_decoy;
+
+    gwent_ability_biting_frost;
+    gwent_ability_impenetrable_fog;
+    gwent_ability_torrential_rain;
+    gwent_ability_clear_weather;
+    gwent_ability_skellige_storm
+};;
+
+
+
+
+gwent_ability_comanders_horn
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Commander's Horn](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Командирский рог](* <- lang_ru;; *);;
+//Destroy the highest value card, or cards if multiple similar point scores exist, in play. This destroys your cards as well.
+
+gwent_ability_scorch_special
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Scorch (special)](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Казнь (спец.)](* <- lang_ru;; *);;
+//Destroy the highest value card, or cards if multiple similar point scores exist, in play. This destroys your cards as well.
+
+gwent_ability_mardroeme_special
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Mardroeme (special)](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Мардрем (спец.)](* <- lang_ru;; *);;
+//Triggers transformations of all Berserker cards on the same row.
+
+gwent_ability_decoy
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Decoy](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Подмена](* <- lang_ru;; *);;
+//This non-unit Neutral card allows you to swap it with a card on the battlefield to return it to your hand. 
+
+
+
+gwent_ability_biting_frost
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Biting Frost](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Мороз](* <- lang_ru;; *);;
+//Sets the value of all Close Combat cards to 1. Ineffective on Hero cards. Applies before buffs like Commander's Horn, Tight Bond, etc. So for instance two cards with a Tight Bond will be 2, instead of 1.
+
+gwent_ability_impenetrable_fog
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Impenetrable Fog](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Мгла](* <- lang_ru;; *);;
+//Sets the value of all Ranged Combat cards to 1. Ineffective on Hero cards
+
+gwent_ability_torrential_rain
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Torrential Rain](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Ливень](* <- lang_ru;; *);;
+//Sets the value of all Siege Combat cards to 1. Ineffective on Hero cards
+
+gwent_ability_clear_weather
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Clear Weather](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Ясное небо](* <- lang_ru;; *);;
+//Clears all weather effects currently in effect on the battlefield.
+
+gwent_ability_skellige_storm 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Skellige Storm ](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Шторм со Скеллиге](* <- lang_ru;; *);;
+//Reduces the Strength of all Ranged and Siege Units to 1.
+
+

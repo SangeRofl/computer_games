@@ -1,0 +1,26 @@
+
+// Base ability classes
+gwent_ability
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность](* <- lang_ru;; *);;
+
+
+gwent_special_ability
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Special ability](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность специальной карты](* <- lang_ru;; *);;
+
+
+gwent_unit_ability
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Unit ability](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность отряда](* <- lang_ru;; *);;
+
+
+// Subdivision
+gwent_ability <= nrel_subdividing: {
+    gwent_unit_ability;
+    gwent_special_ability
+};;
+

@@ -1,0 +1,69 @@
+
+gwent_unit_ability <= nrel_subdividing: {
+    gwent_ability_morale_boost;
+    gwent_ability_medic;
+    gwent_ability_agile;
+    gwent_ability_berserker;
+    gwent_ability_mardroeme_unit;
+    gwent_ability_muster;
+    gwent_ability_spy;
+    gwent_ability_tight_bond;
+    gwent_ability_scorch_unit
+};;
+
+
+
+gwent_ability_morale_boost
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Morale Boost](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Прилив сил](* <- lang_ru;; *);;
+//Adds +1 strength to every card in it's row, excluding itself.
+
+gwent_ability_medic
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Medic](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Медик](* <- lang_ru;; *);;
+//Choose one card from your discard pile to play instantly. This excludes heroes or other weather / special cards.
+
+gwent_ability_agile
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Agile](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Проворство](* <- lang_ru;; *);;
+//Can be placed in either the Close Combat or Ranged rows. May not move once the card has been placed.
+
+gwent_ability_berserker
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Berserker](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Берсеркер](* <- lang_ru;; *);;
+//Transforms into a bear when a Mardroeme card is on its row
+
+gwent_ability_mardroeme_unit
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Mardroeme (unit)](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Мардрем (отряд)](* <- lang_ru;; *);;
+//Triggers transformations of all Berserker cards on the same row.
+
+gwent_ability_muster
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Muster](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Двойник](* <- lang_ru;; *);;
+//Finds any cards with the same name in your deck and plays them instantly.
+
+gwent_ability_spy
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Spy](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Шпион](* <- lang_ru;; *);;
+//Place on an opponents battlefield (counts towards their total strength), then draw two cards from your own deck.
+
+gwent_ability_tight_bond
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Tight Bond](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Прочная связь](* <- lang_ru;; *);;
+//Doubles the strength of both cards when placed next to a unit of the same name.
+
+
+gwent_ability_scorch_unit
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Ability: Scorch (unit)](* <- lang_en;; *);
+    => nrel_main_idtf: [Способность: Казнь (отряд)](* <- lang_ru;; *);;
+//Destroy the highest value card, or cards if multiple similar point scores exist, in play. This destroys your cards as well.
