@@ -1,0 +1,22 @@
+ui_menu_text_description_translation
+	<- ui_user_command_class_atom;
+	<- ui_user_command_class_view_kb;
+	<- ui_one_argument_command_class;;
+
+ui_menu_text_description_translation
+	=> nrel_main_idtf: [Как выглядит карта, соответсвующая указанному текстовому описанию?] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [What is the card corresponding to the specified text description?] (* <- lang_en;; *);
+	=> nrel_idtf: [Запрос создания карты, соответсвующей указанному текстовому описанию] (* <- lang_ru;; *);
+	=> nrel_idtf: [Request to create a card corresponding to the specified text description] (* <- lang_en;; *);;
+
+ui_menu_text_description_translation => ui_nrel_command_template:
+	[*
+		question_gwent_translate_text_descrition _-> ._question_gwent_translate_text_descrition_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_gwent_translate_text_descrition_instance _<- question;;
+	*];;
+
+ui_menu_text_description_translation => ui_nrel_command_lang_template: [Как выглядит карта, соответсвующая текстовому описанию $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_text_description_translation => ui_nrel_command_lang_template: [What is the card corresponding to text description $ui_arg_1] (* <- lang_en;; *);;
