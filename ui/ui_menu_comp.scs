@@ -22,9 +22,10 @@ ui_menu_computer_games <- ui_user_command_class_noatom;
 	ui_menu_report_generation
 };;
 
+/*
 ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
 (*
     	-> ui_menu_computer_games;;
 *);;
-
+*/
 
