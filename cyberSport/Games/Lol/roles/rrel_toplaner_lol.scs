@@ -1,8 +1,0 @@
-rrel_toplaner_lol
-
-	<-sc_node_role_relation;
-	<-oriented_relation;
-	
-	=> nrel_main_idtf:
-		[toplaner'](* <-lang_en;; *);
-		[топер'](* <-lang_ru;; *);;

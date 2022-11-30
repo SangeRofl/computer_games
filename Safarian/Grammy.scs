@@ -1,6 +1,0 @@
-concept_grammy
-
-=> nrel_main_idtf: [Grammy Awards] (* <-lang_ru;; *);
-=> nrel_main_idtf:[Grammy Awards] (* <-lang_en;; *);
-
-<- sc_node_not_relation;;

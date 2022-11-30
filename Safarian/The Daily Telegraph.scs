@@ -1,6 +1,0 @@
-concept_the_daily_telegraph
-
-=> nrel_main_idtf: [The Daily Telegraph] (* <-lang_ru;; *);
-=> nrel_main_idtf:[The Daily Telegraph] (* <-lang_en;; *);
-
-<- sc_node_not_relation;;
