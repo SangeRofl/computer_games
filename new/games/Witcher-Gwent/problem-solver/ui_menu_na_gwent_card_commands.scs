@@ -6,5 +6,6 @@ ui_menu_na_gwent_card_commands
 	<- ui_user_command_class_noatom;
 	<= nrel_ui_commands_decomposition: {
 		ui_menu_card_metrics_calculation;
-		ui_menu_deck_metrics_calculation
+		ui_menu_deck_metrics_calculation;
+		ui_menu_deck_tendancy_calculator
 	};;

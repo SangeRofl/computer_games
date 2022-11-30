@@ -1,0 +1,22 @@
+ui_menu_deck_tendancy_calculator
+	<- ui_user_command_class_atom;
+	<- ui_user_command_class_view_kb;
+	<- ui_one_argument_command_class;;
+
+ui_menu_deck_tendancy_calculator
+	=> nrel_main_idtf: [Какова главная идея указанной колоды?] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [What is the tendancy of the specified deck?] (* <- lang_en;; *);
+	=> nrel_idtf: [Запрос поиски главной идеи указанной колоды] (* <- lang_ru;; *);
+	=> nrel_idtf: [Request to find tendancy of a specifed deck] (* <- lang_en;; *);;
+
+ui_menu_deck_tendancy_calculator => ui_nrel_command_template:
+	[*
+		question_gwent_find_deck_tendency _-> ._question_gwent_find_deck_tendency_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_gwent_find_deck_tendency_instance _<- question;;
+	*];;
+
+ui_menu_deck_tendancy_calculator => ui_nrel_command_lang_template: [Какова главная идея колоды $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_deck_tendancy_calculator => ui_nrel_command_lang_template: [What is the tendancy of deck of $ui_arg_1] (* <- lang_en;; *);;
