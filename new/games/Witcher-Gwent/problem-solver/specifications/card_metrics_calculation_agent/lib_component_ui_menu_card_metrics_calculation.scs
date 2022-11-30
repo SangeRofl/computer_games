@@ -1,0 +1,7 @@
+lib_component_ui_menu_card_metrics_calculation
+	=> nrel_main_idtf:
+		[Компонент библиотеки. Команда пользовательского интерфейса расчёта метрик карт] (* <- lang_ru;; *);
+		[Library component. User interfaces command of calculating card metrics] (* <- lang_en;; *);
+
+	<- library_of_platform_independent_reusable_components;
+	<- library_of_atomic_reusable_components;;

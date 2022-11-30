@@ -1,0 +1,22 @@
+ui_menu_deck_metrics_calculation
+	<- ui_user_command_class_atom;
+	<- ui_user_command_class_view_kb;
+	<- ui_one_argument_command_class;;
+
+ui_menu_deck_metrics_calculation 
+	=> nrel_main_idtf: [Каковы метрики данной колоды?] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [What are deck metrics of the specified deck?] (* <- lang_en;; *);
+	=> nrel_idtf: [Запрос расчёта метрик данной колоды] (* <- lang_ru;; *);
+	=> nrel_idtf: [Request of deck metrics calculation of the specified deck] (* <- lang_en;; *);;
+
+ui_menu_deck_metrics_calculation => ui_nrel_command_template:
+	[*
+		question_gwent_calculate_deck_metrics _-> ._question_gwent_calculate_deck_metrics_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_gwent_calculate_deck_metrics_instance _<- question;;
+	*];;
+
+ui_menu_deck_metrics_calculation => ui_nrel_command_lang_template: [Каковы метрики колоды $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_deck_metrics_calculation => ui_nrel_command_lang_template: [What are deck metrics of $ui_arg_1] (* <- lang_en;; *);;

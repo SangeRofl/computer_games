@@ -1,0 +1,10 @@
+ui_menu_na_gwent_card_commands
+	=> nrel_main_idtf: [Команды Анализа Карт Гвинта] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Gwent Card Analysis Commands] (* <- lang_en;; *);;
+
+ui_menu_na_gwent_card_commands
+	<- ui_user_command_class_noatom;
+	<= nrel_ui_commands_decomposition: {
+		ui_menu_card_metrics_calculation;
+		ui_menu_deck_metrics_calculation
+	};;
