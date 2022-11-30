@@ -1,0 +1,22 @@
+ui_menu_synergy_search
+	<- ui_user_command_class_atom;
+	<- ui_user_command_class_view_kb;
+	<- ui_one_argument_command_class;;
+
+ui_menu_synergy_search 
+	=> nrel_main_idtf: [Какие карты сочетаются с данной картой?] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [What cards synergize with specified card?] (* <- lang_en;; *);
+	=> nrel_idtf: [Запрос поиска сочетаний с данной картой] (* <- lang_ru;; *);
+	=> nrel_idtf: [Request to search for cards which synergize with specified card] (* <- lang_en;; *);;
+
+ui_menu_synergy_search => ui_nrel_command_template:
+	[*
+		question_gwent_find_card_syneries _-> ._question_gwent_find_card_syneries_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_gwent_find_card_syneries_instance _<- question;;
+	*];;
+
+ui_menu_synergy_search => ui_nrel_command_lang_template: [Какие карты имеют сочетания с картой $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_synergy_search => ui_nrel_command_lang_template: [What cards synergize with card $ui_arg_1] (* <- lang_en;; *);;
