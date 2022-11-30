@@ -1,0 +1,22 @@
+ui_menu_card_metrics_calculation
+	<- ui_user_command_class_atom;
+	<- ui_user_command_class_view_kb;
+	<- ui_one_argument_command_class;;
+
+ui_menu_card_metrics_calculation 
+	=> nrel_main_idtf: [Каковы метрики данной карты?] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [What are card metrics of the specified card?] (* <- lang_en;; *);
+	=> nrel_idtf: [Запрос расчёта метрик данной карты] (* <- lang_ru;; *);
+	=> nrel_idtf: [Request of card metrics calculation of the specified card] (* <- lang_en;; *);;
+
+ui_menu_card_metrics_calculation => ui_nrel_command_template:
+	[*
+		question_gwent_calculate_card_metrics _-> ._question_gwent_calculate_card_metrics_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_gwent_calculate_card_metrics_instance _<- question;;
+	*];;
+
+ui_menu_card_metrics_calculation => ui_nrel_command_lang_template: [Каковы метрики карты $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_card_metrics_calculation => ui_nrel_command_lang_template: [What are card metrics of $ui_arg_1] (* <- lang_en;; *);;
