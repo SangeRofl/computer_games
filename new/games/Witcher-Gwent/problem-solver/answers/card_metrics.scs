@@ -1,0 +1,34 @@
+
+// Metrics
+
+gwent_card_effective_strength
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Effective Strength](* <- lang_en;; *);
+    => nrel_main_idtf: [Эффективная Сила Карты](* <- lang_ru;; *);;
+
+gwent_card_synergy_factor
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Synergy Factor](* <- lang_en;; *);
+    => nrel_main_idtf: [Фактор Синергий Карты](* <- lang_ru;; *);;
+
+gwent_card_validity
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Validity](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Карты](* <- lang_ru;; *);;
+
+
+// Predetermined values
+
+gwent_card_validity
+    -> gwent_card_validity_valid;
+    -> gwent_card_validity_invalid;;
+
+gwent_card_validity_valid
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Validity Valid](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Карты Верна](* <- lang_ru;; *);;
+
+gwent_card_validity_invalid
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Validity Invalid](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Карты Неверена](* <- lang_ru;; *);;
