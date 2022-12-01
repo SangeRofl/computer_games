@@ -3,13 +3,13 @@
 
 gwent_deck_effective_strength
     <- sc_node_not_relation;
-    => nrel_main_idtf: [Effective Strength](* <- lang_en;; *);
-    => nrel_main_idtf: [Эффективная Сила](* <- lang_ru;; *);;
+    => nrel_main_idtf: [Deck Effective Strength](* <- lang_en;; *);
+    => nrel_main_idtf: [Эффективная Сила Колоды](* <- lang_ru;; *);;
 
 gwent_deck_special_card_ratio
     <- sc_node_not_relation;
-    => nrel_main_idtf: [Special Card Ratio](* <- lang_en;; *);
-    => nrel_main_idtf: [Отношение Колличества Специальных Карт](* <- lang_ru;; *);;
+    => nrel_main_idtf: [Deck Special Card Ratio](* <- lang_en;; *);
+    => nrel_main_idtf: [Отношение Колличества Специальных Карт Колоды](* <- lang_ru;; *);;
 
 gwent_deck_validity
     <- sc_node_not_relation;
