@@ -1,0 +1,65 @@
+
+// Metrics
+
+gwent_deck_effective_strength
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Effective Strength](* <- lang_en;; *);
+    => nrel_main_idtf: [Эффективная Сила](* <- lang_ru;; *);;
+
+gwent_deck_special_card_ratio
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Special Card Ratio](* <- lang_en;; *);
+    => nrel_main_idtf: [Отношение Колличества Специальных Карт](* <- lang_ru;; *);;
+
+gwent_deck_validity
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Deck Validity](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Колоды](* <- lang_ru;; *);;
+
+gwent_deck_synergy_count
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_synergy_count](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_synergy_count](* <- lang_ru;; *);;
+
+gwent_deck_antisynergy_count
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_antisynergy_count](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_antisynergy_count](* <- lang_ru;; *);;
+
+gwent_deck_hero_count
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_hero_count](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_hero_count](* <- lang_ru;; *);;
+    
+gwent_deck_row_rosa_close
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_row_rosa_close](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_row_rosa_close](* <- lang_ru;; *);;
+
+gwent_deck_row_rosa_ranged
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_row_rosa_ranged](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_row_rosa_ranged](* <- lang_ru;; *);;
+
+gwent_deck_row_rosa_seige
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [gwent_deck_row_rosa_seige](* <- lang_en;; *);
+    => nrel_main_idtf: [gwent_deck_row_rosa_seige](* <- lang_ru;; *);;
+
+
+
+// Predetermined values
+
+gwent_deck_validity
+    -> gwent_deck_validity_valid;
+    -> gwent_deck_validity_invalid;;
+
+gwent_deck_validity_valid
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Deck Validity Valid](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Колоды Верна](* <- lang_ru;; *);;
+
+gwent_deck_validity_invalid
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Deck Validity Invalid](* <- lang_en;; *);
+    => nrel_main_idtf: [Правильность Колоды Неверена](* <- lang_ru;; *);;
