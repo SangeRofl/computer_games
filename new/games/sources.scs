@@ -1,0 +1,8 @@
+gog
+=> nrel_main_idtf:
+    [gog]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [gog]
+    (* <- lang_ru;; *);
+<- sc_node_not_relation;;

@@ -1,0 +1,62 @@
+nrel_rating 
+=> nrel_main_idtf:
+    [rating*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [рейтинг*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_review
+=> nrel_main_idtf:
+    [review*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [отзыв*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_distributor
+=> nrel_main_idtf:
+    [distributor*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [дистрибьютор*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_price 
+=> nrel_main_idtf:
+    [price*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [цена*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_supported_language
+=> nrel_main_idtf:
+    [supported language*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [поддерживаемый язык*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_age_rating 
+=> nrel_main_idtf:
+    [age rating*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [возрастной рейтинг*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+//-----------------------------------
+nrel_source_of_information
+=> nrel_main_idtf:
+    [source of information*]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [источник информации*]
+    (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
