@@ -37,3 +37,11 @@ gwent_faction_nilfgaard
 gwent_faction_scoiatael
     => nrel_main_idtf: [Scoia'tael](* <- lang_en;; *);
     => nrel_main_idtf: [Скоя'таэли](* <- lang_ru;; *);;
+
+
+
+rrel_gwent_card_faction
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card faction](* <- lang_en;; *);
+    => nrel_main_idtf: [Фракция карты](* <- lang_ru;; *);;
+

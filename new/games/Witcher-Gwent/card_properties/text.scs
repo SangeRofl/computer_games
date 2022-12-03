@@ -1,0 +1,14 @@
+rrel_gwent_card_name
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card Name](* <- lang_en;; *);
+    => nrel_main_idtf: [Название карты](* <- lang_ru;; *);;
+
+rrel_gwent_card_flavour
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Card flavour text](* <- lang_en;; *);
+    => nrel_main_idtf: [Доп. карты](* <- lang_ru;; *);;
+
+nrel_gwent_card_description
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Card Description](* <- lang_en;; *);
+    => nrel_main_idtf: [Описание Карты](* <- lang_ru;; *);;
