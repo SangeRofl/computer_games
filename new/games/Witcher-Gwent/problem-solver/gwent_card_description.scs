@@ -1,0 +1,5 @@
+
+nrel_gwent_card_description
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Card Description](* <- lang_en;; *);
+    => nrel_main_idtf: [Описание Карты](* <- lang_ru;; *);;

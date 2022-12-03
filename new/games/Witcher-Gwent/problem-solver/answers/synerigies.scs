@@ -1,0 +1,26 @@
+
+nrel_gwent_synergy_muster
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Muster synergy](* <- lang_en;; *);
+    => nrel_main_idtf: [Синергия двойника](* <- lang_ru;; *);;
+
+nrel_gwent_synergy_tight_bond
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Tight Bond synergy](* <- lang_en;; *);
+    => nrel_main_idtf: [Синергия прочной связи](* <- lang_ru;; *);;
+
+nrel_gwent_synergy_berserker_activation
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Berserker Activation synergy](* <- lang_en;; *);
+    => nrel_main_idtf: [Синергия активации берсерка](* <- lang_ru;; *);;
+
+nrel_gwent_antisynergy_self_scorch
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Self-scorch anisynergy](* <- lang_en;; *);
+    => nrel_main_idtf: [Антисинергия самоказни](* <- lang_ru;; *);;
+
+nrel_gwent_antisynergy_weather
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Weather anisynergy](* <- lang_en;; *);
+    => nrel_main_idtf: [Антисинергия погоды](* <- lang_ru;; *);;
+
