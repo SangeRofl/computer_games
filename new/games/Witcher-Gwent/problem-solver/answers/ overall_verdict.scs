@@ -1,0 +1,20 @@
+
+renl_gwent_deck_dominating_effect
+    <- sc_node_norole_relation;
+    => nrel_main_idtf: [Dominating Effect](* <- lang_en;; *);
+    => nrel_main_idtf: [Доминирующий эффект](* <- lang_ru;; *);;
+
+gwent_deck_verdict_positive
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Positive Verdict](* <- lang_en;; *);
+    => nrel_main_idtf: [Позитивный Вердикт](* <- lang_ru;; *);;
+
+gwent_deck_verdict_negative
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Negatve Verdict](* <- lang_en;; *);
+    => nrel_main_idtf: [Негативный Вердикт](* <- lang_ru;; *);;
+
+gwent_deck_verdict_neutral
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Neutral Verdict](* <- lang_en;; *);
+    => nrel_main_idtf: [Нейтральный Вердикт](* <- lang_ru;; *);;
