@@ -1,0 +1,59 @@
+concept_dlc
+=> nrel_main_idtf: [Загружаемый контент] (* <- lang_ru;; *);
+=> nrel_main_idtf: [DLC] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Загружаемый контент)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Дополнительный цифровой контент, который игрок может установить поверх готовой видеоигры
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Состав)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [DLC может включать в себя самые разные вещи. Некоторые из них представляют собой простые косметические изменения, такие как скины и закадровый голос, в то время как другие включают совершенно новые области, истории или игровую механику, которые полностью пересматривают игру.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Предназначение)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Разработчики часто используют DLC как способ обновить игру и сохранить интерес игроков в течение месяцев (или даже лет) после ее первого выпуска.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> month;;
+		-> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/dlc.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

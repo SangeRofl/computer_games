@@ -1,0 +1,44 @@
+concept_ford_svt_cobra_r
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ford SVT Cobra R] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4942; 
+=> nrel_release_date: 1993;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 238;  
+=> nrel_maximum_speed: 241; 
+=> nrel_acceleration_to_100_km_h: 6.3; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1476;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 386;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ford SVT Cobra R)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[238 л.с. и ходовыми качествами настоящего скоростного автомобиля, Mustang Cobra 1993 года был подходящим завершением производства невероятно успешных Mustang на платформе Fox, выпускавшихся целых 14 сезонов, чей общий тираж составил свыше двух миллионов машин.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ford_svt_cobra_r.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

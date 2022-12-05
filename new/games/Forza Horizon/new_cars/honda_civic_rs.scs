@@ -1,0 +1,44 @@
+concept_honda_civic_rs
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Honda Civic RS] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1170; 
+=> nrel_release_date: 1974;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 76;  
+=> nrel_maximum_speed: 160; 
+=> nrel_acceleration_to_100_km_h: 11.9; 
+=> nrel_drive_type: front;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: hatchback; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 705;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 78;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Honda Civic RS)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Honda Civic первого поколения появилась в 1974 г. Маленькая, непритязательная переднеприводная японская машинка ничем особенным не выделялась, но именно Civic стал первым массовым японским автомобилем, о котором в Европе заговорили как о серьёзном конкуренте компактным машинам европейского производства. Первое поколение оснащалось 1,2-литровым 4-цилиндровым мотором мощностью 76 л. с., при этом, автомобиль весил всего 705 килограммов.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/honda_civic_rs.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

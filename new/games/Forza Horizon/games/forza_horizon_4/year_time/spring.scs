@@ -1,0 +1,76 @@
+concept_spring
+=> nrel_main_idtf: [Весна] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Spring] (* <- lang_en;; *);
+
+<- concept_time_of_year;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Весна)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Одно из четырёх времён года, переходный сезон между зимой и летом.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_winter;;
+        	-> concept_summer;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Определение начала весны)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Существуют различные методы определения начала и окончания весны, отличающиеся в зависимости от местного климата, культур и обычаев. Когда в Северном полушарии весна, то в Южном полушарии осень и наоборот.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Описание весны)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Переходный сезон, когда заметно увеличение светового дня, повышается температура окружающей среды и активизируется природная деятельность живых существ и растений.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> year;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Состав зимы)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Состоит из трёх месяцев: в Северном полушарии — марта, апреля и мая, в Южном — сентября, октября и ноября.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> month;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/spring.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

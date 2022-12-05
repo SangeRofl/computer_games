@@ -1,0 +1,26 @@
+concept_rail_yard_cross_country_circuit
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Rail Yard Cross Country Circuit] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 5;
+=> nrel_length_of_route: 5.3;
+=> nrel_best_lap_time: 03.10.036;
+=> nrel_time_of_year: concept_summer;
+=> nrel_time_of_day: concept_night;
+=> nrel_number_of_participants: 15;
+=> nrel_prize_fund: 9000;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/rail_yard_cross_country_circuit.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

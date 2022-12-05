@@ -1,0 +1,44 @@
+concept_jaguar_xj220
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Jaguar XJ220] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3498; 
+=> nrel_release_date: 1993;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 542;  
+=> nrel_maximum_speed: 349; 
+=> nrel_acceleration_to_100_km_h: 3.9; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1350;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 642;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Jaguar XJ220)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Jaguar XJ220 был выпущен компанией Jaguar в 1993 году, и значится как первый суперкар этой компании. Он был создан как продолжение модели XK120, выпущенной за 40 лет до XJ220. За эти 40 лет XJ220 — первый гоночный автомобиль, предназначенный для дорог общего пользования, развивающий скорость в 349 км/ч, не считая автомобилей Jaguar, участвовавших в гонках Ле-Мана. Самый дорогой автомобиль за всю историю марки Jaguar со стоимостью 413000 £.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/jaguar_xj220.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

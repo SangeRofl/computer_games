@@ -1,0 +1,54 @@
+concept_any_terrain_car_pack
+=> nrel_main_idtf: [Набор автомобилей всех местностей] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Any Terrain Car Pack] (* <- lang_en;; *);
+
+=> nrel_release_date: [26.08.2020];
+=> nrel_price: [9.99$];
+
+<= nrel_content:
+	... (*
+		-> [2018 Alfa Romeo Stelvio Quadrifoglio];;
+    		-> [2018 Can-Am Maverick X RS Turbo R];;
+    		-> [2016 Honda Civic Coupe GRC];;
+    		-> [1991 Hoonigan GYMKHANA 10 Ford Escort Cosworth];;
+		-> [1985 Porsche #185 959 Prodrive Rally Raid];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор автомобилей всех местностей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Any Terrain Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 26 августа 2020 года с обновлением 26.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор автомобилей всех местностей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В пакет вошли пять внедорожных автомобилей из Car Pass. Пакет входит в версии игры Ultimate Edition и Ultimate Add-ons Bundle.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/any_terrain_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

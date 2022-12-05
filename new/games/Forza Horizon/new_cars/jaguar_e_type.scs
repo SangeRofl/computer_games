@@ -1,0 +1,44 @@
+concept_jaguar_e_type
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Jaguar E-type] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3800; 
+=> nrel_release_date: 1961;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 265;  
+=> nrel_maximum_speed: 241; 
+=> nrel_acceleration_to_100_km_h: 6.9; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 4;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1300;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 353;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Jaguar E-type)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Jaguar E-Type – спортивный автомобиль потрясающий своей элегантностью и неповторимым хищническим шармом. Эта модель объединила в себе прыть гоночных машин и комфорт знаменитых британских седанов. Дизайнер Малькольм Сайер и главный инженер Уильям Хэйнес начали работу над моделью в конце 50-х годов. Прототипы Е1А 1958 года и Е2А 1960 года положили начало серийному Jaguar E-Type, который произвел настоящий фурор на Женевском автосалоне 1961 года. Модель пришла на смену серии «XK», находящейся в продаже с 1948 года.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/jaguar_e_type.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

@@ -1,0 +1,44 @@
+concept_ford_f_100
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ford F-100] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4457; 
+=> nrel_release_date: 1956;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 167;  
+=> nrel_maximum_speed: 176; 
+=> nrel_acceleration_to_100_km_h: 8.3; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 3;  
+=> nrel_body_type: pickup_truck; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 2268;
+=> nrel_number_of_seats: 3;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 353;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ford F-100)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Первый «F-Series Truck» — более известный как «Ford Bonus-Built» был представлен в 1948 году. На тот период пикап серии F имел современный дизайн с цельным лобовым стеклом и интегрированными фарами. Опционально для этой серии были доступны плунжерный стеклоомыватель, солнцезащитный козырек, освещение салона. Для грузовичка была также доступна опция по обвесу дополнительным хромом с двумя хромированными рогами на бампере. В Канаде F-серия продавалась под маркой «Mercury».] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ford_f_100.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

@@ -1,0 +1,44 @@
+concept_alpine_a110
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Alpine A110] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1800; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 252;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 4.5; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: France;
+=> nrel_vehicle_weight: 1103;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 320;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Alpine A110)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Альпин А110 – это двухместный спортивный автомобиль в кузове купе. Как и его предшественник, он довольно компактный. Новинка насчитывает 4180 мм в длину, 1798 мм в ширину, 1252 мм в высоту и 2420 мм между колесными парами. Как и любого спорткара, дорожный просвет довольно маленький и насчитывает всего 100 миллиметров. Платформа у автомобиля полностью уникальная. Силовой агрегат расположен поперечно за сиденьями. Подвеска полностью независимая. Спереди два поперечных рычага, а сзади- многорычажная система.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/alpine_a110.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

@@ -1,0 +1,67 @@
+concept_fortune_island_pack
+=> nrel_main_idtf: [Набор острова Fortune] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Fortune Island Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [13.12.2018];
+=> nrel_price: [19.99$];
+
+<= nrel_content:
+	... (*
+		-> [2018 BMW M5];;
+    		-> [2018 Exomotive Exocet Off-Road];;
+    		-> [2018 Funco Motorsports F9];;
+    		-> [2015 Hoonigan Gymkhana 8 Ford Fiesta ST RX43];;
+		-> [2002 Koenigsegg CC8S];;
+    		-> [2012 Lamborghini Aventador J];;
+    		-> [2019 Lamborghini Urus];;
+    		-> [1953 Morris Minor Series II Traveler];;
+    		-> [2017 Ram 1500 Rebel TRX Concept];;
+    		-> [2010 Saleen S5S Raptor];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+	... (*
+		=> nrel_main_idtf: [Новые задания Horizon Live] (* <- lang_ru;; *);;
+	*);
+	... (*
+		=> nrel_main_idtf: [Остров Fortune] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор острова Fortune)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Пакет Fortune Island — первое дополнение для Forza Horizon 4, выпущенное 13 декабря 2018 года для Xbox One и Windows 10. Оно входит в стандартную комплектацию Ultimate Edition, Ultimate Add-Ons Bundle и Expansion Bundle.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор острова Fortune)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Он расположен на гористом острове с экстремальным рельефом и погодой, а также опасными дорогами, в том числе Needle Climb — самой большой асфальтированной горной горной дорогой в серии Horizon.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/fortune_island_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

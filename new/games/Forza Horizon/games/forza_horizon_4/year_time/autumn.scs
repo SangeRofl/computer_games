@@ -1,0 +1,75 @@
+concept_autumn
+=> nrel_main_idtf: [Осень] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Autumn] (* <- lang_en;; *);
+
+<- concept_time_of_year;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Осень)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Переходный сезон, когда заметно уменьшение светового дня, и постепенно понижается температура окружающей среды.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> day;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Осень в России)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В России принято считать, что осень начинается 1 сентября, то есть, время осени по умолчанию совпадает с календарной осенью. В Северной Америке по умолчанию осень совпадает с астрономической осенью.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Начало года - сентябрь)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В 1348 году состоялся Собор в Москве, на котором положено начинать год с сентября, а не с марта. С XV века новый год начинался 1 сентября, сведения о праздновании Нового года появляются с конца XV века.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> year;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Состав осени)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Состоит из трёх месяцев: в Северном полушарии — сентября, октября и ноября, в Южном — марта, апреля и мая. Совпадает с метеорологической осенью.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> month;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/autumn.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,44 @@
+concept_vauxhall_monaro_vxr
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Vauxhall Monaro VXR] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 5665; 
+=> nrel_release_date: 2005;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 382;  
+=> nrel_maximum_speed: 274; 
+=> nrel_acceleration_to_100_km_h: 5.4; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1658;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 510;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Vauxhall Monaro VXR)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Британский Vauxhall в марте 2005 года сократил продажи нового купе со спортивным характером. Мощность 5.7-литрового двигателя V8 на купе Monaro VXR составляет 382 л.с. Этот двигатель из линейки General Motors затрагивает также Chevrolet Corvette. Разгон до 100 км/ч занимает у Monaro VXR около 5.4 секунд, а максимальная скорость составляет 274 км/ч. Для более эффективного охлаждения большого 8-цилиндрового двигателя на капоте установлены дополнительные воздухозаборники.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/vauxhall_monaro_vxr.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

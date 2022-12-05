@@ -1,0 +1,44 @@
+concept_srt_viper_gts
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [SRT Viper GTS] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 8382; 
+=> nrel_release_date: 2013;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 649;  
+=> nrel_maximum_speed: 333; 
+=> nrel_acceleration_to_100_km_h: 3.5; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 10;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1555;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 814;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(SRT Viper GTS)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Суперкар появился в 2013 году, производитель Dodge, располагающийся в стране США и SRT, находящийся в стране США. Двигатель Dodge SRT Viper GTS объёмом 8382 см³ развивает мощность 649 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.5 секунды и развивать максимальную скорость 333 км/ч. Цена Dodge SRT Viper GTS - 110 000 $ или 7 260 000 ₽.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/srt_viper_gts.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

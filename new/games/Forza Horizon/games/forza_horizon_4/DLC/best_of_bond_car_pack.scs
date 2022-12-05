@@ -1,0 +1,70 @@
+concept_best_of_bond_car_pack
+=> nrel_main_idtf: [Набор машин «Лучшее из Бонда»] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Best of Bond Car Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [28.09.2018];
+=> nrel_price: [9.99$];
+
+<= nrel_content:
+	... (*
+		-> [1974 James Bond Edition AMC Hornet X Hatchback];;
+    		-> [1964 James Bond Edition Aston Martin DB5];;
+    		-> [2015 James Bond Edition Aston Martin DB10];;
+    		-> [1969 James Bond Edition Aston Martin DBS];;
+		-> [2008 James Bond Edition Aston Martin DBS];;
+    		-> [1986 James Bond Edition Aston Martin V8];;
+    		-> [1999 James Bond Edition BMW Z8];;
+    		-> [1981 James Bond Edition Citroën 2CV6];;
+    		-> [2010 James Bond Edition Jaguar C-X75];;
+    		-> [1977 James Bond Edition Lotus Esprit S1];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+	... (*
+		-> [Legendary 007 Classic Bond Suit];;
+    		-> [Legendary 007 Classic Bond Suit];;
+		=> nrel_main_idtf: [Костюмы] (* <- lang_ru;; *);;
+	*);
+	... (*
+		=> nrel_main_idtf: [Шесть эксклюзивных фраз для быстрого чата] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор машин «Лучшее из Бонда»)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [The Best of Bond Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 28 сентября 2018 г. для выпуска Ultimate Edition и 2 октября 2018 г. для других выпусков.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор машин «Лучшее из Бонда»)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Набор включен в Ultimate Edition, но его также можно приобрести отдельно. 
+Он содержит десять автомобилей, показанных в различных фильмах о Джеймсе Бонде, выпущенных в период с 1964 по 2015 год, а также несколько моделей с дополнительными вариантами Forzavista и внешним видом, подчеркивающими их модификации, показанные в сериале.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/best_of_bond_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

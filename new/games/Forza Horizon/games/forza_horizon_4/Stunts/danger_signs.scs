@@ -1,0 +1,75 @@
+concept_danger_signs
+=> nrel_main_idtf: [Знаки опасности] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Danger signs] (* <- lang_en;; *);
+
+<- concept_special_challenges;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Знаки опасности)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пиар-трюки, в которых вы запускаете свой автомобиль со скалы или через рампу и должны пролететь определенное расстояние и правильно приземлиться.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_pr_stunts;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Обозначение на карте)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Знаки опасности обозначаются восклицательным знаком "!" как дорожный знак на карте.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Поставленные цели)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [У каждого знака опасности есть три поставленных цели; 1 звезда, 2 звезды и 3 звезды.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Награды)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Достижение цели по звездному рейтингу вознаградит игрока дополнительными поклонниками на фестивале Horizon. 
+                ] (* <- lang_ru;; *);;
+        *);;
+           <= nrel_using_constants: ...
+        (*
+		-> concept_goal;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/danger_signs.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

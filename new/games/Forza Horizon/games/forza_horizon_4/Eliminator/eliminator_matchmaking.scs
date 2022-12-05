@@ -1,0 +1,83 @@
+concept_eliminator_matchmaking
+=> nrel_main_idtf: [Подбор игроков (Устранитель)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Matchmaking (Eliminator)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Подбор игроков (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Каждая сессия The Eliminator включает в себя до 72 игроков, каждый из которых сражается друг с другом, чтобы стать последним оставшимся игроком в сессии и получить прозвище «Eliminator».
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_the_eliminator;;
+		-> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Подбор игроков (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Игроки могут войти в сеанс The Eliminator, либо доехав до места его проведения, либо через меню паузы
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_the_eliminator;;
+		-> concept_player;;
+		-> concept_menu;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Подбор игроков (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Присоединение к сеансу The Eliminator не требует от игрока наличия каких-либо конкретных автомобилей или какого-либо уровня, кроме завершения пролога карьеры, поскольку всем игрокам предоставляется специально тюнингованная машина уровня 1; Mini Cooper S 1965 года выпуска в Великобритании или Volkswagen Beetle 1963 года выпуска в Мексике.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_the_eliminator;;
+		-> concept_car;;
+		-> concept_level;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Подбор игроков (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Когда игроки входят в сессию, они группируются посредством подбора игроков, и как только сессия наберет достаточное количество участников, начнется сессия The Eliminator.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_the_eliminator;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/matchmaking.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

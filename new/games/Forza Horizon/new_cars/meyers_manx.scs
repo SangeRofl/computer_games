@@ -1,0 +1,44 @@
+concept_meyers_manx
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Meyers Manx] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1582; 
+=> nrel_release_date: 1971;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 88;  
+=> nrel_maximum_speed: 165; 
+=> nrel_acceleration_to_100_km_h: 9.5; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 4;  
+=> nrel_body_type: open_wheeled; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 560;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 0;
+=> nrel_torque: 117;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Meyers Manx)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Meyers Manx багги для дюн - это небольшой автомобиль , ориентированный на отдых, первоначально предназначенный для гонки по пустыне от калифорнийского инженера, художника, строителя лодок и серфера Брюса Ф. Мейерса . Он был произведен его компанией Fountain Valley, California , B. F. Meyers & Co.Википедия  site:wiki5.ru] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/meyers_manx.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

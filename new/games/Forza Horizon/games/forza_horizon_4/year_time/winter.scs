@@ -1,0 +1,61 @@
+concept_winter
+=> nrel_main_idtf: [Зима] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Winter] (* <- lang_en;; *);
+
+<- concept_time_of_year;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Зима)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Одно из четырёх времён года, между периодами годового цикла осенью и весной.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_spring;;
+        	-> concept_autumn;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Основной признак)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Основной признак этого времени года — устойчивая низкая температура (ниже 0 градусов по Цельсию) во многих районах Земли, на поверхность земли выпадает и ложится снег.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Состав зимы)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Календарная зима состоит из трёх месяцев: в Северном полушарии это — декабрь, январь и февраль, в Южном — июнь, июль и август.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> month;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/winter.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

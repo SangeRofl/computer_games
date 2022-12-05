@@ -1,0 +1,53 @@
+concept_dirt_racing_series 
+=> nrel_main_idtf: [Серия гонок бездорожья] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Dirt Racing Series] (* <- lang_en;; *);
+
+<- concept_racing_series;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Утв.(Dirt Racing Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пора запачкать колеса! В серии Dirt Racing представлены одни из самых сложных ландшафтов в игре. Обязательно возьмите автомобиль с полным приводом, который также находится низко над землей. Вам нужна вся управялемость, которую вы можете получить. Прижимайтесь к углам во время поворотов, чтобы предотвратить внутренние передачи
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Утв.(Dirt Racing Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Контрольные точки на трассах Dirt Racing, а также на трассах Cross Country Race обычно находятся на открытом бездорожье и не близко к барьерам, поэтому вы можете проехать прямо через них, чтобы быстрее завершить поворот или обойти соперника. По мере того, как вы продвигаетесь по раунду, серия Dirt Racing приводит к длинной, веселой и потрясающей гонке под названием «Перчатка».
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+=> nrel_inclusion: concept_tarn_hows_scramble;
+=> nrel_inclusion: concept_derwentwater_trail;
+=> nrel_inclusion: concept_cotswolds_road_rally_trail;
+=> nrel_inclusion: concept_lakehurst_forest_trail;
+=> nrel_inclusion: concept_white_horse_hill_trail;
+=> nrel_inclusion: concept_astmoor_rally_trail;
+=> nrel_inclusion: concept_bamburgh_pinewood_trail;
+=> nrel_inclusion: concept_highland_farm_scramble;
+=> nrel_inclusion: concept_glen_rannoch_trail;
+=> nrel_inclusion: concept_greendale_foothills_scramble;
+=> nrel_inclusion: concept_mortimer_gardens_scramble;
+=> nrel_inclusion: concept_holyrood_park_trail;
+=> nrel_inclusion: concept_moorhead_rally_trail;
+=> nrel_inclusion: concept_mudkickers_4x4_scramble;
+=> nrel_inclusion: concept_ashbrook_loop_scramble;
+
+<- sc_node_not_relation;;

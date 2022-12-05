@@ -1,0 +1,44 @@
+concept_dodge_challenger_r_t
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Dodge Challenger R/T] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6981; 
+=> nrel_release_date: 1970;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 425;  
+=> nrel_maximum_speed: 235; 
+=> nrel_acceleration_to_100_km_h: 14.1; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 4;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1560;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 434;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Dodge Challenger R/T)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Первое поколение американского масл-кара Dodge Challenger, которое создавалось для навязывания конкуренции Ford Mustang и Chevrolet Camaro, официально предстало перед общественностью осенью 1969 года, а уже в 1970-м стартовало его серийное производство на заводах в США. На конвейере автомобиль продержался всего до 1974 года, разойдясь за это время тиражом свыше 165 тысяч экземпляров, а на протяжении жизненного цикла практически ежегодно подвергался небольшим обновлениям.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/dodge_challenger_r_t.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

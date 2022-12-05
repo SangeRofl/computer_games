@@ -1,0 +1,26 @@
+concept_castle_cross_country_circuit
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Castle Cross Country Circuit] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 3;
+=> nrel_length_of_route: 5.6;
+=> nrel_best_lap_time: 03.21.523;
+=> nrel_time_of_year: concept_autumn;
+=> nrel_time_of_day: concept_night;
+=> nrel_number_of_participants: 13;
+=> nrel_prize_fund: 13000;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/castle_cross_country_circuit.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

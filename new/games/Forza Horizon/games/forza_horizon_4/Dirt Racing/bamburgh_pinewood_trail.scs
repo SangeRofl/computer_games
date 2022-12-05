@@ -1,0 +1,26 @@
+concept_bamburgh_pinewood_trail
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Bamburgh Pinewood Trail] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 1;
+=> nrel_length_of_route: 6.0;
+=> nrel_best_lap_time: 03.36.273;
+=> nrel_time_of_year: concept_summer;
+=> nrel_time_of_day: concept_morning;
+=> nrel_number_of_participants: 15;
+=> nrel_prize_fund: 13000;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/bamburgh_pinewood_trail.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

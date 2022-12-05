@@ -1,0 +1,44 @@
+concept_dodge_viper_srt10_acr
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Dodge Viper SRT10 ACR] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 8382; 
+=> nrel_release_date: 2008;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 608;  
+=> nrel_maximum_speed: 336; 
+=> nrel_acceleration_to_100_km_h: 3.8; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 10;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1552;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 759;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Dodge Viper SRT10 ACR)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Суперкар появился в 2008 году, производитель Dodge, располагающийся в стране США и SRT, находящийся в стране США. Двигатель Dodge Viper SRT10 ACR объёмом 8382 см³ развивает мощность 608 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.8 секунды и развивать максимальную скорость 336 км/ч.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/dodge_viper_srt10_acr.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

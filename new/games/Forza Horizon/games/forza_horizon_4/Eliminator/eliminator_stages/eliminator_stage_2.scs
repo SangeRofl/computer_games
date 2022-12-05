@@ -1,0 +1,36 @@
+concept_eliminator_stage_2
+=> nrel_main_idtf: [Стадия 2 (стадия Устранителя)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Stage 2 (стадия Eliminator)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 2 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Этап 2 арены происходит в течение двух минут после того, как арена достигает спроецированного пунктирного круга для этапа 1, и переносит игроков в локацию примерно в четверть размера карты.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 2 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [После завершения обратного отсчета арена начнет сжиматься до текущего спроецированного пунктирного круга, а ее новая центральная точка может не совпадать с центром этапа 1, в результате чего некоторые области арены этапа 1 окажутся дальше от арены этапа 2. чем другие.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_arena;;
+		-> concept_eliminator_stage_1;;
+        *);;
+*);
+
+<- sc_node_not_relation;;

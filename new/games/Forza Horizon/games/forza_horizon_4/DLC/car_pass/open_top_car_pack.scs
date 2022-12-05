@@ -1,0 +1,56 @@
+concept_open_top_car_pack
+=> nrel_main_idtf: [Набор автомобилей с открытым верхом] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Open Top Car Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [14.10.2020];
+=> nrel_price: [6.99$];
+
+<= nrel_content:
+	... (*
+		-> [2018 BMW i8 Roadster];;
+    		-> [1959 Cadillac Eldorado Biarritz Convertible];;
+    		-> [1953 Jaguar C-Type];;
+    		-> [2012 Lamborghini Gallardo LP570-4 Spyder Performante];;
+		-> [1929 Mercedes-Benz Super Sport Kurz Barker];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор автомобилей с открытым верхом)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Open Top Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 14 октября 2020 г. вместе с обновлением 28.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор автомобилей с открытым верхом)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В пакет вошли пять автомобилей с открытым верхом из Car Pass. Пакет включен в версии игры Ultimate Edition и Ultimate Add-ons Bundle.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/open_top_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

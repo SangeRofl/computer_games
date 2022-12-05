@@ -1,0 +1,44 @@
+concept_volkswagen_golf_r32
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Volkswagen Golf R32] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3189; 
+=> nrel_release_date: 2003;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 250;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 6.5; 
+=> nrel_drive_type: front;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: hatchback; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1585;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 320;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Volkswagen Golf R32)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Volkswagen Golf — автомобиль немецкой компании Volkswagen. Гольф стал самой успешной моделью Фольксвагена и одним из самых продаваемых автомобилей в мире] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/volkswagen_golf_r32.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

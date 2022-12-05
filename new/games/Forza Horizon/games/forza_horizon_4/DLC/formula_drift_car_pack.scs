@@ -1,0 +1,58 @@
+concept_formula_drift_car_pack
+=> nrel_main_idtf: [Набор автомобилей Formula Drift] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Formula Drift Car Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [02.10.2018];
+=> nrel_price: [6.99$];
+
+<= nrel_content:
+	... (*
+		-> [1989 Formula Drift #98 BMW 325i];;
+    		-> [2006 Formula Drift #43 Dodge Viper SRT10];;
+    		-> [2015 Formula Drift #13 Ford Mustang];;
+    		-> [2016 Formula Drift #530 HSV Maloo Gen-F];;
+		-> [1995 Formula Drift #118 Nissan 240SX];;
+    		-> [1996 Formula Drift #232 Nissan 240SX];;
+    		-> [1997 Formula Drift #777 Nissan 240SX];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор автомобилей всех местностей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Formula Drift Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 28 сентября 2018 г. для выпуска Ultimate Edition и 2 октября 2018 г. для других выпусков.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор автомобилей всех местностей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пакет включен в цифровые предварительные заказы стандартной версии, а также выпусков Deluxe Edition и Ultimate Edition, но не входит в Car Pass. Предварительные заказы Forza Horizon 4 также включали тот же набор для Forza Motorsport 7.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/formula_drift_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

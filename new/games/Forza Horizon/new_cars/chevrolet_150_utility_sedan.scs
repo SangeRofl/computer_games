@@ -1,0 +1,44 @@
+concept_chevrolet_150_utility_sedan
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Chevrolet 150 Utility Sedan] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 4640; 
+=> nrel_release_date: 1655;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 283;  
+=> nrel_maximum_speed: 220; 
+=> nrel_acceleration_to_100_km_h: 6.7; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 2;  
+=> nrel_body_type: sedan; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1186;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 306;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Chevrolet 150 Utility Sedan)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Chevrolet 150 — американский полноразмерный легковой автомобиль, выпускавшийся подразделением Chevrolet корпорации General Motors как модель с 1953 по 1957 год. Модель занимала самую нижнюю строчку в модельной гамме Chevrolet. Это был доступный, неприхотливый автомобиль, популярный среди таксистов, полиции и тех, кому просто не нужны были мощный мотор и другие «навороты».] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/chevrolet_150_utility_sedan.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

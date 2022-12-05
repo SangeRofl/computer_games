@@ -1,0 +1,74 @@
+concept_afternoon
+=> nrel_main_idtf: [День] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Afternoon] (* <- lang_en;; *);
+
+<- concept_time_of_day;
+
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Утро)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Промежуток времени от восхода до заката Солнца
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_time;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(День)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Длительность дня зависит от географической широты пункта наблюдения и времени года.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_time_of_year;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Положение Солнца)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [При годовом движении Земли вокруг Солнца видимое положение Солнца перемещается из южного полушария небесной сферы в северное и, соответственно, изменяется полуденная высота Солнца над горизонтом.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Длительность полярного дня)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Длительность полярного дня максимальна на полюсах Земли и составляет более шести месяцев (на Северном полюсе — примерно с 18 марта по 26 сентября).
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/afternoon.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

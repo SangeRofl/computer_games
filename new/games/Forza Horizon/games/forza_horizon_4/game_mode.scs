@@ -1,0 +1,40 @@
+concept_game_mode
+=> nrel_main_idtf: [Игровой режим] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Game mode] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Игровой режим)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Это отдельная конфигурация, которая изменяет игровой процесс и влияет на поведение других игровых механик.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Наиболее распространенные примеры)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Одним из наиболее распространенных примеров игрового режима является выбор однопользовательской или многопользовательской игры в видеоиграх, где многопользовательская игра может быть совместной или соревновательной.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/game_mode.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

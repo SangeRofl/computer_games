@@ -1,0 +1,237 @@
+section_subject_domain_of_game_forza_horizon_4
+	=> nrel_main_idtf: [Раздел. Предметная область игры Forza Horizon 4] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of game Forza Horizon 4] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_racing_series;
+		section_subject_domain_of_eliminator;
+		section_subject_domain_of_dlc;
+		section_subject_domain_of_forza_car
+	};
+	-> rrel_key_sc_element:
+		concept_road_racing_series;
+		concept_dirt_racing_series;
+		concept_cross_country_series;
+		concept_pr_stunts;
+		concept_car_pass;
+		concept_forza_horizon_4_achievements;
+		concept_the_eliminator;
+	-> rrel_maximum_studied_object_class: 
+		concept_computer_game_forza_horizon_4;
+	-> rrel_not_maximum_studied_object_class:
+		concept_road_racing_series;
+		concept_dirt_racing_series;
+		concept_cross_country_series;
+		concept_pr_stunts;
+		concept_car_pass;
+		concept_forza_horizon_4_achievements;
+		concept_the_eliminator;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_racing_series
+	=> nrel_main_idtf: [Раздел. Предметная область серий гонок] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of racing series] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_road_racing;
+		section_subject_domain_of_dirt_racing;
+		section_subject_domain_of_cross_racing
+	};
+	-> rrel_key_sc_element:
+		concept_road_racing_series;
+		concept_dirt_racing_series;
+		concept_cross_country_series;
+	-> rrel_maximum_studied_object_class: 
+		concept_road_racing_series;
+		concept_dirt_racing_series;
+		concept_cross_country_series;
+	-> rrel_explored_relation:
+		nrel_racing_series;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_road_racing
+	=> nrel_main_idtf: [Раздел. Предметная область шоссейных гонок] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of road racing] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_road_racing_series;
+		concept_ambleside_sprint;
+		concept_horizon_festival_circuit;
+		concept_derwent_lakeside_sprint;
+		concept_ambleside_village_circuit;
+		concept_elmsdon_on_sea_sprint;
+		concept_horizon_festival_sprint;
+		concept_greendale_club_circuit;
+		concept_lake_district_sprint;
+		concept_moorhead_wind_farm_circuit;
+		concept_edinburgh_city_sprint;
+		concept_holyrood_park_circuit;
+		concept_princes_street_gardens_circuit;
+		concept_broadway_village_circuit;
+		concept_lakehurst_copse_circuit;
+		concept_waterhead_sprint;
+	-> rrel_maximum_studied_object_class: 
+		concept_road_racing_series;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_dirt_racing
+	=> nrel_main_idtf: [Раздел. Предметная область гонок бездорожья] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of dirt racing] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_dirt_racing_series;
+		concept_tarn_hows_scramble;
+		concept_derwentwater_trail;
+		concept_cotswolds_road_rally_trail;
+		concept_lakehurst_forest_trail;
+		concept_white_horse_hill_trail;
+		concept_astmoor_rally_trail;
+		concept_bamburgh_pinewood_trail;
+		concept_highland_farm_scramble;
+		concept_glen_rannoch_trail;
+		concept_greendale_foothills_scramble;
+		concept_mortimer_gardens_scramble;
+		concept_holyrood_park_trail;
+		concept_moorhead_rally_trail;
+		concept_mudkickers_4x4_scramble;
+		concept_ashbrook_loop_scramble;
+	-> rrel_maximum_studied_object_class: 
+		concept_dirt_racing_series;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_cross_racing
+	=> nrel_main_idtf: [Раздел. Предметная область гонок по пересеченной местности] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of cross road racing] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_cross_country_series;
+		concept_city_outskirts_cross_country;
+		concept_arthurs_seat_cross_country;
+		concept_beach_view_cross_country;
+		concept_riverbank_cross_country_circuit;
+		concept_whitewater_falls_cross_country;
+		concept_windmill_cross_country;
+		concept_ambleside_loop_cross_country;
+		concept_ambleside_rush_cross_country;
+		concept_quarry_cross_country_circuit;
+		concept_aerodrome_cross_country_circuit;
+		concept_castle_cross_country_circuit;
+		concept_the_ridge_cross_country_circuit;
+		concept_coastal_rush_cross_country;
+		concept_north_city_cross_country_circuit;
+		concept_rail_yard_cross_country_circuit;
+	-> rrel_maximum_studied_object_class: 
+		concept_cross_country_series;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_eliminator
+	=> nrel_main_idtf: [Раздел. Предметная область устранителя] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of eliminator] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_eliminator_arena;
+		concept_eliminator_head_to_head;
+		concept_eliminator_matchmaking;
+		concept_eliminator_timeout;
+		concept_eliminator_stages;
+	-> rrel_maximum_studied_object_class: 
+		concept_the_eliminator;
+	-> rrel_not_maximum_studied_object_class:
+		concept_eliminator_arena;
+		concept_eliminator_head_to_head;
+		concept_eliminator_matchmaking;
+		concept_eliminator_timeout;
+		concept_eliminator_stages;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_dlc
+	=> nrel_main_idtf: [Раздел. Предметная область игровых дополнений] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of DLC] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_car_pass;
+		concept_any_terrain_car_pack;
+		concept_open_top_car_pack;
+		concept_british_sports_cars_car_pack;
+		concept_open_top_car_pack;
+		concept_icons_car_pack;
+		concept_high_performance_car_pack;
+		concept_fortune_island_pack;
+		concept_best_of_bond_car_pack;
+		concept_formula_drift_car_pack;
+	-> rrel_maximum_studied_object_class: 
+		concept_car_pass;
+		concept_fortune_island_pack;
+		concept_best_of_bond_car_pack;
+		concept_formula_drift_car_pack;
+	-> rrel_not_maximum_studied_object_class:
+		concept_any_terrain_car_pack;
+		concept_open_top_car_pack;
+		concept_british_sports_cars_car_pack;
+		concept_open_top_car_pack;
+		concept_icons_car_pack;
+		concept_high_performance_car_pack;
+	<- non_atomic_section;;
+//------------------------------------------------------------------------------------------------------------------------
+section_subject_domain_of_forza_car
+	=> nrel_main_idtf: [Раздел. Предметная область машин серии игр Forza Horizon 4] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of Forza Horizon 4 game's series cars] (* <- lang_en;; *);
+	-> rrel_key_sc_element:
+		concept_audi_rs6_avant;
+		concept_bmw_m3_e30;
+		concept_bmw_m5_f90;
+		concept_jaguar_f_pace_s;
+		concept_koenigsegg_regera;
+		concept_lamborghini_huracan_performante;
+		concept_land_rover_range_rover_sport_svr;
+		concept_lexus_rc_f;
+		concept_maserati_granturismo_s;
+		concept_mazda_rx7;
+		concept_mcLaren_720s_coupe;
+		concept_mercedes_amg_gt_r;
+		concept_mercedes_amg_e63_s;
+		concept_mitsubishi_lancer_evolution_ix;
+		concept_nissan_370z;
+		concept_nissan_silvia_spec_r_aero;
+		concept_pagani_zonda_r;
+		concept_porsche_911_gt3_rs;
+		concept_toyota_supra_rz;
+		concept_volkswagen_scirocco_r;
+		concept_acura_rsx_type_s;
+		concept_alpine_a110;
+		concept_bac_mono;
+		concept_chevrolet_150_utility_sedan;
+		concept_chevrolet_corvette_zr1;
+		concept_deberti_design_jeep_wrangler_unlimited;
+		concept_dodge_challenger_r_t;
+		concept_dodge_challenger_srt_hellcat;
+		concept_dodge_charger_daytona_hemi;
+		concept_dodge_charger_r_t;
+		concept_dodge_viper_srt10_acr;
+		concept_ferrari_dino_246_gt;
+		concept_ferrari_f12tdf;
+		concept_ferrari_f40;
+		concept_ferrari_fxx;
+		concept_ford_f_100;
+		concept_ford_lotus_cortina;
+		concept_ford_ranger_raptor;
+		concept_ford_svt_cobra_r;
+		concept_honda_civic_rs;
+		concept_honda_s2000;
+		concept_hsv_gen_f_gts;
+		concept_image;
+		concept_infiniti_q60_concept;
+		concept_jaguar_e_type;
+		concept_jaguar_xe_s;
+		concept_jaguar_xj220;
+		concept_jaguar_xkr_s;
+		concept_jeep_wrangler_rubicon;
+		concept_ktm_x_bow_r;
+		concept_meyers_manx;
+		concept_mg_metro_6r4;
+		concept_porsche_macan_turbo;
+		concept_porsche_panamera_turbo;
+		concept_reliant_supervan_iii;
+		concept_srt_viper_gts;
+		concept_subaru_brz;
+		concept_vauxhall_monaro_vxr;
+		concept_volkswagen_golf_r32;
+	-> rrel_maximum_studied_object_class: 
+		concept_car;
+	<- non_atomic_section;;
+	

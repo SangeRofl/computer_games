@@ -1,0 +1,77 @@
+concept_beauty_spots
+=> nrel_main_idtf: [Живописные места] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Beauty spots] (* <- lang_en;; *);
+
+<- concept_game_event;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Живописные места)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Место в игре, которое популярно из-за его красивых пейзажей.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_place;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Живописные места на карте)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [От водопада Уайтуотер до замка Бамбург подъезжайте к точкам красоты (отмечены фиолетовыми значками с фотографиями на карте) и нажмите X , чтобы насладиться видом действительно захватывающих дух достопримечательностей, разбросанных по всей Британии. 
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_point;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Награды)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Вы зарабатываете очки влияния после посещения Мест красоты.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Количество живописных мест)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В Forza Horizon 4 есть 12 красивых мест, разбросанных по всей карте.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_place;;
+		-> concept_map;;
+        *);;
+*);
+
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/beauty_spots.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

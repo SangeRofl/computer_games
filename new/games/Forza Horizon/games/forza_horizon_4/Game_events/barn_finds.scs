@@ -1,0 +1,103 @@
+concept_barn_finds
+=> nrel_main_idtf: [Амбарные находки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Barn finds] (* <- lang_en;; *);
+
+<- concept_game_event;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Амбарные находки)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Классический автомобиль, самолет или мотоцикл, который был заново обнаружен после хранения, часто в заброшенном состоянии.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_car;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Амбарные находки на карте)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Forza Horizon 4 — на этот раз действие происходит в Британии — имеет 15 транспортных средств, разбросанных по карте и спрятанных в сараях. 
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_computer_game_forza_horizon_4;;
+		-> concept_car;;
+		-> concept_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Награды)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Как только вы найдете эти амбары, вы сможете восстановить машины и владеть ими. Из 15 находок четыре являются сезонными.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+               -> concept_car;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Принцип работы)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Амбарные находки объявляется по радио диджеем, либо по звонку Алекса. После звонка (или объявления) на карте появится кружок-подсказка. Этот кружок отмечает общую площадь, в которой расположен сарай.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Советы по нахождению амбаров)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [К некоторым из этих амбаров есть какая-то дорога или тропа, в то время как другие могут быть расположены глубоко в лесу, изолированы и отрезаны. Находки сарая требуют внимательного взгляда из-за деревьев, кустарников, а иногда и теней, которые могут скрыть сарай из поля зрения. Кроме того, сканируйте темные и необычные области, исследуя равнины и холмы, так как это обычные укрытия для некоторых амбаров.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Определённые сезоны)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [С введением сезонов в игре некоторые амбары можно найти только в определенные сезоны. Не волнуйтесь, если вам кажется, что вы не можете их вызвать, возможно, вам просто придется подождать смены сезона.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_season;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/barn_finds.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

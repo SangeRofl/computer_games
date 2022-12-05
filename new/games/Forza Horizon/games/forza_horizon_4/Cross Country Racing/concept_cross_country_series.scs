@@ -1,0 +1,68 @@
+concept_cross_country_series
+=> nrel_main_idtf: [Серия гонок по пересечённой местности] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Cross Country Series] (* <- lang_en;; *);
+
+<- concept_racing_series;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Cross Country Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пришло время блистать этим внедорожным монстрам, пылящимся в вашем гараже. Трассы, как правило, жесткие и неумолимые, поэтому вам нужен соответствующий автомобиль. Вам нужны тяжелые автомобили, которые остаются близко к земле, даже когда местность подбрасывает их вперед и вверх. Я обнаружил, что пресет Offroad, доступный для некоторых автомобилей, ухудшает управляемость. Хотя это и нелогично (потому что это трасса для бездорожья), вам все же нужны автомобили, которые будут низкими и близко к земле. У него также должно быть хорошее торможение для крутых и неожиданных поворотов.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Утв.(Cross Country Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Как и в серии Dirt Racing, открытая местность позволяет вам использовать флажки контрольно-пропускных пунктов, чтобы опередить другие автомобили или быстрее завершить поворот. Становится немного сложно всегда проходить через середину флагов контрольно-пропускного пункта, поэтому вместо этого направляйтесь только к одному и проезжайте прямо через него.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Утв.(Cross Country Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Переход к финальному раунду приведет вас к длительной, трудной, но все же веселой и напряженной гонке по пересеченной местности под названием «Титан».
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+=> nrel_inclusion: concept_city_outskirts_cross_country;
+=> nrel_inclusion: concept_arthurs_seat_cross_country;
+=> nrel_inclusion: concept_beach_view_cross_country;
+=> nrel_inclusion: concept_riverbank_cross_country_circuit;
+=> nrel_inclusion: concept_whitewater_falls_cross_country;
+=> nrel_inclusion: concept_windmill_cross_country;
+=> nrel_inclusion: concept_ambleside_loop_cross_country;
+=> nrel_inclusion: concept_ambleside_rush_cross_country;
+=> nrel_inclusion: concept_quarry_cross_country_circuit;
+=> nrel_inclusion: concept_aerodrome_cross_country_circuit;
+=> nrel_inclusion: concept_castle_cross_country_circuit;
+=> nrel_inclusion: concept_the_ridge_cross_country_circuit;
+=> nrel_inclusion: concept_coastal_rush_cross_country;
+=> nrel_inclusion: concept_north_city_cross_country_circuit;
+=> nrel_inclusion: concept_rail_yard_cross_country_circuit;
+
+<- sc_node_not_relation;;

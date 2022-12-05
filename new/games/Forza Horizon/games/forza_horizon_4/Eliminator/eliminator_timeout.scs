@@ -1,0 +1,66 @@
+concept_eliminator_timeout
+=> nrel_main_idtf: [Таймаут (Устранитель)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Timeout (Eliminator)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Таймаут (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Счетчик тайм-аута появляется в верхнем левом углу HUD игрока, если он покидает пределы арены во время сеанса The Eliminator, и он будет удален, если он накопит слишком много времени за пределами арены, в течение которого у него будет тайм-аут вне сеанса.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+                -> concept_eliminator_arena;;
+                -> concept_the_eliminator;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Таймаут (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В счетчике тайм-аута игрока за пределами арены может быть накоплено до 60 секунд, но затраченное время не может быть сброшено или уменьшено, поскольку оно суммируется на всех этапах текущей сессии в The Eliminator. Игроки, выезжающие за пределы арены во время 4-го этапа, будут тратить больше времени на тайм-аут.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+                -> concept_eliminator_arena;;
+                -> concept_the_eliminator;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Таймаут (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [За пределами арены игроки наращивают время до своего тайм-аута, и они будут исключены, если их счетчик будет полностью заполнен. Экран игрока за пределами арены будет поступенно становиться серым.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+                -> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/timeout.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

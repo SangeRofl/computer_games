@@ -1,0 +1,44 @@
+concept_deberti_design_jeep_wrangler_unlimited
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [DeBerti Design Jeep Wrangler Unlimited] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3605; 
+=> nrel_release_date: 2013;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 289;  
+=> nrel_maximum_speed: 159; 
+=> nrel_acceleration_to_100_km_h: 8.1; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: jeep; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1828;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 347;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(DeBerti Design Jeep Wrangler Unlimited)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Jeep Wrangler — автомобиль повышенной проходимости, производимый американской компанией Chrysler (отделение Jeep). Автомобиль специально создавался как военный и поставлялся армии Соединенных Штатов Америки. Является преемником автомобилей семейства Jeep CJ.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/deberti_design_jeep_wrangler_unlimited.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

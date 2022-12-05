@@ -1,0 +1,53 @@
+concept_eliminator_stage_1
+=> nrel_main_idtf: [Стадия 1 (стадия Устранителя)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Stage 1 (Eliminator stage)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 1 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Этап 1 арены происходит вскоре после того, как все участники выбрали стартовую локацию и успешно вошли в сеанс The Eliminator. Это первый этап, на котором появляется арена, которая затягивает игроков в локацию размером примерно в половину карты.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_location;;
+		-> concept_eliminator_arena;;
+		-> concept_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 1 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Круг будет уменьшаться от границы карты до размера проецируемого пунктирного круга на карте игрока.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 1 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Арена будет сжиматься медленнее, начиная с этапа 1, поскольку игроки, присоединяющиеся к сеансу, могут по-прежнему появляться в своем начальном месте, и многие игроки, вероятно, все еще управляют автомобилем уровня 1.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_arena;;
+		->concept_level;;
+        *);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,44 @@
+concept_ford_lotus_cortina
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ford Lotus Cortina] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1558; 
+=> nrel_release_date: 1966;
+=> nrel_engine_type: diesel;
+=> nrel_engine_power: 112;  
+=> nrel_maximum_speed: 167; 
+=> nrel_acceleration_to_100_km_h: 11; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 4;  
+=> nrel_body_type: sedan; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 905;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 145;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ford Lotus Cortina)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Ford Cortina Mark I имел классическую заднеприводную компоновку, несущий кузов и 98-дюймовую (2489 мм) колёсную базу. Под капотом устанавливался 4-цилиндровый двигатель.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ford_lotus_cortina.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

@@ -1,0 +1,26 @@
+concept_astmoor_rally_trail
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Astmoor Rally Trail] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 5;
+=> nrel_length_of_route: 5.3;
+=> nrel_best_lap_time: 03.10.549;
+=> nrel_time_of_year: concept_winter;
+=> nrel_time_of_day: concept_morning;
+=> nrel_number_of_participants: 16;
+=> nrel_prize_fund: 10000;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/astmoor_rally_trail.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

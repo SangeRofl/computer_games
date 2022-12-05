@@ -1,0 +1,44 @@
+concept_hsv_gen_f_gts
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [HSV GEN-F GTS] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6162; 
+=> nrel_release_date: 2014;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 585;  
+=> nrel_maximum_speed: 329; 
+=> nrel_acceleration_to_100_km_h: 4; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: sedan; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Australia;
+=> nrel_vehicle_weight: 1830;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 5;
+=> nrel_torque: 740;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(HSV GEN-F GTS)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Спортивное отделение Holden Special Vehicles или коротко HSV поделилось первыми подробностями новой линейки «заряженных» автомобилей Gen F. Данная версия построена на базе Holden VF Commodore, отличаясь от него более мощным двигателем, спортивным обвесом кузова, доработанной подвеской и обновленной отделкой внутреннего убранства. Новинка, которую уже назвали самым мощным и быстрым автомобилем, построенным в Австралии, будет доступна в пяти различных модификациях. Минимальная цена топовой версии HSV Gen F GTS составит порядка 100 000 долларов.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/hsv_gen_f_gts.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

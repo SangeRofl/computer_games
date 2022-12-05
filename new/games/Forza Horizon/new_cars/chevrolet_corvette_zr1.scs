@@ -1,0 +1,44 @@
+concept_chevrolet_corvette_zr1
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Chevrolet Corvette ZR1] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6162; 
+=> nrel_release_date: 2009;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 647;  
+=> nrel_maximum_speed: 330; 
+=> nrel_acceleration_to_100_km_h: 3.4; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1528;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 819;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Chevrolet Corvette ZR1)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Chevrolet Corvette - это скоростной спортивный автомобиль мирового уровня. Версия ZR1 является самым мощным и быстрым серийным автомобилем, когда-либо производившимся компанией General Motors.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/chevrolet_corvette_zr1.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

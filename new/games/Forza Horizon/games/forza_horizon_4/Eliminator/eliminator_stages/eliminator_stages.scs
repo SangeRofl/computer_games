@@ -1,0 +1,28 @@
+concept_eliminator_stages
+=> nrel_main_idtf: [Стадии (Устранитель)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Stages (Eliminator)] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_eliminator_stage_start_location;;
+	-> concept_eliminator_stage_1;;
+	-> concept_eliminator_stage_2;;
+	-> concept_eliminator_stage_3;;
+	-> concept_eliminator_stage_4;;
+	-> concept_eliminator_stage_final_shutdown;;
+	=> nrel_main_idtf: [Разбиение на стадии] (* <- lang_ru;; *);;
+*);
+	
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/stages.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;
