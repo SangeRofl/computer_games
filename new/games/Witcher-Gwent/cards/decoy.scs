@@ -1,0 +1,9 @@
+gwent_card_decoy
+    <- gwent_card;
+    <- gwent_card_special;
+    <- gwent_ability_decoy;
+
+    => nrel_main_idtf: [Gwent Card: Decoy] (* <- lang_en;; *);    
+    -> rrel_gwent_card_name: [Decoy] (* <- lang_en;; *);;
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+
