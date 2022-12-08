@@ -1,0 +1,9 @@
+gwent_card_mahakaman_defender
+	<- gwent_card;
+	<- gwent_card_unit;
+	<- gwent_strength_5;
+	<- gwent_row_close;
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gwent Card: Mahakaman Defender] (* <- lang_en;; *);
+	-> rrel_gwent_card_name: [Mahakaman Defender] (* <- lang_en;; *);
+	-> rrel_gwent_card_faction: gwent_faction_scoiatael;;

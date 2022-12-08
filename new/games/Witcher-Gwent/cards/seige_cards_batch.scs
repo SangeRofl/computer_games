@@ -5,10 +5,10 @@ gwent_card_ballista
     <- gwent_card_unit;
     <- gwent_strength_6;
     <- gwent_row_seige;
-
+	<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Ballista] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Ballista] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Ballista] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_northen_realms;;
 
 
@@ -17,10 +17,10 @@ gwent_card_trebuchet
     <- gwent_card_unit;
     <- gwent_strength_6;
     <- gwent_row_seige;
-
+<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Trebuchet] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Trebuchet] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Trebuchet] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_northen_realms;;
 
 

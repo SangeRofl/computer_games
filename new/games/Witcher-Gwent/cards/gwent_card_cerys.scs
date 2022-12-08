@@ -1,0 +1,12 @@
+gwent_card_cerys
+	<- gwent_card;
+	<- gwent_card_unit;
+	<- gwent_card_hero;
+	<- gwent_strength_10;
+	<- gwent_row_close;
+	<- gwent_ability_muster;
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gwent Card: Cerys] (* <- lang_en;; *);
+	-> rrel_gwent_card_name: [Cerys] (* <- lang_en;; *);
+	-> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
+	-> rrel_gwent_card_faction: gwent_faction_skellige;;

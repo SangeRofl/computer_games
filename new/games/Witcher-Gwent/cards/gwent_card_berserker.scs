@@ -1,0 +1,11 @@
+gwent_card_berserker
+	<- gwent_card;
+	<- gwent_card_unit;
+	<- gwent_strength_4;
+	<- gwent_row_close;
+	<- gwent_ability_berserker;
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gwent Card: Berserker] (* <- lang_en;; *);
+	-> rrel_gwent_card_name: [Berserker] (* <- lang_en;; *);
+	-> rrel_gwent_card_flavour: [Kill, crush, cleave!] (* <- lang_en;; *);
+	-> rrel_gwent_card_faction: gwent_faction_skellige;;

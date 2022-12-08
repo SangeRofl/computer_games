@@ -1,0 +1,9 @@
+gwent_card_rotten_mangonel
+	<- gwent_card;
+	<- gwent_card_unit;
+	<- gwent_strength_3;
+	<- gwent_row_ranged;
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gwent Card: Rotten Mangonel] (* <- lang_en;; *);
+	-> rrel_gwent_card_name: [Rotten Mangonel] (* <- lang_en;; *);
+	-> rrel_gwent_card_faction: gwent_faction_nilfgaard;;
