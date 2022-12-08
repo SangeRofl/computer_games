@@ -1,0 +1,9 @@
+gwent_card_udalryk
+	<- gwent_card;
+	<- gwent_card_unit;
+	<- gwent_strength_4;
+	<- gwent_row_close;
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gwent Card: Udalryk] (* <- lang_en;; *);
+	-> rrel_gwent_card_name: [Udalryk] (* <- lang_en;; *);
+	-> rrel_gwent_card_faction: gwent_faction_skellige;;

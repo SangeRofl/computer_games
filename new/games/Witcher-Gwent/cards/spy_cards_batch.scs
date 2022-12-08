@@ -4,10 +4,10 @@ gwent_card_thaler_gwent
     <- gwent_strength_1;
     <- gwent_row_seige;
     <- gwent_ability_spy;
-
+<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Thaler Gwent] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Thaler Gwent] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Thaler Gwent] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_northen_realms;;
 
 
@@ -17,10 +17,10 @@ gwent_card_shilard_fitz_oesterlen
     <- gwent_strength_7;
     <- gwent_row_close;
     <- gwent_ability_spy;
-
+<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Shilard Fitz-Oesterlen] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Shilard Fitz-Oesterlen] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Shilard Fitz-Oesterlen] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_nilfgaard;;
 
 
@@ -30,10 +30,10 @@ gwent_card_sigismund_dijkstra
     <- gwent_strength_4;
     <- gwent_row_close;
     <- gwent_ability_spy;
-
+<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Sigismund Dijkstra] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Sigismund Dijkstra] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Sigismund Dijkstra] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_northen_realms;;
 
 
@@ -43,8 +43,8 @@ gwent_card_prince_stennis
     <- gwent_strength_5;
     <- gwent_row_close;
     <- gwent_ability_spy;
-
+<-sc_node_not_relation;
     => nrel_main_idtf: [Gwent Card: Prince Stennis] (* <- lang_en;; *);    
-    -> rrel_gwent_card_name: [Prince Stennis] (* <- lang_en;; *);;
-//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);;
+    -> rrel_gwent_card_name: [Prince Stennis] (* <- lang_en;; *);
+//  -> rrel_gwent_card_flavour: [] (* <- lang_en;; *);
     -> rrel_gwent_card_faction: gwent_faction_northen_realms;;

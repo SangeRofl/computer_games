@@ -1,0 +1,17 @@
+test_deck_1 <- gwent_deck;
+	=> nrel_main_idtf: [Test deck 1] (* <- lang_en;; *);;
+
+test_deck_1 ->
+	gwent_card_decoy;
+	gwent_card_berserker;
+	gwent_card_cerys;
+	gwent_card_dennis_cranmer;
+	gwent_card_keira_metz;
+	gwent_card_mahakaman_defender;
+	gwent_card_philippa_eilhart;
+	gwent_card_thaler_gwent;
+	gwent_card_shilard_fitz_oesterlen;
+	gwent_card_rotten_mangonel;
+	gwent_card_ballista;
+	gwent_card_udalryk;;
+	
