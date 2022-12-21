@@ -6,3 +6,12 @@ gog
     [gog]
     (* <- lang_ru;; *);
 <- sc_node_not_relation;;
+
+steam
+=> nrel_main_idtf:
+    [steam]
+    (* <- lang_en;; *);
+=> nrel_main_idtf:
+    [steam]
+    (* <- lang_ru;; *);
+<- sc_node_not_relation;;
