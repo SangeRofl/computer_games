@@ -96,5 +96,4 @@ computer_game_apex_legends
 		*);;
 	*);;
 *);
-
-<- sc_node_not_relation;;
+<- sc_node_not_relation;
