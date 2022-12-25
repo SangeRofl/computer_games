@@ -1,0 +1,73 @@
+concept_computer_game_forza_horizon_5
+=> nrel_main_idtf: [Forza Horizon 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Forza Horizon 5] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_racing;
+<- concept_singleplayer_game;
+<- concept_multiplayer_game;
+
+<- concept_three_dimensional_game;
+<- concept_multiplatform_game;
+
+=> nrel_developer: company_playground_games;
+=> nrel_publisher: company_microsoft_studios;
+
+=> nrel_platform: windows; xbox_one; xbox_series_x; xbox_series_s;
+
+=> nrel_game_mode: singleplayer_game_mode; multiplayer_game_mode;
+
+=> nrel_game_engine: forza_tech;
+
+=> nrel_publication_date: date_09_11_2021;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Forza Horizon 5)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (* 
+                -> [<b><sc_element sys_idtf="concept_computer_game">компьютерная игра</sc_element></b> в <b><sc_element sys_idtf="concept_game_genre">жанре</sc_element></b> аркадного гоночного симулятора. Во время выбора локации для новой игры разработчики с самого начала хотели сделать самую большую <b><sc_element sys_idtf="concept_game_series_forza_horizon">Forza Horizon</sc_element></b>. При этом разработчики поняли, что <b><sc_element sys_idtf="concept_game_world">игровой мир</sc_element></b> должен быть не только масштабным, но и разнообразным. Поэтому в качестве места действия Horizon 5 была выбрана Мексика, в которой есть самые различные природные зоны, такие как пустыни и джунгли, присутствуют как заснеженные горы и каньоны, так и вулканы, а в качестве строений имеются как древние города, так и современные постройки. В качестве «основного» большого города был выбран город Гуанахуато.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+                -> concept_singleplayer_game;;
+                -> concept_multiplayer_game;;
+                -> concept_three_dimensional_game;;
+                -> concept_multiplatform_game;;
+                -> company_playground_games;;
+                -> company_microsoft_studios;;
+                -> concept_game_series_forza_horizon;;
+        *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+        <- concept_plot;;
+        => nrel_main_idtf: [Сюжет] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Forza Horizon 5 — фестиваль со всем вытекающим праздничным настроением, безграничным позитивом и системой поощрения буквально за всё. Игра с самого начала не ставит в жесткие рамки и не навязывает своих условностей. Это идеальный мир наслаждения и удовольствия, выходя из которого задаешься вопросом: «а что так можно было?».
+] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+		<-illustration;;
+		=> nrel_main_idtf: [Обложка игры] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation: ...
+		(*
+				-> rrel_example : "file://image/forza-horizon5.jpg"
+						(*
+								=> nrel_format: format_jpg;;
+						*);;
+		*);;
+*);
+
+<- sc_node_not_relation;;
+
+=>nrel_source_of_information:
+[https://store.steampowered.com/app/1613281/Forza_Horizon_5_Expansion_2/]
+(*<-steam;;*);;
+

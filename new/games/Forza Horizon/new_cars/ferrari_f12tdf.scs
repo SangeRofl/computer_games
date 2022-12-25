@@ -1,0 +1,44 @@
+concept_ferrari_f12tdf
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ferrari F12tdf] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6262; 
+=> nrel_release_date: 2015;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 780;  
+=> nrel_maximum_speed: 340; 
+=> nrel_acceleration_to_100_km_h: 2.9; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 12;
+=> nrel_country_of_production: Italy;
+=> nrel_vehicle_weight: 1520;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 705;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ferrari F12tdf)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Специальная серия Ferrari F12 berlinetta с шильдиком F12tdf посвящена знаменитой гонке Tour de France. Разработчики форсировали штатный атмосферный двигатель 6.3 V12. Теперь он выдает 780 лошадиных сил (плюс 40) и 705 Нм тяги (плюс 15). Модернизация не преминула сказаться на динамике. С места до первой сотни Ferrari "рвет" за 2,9 секунды – на 0,2 быстрее обычного купе. При этом максимальная скорость не изменилась – 340 км/ч.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ferrari_f12tdf.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

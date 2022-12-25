@@ -1,0 +1,65 @@
+concept_time_of_day
+=> nrel_main_idtf: [Время суток] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Time of day] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Время суток)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Широко используемый на Земле способ исчисления времени, основанный на изменении положения солнца на небе, приблизительно являющемся периодичным с периодом в одни сутки.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_time;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Разделение суток)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Сутки делятся на 24 часа (1440 минут, или 86 400 секунд) и условно делятся на четыре характерных интервала — утро, день, вечер и ночь.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> concept_morning;;
+        	-> concept_afternoon;;
+        	-> concept_night;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Состав)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Календарные сутки составляют недели, месяцы.
+                ] (* <- lang_ru;; *);;
+        *);;
+         <= nrel_using_constants: ...
+        (*
+        	-> week;;
+        	-> month;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/time_day.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

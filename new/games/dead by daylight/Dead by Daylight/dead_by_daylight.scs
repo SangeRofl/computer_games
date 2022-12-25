@@ -39,4 +39,8 @@ computer_game_dead_by_daylight <- sc_node_not_relation;
             => nrel_format: format_jpg;;
         *);;
     *);;
-*);;
+*);
+
+=>nrel_source_of_information:
+[https://store.steampowered.com/app/573940/Dead_by_Daylight__Left_Behind/]
+(*<-steam;;*);;

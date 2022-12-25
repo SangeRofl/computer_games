@@ -1,0 +1,53 @@
+concept_road_racing_series
+=> nrel_main_idtf: [Серия шоссейных гонок] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Road Racing Series] (* <- lang_en;; *);
+
+<- concept_racing_series;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Road Racing Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Хватай свои самые быстрые автомобили классов S1 и S2 из гаража. Серия Road Racing очень конкурентоспособна, а повороты могут стать испытанием даже для лучших водителей. Хороший выбор автомобиля — Koenigsegg Agera или Pagani Zonda. Jaguar C-X75 выпуска Джеймса Бонда 2010 года – это отличный выбор с превосходным балансом скорости и управляемости.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Утв.(Road Racing Series)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Как правило, полноприводные автомобили с хорошим ускорением здесь преуспевают. Вам нужна машина, которая справится с этими поворотами и выйдет на финишную прямую. Автомобили Forza Edition с прокачкой «Чистые навыки» или «Навыки» также являются хорошим выбором для шоссейных гонок. Продолжайте участвовать в гонках, убедившись, что финишируете на подиуме, чтобы пройти этапы, кульминацией которых станет мегадорожная гонка под названием «Колосс».
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+=> nrel_inclusion: concept_ambleside_sprint;
+=> nrel_inclusion: concept_horizon_festival_circuit;
+=> nrel_inclusion: concept_derwent_lakeside_sprint;
+=> nrel_inclusion: concept_ambleside_village_circuit;
+=> nrel_inclusion: concept_elmsdon_on_sea_sprint;
+=> nrel_inclusion: concept_horizon_festival_sprint;
+=> nrel_inclusion: concept_greendale_club_circuit;
+=> nrel_inclusion: concept_lake_district_sprint;
+=> nrel_inclusion: concept_moorhead_wind_farm_circuit;
+=> nrel_inclusion: concept_edinburgh_city_sprint;
+=> nrel_inclusion: concept_holyrood_park_circuit;
+=> nrel_inclusion: concept_princes_street_gardens_circuit;
+=> nrel_inclusion: concept_broadway_village_circuit;
+=> nrel_inclusion: concept_lakehurst_copse_circuit;
+=> nrel_inclusion: concept_waterhead_sprint;
+
+<- sc_node_not_relation;;

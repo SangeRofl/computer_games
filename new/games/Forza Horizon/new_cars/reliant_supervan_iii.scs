@@ -1,0 +1,44 @@
+concept_reliant_supervan_iii
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Reliant Supervan III] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 701; 
+=> nrel_release_date: 1972;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 26;  
+=> nrel_maximum_speed: 120; 
+=> nrel_acceleration_to_100_km_h: 25; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 4;  
+=> nrel_body_type: universal; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 700;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 46;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Reliant Supervan III)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Reliant Regal был маленьким трёхколёсным автомобилем, произведённым с 1953-го по 1973-й компанией Reliant Motor, заменив более ранний Reliant Regent, малолитражный фургон с мотоциклетным двигателем. Как трёхколёсное транспортное средство, имеющее лёгкую менее 700 кг конструкцию, в соответствии с законодательством Великобритании оно считается трициклом и может управляться по заполненной лицензии мотоцикла класса А. Его лёгкая коммерческая версия с откидной боковой задней дверью продавалась как Reliant Supervan.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/reliant_supervan_iii.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

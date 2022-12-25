@@ -1,0 +1,59 @@
+concept_time_of_year
+=> nrel_main_idtf: [Время года] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Time of year] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Время года)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Периоды в течение года продолжительностью в несколько месяцев, имеющие характерные климатические особенности, обусловленные изменениями интенсивности солнечной радиации или различиями в увлажнении.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+        	-> period;;
+        	-> month;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Смена времён год)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Смена времён года обусловливается годичным периодом обращения планеты вокруг Солнца и наклоном оси вращения Земли относительно орбитальной плоскости и, в небольшой степени, эллиптичностью орбиты.
+                ] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Календарное деление года)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В средних широтах часто используется формальное, календарное деление года на четыре приблизительно равных периода.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> year;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/time_of_year.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,30 @@
+concept_pr_stunts
+=> nrel_main_idtf: [PR Трюки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [PR Stunts] (* <- lang_en;; *);
+
+<- concept_special_challenges;
+
+<= nrel_subdividing: ...
+(*
+	-> concept_danger_signs;;
+    	-> concept_drift_zones;;
+    	-> concept_speed_traps;;
+    	-> concept_speed_zones;;
+	=> nrel_main_idtf: [Разбиение по видам трюков] (* <- lang_ru;; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(PR Трюки)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [PR-трюки в Forza Horizon 4 — это особые задачи, призванные повысить ваше влияние в Horizon. Это, в свою очередь, откроет новые возможности в игре, гонках и может даже помочь запустить неуловимые «Амбарные находки». Их выполнение также открывает доступ к другим фестивальным событиям. Оказывается, есть некоторые знаки опасности, которые вы должны разблокировать и заполнить, чтобы разбить доску с наградами, расположенную поблизости (например, на крыше дома).] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- sc_node_not_relation;;

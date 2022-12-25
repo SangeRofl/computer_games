@@ -1,0 +1,44 @@
+concept_dodge_challenger_srt_hellcat
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Dodge Challenger SRT Hellcat] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6166; 
+=> nrel_release_date: 2015;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 707;  
+=> nrel_maximum_speed: 320; 
+=> nrel_acceleration_to_100_km_h: 3.6; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 2020;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 881;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Dodge Challenger SRT Hellcat)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Компания Dodge рассекретила обновленный Додж Челленджер SRT Hellcat, который, по мнению производителя, претендует на звание «самый мощный масл кар». До этого была представлена модификация без супер-мощного двигателя, затем форсированный вариант с приставкой SRT и, наконец, дело дошло до экстремальной версии Hellcat.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/dodge_challenger_srt_hellcat.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

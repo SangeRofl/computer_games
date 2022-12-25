@@ -71,4 +71,11 @@ computer_game_the_elder_scrolls_5_skyrim
 [ Подобно предыдущим играм <b><sc_element sys_idtf="concept_game_series_the_elder_scrolls">серии</b></sc_element>, Skyrim предоставляет игроку возможность свободно путешествовать по обширному игровому миру, исследуя его и самостоятельно находя новые места и задания. ](*<-lang_ru;; => nrel_format: format_html;;*);;
       *);;
   *);
+<<<<<<< HEAD
   
+=======
+
+=>nrel_source_of_information:
+[https://www.gog.com/en/game/the_elder_scrolls_v_skyrim_special_edition]
+(*<-gog;;*);;
+>>>>>>> 7df7cc27157ac98cb76d1ca8d033b6e90fed78a1

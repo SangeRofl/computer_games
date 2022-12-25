@@ -1,0 +1,44 @@
+concept_honda_s2000
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Honda S2000] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2157; 
+=> nrel_release_date: 2003;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 243;  
+=> nrel_maximum_speed: 240; 
+=> nrel_acceleration_to_100_km_h: 5.7; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: roadster; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1286;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 217;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Honda S2000)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Honda S2000 — спортивный автомобиль в кузове родстер, выпускавшийся компанией Honda с 1999 по 2009 года. Концепт автомобиля был впервые показан еще в 1995 году, на Токийском автосалоне. Начало выпуска серийного автомобиля было приурочено к 50-летию компании, также он явился продолжением серии родстеров S500, S600 и S800. Название S2000 подчёркивает объём двигателя в два литра, и является традицией для родстеров, начиная с 1960-х годов.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/honda_s2000.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

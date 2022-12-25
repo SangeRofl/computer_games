@@ -1,0 +1,26 @@
+concept_north_city_cross_country_circuit
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [North City Cross Country Circuit] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 2;
+=> nrel_length_of_route: 7.9;
+=> nrel_best_lap_time: 04.44.643;
+=> nrel_time_of_year: concept_summer;
+=> nrel_time_of_day: concept_night;
+=> nrel_number_of_participants: 16;
+=> nrel_prize_fund: 17500;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/north_city_cross_country_circuit.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

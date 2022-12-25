@@ -1,0 +1,44 @@
+concept_porsche_panamera_turbo
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Porsche Panamera Turbo] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3996; 
+=> nrel_release_date: 2017;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 550;  
+=> nrel_maximum_speed: 306; 
+=> nrel_acceleration_to_100_km_h: 3.6; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: robotic;  
+=> nrel_number_of_gears: 8;  
+=> nrel_body_type: universal; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1995;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 5;
+=> nrel_torque: 770;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Porsche Panamera Turbo)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Porsche Panamera Turbo - это пятиместный спортивный фастбэк премиум класса. Его габаритные размеры составляют: длина 5015 мм, ширина 1931 мм, высота 1418 мм, а колесная база- 2920 мм. В стандартном положении, клиренс равняется 143 миллиметрам] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/porsche_panamera_turbo.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

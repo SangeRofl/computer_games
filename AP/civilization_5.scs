@@ -1,6 +1,6 @@
 computer_game_civilization_5
 => nrel_main_idtf: [Civilization 5] (* <- lang_en;; *);
-=> nrel_idtf: [Civilization 5] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Civilization 5] (* <- lang_ru;; *);
 
 <- concept_computer_game;
 <- concept_global_strategy;

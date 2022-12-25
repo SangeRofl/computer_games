@@ -1,0 +1,56 @@
+concept_japanese_heroes_car_pack
+=> nrel_main_idtf: [Набор японских машин-героев] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Japanese Heroes Car Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [14.10.2020];
+=> nrel_price: [6.99$];
+
+<= nrel_content:
+	... (*
+		-> [1974 Honda Civic RS];;
+    		-> [2003 Honda S2000];;
+    		-> [2005 Honda NSX-R GT];;
+    		-> [2002 Mazda RX-7 Spirit R Type-A];;
+		-> [2018 Nissan Sentra Nismo];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор японских машин-героев)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Набор автомобилей Japanese Heroes — это загружаемый набор автомобилей для Forza Horizon 4, выпущенный 14 октября 2020 г. вместе с обновлением 28.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор японских машин-героев)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В него вошли пять японских автомобилей из Car Pass. Пакет включен в версии игры Ultimate Edition и Ultimate Add-ons Bundle.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/japanese_heroes_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

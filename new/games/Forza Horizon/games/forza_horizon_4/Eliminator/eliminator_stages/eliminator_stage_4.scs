@@ -1,0 +1,51 @@
+concept_eliminator_stage_4
+=> nrel_main_idtf: [Стадия 4 (стадия Устранителя)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Stage 4 (Eliminator stage)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 4 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Этап 4 арены происходит в течение одной минуты и тридцати секунд после того, как арена достигает спроецированного пунктирного круга для этапа 3, и переносит игроков в локацию примерно в шестнадцатую часть размера карты.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_arena;;
+		-> concept_eliminator_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 4 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [После завершения обратного отсчета арена начнет сжиматься до текущего спроецированного пунктирного круга, а ее новая центральная точка может не совпадать с центром 3-го этапа, в результате чего некоторые области арены 3-го этапа окажутся дальше от арены 4-го этапа. чем другие.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_stage_3;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Стадия 4 (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [После достижения наименьшего размера арены Final Showdown запускается, когда на этапе 4 остается от двенадцати до восьми гонщиков.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_racer;;
+        *);;
+*);
+
+<- sc_node_not_relation;;

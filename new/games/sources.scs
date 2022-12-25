@@ -6,6 +6,10 @@ gog
     [gog]
     (* <- lang_ru;; *);
 <- sc_node_not_relation;;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7df7cc27157ac98cb76d1ca8d033b6e90fed78a1
 steam
 => nrel_main_idtf:
     [steam]

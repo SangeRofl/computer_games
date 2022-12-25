@@ -1,0 +1,44 @@
+concept_ktm_x_bow_r
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [KTM X-Bow R] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1984; 
+=> nrel_release_date: 2013;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 240;  
+=> nrel_maximum_speed: 230; 
+=> nrel_acceleration_to_100_km_h: 3.9; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: roadster; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Austria;
+=> nrel_vehicle_weight: 871;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 0;
+=> nrel_torque: 310;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(KTM X-Bow R)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[KTM X-Bow (произносится как арбалет) — сверхлегкий спортивный автомобиль для шоссейных и гоночных автомобилей, выпускаемый австрийским производителем мотоциклов KTM.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ktm_x_bow_r.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

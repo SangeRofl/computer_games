@@ -1,0 +1,26 @@
+concept_arthurs_seat_cross_country
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Arthurs Seat Cross Country] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 3;
+=> nrel_length_of_route: 9.0;
+=> nrel_best_lap_time: 05.24.617;
+=> nrel_time_of_year: concept_summer;
+=> nrel_time_of_day: concept_afternoon;
+=> nrel_number_of_participants: 15;
+=> nrel_prize_fund: 15000;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/arthurs_seat_cross_country.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

@@ -1,0 +1,44 @@
+concept_bac_mono
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [BAC Mono] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2261; 
+=> nrel_release_date: 2014;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 284;  
+=> nrel_maximum_speed: 274; 
+=> nrel_acceleration_to_100_km_h: 2.8; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: sequential;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: speedster; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 580;
+=> nrel_number_of_seats: 1;
+=> nrel_number_of_doors: 0;
+=> nrel_torque: 330;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(BAC Mono)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[BAC Mono — мелкосерийный одноместный спорткар, производимый английской компанией Briggs Automotive Company. Позиционируется как автомобиль для трек-дней, аналогичен Ariel Atom и Caterham 7.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/bac_mono.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

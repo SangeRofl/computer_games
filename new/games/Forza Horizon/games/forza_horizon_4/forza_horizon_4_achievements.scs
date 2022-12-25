@@ -1,0 +1,77 @@
+concept_forza_horizon_4_achievements
+=> nrel_main_idtf: [Достижения Forza Horizon 4] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Forza Horizon 4 achievements] (* <- lang_en;; *);
+
+<= nrel_subdividing: ...
+(*
+	-> ...(* => nrel_main_idtf: [Whatever Next?] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Teamwork Makes the Dream Work] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [There's No 'I' in Team] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Welcome to a New Horizon] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Accomplished Driver] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Spring Into Action] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Auto Barn] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [First Love] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Snow Problem] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Special Edition] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Hit the Jackpot] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Optional Extras] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Pride Before the Fall] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Welcome to Britain] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Master of Many] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Colossus of Roads] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Muddied] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Antique Restorer] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Taking the Grand Tour] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Coronation Trickin'] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [The Noisy Cartographer] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [I Feel the Need] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Apex Predator] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Hatch Me If You Can] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Horizon Fashion Week] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Jolly Cooperation] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Pilot's License] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Official Horizon Board Game] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Moonlighting] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: ["Do you know what 'DK' stands for?"] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [The Spirit of Adventure] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Life of the Party] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Stunt Superhero] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [I Live My Life...] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [An Illustrious Career] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Star Centurion] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Human After All] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [PR Superstar] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Week Complete] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Crowning Achievement] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [First-Time Adventurer] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Certified Adventurer] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Well Seasoned] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Overachiever] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Purple Split!] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Go the Distance] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [At One with the Car] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Horizon Superstar] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Reaping the Rewards] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Tortoise and the Hare] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Record Breaker] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Ground Force] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Never Tell Me the Odds] (* <- lang_ru;; <- lang_en;; *);; *);;
+        -> ...(* => nrel_main_idtf: [Tame the Monster] (* <- lang_ru;; <- lang_en;; *);; *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Достижения Forza Horizon 4)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Необязательные задания, связанные с прогрессом прохождения, стилем игры, поиском секретов, коллекционных предметов и т. д. Иногда получение достижений даёт доступ к новым материалам] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_computer_game;;
+        *);;
+*);
+
+<- sc_node_not_relation;;

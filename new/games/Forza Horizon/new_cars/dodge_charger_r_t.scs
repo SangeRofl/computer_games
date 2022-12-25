@@ -1,0 +1,44 @@
+concept_dodge_charger_r_t
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Dodge Charger R/T] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 7206; 
+=> nrel_release_date: 1969;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 375;  
+=> nrel_maximum_speed: 213; 
+=> nrel_acceleration_to_100_km_h: 6.4; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 3;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1695;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 651;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Dodge Charger R/T)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Автором флагманской модели стал Карл Кэмерон. Уже через полгода машина была в широкой продаже, показывая отличные результаты. Через год, столкнувшись с серьезной конкуренцией со стороны Ford Mustang и Chevrolet Camaro, авто потеряло часть своей аудитории, а его продажи упали практически вдвое. В 1967 году востребованными оказалось всего 15788 автомобилей.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/dodge_charger_r_t.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

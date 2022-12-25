@@ -1,0 +1,55 @@
+concept_icons_car_pack
+=> nrel_main_idtf: [Набор автомобилей-икон] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Icons Car Pack] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [23.09.2020];
+=> nrel_price: [6.99$];
+
+<= nrel_content:
+	concept_;
+    	concept_;
+    	concept_;
+    	concept_;
+    	concept_;
+    	concept_;
+    	concept_;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор автомобилей-икон)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Icons Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 23 сентября 2020 г. вместе с обновлением 27.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор автомобилей-икон)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Пакет включает в себя семь классических автомобилей из Car Pass. Пакет включен в версии игры Ultimate Edition и Ultimate Add-ons Bundle.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/icons_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

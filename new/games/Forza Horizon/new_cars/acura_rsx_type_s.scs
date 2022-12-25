@@ -1,0 +1,44 @@
+concept_acura_rsx_type_s
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Acura RSX Type-S] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 1998; 
+=> nrel_release_date: 2002;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 200;  
+=> nrel_maximum_speed: 230; 
+=> nrel_acceleration_to_100_km_h: 7.2; 
+=> nrel_drive_type: front;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: hatchback; 
+=> nrel_number_of_cylinders: 4;
+=> nrel_country_of_production: Japan;
+=> nrel_vehicle_weight: 1260;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 193;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Acura RSX Type-S)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Acura RSX — компактный спортивный автомобиль, производившийся корпорацией Honda. Является аналогом Honda Integra.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/acura_rsx_type_s.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

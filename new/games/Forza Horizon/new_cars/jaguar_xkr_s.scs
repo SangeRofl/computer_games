@@ -1,0 +1,45 @@
+concept_jaguar_xkr_s
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Jaguar XKR-S] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 5000; 
+=> nrel_release_date: 2012;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 510;  
+=> nrel_maximum_speed: 300; 
+=> nrel_acceleration_to_100_km_h: 4.2; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1795;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 680;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Jaguar XKR-S)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[В честь 50-летнего юбилея легендарной модели E-Type, компания Ягуар подготовила спецверсию купе Jaguar XKR-S, премьера которого состоялась на автосалоне в Женеве 2011.
+Новинка позиционируется как одна из самых мощных моделей из когда-либо созданных британской компанией и внешне отличается агрессивной передней частью с черной сеткой решетки радиатора, дополнительными воздухозаборниками в капоте и переднем бампере, а также свтодиодными секциями в головной оптике.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/jaguar_xkr_s.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

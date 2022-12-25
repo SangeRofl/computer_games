@@ -1,0 +1,44 @@
+concept_racing_series
+=> nrel_main_idtf: [Серия гонок] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Racing Series] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Серия гонок)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Совокупность гонок, объединенных общей тематикой и видом участвующих в гонках машин
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Классификация гонок)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Классифицировать виды автомобильных соревнований можно по типам трасс, на которых проводятся состязания, по особенностям гоночной техники, по особенностям спортивного регламента и т. д.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/racing_series.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

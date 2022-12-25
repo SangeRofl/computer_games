@@ -1,0 +1,55 @@
+concept_british_sports_cars_car_pack
+=> nrel_main_idtf: [Набор британских спортивных автомобилей] (* <- lang_ru;; *);
+=> nrel_main_idtf: [British Sports Cars Car Pack] (* <- lang_en;; *);
+
+=> nrel_release_date: [26.08.2020];
+=> nrel_price: [6.99$];
+
+<= nrel_content:
+	... (*
+		-> [2018 Aston Martin Vantage];;
+    		-> [1938 MG TA Midget];;
+    		-> [1962 Triumph TR3B];;
+    		-> [1970 Triumph TR6 PI];;
+		-> [2018 TVR Griffith];;
+		-> [2004 Vauxhall VX220 Turbo];;
+		=> nrel_main_idtf: [Машины] (* <- lang_ru;; *);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Набор британских спортивных автомобилей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [British Sports Cars Car Pack — загружаемый набор машин для Forza Horizon 4, выпущенный 26 августа 2020 года с обновлением 26.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Набор британских спортивных автомобилей)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В пакет вошли шесть британских спортивных автомобилей из Car Pass. Пакет включен в версии игры Ultimate Edition и Ultimate Add-ons Bundle.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/british_sports_cars_car_pack.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

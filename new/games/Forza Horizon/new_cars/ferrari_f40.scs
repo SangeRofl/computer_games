@@ -1,0 +1,44 @@
+concept_ferrari_f40
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ferrari F40] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2936; 
+=> nrel_release_date: 1987;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 478;  
+=> nrel_maximum_speed: 324; 
+=> nrel_acceleration_to_100_km_h: 4.1; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 8;
+=> nrel_country_of_production: Italy;
+=> nrel_vehicle_weight: 1235;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 577;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ferrari F40)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Ferrari F40 — среднемоторный двухдверный заднеприводный суперкар, имеющий кузов типа берлинетта. Производился Ferrari с 1987 по 1992. Автомобиль основан на шасси GTO Evoluzione, является дальнейшим развитием для гоночной версии Ferrari 288 GTO. В общей сложности было произведено 1315 таких авто.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ferrari_f40.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

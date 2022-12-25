@@ -1,0 +1,44 @@
+concept_infiniti_q60_concept
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Infiniti Q60 Concept] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3696; 
+=> nrel_release_date: 2015;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 333;  
+=> nrel_maximum_speed: 250; 
+=> nrel_acceleration_to_100_km_h: 5.9; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1785;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 363;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Infiniti Q60 Concept)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Концептуальное купе Infiniti Q60 дебютировал на Детройтском автосалоне 2015 года. Автомобиль стал прообразом серийной двухдверки второго поколения с тем же индексом, выпуск которой должен начаться ближе к концу 2015 года в Великобритании. Машина построена на основе седана Q50. Выставочный Infiniti Q60 Concept был оснащен битурбомотором V6 объемом 3.6 литра и мощностью около 330 л. с.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/infiniti_q60_concept.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

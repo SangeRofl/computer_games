@@ -1,0 +1,44 @@
+concept_jeep_wrangler_rubicon
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Jeep Wrangler Rubicon] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3604; 
+=> nrel_release_date: 2012;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 284;  
+=> nrel_maximum_speed: 180; 
+=> nrel_acceleration_to_100_km_h: 9.1; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: automatic;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: jeep; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: USA;
+=> nrel_vehicle_weight: 1828;
+=> nrel_number_of_seats: 4;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 260;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Jeep Wrangler Rubicon)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Jeep Wrangler Rubicon назван в честь знаменитой трассы в горах Сьерра-Невада. Комплектация отличалась другой задней и передней осью, блокировкой дифференциала, иным распределением передаточных чисел, 16-дюймовыми колесами и штатно устанавливаемыми шинами Goodyear. В течение первых двух лет производства коробка передач, которой оснащался Jeep Wrangler Rubicon, представляла собой пятиступенчатую механику.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/jeep_wrangler_rubicon.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

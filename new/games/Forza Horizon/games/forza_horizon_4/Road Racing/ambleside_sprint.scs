@@ -1,0 +1,26 @@
+concept_ambleside_sprint
+<- sc_node_not_relation;
+
+<- concept_car_racing;
+
+=> nrel_main_idtf: [Ambleside Sprint] (* <- lang_ru;; <- lang_en;; *);
+
+=> nrel_number_of_laps: 1;
+=> nrel_length_of_route: 7.1;
+=> nrel_best_lap_time: 04.15.453;
+=> nrel_time_of_year: concept_summer;
+=> nrel_time_of_day: concept_night;
+=> nrel_number_of_participants: 16;
+=> nrel_prize_fund: 8500;
+
+<- rrel_key_sc_element: ... (*
+    <- illustration;;
+    => nrel_main_idtf: [Позиция гонки на игровой карте] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ambleside_sprint.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

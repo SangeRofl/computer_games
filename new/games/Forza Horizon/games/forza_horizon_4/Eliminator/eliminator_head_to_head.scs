@@ -1,0 +1,105 @@
+concept_eliminator_head_to_head
+=> nrel_main_idtf: [Один на один (Устранитель)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Head-to-head (Eliminator)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Один на один (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Соревнования один на один в The Eliminator — это спринты один на один к случайной точке финиша на арене, и в них участвуют только два игрока в каждом событии, при этом ни одному из участников не разрешается отклонять вызов. Победителем становится гонщик, первым достигший установленной точки финиша.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_eliminator_head_to_head;;
+		-> concept_eliminator_arena;;
+		-> concept_player;;
+		-> concept_game_event;;
+		-> concept_winner;;
+		-> concept_racer;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Один на один (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Игроки могут бросить вызов другим гонщикам в очной встрече, подойдя к ним достаточно близко, чтобы появилось приглашение бросить им вызов. В этот момент любой игрок может бросить вызов другому, посмотрев на свой автомобиль и посигналив.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_car;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Один на один (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Присоединение к сеансу The Eliminator не требует от игрока наличия каких-либо конкретных автомобилей или какого-либо уровня, кроме завершения пролога карьеры, поскольку всем игрокам предоставляется специально тюнингованная машина уровня 1; Mini Cooper S 1965 года выпуска в Великобритании или Volkswagen Beetle 1963 года выпуска в Мексике.
+После того, как водителю брошен вызов, обоим игрокам показывается, что они едут друг против друга с помощью экрана сравнения, а также какие машины они водят и соответствующие уровни каждой машины.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_the_eliminator;;
+		-> concept_car;;
+		-> concept_level;;
+		-> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Один на один (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Финишные точки обычно располагаются ближе к стене арены на разных этапах и могут вынуждать игроков мчаться за пределами арены во время сокращения.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_point;;
+		-> concept_the_eliminator;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Один на один (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Первый игрок, достигший финишной точки, становится победителем, и ему предоставляется выбор в качестве награды: либо забрать машину противника, нажав вправо, либо повысить текущий уровень машины на единицу, нажав влево, а также может отменить получение награды. вознаграждение, нажав вниз. Независимо от того, какой выбор сделает победитель, проигравший водитель выбывает из текущей сессии.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_winner;;
+		-> concept_rewards;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/head_to_head.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

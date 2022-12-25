@@ -1,0 +1,44 @@
+concept_mg_metro_6r4
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [MG Metro 6R4] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2991; 
+=> nrel_release_date: 1986;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 253;  
+=> nrel_maximum_speed: 200; 
+=> nrel_acceleration_to_100_km_h: 4.5; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: hatchback; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: England;
+=> nrel_vehicle_weight: 1000;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 3;
+=> nrel_torque: 305;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(MG Metro 6R4)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[MG Metro 6R4 - раллийный автомобиль Группы-B, разработанный корпорацией British Leyland в сотрудничестве с фирмой Williams Grand Prix Engineering. С серийным переднеприводным хэтчбэком MG Metro (двойником Austin/Rover Metro) его объединяли только общие очертания кузова, внутри же это была совершенно другая машина. Название 6R4 расшифровывалось следующим образом. Буква "R" указывала на то, что модель предназначена для раллийных гонок. Цифра "6" означала 3-литровый двигатель V6 DOHC с четырьмя клапанами на цилиндр, производный от гоночного мотора Cosworth DFV. Он был установлен задом наперёд перед задней осью и 5-ступенчатой механической коробкой передач. Цифра "4" символизировала систему привода на все четыре колеса с тремя дифференциалами.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/mg_metro_6r4.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

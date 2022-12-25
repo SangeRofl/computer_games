@@ -1,0 +1,82 @@
+concept_speed_traps
+=> nrel_main_idtf: [Скоростные ловушки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Speed traps] (* <- lang_en;; *);
+
+<- concept_special_challenges;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Скоростные ловушки)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Набор камер контроля скорости, установленных на столбах на дороге, которые при прохождении через них регистрируют скорость автомобиля игрока.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_car;;
+                -> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Особенность)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [В отличие от всех других PR-трюков в игре, Speed ​​Traps никоим образом нельзя провалить. Однако скорость игрока должна быть не менее 31 мили в час (50 км/ч), чтобы сработала ловушка скорости.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_pr_stunts;;
+		-> concept_player;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Советы по прохождению)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Используйте автомобиль с отличными характеристиками, особенно на максимальной скорости. Подойдите к Speed ​​Trap с максимально возможной скоростью. К некоторым скоростным ловушкам необходимо приближаться с одной стороны, а не с другой, чтобы обеспечить максимальную скорость. Настоятельно рекомендуется очищать Speed ​​Trap при минимальном трафике или его отсутствии.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_max_speed;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Предупреждения)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Если за ловушкой скорости следует поворот, немедленно активируйте тормоза, чтобы избежать аварии. Также можно открыть внутриигровую карту и быстро перемещаться в любое место на карте (в противном случае просто быстро перемещайтесь на любую площадку фестиваля). Движение по неправильной полосе может быть опасным, так как это повышает риск лобового столкновения с другим транспортным средством.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_map;;
+		-> concept_car;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/speed_trap.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

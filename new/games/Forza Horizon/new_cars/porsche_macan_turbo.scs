@@ -1,0 +1,44 @@
+concept_porsche_macan_turbo
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Porsche Macan Turbo] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 3604; 
+=> nrel_release_date: 2019;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 400;  
+=> nrel_maximum_speed: 266; 
+=> nrel_acceleration_to_100_km_h: 4.8; 
+=> nrel_drive_type: all_wheel;  
+=> nrel_transmission: robotic;  
+=> nrel_number_of_gears: 7;  
+=> nrel_body_type: suv; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: Germany;
+=> nrel_vehicle_weight: 1925;
+=> nrel_number_of_seats: 5;
+=> nrel_number_of_doors: 5;
+=> nrel_torque: 550;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Porsche Macan Turbo)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Порше Макан- это компактный пятиместный кроссовер премиум класса. После рестайлинга, он насчитывает 4686 мм в длину, 1923 мм в ширину, 1624 мм в высоту и 2807 мм между колесными парами. В основе автомобиля лежит доработанный кузов от Audi Q5. Без изменений были взяты панели пола и моторный щит. Подвеска полностью независимая. Спереди на двух поперечных рычагах, а сзади- многорычажная архитектура. В стандартный, для российского рынка, список оснащения, по умолчанию, входит продвинутое активное шасси с пневматической систеой и адаптивными амортизаторами переменной жесткости. В зависимости от режима работы электроники, дорожный просвет изменяется от 190 до 230 миллиметров.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/porsche_macan_turbo.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

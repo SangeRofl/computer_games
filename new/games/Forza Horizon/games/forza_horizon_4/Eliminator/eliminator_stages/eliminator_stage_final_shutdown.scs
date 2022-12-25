@@ -1,0 +1,66 @@
+concept_eliminator_stage_final_shutdown
+=> nrel_main_idtf: [Финальная схватка (стадия Устранителя)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Final shutdown (Eliminator stage)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Финальная схватка (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Final Showdown — это последний этап The Eliminator, о котором сообщается игрокам как диктором, так и 30-секундным таймером обратного отсчета. В этот момент личные встречи отключаются, и игроки получают уведомление о необходимости подготовиться к финальной гонке.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_eliminator;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Финальная схватка (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [По истечении таймера обратного отсчета всем игрокам предоставляется одно и то же место финиша, к которому они должны мчаться, которое будет размещено за пределами арены этапа 4.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_player;;
+		-> concept_eliminator_stage_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Финальная схватка (стадия Устранителя))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Первый игрок, достигший финиша финальной схватки, становится победителем этой сессии The Eliminator и получает прозвище «The Eliminator». Все остальные гонщики в этом финальном противостоянии получают свои финишные позиции в этом сеансе The Eliminator в зависимости от их расстояния от места финиша в финальном противостоянии.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+		-> concept_eliminator;;
+		-> concept_racer;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/final.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

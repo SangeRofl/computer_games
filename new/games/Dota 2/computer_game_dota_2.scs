@@ -50,4 +50,7 @@ dota_2
 	*);;
 *);
 
-<- sc_node_not_relation;;
+<- sc_node_not_relation;
+=>nrel_source_of_information:
+[https://store.steampowered.com/app/570/Dota_2/]
+(*<-steam;;*);;

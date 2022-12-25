@@ -1,0 +1,44 @@
+concept_ferrari_fxx
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ferrari FXX] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 6262; 
+=> nrel_release_date: 2005;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 800;  
+=> nrel_maximum_speed: 351; 
+=> nrel_acceleration_to_100_km_h: 3; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: sequential;  
+=> nrel_number_of_gears: 6;  
+=> nrel_body_type: berlinetta; 
+=> nrel_number_of_cylinders: 12;
+=> nrel_country_of_production: Italy;
+=> nrel_vehicle_weight: 1155;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 686;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ferrari FXX)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Ferrari FXX — гоночный автомобиль, выпускавшийся компанией Ferrari для трек-дней с 2005 по 2007 год. Создан на базе Ferrari Enzo. Вся техническая начинка данного автомобиля подверглась существенной доводке. Модель была выпущена тиражом в 30 штук.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ferrari_fxx.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

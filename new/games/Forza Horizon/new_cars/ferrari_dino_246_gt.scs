@@ -1,0 +1,44 @@
+concept_ferrari_dino_246_gt
+<- sc_node_not_relation;
+
+<- concept_car;
+
+=> nrel_main_idtf: [Ferrari Dino 246 GT] (*<-lang_ru;;<-lang_en;;*);
+
+=> nrel_engine_volume: 2419; 
+=> nrel_release_date: 1969;
+=> nrel_engine_type: petrol;
+=> nrel_engine_power: 195;  
+=> nrel_maximum_speed: 235; 
+=> nrel_acceleration_to_100_km_h: 7.1; 
+=> nrel_drive_type: rear;  
+=> nrel_transmission: manual;  
+=> nrel_number_of_gears: 5;  
+=> nrel_body_type: coupe; 
+=> nrel_number_of_cylinders: 6;
+=> nrel_country_of_production: Italy;
+=> nrel_vehicle_weight: 1080;
+=> nrel_number_of_seats: 2;
+=> nrel_number_of_doors: 2;
+=> nrel_torque: 225;
+
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf:[Опр.(Ferrari Dino 246 GT)] (* <- lang_ru;; *);;
+    <=  nrel_sc_text_translation: ... 
+    (*
+        ->[Суперкар появился в 1969 году, производитель Ferrari, располагающийся в стране Италия. Двигатель Ferrari Dino 246 GT объёмом 2419 см³ развивает мощность 195 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 7.1 секунды и развивать максимальную скорость 235 км/ч. Цена Ferrari Dino 246 GT - 460 000 $ или 30 360 000 ₽.] (*<-lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <-illustration;;
+    => nrel_main_idtf: [Фото машины] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example : "file://image/ferrari_dino_246_gt.jpg"
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);; 
+*);;

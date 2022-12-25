@@ -1,0 +1,146 @@
+concept_eliminator_arena
+=> nrel_main_idtf: [Арена (Устранитель)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Arena  (Eliminator)] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Арена (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Арена определяется контуром круга купола, показанным в области карты, но ее нет в течение первых нескольких минут сеанса. По мере того, как игроки появляются в своих стартовых локациях, им предоставляется возможность исследовать окрестности, чтобы другие водители могли бросить вызов или осмотреть машину, прежде чем будет намечен первый этап арены.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_car;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Арена (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Игроки уведомляются, когда арена сжимается, либо с помощью таймера, отсчитывающего время до ее следующего сокращения, либо уведомления, если она в данный момент сжимается, в верхнем левом углу их HUD. В течение последних 10 секунд обратного отсчета уменьшения в центре HUD игрока отображается уведомление о том, что арена вот-вот начнет уменьшаться.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Арена (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Проецируемый пунктирный розовый круг используется для выделения края арены после завершения следующего этапа ее сжатия.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_eliminator_stages;;
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Арена (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Игроки обозначены пунктирной розовой линией от стрелки на карте до края спроецированного круга арены, если они находятся за пределами следующего спроецированного этапа арены.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_player;;
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Арена (Устранитель))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Как только арена начнет сжиматься, прозвучит сигнал, и диктор предупредит игроков, что арена начала сжиматься. Скорость, с которой арена сжимается, зависит от количества игроков в сеансе и текущего этапа, на котором находятся игроки в этом сеансе.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Arena  (Eliminator))] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Сама арена показана игроку в виде большого розового купола с белыми крестами, возвышающимися высоко в небо, а текущий край купола показан сплошным розовым кругом со штриховкой по внешней стороне.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/arena.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Край арены] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/arena_edge.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Прогнозируемый край арены] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/projected_arena_edge.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Направление к следующему краю арены] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/direction_to_next_arena.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

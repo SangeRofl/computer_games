@@ -1,0 +1,56 @@
+concept_car_pass
+=> nrel_main_idtf: [Автомобильный пропуск] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Car pass] (* <- lang_en;; *);
+
+<- concept_dlc;
+
+=> nrel_release_date: [28.09.2018];
+=> nrel_price: [29.99$];
+
+<= nrel_subdividing: ...
+(*
+	-> concept_any_terrain_car_pack;;
+    	-> concept_british_sports_cars_car_pack;;
+	-> concept_high_performance_car_pack;;
+	-> concept_icons_car_pack;;
+	-> concept_japanese_heroes_car_pack;;
+	-> concept_open_top_car_pack;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Автомобильный пропуск)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+		-> [Car Pass — это загружаемый пропуск для Forza Horizon 4, выпущенный 28 сентября 2018 г. для выпуска Ultimate Edition и 2 октября 2018 г. для других выпусков.] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Наборы машин)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Различный контент Car Pass доступен отдельно в автомобильных наборах.] (* <- lang_ru;; *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/car_pass.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

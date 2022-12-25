@@ -1,0 +1,41 @@
+concept_the_eliminator
+=> nrel_main_idtf: [Устранитель] (* <- lang_ru;; *);
+=> nrel_main_idtf: [The Eliminator] (* <- lang_en;; *);
+
+<- concept_game_mode;
+
+=> nrel_inclusion: 
+	concept_eliminator_matchmaking;
+	concept_eliminator_head_to_head;
+	concept_eliminator_arena;
+	concept_eliminator_stages;
+	concept_eliminator_timeout;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Устранитель)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Устранитель — это режим многопользовательской игры «королевская битва» в Forza Horizon 4 и Forza Horizon 5, в котором до 72 игроков сражаются друг с другом на уменьшающейся арене, пока не останется только один игрок.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Логотип] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/eliminator.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;

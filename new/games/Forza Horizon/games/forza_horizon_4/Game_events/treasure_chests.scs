@@ -1,0 +1,83 @@
+concept_treasure_chests
+=> nrel_main_idtf: [Сундуки с сокровищами] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Treasure chests] (* <- lang_en;; *);
+
+<- concept_game_event;
+
+<- rrel_key_sc_element: ...
+(*
+        <- definition;;
+        => nrel_main_idtf: [Опр.(Сундуки с сокровищами)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Специальные испытания в игре forza horizon 4, которые заключаются в охоте за сокровищами, которые можно увидеть разбросанными по всему острову.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+                -> concept_racing;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Принцип работы)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Сундуки с сокровищами спрятаны по всему острову Фортуны, и игрокам нужно разгадывать загадки, связанные с завершением события или рекламного трюка, чтобы найти их. Они являются эквивалентом находок сарая на материке на острове Фортуна.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_computer_game_forza_horizon_4;;
+		-> concept_eliminator_arena;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Награды)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [После завершения рекламного трюка («разгадка загадки») игроки награждаются указанием местоположения сундука с сокровищами на карте вместе с уменьшенной фотографией, показывающей сундук с сокровищами на фоне окружающего ландшафта.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_pr_stunts;;
+		-> concept_map;;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+        <- statement;;
+        => nrel_main_idtf: [Утв.(Подсказки)] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> [Отследить сундуки так же просто, как использовать подсказки с фотографий (это может быть дерево или забавный камень). Разбивая сундуки транспортным средством, игроки получают 1 000 000 CR и автомобиль.
+                ] (* <- lang_ru;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+		-> concept_car;;
+        *);;
+*);
+
+
+
+<- rrel_key_sc_element: ... (*
+        <- illustration;;
+        => nrel_main_idtf: [Фото] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+                -> rrel_example : "file://image/treasure_chest.jpg"
+                        (*
+                                => nrel_format: format_jpg;;
+                        *);;
+        *);;
+*);
+
+<- sc_node_not_relation;;
