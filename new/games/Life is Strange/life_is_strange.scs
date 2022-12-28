@@ -69,10 +69,10 @@ computer_game_life_is_strange
       -> [Разработчики описывают игру как ностальгическую поэтапную историю, в которой переплетаются прошлое с настоящим, что способствует созданию ключевых моментов в каждом эпизоде.]
 		(*<-lang_ru;;*);;
     *);;
-*);;
+*);
 =>nrel_source_of_information:
 [https://www.gog.com/en/game/life_is_strange_before_the_storm]
-(*<-gog;;*);;
+(*<-gog;;*);
 
 =>nrel_source_of_information:
 [https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/]
