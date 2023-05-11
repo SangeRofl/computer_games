@@ -34,6 +34,7 @@ concept_game_company
 *);
 
 
-
+->Valve;
+->company_electronic_arts;
 <- sc_node_not_relation;;
 
